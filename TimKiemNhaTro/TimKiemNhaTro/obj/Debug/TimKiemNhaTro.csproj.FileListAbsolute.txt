@@ -1,0 +1,17 @@
+C:\Users\DELL\Desktop\TimKiemNhaTro\TimKiemNhaTro\TimKiemNhaTro\bin\Debug\TimKiemNhaTro.exe.config
+C:\Users\DELL\Desktop\TimKiemNhaTro\TimKiemNhaTro\TimKiemNhaTro\bin\Debug\TimKiemNhaTro.exe
+C:\Users\DELL\Desktop\TimKiemNhaTro\TimKiemNhaTro\TimKiemNhaTro\bin\Debug\TimKiemNhaTro.pdb
+C:\Users\DELL\Desktop\TimKiemNhaTro\TimKiemNhaTro\TimKiemNhaTro\bin\Debug\Guna.UI.dll
+C:\Users\DELL\Desktop\TimKiemNhaTro\TimKiemNhaTro\TimKiemNhaTro\obj\Debug\TimKiemNhaTro.csproj.AssemblyReference.cache
+C:\Users\DELL\Desktop\TimKiemNhaTro\TimKiemNhaTro\TimKiemNhaTro\obj\Debug\TimKiemNhaTro.frmMain.resources
+C:\Users\DELL\Desktop\TimKiemNhaTro\TimKiemNhaTro\TimKiemNhaTro\obj\Debug\TimKiemNhaTro.Properties.Resources.resources
+C:\Users\DELL\Desktop\TimKiemNhaTro\TimKiemNhaTro\TimKiemNhaTro\obj\Debug\TimKiemNhaTro.ucFavourite.resources
+C:\Users\DELL\Desktop\TimKiemNhaTro\TimKiemNhaTro\TimKiemNhaTro\obj\Debug\TimKiemNhaTro.ucHome.resources
+C:\Users\DELL\Desktop\TimKiemNhaTro\TimKiemNhaTro\TimKiemNhaTro\obj\Debug\TimKiemNhaTro.ucSearch.resources
+C:\Users\DELL\Desktop\TimKiemNhaTro\TimKiemNhaTro\TimKiemNhaTro\obj\Debug\TimKiemNhaTro.ucSetting.resources
+C:\Users\DELL\Desktop\TimKiemNhaTro\TimKiemNhaTro\TimKiemNhaTro\obj\Debug\TimKiemNhaTro.ucUser.resources
+C:\Users\DELL\Desktop\TimKiemNhaTro\TimKiemNhaTro\TimKiemNhaTro\obj\Debug\TimKiemNhaTro.csproj.GenerateResource.cache
+C:\Users\DELL\Desktop\TimKiemNhaTro\TimKiemNhaTro\TimKiemNhaTro\obj\Debug\TimKiemNhaTro.csproj.CoreCompileInputs.cache
+C:\Users\DELL\Desktop\TimKiemNhaTro\TimKiemNhaTro\TimKiemNhaTro\obj\Debug\TimKiemNhaTro.csproj.CopyComplete
+C:\Users\DELL\Desktop\TimKiemNhaTro\TimKiemNhaTro\TimKiemNhaTro\obj\Debug\TimKiemNhaTro.exe
+C:\Users\DELL\Desktop\TimKiemNhaTro\TimKiemNhaTro\TimKiemNhaTro\obj\Debug\TimKiemNhaTro.pdb

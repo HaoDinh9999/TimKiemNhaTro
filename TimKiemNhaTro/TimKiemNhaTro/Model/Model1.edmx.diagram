@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="2380253dc2844be8935da56508ab32ba" Name="Diagram1">
+        <EntityTypeShape EntityType="XQ0Qgj8xlHModel.AnhNha" Width="1.5" PointX="8.25" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="XQ0Qgj8xlHModel.CoSoVatChat" Width="1.5" PointX="3.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="XQ0Qgj8xlHModel.DanhGia" Width="1.5" PointX="3" PointY="5.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="XQ0Qgj8xlHModel.LoaiChoThue" Width="1.5" PointX="3.75" PointY="9" IsExpanded="true" />
+        <EntityTypeShape EntityType="XQ0Qgj8xlHModel.NguoiDung" Width="1.5" PointX="0.75" PointY="5.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="XQ0Qgj8xlHModel.Nha" Width="1.5" PointX="6" PointY="4.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="XQ0Qgj8xlHModel.YeuThich" Width="1.5" PointX="8.25" PointY="2.75" IsExpanded="true" />
+        <AssociationConnector Association="XQ0Qgj8xlHModel.FK_Anh_maNha" ManuallyRouted="false" />
+        <AssociationConnector Association="XQ0Qgj8xlHModel.maCoSoVatChat" ManuallyRouted="false" />
+        <AssociationConnector Association="XQ0Qgj8xlHModel.maNguoiDanhGia" ManuallyRouted="false" />
+        <AssociationConnector Association="XQ0Qgj8xlHModel.maNha" ManuallyRouted="false" />
+        <AssociationConnector Association="XQ0Qgj8xlHModel.maLoaiChoThue" ManuallyRouted="false" />
+        <AssociationConnector Association="XQ0Qgj8xlHModel.maNguoiDung" ManuallyRouted="false" />
+        <AssociationConnector Association="XQ0Qgj8xlHModel.maNguoiThich" ManuallyRouted="false" />
+        <AssociationConnector Association="XQ0Qgj8xlHModel.maNhaThich" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

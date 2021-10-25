@@ -1,0 +1,233 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="XQ0Qgj8xlHModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="AnhNha">
+    <Key>
+      <PropertyRef Name="maAnhNha" />
+    </Key>
+    <Property Name="maAnhNha" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="maNha" Type="Int32" Nullable="false" />
+    <Property Name="duongDan" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Nha" Relationship="Self.FK_Anh_maNha" FromRole="AnhNha" ToRole="Nha" />
+  </EntityType>
+  <EntityType Name="CoSoVatChat">
+    <Key>
+      <PropertyRef Name="maCoSoVatChat" />
+    </Key>
+    <Property Name="maCoSoVatChat" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="baiDauXe" Type="Boolean" />
+    <Property Name="banCong" Type="Boolean" />
+    <Property Name="baoVe" Type="Boolean" />
+    <Property Name="cctv" Type="Boolean" />
+    <Property Name="dieuHoa" Type="Boolean" />
+    <Property Name="gacLung" Type="Boolean" />
+    <Property Name="sanThuong" Type="Boolean" />
+    <Property Name="hoBoi" Type="Boolean" />
+    <Property Name="mayGiat" Type="Boolean" />
+    <Property Name="noiThat" Type="Boolean" />
+    <Property Name="nuoiThuCung" Type="Boolean" />
+    <NavigationProperty Name="Nhas" Relationship="Self.maCoSoVatChat" FromRole="CoSoVatChat" ToRole="Nha" />
+  </EntityType>
+  <EntityType Name="DanhGia">
+    <Key>
+      <PropertyRef Name="maNguoiDung" />
+      <PropertyRef Name="maNha" />
+    </Key>
+    <Property Name="maNguoiDung" Type="Int32" Nullable="false" />
+    <Property Name="maNha" Type="Int32" Nullable="false" />
+    <Property Name="soSao" Type="Int32" />
+    <Property Name="noiDung" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="NguoiDung" Relationship="Self.maNguoiDanhGia" FromRole="DanhGia" ToRole="NguoiDung" />
+    <NavigationProperty Name="Nha" Relationship="Self.maNha" FromRole="DanhGia" ToRole="Nha" />
+  </EntityType>
+  <EntityType Name="LoaiChoThue">
+    <Key>
+      <PropertyRef Name="maLoaiChoThue" />
+    </Key>
+    <Property Name="maLoaiChoThue" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="tenLoaiChoThue" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="Nhas" Relationship="Self.maLoaiChoThue" FromRole="LoaiChoThue" ToRole="Nha" />
+  </EntityType>
+  <EntityType Name="NguoiDung">
+    <Key>
+      <PropertyRef Name="maNguoiDung" />
+    </Key>
+    <Property Name="maNguoiDung" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="tenDangNhap" Type="String" MaxLength="128" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="matKhau" Type="String" MaxLength="128" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="hoTen" Type="String" MaxLength="128" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="urlDaiDien" Type="String" MaxLength="128" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="DanhGias" Relationship="Self.maNguoiDanhGia" FromRole="NguoiDung" ToRole="DanhGia" />
+    <NavigationProperty Name="Nhas" Relationship="Self.maNguoiDung" FromRole="NguoiDung" ToRole="Nha" />
+    <NavigationProperty Name="YeuThiches" Relationship="Self.maNguoiThich" FromRole="NguoiDung" ToRole="YeuThich" />
+  </EntityType>
+  <EntityType Name="Nha">
+    <Key>
+      <PropertyRef Name="maNha" />
+    </Key>
+    <Property Name="maNha" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="maChuNha" Type="Int32" Nullable="false" />
+    <Property Name="maCoSoVatChat" Type="Int32" Nullable="false" />
+    <Property Name="maLoaiChoThue" Type="Int32" />
+    <Property Name="soPhongNgu" Type="Int32" />
+    <Property Name="soPhongTam" Type="Int32" />
+    <Property Name="dienTich" Type="Decimal" />
+    <Property Name="tinhTrang" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
+    <Property Name="soNha" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
+    <Property Name="phuongXa" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
+    <Property Name="quanHuyen" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
+    <Property Name="moTa" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
+    <NavigationProperty Name="AnhNhas" Relationship="Self.FK_Anh_maNha" FromRole="Nha" ToRole="AnhNha" />
+    <NavigationProperty Name="CoSoVatChat" Relationship="Self.maCoSoVatChat" FromRole="Nha" ToRole="CoSoVatChat" />
+    <NavigationProperty Name="DanhGias" Relationship="Self.maNha" FromRole="Nha" ToRole="DanhGia" />
+    <NavigationProperty Name="LoaiChoThue" Relationship="Self.maLoaiChoThue" FromRole="Nha" ToRole="LoaiChoThue" />
+    <NavigationProperty Name="NguoiDung" Relationship="Self.maNguoiDung" FromRole="Nha" ToRole="NguoiDung" />
+    <NavigationProperty Name="YeuThiches" Relationship="Self.maNhaThich" FromRole="Nha" ToRole="YeuThich" />
+  </EntityType>
+  <EntityType Name="YeuThich">
+    <Key>
+      <PropertyRef Name="maYeuThich" />
+    </Key>
+    <Property Name="maYeuThich" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="maNguoiDung" Type="Int32" Nullable="false" />
+    <Property Name="maNha" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="NguoiDung" Relationship="Self.maNguoiThich" FromRole="YeuThich" ToRole="NguoiDung" />
+    <NavigationProperty Name="Nha" Relationship="Self.maNhaThich" FromRole="YeuThich" ToRole="Nha" />
+  </EntityType>
+  <Association Name="FK_Anh_maNha">
+    <End Role="Nha" Type="Self.Nha" Multiplicity="1" />
+    <End Role="AnhNha" Type="Self.AnhNha" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Nha">
+        <PropertyRef Name="maNha" />
+      </Principal>
+      <Dependent Role="AnhNha">
+        <PropertyRef Name="maNha" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="maCoSoVatChat">
+    <End Role="CoSoVatChat" Type="Self.CoSoVatChat" Multiplicity="1" />
+    <End Role="Nha" Type="Self.Nha" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CoSoVatChat">
+        <PropertyRef Name="maCoSoVatChat" />
+      </Principal>
+      <Dependent Role="Nha">
+        <PropertyRef Name="maCoSoVatChat" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="maNguoiDanhGia">
+    <End Role="NguoiDung" Type="Self.NguoiDung" Multiplicity="1" />
+    <End Role="DanhGia" Type="Self.DanhGia" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="NguoiDung">
+        <PropertyRef Name="maNguoiDung" />
+      </Principal>
+      <Dependent Role="DanhGia">
+        <PropertyRef Name="maNguoiDung" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="maNha">
+    <End Role="Nha" Type="Self.Nha" Multiplicity="1" />
+    <End Role="DanhGia" Type="Self.DanhGia" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Nha">
+        <PropertyRef Name="maNha" />
+      </Principal>
+      <Dependent Role="DanhGia">
+        <PropertyRef Name="maNha" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="maLoaiChoThue">
+    <End Role="LoaiChoThue" Type="Self.LoaiChoThue" Multiplicity="0..1" />
+    <End Role="Nha" Type="Self.Nha" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="LoaiChoThue">
+        <PropertyRef Name="maLoaiChoThue" />
+      </Principal>
+      <Dependent Role="Nha">
+        <PropertyRef Name="maLoaiChoThue" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="maNguoiDung">
+    <End Role="NguoiDung" Type="Self.NguoiDung" Multiplicity="1" />
+    <End Role="Nha" Type="Self.Nha" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="NguoiDung">
+        <PropertyRef Name="maNguoiDung" />
+      </Principal>
+      <Dependent Role="Nha">
+        <PropertyRef Name="maChuNha" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="maNguoiThich">
+    <End Role="NguoiDung" Type="Self.NguoiDung" Multiplicity="1" />
+    <End Role="YeuThich" Type="Self.YeuThich" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="NguoiDung">
+        <PropertyRef Name="maNguoiDung" />
+      </Principal>
+      <Dependent Role="YeuThich">
+        <PropertyRef Name="maNguoiDung" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="maNhaThich">
+    <End Role="Nha" Type="Self.Nha" Multiplicity="1" />
+    <End Role="YeuThich" Type="Self.YeuThich" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Nha">
+        <PropertyRef Name="maNha" />
+      </Principal>
+      <Dependent Role="YeuThich">
+        <PropertyRef Name="maNha" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="NhaTroEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="AnhNhas" EntityType="Self.AnhNha" />
+    <EntitySet Name="CoSoVatChats" EntityType="Self.CoSoVatChat" />
+    <EntitySet Name="DanhGias" EntityType="Self.DanhGia" />
+    <EntitySet Name="LoaiChoThues" EntityType="Self.LoaiChoThue" />
+    <EntitySet Name="NguoiDungs" EntityType="Self.NguoiDung" />
+    <EntitySet Name="Nhas" EntityType="Self.Nha" />
+    <EntitySet Name="YeuThiches" EntityType="Self.YeuThich" />
+    <AssociationSet Name="FK_Anh_maNha" Association="Self.FK_Anh_maNha">
+      <End Role="Nha" EntitySet="Nhas" />
+      <End Role="AnhNha" EntitySet="AnhNhas" />
+    </AssociationSet>
+    <AssociationSet Name="maCoSoVatChat" Association="Self.maCoSoVatChat">
+      <End Role="CoSoVatChat" EntitySet="CoSoVatChats" />
+      <End Role="Nha" EntitySet="Nhas" />
+    </AssociationSet>
+    <AssociationSet Name="maNguoiDanhGia" Association="Self.maNguoiDanhGia">
+      <End Role="NguoiDung" EntitySet="NguoiDungs" />
+      <End Role="DanhGia" EntitySet="DanhGias" />
+    </AssociationSet>
+    <AssociationSet Name="maNha" Association="Self.maNha">
+      <End Role="Nha" EntitySet="Nhas" />
+      <End Role="DanhGia" EntitySet="DanhGias" />
+    </AssociationSet>
+    <AssociationSet Name="maLoaiChoThue" Association="Self.maLoaiChoThue">
+      <End Role="LoaiChoThue" EntitySet="LoaiChoThues" />
+      <End Role="Nha" EntitySet="Nhas" />
+    </AssociationSet>
+    <AssociationSet Name="maNguoiDung" Association="Self.maNguoiDung">
+      <End Role="NguoiDung" EntitySet="NguoiDungs" />
+      <End Role="Nha" EntitySet="Nhas" />
+    </AssociationSet>
+    <AssociationSet Name="maNguoiThich" Association="Self.maNguoiThich">
+      <End Role="NguoiDung" EntitySet="NguoiDungs" />
+      <End Role="YeuThich" EntitySet="YeuThiches" />
+    </AssociationSet>
+    <AssociationSet Name="maNhaThich" Association="Self.maNhaThich">
+      <End Role="Nha" EntitySet="Nhas" />
+      <End Role="YeuThich" EntitySet="YeuThiches" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

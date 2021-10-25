@@ -158,6 +158,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ucCardRoom.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucCardRoom.Designer.cs">
+      <DependentUpon>ucCardRoom.cs</DependentUpon>
+    </Compile>
     <Compile Include="ucFavourite.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -201,6 +207,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="ucCardRoom.resx">
+      <DependentUpon>ucCardRoom.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ucFavourite.resx">
       <DependentUpon>ucFavourite.cs</DependentUpon>
     </EmbeddedResource>
@@ -311,6 +320,13 @@
       <DependentUpon>Model1.edmx</DependentUpon>
       <LastGenOutput>Model1.cs</LastGenOutput>
     </Content>
+    <None Include="Resources\3612573_180121144400612203361.jpg" />
+    <None Include="Resources\bathtub1_240px.png" />
+    <None Include="Resources\area-icon.png" />
+    <None Include="Resources\icons8_bathtub_32.png" />
+    <None Include="Resources\icons8_sleeping_in_bed1_32.png" />
+    <None Include="Resources\icons8_sleeping_in_bed_16.png" />
+    <None Include="Resources\3612573_18012114440061220336.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

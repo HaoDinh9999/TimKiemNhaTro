@@ -33,6 +33,7 @@ namespace TimKiemNhaTro
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMain));
             this.gelipFrmTaskee = new Guna.UI.WinForms.GunaElipse(this.components);
             this.panel2 = new System.Windows.Forms.Panel();
+            this.lblTitle = new System.Windows.Forms.Label();
             this.dtpRealTime = new Guna.UI.WinForms.GunaDateTimePicker();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
@@ -53,12 +54,14 @@ namespace TimKiemNhaTro
             this.btnFavourite = new Guna.UI.WinForms.GunaAdvenceButton();
             this.btnFindMap = new Guna.UI.WinForms.GunaAdvenceButton();
             this.btnHome = new Guna.UI.WinForms.GunaAdvenceButton();
-            this.lblTitle = new System.Windows.Forms.Label();
+            this.ucCardRoom1 = new TimKiemNhaTro.ucCardRoom();
             this.ucHome1 = new TimKiemNhaTro.ucHome();
             this.ucSetting1 = new TimKiemNhaTro.ucSetting();
             this.ucUser1 = new TimKiemNhaTro.ucUser();
             this.ucFavourite1 = new TimKiemNhaTro.ucFavourite();
             this.ucSearch1 = new TimKiemNhaTro.ucSearch();
+            this.ucCardRoom2 = new TimKiemNhaTro.ucCardRoom();
+            this.ucCardRoom3 = new TimKiemNhaTro.ucCardRoom();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ptrPaint)).BeginInit();
             this.pnlUC.SuspendLayout();
@@ -89,6 +92,16 @@ namespace TimKiemNhaTro
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1128, 58);
             this.panel2.TabIndex = 1;
+            // 
+            // lblTitle
+            // 
+            this.lblTitle.AutoSize = true;
+            this.lblTitle.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTitle.Location = new System.Drawing.Point(24, 14);
+            this.lblTitle.Name = "lblTitle";
+            this.lblTitle.Size = new System.Drawing.Size(105, 23);
+            this.lblTitle.TabIndex = 10;
+            this.lblTitle.Text = "Trang chủ";
             // 
             // dtpRealTime
             // 
@@ -173,7 +186,7 @@ namespace TimKiemNhaTro
             this.lblPosition.Font = new System.Drawing.Font("Century", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPosition.Location = new System.Drawing.Point(888, 34);
             this.lblPosition.Name = "lblPosition";
-            this.lblPosition.Size = new System.Drawing.Size(89, 17);
+            this.lblPosition.Size = new System.Drawing.Size(70, 15);
             this.lblPosition.TabIndex = 2;
             this.lblPosition.Text = "Khách hàng";
             // 
@@ -261,6 +274,9 @@ namespace TimKiemNhaTro
             // 
             // pnlUC
             // 
+            this.pnlUC.Controls.Add(this.ucCardRoom3);
+            this.pnlUC.Controls.Add(this.ucCardRoom2);
+            this.pnlUC.Controls.Add(this.ucCardRoom1);
             this.pnlUC.Controls.Add(this.ucHome1);
             this.pnlUC.Controls.Add(this.ucSetting1);
             this.pnlUC.Controls.Add(this.ucUser1);
@@ -323,7 +339,7 @@ namespace TimKiemNhaTro
             this.label1.Font = new System.Drawing.Font("Segoe Print", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(113, 26);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(139, 35);
+            this.label1.Size = new System.Drawing.Size(112, 28);
             this.label1.TabIndex = 5;
             this.label1.Text = "Rent-Finder";
             // 
@@ -519,20 +535,22 @@ namespace TimKiemNhaTro
             this.btnHome.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.btnHome.Click += new System.EventHandler(this.btnHome_Click);
             // 
-            // lblTitle
+            // ucCardRoom1
             // 
-            this.lblTitle.AutoSize = true;
-            this.lblTitle.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTitle.Location = new System.Drawing.Point(24, 14);
-            this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(132, 29);
-            this.lblTitle.TabIndex = 10;
-            this.lblTitle.Text = "Trang chủ";
+            this.ucCardRoom1.BackColor = System.Drawing.Color.Transparent;
+            this.ucCardRoom1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ucCardRoom1.BackgroundImage")));
+            this.ucCardRoom1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ucCardRoom1.Location = new System.Drawing.Point(28, 45);
+            this.ucCardRoom1.Margin = new System.Windows.Forms.Padding(2);
+            this.ucCardRoom1.Name = "ucCardRoom1";
+            this.ucCardRoom1.Size = new System.Drawing.Size(345, 273);
+            this.ucCardRoom1.TabIndex = 5;
             // 
             // ucHome1
             // 
             this.ucHome1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.ucHome1.Location = new System.Drawing.Point(0, 0);
+            this.ucHome1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.ucHome1.Name = "ucHome1";
             this.ucHome1.Size = new System.Drawing.Size(1128, 642);
             this.ucHome1.TabIndex = 0;
@@ -541,6 +559,7 @@ namespace TimKiemNhaTro
             // 
             this.ucSetting1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.ucSetting1.Location = new System.Drawing.Point(0, 0);
+            this.ucSetting1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.ucSetting1.Name = "ucSetting1";
             this.ucSetting1.Size = new System.Drawing.Size(1128, 642);
             this.ucSetting1.TabIndex = 4;
@@ -549,6 +568,7 @@ namespace TimKiemNhaTro
             // 
             this.ucUser1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.ucUser1.Location = new System.Drawing.Point(0, 0);
+            this.ucUser1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.ucUser1.Name = "ucUser1";
             this.ucUser1.Size = new System.Drawing.Size(1128, 642);
             this.ucUser1.TabIndex = 3;
@@ -557,6 +577,7 @@ namespace TimKiemNhaTro
             // 
             this.ucFavourite1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.ucFavourite1.Location = new System.Drawing.Point(0, 0);
+            this.ucFavourite1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.ucFavourite1.Name = "ucFavourite1";
             this.ucFavourite1.Size = new System.Drawing.Size(1128, 642);
             this.ucFavourite1.TabIndex = 2;
@@ -565,13 +586,36 @@ namespace TimKiemNhaTro
             // 
             this.ucSearch1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.ucSearch1.Location = new System.Drawing.Point(0, 0);
+            this.ucSearch1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.ucSearch1.Name = "ucSearch1";
             this.ucSearch1.Size = new System.Drawing.Size(1128, 642);
             this.ucSearch1.TabIndex = 1;
             // 
+            // ucCardRoom2
+            // 
+            this.ucCardRoom2.BackColor = System.Drawing.Color.Transparent;
+            this.ucCardRoom2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ucCardRoom2.BackgroundImage")));
+            this.ucCardRoom2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ucCardRoom2.Location = new System.Drawing.Point(389, 45);
+            this.ucCardRoom2.Margin = new System.Windows.Forms.Padding(2);
+            this.ucCardRoom2.Name = "ucCardRoom2";
+            this.ucCardRoom2.Size = new System.Drawing.Size(345, 273);
+            this.ucCardRoom2.TabIndex = 6;
+            // 
+            // ucCardRoom3
+            // 
+            this.ucCardRoom3.BackColor = System.Drawing.Color.Transparent;
+            this.ucCardRoom3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ucCardRoom3.BackgroundImage")));
+            this.ucCardRoom3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ucCardRoom3.Location = new System.Drawing.Point(758, 45);
+            this.ucCardRoom3.Margin = new System.Windows.Forms.Padding(2);
+            this.ucCardRoom3.Name = "ucCardRoom3";
+            this.ucCardRoom3.Size = new System.Drawing.Size(345, 273);
+            this.ucCardRoom3.TabIndex = 7;
+            // 
             // frmMain
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1425, 700);
@@ -625,6 +669,9 @@ namespace TimKiemNhaTro
         private ucFavourite ucFavourite1;
         private ucSearch ucSearch1;
         private System.Windows.Forms.Label lblTitle;
+        private ucCardRoom ucCardRoom1;
+        private ucCardRoom ucCardRoom3;
+        private ucCardRoom ucCardRoom2;
     }
 }
 

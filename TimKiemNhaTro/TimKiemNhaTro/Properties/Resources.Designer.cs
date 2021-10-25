@@ -73,9 +73,59 @@ namespace TimKiemNhaTro.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _3612573_18012114440061220336 {
+            get {
+                object obj = ResourceManager.GetObject("3612573_18012114440061220336", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _3612573_180121144400612203361 {
+            get {
+                object obj = ResourceManager.GetObject("3612573_180121144400612203361", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap area_icon {
+            get {
+                object obj = ResourceManager.GetObject("area-icon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap bathtub1_240px {
+            get {
+                object obj = ResourceManager.GetObject("bathtub1_240px", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap cooking {
             get {
                 object obj = ResourceManager.GetObject("cooking", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_bathtub_32 {
+            get {
+                object obj = ResourceManager.GetObject("icons8_bathtub_32", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -236,6 +286,26 @@ namespace TimKiemNhaTro.Properties {
         internal static System.Drawing.Bitmap icons8_settingwHITEs_32 {
             get {
                 object obj = ResourceManager.GetObject("icons8_settingwHITEs_32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_sleeping_in_bed_16 {
+            get {
+                object obj = ResourceManager.GetObject("icons8_sleeping_in_bed_16", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_sleeping_in_bed1_32 {
+            get {
+                object obj = ResourceManager.GetObject("icons8_sleeping_in_bed1_32", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

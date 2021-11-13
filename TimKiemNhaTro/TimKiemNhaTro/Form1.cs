@@ -39,7 +39,7 @@ namespace TimKiemNhaTro
             btnSetting.Checked = false;
             ucHome1.Show();
             ucHome1.BringToFront();
-
+            btnAddHouse.BringToFront();
         }
 
         private void btnFindMap_Click(object sender, EventArgs e)
@@ -90,7 +90,7 @@ namespace TimKiemNhaTro
             btnFavourite.Checked = false;
             btnUser.Checked = false;
             btnSetting.Checked = true;
-            ucSearch1.Show();
+            ucSetting1.Show();
             ucSetting1.BringToFront();
         }
 
@@ -103,6 +103,28 @@ namespace TimKiemNhaTro
         private void gunaTileButton1_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void picLogo_Click(object sender, EventArgs e)
+        {
+            if (pnlMenu.Width > 200)
+            {
+                pnlMenu.Width = 100;
+                picGif.Visible = false;
+            }
+            else
+            {
+                pnlMenu.Width = 297;
+                picGif.Visible = true;
+            }
+        }
+
+        private void btnAddHouse_Click(object sender, EventArgs e)
+        {
+            ucAddHome _ucAdd = new ucAddHome();
+            pnlUC.Controls.Add(_ucAdd);
+            _ucAdd.Dock = DockStyle.Fill;
+            _ucAdd.BringToFront();
         }
     }
 }

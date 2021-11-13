@@ -16,5 +16,19 @@ namespace TimKiemNhaTro
         {
             InitializeComponent();
         }
+
+        private void btnEdit_Click(object sender, EventArgs e)
+        {
+            if (btnEdit.Checked == true)
+            {
+                btnEdit.Checked = false;
+                btnEditImage.Visible = true;
+            }
+            else
+            {
+                btnEdit.Checked = true;
+                btnEditImage.Visible = false;
+            }
+        }
     }
 }

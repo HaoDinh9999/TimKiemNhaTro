@@ -158,11 +158,29 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ucAddHome.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucAddHome.Designer.cs">
+      <DependentUpon>ucAddHome.cs</DependentUpon>
+    </Compile>
     <Compile Include="ucCardRoom.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="ucCardRoom.Designer.cs">
       <DependentUpon>ucCardRoom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucCardRoomFavourite.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucCardRoomFavourite.Designer.cs">
+      <DependentUpon>ucCardRoomFavourite.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucCardRoomLong.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucCardRoomLong.Designer.cs">
+      <DependentUpon>ucCardRoomLong.cs</DependentUpon>
     </Compile>
     <Compile Include="ucFavourite.cs">
       <SubType>UserControl</SubType>
@@ -207,8 +225,17 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="ucAddHome.resx">
+      <DependentUpon>ucAddHome.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ucCardRoom.resx">
       <DependentUpon>ucCardRoom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucCardRoomFavourite.resx">
+      <DependentUpon>ucCardRoomFavourite.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucCardRoomLong.resx">
+      <DependentUpon>ucCardRoomLong.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ucFavourite.resx">
       <DependentUpon>ucFavourite.cs</DependentUpon>
@@ -320,6 +347,65 @@
       <DependentUpon>Model1.edmx</DependentUpon>
       <LastGenOutput>Model1.cs</LastGenOutput>
     </Content>
+    <None Include="Resources\icons8_save_as_32.png" />
+    <None Include="Resources\icons8_image_32.png" />
+    <None Include="Resources\icons8_washing_machineAAA_32.png" />
+    <None Include="Resources\icons8_pet_commands_summonWhite_32.png" />
+    <None Include="Resources\icons8_pet_commands_summon_32.png" />
+    <None Include="Resources\icons8_wall_mount_camera_errorWhite_32.png" />
+    <None Include="Resources\icons8_wall_mount_camera_error_32.png" />
+    <None Include="Resources\icons8_bungalowWhite_32.png" />
+    <None Include="Resources\icons8_bungalow_32.png" />
+    <None Include="Resources\icons8_parking_assistWhite_32.png" />
+    <None Include="Resources\icons8_parking_assist_32.png" />
+    <None Include="Resources\icons8_lap_poolWhite_32.png" />
+    <None Include="Resources\icons8_lap_pool_32.png" />
+    <None Include="Resources\icons8_Greek_GuardWhite_32.png" />
+    <None Include="Resources\icons8_Greek_Guard_32.png" />
+    <None Include="Resources\icons8_staircaseWhite_32.png" />
+    <None Include="Resources\icons8_staircase_32.png" />
+    <None Include="Resources\icons8_furnitureWhite_32.png" />
+    <None Include="Resources\icons8_furniture_32.png" />
+    <None Include="Resources\icons8_washing_machineWhite_32.png" />
+    <None Include="Resources\icons8_washing_machine_32.png" />
+    <None Include="Resources\icons8_balconyWhite_32.png" />
+    <None Include="Resources\icons8_balcony_32.png" />
+    <None Include="Resources\icons8_air_conditionerBlack_321.png" />
+    <None Include="Resources\icons8_air_conditionerWhite_32.png" />
+    <None Include="Resources\icons8_air_conditionerBlack_32.png" />
+    <None Include="Resources\icons8_shield_32.png" />
+    <None Include="Resources\icons8_plus_math_32.png" />
+    <None Include="Resources\icons8_mail_32.png" />
+    <None Include="Resources\icons8_more_than_32.png" />
+    <None Include="Resources\icons8_male_userWHITE_321.png" />
+    <None Include="Resources\icons8_registration_32.png" />
+    <None Include="Resources\icons8_phone_32.png" />
+    <None Include="Resources\icons8_male_userBlack_32.png" />
+    <None Include="Resources\male_user_48px.png" />
+    <None Include="Resources\icons8_male_user_16.png" />
+    <None Include="Resources\TanBinh1.jpg" />
+    <None Include="Resources\cooking1.png" />
+    <None Include="Resources\mPPEsss.gif" />
+    <None Include="Resources\affebf4a4975ac81c0f9780bd2ad09d9.gif" />
+    <None Include="Resources\icons8_heart_322.png" />
+    <None Include="Resources\icons8_heartWhite111_32.png" />
+    <None Include="Resources\icons8_heartWHITE_321.png" />
+    <None Include="Resources\icons8_heart_321.png" />
+    <None Include="Resources\icons8_searchWhite_32.png" />
+    <None Include="Resources\TanBinh.jpg" />
+    <None Include="Resources\quan2.jpg" />
+    <None Include="Resources\quan7.jpg" />
+    <None Include="Resources\thu-duc_jfbk.jpg" />
+    <None Include="Resources\phunhuan.jpg" />
+    <None Include="Resources\quan10.jpg" />
+    <None Include="Resources\binhthanh.jpg" />
+    <None Include="Resources\quan1.jpg" />
+    <None Include="Resources\icons8_user_16.png" />
+    <None Include="Resources\icons8_username322_32.png" />
+    <None Include="Resources\icons8_home_address3222222222222_32.png" />
+    <None Include="Resources\icons8_homenho_16.png" />
+    <None Include="Resources\icons8_home_address_32.png" />
+    <None Include="Resources\home.png" />
     <None Include="Resources\3612573_180121144400612203361.jpg" />
     <None Include="Resources\bathtub1_240px.png" />
     <None Include="Resources\area-icon.png" />

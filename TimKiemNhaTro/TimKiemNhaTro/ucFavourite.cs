@@ -16,5 +16,16 @@ namespace TimKiemNhaTro
         {
             InitializeComponent();
         }
+
+        private void ucFavourite_Load(object sender, EventArgs e)
+        {
+
+            var listItems = new ucCardRoomFavourite[100];
+            for (int i = 0; i < 4; i++)
+            {
+                listItems[i] = new ucCardRoomFavourite();
+                flwFavourite.Controls.Add(listItems[i]);
+            }
+        }
     }
 }

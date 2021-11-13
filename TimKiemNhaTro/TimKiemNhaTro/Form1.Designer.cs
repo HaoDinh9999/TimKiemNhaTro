@@ -37,37 +37,35 @@ namespace TimKiemNhaTro
             this.dtpRealTime = new Guna.UI.WinForms.GunaDateTimePicker();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.ptrPaint = new System.Windows.Forms.PictureBox();
-            this.gunaTileButton1 = new Guna.UI.WinForms.GunaTileButton();
             this.lblPosition = new System.Windows.Forms.Label();
-            this.btnMinimize = new Guna.UI.WinForms.GunaTileButton();
-            this.btnUsername = new Guna.UI.WinForms.GunaAdvenceButton();
-            this.btnAvatar = new Guna.UI.WinForms.GunaGradientCircleButton();
             this.pnlUC = new System.Windows.Forms.Panel();
-            this.gunaGradientPanel1 = new Guna.UI.WinForms.GunaGradientPanel();
-            this.gunaPictureBox1 = new Guna.UI.WinForms.GunaPictureBox();
-            this.pnlMove = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.btnSetting = new Guna.UI.WinForms.GunaAdvenceButton();
-            this.btnUser = new Guna.UI.WinForms.GunaAdvenceButton();
-            this.btnFavourite = new Guna.UI.WinForms.GunaAdvenceButton();
-            this.btnFindMap = new Guna.UI.WinForms.GunaAdvenceButton();
-            this.btnHome = new Guna.UI.WinForms.GunaAdvenceButton();
-            this.ucCardRoom1 = new TimKiemNhaTro.ucCardRoom();
             this.ucHome1 = new TimKiemNhaTro.ucHome();
             this.ucSetting1 = new TimKiemNhaTro.ucSetting();
             this.ucUser1 = new TimKiemNhaTro.ucUser();
             this.ucFavourite1 = new TimKiemNhaTro.ucFavourite();
             this.ucSearch1 = new TimKiemNhaTro.ucSearch();
-            this.ucCardRoom2 = new TimKiemNhaTro.ucCardRoom();
-            this.ucCardRoom3 = new TimKiemNhaTro.ucCardRoom();
+            this.btnAddHouse = new Guna.UI.WinForms.GunaAdvenceButton();
+            this.ptrPaint = new System.Windows.Forms.PictureBox();
+            this.gunaTileButton1 = new Guna.UI.WinForms.GunaTileButton();
+            this.btnMinimize = new Guna.UI.WinForms.GunaTileButton();
+            this.btnUsername = new Guna.UI.WinForms.GunaAdvenceButton();
+            this.btnAvatar = new Guna.UI.WinForms.GunaGradientCircleButton();
+            this.pnlMenu = new Guna.UI.WinForms.GunaGradientPanel();
+            this.picGif = new Guna.UI.WinForms.GunaPictureBox();
+            this.pnlMove = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.picLogo = new System.Windows.Forms.PictureBox();
+            this.btnSetting = new Guna.UI.WinForms.GunaAdvenceButton();
+            this.btnUser = new Guna.UI.WinForms.GunaAdvenceButton();
+            this.btnFavourite = new Guna.UI.WinForms.GunaAdvenceButton();
+            this.btnFindMap = new Guna.UI.WinForms.GunaAdvenceButton();
+            this.btnHome = new Guna.UI.WinForms.GunaAdvenceButton();
             this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ptrPaint)).BeginInit();
             this.pnlUC.SuspendLayout();
-            this.gunaGradientPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.gunaPictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptrPaint)).BeginInit();
+            this.pnlMenu.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picGif)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picLogo)).BeginInit();
             this.SuspendLayout();
             // 
             // gelipFrmTaskee
@@ -105,6 +103,7 @@ namespace TimKiemNhaTro
             // 
             // dtpRealTime
             // 
+            this.dtpRealTime.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.dtpRealTime.BackColor = System.Drawing.Color.Transparent;
             this.dtpRealTime.BaseColor = System.Drawing.Color.White;
             this.dtpRealTime.BorderColor = System.Drawing.Color.Silver;
@@ -129,6 +128,7 @@ namespace TimKiemNhaTro
             // 
             // panel4
             // 
+            this.panel4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.panel4.BackColor = System.Drawing.Color.WhiteSmoke;
             this.panel4.Location = new System.Drawing.Point(816, 17);
             this.panel4.Name = "panel4";
@@ -137,14 +137,126 @@ namespace TimKiemNhaTro
             // 
             // panel3
             // 
+            this.panel3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.panel3.BackColor = System.Drawing.Color.WhiteSmoke;
             this.panel3.Location = new System.Drawing.Point(758, 17);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(2, 30);
             this.panel3.TabIndex = 2;
             // 
+            // lblPosition
+            // 
+            this.lblPosition.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblPosition.AutoSize = true;
+            this.lblPosition.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lblPosition.Font = new System.Drawing.Font("Century", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPosition.Location = new System.Drawing.Point(888, 34);
+            this.lblPosition.Name = "lblPosition";
+            this.lblPosition.Size = new System.Drawing.Size(70, 15);
+            this.lblPosition.TabIndex = 2;
+            this.lblPosition.Text = "Khách hàng";
+            // 
+            // pnlUC
+            // 
+            this.pnlUC.Controls.Add(this.btnAddHouse);
+            this.pnlUC.Controls.Add(this.ucHome1);
+            this.pnlUC.Controls.Add(this.ucSetting1);
+            this.pnlUC.Controls.Add(this.ucUser1);
+            this.pnlUC.Controls.Add(this.ucFavourite1);
+            this.pnlUC.Controls.Add(this.ucSearch1);
+            this.pnlUC.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnlUC.Location = new System.Drawing.Point(297, 58);
+            this.pnlUC.Name = "pnlUC";
+            this.pnlUC.Size = new System.Drawing.Size(1128, 642);
+            this.pnlUC.TabIndex = 2;
+            // 
+            // ucHome1
+            // 
+            this.ucHome1.AutoScroll = true;
+            this.ucHome1.BackColor = System.Drawing.Color.White;
+            this.ucHome1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ucHome1.Location = new System.Drawing.Point(0, 0);
+            this.ucHome1.Margin = new System.Windows.Forms.Padding(2);
+            this.ucHome1.Name = "ucHome1";
+            this.ucHome1.Size = new System.Drawing.Size(1128, 642);
+            this.ucHome1.TabIndex = 0;
+            // 
+            // ucSetting1
+            // 
+            this.ucSetting1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ucSetting1.Location = new System.Drawing.Point(0, 0);
+            this.ucSetting1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.ucSetting1.Name = "ucSetting1";
+            this.ucSetting1.Size = new System.Drawing.Size(1128, 642);
+            this.ucSetting1.TabIndex = 4;
+            // 
+            // ucUser1
+            // 
+            this.ucUser1.BackColor = System.Drawing.Color.White;
+            this.ucUser1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ucUser1.Location = new System.Drawing.Point(0, 0);
+            this.ucUser1.Margin = new System.Windows.Forms.Padding(2);
+            this.ucUser1.Name = "ucUser1";
+            this.ucUser1.Size = new System.Drawing.Size(1128, 642);
+            this.ucUser1.TabIndex = 3;
+            // 
+            // ucFavourite1
+            // 
+            this.ucFavourite1.BackColor = System.Drawing.Color.White;
+            this.ucFavourite1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ucFavourite1.Location = new System.Drawing.Point(0, 0);
+            this.ucFavourite1.Margin = new System.Windows.Forms.Padding(2);
+            this.ucFavourite1.Name = "ucFavourite1";
+            this.ucFavourite1.Size = new System.Drawing.Size(1128, 642);
+            this.ucFavourite1.TabIndex = 2;
+            // 
+            // ucSearch1
+            // 
+            this.ucSearch1.BackColor = System.Drawing.Color.White;
+            this.ucSearch1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ucSearch1.Location = new System.Drawing.Point(0, 0);
+            this.ucSearch1.Margin = new System.Windows.Forms.Padding(2);
+            this.ucSearch1.Name = "ucSearch1";
+            this.ucSearch1.Size = new System.Drawing.Size(1128, 642);
+            this.ucSearch1.TabIndex = 1;
+            // 
+            // btnAddHouse
+            // 
+            this.btnAddHouse.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnAddHouse.AnimationHoverSpeed = 0.07F;
+            this.btnAddHouse.AnimationSpeed = 0.03F;
+            this.btnAddHouse.BackColor = System.Drawing.Color.Transparent;
+            this.btnAddHouse.BaseColor = System.Drawing.Color.LightSeaGreen;
+            this.btnAddHouse.BorderColor = System.Drawing.Color.Black;
+            this.btnAddHouse.CheckedBaseColor = System.Drawing.Color.Gray;
+            this.btnAddHouse.CheckedBorderColor = System.Drawing.Color.Black;
+            this.btnAddHouse.CheckedForeColor = System.Drawing.Color.White;
+            this.btnAddHouse.CheckedImage = global::TimKiemNhaTro.Properties.Resources.icons8_heart_322;
+            this.btnAddHouse.CheckedLineColor = System.Drawing.Color.DimGray;
+            this.btnAddHouse.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btnAddHouse.FocusedColor = System.Drawing.Color.Empty;
+            this.btnAddHouse.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnAddHouse.ForeColor = System.Drawing.Color.White;
+            this.btnAddHouse.Image = global::TimKiemNhaTro.Properties.Resources.icons8_plus_math_32;
+            this.btnAddHouse.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btnAddHouse.ImageSize = new System.Drawing.Size(30, 30);
+            this.btnAddHouse.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
+            this.btnAddHouse.Location = new System.Drawing.Point(1046, 567);
+            this.btnAddHouse.Name = "btnAddHouse";
+            this.btnAddHouse.OnHoverBaseColor = System.Drawing.Color.LightGray;
+            this.btnAddHouse.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.btnAddHouse.OnHoverForeColor = System.Drawing.Color.White;
+            this.btnAddHouse.OnHoverImage = null;
+            this.btnAddHouse.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
+            this.btnAddHouse.OnPressedColor = System.Drawing.Color.Black;
+            this.btnAddHouse.Radius = 30;
+            this.btnAddHouse.Size = new System.Drawing.Size(63, 63);
+            this.btnAddHouse.TabIndex = 18;
+            this.btnAddHouse.Click += new System.EventHandler(this.btnAddHouse_Click);
+            // 
             // ptrPaint
             // 
+            this.ptrPaint.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.ptrPaint.Image = global::TimKiemNhaTro.Properties.Resources.icons8_paint_palette_with_brush_32;
             this.ptrPaint.Location = new System.Drawing.Point(772, 16);
             this.ptrPaint.Name = "ptrPaint";
@@ -155,6 +267,7 @@ namespace TimKiemNhaTro
             // 
             // gunaTileButton1
             // 
+            this.gunaTileButton1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.gunaTileButton1.AnimationHoverSpeed = 0.07F;
             this.gunaTileButton1.AnimationSpeed = 0.03F;
             this.gunaTileButton1.BackColor = System.Drawing.Color.Transparent;
@@ -179,19 +292,9 @@ namespace TimKiemNhaTro
             this.gunaTileButton1.UseTransfarantBackground = true;
             this.gunaTileButton1.Click += new System.EventHandler(this.gunaTileButton1_Click);
             // 
-            // lblPosition
-            // 
-            this.lblPosition.AutoSize = true;
-            this.lblPosition.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.lblPosition.Font = new System.Drawing.Font("Century", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPosition.Location = new System.Drawing.Point(888, 34);
-            this.lblPosition.Name = "lblPosition";
-            this.lblPosition.Size = new System.Drawing.Size(70, 15);
-            this.lblPosition.TabIndex = 2;
-            this.lblPosition.Text = "Khách hàng";
-            // 
             // btnMinimize
             // 
+            this.btnMinimize.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnMinimize.AnimationHoverSpeed = 0.07F;
             this.btnMinimize.AnimationSpeed = 0.03F;
             this.btnMinimize.BackColor = System.Drawing.Color.Transparent;
@@ -218,6 +321,7 @@ namespace TimKiemNhaTro
             // 
             // btnUsername
             // 
+            this.btnUsername.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnUsername.AnimationHoverSpeed = 0.07F;
             this.btnUsername.AnimationSpeed = 0.03F;
             this.btnUsername.BaseColor = System.Drawing.Color.White;
@@ -249,6 +353,7 @@ namespace TimKiemNhaTro
             // 
             // btnAvatar
             // 
+            this.btnAvatar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnAvatar.AnimationHoverSpeed = 0.07F;
             this.btnAvatar.AnimationSpeed = 0.03F;
             this.btnAvatar.BaseColor1 = System.Drawing.Color.LightGray;
@@ -272,57 +377,41 @@ namespace TimKiemNhaTro
             this.btnAvatar.Size = new System.Drawing.Size(50, 47);
             this.btnAvatar.TabIndex = 3;
             // 
-            // pnlUC
+            // pnlMenu
             // 
-            this.pnlUC.Controls.Add(this.ucCardRoom3);
-            this.pnlUC.Controls.Add(this.ucCardRoom2);
-            this.pnlUC.Controls.Add(this.ucCardRoom1);
-            this.pnlUC.Controls.Add(this.ucHome1);
-            this.pnlUC.Controls.Add(this.ucSetting1);
-            this.pnlUC.Controls.Add(this.ucUser1);
-            this.pnlUC.Controls.Add(this.ucFavourite1);
-            this.pnlUC.Controls.Add(this.ucSearch1);
-            this.pnlUC.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnlUC.Location = new System.Drawing.Point(297, 58);
-            this.pnlUC.Name = "pnlUC";
-            this.pnlUC.Size = new System.Drawing.Size(1128, 642);
-            this.pnlUC.TabIndex = 2;
+            this.pnlMenu.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("pnlMenu.BackgroundImage")));
+            this.pnlMenu.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pnlMenu.Controls.Add(this.picGif);
+            this.pnlMenu.Controls.Add(this.pnlMove);
+            this.pnlMenu.Controls.Add(this.label1);
+            this.pnlMenu.Controls.Add(this.picLogo);
+            this.pnlMenu.Controls.Add(this.btnSetting);
+            this.pnlMenu.Controls.Add(this.btnUser);
+            this.pnlMenu.Controls.Add(this.btnFavourite);
+            this.pnlMenu.Controls.Add(this.btnFindMap);
+            this.pnlMenu.Controls.Add(this.btnHome);
+            this.pnlMenu.Dock = System.Windows.Forms.DockStyle.Left;
+            this.pnlMenu.GradientColor1 = System.Drawing.Color.PowderBlue;
+            this.pnlMenu.GradientColor2 = System.Drawing.Color.White;
+            this.pnlMenu.GradientColor3 = System.Drawing.Color.Snow;
+            this.pnlMenu.GradientColor4 = System.Drawing.Color.White;
+            this.pnlMenu.Location = new System.Drawing.Point(0, 0);
+            this.pnlMenu.Name = "pnlMenu";
+            this.pnlMenu.Size = new System.Drawing.Size(297, 700);
+            this.pnlMenu.TabIndex = 0;
+            this.pnlMenu.Text = "gunaGradientPanel1";
             // 
-            // gunaGradientPanel1
+            // picGif
             // 
-            this.gunaGradientPanel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("gunaGradientPanel1.BackgroundImage")));
-            this.gunaGradientPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.gunaGradientPanel1.Controls.Add(this.gunaPictureBox1);
-            this.gunaGradientPanel1.Controls.Add(this.pnlMove);
-            this.gunaGradientPanel1.Controls.Add(this.label1);
-            this.gunaGradientPanel1.Controls.Add(this.pictureBox1);
-            this.gunaGradientPanel1.Controls.Add(this.btnSetting);
-            this.gunaGradientPanel1.Controls.Add(this.btnUser);
-            this.gunaGradientPanel1.Controls.Add(this.btnFavourite);
-            this.gunaGradientPanel1.Controls.Add(this.btnFindMap);
-            this.gunaGradientPanel1.Controls.Add(this.btnHome);
-            this.gunaGradientPanel1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.gunaGradientPanel1.GradientColor1 = System.Drawing.Color.PowderBlue;
-            this.gunaGradientPanel1.GradientColor2 = System.Drawing.Color.White;
-            this.gunaGradientPanel1.GradientColor3 = System.Drawing.Color.Snow;
-            this.gunaGradientPanel1.GradientColor4 = System.Drawing.Color.White;
-            this.gunaGradientPanel1.Location = new System.Drawing.Point(0, 0);
-            this.gunaGradientPanel1.Name = "gunaGradientPanel1";
-            this.gunaGradientPanel1.Size = new System.Drawing.Size(297, 700);
-            this.gunaGradientPanel1.TabIndex = 0;
-            this.gunaGradientPanel1.Text = "gunaGradientPanel1";
-            // 
-            // gunaPictureBox1
-            // 
-            this.gunaPictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.gunaPictureBox1.BaseColor = System.Drawing.Color.White;
-            this.gunaPictureBox1.Image = global::TimKiemNhaTro.Properties.Resources._1e3e3738d81b9db4f6b6505b236a996a;
-            this.gunaPictureBox1.Location = new System.Drawing.Point(18, 464);
-            this.gunaPictureBox1.Name = "gunaPictureBox1";
-            this.gunaPictureBox1.Size = new System.Drawing.Size(242, 145);
-            this.gunaPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.gunaPictureBox1.TabIndex = 2;
-            this.gunaPictureBox1.TabStop = false;
+            this.picGif.BackColor = System.Drawing.Color.Transparent;
+            this.picGif.BaseColor = System.Drawing.Color.White;
+            this.picGif.Image = global::TimKiemNhaTro.Properties.Resources._1e3e3738d81b9db4f6b6505b236a996a;
+            this.picGif.Location = new System.Drawing.Point(18, 464);
+            this.picGif.Name = "picGif";
+            this.picGif.Size = new System.Drawing.Size(242, 145);
+            this.picGif.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picGif.TabIndex = 2;
+            this.picGif.TabStop = false;
             // 
             // pnlMove
             // 
@@ -337,22 +426,23 @@ namespace TimKiemNhaTro
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
             this.label1.Font = new System.Drawing.Font("Segoe Print", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(113, 26);
+            this.label1.Location = new System.Drawing.Point(105, 26);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(112, 28);
             this.label1.TabIndex = 5;
             this.label1.Text = "Rent-Finder";
             // 
-            // pictureBox1
+            // picLogo
             // 
-            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.Image = global::TimKiemNhaTro.Properties.Resources.slack;
-            this.pictureBox1.Location = new System.Drawing.Point(45, 17);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(65, 55);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
+            this.picLogo.BackColor = System.Drawing.Color.Transparent;
+            this.picLogo.Image = global::TimKiemNhaTro.Properties.Resources.slack;
+            this.picLogo.Location = new System.Drawing.Point(18, 17);
+            this.picLogo.Name = "picLogo";
+            this.picLogo.Size = new System.Drawing.Size(65, 55);
+            this.picLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picLogo.TabIndex = 1;
+            this.picLogo.TabStop = false;
+            this.picLogo.Click += new System.EventHandler(this.picLogo_Click);
             // 
             // btnSetting
             // 
@@ -535,84 +625,6 @@ namespace TimKiemNhaTro
             this.btnHome.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.btnHome.Click += new System.EventHandler(this.btnHome_Click);
             // 
-            // ucCardRoom1
-            // 
-            this.ucCardRoom1.BackColor = System.Drawing.Color.Transparent;
-            this.ucCardRoom1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ucCardRoom1.BackgroundImage")));
-            this.ucCardRoom1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ucCardRoom1.Location = new System.Drawing.Point(28, 45);
-            this.ucCardRoom1.Margin = new System.Windows.Forms.Padding(2);
-            this.ucCardRoom1.Name = "ucCardRoom1";
-            this.ucCardRoom1.Size = new System.Drawing.Size(345, 273);
-            this.ucCardRoom1.TabIndex = 5;
-            // 
-            // ucHome1
-            // 
-            this.ucHome1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ucHome1.Location = new System.Drawing.Point(0, 0);
-            this.ucHome1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.ucHome1.Name = "ucHome1";
-            this.ucHome1.Size = new System.Drawing.Size(1128, 642);
-            this.ucHome1.TabIndex = 0;
-            // 
-            // ucSetting1
-            // 
-            this.ucSetting1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ucSetting1.Location = new System.Drawing.Point(0, 0);
-            this.ucSetting1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.ucSetting1.Name = "ucSetting1";
-            this.ucSetting1.Size = new System.Drawing.Size(1128, 642);
-            this.ucSetting1.TabIndex = 4;
-            // 
-            // ucUser1
-            // 
-            this.ucUser1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ucUser1.Location = new System.Drawing.Point(0, 0);
-            this.ucUser1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.ucUser1.Name = "ucUser1";
-            this.ucUser1.Size = new System.Drawing.Size(1128, 642);
-            this.ucUser1.TabIndex = 3;
-            // 
-            // ucFavourite1
-            // 
-            this.ucFavourite1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ucFavourite1.Location = new System.Drawing.Point(0, 0);
-            this.ucFavourite1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.ucFavourite1.Name = "ucFavourite1";
-            this.ucFavourite1.Size = new System.Drawing.Size(1128, 642);
-            this.ucFavourite1.TabIndex = 2;
-            // 
-            // ucSearch1
-            // 
-            this.ucSearch1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ucSearch1.Location = new System.Drawing.Point(0, 0);
-            this.ucSearch1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.ucSearch1.Name = "ucSearch1";
-            this.ucSearch1.Size = new System.Drawing.Size(1128, 642);
-            this.ucSearch1.TabIndex = 1;
-            // 
-            // ucCardRoom2
-            // 
-            this.ucCardRoom2.BackColor = System.Drawing.Color.Transparent;
-            this.ucCardRoom2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ucCardRoom2.BackgroundImage")));
-            this.ucCardRoom2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ucCardRoom2.Location = new System.Drawing.Point(389, 45);
-            this.ucCardRoom2.Margin = new System.Windows.Forms.Padding(2);
-            this.ucCardRoom2.Name = "ucCardRoom2";
-            this.ucCardRoom2.Size = new System.Drawing.Size(345, 273);
-            this.ucCardRoom2.TabIndex = 6;
-            // 
-            // ucCardRoom3
-            // 
-            this.ucCardRoom3.BackColor = System.Drawing.Color.Transparent;
-            this.ucCardRoom3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ucCardRoom3.BackgroundImage")));
-            this.ucCardRoom3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ucCardRoom3.Location = new System.Drawing.Point(758, 45);
-            this.ucCardRoom3.Margin = new System.Windows.Forms.Padding(2);
-            this.ucCardRoom3.Name = "ucCardRoom3";
-            this.ucCardRoom3.Size = new System.Drawing.Size(345, 273);
-            this.ucCardRoom3.TabIndex = 7;
-            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -621,7 +633,7 @@ namespace TimKiemNhaTro
             this.ClientSize = new System.Drawing.Size(1425, 700);
             this.Controls.Add(this.pnlUC);
             this.Controls.Add(this.panel2);
-            this.Controls.Add(this.gunaGradientPanel1);
+            this.Controls.Add(this.pnlMenu);
             this.Font = new System.Drawing.Font("Script MT Bold", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "frmMain";
@@ -629,26 +641,26 @@ namespace TimKiemNhaTro
             this.Text = "Form1";
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ptrPaint)).EndInit();
             this.pnlUC.ResumeLayout(false);
-            this.gunaGradientPanel1.ResumeLayout(false);
-            this.gunaGradientPanel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.gunaPictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptrPaint)).EndInit();
+            this.pnlMenu.ResumeLayout(false);
+            this.pnlMenu.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picGif)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picLogo)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private Guna.UI.WinForms.GunaGradientPanel gunaGradientPanel1;
+        private Guna.UI.WinForms.GunaGradientPanel pnlMenu;
         private Guna.UI.WinForms.GunaAdvenceButton btnHome;
         private Guna.UI.WinForms.GunaAdvenceButton btnFindMap;
         private Guna.UI.WinForms.GunaAdvenceButton btnUser;
         private Guna.UI.WinForms.GunaAdvenceButton btnFavourite;
         private Guna.UI.WinForms.GunaAdvenceButton btnSetting;
         private Guna.UI.WinForms.GunaElipse gelipFrmTaskee;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox picLogo;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel pnlMove;
         private System.Windows.Forms.Panel panel2;
@@ -661,7 +673,7 @@ namespace TimKiemNhaTro
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Panel panel3;
         private Guna.UI.WinForms.GunaDateTimePicker dtpRealTime;
-        private Guna.UI.WinForms.GunaPictureBox gunaPictureBox1;
+        private Guna.UI.WinForms.GunaPictureBox picGif;
         private System.Windows.Forms.Panel pnlUC;
         private ucHome ucHome1;
         private ucSetting ucSetting1;
@@ -669,9 +681,7 @@ namespace TimKiemNhaTro
         private ucFavourite ucFavourite1;
         private ucSearch ucSearch1;
         private System.Windows.Forms.Label lblTitle;
-        private ucCardRoom ucCardRoom1;
-        private ucCardRoom ucCardRoom3;
-        private ucCardRoom ucCardRoom2;
+        private Guna.UI.WinForms.GunaAdvenceButton btnAddHouse;
     }
 }
 

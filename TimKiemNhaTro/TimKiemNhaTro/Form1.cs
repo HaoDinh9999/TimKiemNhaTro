@@ -28,6 +28,13 @@ namespace TimKiemNhaTro
         {
             lblTitle.Text = a;
         }
+        public void setUCBringtoFront()
+        {
+            ucDetailHome _ucD = new ucDetailHome();
+            pnlUC.Controls.Add(_ucD);
+            _ucD.Dock = DockStyle.Fill;
+            _ucD.BringToFront();
+        }
         private void btnHome_Click(object sender, EventArgs e)
         {
             setTitle(btnHome.Text);

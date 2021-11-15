@@ -34,6 +34,7 @@ namespace TimKiemNhaTro.Model
         public string phuongXa { get; set; }
         public string quanHuyen { get; set; }
         public string moTa { get; set; }
+        public Nullable<decimal> TienNha { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<AnhNha> AnhNhas { get; set; }

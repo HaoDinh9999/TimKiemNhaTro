@@ -182,6 +182,12 @@
     <Compile Include="ucCardRoomLong.Designer.cs">
       <DependentUpon>ucCardRoomLong.cs</DependentUpon>
     </Compile>
+    <Compile Include="ucDetailHome.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucDetailHome.Designer.cs">
+      <DependentUpon>ucDetailHome.cs</DependentUpon>
+    </Compile>
     <Compile Include="ucFavourite.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -236,6 +242,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ucCardRoomLong.resx">
       <DependentUpon>ucCardRoomLong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucDetailHome.resx">
+      <DependentUpon>ucDetailHome.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ucFavourite.resx">
       <DependentUpon>ucFavourite.cs</DependentUpon>
@@ -337,16 +346,16 @@
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Model\Model1.Context.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>Model1.edmx</DependentUpon>
-      <LastGenOutput>Model1.Context.cs</LastGenOutput>
-    </Content>
-    <Content Include="Model\Model1.tt">
-      <Generator>TextTemplatingFileGenerator</Generator>
-      <DependentUpon>Model1.edmx</DependentUpon>
-      <LastGenOutput>Model1.cs</LastGenOutput>
-    </Content>
+    <None Include="Resources\icons8_bathtubColor_32.png" />
+    <None Include="Resources\icons8_bedColor_32.png" />
+    <None Include="Resources\icons8_homeColor_32.png" />
+    <None Include="Resources\icons8_signpost_32.png" />
+    <None Include="Resources\icons8_us_dollar_32.png" />
+    <None Include="Resources\icons8_google_mapsCOLOR_32.png" />
+    <None Include="Resources\icons8_instagram_check_mark_32.png" />
+    <None Include="Resources\icons8_mailCOLOR_32.png" />
+    <None Include="Resources\icons8_phoneCOLOR_32.png" />
+    <None Include="Resources\icons8_male_userCOLOR_32.png" />
     <None Include="Resources\icons8_save_as_32.png" />
     <None Include="Resources\icons8_image_32.png" />
     <None Include="Resources\icons8_washing_machineAAA_32.png" />
@@ -413,6 +422,18 @@
     <None Include="Resources\icons8_sleeping_in_bed1_32.png" />
     <None Include="Resources\icons8_sleeping_in_bed_16.png" />
     <None Include="Resources\3612573_18012114440061220336.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Model\Model1.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Model1.edmx</DependentUpon>
+      <LastGenOutput>Model1.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Model\Model1.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Model1.edmx</DependentUpon>
+      <LastGenOutput>Model1.cs</LastGenOutput>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

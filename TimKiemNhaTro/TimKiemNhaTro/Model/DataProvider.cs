@@ -8,7 +8,7 @@ namespace TimKiemNhaTro.Model
 {
     public class DataProvider
     {
-        public NhaTroEntities DB;
+        public XQ0Qgj8xlHEntities DB;
         private static DataProvider _ins;
         public static DataProvider Ins
         {
@@ -25,7 +25,7 @@ namespace TimKiemNhaTro.Model
         }
         public DataProvider()
         {
-            DB = new NhaTroEntities();
+            DB = new XQ0Qgj8xlHEntities();
         }
      
     }

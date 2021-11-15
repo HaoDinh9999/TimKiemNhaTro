@@ -223,6 +223,26 @@ namespace TimKiemNhaTro.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_bathtubColor_32 {
+            get {
+                object obj = ResourceManager.GetObject("icons8_bathtubColor_32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_bedColor_32 {
+            get {
+                object obj = ResourceManager.GetObject("icons8_bedColor_32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_bungalow_32 {
             get {
                 object obj = ResourceManager.GetObject("icons8_bungalow_32", resourceCulture);
@@ -296,6 +316,16 @@ namespace TimKiemNhaTro.Properties {
         internal static System.Drawing.Bitmap icons8_google_maps_32 {
             get {
                 object obj = ResourceManager.GetObject("icons8_google_maps_32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_google_mapsCOLOR_32 {
+            get {
+                object obj = ResourceManager.GetObject("icons8_google_mapsCOLOR_32", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -413,6 +443,16 @@ namespace TimKiemNhaTro.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_homeColor_32 {
+            get {
+                object obj = ResourceManager.GetObject("icons8_homeColor_32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_homenho_16 {
             get {
                 object obj = ResourceManager.GetObject("icons8_homenho_16", resourceCulture);
@@ -426,6 +466,16 @@ namespace TimKiemNhaTro.Properties {
         internal static System.Drawing.Bitmap icons8_image_32 {
             get {
                 object obj = ResourceManager.GetObject("icons8_image_32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_instagram_check_mark_32 {
+            get {
+                object obj = ResourceManager.GetObject("icons8_instagram_check_mark_32", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -483,6 +533,16 @@ namespace TimKiemNhaTro.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_mailCOLOR_32 {
+            get {
+                object obj = ResourceManager.GetObject("icons8_mailCOLOR_32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_male_user_16 {
             get {
                 object obj = ResourceManager.GetObject("icons8_male_user_16", resourceCulture);
@@ -506,6 +566,16 @@ namespace TimKiemNhaTro.Properties {
         internal static System.Drawing.Bitmap icons8_male_userBlack_32 {
             get {
                 object obj = ResourceManager.GetObject("icons8_male_userBlack_32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_male_userCOLOR_32 {
+            get {
+                object obj = ResourceManager.GetObject("icons8_male_userCOLOR_32", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -603,6 +673,16 @@ namespace TimKiemNhaTro.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_phoneCOLOR_32 {
+            get {
+                object obj = ResourceManager.GetObject("icons8_phoneCOLOR_32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_plus_math_32 {
             get {
                 object obj = ResourceManager.GetObject("icons8_plus_math_32", resourceCulture);
@@ -693,6 +773,16 @@ namespace TimKiemNhaTro.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_signpost_32 {
+            get {
+                object obj = ResourceManager.GetObject("icons8_signpost_32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_sleeping_in_bed_16 {
             get {
                 object obj = ResourceManager.GetObject("icons8_sleeping_in_bed_16", resourceCulture);
@@ -726,6 +816,16 @@ namespace TimKiemNhaTro.Properties {
         internal static System.Drawing.Bitmap icons8_staircaseWhite_32 {
             get {
                 object obj = ResourceManager.GetObject("icons8_staircaseWhite_32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_us_dollar_32 {
+            get {
+                object obj = ResourceManager.GetObject("icons8_us_dollar_32", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

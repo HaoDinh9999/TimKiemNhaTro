@@ -40,7 +40,7 @@ namespace TimKiemNhaTro
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.rtxAddress = new System.Windows.Forms.RichTextBox();
             this.lblMoney = new Guna.UI.WinForms.GunaLabel();
-            this.lblTopTitle = new Guna.UI.WinForms.GunaButton();
+            this.lblTopType = new Guna.UI.WinForms.GunaButton();
             this.gunaPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -165,32 +165,32 @@ namespace TimKiemNhaTro
             this.lblMoney.TabIndex = 0;
             this.lblMoney.Text = "2.000.000 VNĐ";
             // 
-            // lblTopTitle
+            // lblTopType
             // 
-            this.lblTopTitle.AnimationHoverSpeed = 0.07F;
-            this.lblTopTitle.AnimationSpeed = 0.03F;
-            this.lblTopTitle.BackColor = System.Drawing.Color.Transparent;
-            this.lblTopTitle.BaseColor = System.Drawing.Color.LightSeaGreen;
-            this.lblTopTitle.BorderColor = System.Drawing.Color.Transparent;
-            this.lblTopTitle.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.lblTopTitle.FocusedColor = System.Drawing.Color.Empty;
-            this.lblTopTitle.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTopTitle.ForeColor = System.Drawing.Color.White;
-            this.lblTopTitle.Image = null;
-            this.lblTopTitle.ImageSize = new System.Drawing.Size(20, 20);
-            this.lblTopTitle.Location = new System.Drawing.Point(11, 11);
-            this.lblTopTitle.Margin = new System.Windows.Forms.Padding(2);
-            this.lblTopTitle.Name = "lblTopTitle";
-            this.lblTopTitle.OnHoverBaseColor = System.Drawing.Color.LightSeaGreen;
-            this.lblTopTitle.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.lblTopTitle.OnHoverForeColor = System.Drawing.Color.White;
-            this.lblTopTitle.OnHoverImage = null;
-            this.lblTopTitle.OnPressedColor = System.Drawing.Color.Black;
-            this.lblTopTitle.Radius = 10;
-            this.lblTopTitle.Size = new System.Drawing.Size(75, 34);
-            this.lblTopTitle.TabIndex = 3;
-            this.lblTopTitle.Text = "Căn hộ";
-            this.lblTopTitle.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.lblTopType.AnimationHoverSpeed = 0.07F;
+            this.lblTopType.AnimationSpeed = 0.03F;
+            this.lblTopType.BackColor = System.Drawing.Color.Transparent;
+            this.lblTopType.BaseColor = System.Drawing.Color.LightSeaGreen;
+            this.lblTopType.BorderColor = System.Drawing.Color.Transparent;
+            this.lblTopType.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.lblTopType.FocusedColor = System.Drawing.Color.Empty;
+            this.lblTopType.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTopType.ForeColor = System.Drawing.Color.White;
+            this.lblTopType.Image = null;
+            this.lblTopType.ImageSize = new System.Drawing.Size(20, 20);
+            this.lblTopType.Location = new System.Drawing.Point(11, 11);
+            this.lblTopType.Margin = new System.Windows.Forms.Padding(2);
+            this.lblTopType.Name = "lblTopType";
+            this.lblTopType.OnHoverBaseColor = System.Drawing.Color.LightSeaGreen;
+            this.lblTopType.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.lblTopType.OnHoverForeColor = System.Drawing.Color.White;
+            this.lblTopType.OnHoverImage = null;
+            this.lblTopType.OnPressedColor = System.Drawing.Color.Black;
+            this.lblTopType.Radius = 10;
+            this.lblTopType.Size = new System.Drawing.Size(94, 34);
+            this.lblTopType.TabIndex = 3;
+            this.lblTopType.Text = "Căn hộ";
+            this.lblTopType.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // ucCardRoom
             // 
@@ -199,11 +199,13 @@ namespace TimKiemNhaTro
             this.BackColor = System.Drawing.Color.Transparent;
             this.BackgroundImage = global::TimKiemNhaTro.Properties.Resources._3612573_18012114440061220336;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.Controls.Add(this.lblTopTitle);
+            this.Controls.Add(this.lblTopType);
             this.Controls.Add(this.gunaPanel1);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "ucCardRoom";
             this.Size = new System.Drawing.Size(307, 229);
+            this.Load += new System.EventHandler(this.ucCardRoom_Load);
+            this.Click += new System.EventHandler(this.ucCardRoom_Click);
             this.gunaPanel1.ResumeLayout(false);
             this.gunaPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
@@ -225,6 +227,6 @@ namespace TimKiemNhaTro
         private System.Windows.Forms.Label lblCountBedRoom;
         private System.Windows.Forms.Label lblCountMeter;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private Guna.UI.WinForms.GunaButton lblTopTitle;
+        private Guna.UI.WinForms.GunaButton lblTopType;
     }
 }

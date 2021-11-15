@@ -54,8 +54,8 @@
           <Property Name="maNguoiDung" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="tenDangNhap" Type="varchar" MaxLength="128" Nullable="false" />
           <Property Name="matKhau" Type="varchar" MaxLength="128" Nullable="false" />
-          <Property Name="hoTen" Type="varchar" MaxLength="128" Nullable="false" />
-          <Property Name="urlDaiDien" Type="varchar" MaxLength="128" Nullable="false" />
+          <Property Name="hoTen" Type="varchar" MaxLength="128" />
+          <Property Name="urlDaiDien" Type="varchar" MaxLength="128" />
         </EntityType>
         <EntityType Name="Nha">
           <Key>
@@ -319,8 +319,8 @@
           <Property Name="maNguoiDung" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="tenDangNhap" Type="String" Nullable="false" MaxLength="128" FixedLength="false" Unicode="false" />
           <Property Name="matKhau" Type="String" Nullable="false" MaxLength="128" FixedLength="false" Unicode="false" />
-          <Property Name="hoTen" Type="String" Nullable="false" MaxLength="128" FixedLength="false" Unicode="false" />
-          <Property Name="urlDaiDien" Type="String" Nullable="false" MaxLength="128" FixedLength="false" Unicode="false" />
+          <Property Name="hoTen" Type="String" MaxLength="128" FixedLength="false" Unicode="false" />
+          <Property Name="urlDaiDien" Type="String" MaxLength="128" FixedLength="false" Unicode="false" />
           <NavigationProperty Name="DanhGias" Relationship="XQ0Qgj8xlHModel.maNguoiDanhGia" FromRole="NguoiDung" ToRole="DanhGia" />
           <NavigationProperty Name="Nhas" Relationship="XQ0Qgj8xlHModel.maNguoiDung" FromRole="NguoiDung" ToRole="Nha" />
           <NavigationProperty Name="YeuThiches" Relationship="XQ0Qgj8xlHModel.maNguoiThich" FromRole="NguoiDung" ToRole="YeuThich" />
@@ -455,7 +455,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-      </Schema>
+        </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
     <edmx:Mappings>

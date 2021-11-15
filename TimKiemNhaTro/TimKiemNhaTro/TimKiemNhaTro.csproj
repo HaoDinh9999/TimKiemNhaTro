@@ -445,6 +445,11 @@
     <None Include="Resources\3612573_18012114440061220336.jpg" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\undraw_Welcome_re_h3d9.png" />
+    <None Include="Resources\cancel.png" />
+    <None Include="Resources\undraw_Login_re_4vu2.png" />
+  </ItemGroup>
+  <ItemGroup>
     <Content Include="Model\Model1.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>Model1.edmx</DependentUpon>
@@ -455,9 +460,6 @@
       <DependentUpon>Model1.edmx</DependentUpon>
       <LastGenOutput>Model1.cs</LastGenOutput>
     </Content>
-    <None Include="Resources\undraw_Welcome_re_h3d9.png" />
-    <None Include="Resources\cancel.png" />
-    <None Include="Resources\undraw_Login_re_4vu2.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

@@ -13,10 +13,10 @@ namespace TimKiemNhaTro.Model
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class XQ0Qgj8xlHEntities : DbContext
+    public partial class NhaTroEntities : DbContext
     {
-        public XQ0Qgj8xlHEntities()
-            : base("name=XQ0Qgj8xlHEntities")
+        public NhaTroEntities()
+            : base("name=NhaTroEntities")
         {
         }
     

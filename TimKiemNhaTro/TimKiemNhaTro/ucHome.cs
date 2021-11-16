@@ -27,9 +27,8 @@ namespace TimKiemNhaTro
             // restore AutoScroll
             flwCapNhatGanDay.AutoScroll = true;
 
-            var listItems = new ucCardRoom[100];
+            var listItems = new ucCardRoom[50];
             var listNha = DataProvider.Ins.DB.Nhas;
-            var listLoaiNha = DataProvider.Ins.DB.LoaiChoThues;
             foreach(var item in listNha)
             {
 

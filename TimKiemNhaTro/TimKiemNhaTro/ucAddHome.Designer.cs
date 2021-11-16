@@ -65,7 +65,7 @@ namespace TimKiemNhaTro
             this.label16 = new System.Windows.Forms.Label();
             this.txtMoTa = new Guna.UI.WinForms.GunaTextBox();
             this.gunaAdvenceButton15 = new Guna.UI.WinForms.GunaAdvenceButton();
-            this.gunaAdvenceButton14 = new Guna.UI.WinForms.GunaAdvenceButton();
+            this.btnPic = new Guna.UI.WinForms.GunaAdvenceButton();
             this.btnThuCung = new Guna.UI.WinForms.GunaAdvenceTileButton();
             this.btnCCTV = new Guna.UI.WinForms.GunaAdvenceTileButton();
             this.btnSanThuong = new Guna.UI.WinForms.GunaAdvenceTileButton();
@@ -79,6 +79,7 @@ namespace TimKiemNhaTro
             this.btnDieuHoa = new Guna.UI.WinForms.GunaAdvenceTileButton();
             this.gunaAdvenceButton1 = new Guna.UI.WinForms.GunaAdvenceButton();
             this.gunaAdvenceButton3 = new Guna.UI.WinForms.GunaAdvenceButton();
+            this.pnlPic = new System.Windows.Forms.Panel();
             this.SuspendLayout();
             // 
             // label1
@@ -137,12 +138,15 @@ namespace TimKiemNhaTro
             this.cbxQuanHuyen.BackColor = System.Drawing.Color.Transparent;
             this.cbxQuanHuyen.BaseColor = System.Drawing.Color.White;
             this.cbxQuanHuyen.BorderColor = System.Drawing.Color.LightSeaGreen;
+            this.cbxQuanHuyen.Cursor = System.Windows.Forms.Cursors.Default;
             this.cbxQuanHuyen.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cbxQuanHuyen.DropDownHeight = 100;
             this.cbxQuanHuyen.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbxQuanHuyen.FocusedColor = System.Drawing.Color.LightSeaGreen;
             this.cbxQuanHuyen.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cbxQuanHuyen.ForeColor = System.Drawing.Color.Black;
             this.cbxQuanHuyen.FormattingEnabled = true;
+            this.cbxQuanHuyen.IntegralHeight = false;
             this.cbxQuanHuyen.Location = new System.Drawing.Point(106, 98);
             this.cbxQuanHuyen.Name = "cbxQuanHuyen";
             this.cbxQuanHuyen.OnHoverItemBaseColor = System.Drawing.Color.LightSeaGreen;
@@ -150,6 +154,7 @@ namespace TimKiemNhaTro
             this.cbxQuanHuyen.Radius = 10;
             this.cbxQuanHuyen.Size = new System.Drawing.Size(227, 34);
             this.cbxQuanHuyen.TabIndex = 28;
+            this.cbxQuanHuyen.SelectedIndexChanged += new System.EventHandler(this.cbxQuanHuyen_SelectedIndexChanged);
             // 
             // label10
             // 
@@ -758,7 +763,7 @@ namespace TimKiemNhaTro
             this.label16.AutoSize = true;
             this.label16.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label16.ForeColor = System.Drawing.Color.Black;
-            this.label16.Location = new System.Drawing.Point(102, 894);
+            this.label16.Location = new System.Drawing.Point(104, 1015);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(55, 19);
             this.label16.TabIndex = 71;
@@ -774,7 +779,7 @@ namespace TimKiemNhaTro
             this.txtMoTa.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.txtMoTa.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.txtMoTa.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMoTa.Location = new System.Drawing.Point(110, 926);
+            this.txtMoTa.Location = new System.Drawing.Point(112, 1047);
             this.txtMoTa.Name = "txtMoTa";
             this.txtMoTa.PasswordChar = '\0';
             this.txtMoTa.Radius = 10;
@@ -803,7 +808,7 @@ namespace TimKiemNhaTro
             this.gunaAdvenceButton15.Image = null;
             this.gunaAdvenceButton15.ImageSize = new System.Drawing.Size(20, 20);
             this.gunaAdvenceButton15.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.gunaAdvenceButton15.Location = new System.Drawing.Point(405, 1083);
+            this.gunaAdvenceButton15.Location = new System.Drawing.Point(407, 1204);
             this.gunaAdvenceButton15.Name = "gunaAdvenceButton15";
             this.gunaAdvenceButton15.OnHoverBaseColor = System.Drawing.Color.Silver;
             this.gunaAdvenceButton15.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -817,37 +822,38 @@ namespace TimKiemNhaTro
             this.gunaAdvenceButton15.Text = "Đăng tin";
             this.gunaAdvenceButton15.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // gunaAdvenceButton14
+            // btnPic
             // 
-            this.gunaAdvenceButton14.AnimationHoverSpeed = 0.07F;
-            this.gunaAdvenceButton14.AnimationSpeed = 0.03F;
-            this.gunaAdvenceButton14.BackColor = System.Drawing.Color.Transparent;
-            this.gunaAdvenceButton14.BaseColor = System.Drawing.Color.LightSeaGreen;
-            this.gunaAdvenceButton14.BorderColor = System.Drawing.Color.Black;
-            this.gunaAdvenceButton14.CheckedBaseColor = System.Drawing.Color.Gray;
-            this.gunaAdvenceButton14.CheckedBorderColor = System.Drawing.Color.Black;
-            this.gunaAdvenceButton14.CheckedForeColor = System.Drawing.Color.White;
-            this.gunaAdvenceButton14.CheckedImage = ((System.Drawing.Image)(resources.GetObject("gunaAdvenceButton14.CheckedImage")));
-            this.gunaAdvenceButton14.CheckedLineColor = System.Drawing.Color.DimGray;
-            this.gunaAdvenceButton14.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.gunaAdvenceButton14.FocusedColor = System.Drawing.Color.Empty;
-            this.gunaAdvenceButton14.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaAdvenceButton14.ForeColor = System.Drawing.Color.White;
-            this.gunaAdvenceButton14.Image = global::TimKiemNhaTro.Properties.Resources.icons8_image_32;
-            this.gunaAdvenceButton14.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.gunaAdvenceButton14.ImageSize = new System.Drawing.Size(20, 20);
-            this.gunaAdvenceButton14.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.gunaAdvenceButton14.Location = new System.Drawing.Point(104, 802);
-            this.gunaAdvenceButton14.Name = "gunaAdvenceButton14";
-            this.gunaAdvenceButton14.OnHoverBaseColor = System.Drawing.Color.DarkGray;
-            this.gunaAdvenceButton14.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.gunaAdvenceButton14.OnHoverForeColor = System.Drawing.Color.White;
-            this.gunaAdvenceButton14.OnHoverImage = null;
-            this.gunaAdvenceButton14.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.gunaAdvenceButton14.OnPressedColor = System.Drawing.Color.Black;
-            this.gunaAdvenceButton14.Radius = 5;
-            this.gunaAdvenceButton14.Size = new System.Drawing.Size(40, 34);
-            this.gunaAdvenceButton14.TabIndex = 70;
+            this.btnPic.AnimationHoverSpeed = 0.07F;
+            this.btnPic.AnimationSpeed = 0.03F;
+            this.btnPic.BackColor = System.Drawing.Color.Transparent;
+            this.btnPic.BaseColor = System.Drawing.Color.LightSeaGreen;
+            this.btnPic.BorderColor = System.Drawing.Color.Black;
+            this.btnPic.CheckedBaseColor = System.Drawing.Color.Gray;
+            this.btnPic.CheckedBorderColor = System.Drawing.Color.Black;
+            this.btnPic.CheckedForeColor = System.Drawing.Color.White;
+            this.btnPic.CheckedImage = ((System.Drawing.Image)(resources.GetObject("btnPic.CheckedImage")));
+            this.btnPic.CheckedLineColor = System.Drawing.Color.DimGray;
+            this.btnPic.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btnPic.FocusedColor = System.Drawing.Color.Empty;
+            this.btnPic.Font = new System.Drawing.Font("Segoe UI Semibold", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnPic.ForeColor = System.Drawing.Color.White;
+            this.btnPic.Image = global::TimKiemNhaTro.Properties.Resources.icons8_image_32;
+            this.btnPic.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btnPic.ImageSize = new System.Drawing.Size(20, 20);
+            this.btnPic.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
+            this.btnPic.Location = new System.Drawing.Point(190, 780);
+            this.btnPic.Name = "btnPic";
+            this.btnPic.OnHoverBaseColor = System.Drawing.Color.DarkGray;
+            this.btnPic.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.btnPic.OnHoverForeColor = System.Drawing.Color.White;
+            this.btnPic.OnHoverImage = null;
+            this.btnPic.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
+            this.btnPic.OnPressedColor = System.Drawing.Color.Black;
+            this.btnPic.Radius = 5;
+            this.btnPic.Size = new System.Drawing.Size(40, 34);
+            this.btnPic.TabIndex = 70;
+            this.btnPic.Click += new System.EventHandler(this.btnPic_Click);
             // 
             // btnThuCung
             // 
@@ -1299,16 +1305,24 @@ namespace TimKiemNhaTro
             this.gunaAdvenceButton3.Size = new System.Drawing.Size(61, 52);
             this.gunaAdvenceButton3.TabIndex = 24;
             // 
+            // pnlPic
+            // 
+            this.pnlPic.Location = new System.Drawing.Point(110, 820);
+            this.pnlPic.Name = "pnlPic";
+            this.pnlPic.Size = new System.Drawing.Size(787, 150);
+            this.pnlPic.TabIndex = 74;
+            // 
             // ucAddHome
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.White;
+            this.Controls.Add(this.pnlPic);
             this.Controls.Add(this.gunaAdvenceButton15);
             this.Controls.Add(this.txtMoTa);
             this.Controls.Add(this.label16);
-            this.Controls.Add(this.gunaAdvenceButton14);
+            this.Controls.Add(this.btnPic);
             this.Controls.Add(this.label15);
             this.Controls.Add(this.btnThuCung);
             this.Controls.Add(this.btnCCTV);
@@ -1355,7 +1369,7 @@ namespace TimKiemNhaTro
             this.Controls.Add(this.label1);
             this.Controls.Add(this.gunaAdvenceButton3);
             this.Name = "ucAddHome";
-            this.Size = new System.Drawing.Size(1072, 1163);
+            this.Size = new System.Drawing.Size(1072, 1373);
             this.Load += new System.EventHandler(this.ucAddHome_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -1409,9 +1423,10 @@ namespace TimKiemNhaTro
         private Guna.UI.WinForms.GunaAdvenceTileButton btnCCTV;
         private Guna.UI.WinForms.GunaAdvenceTileButton btnThuCung;
         private System.Windows.Forms.Label label15;
-        private Guna.UI.WinForms.GunaAdvenceButton gunaAdvenceButton14;
+        private Guna.UI.WinForms.GunaAdvenceButton btnPic;
         private System.Windows.Forms.Label label16;
         private Guna.UI.WinForms.GunaTextBox txtMoTa;
         private Guna.UI.WinForms.GunaAdvenceButton gunaAdvenceButton15;
+        private System.Windows.Forms.Panel pnlPic;
     }
 }

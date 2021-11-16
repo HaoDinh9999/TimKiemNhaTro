@@ -16,6 +16,9 @@ namespace TimKiemNhaTro
         public frmMain()
         {
             InitializeComponent();
+            ucHome1.Show();
+            ucHome1.BringToFront();
+            btnAddHouse.BringToFront();
         }
         private void moveImageBox(object sender)
         {
@@ -28,12 +31,14 @@ namespace TimKiemNhaTro
         {
             lblTitle.Text = a;
         }
-        public void setUCBringtoFront()
+        public void setUCDetailBringtoFront()
         {
-            ucDetailHome _ucD = new ucDetailHome();
-            pnlUC.Controls.Add(_ucD);
-            _ucD.Dock = DockStyle.Fill;
-            _ucD.BringToFront();
+            ucDetailHome1.Show();
+            ucDetailHome1.BringToFront();
+        }
+        public ucDetailHome getDetailHome()
+        {
+            return ucDetailHome1;
         }
         private void btnHome_Click(object sender, EventArgs e)
         {

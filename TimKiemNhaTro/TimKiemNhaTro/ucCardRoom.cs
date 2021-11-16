@@ -102,9 +102,10 @@ namespace TimKiemNhaTro
 
         private void ucCardRoom_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("showw");
             //frmMain frmM = new frmMain();
-            frmM.setUCBringtoFront();
+            frmM.getDetailHome().setIdMaNha(Int32.Parse(ID));
+            frmM.setUCDetailBringtoFront();
+
         }
     }
 }

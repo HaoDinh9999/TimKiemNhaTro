@@ -97,7 +97,7 @@ namespace TimKiemNhaTro
             this.lblTitle.Font = new System.Drawing.Font("Tahoma", 13.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTitle.Location = new System.Drawing.Point(24, 14);
             this.lblTitle.Name = "lblTitle";
-            this.lblTitle.Size = new System.Drawing.Size(105, 23);
+            this.lblTitle.Size = new System.Drawing.Size(132, 29);
             this.lblTitle.TabIndex = 10;
             this.lblTitle.Text = "Trang chủ";
             // 
@@ -190,7 +190,7 @@ namespace TimKiemNhaTro
             this.lblPosition.Font = new System.Drawing.Font("Century", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPosition.Location = new System.Drawing.Point(893, 34);
             this.lblPosition.Name = "lblPosition";
-            this.lblPosition.Size = new System.Drawing.Size(70, 15);
+            this.lblPosition.Size = new System.Drawing.Size(89, 17);
             this.lblPosition.TabIndex = 2;
             this.lblPosition.Text = "Khách hàng";
             // 
@@ -342,7 +342,7 @@ namespace TimKiemNhaTro
             // 
             this.ucSetting1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.ucSetting1.Location = new System.Drawing.Point(0, 0);
-            this.ucSetting1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.ucSetting1.Margin = new System.Windows.Forms.Padding(2);
             this.ucSetting1.Name = "ucSetting1";
             this.ucSetting1.Size = new System.Drawing.Size(1133, 642);
             this.ucSetting1.TabIndex = 4;
@@ -428,7 +428,7 @@ namespace TimKiemNhaTro
             this.label1.Font = new System.Drawing.Font("Segoe Print", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(105, 26);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(112, 28);
+            this.label1.Size = new System.Drawing.Size(139, 35);
             this.label1.TabIndex = 5;
             this.label1.Text = "Rent-Finder";
             // 
@@ -627,7 +627,7 @@ namespace TimKiemNhaTro
             // 
             // frmMain
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1430, 700);

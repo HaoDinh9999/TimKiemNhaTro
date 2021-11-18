@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using TimKiemNhaTro.Model;
 
 namespace TimKiemNhaTro
 {
@@ -15,6 +16,7 @@ namespace TimKiemNhaTro
         public ucDetailHome()
         {
             InitializeComponent();
+            DataProvider.Ins.DB.DanhGias.Where(x => x.maNguoiDung == 1).SingleOrDefault();
         }
     }
 }

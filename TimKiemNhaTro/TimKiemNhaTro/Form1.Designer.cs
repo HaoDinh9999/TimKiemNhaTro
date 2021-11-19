@@ -44,13 +44,13 @@ namespace TimKiemNhaTro
             this.btnUsername = new Guna.UI.WinForms.GunaAdvenceButton();
             this.btnAvatar = new Guna.UI.WinForms.GunaGradientCircleButton();
             this.pnlUC = new System.Windows.Forms.Panel();
-            this.ucDetailHome1 = new TimKiemNhaTro.ucDetailHome();
             this.btnAddHouse = new Guna.UI.WinForms.GunaAdvenceButton();
             this.ucHome1 = new TimKiemNhaTro.ucHome();
             this.ucSetting1 = new TimKiemNhaTro.ucSetting();
             this.ucUser1 = new TimKiemNhaTro.ucUser();
             this.ucFavourite1 = new TimKiemNhaTro.ucFavourite();
             this.ucSearch1 = new TimKiemNhaTro.ucSearch();
+            this.ucDetailHome1 = new TimKiemNhaTro.ucDetailHome();
             this.pnlMenu = new Guna.UI.WinForms.GunaGradientPanel();
             this.picGif = new Guna.UI.WinForms.GunaPictureBox();
             this.pnlMove = new System.Windows.Forms.Panel();
@@ -89,7 +89,7 @@ namespace TimKiemNhaTro
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(297, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(1475, 58);
+            this.panel2.Size = new System.Drawing.Size(1510, 58);
             this.panel2.TabIndex = 1;
             // 
             // lblTitle
@@ -113,7 +113,7 @@ namespace TimKiemNhaTro
             this.dtpRealTime.FocusedColor = System.Drawing.Color.White;
             this.dtpRealTime.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.dtpRealTime.ForeColor = System.Drawing.Color.Black;
-            this.dtpRealTime.Location = new System.Drawing.Point(887, 10);
+            this.dtpRealTime.Location = new System.Drawing.Point(922, 10);
             this.dtpRealTime.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.dtpRealTime.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.dtpRealTime.Name = "dtpRealTime";
@@ -131,7 +131,7 @@ namespace TimKiemNhaTro
             // 
             this.panel4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.panel4.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.panel4.Location = new System.Drawing.Point(1163, 17);
+            this.panel4.Location = new System.Drawing.Point(1198, 17);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(2, 30);
             this.panel4.TabIndex = 2;
@@ -140,7 +140,7 @@ namespace TimKiemNhaTro
             // 
             this.panel3.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.panel3.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.panel3.Location = new System.Drawing.Point(1105, 17);
+            this.panel3.Location = new System.Drawing.Point(1140, 17);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(2, 30);
             this.panel3.TabIndex = 2;
@@ -149,7 +149,7 @@ namespace TimKiemNhaTro
             // 
             this.ptrPaint.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.ptrPaint.Image = global::TimKiemNhaTro.Properties.Resources.icons8_paint_palette_with_brush_32;
-            this.ptrPaint.Location = new System.Drawing.Point(1119, 16);
+            this.ptrPaint.Location = new System.Drawing.Point(1154, 16);
             this.ptrPaint.Name = "ptrPaint";
             this.ptrPaint.Size = new System.Drawing.Size(32, 32);
             this.ptrPaint.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -171,7 +171,7 @@ namespace TimKiemNhaTro
             this.gunaTileButton1.ForeColor = System.Drawing.Color.Transparent;
             this.gunaTileButton1.Image = global::TimKiemNhaTro.Properties.Resources.icons8_macos_closedam_32;
             this.gunaTileButton1.ImageSize = new System.Drawing.Size(32, 32);
-            this.gunaTileButton1.Location = new System.Drawing.Point(1423, 8);
+            this.gunaTileButton1.Location = new System.Drawing.Point(1458, 8);
             this.gunaTileButton1.Name = "gunaTileButton1";
             this.gunaTileButton1.OnHoverBaseColor = System.Drawing.Color.DimGray;
             this.gunaTileButton1.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -189,7 +189,7 @@ namespace TimKiemNhaTro
             this.lblPosition.AutoSize = true;
             this.lblPosition.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lblPosition.Font = new System.Drawing.Font("Century", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPosition.Location = new System.Drawing.Point(1235, 34);
+            this.lblPosition.Location = new System.Drawing.Point(1270, 34);
             this.lblPosition.Name = "lblPosition";
             this.lblPosition.Size = new System.Drawing.Size(89, 17);
             this.lblPosition.TabIndex = 2;
@@ -210,7 +210,7 @@ namespace TimKiemNhaTro
             this.btnMinimize.ForeColor = System.Drawing.Color.Transparent;
             this.btnMinimize.Image = global::TimKiemNhaTro.Properties.Resources.icons8_macos_minimize_32;
             this.btnMinimize.ImageSize = new System.Drawing.Size(32, 32);
-            this.btnMinimize.Location = new System.Drawing.Point(1381, 8);
+            this.btnMinimize.Location = new System.Drawing.Point(1416, 8);
             this.btnMinimize.Name = "btnMinimize";
             this.btnMinimize.OnHoverBaseColor = System.Drawing.Color.DimGray;
             this.btnMinimize.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -242,7 +242,7 @@ namespace TimKiemNhaTro
             this.btnUsername.Image = null;
             this.btnUsername.ImageSize = new System.Drawing.Size(20, 20);
             this.btnUsername.LineColor = System.Drawing.Color.White;
-            this.btnUsername.Location = new System.Drawing.Point(1228, 3);
+            this.btnUsername.Location = new System.Drawing.Point(1263, 3);
             this.btnUsername.Name = "btnUsername";
             this.btnUsername.OnHoverBaseColor = System.Drawing.Color.White;
             this.btnUsername.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -269,7 +269,7 @@ namespace TimKiemNhaTro
             this.btnAvatar.ForeColor = System.Drawing.Color.White;
             this.btnAvatar.Image = global::TimKiemNhaTro.Properties.Resources.cooking;
             this.btnAvatar.ImageSize = new System.Drawing.Size(35, 35);
-            this.btnAvatar.Location = new System.Drawing.Point(1172, 8);
+            this.btnAvatar.Location = new System.Drawing.Point(1207, 8);
             this.btnAvatar.Name = "btnAvatar";
             this.btnAvatar.OnHoverBaseColor1 = System.Drawing.Color.White;
             this.btnAvatar.OnHoverBaseColor2 = System.Drawing.Color.CornflowerBlue;
@@ -292,20 +292,8 @@ namespace TimKiemNhaTro
             this.pnlUC.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlUC.Location = new System.Drawing.Point(297, 58);
             this.pnlUC.Name = "pnlUC";
-            this.pnlUC.Size = new System.Drawing.Size(1475, 642);
+            this.pnlUC.Size = new System.Drawing.Size(1510, 795);
             this.pnlUC.TabIndex = 2;
-            // 
-            // ucDetailHome1
-            // 
-            this.ucDetailHome1.AutoScroll = true;
-            this.ucDetailHome1.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.ucDetailHome1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ucDetailHome1.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.ucDetailHome1.Location = new System.Drawing.Point(0, 0);
-            this.ucDetailHome1.Margin = new System.Windows.Forms.Padding(4);
-            this.ucDetailHome1.Name = "ucDetailHome1";
-            this.ucDetailHome1.Size = new System.Drawing.Size(1475, 642);
-            this.ucDetailHome1.TabIndex = 19;
             // 
             // btnAddHouse
             // 
@@ -328,7 +316,7 @@ namespace TimKiemNhaTro
             this.btnAddHouse.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.btnAddHouse.ImageSize = new System.Drawing.Size(30, 30);
             this.btnAddHouse.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.btnAddHouse.Location = new System.Drawing.Point(1393, 567);
+            this.btnAddHouse.Location = new System.Drawing.Point(1416, 720);
             this.btnAddHouse.Name = "btnAddHouse";
             this.btnAddHouse.OnHoverBaseColor = System.Drawing.Color.LightGray;
             this.btnAddHouse.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -349,7 +337,7 @@ namespace TimKiemNhaTro
             this.ucHome1.Location = new System.Drawing.Point(0, 0);
             this.ucHome1.Margin = new System.Windows.Forms.Padding(2);
             this.ucHome1.Name = "ucHome1";
-            this.ucHome1.Size = new System.Drawing.Size(1475, 642);
+            this.ucHome1.Size = new System.Drawing.Size(1510, 795);
             this.ucHome1.TabIndex = 0;
             // 
             // ucSetting1
@@ -358,7 +346,7 @@ namespace TimKiemNhaTro
             this.ucSetting1.Location = new System.Drawing.Point(0, 0);
             this.ucSetting1.Margin = new System.Windows.Forms.Padding(2);
             this.ucSetting1.Name = "ucSetting1";
-            this.ucSetting1.Size = new System.Drawing.Size(1475, 642);
+            this.ucSetting1.Size = new System.Drawing.Size(1510, 795);
             this.ucSetting1.TabIndex = 4;
             // 
             // ucUser1
@@ -368,7 +356,7 @@ namespace TimKiemNhaTro
             this.ucUser1.Location = new System.Drawing.Point(0, 0);
             this.ucUser1.Margin = new System.Windows.Forms.Padding(2);
             this.ucUser1.Name = "ucUser1";
-            this.ucUser1.Size = new System.Drawing.Size(1475, 642);
+            this.ucUser1.Size = new System.Drawing.Size(1510, 795);
             this.ucUser1.TabIndex = 3;
             // 
             // ucFavourite1
@@ -378,7 +366,7 @@ namespace TimKiemNhaTro
             this.ucFavourite1.Location = new System.Drawing.Point(0, 0);
             this.ucFavourite1.Margin = new System.Windows.Forms.Padding(2);
             this.ucFavourite1.Name = "ucFavourite1";
-            this.ucFavourite1.Size = new System.Drawing.Size(1475, 642);
+            this.ucFavourite1.Size = new System.Drawing.Size(1510, 795);
             this.ucFavourite1.TabIndex = 2;
             // 
             // ucSearch1
@@ -388,8 +376,20 @@ namespace TimKiemNhaTro
             this.ucSearch1.Location = new System.Drawing.Point(0, 0);
             this.ucSearch1.Margin = new System.Windows.Forms.Padding(2);
             this.ucSearch1.Name = "ucSearch1";
-            this.ucSearch1.Size = new System.Drawing.Size(1475, 642);
+            this.ucSearch1.Size = new System.Drawing.Size(1510, 795);
             this.ucSearch1.TabIndex = 1;
+            // 
+            // ucDetailHome1
+            // 
+            this.ucDetailHome1.AutoScroll = true;
+            this.ucDetailHome1.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.ucDetailHome1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.ucDetailHome1.ForeColor = System.Drawing.Color.DarkSlateGray;
+            this.ucDetailHome1.Location = new System.Drawing.Point(0, 0);
+            this.ucDetailHome1.Margin = new System.Windows.Forms.Padding(4);
+            this.ucDetailHome1.Name = "ucDetailHome1";
+            this.ucDetailHome1.Size = new System.Drawing.Size(1510, 795);
+            this.ucDetailHome1.TabIndex = 19;
             // 
             // pnlMenu
             // 
@@ -411,7 +411,7 @@ namespace TimKiemNhaTro
             this.pnlMenu.GradientColor4 = System.Drawing.Color.White;
             this.pnlMenu.Location = new System.Drawing.Point(0, 0);
             this.pnlMenu.Name = "pnlMenu";
-            this.pnlMenu.Size = new System.Drawing.Size(297, 700);
+            this.pnlMenu.Size = new System.Drawing.Size(297, 853);
             this.pnlMenu.TabIndex = 0;
             this.pnlMenu.Text = "gunaGradientPanel1";
             // 
@@ -644,7 +644,7 @@ namespace TimKiemNhaTro
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.ClientSize = new System.Drawing.Size(1772, 700);
+            this.ClientSize = new System.Drawing.Size(1807, 853);
             this.Controls.Add(this.pnlUC);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.pnlMenu);

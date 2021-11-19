@@ -71,14 +71,16 @@ namespace TimKiemNhaTro
             this.picthree = new Guna.UI.WinForms.GunaPictureBox();
             this.picone = new Guna.UI.WinForms.GunaPictureBox();
             this.gunaElipsePanel4 = new Guna.UI.WinForms.GunaElipsePanel();
+            this.rtxDetail = new System.Windows.Forms.RichTextBox();
             this.gunaCircleButton7 = new Guna.UI.WinForms.GunaCircleButton();
             this.gunaButton4 = new Guna.UI.WinForms.GunaButton();
-            this.rtxDetail = new System.Windows.Forms.RichTextBox();
             this.gunaElipsePanel5 = new Guna.UI.WinForms.GunaElipsePanel();
+            this.pnlImage = new System.Windows.Forms.Panel();
             this.gunaCircleButton8 = new Guna.UI.WinForms.GunaCircleButton();
             this.gunaButton5 = new Guna.UI.WinForms.GunaButton();
-            this.pnlImage = new System.Windows.Forms.Panel();
             this.pictwo = new Guna.UI.WinForms.GunaPictureBox();
+            this.gunaElipsePanel6 = new Guna.UI.WinForms.GunaElipsePanel();
+            this.webBrowser1 = new System.Windows.Forms.WebBrowser();
             this.gunaElipsePanel2.SuspendLayout();
             this.gunaElipsePanel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picAvatar)).BeginInit();
@@ -89,6 +91,7 @@ namespace TimKiemNhaTro
             this.gunaElipsePanel4.SuspendLayout();
             this.gunaElipsePanel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictwo)).BeginInit();
+            this.gunaElipsePanel6.SuspendLayout();
             this.SuspendLayout();
             // 
             // lblTenChu
@@ -109,7 +112,7 @@ namespace TimKiemNhaTro
             this.rtxDiaChi.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rtxDiaChi.ForeColor = System.Drawing.Color.DarkSlateGray;
             this.rtxDiaChi.Location = new System.Drawing.Point(133, 313);
-            this.rtxDiaChi.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.rtxDiaChi.Margin = new System.Windows.Forms.Padding(4);
             this.rtxDiaChi.Name = "rtxDiaChi";
             this.rtxDiaChi.Size = new System.Drawing.Size(580, 57);
             this.rtxDiaChi.TabIndex = 13;
@@ -155,7 +158,7 @@ namespace TimKiemNhaTro
             this.gunaElipsePanel2.Controls.Add(this.rtxDiaChi);
             this.gunaElipsePanel2.Controls.Add(this.gunaCircleButton4);
             this.gunaElipsePanel2.Location = new System.Drawing.Point(73, 427);
-            this.gunaElipsePanel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.gunaElipsePanel2.Margin = new System.Windows.Forms.Padding(4);
             this.gunaElipsePanel2.Name = "gunaElipsePanel2";
             this.gunaElipsePanel2.Radius = 30;
             this.gunaElipsePanel2.Size = new System.Drawing.Size(900, 396);
@@ -176,7 +179,7 @@ namespace TimKiemNhaTro
             this.gunaCircleButton3.Image = global::TimKiemNhaTro.Properties.Resources.icons8_warehouse_32;
             this.gunaCircleButton3.ImageSize = new System.Drawing.Size(30, 30);
             this.gunaCircleButton3.Location = new System.Drawing.Point(57, 14);
-            this.gunaCircleButton3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.gunaCircleButton3.Margin = new System.Windows.Forms.Padding(4);
             this.gunaCircleButton3.Name = "gunaCircleButton3";
             this.gunaCircleButton3.OnHoverBaseColor = System.Drawing.Color.Transparent;
             this.gunaCircleButton3.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -200,7 +203,7 @@ namespace TimKiemNhaTro
             this.gunaButton1.Image = null;
             this.gunaButton1.ImageSize = new System.Drawing.Size(20, 20);
             this.gunaButton1.Location = new System.Drawing.Point(124, 14);
-            this.gunaButton1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.gunaButton1.Margin = new System.Windows.Forms.Padding(4);
             this.gunaButton1.Name = "gunaButton1";
             this.gunaButton1.OnHoverBaseColor = System.Drawing.Color.WhiteSmoke;
             this.gunaButton1.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -251,7 +254,7 @@ namespace TimKiemNhaTro
             this.gunaCircleButton19.Image = global::TimKiemNhaTro.Properties.Resources.icons8_bathtubColor_32;
             this.gunaCircleButton19.ImageSize = new System.Drawing.Size(30, 30);
             this.gunaCircleButton19.Location = new System.Drawing.Point(669, 187);
-            this.gunaCircleButton19.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.gunaCircleButton19.Margin = new System.Windows.Forms.Padding(4);
             this.gunaCircleButton19.Name = "gunaCircleButton19";
             this.gunaCircleButton19.OnHoverBaseColor = System.Drawing.Color.Transparent;
             this.gunaCircleButton19.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -299,7 +302,7 @@ namespace TimKiemNhaTro
             this.gunaCircleButton18.Image = global::TimKiemNhaTro.Properties.Resources.icons8_bedColor_32;
             this.gunaCircleButton18.ImageSize = new System.Drawing.Size(30, 30);
             this.gunaCircleButton18.Location = new System.Drawing.Point(344, 187);
-            this.gunaCircleButton18.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.gunaCircleButton18.Margin = new System.Windows.Forms.Padding(4);
             this.gunaCircleButton18.Name = "gunaCircleButton18";
             this.gunaCircleButton18.OnHoverBaseColor = System.Drawing.Color.Transparent;
             this.gunaCircleButton18.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -347,7 +350,7 @@ namespace TimKiemNhaTro
             this.gunaCircleButton16.Image = global::TimKiemNhaTro.Properties.Resources.icons8_homeColor_32;
             this.gunaCircleButton16.ImageSize = new System.Drawing.Size(30, 30);
             this.gunaCircleButton16.Location = new System.Drawing.Point(49, 187);
-            this.gunaCircleButton16.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.gunaCircleButton16.Margin = new System.Windows.Forms.Padding(4);
             this.gunaCircleButton16.Name = "gunaCircleButton16";
             this.gunaCircleButton16.OnHoverBaseColor = System.Drawing.Color.Transparent;
             this.gunaCircleButton16.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -383,7 +386,7 @@ namespace TimKiemNhaTro
             this.gunaCircleButton15.Image = global::TimKiemNhaTro.Properties.Resources.icons8_us_dollar_32;
             this.gunaCircleButton15.ImageSize = new System.Drawing.Size(38, 38);
             this.gunaCircleButton15.Location = new System.Drawing.Point(49, 91);
-            this.gunaCircleButton15.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.gunaCircleButton15.Margin = new System.Windows.Forms.Padding(4);
             this.gunaCircleButton15.Name = "gunaCircleButton15";
             this.gunaCircleButton15.OnHoverBaseColor = System.Drawing.Color.Transparent;
             this.gunaCircleButton15.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -431,7 +434,7 @@ namespace TimKiemNhaTro
             this.gunaCircleButton5.Image = global::TimKiemNhaTro.Properties.Resources.icons8_instagram_check_mark_32;
             this.gunaCircleButton5.ImageSize = new System.Drawing.Size(30, 30);
             this.gunaCircleButton5.Location = new System.Drawing.Point(665, 91);
-            this.gunaCircleButton5.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.gunaCircleButton5.Margin = new System.Windows.Forms.Padding(4);
             this.gunaCircleButton5.Name = "gunaCircleButton5";
             this.gunaCircleButton5.OnHoverBaseColor = System.Drawing.Color.Transparent;
             this.gunaCircleButton5.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -479,7 +482,7 @@ namespace TimKiemNhaTro
             this.gunaCircleButton14.Image = global::TimKiemNhaTro.Properties.Resources.icons8_signpost_32;
             this.gunaCircleButton14.ImageSize = new System.Drawing.Size(30, 30);
             this.gunaCircleButton14.Location = new System.Drawing.Point(344, 91);
-            this.gunaCircleButton14.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.gunaCircleButton14.Margin = new System.Windows.Forms.Padding(4);
             this.gunaCircleButton14.Name = "gunaCircleButton14";
             this.gunaCircleButton14.OnHoverBaseColor = System.Drawing.Color.Transparent;
             this.gunaCircleButton14.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -514,7 +517,7 @@ namespace TimKiemNhaTro
             this.gunaCircleButton4.Image = global::TimKiemNhaTro.Properties.Resources.icons8_google_mapsCOLOR_32;
             this.gunaCircleButton4.ImageSize = new System.Drawing.Size(38, 40);
             this.gunaCircleButton4.Location = new System.Drawing.Point(48, 290);
-            this.gunaCircleButton4.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.gunaCircleButton4.Margin = new System.Windows.Forms.Padding(4);
             this.gunaCircleButton4.Name = "gunaCircleButton4";
             this.gunaCircleButton4.OnHoverBaseColor = System.Drawing.Color.Transparent;
             this.gunaCircleButton4.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -538,7 +541,7 @@ namespace TimKiemNhaTro
             this.gunaElipsePanel3.Controls.Add(this.gunaCircleButton1);
             this.gunaElipsePanel3.Controls.Add(this.gunaCircleButton2);
             this.gunaElipsePanel3.Location = new System.Drawing.Point(999, 427);
-            this.gunaElipsePanel3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.gunaElipsePanel3.Margin = new System.Windows.Forms.Padding(4);
             this.gunaElipsePanel3.Name = "gunaElipsePanel3";
             this.gunaElipsePanel3.Radius = 30;
             this.gunaElipsePanel3.Size = new System.Drawing.Size(411, 396);
@@ -559,7 +562,7 @@ namespace TimKiemNhaTro
             this.gunaCircleButton20.Image = global::TimKiemNhaTro.Properties.Resources.icons8_info_popup_32;
             this.gunaCircleButton20.ImageSize = new System.Drawing.Size(30, 30);
             this.gunaCircleButton20.Location = new System.Drawing.Point(40, 14);
-            this.gunaCircleButton20.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.gunaCircleButton20.Margin = new System.Windows.Forms.Padding(4);
             this.gunaCircleButton20.Name = "gunaCircleButton20";
             this.gunaCircleButton20.OnHoverBaseColor = System.Drawing.Color.Transparent;
             this.gunaCircleButton20.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -595,7 +598,7 @@ namespace TimKiemNhaTro
             this.gunaButton2.Image = null;
             this.gunaButton2.ImageSize = new System.Drawing.Size(20, 20);
             this.gunaButton2.Location = new System.Drawing.Point(108, 14);
-            this.gunaButton2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.gunaButton2.Margin = new System.Windows.Forms.Padding(4);
             this.gunaButton2.Name = "gunaButton2";
             this.gunaButton2.OnHoverBaseColor = System.Drawing.Color.WhiteSmoke;
             this.gunaButton2.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -637,7 +640,7 @@ namespace TimKiemNhaTro
             this.picAvatar.BaseColor = System.Drawing.Color.White;
             this.picAvatar.Image = global::TimKiemNhaTro.Properties.Resources.icons8_male_userCOLOR_32;
             this.picAvatar.Location = new System.Drawing.Point(44, 103);
-            this.picAvatar.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.picAvatar.Margin = new System.Windows.Forms.Padding(4);
             this.picAvatar.Name = "picAvatar";
             this.picAvatar.Size = new System.Drawing.Size(65, 59);
             this.picAvatar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -659,7 +662,7 @@ namespace TimKiemNhaTro
             this.gunaCircleButton1.Image = global::TimKiemNhaTro.Properties.Resources.icons8_phoneCOLOR_32;
             this.gunaCircleButton1.ImageSize = new System.Drawing.Size(30, 30);
             this.gunaCircleButton1.Location = new System.Drawing.Point(44, 215);
-            this.gunaCircleButton1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.gunaCircleButton1.Margin = new System.Windows.Forms.Padding(4);
             this.gunaCircleButton1.Name = "gunaCircleButton1";
             this.gunaCircleButton1.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.gunaCircleButton1.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -683,7 +686,7 @@ namespace TimKiemNhaTro
             this.gunaCircleButton2.Image = global::TimKiemNhaTro.Properties.Resources.icons8_mailCOLOR_32;
             this.gunaCircleButton2.ImageSize = new System.Drawing.Size(30, 30);
             this.gunaCircleButton2.Location = new System.Drawing.Point(44, 290);
-            this.gunaCircleButton2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.gunaCircleButton2.Margin = new System.Windows.Forms.Padding(4);
             this.gunaCircleButton2.Name = "gunaCircleButton2";
             this.gunaCircleButton2.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
             this.gunaCircleButton2.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -700,8 +703,8 @@ namespace TimKiemNhaTro
             this.gunaElipsePanel1.Controls.Add(this.pnlCSVC);
             this.gunaElipsePanel1.Controls.Add(this.gunaCircleButton6);
             this.gunaElipsePanel1.Controls.Add(this.gunaButton3);
-            this.gunaElipsePanel1.Location = new System.Drawing.Point(73, 855);
-            this.gunaElipsePanel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.gunaElipsePanel1.Location = new System.Drawing.Point(73, 1197);
+            this.gunaElipsePanel1.Margin = new System.Windows.Forms.Padding(4);
             this.gunaElipsePanel1.Name = "gunaElipsePanel1";
             this.gunaElipsePanel1.Radius = 30;
             this.gunaElipsePanel1.Size = new System.Drawing.Size(900, 396);
@@ -711,7 +714,7 @@ namespace TimKiemNhaTro
             // 
             this.pnlCSVC.AutoScroll = true;
             this.pnlCSVC.Location = new System.Drawing.Point(23, 80);
-            this.pnlCSVC.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pnlCSVC.Margin = new System.Windows.Forms.Padding(4);
             this.pnlCSVC.Name = "pnlCSVC";
             this.pnlCSVC.Size = new System.Drawing.Size(814, 272);
             this.pnlCSVC.TabIndex = 39;
@@ -731,7 +734,7 @@ namespace TimKiemNhaTro
             this.gunaCircleButton6.Image = global::TimKiemNhaTro.Properties.Resources.icons8_toolbox_32;
             this.gunaCircleButton6.ImageSize = new System.Drawing.Size(30, 30);
             this.gunaCircleButton6.Location = new System.Drawing.Point(57, 14);
-            this.gunaCircleButton6.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.gunaCircleButton6.Margin = new System.Windows.Forms.Padding(4);
             this.gunaCircleButton6.Name = "gunaCircleButton6";
             this.gunaCircleButton6.OnHoverBaseColor = System.Drawing.Color.Transparent;
             this.gunaCircleButton6.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -755,7 +758,7 @@ namespace TimKiemNhaTro
             this.gunaButton3.Image = null;
             this.gunaButton3.ImageSize = new System.Drawing.Size(20, 20);
             this.gunaButton3.Location = new System.Drawing.Point(124, 14);
-            this.gunaButton3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.gunaButton3.Margin = new System.Windows.Forms.Padding(4);
             this.gunaButton3.Name = "gunaButton3";
             this.gunaButton3.OnHoverBaseColor = System.Drawing.Color.Transparent;
             this.gunaButton3.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -774,7 +777,7 @@ namespace TimKiemNhaTro
             this.picfour.BaseColor = System.Drawing.Color.White;
             this.picfour.Image = global::TimKiemNhaTro.Properties.Resources.quan2;
             this.picfour.Location = new System.Drawing.Point(1023, 186);
-            this.picfour.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.picfour.Margin = new System.Windows.Forms.Padding(4);
             this.picfour.Name = "picfour";
             this.picfour.Radius = 20;
             this.picfour.Size = new System.Drawing.Size(387, 195);
@@ -788,7 +791,7 @@ namespace TimKiemNhaTro
             this.picthree.BaseColor = System.Drawing.Color.White;
             this.picthree.Image = global::TimKiemNhaTro.Properties.Resources.thu_duc_jfbk;
             this.picthree.Location = new System.Drawing.Point(1023, 0);
-            this.picthree.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.picthree.Margin = new System.Windows.Forms.Padding(4);
             this.picthree.Name = "picthree";
             this.picthree.Radius = 20;
             this.picthree.Size = new System.Drawing.Size(387, 209);
@@ -802,7 +805,7 @@ namespace TimKiemNhaTro
             this.picone.BaseColor = System.Drawing.Color.White;
             this.picone.Image = global::TimKiemNhaTro.Properties.Resources._3612573_18012114440061220336;
             this.picone.Location = new System.Drawing.Point(73, 0);
-            this.picone.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.picone.Margin = new System.Windows.Forms.Padding(4);
             this.picone.Name = "picone";
             this.picone.Radius = 20;
             this.picone.Size = new System.Drawing.Size(497, 380);
@@ -817,10 +820,19 @@ namespace TimKiemNhaTro
             this.gunaElipsePanel4.Controls.Add(this.rtxDetail);
             this.gunaElipsePanel4.Controls.Add(this.gunaCircleButton7);
             this.gunaElipsePanel4.Controls.Add(this.gunaButton4);
-            this.gunaElipsePanel4.Location = new System.Drawing.Point(73, 1279);
+            this.gunaElipsePanel4.Location = new System.Drawing.Point(73, 1634);
             this.gunaElipsePanel4.Name = "gunaElipsePanel4";
             this.gunaElipsePanel4.Size = new System.Drawing.Size(900, 276);
             this.gunaElipsePanel4.TabIndex = 31;
+            // 
+            // rtxDetail
+            // 
+            this.rtxDetail.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.rtxDetail.Location = new System.Drawing.Point(57, 82);
+            this.rtxDetail.Name = "rtxDetail";
+            this.rtxDetail.Size = new System.Drawing.Size(780, 162);
+            this.rtxDetail.TabIndex = 41;
+            this.rtxDetail.Text = "";
             // 
             // gunaCircleButton7
             // 
@@ -874,15 +886,6 @@ namespace TimKiemNhaTro
             this.gunaButton4.Text = "Mô tả";
             this.gunaButton4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // rtxDetail
-            // 
-            this.rtxDetail.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.rtxDetail.Location = new System.Drawing.Point(57, 82);
-            this.rtxDetail.Name = "rtxDetail";
-            this.rtxDetail.Size = new System.Drawing.Size(780, 162);
-            this.rtxDetail.TabIndex = 41;
-            this.rtxDetail.Text = "";
-            // 
             // gunaElipsePanel5
             // 
             this.gunaElipsePanel5.BackColor = System.Drawing.Color.Transparent;
@@ -890,10 +893,18 @@ namespace TimKiemNhaTro
             this.gunaElipsePanel5.Controls.Add(this.pnlImage);
             this.gunaElipsePanel5.Controls.Add(this.gunaCircleButton8);
             this.gunaElipsePanel5.Controls.Add(this.gunaButton5);
-            this.gunaElipsePanel5.Location = new System.Drawing.Point(73, 1588);
+            this.gunaElipsePanel5.Location = new System.Drawing.Point(73, 1973);
             this.gunaElipsePanel5.Name = "gunaElipsePanel5";
             this.gunaElipsePanel5.Size = new System.Drawing.Size(900, 429);
             this.gunaElipsePanel5.TabIndex = 32;
+            // 
+            // pnlImage
+            // 
+            this.pnlImage.AutoScroll = true;
+            this.pnlImage.Location = new System.Drawing.Point(62, 82);
+            this.pnlImage.Name = "pnlImage";
+            this.pnlImage.Size = new System.Drawing.Size(769, 328);
+            this.pnlImage.TabIndex = 41;
             // 
             // gunaCircleButton8
             // 
@@ -947,14 +958,6 @@ namespace TimKiemNhaTro
             this.gunaButton5.Text = "Ảnh chi tiết";
             this.gunaButton5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
-            // pnlImage
-            // 
-            this.pnlImage.AutoScroll = true;
-            this.pnlImage.Location = new System.Drawing.Point(62, 82);
-            this.pnlImage.Name = "pnlImage";
-            this.pnlImage.Size = new System.Drawing.Size(769, 328);
-            this.pnlImage.TabIndex = 41;
-            // 
             // pictwo
             // 
             this.pictwo.BackColor = System.Drawing.Color.Transparent;
@@ -968,12 +971,33 @@ namespace TimKiemNhaTro
             this.pictwo.TabIndex = 26;
             this.pictwo.TabStop = false;
             // 
+            // gunaElipsePanel6
+            // 
+            this.gunaElipsePanel6.BackColor = System.Drawing.Color.Transparent;
+            this.gunaElipsePanel6.BaseColor = System.Drawing.Color.White;
+            this.gunaElipsePanel6.Controls.Add(this.webBrowser1);
+            this.gunaElipsePanel6.Location = new System.Drawing.Point(74, 844);
+            this.gunaElipsePanel6.Name = "gunaElipsePanel6";
+            this.gunaElipsePanel6.Radius = 30;
+            this.gunaElipsePanel6.Size = new System.Drawing.Size(899, 328);
+            this.gunaElipsePanel6.TabIndex = 33;
+            // 
+            // webBrowser1
+            // 
+            this.webBrowser1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.webBrowser1.Location = new System.Drawing.Point(0, 0);
+            this.webBrowser1.MinimumSize = new System.Drawing.Size(20, 20);
+            this.webBrowser1.Name = "webBrowser1";
+            this.webBrowser1.Size = new System.Drawing.Size(899, 328);
+            this.webBrowser1.TabIndex = 35;
+            // 
             // ucDetailHome
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.Controls.Add(this.gunaElipsePanel6);
             this.Controls.Add(this.pictwo);
             this.Controls.Add(this.gunaElipsePanel5);
             this.Controls.Add(this.gunaElipsePanel4);
@@ -984,9 +1008,9 @@ namespace TimKiemNhaTro
             this.Controls.Add(this.gunaElipsePanel2);
             this.Controls.Add(this.picone);
             this.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "ucDetailHome";
-            this.Size = new System.Drawing.Size(1493, 2114);
+            this.Size = new System.Drawing.Size(1451, 2470);
             this.Load += new System.EventHandler(this.ucDetailHome_Load);
             this.gunaElipsePanel2.ResumeLayout(false);
             this.gunaElipsePanel2.PerformLayout();
@@ -1000,6 +1024,7 @@ namespace TimKiemNhaTro
             this.gunaElipsePanel4.ResumeLayout(false);
             this.gunaElipsePanel5.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictwo)).EndInit();
+            this.gunaElipsePanel6.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -1056,5 +1081,7 @@ namespace TimKiemNhaTro
         private Guna.UI.WinForms.GunaCircleButton gunaCircleButton8;
         private Guna.UI.WinForms.GunaButton gunaButton5;
         private Guna.UI.WinForms.GunaPictureBox pictwo;
+        private Guna.UI.WinForms.GunaElipsePanel gunaElipsePanel6;
+        private System.Windows.Forms.WebBrowser webBrowser1;
     }
 }

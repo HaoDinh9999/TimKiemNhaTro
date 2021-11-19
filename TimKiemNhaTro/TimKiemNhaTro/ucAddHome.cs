@@ -1,8 +1,13 @@
-﻿using Guna.UI.WinForms;
+﻿using Firebase.Storage;
+using Guna.UI.WinForms;
 using System;
 using System.Collections.Generic;
 using System.Drawing;
+using System.Drawing.Imaging;
+using System.IO;
+using System.Linq;
 using System.Windows.Forms;
+using TimKiemNhaTro.Model;
 
 namespace TimKiemNhaTro
 {
@@ -13,6 +18,9 @@ namespace TimKiemNhaTro
             InitializeComponent();
         }
         public List<Districts> listt = new List<Districts>();
+        List<string> fileList = new List<string>();
+        int maLoaiNha = 0, soPhongNgu = 0, soPhongTam = 0;
+        bool baixe = false, bancong = false, baove = false, cctv = false, dieuhoa = false, gaclung = false, santhuong = false, hoboi = false, maygiat = false, noithat = false, nuoithucung = false;
         private void ucAddHome_Load(object sender, EventArgs e)
         {
             listt.Add(new Districts("Quận 1", Quan1));
@@ -51,10 +59,12 @@ namespace TimKiemNhaTro
             if (btnNoiThat.Checked == true)
             {
                 btnNoiThat.Checked = false;
+                noithat = false;
             }
             else
             {
                 btnNoiThat.Checked = true;
+                noithat = true;
             }
             
         }
@@ -64,10 +74,12 @@ namespace TimKiemNhaTro
             if (btnCCTV.Checked == true)
             {
                 btnCCTV.Checked = false;
+                cctv = false;
             }
             else
             {
                 btnCCTV.Checked = true;
+                cctv = true;
             }
         }
 
@@ -76,10 +88,12 @@ namespace TimKiemNhaTro
             if (btnSanThuong.Checked == true)
             {
                 btnSanThuong.Checked = false;
+                santhuong = false;
             }
             else
             {
                 btnSanThuong.Checked = true;
+                santhuong = true;
             }
         }
 
@@ -88,10 +102,12 @@ namespace TimKiemNhaTro
             if (btnBaiXe.Checked == true)
             {
                 btnBaiXe.Checked = false;
+                baixe = false;
             }
             else
             {
                 btnBaiXe.Checked = true;
+                baixe = true;
             }
         }
 
@@ -100,10 +116,12 @@ namespace TimKiemNhaTro
             if (btnHoBoi.Checked == true)
             {
                 btnHoBoi.Checked = false;
+                hoboi = false;
             }
             else
             {
                 btnHoBoi.Checked = true;
+                hoboi = true;
             }
         }
 
@@ -112,10 +130,12 @@ namespace TimKiemNhaTro
             if (btnBaoVe.Checked == true)
             {
                 btnBaoVe.Checked = false;
+                baove = false;
             }
             else
             {
                 btnBaoVe.Checked = true;
+                baove = true;
             }
         }
 
@@ -124,10 +144,12 @@ namespace TimKiemNhaTro
             if (btnGacLung.Checked == true)
             {
                 btnGacLung.Checked = false;
+                gaclung = false;
             }
             else
             {
                 btnGacLung.Checked = true;
+                gaclung = true;
             }
         }
 
@@ -136,10 +158,12 @@ namespace TimKiemNhaTro
             if (btnThuCung.Checked == true)
             {
                 btnThuCung.Checked = false;
+                nuoithucung = false;
             }
             else
             {
                 btnThuCung.Checked = true;
+                nuoithucung = true;
             }
         }
 
@@ -148,10 +172,12 @@ namespace TimKiemNhaTro
             if (btnMayGiat.Checked == true)
             {
                 btnMayGiat.Checked = false;
+                maygiat = false;
             }
             else
             {
                 btnMayGiat.Checked = true;
+                maygiat = true;
             }
         }
 
@@ -160,10 +186,12 @@ namespace TimKiemNhaTro
             if (btnBanCong.Checked == true)
             {
                 btnBanCong.Checked = false;
+                bancong = false;
             }
             else
             {
                 btnBanCong.Checked = true;
+                bancong = true;
             }
         }
 
@@ -172,10 +200,12 @@ namespace TimKiemNhaTro
             if (btnDieuHoa.Checked == true)
             {
                 btnDieuHoa.Checked = false;
+                dieuhoa = false;
             }
             else
             {
                 btnDieuHoa.Checked = true;
+                dieuhoa = true;
             }
         }
 
@@ -185,6 +215,7 @@ namespace TimKiemNhaTro
             btn2Ngu.Checked = false;
             btn3Ngu.Checked = false;
             btnHon4Ngu.Checked = true;
+            soPhongNgu = 4;
         }
 
         private void btn3Ngu_Click(object sender, EventArgs e)
@@ -193,6 +224,7 @@ namespace TimKiemNhaTro
             btn2Ngu.Checked = false;
             btn3Ngu.Checked = true;
             btnHon4Ngu.Checked = false;
+            soPhongNgu = 3;
         }
 
         private void btn2Ngu_Click(object sender, EventArgs e)
@@ -201,6 +233,7 @@ namespace TimKiemNhaTro
             btn2Ngu.Checked = true;
             btn3Ngu.Checked = false;
             btnHon4Ngu.Checked = false;
+            soPhongNgu = 2;
         }
 
         private void btn1Ngu_Click(object sender, EventArgs e)
@@ -209,6 +242,7 @@ namespace TimKiemNhaTro
             btn2Ngu.Checked = false;
             btn3Ngu.Checked = false;
             btnHon4Ngu.Checked = false;
+            soPhongNgu = 1;
         }
 
         private void btnHon4Tam_Click(object sender, EventArgs e)
@@ -217,6 +251,7 @@ namespace TimKiemNhaTro
             btn2Tam.Checked = false;
             btn3Tam.Checked = false;
             btnHon4Tam.Checked = true;
+            soPhongTam = 4;
         }
 
         private void btn3Tam_Click(object sender, EventArgs e)
@@ -225,6 +260,7 @@ namespace TimKiemNhaTro
             btn2Tam.Checked = false;
             btn3Tam.Checked = true;
             btnHon4Tam.Checked = false;
+            soPhongTam = 3;
         }
 
         private void btn2Tam_Click(object sender, EventArgs e)
@@ -233,6 +269,7 @@ namespace TimKiemNhaTro
             btn2Tam.Checked = true;
             btn3Tam.Checked = false;
             btnHon4Tam.Checked = false;
+            soPhongTam = 2;
         }
 
         private void btn1Tam_Click(object sender, EventArgs e)
@@ -241,6 +278,7 @@ namespace TimKiemNhaTro
             btn2Tam.Checked = false;
             btn3Tam.Checked = false;
             btnHon4Tam.Checked = false;
+            soPhongTam = 1;
         }
 
         private void btnPhong_Click(object sender, EventArgs e)
@@ -248,6 +286,7 @@ namespace TimKiemNhaTro
             btnNha.Checked = false;
             btnCanHo.Checked = false;
             btnPhong.Checked = true;
+            maLoaiNha = 2;
         }
 
         private void btnCanHo_Click(object sender, EventArgs e)
@@ -255,6 +294,7 @@ namespace TimKiemNhaTro
             btnNha.Checked = false;
             btnCanHo.Checked = true;
             btnPhong.Checked = false;
+            maLoaiNha = 3;
         }
 
         private void btnNha_Click(object sender, EventArgs e)
@@ -262,50 +302,96 @@ namespace TimKiemNhaTro
             btnNha.Checked = true;
             btnCanHo.Checked = false;
             btnPhong.Checked = false;
+            maLoaiNha = 1;
         }
+        void reSet()
+        {
+            pnlPic.Controls.Clear();
+        }
+        private async void UploadFiles(string url,string _idNha)
+        {
+            var stream = File.Open(@url, FileMode.Open);
+            
+                // Construct FirebaseStorage with path to where you want to upload the file and put it there
+                var task = new FirebaseStorage("timkiemnhatro-6dd5a.appspot.com")
+                 .Child("images")
+                 .Child(_idNha + url[2] + url[url.Length - 5] )
+                 .PutAsync(stream);
+
+                // Track progress of the upload
+                task.Progress.ProgressChanged += (s, e) => Console.WriteLine($"Progress: {e.Percentage} %");
+
+                // Await the task to wait until upload is completed and get the download url
+                var downloadUrl = await task;
+                  DataProvider.Ins.DB.AnhNhas.Add(new AnhNha() { maNha=Int32.Parse(_idNha),duongDan=downloadUrl});
+                 DataProvider.Ins.DB.SaveChanges();
+            
+
+
+
+        }
+
 
         private void btnPic_Click(object sender, EventArgs e)
         {
+
+            pnlPic.Controls.Clear();
             OpenFileDialog ofd = new OpenFileDialog();
             ofd.Title = "Toi thieu 2 - Toi ta 8";
             ofd.Multiselect = true;
-            ofd.Filter = "JPG|*.jpg|JPEG|*.jpeg|GIF|*/gif|PNG|*.png";
+            ofd.Filter = "JPG|*.jpg|JPEG|*.jpeg|GIF|*.gif|PNG|*.png";
             DialogResult dr = ofd.ShowDialog();
             if (dr == System.Windows.Forms.DialogResult.OK)
             {
-                string[] fileNames = ofd.FileNames;
-                int x = 20;
-                int y = 20;
-                int maxHeight = -1;
-                foreach(string img in fileNames)
+                foreach(var item in ofd.FileNames)
                 {
-                    GunaPictureBox pic = new GunaPictureBox();
-                    pic.Image = Image.FromFile(img);
-                    pic.SizeMode = PictureBoxSizeMode.StretchImage;
-                    pic.Radius = 10;
-                    pic.Location = new Point(x, y);
-                    x += pic.Width + 10;
-                    maxHeight = Math.Max(pic.Height, maxHeight);
-                    if (x > this.ClientSize.Width - 100)
-                    {
-                        x = 20;
-                        y += maxHeight + 10;
+                    fileList.Add(item);
                     }
-                    this.pnlPic.Controls.Add(pic);
-                }
             }
-           
-  
-    //"Phường Bến Nghé",
-    //"Phường Bến Thành",
-    //"Phường Cầu Kho",
-    //"Phường Cầu Ông Lãnh",
-    //"Phường Cô Giang",
-    //"Phường Đa Kao",
-    //"Phường Nguyễn Cư Trinh",
-    //"Phường Nguyễn Thái Bình",
-    //"Phường Phạm Ngũ Lão",
-    //"Phường Phường Tân Định",];
+            int x = 20;
+            int y = 20;
+            int maxHeight = -1;
+            
+            foreach (string file in fileList)
+            {
+                GunaPictureBox pic = new GunaPictureBox();
+                using (var fs = File.OpenRead(file))
+                {
+                    pic.Image = Image.FromStream(fs);
+                }
+                //using (var img = Image.FromStream(fs))
+                //{
+                //    MessageBox.Show(img.Width.ToString());
+                //}
+                //pic.Image = Image.FromFile(@"H:\\cc2.png");
+                pic.SizeMode = PictureBoxSizeMode.StretchImage;
+                pic.Radius = 10;
+                pic.Location = new Point(x, y);
+                x += pic.Width + 10;
+                maxHeight = Math.Max(pic.Height, maxHeight);
+                if (x > this.ClientSize.Width - 100)
+                {
+                    x = 20;
+                    y += maxHeight + 10;
+                }
+                pnlPic.Controls.Add(pic);
+
+
+
+                // UploadFiles(img);
+            }
+
+
+            //"Phường Bến Nghé",
+            //"Phường Bến Thành",
+            //"Phường Cầu Kho",
+            //"Phường Cầu Ông Lãnh",
+            //"Phường Cô Giang",
+            //"Phường Đa Kao",
+            //"Phường Nguyễn Cư Trinh",
+            //"Phường Nguyễn Thái Bình",
+            //"Phường Phạm Ngũ Lão",
+            //"Phường Phường Tân Định",];
         }
         string[] Quan1 =
         {
@@ -544,6 +630,9 @@ namespace TimKiemNhaTro
     "Phường Tân Thới Hòa",
     "Phường Tây Thạnh",
         };
+
+
+
         string[] QuanTanBinh =
         {
               "Phường 1",
@@ -739,6 +828,41 @@ namespace TimKiemNhaTro
             }
 
         }
+ 
+        private void btnDangTin_Click(object sender, EventArgs e)
+        {
+            ////CoSoVatChat
+            var csVC = new CoSoVatChat() { baiDauXe = baixe, banCong = bancong, baoVe = baove, cctv = cctv, dieuHoa = dieuhoa, gacLung = gaclung, sanThuong = santhuong, hoBoi = hoboi, mayGiat = maygiat, noiThat = noithat, nuoiThuCung = nuoithucung };
+            DataProvider.Ins.DB.CoSoVatChats.Add(csVC);
+            DataProvider.Ins.DB.SaveChanges();
+            //Nha
+            Nha nhas = new Nha();
+            nhas.maChuNha = 1;
+            nhas.maCoSoVatChat = csVC.maCoSoVatChat;
+            nhas.maLoaiChoThue = maLoaiNha;
+            nhas.soPhongNgu = soPhongNgu;
+            nhas.soPhongTam = soPhongTam;
+            nhas.dienTich = decimal.Parse(txtDienTich.Text);
+            nhas.tinhTrang = "Còn trống";
+            nhas.soNha = txtSoNha.Text+" "+txtTenDuong.Text;
+            nhas.phuongXa = cbxPhuongXa.Text;
+            nhas.quanHuyen = cbxQuanHuyen.Text;
+            nhas.moTa = txtMoTa.Text;
+            nhas.TienNha = decimal.Parse(txtTienChoThue.Text);
+            DataProvider.Ins.DB.Nhas.Add(nhas);
+            DataProvider.Ins.DB.SaveChanges();
+
+            ////Anhnha
+
+
+            foreach (var item in fileList)
+            {
+                UploadFiles(item, nhas.maNha.ToString());
+            }
+
+        }
+
+
     }
 
 }

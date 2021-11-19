@@ -27,19 +27,21 @@ namespace TimKiemNhaTro
             // restore AutoScroll
             flwCapNhatGanDay.AutoScroll = true;
 
-            var listItems = new ucCardRoom[50];
+            var listItems = new ucCardNha[50];
             var listNha = DataProvider.Ins.DB.Nhas;
-            foreach(var item in listNha)
-            {
 
-                listItems[i] = new ucCardRoom(this.Parent.Parent as frmMain);
-                listItems[i].ID = item.maNha.ToString();
+            foreach (var item in listNha)
+            {
+                listItems[i] = new ucCardNha(this.Parent.Parent as frmMain);
+                listItems[i].ID = item.maNha;
                 listItems[i].Money = item.TienNha.ToString();
                 listItems[i].CountBed = item.soPhongNgu.Value;
                 listItems[i].CountBad = item.soPhongTam.Value;
                 listItems[i].CountArea = item.dienTich.ToString();
                 listItems[i].Address = item.soNha + ", phường " + item.phuongXa + ", " + item.quanHuyen + ", thành phố Hồ Chí Minh";
                 listItems[i].Type = item.maCoSoVatChat.ToString();
+                //string _duongDan = listAnh.Where(x => x.maNha == item.maNha).FirstOrDefault().duongDan;
+                //listItems[i].imgMainAsync();
                 flwCapNhatGanDay.Controls.Add(listItems[i]);
                 i++;
             }

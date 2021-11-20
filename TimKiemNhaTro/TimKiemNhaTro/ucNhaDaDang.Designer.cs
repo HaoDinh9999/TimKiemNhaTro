@@ -31,6 +31,8 @@ namespace TimKiemNhaTro
         {
             this.label1 = new System.Windows.Forms.Label();
             this.flwNhaDaDang = new System.Windows.Forms.FlowLayoutPanel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -49,8 +51,18 @@ namespace TimKiemNhaTro
             this.flwNhaDaDang.Location = new System.Drawing.Point(182, 113);
             this.flwNhaDaDang.Margin = new System.Windows.Forms.Padding(4);
             this.flwNhaDaDang.Name = "flwNhaDaDang";
-            this.flwNhaDaDang.Size = new System.Drawing.Size(1252, 604);
+            this.flwNhaDaDang.Size = new System.Drawing.Size(1252, 654);
             this.flwNhaDaDang.TabIndex = 5;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox1.Image = global::TimKiemNhaTro.Properties.Resources.mPPEsss;
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(1451, 2470);
+            this.pictureBox1.TabIndex = 6;
+            this.pictureBox1.TabStop = false;
             // 
             // ucNhaDaDang
             // 
@@ -59,9 +71,11 @@ namespace TimKiemNhaTro
             this.BackColor = System.Drawing.Color.WhiteSmoke;
             this.Controls.Add(this.flwNhaDaDang);
             this.Controls.Add(this.label1);
+            this.Controls.Add(this.pictureBox1);
             this.Name = "ucNhaDaDang";
             this.Size = new System.Drawing.Size(1451, 2470);
             this.Load += new System.EventHandler(this.ucNhaDaDang_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -71,5 +85,6 @@ namespace TimKiemNhaTro
 
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.FlowLayoutPanel flwNhaDaDang;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

@@ -775,7 +775,7 @@ namespace TimKiemNhaTro
             this.label16.AutoSize = true;
             this.label16.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label16.ForeColor = System.Drawing.Color.Black;
-            this.label16.Location = new System.Drawing.Point(139, 1249);
+            this.label16.Location = new System.Drawing.Point(143, 1326);
             this.label16.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(66, 24);
@@ -792,7 +792,7 @@ namespace TimKiemNhaTro
             this.txtMoTa.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.txtMoTa.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.txtMoTa.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txtMoTa.Location = new System.Drawing.Point(149, 1289);
+            this.txtMoTa.Location = new System.Drawing.Point(153, 1366);
             this.txtMoTa.Margin = new System.Windows.Forms.Padding(4);
             this.txtMoTa.Name = "txtMoTa";
             this.txtMoTa.PasswordChar = '\0';
@@ -822,7 +822,7 @@ namespace TimKiemNhaTro
             this.btnDangTin.Image = null;
             this.btnDangTin.ImageSize = new System.Drawing.Size(20, 20);
             this.btnDangTin.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.btnDangTin.Location = new System.Drawing.Point(544, 1497);
+            this.btnDangTin.Location = new System.Drawing.Point(548, 1574);
             this.btnDangTin.Margin = new System.Windows.Forms.Padding(4);
             this.btnDangTin.Name = "btnDangTin";
             this.btnDangTin.OnHoverBaseColor = System.Drawing.Color.Silver;
@@ -840,10 +840,11 @@ namespace TimKiemNhaTro
             // 
             // pnlPic
             // 
+            this.pnlPic.AutoScroll = true;
             this.pnlPic.Location = new System.Drawing.Point(147, 1009);
             this.pnlPic.Margin = new System.Windows.Forms.Padding(4);
             this.pnlPic.Name = "pnlPic";
-            this.pnlPic.Size = new System.Drawing.Size(1049, 185);
+            this.pnlPic.Size = new System.Drawing.Size(1049, 289);
             this.pnlPic.TabIndex = 74;
             // 
             // cbxPhuongXa

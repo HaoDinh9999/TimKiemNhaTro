@@ -42,6 +42,7 @@ namespace TimKiemNhaTro
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.picRoom = new Guna.UI.WinForms.GunaPictureBox();
+            this.btnType = new Guna.UI2.WinForms.Guna2Button();
             this.gunaShadowPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -53,6 +54,7 @@ namespace TimKiemNhaTro
             // 
             this.gunaShadowPanel1.BackColor = System.Drawing.Color.Transparent;
             this.gunaShadowPanel1.BaseColor = System.Drawing.Color.White;
+            this.gunaShadowPanel1.Controls.Add(this.btnType);
             this.gunaShadowPanel1.Controls.Add(this.btnHeart);
             this.gunaShadowPanel1.Controls.Add(this.lblCountMeter);
             this.gunaShadowPanel1.Controls.Add(this.pictureBox2);
@@ -65,20 +67,20 @@ namespace TimKiemNhaTro
             this.gunaShadowPanel1.Controls.Add(this.picRoom);
             this.gunaShadowPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.gunaShadowPanel1.Location = new System.Drawing.Point(0, 0);
+            this.gunaShadowPanel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.gunaShadowPanel1.Name = "gunaShadowPanel1";
             this.gunaShadowPanel1.Radius = 10;
             this.gunaShadowPanel1.ShadowColor = System.Drawing.Color.Black;
-            this.gunaShadowPanel1.Size = new System.Drawing.Size(749, 183);
+            this.gunaShadowPanel1.Size = new System.Drawing.Size(999, 225);
             this.gunaShadowPanel1.TabIndex = 1;
             // 
             // lblCountMeter
             // 
             this.lblCountMeter.AutoSize = true;
             this.lblCountMeter.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCountMeter.Location = new System.Drawing.Point(637, 130);
-            this.lblCountMeter.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblCountMeter.Location = new System.Drawing.Point(849, 160);
             this.lblCountMeter.Name = "lblCountMeter";
-            this.lblCountMeter.Size = new System.Drawing.Size(27, 19);
+            this.lblCountMeter.Size = new System.Drawing.Size(32, 24);
             this.lblCountMeter.TabIndex = 16;
             this.lblCountMeter.Text = "52";
             // 
@@ -86,10 +88,9 @@ namespace TimKiemNhaTro
             // 
             this.lblCountBathRoom.AutoSize = true;
             this.lblCountBathRoom.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCountBathRoom.Location = new System.Drawing.Point(523, 130);
-            this.lblCountBathRoom.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblCountBathRoom.Location = new System.Drawing.Point(697, 160);
             this.lblCountBathRoom.Name = "lblCountBathRoom";
-            this.lblCountBathRoom.Size = new System.Drawing.Size(18, 19);
+            this.lblCountBathRoom.Size = new System.Drawing.Size(21, 24);
             this.lblCountBathRoom.TabIndex = 14;
             this.lblCountBathRoom.Text = "3";
             // 
@@ -97,10 +98,9 @@ namespace TimKiemNhaTro
             // 
             this.lblCountBedRoom.AutoSize = true;
             this.lblCountBedRoom.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCountBedRoom.Location = new System.Drawing.Point(406, 130);
-            this.lblCountBedRoom.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblCountBedRoom.Location = new System.Drawing.Point(541, 160);
             this.lblCountBedRoom.Name = "lblCountBedRoom";
-            this.lblCountBedRoom.Size = new System.Drawing.Size(18, 19);
+            this.lblCountBedRoom.Size = new System.Drawing.Size(21, 24);
             this.lblCountBedRoom.TabIndex = 12;
             this.lblCountBedRoom.Text = "3";
             // 
@@ -111,10 +111,10 @@ namespace TimKiemNhaTro
             this.rtxAddress.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.rtxAddress.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rtxAddress.ForeColor = System.Drawing.Color.DimGray;
-            this.rtxAddress.Location = new System.Drawing.Point(362, 72);
-            this.rtxAddress.Margin = new System.Windows.Forms.Padding(2);
+            this.rtxAddress.Location = new System.Drawing.Point(483, 89);
+            this.rtxAddress.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.rtxAddress.Name = "rtxAddress";
-            this.rtxAddress.Size = new System.Drawing.Size(315, 45);
+            this.rtxAddress.Size = new System.Drawing.Size(420, 55);
             this.rtxAddress.TabIndex = 2;
             this.rtxAddress.Text = "313 Nguyễn  An Binh Bỉnh Khiêm, phường Bến Nghé, quận 1, thành phố Hồ Chí Minh";
             // 
@@ -123,10 +123,9 @@ namespace TimKiemNhaTro
             this.lblMoney.AutoSize = true;
             this.lblMoney.Font = new System.Drawing.Font("Tahoma", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblMoney.ForeColor = System.Drawing.Color.DarkBlue;
-            this.lblMoney.Location = new System.Drawing.Point(355, 20);
-            this.lblMoney.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblMoney.Location = new System.Drawing.Point(473, 25);
             this.lblMoney.Name = "lblMoney";
-            this.lblMoney.Size = new System.Drawing.Size(258, 39);
+            this.lblMoney.Size = new System.Drawing.Size(322, 48);
             this.lblMoney.TabIndex = 1;
             this.lblMoney.Text = "2.000.000 VNĐ";
             // 
@@ -155,7 +154,8 @@ namespace TimKiemNhaTro
             this.btnHeart.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.btnHeart.ImageSize = new System.Drawing.Size(30, 30);
             this.btnHeart.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.btnHeart.Location = new System.Drawing.Point(691, 17);
+            this.btnHeart.Location = new System.Drawing.Point(921, 21);
+            this.btnHeart.Margin = new System.Windows.Forms.Padding(4);
             this.btnHeart.Name = "btnHeart";
             this.btnHeart.OnHoverBaseColor = System.Drawing.Color.Gainsboro;
             this.btnHeart.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -163,18 +163,19 @@ namespace TimKiemNhaTro
             this.btnHeart.OnHoverImage = null;
             this.btnHeart.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
             this.btnHeart.OnPressedColor = System.Drawing.Color.Black;
-            this.btnHeart.Radius = 20;
-            this.btnHeart.Size = new System.Drawing.Size(42, 42);
+            this.btnHeart.Radius = 25;
+            this.btnHeart.Size = new System.Drawing.Size(52, 52);
             this.btnHeart.TabIndex = 17;
+            this.btnHeart.Click += new System.EventHandler(this.btnHeart_Click);
             // 
             // pictureBox2
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.White;
             this.pictureBox2.Image = global::TimKiemNhaTro.Properties.Resources.area_icon;
-            this.pictureBox2.Location = new System.Drawing.Point(593, 121);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox2.Location = new System.Drawing.Point(791, 149);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(40, 40);
+            this.pictureBox2.Size = new System.Drawing.Size(53, 49);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 15;
             this.pictureBox2.TabStop = false;
@@ -183,10 +184,10 @@ namespace TimKiemNhaTro
             // 
             this.pictureBox3.BackColor = System.Drawing.Color.White;
             this.pictureBox3.Image = global::TimKiemNhaTro.Properties.Resources.icons8_bathtub_32;
-            this.pictureBox3.Location = new System.Drawing.Point(479, 121);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox3.Location = new System.Drawing.Point(639, 149);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(40, 40);
+            this.pictureBox3.Size = new System.Drawing.Size(53, 49);
             this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox3.TabIndex = 13;
             this.pictureBox3.TabStop = false;
@@ -195,10 +196,10 @@ namespace TimKiemNhaTro
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.White;
             this.pictureBox1.Image = global::TimKiemNhaTro.Properties.Resources.icons8_sleeping_in_bed1_32;
-            this.pictureBox1.Location = new System.Drawing.Point(362, 121);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox1.Location = new System.Drawing.Point(483, 149);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(40, 40);
+            this.pictureBox1.Size = new System.Drawing.Size(53, 49);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 11;
             this.pictureBox1.TabStop = false;
@@ -208,22 +209,42 @@ namespace TimKiemNhaTro
             this.picRoom.BackColor = System.Drawing.Color.Transparent;
             this.picRoom.BaseColor = System.Drawing.Color.White;
             this.picRoom.Image = global::TimKiemNhaTro.Properties.Resources._3612573_18012114440061220336;
-            this.picRoom.Location = new System.Drawing.Point(23, 23);
+            this.picRoom.Location = new System.Drawing.Point(31, 28);
+            this.picRoom.Margin = new System.Windows.Forms.Padding(4);
             this.picRoom.Name = "picRoom";
             this.picRoom.Radius = 20;
-            this.picRoom.Size = new System.Drawing.Size(271, 138);
+            this.picRoom.Size = new System.Drawing.Size(361, 170);
             this.picRoom.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picRoom.TabIndex = 0;
             this.picRoom.TabStop = false;
             // 
+            // btnType
+            // 
+            this.btnType.BorderRadius = 4;
+            this.btnType.CheckedState.Parent = this.btnType;
+            this.btnType.CustomImages.Parent = this.btnType;
+            this.btnType.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
+            this.btnType.Font = new System.Drawing.Font("Segoe UI", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnType.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(167)))), ((int)(((byte)(226)))));
+            this.btnType.HoverState.Parent = this.btnType;
+            this.btnType.Image = global::TimKiemNhaTro.Properties.Resources.home1;
+            this.btnType.ImageSize = new System.Drawing.Size(16, 16);
+            this.btnType.Location = new System.Drawing.Point(31, 28);
+            this.btnType.Name = "btnType";
+            this.btnType.ShadowDecoration.Parent = this.btnType;
+            this.btnType.Size = new System.Drawing.Size(128, 31);
+            this.btnType.TabIndex = 30;
+            this.btnType.Text = "Phòng trọ";
+            // 
             // ucCardRoomFavourite
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.gunaShadowPanel1);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "ucCardRoomFavourite";
-            this.Size = new System.Drawing.Size(749, 183);
+            this.Size = new System.Drawing.Size(999, 225);
             this.gunaShadowPanel1.ResumeLayout(false);
             this.gunaShadowPanel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
@@ -248,5 +269,6 @@ namespace TimKiemNhaTro
         private Guna.UI.WinForms.GunaPictureBox picRoom;
         private Guna.UI.WinForms.GunaElipse gelipFrmTaskee;
         private Guna.UI.WinForms.GunaAdvenceButton btnHeart;
+        private Guna.UI2.WinForms.Guna2Button btnType;
     }
 }

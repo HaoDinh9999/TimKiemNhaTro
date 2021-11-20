@@ -673,6 +673,7 @@
     <None Include="Resources\icons8_edit_32.png" />
     <None Include="Resources\icons8_edit_321.png" />
     <None Include="Resources\icons8_wasteXOA_32.png" />
+    <None Include="Resources\icons8_heardt_32.png" />
     <Content Include="Resources\rec.png" />
     <Content Include="Resources\star.png" />
     <Content Include="Resources\triangular.png" />

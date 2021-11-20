@@ -105,7 +105,7 @@ namespace TimKiemNhaTro
             this.lblMoney.ForeColor = System.Drawing.Color.DarkBlue;
             this.lblMoney.Location = new System.Drawing.Point(437, 18);
             this.lblMoney.Name = "lblMoney";
-            this.lblMoney.Size = new System.Drawing.Size(279, 41);
+            this.lblMoney.Size = new System.Drawing.Size(267, 40);
             this.lblMoney.TabIndex = 19;
             this.lblMoney.Text = "2.000.000 VNĐ";
             // 
@@ -143,6 +143,7 @@ namespace TimKiemNhaTro
             this.btnDelete.ShadowDecoration.Parent = this.btnDelete;
             this.btnDelete.Size = new System.Drawing.Size(52, 52);
             this.btnDelete.TabIndex = 28;
+            this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // btnEdit
             // 

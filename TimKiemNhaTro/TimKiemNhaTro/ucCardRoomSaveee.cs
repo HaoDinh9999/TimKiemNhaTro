@@ -15,6 +15,7 @@ namespace TimKiemNhaTro
     {
         frmMain frmM;
         Nha _nha;
+        int _idNha;
         public ucCardRoomSaveee()
         {
             InitializeComponent();
@@ -27,6 +28,8 @@ namespace TimKiemNhaTro
         }
         public void SetInfo()
         {
+            _idNha = _nha.maNha;
+            btnType.Tag = _nha.maNha;
             lblMoney.Text = _nha.TienNha.ToString()+" VNĐ";
             lblCountBedRoom.Text = _nha.soPhongNgu.ToString()+" phòng";
             lblCountBathRoom.Text = _nha.soPhongTam.ToString()+" phòng";
@@ -42,6 +45,14 @@ namespace TimKiemNhaTro
             //frmM.setUCDetailBringtoFront();
             frmM.getAddHome().LoadEditNha(_nha);
             frmM.setUCAddBringtoFront();
+        }
+
+        private void btnDelete_Click(object sender, EventArgs e)
+        {
+            //var listNhaa = DataProvider.Ins.DB.Nhas;
+            //listNhaa.Remove(_nha);
+            //DataProvider.Ins.DB.SaveChanges();
+            MessageBox.Show("Xoa loi");
         }
     }
 }

@@ -183,7 +183,7 @@ namespace TimKiemNhaTro
         }
         private void btnAddHouse_Click(object sender, EventArgs e)
         {
-
+            _ucAdd.reSet1();
             _ucAdd.BringToFront();
         }
 

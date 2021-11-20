@@ -52,6 +52,14 @@ namespace TimKiemNhaTro
             {
                 cbxQuanHuyen.Items.Add(AllQuan[i]);
             }
+            if (nhaeidt != null)
+            {
+                btnDangTin.Text = "Lưu thông tin";
+            }
+            else
+            {
+                btnDangTin.Text = "Đăng tin";
+            }
         }
         public void reSet1()
         {
@@ -86,18 +94,38 @@ namespace TimKiemNhaTro
             txtTienChoThue.Text = "";
             txtMoTa.Text = "";
             pnlPic.Controls.Clear();
-
+            nhaeidt = null;
+            if (nhaeidt != null)
+            {
+                btnDangTin.Text = "Lưu thông tin";
+            }
+            else
+            {
+                btnDangTin.Text = "Đăng tin";
+            }
 
         }
         Nha nhaeidt;
+        List<int> anhBiXoa = new List<int>();
         public void LoadEditNha(Nha nhalol)
         {
             reSet1();
+            
             nhaeidt = nhalol;
+
+            if (nhaeidt != null)
+            {
+                btnDangTin.Text = "Lưu thông tin";
+            }
+            else
+            {
+                btnDangTin.Text = "Đăng tin";
+            }
+
             cbxPhuongXa.Text = nhaeidt.phuongXa.ToString();
             cbxQuanHuyen.Text = nhaeidt.quanHuyen;
             txtSoNha.Text = nhaeidt.soNha;
-            txtTenDuong.Text = nhaeidt.soNha;
+            //txtTenDuong.Text = nhaeidt.soNha;
             if (nhaeidt.maLoaiChoThue == 1)
             {
                 btnNha.Checked = true;
@@ -177,7 +205,62 @@ namespace TimKiemNhaTro
             btnCCTV.Checked = (bool)nhaeidt.CoSoVatChat.cctv;
             btnThuCung.Checked = (bool)nhaeidt.CoSoVatChat.nuoiThuCung;
             txtMoTa.Text = nhaeidt.moTa;
+            //Anh
+            var urlDan = nhaeidt.AnhNhas.ToList();
+            int x = 20;
+            int y = 20;
+            int maxHeight = -1;
+            anhBiXoa.Clear();
+            fileList.Clear();
 
+            //foreach (var item in urlDan)
+            //{
+            //    GunaPictureBox pic = new GunaPictureBox();              
+            //    GunaCircleButton btn = new GunaCircleButton();
+            //    //button
+            //    btn.Text = "X";
+            //    btn.Font = new Font("Arial", 15, FontStyle.Bold);
+            //    btn.OnHoverBaseColor = Color.Black;
+            //    btn.Width = 30;
+            //    btn.Height = 30;
+            //    btn.BaseColor = Color.Black;
+            //    btn.Tag = item.maAnhNha;
+            //    anhBiXoa.Clear();
+            //    btn.MouseClick += new MouseEventHandler((o, a) =>
+            //    {
+            //        anhBiXoa.Add(Int32.Parse(btn.Tag.ToString()));
+            //        reSetPanelPic();
+            //    }
+            //    );
+
+
+            //    //pic
+            //    pic.Tag = item.maAnhNha;
+            //    pic.SizeMode = PictureBoxSizeMode.StretchImage;
+            //    pic.Width = 250;
+            //    pic.Height = 200;
+            //    pic.Radius = 10;
+            //    pic.Location = new Point(x, y);
+            //    btn.Location = new Point(x + pic.Width - 30, y - 5);
+
+
+            //    x += pic.Width + 10;
+            //    maxHeight = Math.Max(pic.Height, maxHeight);
+            //    if (x > this.ClientSize.Width - 100)
+            //    {
+            //        x = 20;
+            //        y += maxHeight + 10;
+            //    }
+            //    pic.LoadAsync(item.duongDan);
+            //    pnlPic.Controls.Add(pic);
+            //    pnlPic.Controls.Add(btn);
+            //    btn.BringToFront();
+            //    //Xoa anh
+
+
+            //}
+
+            reSetPanelPic();
         }
         private void btnNoiThat_Click(object sender, EventArgs e)
         {
@@ -456,30 +539,83 @@ namespace TimKiemNhaTro
 
         }
 
-
-        private void btnPic_Click(object sender, EventArgs e)
+        void reSetPanelPic()
         {
-
             pnlPic.Controls.Clear();
-            OpenFileDialog ofd = new OpenFileDialog();
-            ofd.Title = "Toi thieu 2 - Toi ta 8";
-            ofd.Multiselect = true;
-            ofd.Filter = "JPG|*.jpg|JPEG|*.jpeg|GIF|*.gif|PNG|*.png";
-            DialogResult dr = ofd.ShowDialog();
-            if (dr == System.Windows.Forms.DialogResult.OK)
-            {
-                foreach(var item in ofd.FileNames)
-                {
-                    fileList.Add(item);
-                    }
-            }
             int x = 20;
             int y = 20;
             int maxHeight = -1;
-            
+            //Firebase
+            bool canXoa = false;
+            //button
+            if (nhaeidt!=null)
+            {
+                foreach (var item in nhaeidt.AnhNhas.ToList())
+                {
+                    GunaPictureBox pic = new GunaPictureBox();
+                    GunaCircleButton btn = new GunaCircleButton();
+                    btn.Text = "X";
+                    btn.Font = new Font("Arial", 15, FontStyle.Bold);
+                    btn.OnHoverBaseColor = Color.Black;
+                    btn.Width = 30;
+                    btn.Height = 30;
+                    btn.BaseColor = Color.Black;
+                    btn.Tag = item.maAnhNha;
+                    btn.MouseClick += new MouseEventHandler((o, a) =>
+                    {
+                        anhBiXoa.Add(Int32.Parse(btn.Tag.ToString()));
+                        reSetPanelPic();
+                    });
+                    foreach (var xoaanh in anhBiXoa)
+                    {
+                        if (xoaanh == item.maAnhNha)
+                        {
+                            canXoa = true;
+                            break;
+                        }
+                    }
+                    if (canXoa != true)
+                    {
+                        pic.Tag = item.maAnhNha;
+                        pic.SizeMode = PictureBoxSizeMode.StretchImage;
+                        pic.Width = 250;
+                        pic.Height = 200;
+                        pic.Radius = 10;
+                        pic.Location = new Point(x, y);
+                        btn.Location = new Point(x + pic.Width - 30, y - 5);
+
+                        x += pic.Width + 10;
+                        maxHeight = Math.Max(pic.Height, maxHeight);
+                        if (x > this.ClientSize.Width - 100)
+                        {
+                            x = 20;
+                            y += maxHeight + 10;
+                        }
+                        pic.LoadAsync(item.duongDan);
+                        pnlPic.Controls.Add(pic);
+                        pnlPic.Controls.Add(btn);
+                        btn.BringToFront();
+                    }
+                    canXoa = false;
+                }
+            }
+           
+            //Anhpicfile
             foreach (string file in fileList)
             {
                 GunaPictureBox pic = new GunaPictureBox();
+                GunaCircleButton btn = new GunaCircleButton();
+                btn.Text = "X";
+                btn.Font = new Font("Arial", 15, FontStyle.Bold);
+                btn.OnHoverBaseColor = Color.Black;
+                btn.Width = 30;
+                btn.Height = 30;
+                btn.BaseColor = Color.Black;
+                btn.MouseClick += new MouseEventHandler((o, a) =>
+                {
+                    fileList.Remove(file);
+                    reSetPanelPic();
+                });
                 using (var fs = File.OpenRead(file))
                 {
                     pic.Image = Image.FromStream(fs);
@@ -491,7 +627,12 @@ namespace TimKiemNhaTro
                 //pic.Image = Image.FromFile(@"H:\\cc2.png");
                 pic.SizeMode = PictureBoxSizeMode.StretchImage;
                 pic.Radius = 10;
+                pic.Width = 250;
+                pic.Height = 200;
+                pic.Tag = file.ToString();
                 pic.Location = new Point(x, y);
+                btn.Location = new Point(x + pic.Width - 30, y - 5);
+
                 x += pic.Width + 10;
                 maxHeight = Math.Max(pic.Height, maxHeight);
                 if (x > this.ClientSize.Width - 100)
@@ -500,13 +641,26 @@ namespace TimKiemNhaTro
                     y += maxHeight + 10;
                 }
                 pnlPic.Controls.Add(pic);
-
-
-
+                pnlPic.Controls.Add(btn);
+                btn.BringToFront();
                 // UploadFiles(img);
             }
-
-
+        }
+        private void btnPic_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog ofd = new OpenFileDialog();
+            ofd.Title = "Toi thieu 2 - Toi ta 8";
+            ofd.Multiselect = true;
+            ofd.Filter = "JPG|*.jpg|JPEG|*.jpeg|GIF|*.gif|PNG|*.png";
+            DialogResult dr = ofd.ShowDialog();
+            if (dr == System.Windows.Forms.DialogResult.OK)
+            {
+                foreach (var item in ofd.FileNames)
+                {
+                    fileList.Add(item);
+                }
+            }
+            reSetPanelPic();
             //"Phường Bến Nghé",
             //"Phường Bến Thành",
             //"Phường Cầu Kho",
@@ -960,33 +1114,77 @@ namespace TimKiemNhaTro
  
         private void btnDangTin_Click(object sender, EventArgs e)
         {
-            ////CoSoVatChat
-            var csVC = new CoSoVatChat() { baiDauXe = baixe, banCong = bancong, baoVe = baove, cctv = cctv, dieuHoa = dieuhoa, gacLung = gaclung, sanThuong = santhuong, hoBoi = hoboi, mayGiat = maygiat, noiThat = noithat, nuoiThuCung = nuoithucung };
-            DataProvider.Ins.DB.CoSoVatChats.Add(csVC);
-            DataProvider.Ins.DB.SaveChanges();
-            //Nha
-            Nha nhas = new Nha();
-            nhas.maChuNha = 1;
-            nhas.maCoSoVatChat = csVC.maCoSoVatChat;
-            nhas.maLoaiChoThue = maLoaiNha;
-            nhas.soPhongNgu = soPhongNgu;
-            nhas.soPhongTam = soPhongTam;
-            nhas.dienTich = decimal.Parse(txtDienTich.Text);
-            nhas.tinhTrang = "Còn trống";
-            nhas.soNha = txtSoNha.Text+" "+txtTenDuong.Text;
-            nhas.phuongXa = cbxPhuongXa.Text;
-            nhas.quanHuyen = cbxQuanHuyen.Text;
-            nhas.moTa = txtMoTa.Text;
-            nhas.TienNha = decimal.Parse(txtTienChoThue.Text);
-            DataProvider.Ins.DB.Nhas.Add(nhas);
-            DataProvider.Ins.DB.SaveChanges();
-
-            ////Anhnha
-
-
-            foreach (var item in fileList)
+            if (nhaeidt == null)
             {
-                UploadFiles(item, nhas.maNha.ToString());
+                ////CoSoVatChat
+                var csVC = new CoSoVatChat() { baiDauXe = btnBaiXe.Checked, banCong = btnBanCong.Checked, baoVe = btnBaoVe.Checked, cctv = btnCCTV.Checked, dieuHoa = btnDieuHoa.Checked, gacLung = btnGacLung.Checked, sanThuong = btnSanThuong.Checked, hoBoi = btnHoBoi.Checked, mayGiat = btnMayGiat.Checked, noiThat = btnNoiThat.Checked, nuoiThuCung = btnThuCung.Checked };
+                DataProvider.Ins.DB.CoSoVatChats.Add(csVC);
+                DataProvider.Ins.DB.SaveChanges();
+                //Nha
+                Nha nhas = new Nha();
+                nhas.maChuNha = 1;
+                nhas.maCoSoVatChat = csVC.maCoSoVatChat;
+                nhas.maLoaiChoThue = maLoaiNha;
+                nhas.soPhongNgu = soPhongNgu;
+                nhas.soPhongTam = soPhongTam;
+                nhas.dienTich = decimal.Parse(txtDienTich.Text);
+                nhas.tinhTrang = "Còn trống";
+                nhas.soNha = txtSoNha.Text + " " + txtTenDuong.Text;
+                nhas.phuongXa = cbxPhuongXa.Text;
+                nhas.quanHuyen = cbxQuanHuyen.Text;
+                nhas.moTa = txtMoTa.Text;
+                nhas.TienNha = decimal.Parse(txtTienChoThue.Text);
+                DataProvider.Ins.DB.Nhas.Add(nhas);
+                DataProvider.Ins.DB.SaveChanges();
+
+                ////Anhnha
+
+
+                foreach (var item in fileList)
+                {
+                    UploadFiles(item, nhas.maNha.ToString());
+                }
+                MessageBox.Show("Đăng trọ thành công");
+            }
+            else
+            {
+                var nhaluu = DataProvider.Ins.DB.Nhas.Where(x => x.maNha == nhaeidt.maNha).SingleOrDefault();
+                //CSVC
+                nhaluu.CoSoVatChat.baiDauXe = btnBaiXe.Checked;
+                nhaluu.CoSoVatChat.banCong = btnBanCong.Checked;
+                nhaluu.CoSoVatChat.baoVe = btnBaoVe.Checked;
+                nhaluu.CoSoVatChat.cctv = btnCCTV.Checked;
+                nhaluu.CoSoVatChat.dieuHoa = btnDieuHoa.Checked;
+                nhaluu.CoSoVatChat.gacLung = btnGacLung.Checked;
+                nhaluu.CoSoVatChat.sanThuong = btnSanThuong.Checked;
+                nhaluu.CoSoVatChat.hoBoi = btnHoBoi.Checked;
+                nhaluu.CoSoVatChat.mayGiat = btnMayGiat.Checked;
+                nhaluu.CoSoVatChat.noiThat = btnNoiThat.Checked;
+                nhaluu.CoSoVatChat.nuoiThuCung = btnThuCung.Checked;
+                //
+                nhaluu.maLoaiChoThue = maLoaiNha;
+                nhaluu.soPhongNgu = soPhongNgu;
+                nhaluu.soPhongTam = soPhongTam;
+                nhaluu.dienTich = decimal.Parse(txtDienTich.Text);
+                nhaluu.tinhTrang = "Còn trống";
+                nhaluu.soNha = txtSoNha.Text + " " + txtTenDuong.Text;
+                nhaluu.phuongXa = cbxPhuongXa.Text;
+                nhaluu.quanHuyen = cbxQuanHuyen.Text;
+                nhaluu.moTa = txtMoTa.Text;
+                nhaluu.TienNha = decimal.Parse(txtTienChoThue.Text);
+                //Luu
+                //DataProvider.Ins.DB.SaveChanges();
+                var listAnhh = DataProvider.Ins.DB.AnhNhas;
+                foreach (var anhxoa in anhBiXoa)
+                {
+                    listAnhh.Remove( listAnhh.Where(x => x.maAnhNha == anhxoa).SingleOrDefault());
+                }
+                DataProvider.Ins.DB.SaveChanges();
+                foreach (var item in fileList)
+                {
+                    UploadFiles(item, nhaluu.maNha.ToString());
+                }
+                MessageBox.Show("Lưu nhà thành công");
             }
 
         }

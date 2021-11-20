@@ -19,8 +19,8 @@ namespace TimKiemNhaTro
         }
         public List<Districts> listt = new List<Districts>();
         List<string> fileList = new List<string>();
-        int maLoaiNha = 0, soPhongNgu = 0, soPhongTam = 0;
-        bool baixe = false, bancong = false, baove = false, cctv = false, dieuhoa = false, gaclung = false, santhuong = false, hoboi = false, maygiat = false, noithat = false, nuoithucung = false;
+        public int maLoaiNha = 0, soPhongNgu = 0, soPhongTam = 0;
+        public bool baixe = false, bancong = false, baove = false, cctv = false, dieuhoa = false, gaclung = false, santhuong = false, hoboi = false, maygiat = false, noithat = false, nuoithucung = false;
         private void ucAddHome_Load(object sender, EventArgs e)
         {
             listt.Add(new Districts("Quận 1", Quan1));
@@ -53,7 +53,132 @@ namespace TimKiemNhaTro
                 cbxQuanHuyen.Items.Add(AllQuan[i]);
             }
         }
+        public void reSet1()
+        {
+            cbxQuanHuyen.Text = "";
+            cbxPhuongXa.Text = "";
+            txtSoNha.Text = "";
+            txtTenDuong.Text = "";
+            btnNha.Checked = false;
+            btnPhong.Checked = false;
+            btnCanHo.Checked = false;
+            btn1Ngu.Checked = false;
+            btn2Ngu.Checked = false;
+            btn3Ngu.Checked = false;
+            btnHon4Ngu.Checked = false;
+            btn1Tam.Checked = false;
+            btn2Tam.Checked = false;
+            btn3Tam.Checked = false;
+            btnHon4Tam.Checked = false;
+            btn1Ngu.Checked = false;
+            btnDieuHoa.Checked = false;
+            btnBanCong.Checked = false;
+            btnMayGiat.Checked = false;
+            btnGacLung.Checked = false;
+            btnNoiThat.Checked = false;
+            btnBaoVe.Checked = false;
+            btnHoBoi.Checked = false;
+            btnBaiXe.Checked = false;
+            btnSanThuong.Checked = false;
+            btnCCTV.Checked = false;
+            btnThuCung.Checked = false;
+            txtDienTich.Text = "";
+            txtTienChoThue.Text = "";
+            txtMoTa.Text = "";
+            pnlPic.Controls.Clear();
 
+
+        }
+        Nha nhaeidt;
+        public void LoadEditNha(Nha nhalol)
+        {
+            reSet1();
+            nhaeidt = nhalol;
+            cbxPhuongXa.Text = nhaeidt.phuongXa.ToString();
+            cbxQuanHuyen.Text = nhaeidt.quanHuyen;
+            txtSoNha.Text = nhaeidt.soNha;
+            txtTenDuong.Text = nhaeidt.soNha;
+            if (nhaeidt.maLoaiChoThue == 1)
+            {
+                btnNha.Checked = true;
+                btnCanHo.Checked = false;
+                btnPhong.Checked = false;
+                maLoaiNha = 1;
+            }
+            else if (nhaeidt.maLoaiChoThue == 2)
+            {
+                btnNha.Checked = false;
+                btnCanHo.Checked = false;
+                btnPhong.Checked = true;
+                maLoaiNha = 2;
+            }
+            else if (nhaeidt.maLoaiChoThue == 3)
+            {
+                btnNha.Checked = false;
+                btnCanHo.Checked = true;
+                btnPhong.Checked = false;
+                maLoaiNha = 3;
+            }
+            //PhongNgu
+            if (nhaeidt.soPhongNgu == 1)
+            {
+                btn1Ngu.Checked = true;
+                soPhongNgu = 1;
+            }
+            else if (nhaeidt.soPhongNgu == 2)
+            {
+                btn2Ngu.Checked = true;
+                soPhongNgu = 2;
+            }
+            else if (nhaeidt.soPhongNgu == 3)
+            {
+                btn3Ngu.Checked = true;
+                soPhongNgu = 3;
+            }
+            else if (nhaeidt.soPhongNgu >3)
+            {
+                btnHon4Ngu.Checked = true;
+                soPhongNgu = 4;
+            }
+            //PhongTam
+            if (nhaeidt.soPhongTam == 1)
+            {
+                btn1Tam.Checked = true;
+                soPhongTam = 1;
+            }
+            else if (nhaeidt.soPhongTam == 2)
+            {
+                btn2Tam.Checked = true;
+                soPhongTam = 2;
+            }
+            else if (nhaeidt.soPhongTam == 3)
+            {
+                btn3Tam.Checked = true;
+                soPhongTam = 3;
+            }
+            else if (nhaeidt.soPhongTam > 3)
+            {
+                btnHon4Tam.Checked = true;
+                soPhongTam = 4;
+            }
+            //
+            txtDienTich.Text = nhaeidt.dienTich.ToString();
+            txtTienChoThue.Text = nhaeidt.TienNha.ToString();
+            //CoSoVatChat
+            btnDieuHoa.Checked = (bool)nhaeidt.CoSoVatChat.dieuHoa;
+            btnBanCong.Checked = (bool)nhaeidt.CoSoVatChat.banCong;
+            btnMayGiat.Checked = (bool)nhaeidt.CoSoVatChat.mayGiat;
+            btnGacLung.Checked = (bool)nhaeidt.CoSoVatChat.gacLung;
+            btnNoiThat.Checked = (bool)nhaeidt.CoSoVatChat.noiThat;
+            btnBaoVe.Checked = (bool)nhaeidt.CoSoVatChat.baoVe;
+            btnHoBoi.Checked = (bool)nhaeidt.CoSoVatChat.hoBoi;
+            btnBaiXe.Checked = (bool)nhaeidt.CoSoVatChat.baiDauXe;
+            btnSanThuong.Checked = (bool)nhaeidt.CoSoVatChat.sanThuong;
+            btnCCTV.Checked = (bool)nhaeidt.CoSoVatChat.cctv;
+            btnThuCung.Checked = (bool)nhaeidt.CoSoVatChat.nuoiThuCung;
+            txtMoTa.Text = nhaeidt.moTa;
+
+        }
         private void btnNoiThat_Click(object sender, EventArgs e)
         {
             if (btnNoiThat.Checked == true)
@@ -823,6 +948,10 @@ namespace TimKiemNhaTro
                     for (int i = 0; i < item.commune.Length; i++)
                     {
                         cbxPhuongXa.Items.Add(item.commune[i]);
+                        //if (nhaeidt.phuongXa != ""||nhaeidt.phuongXa!=null)
+                        //{
+                            //cbxPhuongXa.Text = nhaeidt.phuongXa;
+                        //}
                     }
                 }
             }

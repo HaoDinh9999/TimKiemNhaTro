@@ -32,7 +32,6 @@ namespace TimKiemNhaTro
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ucAddHome));
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.cbxPhuongXa = new Guna.UI.WinForms.GunaComboBox();
             this.label11 = new System.Windows.Forms.Label();
             this.cbxQuanHuyen = new Guna.UI.WinForms.GunaComboBox();
             this.label10 = new System.Windows.Forms.Label();
@@ -65,6 +64,8 @@ namespace TimKiemNhaTro
             this.label16 = new System.Windows.Forms.Label();
             this.txtMoTa = new Guna.UI.WinForms.GunaTextBox();
             this.btnDangTin = new Guna.UI.WinForms.GunaAdvenceButton();
+            this.pnlPic = new System.Windows.Forms.Panel();
+            this.cbxPhuongXa = new Guna.UI.WinForms.GunaComboBox();
             this.btnPic = new Guna.UI.WinForms.GunaAdvenceButton();
             this.btnThuCung = new Guna.UI.WinForms.GunaAdvenceTileButton();
             this.btnCCTV = new Guna.UI.WinForms.GunaAdvenceTileButton();
@@ -79,7 +80,6 @@ namespace TimKiemNhaTro
             this.btnDieuHoa = new Guna.UI.WinForms.GunaAdvenceTileButton();
             this.gunaAdvenceButton1 = new Guna.UI.WinForms.GunaAdvenceButton();
             this.gunaAdvenceButton3 = new Guna.UI.WinForms.GunaAdvenceButton();
-            this.pnlPic = new System.Windows.Forms.Panel();
             this.SuspendLayout();
             // 
             // label1
@@ -104,26 +104,6 @@ namespace TimKiemNhaTro
             this.label2.Size = new System.Drawing.Size(250, 36);
             this.label2.TabIndex = 26;
             this.label2.Text = "Thông tin địa chỉ:";
-            // 
-            // cbxPhuongXa
-            // 
-            this.cbxPhuongXa.BackColor = System.Drawing.Color.Transparent;
-            this.cbxPhuongXa.BaseColor = System.Drawing.Color.White;
-            this.cbxPhuongXa.BorderColor = System.Drawing.Color.LightSeaGreen;
-            this.cbxPhuongXa.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.cbxPhuongXa.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cbxPhuongXa.FocusedColor = System.Drawing.Color.LightSeaGreen;
-            this.cbxPhuongXa.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cbxPhuongXa.ForeColor = System.Drawing.Color.Black;
-            this.cbxPhuongXa.FormattingEnabled = true;
-            this.cbxPhuongXa.Location = new System.Drawing.Point(141, 212);
-            this.cbxPhuongXa.Margin = new System.Windows.Forms.Padding(4);
-            this.cbxPhuongXa.Name = "cbxPhuongXa";
-            this.cbxPhuongXa.OnHoverItemBaseColor = System.Drawing.Color.LightSeaGreen;
-            this.cbxPhuongXa.OnHoverItemForeColor = System.Drawing.Color.White;
-            this.cbxPhuongXa.Radius = 10;
-            this.cbxPhuongXa.Size = new System.Drawing.Size(301, 40);
-            this.cbxPhuongXa.TabIndex = 30;
             // 
             // label11
             // 
@@ -842,7 +822,7 @@ namespace TimKiemNhaTro
             this.btnDangTin.Image = null;
             this.btnDangTin.ImageSize = new System.Drawing.Size(20, 20);
             this.btnDangTin.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.btnDangTin.Location = new System.Drawing.Point(543, 1482);
+            this.btnDangTin.Location = new System.Drawing.Point(544, 1497);
             this.btnDangTin.Margin = new System.Windows.Forms.Padding(4);
             this.btnDangTin.Name = "btnDangTin";
             this.btnDangTin.OnHoverBaseColor = System.Drawing.Color.Silver;
@@ -857,6 +837,34 @@ namespace TimKiemNhaTro
             this.btnDangTin.Text = "Đăng tin";
             this.btnDangTin.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.btnDangTin.Click += new System.EventHandler(this.btnDangTin_Click);
+            // 
+            // pnlPic
+            // 
+            this.pnlPic.Location = new System.Drawing.Point(147, 1009);
+            this.pnlPic.Margin = new System.Windows.Forms.Padding(4);
+            this.pnlPic.Name = "pnlPic";
+            this.pnlPic.Size = new System.Drawing.Size(1049, 185);
+            this.pnlPic.TabIndex = 74;
+            // 
+            // cbxPhuongXa
+            // 
+            this.cbxPhuongXa.BackColor = System.Drawing.Color.Transparent;
+            this.cbxPhuongXa.BaseColor = System.Drawing.Color.White;
+            this.cbxPhuongXa.BorderColor = System.Drawing.Color.LightSeaGreen;
+            this.cbxPhuongXa.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cbxPhuongXa.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbxPhuongXa.FocusedColor = System.Drawing.Color.LightSeaGreen;
+            this.cbxPhuongXa.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbxPhuongXa.ForeColor = System.Drawing.Color.Black;
+            this.cbxPhuongXa.FormattingEnabled = true;
+            this.cbxPhuongXa.Location = new System.Drawing.Point(141, 212);
+            this.cbxPhuongXa.Margin = new System.Windows.Forms.Padding(4);
+            this.cbxPhuongXa.Name = "cbxPhuongXa";
+            this.cbxPhuongXa.OnHoverItemBaseColor = System.Drawing.Color.LightSeaGreen;
+            this.cbxPhuongXa.OnHoverItemForeColor = System.Drawing.Color.White;
+            this.cbxPhuongXa.Radius = 10;
+            this.cbxPhuongXa.Size = new System.Drawing.Size(301, 40);
+            this.cbxPhuongXa.TabIndex = 30;
             // 
             // btnPic
             // 
@@ -1307,7 +1315,7 @@ namespace TimKiemNhaTro
             this.gunaAdvenceButton1.ForeColor = System.Drawing.Color.White;
             this.gunaAdvenceButton1.Image = global::TimKiemNhaTro.Properties.Resources.icons8_shield_32;
             this.gunaAdvenceButton1.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.gunaAdvenceButton1.ImageSize = new System.Drawing.Size(30, 30);
+            this.gunaAdvenceButton1.ImageSize = new System.Drawing.Size(38, 38);
             this.gunaAdvenceButton1.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
             this.gunaAdvenceButton1.Location = new System.Drawing.Point(51, 290);
             this.gunaAdvenceButton1.Margin = new System.Windows.Forms.Padding(4);
@@ -1340,7 +1348,7 @@ namespace TimKiemNhaTro
             this.gunaAdvenceButton3.ForeColor = System.Drawing.Color.White;
             this.gunaAdvenceButton3.Image = global::TimKiemNhaTro.Properties.Resources.icons8_shield_32;
             this.gunaAdvenceButton3.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.gunaAdvenceButton3.ImageSize = new System.Drawing.Size(30, 30);
+            this.gunaAdvenceButton3.ImageSize = new System.Drawing.Size(38, 38);
             this.gunaAdvenceButton3.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
             this.gunaAdvenceButton3.Location = new System.Drawing.Point(51, 17);
             this.gunaAdvenceButton3.Margin = new System.Windows.Forms.Padding(4);
@@ -1354,14 +1362,6 @@ namespace TimKiemNhaTro
             this.gunaAdvenceButton3.Radius = 5;
             this.gunaAdvenceButton3.Size = new System.Drawing.Size(81, 64);
             this.gunaAdvenceButton3.TabIndex = 24;
-            // 
-            // pnlPic
-            // 
-            this.pnlPic.Location = new System.Drawing.Point(147, 1009);
-            this.pnlPic.Margin = new System.Windows.Forms.Padding(4);
-            this.pnlPic.Name = "pnlPic";
-            this.pnlPic.Size = new System.Drawing.Size(1049, 185);
-            this.pnlPic.TabIndex = 74;
             // 
             // ucAddHome
             // 
@@ -1433,7 +1433,6 @@ namespace TimKiemNhaTro
         private Guna.UI.WinForms.GunaAdvenceButton gunaAdvenceButton3;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
-        private Guna.UI.WinForms.GunaComboBox cbxPhuongXa;
         private System.Windows.Forms.Label label11;
         private Guna.UI.WinForms.GunaComboBox cbxQuanHuyen;
         private System.Windows.Forms.Label label10;
@@ -1480,5 +1479,6 @@ namespace TimKiemNhaTro
         private Guna.UI.WinForms.GunaTextBox txtMoTa;
         private Guna.UI.WinForms.GunaAdvenceButton btnDangTin;
         private System.Windows.Forms.Panel pnlPic;
+        private Guna.UI.WinForms.GunaComboBox cbxPhuongXa;
     }
 }

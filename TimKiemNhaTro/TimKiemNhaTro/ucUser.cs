@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using TimKiemNhaTro.Model;
 
 namespace TimKiemNhaTro
 {
@@ -29,6 +30,12 @@ namespace TimKiemNhaTro
                 btnEdit.Checked = true;
                 btnEditImage.Visible = false;
             }
+        }
+
+        private void btnNhaDaDang_Click(object sender, EventArgs e)
+        {
+            (this.Parent.Parent as frmMain).getUCNhaDaDang();
+            (this.Parent.Parent as frmMain).setUCNhaDaDangBringtoFront();
         }
     }
 }

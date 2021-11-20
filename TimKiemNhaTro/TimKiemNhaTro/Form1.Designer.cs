@@ -45,12 +45,6 @@ namespace TimKiemNhaTro
             this.btnAvatar = new Guna.UI.WinForms.GunaGradientCircleButton();
             this.pnlUC = new System.Windows.Forms.Panel();
             this.btnAddHouse = new Guna.UI.WinForms.GunaAdvenceButton();
-            this.ucHome1 = new TimKiemNhaTro.ucHome();
-            this.ucSetting1 = new TimKiemNhaTro.ucSetting();
-            this.ucUser1 = new TimKiemNhaTro.ucUser();
-            this.ucFavourite1 = new TimKiemNhaTro.ucFavourite();
-            this.ucSearch1 = new TimKiemNhaTro.ucSearch();
-            this.ucDetailHome1 = new TimKiemNhaTro.ucDetailHome();
             this.pnlMenu = new Guna.UI.WinForms.GunaGradientPanel();
             this.picGif = new Guna.UI.WinForms.GunaPictureBox();
             this.pnlMove = new System.Windows.Forms.Panel();
@@ -61,6 +55,7 @@ namespace TimKiemNhaTro
             this.btnFavourite = new Guna.UI.WinForms.GunaAdvenceButton();
             this.btnFindMap = new Guna.UI.WinForms.GunaAdvenceButton();
             this.btnHome = new Guna.UI.WinForms.GunaAdvenceButton();
+            this.mySqlCommandBuilder1 = new MySqlConnector.MySqlCommandBuilder();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ptrPaint)).BeginInit();
             this.pnlUC.SuspendLayout();
@@ -283,12 +278,6 @@ namespace TimKiemNhaTro
             // pnlUC
             // 
             this.pnlUC.Controls.Add(this.btnAddHouse);
-            this.pnlUC.Controls.Add(this.ucHome1);
-            this.pnlUC.Controls.Add(this.ucSetting1);
-            this.pnlUC.Controls.Add(this.ucUser1);
-            this.pnlUC.Controls.Add(this.ucFavourite1);
-            this.pnlUC.Controls.Add(this.ucSearch1);
-            this.pnlUC.Controls.Add(this.ucDetailHome1);
             this.pnlUC.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlUC.Location = new System.Drawing.Point(297, 58);
             this.pnlUC.Name = "pnlUC";
@@ -328,68 +317,6 @@ namespace TimKiemNhaTro
             this.btnAddHouse.Size = new System.Drawing.Size(63, 63);
             this.btnAddHouse.TabIndex = 18;
             this.btnAddHouse.Click += new System.EventHandler(this.btnAddHouse_Click);
-            // 
-            // ucHome1
-            // 
-            this.ucHome1.AutoScroll = true;
-            this.ucHome1.BackColor = System.Drawing.Color.White;
-            this.ucHome1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ucHome1.Location = new System.Drawing.Point(0, 0);
-            this.ucHome1.Margin = new System.Windows.Forms.Padding(2);
-            this.ucHome1.Name = "ucHome1";
-            this.ucHome1.Size = new System.Drawing.Size(1510, 795);
-            this.ucHome1.TabIndex = 0;
-            // 
-            // ucSetting1
-            // 
-            this.ucSetting1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ucSetting1.Location = new System.Drawing.Point(0, 0);
-            this.ucSetting1.Margin = new System.Windows.Forms.Padding(2);
-            this.ucSetting1.Name = "ucSetting1";
-            this.ucSetting1.Size = new System.Drawing.Size(1510, 795);
-            this.ucSetting1.TabIndex = 4;
-            // 
-            // ucUser1
-            // 
-            this.ucUser1.BackColor = System.Drawing.Color.White;
-            this.ucUser1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ucUser1.Location = new System.Drawing.Point(0, 0);
-            this.ucUser1.Margin = new System.Windows.Forms.Padding(2);
-            this.ucUser1.Name = "ucUser1";
-            this.ucUser1.Size = new System.Drawing.Size(1510, 795);
-            this.ucUser1.TabIndex = 3;
-            // 
-            // ucFavourite1
-            // 
-            this.ucFavourite1.BackColor = System.Drawing.Color.White;
-            this.ucFavourite1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ucFavourite1.Location = new System.Drawing.Point(0, 0);
-            this.ucFavourite1.Margin = new System.Windows.Forms.Padding(2);
-            this.ucFavourite1.Name = "ucFavourite1";
-            this.ucFavourite1.Size = new System.Drawing.Size(1510, 795);
-            this.ucFavourite1.TabIndex = 2;
-            // 
-            // ucSearch1
-            // 
-            this.ucSearch1.BackColor = System.Drawing.Color.White;
-            this.ucSearch1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ucSearch1.Location = new System.Drawing.Point(0, 0);
-            this.ucSearch1.Margin = new System.Windows.Forms.Padding(2);
-            this.ucSearch1.Name = "ucSearch1";
-            this.ucSearch1.Size = new System.Drawing.Size(1510, 795);
-            this.ucSearch1.TabIndex = 1;
-            // 
-            // ucDetailHome1
-            // 
-            this.ucDetailHome1.AutoScroll = true;
-            this.ucDetailHome1.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.ucDetailHome1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.ucDetailHome1.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.ucDetailHome1.Location = new System.Drawing.Point(0, 0);
-            this.ucDetailHome1.Margin = new System.Windows.Forms.Padding(4);
-            this.ucDetailHome1.Name = "ucDetailHome1";
-            this.ucDetailHome1.Size = new System.Drawing.Size(1510, 795);
-            this.ucDetailHome1.TabIndex = 19;
             // 
             // pnlMenu
             // 
@@ -639,6 +566,12 @@ namespace TimKiemNhaTro
             this.btnHome.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.btnHome.Click += new System.EventHandler(this.btnHome_Click);
             // 
+            // mySqlCommandBuilder1
+            // 
+            this.mySqlCommandBuilder1.DataAdapter = null;
+            this.mySqlCommandBuilder1.QuotePrefix = "`";
+            this.mySqlCommandBuilder1.QuoteSuffix = "`";
+            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
@@ -653,6 +586,7 @@ namespace TimKiemNhaTro
             this.Name = "frmMain";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.frmMain_Load);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ptrPaint)).EndInit();
@@ -689,14 +623,9 @@ namespace TimKiemNhaTro
         private Guna.UI.WinForms.GunaDateTimePicker dtpRealTime;
         private Guna.UI.WinForms.GunaPictureBox picGif;
         private System.Windows.Forms.Panel pnlUC;
-        private ucHome ucHome1;
-        private ucSetting ucSetting1;
-        private ucUser ucUser1;
-        private ucFavourite ucFavourite1;
-        private ucSearch ucSearch1;
         private System.Windows.Forms.Label lblTitle;
         private Guna.UI.WinForms.GunaAdvenceButton btnAddHouse;
-        private ucDetailHome ucDetailHome1;
+        private MySqlConnector.MySqlCommandBuilder mySqlCommandBuilder1;
     }
 }
 

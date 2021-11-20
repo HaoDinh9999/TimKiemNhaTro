@@ -1,4 +1,4 @@
-﻿// T4 code generation is enabled for model 'H:\HK1(2021-2022)\CS-C#\Real_TimKiemNhaTro\TimKiemNhaTro\TimKiemNhaTro\TimKiemNhaTro\Model\Model1.edmx'. 
+﻿// T4 code generation is enabled for model 'C:\Users\DELL\Desktop\TroMoiNhat\TimKiemNhaTro\TimKiemNhaTro\TimKiemNhaTro\Model\Model1.edmx'. 
 // To enable legacy code generation, change the value of the 'Code Generation Strategy' designer
 // property to 'Legacy ObjectContext'. This property is available in the Properties Window when the model
 // is open in the designer.

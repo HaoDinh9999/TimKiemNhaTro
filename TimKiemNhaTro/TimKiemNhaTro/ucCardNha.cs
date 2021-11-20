@@ -1,4 +1,4 @@
-﻿using System;
+﻿    using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -13,15 +13,29 @@ namespace TimKiemNhaTro
 {
     public partial class ucCardNha : UserControl
     {
-        frmMain frmM = new frmMain();
+        frmMain frmM ;
+        Nha _nha;
         public ucCardNha()
         {
             InitializeComponent();
         }
-        public ucCardNha(frmMain frm)
+        public ucCardNha(frmMain frm, Nha nha)
         {
             InitializeComponent();
             frmM = frm;
+            _nha = nha;
+        }
+        public void SetInfo()
+        {
+            ID = _nha.maNha;
+            lblMoney.Text = _nha.TienNha.ToString()+ " VNĐ";
+            lblPhongNgu.Text = _nha.soPhongNgu.ToString()+" phòng";
+            lblPhongTam.Text = _nha.soPhongTam.ToString()+" phòng";
+            lblDienTich.Text = _nha.dienTich.ToString() +" m2";
+            lblAddress.Text = _nha.soNha + ", phường " + _nha.phuongXa + ", " + _nha.quanHuyen + ", thành phố Hồ Chí Minh";
+            btnType.Text = _nha.LoaiChoThue.tenLoaiChoThue;
+            string _duongDan = _nha.AnhNhas.ToList()[0].duongDan;
+            ptrPicNha.LoadAsync(_duongDan);
         }
         #region Properties
         int _id;
@@ -86,7 +100,7 @@ namespace TimKiemNhaTro
             set { _countArea = value; lblDienTich.Text = value.ToString()+"m2"; }
         }
         [Category("Custom Props")]
-        public async Task imgMainAsync()
+        public async void  imgMainAsync()
         {
             await Task.Run(() => ptrPicNha.LoadAsync("https://firebasestorage.googleapis.com/v0/b/timkiemnhatro-6dd5a.appspot.com/o/3612573_18012114440061220336.jpg?alt=media&token=1b991d12-60e7-4bec-af5c-c5f2b56458ff"));
 

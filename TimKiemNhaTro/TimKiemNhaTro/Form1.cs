@@ -16,10 +16,19 @@ namespace TimKiemNhaTro
         public frmMain()
         {
             InitializeComponent();
-            ucHome1.Show();
-            ucHome1.BringToFront();
-            btnAddHouse.BringToFront();
+            //pnlUC.Controls.Add(ucH);
+            //ucH.Dock = DockStyle.Fill;
+            //ucH.BringToFront();
+            //btnAddHouse.BringToFront();
         }
+        ucDetailHome ucD;
+        ucHomeCC ucH;
+        ucSearch ucS;
+        ucUser ucUss;
+        ucFavourite ucF;
+        ucSetting ucSet;
+        ucAddHome _ucAdd;
+        ucNhaDaDang _ucNhaDaDang;
         private void moveImageBox(object sender)
         {
             GunaAdvenceButton b = (GunaAdvenceButton)sender;
@@ -31,14 +40,52 @@ namespace TimKiemNhaTro
         {
             lblTitle.Text = a;
         }
+        public void setUCNhaDaDangBringtoFront()
+        {
+            _ucNhaDaDang.Show();
+            _ucNhaDaDang.BringToFront();
+        }
+        public ucNhaDaDang getUCNhaDaDang()
+        {
+            return _ucNhaDaDang;
+        }
         public void setUCDetailBringtoFront()
         {
-            ucDetailHome1.Show();
-            ucDetailHome1.BringToFront();
+            ucD.Show();
+            ucD.BringToFront();
         }
         public ucDetailHome getDetailHome()
         {
-            return ucDetailHome1;
+            return ucD;
+        }
+
+        public void setUCAddBringtoFront()
+        {
+            _ucAdd.Show();
+            _ucAdd.BringToFront();
+        }
+        public ucAddHome getAddHome()
+        {
+            return _ucAdd;
+        }
+        public void addToPanel()
+        {
+            pnlUC.Controls.Add(ucH);
+            ucH.Dock = DockStyle.Fill;
+            pnlUC.Controls.Add(ucS);
+            ucS.Dock = DockStyle.Fill;
+            pnlUC.Controls.Add(ucF);
+            ucF.Dock = DockStyle.Fill;
+            pnlUC.Controls.Add(ucUss);
+            ucUss.Dock = DockStyle.Fill;
+            pnlUC.Controls.Add(ucSet);
+            ucSet.Dock = DockStyle.Fill;
+            pnlUC.Controls.Add(ucD);
+            ucD.Dock = DockStyle.Fill;
+            pnlUC.Controls.Add(_ucAdd);
+            _ucAdd.Dock = DockStyle.Fill;
+            pnlUC.Controls.Add(_ucNhaDaDang);
+            _ucNhaDaDang.Dock = DockStyle.Fill;
         }
         private void btnHome_Click(object sender, EventArgs e)
         {
@@ -49,9 +96,12 @@ namespace TimKiemNhaTro
             btnFavourite.Checked = false;
             btnUser.Checked = false;
             btnSetting.Checked = false;
-            ucHome1.Show();
-            ucHome1.BringToFront();
+            //ucHome1.Show();
+            //ucHome1.BringToFront();
+
+            ucH.BringToFront();
             btnAddHouse.BringToFront();
+ 
         }
 
         private void btnFindMap_Click(object sender, EventArgs e)
@@ -63,8 +113,8 @@ namespace TimKiemNhaTro
             btnFavourite.Checked = false;
             btnUser.Checked = false;
             btnSetting.Checked = false;
-            ucSearch1.Show();
-            ucSearch1.BringToFront();
+
+            ucS.BringToFront();
         }
 
         private void btnFavourite_Click(object sender, EventArgs e)
@@ -76,9 +126,10 @@ namespace TimKiemNhaTro
             btnFavourite.Checked = true;
             btnUser.Checked = false;
             btnSetting.Checked = false;
-            ucFavourite1.Show();
-            ucFavourite1.BringToFront();
+
+            ucF.BringToFront();
         }
+
 
         private void btnUser_Click(object sender, EventArgs e)
         {
@@ -89,8 +140,8 @@ namespace TimKiemNhaTro
             btnFavourite.Checked = false;
             btnUser.Checked = true;
             btnSetting.Checked = false;
-            ucUser1.Show();
-            ucUser1.BringToFront();
+
+            ucUss.BringToFront();
         }
 
         private void btnSetting_Click(object sender, EventArgs e)
@@ -102,8 +153,8 @@ namespace TimKiemNhaTro
             btnFavourite.Checked = false;
             btnUser.Checked = false;
             btnSetting.Checked = true;
-            ucSetting1.Show();
-            ucSetting1.BringToFront();
+
+            ucSet.BringToFront();
         }
 
         private void btnMinimize_Click(object sender, EventArgs e)
@@ -130,13 +181,24 @@ namespace TimKiemNhaTro
                 picGif.Visible = true;
             }
         }
-
         private void btnAddHouse_Click(object sender, EventArgs e)
         {
-            ucAddHome _ucAdd = new ucAddHome();
-            pnlUC.Controls.Add(_ucAdd);
-            _ucAdd.Dock = DockStyle.Fill;
+
             _ucAdd.BringToFront();
+        }
+
+        private void frmMain_Load(object sender, EventArgs e)
+        {
+            ucH = new ucHomeCC();
+            ucS = new ucSearch();
+            ucF = new ucFavourite();
+            ucUss = new ucUser();
+            ucSet = new ucSetting();
+            ucD = new ucDetailHome();
+            _ucAdd = new ucAddHome();
+            _ucNhaDaDang = new ucNhaDaDang();
+            addToPanel();
+
         }
     }
 }

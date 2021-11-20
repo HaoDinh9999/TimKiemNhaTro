@@ -60,9 +60,10 @@ namespace TimKiemNhaTro
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Tahoma", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(27, 15);
+            this.label1.Location = new System.Drawing.Point(36, 18);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(306, 33);
+            this.label1.Size = new System.Drawing.Size(385, 41);
             this.label1.TabIndex = 1;
             this.label1.Text = "Thông tin người dùng";
             // 
@@ -70,9 +71,10 @@ namespace TimKiemNhaTro
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Tahoma", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(350, 65);
+            this.label3.Location = new System.Drawing.Point(467, 80);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(217, 35);
+            this.label3.Size = new System.Drawing.Size(276, 45);
             this.label3.TabIndex = 3;
             this.label3.Text = "Đinh Việt Hào";
             // 
@@ -80,9 +82,10 @@ namespace TimKiemNhaTro
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(352, 100);
+            this.label5.Location = new System.Drawing.Point(469, 123);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(111, 23);
+            this.label5.Size = new System.Drawing.Size(137, 29);
             this.label5.TabIndex = 5;
             this.label5.Text = "Khách hàng";
             // 
@@ -90,9 +93,10 @@ namespace TimKiemNhaTro
             // 
             this.lblUsername.AutoSize = true;
             this.lblUsername.Font = new System.Drawing.Font("Tahoma", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblUsername.Location = new System.Drawing.Point(402, 222);
+            this.lblUsername.Location = new System.Drawing.Point(536, 273);
+            this.lblUsername.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblUsername.Name = "lblUsername";
-            this.lblUsername.Size = new System.Drawing.Size(104, 25);
+            this.lblUsername.Size = new System.Drawing.Size(132, 33);
             this.lblUsername.TabIndex = 7;
             this.lblUsername.Text = "username";
             // 
@@ -100,9 +104,10 @@ namespace TimKiemNhaTro
             // 
             this.lblPhone.AutoSize = true;
             this.lblPhone.Font = new System.Drawing.Font("Tahoma", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPhone.Location = new System.Drawing.Point(402, 259);
+            this.lblPhone.Location = new System.Drawing.Point(536, 319);
+            this.lblPhone.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblPhone.Name = "lblPhone";
-            this.lblPhone.Size = new System.Drawing.Size(155, 25);
+            this.lblPhone.Size = new System.Drawing.Size(208, 33);
             this.lblPhone.TabIndex = 9;
             this.lblPhone.Text = "+84 793111038";
             // 
@@ -126,7 +131,8 @@ namespace TimKiemNhaTro
             this.btnEditImage.Image = null;
             this.btnEditImage.ImageSize = new System.Drawing.Size(20, 20);
             this.btnEditImage.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.btnEditImage.Location = new System.Drawing.Point(100, 285);
+            this.btnEditImage.Location = new System.Drawing.Point(133, 351);
+            this.btnEditImage.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnEditImage.Name = "btnEditImage";
             this.btnEditImage.OnHoverBaseColor = System.Drawing.Color.DarkGray;
             this.btnEditImage.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -135,7 +141,7 @@ namespace TimKiemNhaTro
             this.btnEditImage.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
             this.btnEditImage.OnPressedColor = System.Drawing.Color.Black;
             this.btnEditImage.Radius = 10;
-            this.btnEditImage.Size = new System.Drawing.Size(117, 42);
+            this.btnEditImage.Size = new System.Drawing.Size(156, 52);
             this.btnEditImage.TabIndex = 10;
             this.btnEditImage.Text = "Sửa ảnh";
             this.btnEditImage.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -145,9 +151,10 @@ namespace TimKiemNhaTro
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(750, 416);
+            this.label8.Location = new System.Drawing.Point(1000, 512);
+            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(218, 18);
+            this.label8.Size = new System.Drawing.Size(285, 23);
             this.label8.TabIndex = 19;
             this.label8.Text = "Gửi câu hỏi và phản hồi của bạn";
             // 
@@ -155,9 +162,10 @@ namespace TimKiemNhaTro
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(750, 393);
+            this.label9.Location = new System.Drawing.Point(1000, 484);
+            this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(176, 19);
+            this.label9.Size = new System.Drawing.Size(218, 24);
             this.label9.TabIndex = 18;
             this.label9.Text = "Trợ giúp và phản hồi";
             // 
@@ -165,9 +173,10 @@ namespace TimKiemNhaTro
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(156, 393);
+            this.label4.Location = new System.Drawing.Point(208, 484);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(75, 19);
+            this.label4.Size = new System.Drawing.Size(92, 24);
             this.label4.TabIndex = 24;
             this.label4.Text = "Cá nhân";
             // 
@@ -175,9 +184,10 @@ namespace TimKiemNhaTro
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(156, 416);
+            this.label7.Location = new System.Drawing.Point(208, 512);
+            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(264, 18);
+            this.label7.Size = new System.Drawing.Size(344, 23);
             this.label7.TabIndex = 25;
             this.label7.Text = "Quản lý thông tin cá nhân dễ dàng hơn";
             // 
@@ -202,7 +212,8 @@ namespace TimKiemNhaTro
             this.btnNhaDaDang.ImageAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.btnNhaDaDang.ImageSize = new System.Drawing.Size(20, 20);
             this.btnNhaDaDang.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.btnNhaDaDang.Location = new System.Drawing.Point(100, 454);
+            this.btnNhaDaDang.Location = new System.Drawing.Point(133, 559);
+            this.btnNhaDaDang.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnNhaDaDang.Name = "btnNhaDaDang";
             this.btnNhaDaDang.OnHoverBaseColor = System.Drawing.Color.DarkGray;
             this.btnNhaDaDang.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -211,9 +222,10 @@ namespace TimKiemNhaTro
             this.btnNhaDaDang.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
             this.btnNhaDaDang.OnPressedColor = System.Drawing.Color.Black;
             this.btnNhaDaDang.Radius = 10;
-            this.btnNhaDaDang.Size = new System.Drawing.Size(320, 42);
+            this.btnNhaDaDang.Size = new System.Drawing.Size(427, 52);
             this.btnNhaDaDang.TabIndex = 26;
             this.btnNhaDaDang.Text = "Danh sách nhà đã đăng";
+            this.btnNhaDaDang.Click += new System.EventHandler(this.btnNhaDaDang_Click);
             // 
             // gunaAdvenceButton3
             // 
@@ -235,7 +247,8 @@ namespace TimKiemNhaTro
             this.gunaAdvenceButton3.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.gunaAdvenceButton3.ImageSize = new System.Drawing.Size(30, 30);
             this.gunaAdvenceButton3.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.gunaAdvenceButton3.Location = new System.Drawing.Point(100, 393);
+            this.gunaAdvenceButton3.Location = new System.Drawing.Point(133, 484);
+            this.gunaAdvenceButton3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.gunaAdvenceButton3.Name = "gunaAdvenceButton3";
             this.gunaAdvenceButton3.OnHoverBaseColor = System.Drawing.Color.DarkGray;
             this.gunaAdvenceButton3.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -244,7 +257,7 @@ namespace TimKiemNhaTro
             this.gunaAdvenceButton3.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
             this.gunaAdvenceButton3.OnPressedColor = System.Drawing.Color.Black;
             this.gunaAdvenceButton3.Radius = 5;
-            this.gunaAdvenceButton3.Size = new System.Drawing.Size(50, 42);
+            this.gunaAdvenceButton3.Size = new System.Drawing.Size(67, 52);
             this.gunaAdvenceButton3.TabIndex = 23;
             this.gunaAdvenceButton3.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
@@ -269,7 +282,8 @@ namespace TimKiemNhaTro
             this.btnNhaDaLuu.ImageAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.btnNhaDaLuu.ImageSize = new System.Drawing.Size(20, 20);
             this.btnNhaDaLuu.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.btnNhaDaLuu.Location = new System.Drawing.Point(100, 502);
+            this.btnNhaDaLuu.Location = new System.Drawing.Point(133, 618);
+            this.btnNhaDaLuu.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnNhaDaLuu.Name = "btnNhaDaLuu";
             this.btnNhaDaLuu.OnHoverBaseColor = System.Drawing.Color.DarkGray;
             this.btnNhaDaLuu.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -278,7 +292,7 @@ namespace TimKiemNhaTro
             this.btnNhaDaLuu.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
             this.btnNhaDaLuu.OnPressedColor = System.Drawing.Color.Black;
             this.btnNhaDaLuu.Radius = 10;
-            this.btnNhaDaLuu.Size = new System.Drawing.Size(320, 42);
+            this.btnNhaDaLuu.Size = new System.Drawing.Size(427, 52);
             this.btnNhaDaLuu.TabIndex = 27;
             this.btnNhaDaLuu.Text = "Danh sách nhà đã lưu";
             // 
@@ -303,7 +317,8 @@ namespace TimKiemNhaTro
             this.btnLoiUngDung.ImageAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.btnLoiUngDung.ImageSize = new System.Drawing.Size(20, 20);
             this.btnLoiUngDung.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.btnLoiUngDung.Location = new System.Drawing.Point(693, 550);
+            this.btnLoiUngDung.Location = new System.Drawing.Point(924, 677);
+            this.btnLoiUngDung.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnLoiUngDung.Name = "btnLoiUngDung";
             this.btnLoiUngDung.OnHoverBaseColor = System.Drawing.Color.DarkGray;
             this.btnLoiUngDung.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -312,7 +327,7 @@ namespace TimKiemNhaTro
             this.btnLoiUngDung.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
             this.btnLoiUngDung.OnPressedColor = System.Drawing.Color.Black;
             this.btnLoiUngDung.Radius = 10;
-            this.btnLoiUngDung.Size = new System.Drawing.Size(320, 42);
+            this.btnLoiUngDung.Size = new System.Drawing.Size(427, 52);
             this.btnLoiUngDung.TabIndex = 22;
             this.btnLoiUngDung.Text = "Báo cáo lỗi ứng dụng";
             // 
@@ -337,7 +352,8 @@ namespace TimKiemNhaTro
             this.btnLienHe.ImageAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.btnLienHe.ImageSize = new System.Drawing.Size(20, 20);
             this.btnLienHe.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.btnLienHe.Location = new System.Drawing.Point(693, 502);
+            this.btnLienHe.Location = new System.Drawing.Point(924, 618);
+            this.btnLienHe.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnLienHe.Name = "btnLienHe";
             this.btnLienHe.OnHoverBaseColor = System.Drawing.Color.DarkGray;
             this.btnLienHe.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -346,7 +362,7 @@ namespace TimKiemNhaTro
             this.btnLienHe.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
             this.btnLienHe.OnPressedColor = System.Drawing.Color.Black;
             this.btnLienHe.Radius = 10;
-            this.btnLienHe.Size = new System.Drawing.Size(320, 42);
+            this.btnLienHe.Size = new System.Drawing.Size(427, 52);
             this.btnLienHe.TabIndex = 21;
             this.btnLienHe.Text = "Liên hệ";
             // 
@@ -371,7 +387,8 @@ namespace TimKiemNhaTro
             this.btnFAQ.ImageAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.btnFAQ.ImageSize = new System.Drawing.Size(20, 20);
             this.btnFAQ.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.btnFAQ.Location = new System.Drawing.Point(693, 454);
+            this.btnFAQ.Location = new System.Drawing.Point(924, 559);
+            this.btnFAQ.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnFAQ.Name = "btnFAQ";
             this.btnFAQ.OnHoverBaseColor = System.Drawing.Color.DarkGray;
             this.btnFAQ.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -380,7 +397,7 @@ namespace TimKiemNhaTro
             this.btnFAQ.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
             this.btnFAQ.OnPressedColor = System.Drawing.Color.Black;
             this.btnFAQ.Radius = 10;
-            this.btnFAQ.Size = new System.Drawing.Size(320, 42);
+            this.btnFAQ.Size = new System.Drawing.Size(427, 52);
             this.btnFAQ.TabIndex = 20;
             this.btnFAQ.Text = "FAQ";
             // 
@@ -404,7 +421,8 @@ namespace TimKiemNhaTro
             this.gunaAdvenceButton8.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.gunaAdvenceButton8.ImageSize = new System.Drawing.Size(30, 30);
             this.gunaAdvenceButton8.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.gunaAdvenceButton8.Location = new System.Drawing.Point(694, 393);
+            this.gunaAdvenceButton8.Location = new System.Drawing.Point(925, 484);
+            this.gunaAdvenceButton8.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.gunaAdvenceButton8.Name = "gunaAdvenceButton8";
             this.gunaAdvenceButton8.OnHoverBaseColor = System.Drawing.Color.DarkGray;
             this.gunaAdvenceButton8.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -413,7 +431,7 @@ namespace TimKiemNhaTro
             this.gunaAdvenceButton8.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
             this.gunaAdvenceButton8.OnPressedColor = System.Drawing.Color.Black;
             this.gunaAdvenceButton8.Radius = 5;
-            this.gunaAdvenceButton8.Size = new System.Drawing.Size(50, 42);
+            this.gunaAdvenceButton8.Size = new System.Drawing.Size(67, 52);
             this.gunaAdvenceButton8.TabIndex = 17;
             this.gunaAdvenceButton8.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
@@ -439,7 +457,8 @@ namespace TimKiemNhaTro
             this.btnEdit.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.btnEdit.ImageSize = new System.Drawing.Size(30, 30);
             this.btnEdit.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.btnEdit.Location = new System.Drawing.Point(963, 15);
+            this.btnEdit.Location = new System.Drawing.Point(1284, 18);
+            this.btnEdit.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnEdit.Name = "btnEdit";
             this.btnEdit.OnHoverBaseColor = System.Drawing.Color.DarkGray;
             this.btnEdit.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -448,7 +467,7 @@ namespace TimKiemNhaTro
             this.btnEdit.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
             this.btnEdit.OnPressedColor = System.Drawing.Color.Black;
             this.btnEdit.Radius = 5;
-            this.btnEdit.Size = new System.Drawing.Size(50, 42);
+            this.btnEdit.Size = new System.Drawing.Size(67, 52);
             this.btnEdit.TabIndex = 15;
             this.btnEdit.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click);
@@ -456,9 +475,10 @@ namespace TimKiemNhaTro
             // pictureBox2
             // 
             this.pictureBox2.Image = global::TimKiemNhaTro.Properties.Resources.icons8_phone_32;
-            this.pictureBox2.Location = new System.Drawing.Point(356, 256);
+            this.pictureBox2.Location = new System.Drawing.Point(475, 315);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(40, 31);
+            this.pictureBox2.Size = new System.Drawing.Size(53, 38);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox2.TabIndex = 8;
             this.pictureBox2.TabStop = false;
@@ -466,9 +486,10 @@ namespace TimKiemNhaTro
             // pictureBox1
             // 
             this.pictureBox1.Image = global::TimKiemNhaTro.Properties.Resources.icons8_male_userBlack_32;
-            this.pictureBox1.Location = new System.Drawing.Point(356, 219);
+            this.pictureBox1.Location = new System.Drawing.Point(475, 270);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(40, 31);
+            this.pictureBox1.Size = new System.Drawing.Size(53, 38);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.pictureBox1.TabIndex = 6;
             this.pictureBox1.TabStop = false;
@@ -478,17 +499,18 @@ namespace TimKiemNhaTro
             this.gunaPictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.gunaPictureBox1.BaseColor = System.Drawing.Color.White;
             this.gunaPictureBox1.Image = global::TimKiemNhaTro.Properties.Resources.TanBinh1;
-            this.gunaPictureBox1.Location = new System.Drawing.Point(100, 66);
+            this.gunaPictureBox1.Location = new System.Drawing.Point(133, 81);
+            this.gunaPictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.gunaPictureBox1.Name = "gunaPictureBox1";
             this.gunaPictureBox1.Radius = 10;
-            this.gunaPictureBox1.Size = new System.Drawing.Size(222, 218);
+            this.gunaPictureBox1.Size = new System.Drawing.Size(296, 268);
             this.gunaPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.gunaPictureBox1.TabIndex = 0;
             this.gunaPictureBox1.TabStop = false;
             // 
             // ucUser
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.btnNhaDaDang);
@@ -512,9 +534,9 @@ namespace TimKiemNhaTro
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.gunaPictureBox1);
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "ucUser";
-            this.Size = new System.Drawing.Size(1120, 642);
+            this.Size = new System.Drawing.Size(1493, 790);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gunaPictureBox1)).EndInit();

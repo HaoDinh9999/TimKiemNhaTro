@@ -15,6 +15,21 @@
     <Deterministic>true</Deterministic>
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -335,6 +350,11 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="ucAddHome.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -365,6 +385,12 @@
     <Compile Include="ucCardRoomLong.Designer.cs">
       <DependentUpon>ucCardRoomLong.cs</DependentUpon>
     </Compile>
+    <Compile Include="ucCardRoomSaveee.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucCardRoomSaveee.Designer.cs">
+      <DependentUpon>ucCardRoomSaveee.cs</DependentUpon>
+    </Compile>
     <Compile Include="ucDetailHome.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -377,11 +403,17 @@
     <Compile Include="ucFavourite.Designer.cs">
       <DependentUpon>ucFavourite.cs</DependentUpon>
     </Compile>
-    <Compile Include="ucHome.cs">
+    <Compile Include="ucHomeCC.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="ucHome.Designer.cs">
-      <DependentUpon>ucHome.cs</DependentUpon>
+    <Compile Include="ucHomeCC.Designer.cs">
+      <DependentUpon>ucHomeCC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucNhaDaDang.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucNhaDaDang.Designer.cs">
+      <DependentUpon>ucNhaDaDang.cs</DependentUpon>
     </Compile>
     <Compile Include="ucSearch.cs">
       <SubType>UserControl</SubType>
@@ -415,14 +447,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
     <EmbeddedResource Include="ucAddHome.resx">
       <DependentUpon>ucAddHome.cs</DependentUpon>
     </EmbeddedResource>
@@ -438,14 +465,20 @@
     <EmbeddedResource Include="ucCardRoomLong.resx">
       <DependentUpon>ucCardRoomLong.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ucCardRoomSaveee.resx">
+      <DependentUpon>ucCardRoomSaveee.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ucDetailHome.resx">
       <DependentUpon>ucDetailHome.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ucFavourite.resx">
       <DependentUpon>ucFavourite.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ucHome.resx">
-      <DependentUpon>ucHome.cs</DependentUpon>
+    <EmbeddedResource Include="ucHomeCC.resx">
+      <DependentUpon>ucHomeCC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucNhaDaDang.resx">
+      <DependentUpon>ucNhaDaDang.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ucSearch.resx">
       <DependentUpon>ucSearch.cs</DependentUpon>
@@ -635,6 +668,11 @@
     <Content Include="Resources\double-bed.png" />
     <Content Include="Resources\heart.png" />
     <Content Include="Resources\home1.png" />
+    <None Include="Resources\icons8_waste_32.png" />
+    <None Include="Resources\icons8_waste_321.png" />
+    <None Include="Resources\icons8_edit_32.png" />
+    <None Include="Resources\icons8_edit_321.png" />
+    <None Include="Resources\icons8_wasteXOA_32.png" />
     <Content Include="Resources\rec.png" />
     <Content Include="Resources\star.png" />
     <Content Include="Resources\triangular.png" />
@@ -645,6 +683,18 @@
     <None Include="Resources\icons8_info_popup_32.png" />
     <None Include="Resources\icons8_warehouse_32.png" />
     <None Include="Resources\icons8_condo_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

@@ -35,8 +35,8 @@ namespace TimKiemNhaTro
             this.lblCountMeter = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.lblCountBathRoom = new System.Windows.Forms.Label();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.lblCountBedRoom = new System.Windows.Forms.Label();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.rtxAddress = new System.Windows.Forms.RichTextBox();
             this.lblMoney = new Guna.UI.WinForms.GunaLabel();
@@ -64,20 +64,19 @@ namespace TimKiemNhaTro
             this.gunaPanel1.Controls.Add(this.rtxAddress);
             this.gunaPanel1.Controls.Add(this.lblMoney);
             this.gunaPanel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.gunaPanel1.Location = new System.Drawing.Point(0, 151);
-            this.gunaPanel1.Margin = new System.Windows.Forms.Padding(2);
+            this.gunaPanel1.Location = new System.Drawing.Point(0, 186);
+            this.gunaPanel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.gunaPanel1.Name = "gunaPanel1";
-            this.gunaPanel1.Size = new System.Drawing.Size(307, 78);
+            this.gunaPanel1.Size = new System.Drawing.Size(409, 96);
             this.gunaPanel1.TabIndex = 2;
             // 
             // lblCountMeter
             // 
             this.lblCountMeter.AutoSize = true;
             this.lblCountMeter.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCountMeter.Location = new System.Drawing.Point(275, 32);
-            this.lblCountMeter.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblCountMeter.Location = new System.Drawing.Point(367, 39);
             this.lblCountMeter.Name = "lblCountMeter";
-            this.lblCountMeter.Size = new System.Drawing.Size(24, 17);
+            this.lblCountMeter.Size = new System.Drawing.Size(28, 21);
             this.lblCountMeter.TabIndex = 10;
             this.lblCountMeter.Text = "52";
             // 
@@ -85,10 +84,10 @@ namespace TimKiemNhaTro
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.White;
             this.pictureBox2.Image = global::TimKiemNhaTro.Properties.Resources.area_icon;
-            this.pictureBox2.Location = new System.Drawing.Point(271, 5);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox2.Location = new System.Drawing.Point(361, 6);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(27, 28);
+            this.pictureBox2.Size = new System.Drawing.Size(36, 34);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox2.TabIndex = 9;
             this.pictureBox2.TabStop = false;
@@ -97,44 +96,42 @@ namespace TimKiemNhaTro
             // 
             this.lblCountBathRoom.AutoSize = true;
             this.lblCountBathRoom.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCountBathRoom.Location = new System.Drawing.Point(240, 32);
-            this.lblCountBathRoom.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblCountBathRoom.Location = new System.Drawing.Point(320, 39);
             this.lblCountBathRoom.Name = "lblCountBathRoom";
-            this.lblCountBathRoom.Size = new System.Drawing.Size(16, 17);
+            this.lblCountBathRoom.Size = new System.Drawing.Size(19, 21);
             this.lblCountBathRoom.TabIndex = 8;
             this.lblCountBathRoom.Text = "3";
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.BackColor = System.Drawing.Color.White;
-            this.pictureBox3.Image = global::TimKiemNhaTro.Properties.Resources.icons8_bathtub_32;
-            this.pictureBox3.Location = new System.Drawing.Point(233, 5);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(27, 28);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox3.TabIndex = 7;
-            this.pictureBox3.TabStop = false;
             // 
             // lblCountBedRoom
             // 
             this.lblCountBedRoom.AutoSize = true;
             this.lblCountBedRoom.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCountBedRoom.Location = new System.Drawing.Point(202, 32);
-            this.lblCountBedRoom.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblCountBedRoom.Location = new System.Drawing.Point(269, 39);
             this.lblCountBedRoom.Name = "lblCountBedRoom";
-            this.lblCountBedRoom.Size = new System.Drawing.Size(16, 17);
+            this.lblCountBedRoom.Size = new System.Drawing.Size(19, 21);
             this.lblCountBedRoom.TabIndex = 4;
             this.lblCountBedRoom.Text = "3";
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.BackColor = System.Drawing.Color.White;
+            this.pictureBox3.Image = global::TimKiemNhaTro.Properties.Resources.icons8_bathtub_32;
+            this.pictureBox3.Location = new System.Drawing.Point(311, 6);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(36, 34);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox3.TabIndex = 7;
+            this.pictureBox3.TabStop = false;
             // 
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.White;
             this.pictureBox1.Image = global::TimKiemNhaTro.Properties.Resources.icons8_sleeping_in_bed1_32;
-            this.pictureBox1.Location = new System.Drawing.Point(194, 5);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox1.Location = new System.Drawing.Point(259, 6);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(27, 28);
+            this.pictureBox1.Size = new System.Drawing.Size(36, 34);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 3;
             this.pictureBox1.TabStop = false;
@@ -146,10 +143,10 @@ namespace TimKiemNhaTro
             this.rtxAddress.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.rtxAddress.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rtxAddress.ForeColor = System.Drawing.Color.DimGray;
-            this.rtxAddress.Location = new System.Drawing.Point(11, 47);
-            this.rtxAddress.Margin = new System.Windows.Forms.Padding(2);
+            this.rtxAddress.Location = new System.Drawing.Point(15, 58);
+            this.rtxAddress.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.rtxAddress.Name = "rtxAddress";
-            this.rtxAddress.Size = new System.Drawing.Size(287, 45);
+            this.rtxAddress.Size = new System.Drawing.Size(383, 55);
             this.rtxAddress.TabIndex = 1;
             this.rtxAddress.Text = "313 Nguyễn  An Binh Bỉnh Khiêm, phường Bến Nghé, quận 1, thành phố Hồ Chí Minh";
             // 
@@ -158,10 +155,9 @@ namespace TimKiemNhaTro
             this.lblMoney.AutoSize = true;
             this.lblMoney.Font = new System.Drawing.Font("Tahoma", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblMoney.ForeColor = System.Drawing.Color.DarkBlue;
-            this.lblMoney.Location = new System.Drawing.Point(7, 10);
-            this.lblMoney.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.lblMoney.Location = new System.Drawing.Point(9, 12);
             this.lblMoney.Name = "lblMoney";
-            this.lblMoney.Size = new System.Drawing.Size(169, 25);
+            this.lblMoney.Size = new System.Drawing.Size(218, 33);
             this.lblMoney.TabIndex = 0;
             this.lblMoney.Text = "2.000.000 VNĐ";
             // 
@@ -178,8 +174,8 @@ namespace TimKiemNhaTro
             this.lblTopType.ForeColor = System.Drawing.Color.White;
             this.lblTopType.Image = null;
             this.lblTopType.ImageSize = new System.Drawing.Size(20, 20);
-            this.lblTopType.Location = new System.Drawing.Point(11, 11);
-            this.lblTopType.Margin = new System.Windows.Forms.Padding(2);
+            this.lblTopType.Location = new System.Drawing.Point(15, 14);
+            this.lblTopType.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.lblTopType.Name = "lblTopType";
             this.lblTopType.OnHoverBaseColor = System.Drawing.Color.LightSeaGreen;
             this.lblTopType.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -187,23 +183,23 @@ namespace TimKiemNhaTro
             this.lblTopType.OnHoverImage = null;
             this.lblTopType.OnPressedColor = System.Drawing.Color.Black;
             this.lblTopType.Radius = 10;
-            this.lblTopType.Size = new System.Drawing.Size(94, 34);
+            this.lblTopType.Size = new System.Drawing.Size(125, 42);
             this.lblTopType.TabIndex = 3;
             this.lblTopType.Text = "Căn hộ";
             this.lblTopType.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // ucCardRoom
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Transparent;
             this.BackgroundImage = global::TimKiemNhaTro.Properties.Resources._3612573_18012114440061220336;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Controls.Add(this.lblTopType);
             this.Controls.Add(this.gunaPanel1);
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "ucCardRoom";
-            this.Size = new System.Drawing.Size(307, 229);
+            this.Size = new System.Drawing.Size(409, 282);
             this.Load += new System.EventHandler(this.ucCardRoom_Load);
             this.Click += new System.EventHandler(this.ucCardRoom_Click);
             this.gunaPanel1.ResumeLayout(false);
@@ -219,14 +215,14 @@ namespace TimKiemNhaTro
 
         private Guna.UI.WinForms.GunaElipse gelipFrmTaskee;
         private Guna.UI.WinForms.GunaPanel gunaPanel1;
-        private System.Windows.Forms.RichTextBox rtxAddress;
-        private Guna.UI.WinForms.GunaLabel lblMoney;
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label lblCountBathRoom;
-        private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Label lblCountBedRoom;
         private System.Windows.Forms.Label lblCountMeter;
         private System.Windows.Forms.PictureBox pictureBox2;
         private Guna.UI.WinForms.GunaButton lblTopType;
+        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.RichTextBox rtxAddress;
+        private Guna.UI.WinForms.GunaLabel lblMoney;
     }
 }

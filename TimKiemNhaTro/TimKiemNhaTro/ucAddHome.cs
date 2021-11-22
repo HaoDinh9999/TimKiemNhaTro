@@ -1129,9 +1129,11 @@ namespace TimKiemNhaTro
                 nhas.soPhongTam = soPhongTam;
                 nhas.dienTich = decimal.Parse(txtDienTich.Text);
                 nhas.tinhTrang = "Còn trống";
-                nhas.soNha = txtSoNha.Text + " " + txtTenDuong.Text;
+                nhas.soNha = txtSoNha.Text;
+                nhas.tenDuong = txtTenDuong.Text;
                 nhas.phuongXa = cbxPhuongXa.Text;
                 nhas.quanHuyen = cbxQuanHuyen.Text;
+                nhas.ngayCapNhat = DateTime.Now;
                 nhas.moTa = txtMoTa.Text;
                 nhas.TienNha = decimal.Parse(txtTienChoThue.Text);
                 DataProvider.Ins.DB.Nhas.Add(nhas);

@@ -367,6 +367,12 @@
     <Compile Include="ucCardNha.Designer.cs">
       <DependentUpon>ucCardNha.cs</DependentUpon>
     </Compile>
+    <Compile Include="ucCardNhaMedium.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucCardNhaMedium.Designer.cs">
+      <DependentUpon>ucCardNhaMedium.cs</DependentUpon>
+    </Compile>
     <Compile Include="ucCardRoom.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -467,6 +473,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ucCardNha.resx">
       <DependentUpon>ucCardNha.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucCardNhaMedium.resx">
+      <DependentUpon>ucCardNhaMedium.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ucCardRoom.resx">
       <DependentUpon>ucCardRoom.cs</DependentUpon>

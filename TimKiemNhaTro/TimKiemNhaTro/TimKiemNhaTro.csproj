@@ -391,6 +391,12 @@
     <Compile Include="ucCardRoomSaveee.Designer.cs">
       <DependentUpon>ucCardRoomSaveee.cs</DependentUpon>
     </Compile>
+    <Compile Include="ucCardTinTuc.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucCardTinTuc.Designer.cs">
+      <DependentUpon>ucCardTinTuc.cs</DependentUpon>
+    </Compile>
     <Compile Include="ucDetailHome.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -426,6 +432,12 @@
     </Compile>
     <Compile Include="ucSetting.Designer.cs">
       <DependentUpon>ucSetting.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucTinTuc.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucTinTuc.Designer.cs">
+      <DependentUpon>ucTinTuc.cs</DependentUpon>
     </Compile>
     <Compile Include="ucUser.cs">
       <SubType>UserControl</SubType>
@@ -468,6 +480,9 @@
     <EmbeddedResource Include="ucCardRoomSaveee.resx">
       <DependentUpon>ucCardRoomSaveee.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ucCardTinTuc.resx">
+      <DependentUpon>ucCardTinTuc.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ucDetailHome.resx">
       <DependentUpon>ucDetailHome.cs</DependentUpon>
     </EmbeddedResource>
@@ -485,6 +500,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ucSetting.resx">
       <DependentUpon>ucSetting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucTinTuc.resx">
+      <DependentUpon>ucTinTuc.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ucUser.resx">
       <DependentUpon>ucUser.cs</DependentUpon>
@@ -663,6 +681,7 @@
       <DependentUpon>Model1.edmx</DependentUpon>
       <LastGenOutput>Model1.cs</LastGenOutput>
     </Content>
+    <None Include="Resources\775-7750441_apartment-png.png" />
     <Content Include="Resources\bath-tub.png" />
     <Content Include="Resources\cancel.png" />
     <Content Include="Resources\double-bed.png" />
@@ -674,11 +693,13 @@
     <None Include="Resources\icons8_edit_321.png" />
     <None Include="Resources\icons8_wasteXOA_32.png" />
     <None Include="Resources\icons8_heardt_32.png" />
+    <None Include="Resources\kisspng-qualitas-esquina-rush-reliance-apartments-qualitas-apartment-5ac1b5d86c4dc4.9943107215226444404436.jpg" />
     <Content Include="Resources\rec.png" />
     <Content Include="Resources\star.png" />
     <Content Include="Resources\triangular.png" />
     <Content Include="Resources\undraw_Login_re_4vu2.png" />
     <Content Include="Resources\undraw_Welcome_re_h3d9.png" />
+    <None Include="Resources\unnamed.jpg" />
     <Content Include="Resources\wide.png" />
     <None Include="Resources\icons8_toolbox_32.png" />
     <None Include="Resources\icons8_info_popup_32.png" />

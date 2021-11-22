@@ -132,7 +132,7 @@ namespace TimKiemNhaTro
             this.btnEditImage.ImageSize = new System.Drawing.Size(20, 20);
             this.btnEditImage.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
             this.btnEditImage.Location = new System.Drawing.Point(133, 351);
-            this.btnEditImage.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnEditImage.Margin = new System.Windows.Forms.Padding(4);
             this.btnEditImage.Name = "btnEditImage";
             this.btnEditImage.OnHoverBaseColor = System.Drawing.Color.DarkGray;
             this.btnEditImage.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -213,7 +213,7 @@ namespace TimKiemNhaTro
             this.btnNhaDaDang.ImageSize = new System.Drawing.Size(20, 20);
             this.btnNhaDaDang.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
             this.btnNhaDaDang.Location = new System.Drawing.Point(133, 559);
-            this.btnNhaDaDang.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnNhaDaDang.Margin = new System.Windows.Forms.Padding(4);
             this.btnNhaDaDang.Name = "btnNhaDaDang";
             this.btnNhaDaDang.OnHoverBaseColor = System.Drawing.Color.DarkGray;
             this.btnNhaDaDang.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -248,7 +248,7 @@ namespace TimKiemNhaTro
             this.gunaAdvenceButton3.ImageSize = new System.Drawing.Size(30, 30);
             this.gunaAdvenceButton3.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
             this.gunaAdvenceButton3.Location = new System.Drawing.Point(133, 484);
-            this.gunaAdvenceButton3.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.gunaAdvenceButton3.Margin = new System.Windows.Forms.Padding(4);
             this.gunaAdvenceButton3.Name = "gunaAdvenceButton3";
             this.gunaAdvenceButton3.OnHoverBaseColor = System.Drawing.Color.DarkGray;
             this.gunaAdvenceButton3.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -283,7 +283,7 @@ namespace TimKiemNhaTro
             this.btnNhaDaLuu.ImageSize = new System.Drawing.Size(20, 20);
             this.btnNhaDaLuu.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
             this.btnNhaDaLuu.Location = new System.Drawing.Point(133, 618);
-            this.btnNhaDaLuu.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnNhaDaLuu.Margin = new System.Windows.Forms.Padding(4);
             this.btnNhaDaLuu.Name = "btnNhaDaLuu";
             this.btnNhaDaLuu.OnHoverBaseColor = System.Drawing.Color.DarkGray;
             this.btnNhaDaLuu.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -295,6 +295,7 @@ namespace TimKiemNhaTro
             this.btnNhaDaLuu.Size = new System.Drawing.Size(427, 52);
             this.btnNhaDaLuu.TabIndex = 27;
             this.btnNhaDaLuu.Text = "Danh sách nhà đã lưu";
+            this.btnNhaDaLuu.Click += new System.EventHandler(this.btnNhaDaLuu_Click);
             // 
             // btnLoiUngDung
             // 
@@ -318,7 +319,7 @@ namespace TimKiemNhaTro
             this.btnLoiUngDung.ImageSize = new System.Drawing.Size(20, 20);
             this.btnLoiUngDung.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
             this.btnLoiUngDung.Location = new System.Drawing.Point(924, 677);
-            this.btnLoiUngDung.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnLoiUngDung.Margin = new System.Windows.Forms.Padding(4);
             this.btnLoiUngDung.Name = "btnLoiUngDung";
             this.btnLoiUngDung.OnHoverBaseColor = System.Drawing.Color.DarkGray;
             this.btnLoiUngDung.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -353,7 +354,7 @@ namespace TimKiemNhaTro
             this.btnLienHe.ImageSize = new System.Drawing.Size(20, 20);
             this.btnLienHe.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
             this.btnLienHe.Location = new System.Drawing.Point(924, 618);
-            this.btnLienHe.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnLienHe.Margin = new System.Windows.Forms.Padding(4);
             this.btnLienHe.Name = "btnLienHe";
             this.btnLienHe.OnHoverBaseColor = System.Drawing.Color.DarkGray;
             this.btnLienHe.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -388,7 +389,7 @@ namespace TimKiemNhaTro
             this.btnFAQ.ImageSize = new System.Drawing.Size(20, 20);
             this.btnFAQ.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
             this.btnFAQ.Location = new System.Drawing.Point(924, 559);
-            this.btnFAQ.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnFAQ.Margin = new System.Windows.Forms.Padding(4);
             this.btnFAQ.Name = "btnFAQ";
             this.btnFAQ.OnHoverBaseColor = System.Drawing.Color.DarkGray;
             this.btnFAQ.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -422,7 +423,7 @@ namespace TimKiemNhaTro
             this.gunaAdvenceButton8.ImageSize = new System.Drawing.Size(30, 30);
             this.gunaAdvenceButton8.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
             this.gunaAdvenceButton8.Location = new System.Drawing.Point(925, 484);
-            this.gunaAdvenceButton8.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.gunaAdvenceButton8.Margin = new System.Windows.Forms.Padding(4);
             this.gunaAdvenceButton8.Name = "gunaAdvenceButton8";
             this.gunaAdvenceButton8.OnHoverBaseColor = System.Drawing.Color.DarkGray;
             this.gunaAdvenceButton8.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -458,7 +459,7 @@ namespace TimKiemNhaTro
             this.btnEdit.ImageSize = new System.Drawing.Size(30, 30);
             this.btnEdit.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
             this.btnEdit.Location = new System.Drawing.Point(1284, 18);
-            this.btnEdit.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnEdit.Margin = new System.Windows.Forms.Padding(4);
             this.btnEdit.Name = "btnEdit";
             this.btnEdit.OnHoverBaseColor = System.Drawing.Color.DarkGray;
             this.btnEdit.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -476,7 +477,7 @@ namespace TimKiemNhaTro
             // 
             this.pictureBox2.Image = global::TimKiemNhaTro.Properties.Resources.icons8_phone_32;
             this.pictureBox2.Location = new System.Drawing.Point(475, 315);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(53, 38);
             this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -487,7 +488,7 @@ namespace TimKiemNhaTro
             // 
             this.pictureBox1.Image = global::TimKiemNhaTro.Properties.Resources.icons8_male_userBlack_32;
             this.pictureBox1.Location = new System.Drawing.Point(475, 270);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(53, 38);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -500,7 +501,7 @@ namespace TimKiemNhaTro
             this.gunaPictureBox1.BaseColor = System.Drawing.Color.White;
             this.gunaPictureBox1.Image = global::TimKiemNhaTro.Properties.Resources.TanBinh1;
             this.gunaPictureBox1.Location = new System.Drawing.Point(133, 81);
-            this.gunaPictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.gunaPictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.gunaPictureBox1.Name = "gunaPictureBox1";
             this.gunaPictureBox1.Radius = 10;
             this.gunaPictureBox1.Size = new System.Drawing.Size(296, 268);

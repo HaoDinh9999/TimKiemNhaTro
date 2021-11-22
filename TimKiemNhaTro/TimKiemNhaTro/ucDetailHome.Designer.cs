@@ -33,65 +33,65 @@ namespace TimKiemNhaTro
             this.rtxDiaChi = new System.Windows.Forms.RichTextBox();
             this.lblGiaPhong = new System.Windows.Forms.Label();
             this.gunaElipsePanel2 = new Guna.UI.WinForms.GunaElipsePanel();
-            this.gunaCircleButton3 = new Guna.UI.WinForms.GunaCircleButton();
             this.gunaButton1 = new Guna.UI.WinForms.GunaButton();
             this.lblPhongTam = new System.Windows.Forms.Label();
             this.label27 = new System.Windows.Forms.Label();
-            this.gunaCircleButton19 = new Guna.UI.WinForms.GunaCircleButton();
             this.lblGiuongNgu = new System.Windows.Forms.Label();
             this.label25 = new System.Windows.Forms.Label();
-            this.gunaCircleButton18 = new Guna.UI.WinForms.GunaCircleButton();
             this.lblLoaiNha = new System.Windows.Forms.Label();
             this.label23 = new System.Windows.Forms.Label();
-            this.gunaCircleButton16 = new Guna.UI.WinForms.GunaCircleButton();
             this.label21 = new System.Windows.Forms.Label();
-            this.gunaCircleButton15 = new Guna.UI.WinForms.GunaCircleButton();
             this.lblTinhTrang = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
-            this.gunaCircleButton5 = new Guna.UI.WinForms.GunaCircleButton();
             this.lblDienTich = new System.Windows.Forms.Label();
             this.lblashiba = new System.Windows.Forms.Label();
-            this.gunaCircleButton14 = new Guna.UI.WinForms.GunaCircleButton();
             this.label16 = new System.Windows.Forms.Label();
-            this.gunaCircleButton4 = new Guna.UI.WinForms.GunaCircleButton();
             this.gunaElipsePanel3 = new Guna.UI.WinForms.GunaElipsePanel();
-            this.gunaCircleButton20 = new Guna.UI.WinForms.GunaCircleButton();
             this.label1 = new System.Windows.Forms.Label();
             this.gunaButton2 = new Guna.UI.WinForms.GunaButton();
             this.lblEmail = new System.Windows.Forms.Label();
             this.lblPhone = new System.Windows.Forms.Label();
-            this.picAvatar = new Guna.UI.WinForms.GunaCirclePictureBox();
-            this.gunaCircleButton1 = new Guna.UI.WinForms.GunaCircleButton();
-            this.gunaCircleButton2 = new Guna.UI.WinForms.GunaCircleButton();
             this.gunaElipsePanel1 = new Guna.UI.WinForms.GunaElipsePanel();
             this.pnlCSVC = new System.Windows.Forms.Panel();
-            this.gunaCircleButton6 = new Guna.UI.WinForms.GunaCircleButton();
             this.gunaButton3 = new Guna.UI.WinForms.GunaButton();
-            this.picfour = new Guna.UI.WinForms.GunaPictureBox();
-            this.picthree = new Guna.UI.WinForms.GunaPictureBox();
-            this.picone = new Guna.UI.WinForms.GunaPictureBox();
             this.gunaElipsePanel4 = new Guna.UI.WinForms.GunaElipsePanel();
             this.rtxDetail = new System.Windows.Forms.RichTextBox();
-            this.gunaCircleButton7 = new Guna.UI.WinForms.GunaCircleButton();
             this.gunaButton4 = new Guna.UI.WinForms.GunaButton();
             this.gunaElipsePanel5 = new Guna.UI.WinForms.GunaElipsePanel();
             this.pnlImage = new System.Windows.Forms.Panel();
-            this.gunaCircleButton8 = new Guna.UI.WinForms.GunaCircleButton();
             this.gunaButton5 = new Guna.UI.WinForms.GunaButton();
-            this.pictwo = new Guna.UI.WinForms.GunaPictureBox();
             this.gunaElipsePanel6 = new Guna.UI.WinForms.GunaElipsePanel();
             this.webBrowser1 = new System.Windows.Forms.WebBrowser();
+            this.pictwo = new Guna.UI.WinForms.GunaPictureBox();
+            this.gunaCircleButton8 = new Guna.UI.WinForms.GunaCircleButton();
+            this.gunaCircleButton7 = new Guna.UI.WinForms.GunaCircleButton();
+            this.gunaCircleButton6 = new Guna.UI.WinForms.GunaCircleButton();
+            this.picfour = new Guna.UI.WinForms.GunaPictureBox();
+            this.picthree = new Guna.UI.WinForms.GunaPictureBox();
+            this.gunaCircleButton20 = new Guna.UI.WinForms.GunaCircleButton();
+            this.picAvatar = new Guna.UI.WinForms.GunaCirclePictureBox();
+            this.gunaCircleButton1 = new Guna.UI.WinForms.GunaCircleButton();
+            this.gunaCircleButton2 = new Guna.UI.WinForms.GunaCircleButton();
+            this.gunaCircleButton3 = new Guna.UI.WinForms.GunaCircleButton();
+            this.gunaCircleButton19 = new Guna.UI.WinForms.GunaCircleButton();
+            this.gunaCircleButton18 = new Guna.UI.WinForms.GunaCircleButton();
+            this.gunaCircleButton16 = new Guna.UI.WinForms.GunaCircleButton();
+            this.gunaCircleButton15 = new Guna.UI.WinForms.GunaCircleButton();
+            this.gunaCircleButton5 = new Guna.UI.WinForms.GunaCircleButton();
+            this.gunaCircleButton14 = new Guna.UI.WinForms.GunaCircleButton();
+            this.gunaCircleButton4 = new Guna.UI.WinForms.GunaCircleButton();
+            this.picone = new Guna.UI.WinForms.GunaPictureBox();
             this.gunaElipsePanel2.SuspendLayout();
             this.gunaElipsePanel3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picAvatar)).BeginInit();
             this.gunaElipsePanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picfour)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picthree)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picone)).BeginInit();
             this.gunaElipsePanel4.SuspendLayout();
             this.gunaElipsePanel5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictwo)).BeginInit();
             this.gunaElipsePanel6.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictwo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picfour)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picthree)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picAvatar)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picone)).BeginInit();
             this.SuspendLayout();
             // 
             // lblTenChu
@@ -164,31 +164,6 @@ namespace TimKiemNhaTro
             this.gunaElipsePanel2.Size = new System.Drawing.Size(900, 396);
             this.gunaElipsePanel2.TabIndex = 24;
             // 
-            // gunaCircleButton3
-            // 
-            this.gunaCircleButton3.AnimationHoverSpeed = 0.07F;
-            this.gunaCircleButton3.AnimationSpeed = 0.03F;
-            this.gunaCircleButton3.BackColor = System.Drawing.Color.Transparent;
-            this.gunaCircleButton3.BaseColor = System.Drawing.Color.White;
-            this.gunaCircleButton3.BorderColor = System.Drawing.Color.Gainsboro;
-            this.gunaCircleButton3.BorderSize = 1;
-            this.gunaCircleButton3.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.gunaCircleButton3.FocusedColor = System.Drawing.Color.Empty;
-            this.gunaCircleButton3.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.gunaCircleButton3.ForeColor = System.Drawing.Color.White;
-            this.gunaCircleButton3.Image = global::TimKiemNhaTro.Properties.Resources.icons8_warehouse_32;
-            this.gunaCircleButton3.ImageSize = new System.Drawing.Size(30, 30);
-            this.gunaCircleButton3.Location = new System.Drawing.Point(57, 14);
-            this.gunaCircleButton3.Margin = new System.Windows.Forms.Padding(4);
-            this.gunaCircleButton3.Name = "gunaCircleButton3";
-            this.gunaCircleButton3.OnHoverBaseColor = System.Drawing.Color.Transparent;
-            this.gunaCircleButton3.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.gunaCircleButton3.OnHoverForeColor = System.Drawing.Color.White;
-            this.gunaCircleButton3.OnHoverImage = null;
-            this.gunaCircleButton3.OnPressedColor = System.Drawing.Color.Black;
-            this.gunaCircleButton3.Size = new System.Drawing.Size(69, 59);
-            this.gunaCircleButton3.TabIndex = 38;
-            // 
             // gunaButton1
             // 
             this.gunaButton1.AnimationHoverSpeed = 0.07F;
@@ -221,7 +196,7 @@ namespace TimKiemNhaTro
             this.lblPhongTam.AutoSize = true;
             this.lblPhongTam.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblPhongTam.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.lblPhongTam.Location = new System.Drawing.Point(779, 224);
+            this.lblPhongTam.Location = new System.Drawing.Point(778, 226);
             this.lblPhongTam.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblPhongTam.Name = "lblPhongTam";
             this.lblPhongTam.Size = new System.Drawing.Size(21, 24);
@@ -240,36 +215,12 @@ namespace TimKiemNhaTro
             this.label27.TabIndex = 35;
             this.label27.Text = "Phòng tắm";
             // 
-            // gunaCircleButton19
-            // 
-            this.gunaCircleButton19.AnimationHoverSpeed = 0.07F;
-            this.gunaCircleButton19.AnimationSpeed = 0.03F;
-            this.gunaCircleButton19.BackColor = System.Drawing.Color.Transparent;
-            this.gunaCircleButton19.BaseColor = System.Drawing.Color.White;
-            this.gunaCircleButton19.BorderColor = System.Drawing.Color.Black;
-            this.gunaCircleButton19.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.gunaCircleButton19.FocusedColor = System.Drawing.Color.Empty;
-            this.gunaCircleButton19.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.gunaCircleButton19.ForeColor = System.Drawing.Color.White;
-            this.gunaCircleButton19.Image = global::TimKiemNhaTro.Properties.Resources.icons8_bathtubColor_32;
-            this.gunaCircleButton19.ImageSize = new System.Drawing.Size(30, 30);
-            this.gunaCircleButton19.Location = new System.Drawing.Point(669, 187);
-            this.gunaCircleButton19.Margin = new System.Windows.Forms.Padding(4);
-            this.gunaCircleButton19.Name = "gunaCircleButton19";
-            this.gunaCircleButton19.OnHoverBaseColor = System.Drawing.Color.Transparent;
-            this.gunaCircleButton19.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.gunaCircleButton19.OnHoverForeColor = System.Drawing.Color.White;
-            this.gunaCircleButton19.OnHoverImage = null;
-            this.gunaCircleButton19.OnPressedColor = System.Drawing.Color.Black;
-            this.gunaCircleButton19.Size = new System.Drawing.Size(77, 71);
-            this.gunaCircleButton19.TabIndex = 33;
-            // 
             // lblGiuongNgu
             // 
             this.lblGiuongNgu.AutoSize = true;
             this.lblGiuongNgu.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblGiuongNgu.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.lblGiuongNgu.Location = new System.Drawing.Point(456, 224);
+            this.lblGiuongNgu.Location = new System.Drawing.Point(456, 226);
             this.lblGiuongNgu.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblGiuongNgu.Name = "lblGiuongNgu";
             this.lblGiuongNgu.Size = new System.Drawing.Size(21, 24);
@@ -281,43 +232,19 @@ namespace TimKiemNhaTro
             this.label25.AutoSize = true;
             this.label25.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label25.ForeColor = System.Drawing.Color.Black;
-            this.label25.Location = new System.Drawing.Point(421, 204);
+            this.label25.Location = new System.Drawing.Point(420, 203);
             this.label25.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label25.Name = "label25";
             this.label25.Size = new System.Drawing.Size(94, 21);
             this.label25.TabIndex = 32;
             this.label25.Text = "Giường ngủ";
             // 
-            // gunaCircleButton18
-            // 
-            this.gunaCircleButton18.AnimationHoverSpeed = 0.07F;
-            this.gunaCircleButton18.AnimationSpeed = 0.03F;
-            this.gunaCircleButton18.BackColor = System.Drawing.Color.Transparent;
-            this.gunaCircleButton18.BaseColor = System.Drawing.Color.White;
-            this.gunaCircleButton18.BorderColor = System.Drawing.Color.Black;
-            this.gunaCircleButton18.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.gunaCircleButton18.FocusedColor = System.Drawing.Color.Empty;
-            this.gunaCircleButton18.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.gunaCircleButton18.ForeColor = System.Drawing.Color.White;
-            this.gunaCircleButton18.Image = global::TimKiemNhaTro.Properties.Resources.icons8_bedColor_32;
-            this.gunaCircleButton18.ImageSize = new System.Drawing.Size(30, 30);
-            this.gunaCircleButton18.Location = new System.Drawing.Point(344, 187);
-            this.gunaCircleButton18.Margin = new System.Windows.Forms.Padding(4);
-            this.gunaCircleButton18.Name = "gunaCircleButton18";
-            this.gunaCircleButton18.OnHoverBaseColor = System.Drawing.Color.Transparent;
-            this.gunaCircleButton18.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.gunaCircleButton18.OnHoverForeColor = System.Drawing.Color.White;
-            this.gunaCircleButton18.OnHoverImage = null;
-            this.gunaCircleButton18.OnPressedColor = System.Drawing.Color.Black;
-            this.gunaCircleButton18.Size = new System.Drawing.Size(77, 71);
-            this.gunaCircleButton18.TabIndex = 30;
-            // 
             // lblLoaiNha
             // 
             this.lblLoaiNha.AutoSize = true;
             this.lblLoaiNha.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblLoaiNha.ForeColor = System.Drawing.Color.DarkSlateGray;
-            this.lblLoaiNha.Location = new System.Drawing.Point(128, 224);
+            this.lblLoaiNha.Location = new System.Drawing.Point(129, 226);
             this.lblLoaiNha.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblLoaiNha.Name = "lblLoaiNha";
             this.lblLoaiNha.Size = new System.Drawing.Size(93, 24);
@@ -336,30 +263,6 @@ namespace TimKiemNhaTro
             this.label23.TabIndex = 28;
             this.label23.Text = "Loại nhà";
             // 
-            // gunaCircleButton16
-            // 
-            this.gunaCircleButton16.AnimationHoverSpeed = 0.07F;
-            this.gunaCircleButton16.AnimationSpeed = 0.03F;
-            this.gunaCircleButton16.BackColor = System.Drawing.Color.Transparent;
-            this.gunaCircleButton16.BaseColor = System.Drawing.Color.White;
-            this.gunaCircleButton16.BorderColor = System.Drawing.Color.Black;
-            this.gunaCircleButton16.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.gunaCircleButton16.FocusedColor = System.Drawing.Color.Empty;
-            this.gunaCircleButton16.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.gunaCircleButton16.ForeColor = System.Drawing.Color.White;
-            this.gunaCircleButton16.Image = global::TimKiemNhaTro.Properties.Resources.icons8_homeColor_32;
-            this.gunaCircleButton16.ImageSize = new System.Drawing.Size(30, 30);
-            this.gunaCircleButton16.Location = new System.Drawing.Point(49, 187);
-            this.gunaCircleButton16.Margin = new System.Windows.Forms.Padding(4);
-            this.gunaCircleButton16.Name = "gunaCircleButton16";
-            this.gunaCircleButton16.OnHoverBaseColor = System.Drawing.Color.Transparent;
-            this.gunaCircleButton16.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.gunaCircleButton16.OnHoverForeColor = System.Drawing.Color.White;
-            this.gunaCircleButton16.OnHoverImage = null;
-            this.gunaCircleButton16.OnPressedColor = System.Drawing.Color.Black;
-            this.gunaCircleButton16.Size = new System.Drawing.Size(77, 71);
-            this.gunaCircleButton16.TabIndex = 26;
-            // 
             // label21
             // 
             this.label21.AutoSize = true;
@@ -371,30 +274,6 @@ namespace TimKiemNhaTro
             this.label21.Size = new System.Drawing.Size(61, 21);
             this.label21.TabIndex = 25;
             this.label21.Text = "Địa chỉ";
-            // 
-            // gunaCircleButton15
-            // 
-            this.gunaCircleButton15.AnimationHoverSpeed = 0.07F;
-            this.gunaCircleButton15.AnimationSpeed = 0.03F;
-            this.gunaCircleButton15.BackColor = System.Drawing.Color.Transparent;
-            this.gunaCircleButton15.BaseColor = System.Drawing.Color.White;
-            this.gunaCircleButton15.BorderColor = System.Drawing.Color.Black;
-            this.gunaCircleButton15.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.gunaCircleButton15.FocusedColor = System.Drawing.Color.Empty;
-            this.gunaCircleButton15.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.gunaCircleButton15.ForeColor = System.Drawing.Color.White;
-            this.gunaCircleButton15.Image = global::TimKiemNhaTro.Properties.Resources.icons8_us_dollar_32;
-            this.gunaCircleButton15.ImageSize = new System.Drawing.Size(38, 38);
-            this.gunaCircleButton15.Location = new System.Drawing.Point(49, 91);
-            this.gunaCircleButton15.Margin = new System.Windows.Forms.Padding(4);
-            this.gunaCircleButton15.Name = "gunaCircleButton15";
-            this.gunaCircleButton15.OnHoverBaseColor = System.Drawing.Color.Transparent;
-            this.gunaCircleButton15.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.gunaCircleButton15.OnHoverForeColor = System.Drawing.Color.White;
-            this.gunaCircleButton15.OnHoverImage = null;
-            this.gunaCircleButton15.OnPressedColor = System.Drawing.Color.Black;
-            this.gunaCircleButton15.Size = new System.Drawing.Size(77, 71);
-            this.gunaCircleButton15.TabIndex = 24;
             // 
             // lblTinhTrang
             // 
@@ -413,36 +292,12 @@ namespace TimKiemNhaTro
             this.label20.AutoSize = true;
             this.label20.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label20.ForeColor = System.Drawing.Color.Black;
-            this.label20.Location = new System.Drawing.Point(745, 103);
+            this.label20.Location = new System.Drawing.Point(745, 99);
             this.label20.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label20.Name = "label20";
             this.label20.Size = new System.Drawing.Size(86, 21);
             this.label20.TabIndex = 23;
             this.label20.Text = "Tình trạng";
-            // 
-            // gunaCircleButton5
-            // 
-            this.gunaCircleButton5.AnimationHoverSpeed = 0.07F;
-            this.gunaCircleButton5.AnimationSpeed = 0.03F;
-            this.gunaCircleButton5.BackColor = System.Drawing.Color.Transparent;
-            this.gunaCircleButton5.BaseColor = System.Drawing.Color.White;
-            this.gunaCircleButton5.BorderColor = System.Drawing.Color.Black;
-            this.gunaCircleButton5.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.gunaCircleButton5.FocusedColor = System.Drawing.Color.Empty;
-            this.gunaCircleButton5.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.gunaCircleButton5.ForeColor = System.Drawing.Color.White;
-            this.gunaCircleButton5.Image = global::TimKiemNhaTro.Properties.Resources.icons8_instagram_check_mark_32;
-            this.gunaCircleButton5.ImageSize = new System.Drawing.Size(30, 30);
-            this.gunaCircleButton5.Location = new System.Drawing.Point(665, 91);
-            this.gunaCircleButton5.Margin = new System.Windows.Forms.Padding(4);
-            this.gunaCircleButton5.Name = "gunaCircleButton5";
-            this.gunaCircleButton5.OnHoverBaseColor = System.Drawing.Color.Transparent;
-            this.gunaCircleButton5.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.gunaCircleButton5.OnHoverForeColor = System.Drawing.Color.White;
-            this.gunaCircleButton5.OnHoverImage = null;
-            this.gunaCircleButton5.OnPressedColor = System.Drawing.Color.Black;
-            this.gunaCircleButton5.Size = new System.Drawing.Size(77, 71);
-            this.gunaCircleButton5.TabIndex = 21;
             // 
             // lblDienTich
             // 
@@ -461,71 +316,24 @@ namespace TimKiemNhaTro
             this.lblashiba.AutoSize = true;
             this.lblashiba.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblashiba.ForeColor = System.Drawing.Color.Black;
-            this.lblashiba.Location = new System.Drawing.Point(421, 103);
+            this.lblashiba.Location = new System.Drawing.Point(420, 99);
             this.lblashiba.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblashiba.Name = "lblashiba";
             this.lblashiba.Size = new System.Drawing.Size(76, 21);
             this.lblashiba.TabIndex = 20;
             this.lblashiba.Text = "Diện tích";
             // 
-            // gunaCircleButton14
-            // 
-            this.gunaCircleButton14.AnimationHoverSpeed = 0.07F;
-            this.gunaCircleButton14.AnimationSpeed = 0.03F;
-            this.gunaCircleButton14.BackColor = System.Drawing.Color.Transparent;
-            this.gunaCircleButton14.BaseColor = System.Drawing.Color.White;
-            this.gunaCircleButton14.BorderColor = System.Drawing.Color.Black;
-            this.gunaCircleButton14.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.gunaCircleButton14.FocusedColor = System.Drawing.Color.Empty;
-            this.gunaCircleButton14.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.gunaCircleButton14.ForeColor = System.Drawing.Color.White;
-            this.gunaCircleButton14.Image = global::TimKiemNhaTro.Properties.Resources.icons8_signpost_32;
-            this.gunaCircleButton14.ImageSize = new System.Drawing.Size(30, 30);
-            this.gunaCircleButton14.Location = new System.Drawing.Point(344, 91);
-            this.gunaCircleButton14.Margin = new System.Windows.Forms.Padding(4);
-            this.gunaCircleButton14.Name = "gunaCircleButton14";
-            this.gunaCircleButton14.OnHoverBaseColor = System.Drawing.Color.Transparent;
-            this.gunaCircleButton14.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.gunaCircleButton14.OnHoverForeColor = System.Drawing.Color.White;
-            this.gunaCircleButton14.OnHoverImage = null;
-            this.gunaCircleButton14.OnPressedColor = System.Drawing.Color.Black;
-            this.gunaCircleButton14.Size = new System.Drawing.Size(77, 71);
-            this.gunaCircleButton14.TabIndex = 18;
-            // 
             // label16
             // 
             this.label16.AutoSize = true;
             this.label16.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label16.ForeColor = System.Drawing.Color.Black;
-            this.label16.Location = new System.Drawing.Point(129, 103);
+            this.label16.Location = new System.Drawing.Point(129, 99);
             this.label16.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(84, 21);
             this.label16.TabIndex = 16;
             this.label16.Text = "Giá phòng";
-            // 
-            // gunaCircleButton4
-            // 
-            this.gunaCircleButton4.AnimationHoverSpeed = 0.07F;
-            this.gunaCircleButton4.AnimationSpeed = 0.03F;
-            this.gunaCircleButton4.BaseColor = System.Drawing.Color.Transparent;
-            this.gunaCircleButton4.BorderColor = System.Drawing.Color.Black;
-            this.gunaCircleButton4.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.gunaCircleButton4.FocusedColor = System.Drawing.Color.Empty;
-            this.gunaCircleButton4.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.gunaCircleButton4.ForeColor = System.Drawing.Color.White;
-            this.gunaCircleButton4.Image = global::TimKiemNhaTro.Properties.Resources.icons8_google_mapsCOLOR_32;
-            this.gunaCircleButton4.ImageSize = new System.Drawing.Size(38, 40);
-            this.gunaCircleButton4.Location = new System.Drawing.Point(48, 290);
-            this.gunaCircleButton4.Margin = new System.Windows.Forms.Padding(4);
-            this.gunaCircleButton4.Name = "gunaCircleButton4";
-            this.gunaCircleButton4.OnHoverBaseColor = System.Drawing.Color.Transparent;
-            this.gunaCircleButton4.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.gunaCircleButton4.OnHoverForeColor = System.Drawing.Color.White;
-            this.gunaCircleButton4.OnHoverImage = null;
-            this.gunaCircleButton4.OnPressedColor = System.Drawing.Color.Black;
-            this.gunaCircleButton4.Size = new System.Drawing.Size(77, 71);
-            this.gunaCircleButton4.TabIndex = 11;
             // 
             // gunaElipsePanel3
             // 
@@ -546,31 +354,6 @@ namespace TimKiemNhaTro
             this.gunaElipsePanel3.Radius = 30;
             this.gunaElipsePanel3.Size = new System.Drawing.Size(411, 396);
             this.gunaElipsePanel3.TabIndex = 25;
-            // 
-            // gunaCircleButton20
-            // 
-            this.gunaCircleButton20.AnimationHoverSpeed = 0.07F;
-            this.gunaCircleButton20.AnimationSpeed = 0.03F;
-            this.gunaCircleButton20.BackColor = System.Drawing.Color.Transparent;
-            this.gunaCircleButton20.BaseColor = System.Drawing.Color.White;
-            this.gunaCircleButton20.BorderColor = System.Drawing.Color.Gainsboro;
-            this.gunaCircleButton20.BorderSize = 1;
-            this.gunaCircleButton20.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.gunaCircleButton20.FocusedColor = System.Drawing.Color.Empty;
-            this.gunaCircleButton20.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.gunaCircleButton20.ForeColor = System.Drawing.Color.White;
-            this.gunaCircleButton20.Image = global::TimKiemNhaTro.Properties.Resources.icons8_info_popup_32;
-            this.gunaCircleButton20.ImageSize = new System.Drawing.Size(30, 30);
-            this.gunaCircleButton20.Location = new System.Drawing.Point(40, 14);
-            this.gunaCircleButton20.Margin = new System.Windows.Forms.Padding(4);
-            this.gunaCircleButton20.Name = "gunaCircleButton20";
-            this.gunaCircleButton20.OnHoverBaseColor = System.Drawing.Color.Transparent;
-            this.gunaCircleButton20.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.gunaCircleButton20.OnHoverForeColor = System.Drawing.Color.White;
-            this.gunaCircleButton20.OnHoverImage = null;
-            this.gunaCircleButton20.OnPressedColor = System.Drawing.Color.Black;
-            this.gunaCircleButton20.Size = new System.Drawing.Size(69, 59);
-            this.gunaCircleButton20.TabIndex = 40;
             // 
             // label1
             // 
@@ -635,6 +418,312 @@ namespace TimKiemNhaTro
             this.lblPhone.TabIndex = 20;
             this.lblPhone.Text = "+84 793111038";
             // 
+            // gunaElipsePanel1
+            // 
+            this.gunaElipsePanel1.BackColor = System.Drawing.Color.Transparent;
+            this.gunaElipsePanel1.BaseColor = System.Drawing.Color.White;
+            this.gunaElipsePanel1.Controls.Add(this.pnlCSVC);
+            this.gunaElipsePanel1.Controls.Add(this.gunaCircleButton6);
+            this.gunaElipsePanel1.Controls.Add(this.gunaButton3);
+            this.gunaElipsePanel1.Location = new System.Drawing.Point(73, 1197);
+            this.gunaElipsePanel1.Margin = new System.Windows.Forms.Padding(4);
+            this.gunaElipsePanel1.Name = "gunaElipsePanel1";
+            this.gunaElipsePanel1.Radius = 30;
+            this.gunaElipsePanel1.Size = new System.Drawing.Size(900, 396);
+            this.gunaElipsePanel1.TabIndex = 30;
+            // 
+            // pnlCSVC
+            // 
+            this.pnlCSVC.AutoScroll = true;
+            this.pnlCSVC.Location = new System.Drawing.Point(23, 80);
+            this.pnlCSVC.Margin = new System.Windows.Forms.Padding(4);
+            this.pnlCSVC.Name = "pnlCSVC";
+            this.pnlCSVC.Size = new System.Drawing.Size(814, 272);
+            this.pnlCSVC.TabIndex = 39;
+            // 
+            // gunaButton3
+            // 
+            this.gunaButton3.AnimationHoverSpeed = 0.07F;
+            this.gunaButton3.AnimationSpeed = 0.03F;
+            this.gunaButton3.BackColor = System.Drawing.Color.Transparent;
+            this.gunaButton3.BaseColor = System.Drawing.Color.WhiteSmoke;
+            this.gunaButton3.BorderColor = System.Drawing.Color.Black;
+            this.gunaButton3.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.gunaButton3.FocusedColor = System.Drawing.Color.Empty;
+            this.gunaButton3.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gunaButton3.ForeColor = System.Drawing.Color.Black;
+            this.gunaButton3.Image = null;
+            this.gunaButton3.ImageSize = new System.Drawing.Size(20, 20);
+            this.gunaButton3.Location = new System.Drawing.Point(124, 14);
+            this.gunaButton3.Margin = new System.Windows.Forms.Padding(4);
+            this.gunaButton3.Name = "gunaButton3";
+            this.gunaButton3.OnHoverBaseColor = System.Drawing.Color.Transparent;
+            this.gunaButton3.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.gunaButton3.OnHoverForeColor = System.Drawing.Color.White;
+            this.gunaButton3.OnHoverImage = null;
+            this.gunaButton3.OnPressedColor = System.Drawing.Color.Black;
+            this.gunaButton3.Radius = 30;
+            this.gunaButton3.Size = new System.Drawing.Size(297, 59);
+            this.gunaButton3.TabIndex = 37;
+            this.gunaButton3.Text = "Cơ sở vật chất";
+            this.gunaButton3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // gunaElipsePanel4
+            // 
+            this.gunaElipsePanel4.BackColor = System.Drawing.Color.Transparent;
+            this.gunaElipsePanel4.BaseColor = System.Drawing.Color.White;
+            this.gunaElipsePanel4.Controls.Add(this.rtxDetail);
+            this.gunaElipsePanel4.Controls.Add(this.gunaCircleButton7);
+            this.gunaElipsePanel4.Controls.Add(this.gunaButton4);
+            this.gunaElipsePanel4.Location = new System.Drawing.Point(73, 1634);
+            this.gunaElipsePanel4.Name = "gunaElipsePanel4";
+            this.gunaElipsePanel4.Size = new System.Drawing.Size(900, 276);
+            this.gunaElipsePanel4.TabIndex = 31;
+            // 
+            // rtxDetail
+            // 
+            this.rtxDetail.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.rtxDetail.Location = new System.Drawing.Point(57, 82);
+            this.rtxDetail.Name = "rtxDetail";
+            this.rtxDetail.Size = new System.Drawing.Size(780, 162);
+            this.rtxDetail.TabIndex = 41;
+            this.rtxDetail.Text = "";
+            // 
+            // gunaButton4
+            // 
+            this.gunaButton4.AnimationHoverSpeed = 0.07F;
+            this.gunaButton4.AnimationSpeed = 0.03F;
+            this.gunaButton4.BackColor = System.Drawing.Color.Transparent;
+            this.gunaButton4.BaseColor = System.Drawing.Color.WhiteSmoke;
+            this.gunaButton4.BorderColor = System.Drawing.Color.Black;
+            this.gunaButton4.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.gunaButton4.FocusedColor = System.Drawing.Color.Empty;
+            this.gunaButton4.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gunaButton4.ForeColor = System.Drawing.Color.Black;
+            this.gunaButton4.Image = null;
+            this.gunaButton4.ImageSize = new System.Drawing.Size(20, 20);
+            this.gunaButton4.Location = new System.Drawing.Point(124, 16);
+            this.gunaButton4.Margin = new System.Windows.Forms.Padding(4);
+            this.gunaButton4.Name = "gunaButton4";
+            this.gunaButton4.OnHoverBaseColor = System.Drawing.Color.Transparent;
+            this.gunaButton4.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.gunaButton4.OnHoverForeColor = System.Drawing.Color.White;
+            this.gunaButton4.OnHoverImage = null;
+            this.gunaButton4.OnPressedColor = System.Drawing.Color.Black;
+            this.gunaButton4.Radius = 30;
+            this.gunaButton4.Size = new System.Drawing.Size(213, 59);
+            this.gunaButton4.TabIndex = 39;
+            this.gunaButton4.Text = "Mô tả";
+            this.gunaButton4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // gunaElipsePanel5
+            // 
+            this.gunaElipsePanel5.BackColor = System.Drawing.Color.Transparent;
+            this.gunaElipsePanel5.BaseColor = System.Drawing.Color.White;
+            this.gunaElipsePanel5.Controls.Add(this.pnlImage);
+            this.gunaElipsePanel5.Controls.Add(this.gunaCircleButton8);
+            this.gunaElipsePanel5.Controls.Add(this.gunaButton5);
+            this.gunaElipsePanel5.Location = new System.Drawing.Point(73, 1973);
+            this.gunaElipsePanel5.Name = "gunaElipsePanel5";
+            this.gunaElipsePanel5.Size = new System.Drawing.Size(900, 429);
+            this.gunaElipsePanel5.TabIndex = 32;
+            // 
+            // pnlImage
+            // 
+            this.pnlImage.AutoScroll = true;
+            this.pnlImage.Location = new System.Drawing.Point(62, 82);
+            this.pnlImage.Name = "pnlImage";
+            this.pnlImage.Size = new System.Drawing.Size(769, 328);
+            this.pnlImage.TabIndex = 41;
+            // 
+            // gunaButton5
+            // 
+            this.gunaButton5.AnimationHoverSpeed = 0.07F;
+            this.gunaButton5.AnimationSpeed = 0.03F;
+            this.gunaButton5.BackColor = System.Drawing.Color.Transparent;
+            this.gunaButton5.BaseColor = System.Drawing.Color.WhiteSmoke;
+            this.gunaButton5.BorderColor = System.Drawing.Color.Black;
+            this.gunaButton5.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.gunaButton5.FocusedColor = System.Drawing.Color.Empty;
+            this.gunaButton5.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gunaButton5.ForeColor = System.Drawing.Color.Black;
+            this.gunaButton5.Image = null;
+            this.gunaButton5.ImageSize = new System.Drawing.Size(20, 20);
+            this.gunaButton5.Location = new System.Drawing.Point(124, 16);
+            this.gunaButton5.Margin = new System.Windows.Forms.Padding(4);
+            this.gunaButton5.Name = "gunaButton5";
+            this.gunaButton5.OnHoverBaseColor = System.Drawing.Color.Transparent;
+            this.gunaButton5.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.gunaButton5.OnHoverForeColor = System.Drawing.Color.White;
+            this.gunaButton5.OnHoverImage = null;
+            this.gunaButton5.OnPressedColor = System.Drawing.Color.Black;
+            this.gunaButton5.Radius = 30;
+            this.gunaButton5.Size = new System.Drawing.Size(213, 59);
+            this.gunaButton5.TabIndex = 39;
+            this.gunaButton5.Text = "Ảnh chi tiết";
+            this.gunaButton5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // gunaElipsePanel6
+            // 
+            this.gunaElipsePanel6.BackColor = System.Drawing.Color.Transparent;
+            this.gunaElipsePanel6.BaseColor = System.Drawing.Color.White;
+            this.gunaElipsePanel6.Controls.Add(this.webBrowser1);
+            this.gunaElipsePanel6.Location = new System.Drawing.Point(74, 844);
+            this.gunaElipsePanel6.Name = "gunaElipsePanel6";
+            this.gunaElipsePanel6.Radius = 30;
+            this.gunaElipsePanel6.Size = new System.Drawing.Size(899, 328);
+            this.gunaElipsePanel6.TabIndex = 33;
+            // 
+            // webBrowser1
+            // 
+            this.webBrowser1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.webBrowser1.Location = new System.Drawing.Point(0, 0);
+            this.webBrowser1.MinimumSize = new System.Drawing.Size(20, 20);
+            this.webBrowser1.Name = "webBrowser1";
+            this.webBrowser1.Size = new System.Drawing.Size(899, 328);
+            this.webBrowser1.TabIndex = 35;
+            // 
+            // pictwo
+            // 
+            this.pictwo.BackColor = System.Drawing.Color.Transparent;
+            this.pictwo.BaseColor = System.Drawing.Color.White;
+            this.pictwo.Image = global::TimKiemNhaTro.Properties.Resources.binhthanh;
+            this.pictwo.Location = new System.Drawing.Point(558, 0);
+            this.pictwo.Margin = new System.Windows.Forms.Padding(4);
+            this.pictwo.Name = "pictwo";
+            this.pictwo.Size = new System.Drawing.Size(486, 380);
+            this.pictwo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictwo.TabIndex = 26;
+            this.pictwo.TabStop = false;
+            // 
+            // gunaCircleButton8
+            // 
+            this.gunaCircleButton8.AnimationHoverSpeed = 0.07F;
+            this.gunaCircleButton8.AnimationSpeed = 0.03F;
+            this.gunaCircleButton8.BackColor = System.Drawing.Color.Transparent;
+            this.gunaCircleButton8.BaseColor = System.Drawing.Color.White;
+            this.gunaCircleButton8.BorderColor = System.Drawing.Color.Gainsboro;
+            this.gunaCircleButton8.BorderSize = 1;
+            this.gunaCircleButton8.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.gunaCircleButton8.FocusedColor = System.Drawing.Color.Empty;
+            this.gunaCircleButton8.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.gunaCircleButton8.ForeColor = System.Drawing.Color.White;
+            this.gunaCircleButton8.Image = global::TimKiemNhaTro.Properties.Resources.icons8_toolbox_32;
+            this.gunaCircleButton8.ImageSize = new System.Drawing.Size(30, 30);
+            this.gunaCircleButton8.Location = new System.Drawing.Point(57, 16);
+            this.gunaCircleButton8.Margin = new System.Windows.Forms.Padding(4);
+            this.gunaCircleButton8.Name = "gunaCircleButton8";
+            this.gunaCircleButton8.OnHoverBaseColor = System.Drawing.Color.Transparent;
+            this.gunaCircleButton8.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.gunaCircleButton8.OnHoverForeColor = System.Drawing.Color.White;
+            this.gunaCircleButton8.OnHoverImage = null;
+            this.gunaCircleButton8.OnPressedColor = System.Drawing.Color.Black;
+            this.gunaCircleButton8.Size = new System.Drawing.Size(69, 59);
+            this.gunaCircleButton8.TabIndex = 40;
+            // 
+            // gunaCircleButton7
+            // 
+            this.gunaCircleButton7.AnimationHoverSpeed = 0.07F;
+            this.gunaCircleButton7.AnimationSpeed = 0.03F;
+            this.gunaCircleButton7.BackColor = System.Drawing.Color.Transparent;
+            this.gunaCircleButton7.BaseColor = System.Drawing.Color.White;
+            this.gunaCircleButton7.BorderColor = System.Drawing.Color.Gainsboro;
+            this.gunaCircleButton7.BorderSize = 1;
+            this.gunaCircleButton7.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.gunaCircleButton7.FocusedColor = System.Drawing.Color.Empty;
+            this.gunaCircleButton7.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.gunaCircleButton7.ForeColor = System.Drawing.Color.White;
+            this.gunaCircleButton7.Image = global::TimKiemNhaTro.Properties.Resources.icons8_toolbox_32;
+            this.gunaCircleButton7.ImageSize = new System.Drawing.Size(30, 30);
+            this.gunaCircleButton7.Location = new System.Drawing.Point(57, 16);
+            this.gunaCircleButton7.Margin = new System.Windows.Forms.Padding(4);
+            this.gunaCircleButton7.Name = "gunaCircleButton7";
+            this.gunaCircleButton7.OnHoverBaseColor = System.Drawing.Color.Transparent;
+            this.gunaCircleButton7.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.gunaCircleButton7.OnHoverForeColor = System.Drawing.Color.White;
+            this.gunaCircleButton7.OnHoverImage = null;
+            this.gunaCircleButton7.OnPressedColor = System.Drawing.Color.Black;
+            this.gunaCircleButton7.Size = new System.Drawing.Size(69, 59);
+            this.gunaCircleButton7.TabIndex = 40;
+            // 
+            // gunaCircleButton6
+            // 
+            this.gunaCircleButton6.AnimationHoverSpeed = 0.07F;
+            this.gunaCircleButton6.AnimationSpeed = 0.03F;
+            this.gunaCircleButton6.BackColor = System.Drawing.Color.Transparent;
+            this.gunaCircleButton6.BaseColor = System.Drawing.Color.White;
+            this.gunaCircleButton6.BorderColor = System.Drawing.Color.Gainsboro;
+            this.gunaCircleButton6.BorderSize = 1;
+            this.gunaCircleButton6.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.gunaCircleButton6.FocusedColor = System.Drawing.Color.Empty;
+            this.gunaCircleButton6.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.gunaCircleButton6.ForeColor = System.Drawing.Color.White;
+            this.gunaCircleButton6.Image = global::TimKiemNhaTro.Properties.Resources.icons8_toolbox_32;
+            this.gunaCircleButton6.ImageSize = new System.Drawing.Size(30, 30);
+            this.gunaCircleButton6.Location = new System.Drawing.Point(57, 14);
+            this.gunaCircleButton6.Margin = new System.Windows.Forms.Padding(4);
+            this.gunaCircleButton6.Name = "gunaCircleButton6";
+            this.gunaCircleButton6.OnHoverBaseColor = System.Drawing.Color.Transparent;
+            this.gunaCircleButton6.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.gunaCircleButton6.OnHoverForeColor = System.Drawing.Color.White;
+            this.gunaCircleButton6.OnHoverImage = null;
+            this.gunaCircleButton6.OnPressedColor = System.Drawing.Color.Black;
+            this.gunaCircleButton6.Size = new System.Drawing.Size(69, 59);
+            this.gunaCircleButton6.TabIndex = 38;
+            // 
+            // picfour
+            // 
+            this.picfour.BackColor = System.Drawing.Color.Transparent;
+            this.picfour.BaseColor = System.Drawing.Color.White;
+            this.picfour.Image = global::TimKiemNhaTro.Properties.Resources.quan2;
+            this.picfour.Location = new System.Drawing.Point(1023, 186);
+            this.picfour.Margin = new System.Windows.Forms.Padding(4);
+            this.picfour.Name = "picfour";
+            this.picfour.Radius = 20;
+            this.picfour.Size = new System.Drawing.Size(387, 195);
+            this.picfour.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picfour.TabIndex = 29;
+            this.picfour.TabStop = false;
+            // 
+            // picthree
+            // 
+            this.picthree.BackColor = System.Drawing.Color.Transparent;
+            this.picthree.BaseColor = System.Drawing.Color.White;
+            this.picthree.Image = global::TimKiemNhaTro.Properties.Resources.thu_duc_jfbk;
+            this.picthree.Location = new System.Drawing.Point(1023, 0);
+            this.picthree.Margin = new System.Windows.Forms.Padding(4);
+            this.picthree.Name = "picthree";
+            this.picthree.Radius = 20;
+            this.picthree.Size = new System.Drawing.Size(387, 209);
+            this.picthree.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picthree.TabIndex = 28;
+            this.picthree.TabStop = false;
+            // 
+            // gunaCircleButton20
+            // 
+            this.gunaCircleButton20.AnimationHoverSpeed = 0.07F;
+            this.gunaCircleButton20.AnimationSpeed = 0.03F;
+            this.gunaCircleButton20.BackColor = System.Drawing.Color.Transparent;
+            this.gunaCircleButton20.BaseColor = System.Drawing.Color.White;
+            this.gunaCircleButton20.BorderColor = System.Drawing.Color.Gainsboro;
+            this.gunaCircleButton20.BorderSize = 1;
+            this.gunaCircleButton20.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.gunaCircleButton20.FocusedColor = System.Drawing.Color.Empty;
+            this.gunaCircleButton20.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.gunaCircleButton20.ForeColor = System.Drawing.Color.White;
+            this.gunaCircleButton20.Image = global::TimKiemNhaTro.Properties.Resources.icons8_info_popup_32;
+            this.gunaCircleButton20.ImageSize = new System.Drawing.Size(30, 30);
+            this.gunaCircleButton20.Location = new System.Drawing.Point(40, 14);
+            this.gunaCircleButton20.Margin = new System.Windows.Forms.Padding(4);
+            this.gunaCircleButton20.Name = "gunaCircleButton20";
+            this.gunaCircleButton20.OnHoverBaseColor = System.Drawing.Color.Transparent;
+            this.gunaCircleButton20.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.gunaCircleButton20.OnHoverForeColor = System.Drawing.Color.White;
+            this.gunaCircleButton20.OnHoverImage = null;
+            this.gunaCircleButton20.OnPressedColor = System.Drawing.Color.Black;
+            this.gunaCircleButton20.Size = new System.Drawing.Size(69, 59);
+            this.gunaCircleButton20.TabIndex = 40;
+            // 
             // picAvatar
             // 
             this.picAvatar.BaseColor = System.Drawing.Color.White;
@@ -696,108 +785,197 @@ namespace TimKiemNhaTro
             this.gunaCircleButton2.Size = new System.Drawing.Size(65, 58);
             this.gunaCircleButton2.TabIndex = 8;
             // 
-            // gunaElipsePanel1
+            // gunaCircleButton3
             // 
-            this.gunaElipsePanel1.BackColor = System.Drawing.Color.Transparent;
-            this.gunaElipsePanel1.BaseColor = System.Drawing.Color.White;
-            this.gunaElipsePanel1.Controls.Add(this.pnlCSVC);
-            this.gunaElipsePanel1.Controls.Add(this.gunaCircleButton6);
-            this.gunaElipsePanel1.Controls.Add(this.gunaButton3);
-            this.gunaElipsePanel1.Location = new System.Drawing.Point(73, 1197);
-            this.gunaElipsePanel1.Margin = new System.Windows.Forms.Padding(4);
-            this.gunaElipsePanel1.Name = "gunaElipsePanel1";
-            this.gunaElipsePanel1.Radius = 30;
-            this.gunaElipsePanel1.Size = new System.Drawing.Size(900, 396);
-            this.gunaElipsePanel1.TabIndex = 30;
+            this.gunaCircleButton3.AnimationHoverSpeed = 0.07F;
+            this.gunaCircleButton3.AnimationSpeed = 0.03F;
+            this.gunaCircleButton3.BackColor = System.Drawing.Color.Transparent;
+            this.gunaCircleButton3.BaseColor = System.Drawing.Color.White;
+            this.gunaCircleButton3.BorderColor = System.Drawing.Color.Gainsboro;
+            this.gunaCircleButton3.BorderSize = 1;
+            this.gunaCircleButton3.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.gunaCircleButton3.FocusedColor = System.Drawing.Color.Empty;
+            this.gunaCircleButton3.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.gunaCircleButton3.ForeColor = System.Drawing.Color.White;
+            this.gunaCircleButton3.Image = global::TimKiemNhaTro.Properties.Resources.icons8_warehouse_32;
+            this.gunaCircleButton3.ImageSize = new System.Drawing.Size(30, 30);
+            this.gunaCircleButton3.Location = new System.Drawing.Point(57, 14);
+            this.gunaCircleButton3.Margin = new System.Windows.Forms.Padding(4);
+            this.gunaCircleButton3.Name = "gunaCircleButton3";
+            this.gunaCircleButton3.OnHoverBaseColor = System.Drawing.Color.Transparent;
+            this.gunaCircleButton3.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.gunaCircleButton3.OnHoverForeColor = System.Drawing.Color.White;
+            this.gunaCircleButton3.OnHoverImage = null;
+            this.gunaCircleButton3.OnPressedColor = System.Drawing.Color.Black;
+            this.gunaCircleButton3.Size = new System.Drawing.Size(69, 59);
+            this.gunaCircleButton3.TabIndex = 38;
             // 
-            // pnlCSVC
+            // gunaCircleButton19
             // 
-            this.pnlCSVC.AutoScroll = true;
-            this.pnlCSVC.Location = new System.Drawing.Point(23, 80);
-            this.pnlCSVC.Margin = new System.Windows.Forms.Padding(4);
-            this.pnlCSVC.Name = "pnlCSVC";
-            this.pnlCSVC.Size = new System.Drawing.Size(814, 272);
-            this.pnlCSVC.TabIndex = 39;
+            this.gunaCircleButton19.AnimationHoverSpeed = 0.07F;
+            this.gunaCircleButton19.AnimationSpeed = 0.03F;
+            this.gunaCircleButton19.BackColor = System.Drawing.Color.Transparent;
+            this.gunaCircleButton19.BaseColor = System.Drawing.Color.White;
+            this.gunaCircleButton19.BorderColor = System.Drawing.Color.Black;
+            this.gunaCircleButton19.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.gunaCircleButton19.FocusedColor = System.Drawing.Color.Empty;
+            this.gunaCircleButton19.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.gunaCircleButton19.ForeColor = System.Drawing.Color.White;
+            this.gunaCircleButton19.Image = global::TimKiemNhaTro.Properties.Resources.icons8_bathtubColor_32;
+            this.gunaCircleButton19.ImageSize = new System.Drawing.Size(30, 30);
+            this.gunaCircleButton19.Location = new System.Drawing.Point(669, 187);
+            this.gunaCircleButton19.Margin = new System.Windows.Forms.Padding(4);
+            this.gunaCircleButton19.Name = "gunaCircleButton19";
+            this.gunaCircleButton19.OnHoverBaseColor = System.Drawing.Color.Transparent;
+            this.gunaCircleButton19.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.gunaCircleButton19.OnHoverForeColor = System.Drawing.Color.White;
+            this.gunaCircleButton19.OnHoverImage = null;
+            this.gunaCircleButton19.OnPressedColor = System.Drawing.Color.Black;
+            this.gunaCircleButton19.Size = new System.Drawing.Size(77, 71);
+            this.gunaCircleButton19.TabIndex = 33;
             // 
-            // gunaCircleButton6
+            // gunaCircleButton18
             // 
-            this.gunaCircleButton6.AnimationHoverSpeed = 0.07F;
-            this.gunaCircleButton6.AnimationSpeed = 0.03F;
-            this.gunaCircleButton6.BackColor = System.Drawing.Color.Transparent;
-            this.gunaCircleButton6.BaseColor = System.Drawing.Color.White;
-            this.gunaCircleButton6.BorderColor = System.Drawing.Color.Gainsboro;
-            this.gunaCircleButton6.BorderSize = 1;
-            this.gunaCircleButton6.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.gunaCircleButton6.FocusedColor = System.Drawing.Color.Empty;
-            this.gunaCircleButton6.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.gunaCircleButton6.ForeColor = System.Drawing.Color.White;
-            this.gunaCircleButton6.Image = global::TimKiemNhaTro.Properties.Resources.icons8_toolbox_32;
-            this.gunaCircleButton6.ImageSize = new System.Drawing.Size(30, 30);
-            this.gunaCircleButton6.Location = new System.Drawing.Point(57, 14);
-            this.gunaCircleButton6.Margin = new System.Windows.Forms.Padding(4);
-            this.gunaCircleButton6.Name = "gunaCircleButton6";
-            this.gunaCircleButton6.OnHoverBaseColor = System.Drawing.Color.Transparent;
-            this.gunaCircleButton6.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.gunaCircleButton6.OnHoverForeColor = System.Drawing.Color.White;
-            this.gunaCircleButton6.OnHoverImage = null;
-            this.gunaCircleButton6.OnPressedColor = System.Drawing.Color.Black;
-            this.gunaCircleButton6.Size = new System.Drawing.Size(69, 59);
-            this.gunaCircleButton6.TabIndex = 38;
+            this.gunaCircleButton18.AnimationHoverSpeed = 0.07F;
+            this.gunaCircleButton18.AnimationSpeed = 0.03F;
+            this.gunaCircleButton18.BackColor = System.Drawing.Color.Transparent;
+            this.gunaCircleButton18.BaseColor = System.Drawing.Color.White;
+            this.gunaCircleButton18.BorderColor = System.Drawing.Color.Black;
+            this.gunaCircleButton18.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.gunaCircleButton18.FocusedColor = System.Drawing.Color.Empty;
+            this.gunaCircleButton18.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.gunaCircleButton18.ForeColor = System.Drawing.Color.White;
+            this.gunaCircleButton18.Image = global::TimKiemNhaTro.Properties.Resources.icons8_bedColor_32;
+            this.gunaCircleButton18.ImageSize = new System.Drawing.Size(30, 30);
+            this.gunaCircleButton18.Location = new System.Drawing.Point(344, 187);
+            this.gunaCircleButton18.Margin = new System.Windows.Forms.Padding(4);
+            this.gunaCircleButton18.Name = "gunaCircleButton18";
+            this.gunaCircleButton18.OnHoverBaseColor = System.Drawing.Color.Transparent;
+            this.gunaCircleButton18.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.gunaCircleButton18.OnHoverForeColor = System.Drawing.Color.White;
+            this.gunaCircleButton18.OnHoverImage = null;
+            this.gunaCircleButton18.OnPressedColor = System.Drawing.Color.Black;
+            this.gunaCircleButton18.Size = new System.Drawing.Size(77, 71);
+            this.gunaCircleButton18.TabIndex = 30;
             // 
-            // gunaButton3
+            // gunaCircleButton16
             // 
-            this.gunaButton3.AnimationHoverSpeed = 0.07F;
-            this.gunaButton3.AnimationSpeed = 0.03F;
-            this.gunaButton3.BackColor = System.Drawing.Color.Transparent;
-            this.gunaButton3.BaseColor = System.Drawing.Color.WhiteSmoke;
-            this.gunaButton3.BorderColor = System.Drawing.Color.Black;
-            this.gunaButton3.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.gunaButton3.FocusedColor = System.Drawing.Color.Empty;
-            this.gunaButton3.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaButton3.ForeColor = System.Drawing.Color.Black;
-            this.gunaButton3.Image = null;
-            this.gunaButton3.ImageSize = new System.Drawing.Size(20, 20);
-            this.gunaButton3.Location = new System.Drawing.Point(124, 14);
-            this.gunaButton3.Margin = new System.Windows.Forms.Padding(4);
-            this.gunaButton3.Name = "gunaButton3";
-            this.gunaButton3.OnHoverBaseColor = System.Drawing.Color.Transparent;
-            this.gunaButton3.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.gunaButton3.OnHoverForeColor = System.Drawing.Color.White;
-            this.gunaButton3.OnHoverImage = null;
-            this.gunaButton3.OnPressedColor = System.Drawing.Color.Black;
-            this.gunaButton3.Radius = 30;
-            this.gunaButton3.Size = new System.Drawing.Size(297, 59);
-            this.gunaButton3.TabIndex = 37;
-            this.gunaButton3.Text = "Cơ sở vật chất";
-            this.gunaButton3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.gunaCircleButton16.AnimationHoverSpeed = 0.07F;
+            this.gunaCircleButton16.AnimationSpeed = 0.03F;
+            this.gunaCircleButton16.BackColor = System.Drawing.Color.Transparent;
+            this.gunaCircleButton16.BaseColor = System.Drawing.Color.White;
+            this.gunaCircleButton16.BorderColor = System.Drawing.Color.Black;
+            this.gunaCircleButton16.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.gunaCircleButton16.FocusedColor = System.Drawing.Color.Empty;
+            this.gunaCircleButton16.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.gunaCircleButton16.ForeColor = System.Drawing.Color.White;
+            this.gunaCircleButton16.Image = global::TimKiemNhaTro.Properties.Resources.icons8_homeColor_32;
+            this.gunaCircleButton16.ImageSize = new System.Drawing.Size(30, 30);
+            this.gunaCircleButton16.Location = new System.Drawing.Point(49, 187);
+            this.gunaCircleButton16.Margin = new System.Windows.Forms.Padding(4);
+            this.gunaCircleButton16.Name = "gunaCircleButton16";
+            this.gunaCircleButton16.OnHoverBaseColor = System.Drawing.Color.Transparent;
+            this.gunaCircleButton16.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.gunaCircleButton16.OnHoverForeColor = System.Drawing.Color.White;
+            this.gunaCircleButton16.OnHoverImage = null;
+            this.gunaCircleButton16.OnPressedColor = System.Drawing.Color.Black;
+            this.gunaCircleButton16.Size = new System.Drawing.Size(77, 71);
+            this.gunaCircleButton16.TabIndex = 26;
             // 
-            // picfour
+            // gunaCircleButton15
             // 
-            this.picfour.BackColor = System.Drawing.Color.Transparent;
-            this.picfour.BaseColor = System.Drawing.Color.White;
-            this.picfour.Image = global::TimKiemNhaTro.Properties.Resources.quan2;
-            this.picfour.Location = new System.Drawing.Point(1023, 186);
-            this.picfour.Margin = new System.Windows.Forms.Padding(4);
-            this.picfour.Name = "picfour";
-            this.picfour.Radius = 20;
-            this.picfour.Size = new System.Drawing.Size(387, 195);
-            this.picfour.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.picfour.TabIndex = 29;
-            this.picfour.TabStop = false;
+            this.gunaCircleButton15.AnimationHoverSpeed = 0.07F;
+            this.gunaCircleButton15.AnimationSpeed = 0.03F;
+            this.gunaCircleButton15.BackColor = System.Drawing.Color.Transparent;
+            this.gunaCircleButton15.BaseColor = System.Drawing.Color.White;
+            this.gunaCircleButton15.BorderColor = System.Drawing.Color.Black;
+            this.gunaCircleButton15.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.gunaCircleButton15.FocusedColor = System.Drawing.Color.Empty;
+            this.gunaCircleButton15.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.gunaCircleButton15.ForeColor = System.Drawing.Color.White;
+            this.gunaCircleButton15.Image = global::TimKiemNhaTro.Properties.Resources.icons8_us_dollar_32;
+            this.gunaCircleButton15.ImageSize = new System.Drawing.Size(38, 38);
+            this.gunaCircleButton15.Location = new System.Drawing.Point(49, 91);
+            this.gunaCircleButton15.Margin = new System.Windows.Forms.Padding(4);
+            this.gunaCircleButton15.Name = "gunaCircleButton15";
+            this.gunaCircleButton15.OnHoverBaseColor = System.Drawing.Color.Transparent;
+            this.gunaCircleButton15.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.gunaCircleButton15.OnHoverForeColor = System.Drawing.Color.White;
+            this.gunaCircleButton15.OnHoverImage = null;
+            this.gunaCircleButton15.OnPressedColor = System.Drawing.Color.Black;
+            this.gunaCircleButton15.Size = new System.Drawing.Size(77, 71);
+            this.gunaCircleButton15.TabIndex = 24;
             // 
-            // picthree
+            // gunaCircleButton5
             // 
-            this.picthree.BackColor = System.Drawing.Color.Transparent;
-            this.picthree.BaseColor = System.Drawing.Color.White;
-            this.picthree.Image = global::TimKiemNhaTro.Properties.Resources.thu_duc_jfbk;
-            this.picthree.Location = new System.Drawing.Point(1023, 0);
-            this.picthree.Margin = new System.Windows.Forms.Padding(4);
-            this.picthree.Name = "picthree";
-            this.picthree.Radius = 20;
-            this.picthree.Size = new System.Drawing.Size(387, 209);
-            this.picthree.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.picthree.TabIndex = 28;
-            this.picthree.TabStop = false;
+            this.gunaCircleButton5.AnimationHoverSpeed = 0.07F;
+            this.gunaCircleButton5.AnimationSpeed = 0.03F;
+            this.gunaCircleButton5.BackColor = System.Drawing.Color.Transparent;
+            this.gunaCircleButton5.BaseColor = System.Drawing.Color.White;
+            this.gunaCircleButton5.BorderColor = System.Drawing.Color.Black;
+            this.gunaCircleButton5.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.gunaCircleButton5.FocusedColor = System.Drawing.Color.Empty;
+            this.gunaCircleButton5.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.gunaCircleButton5.ForeColor = System.Drawing.Color.White;
+            this.gunaCircleButton5.Image = global::TimKiemNhaTro.Properties.Resources.icons8_instagram_check_mark_32;
+            this.gunaCircleButton5.ImageSize = new System.Drawing.Size(30, 30);
+            this.gunaCircleButton5.Location = new System.Drawing.Point(665, 91);
+            this.gunaCircleButton5.Margin = new System.Windows.Forms.Padding(4);
+            this.gunaCircleButton5.Name = "gunaCircleButton5";
+            this.gunaCircleButton5.OnHoverBaseColor = System.Drawing.Color.Transparent;
+            this.gunaCircleButton5.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.gunaCircleButton5.OnHoverForeColor = System.Drawing.Color.White;
+            this.gunaCircleButton5.OnHoverImage = null;
+            this.gunaCircleButton5.OnPressedColor = System.Drawing.Color.Black;
+            this.gunaCircleButton5.Size = new System.Drawing.Size(77, 71);
+            this.gunaCircleButton5.TabIndex = 21;
+            // 
+            // gunaCircleButton14
+            // 
+            this.gunaCircleButton14.AnimationHoverSpeed = 0.07F;
+            this.gunaCircleButton14.AnimationSpeed = 0.03F;
+            this.gunaCircleButton14.BackColor = System.Drawing.Color.Transparent;
+            this.gunaCircleButton14.BaseColor = System.Drawing.Color.White;
+            this.gunaCircleButton14.BorderColor = System.Drawing.Color.Black;
+            this.gunaCircleButton14.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.gunaCircleButton14.FocusedColor = System.Drawing.Color.Empty;
+            this.gunaCircleButton14.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.gunaCircleButton14.ForeColor = System.Drawing.Color.White;
+            this.gunaCircleButton14.Image = global::TimKiemNhaTro.Properties.Resources.icons8_signpost_32;
+            this.gunaCircleButton14.ImageSize = new System.Drawing.Size(30, 30);
+            this.gunaCircleButton14.Location = new System.Drawing.Point(344, 91);
+            this.gunaCircleButton14.Margin = new System.Windows.Forms.Padding(4);
+            this.gunaCircleButton14.Name = "gunaCircleButton14";
+            this.gunaCircleButton14.OnHoverBaseColor = System.Drawing.Color.Transparent;
+            this.gunaCircleButton14.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.gunaCircleButton14.OnHoverForeColor = System.Drawing.Color.White;
+            this.gunaCircleButton14.OnHoverImage = null;
+            this.gunaCircleButton14.OnPressedColor = System.Drawing.Color.Black;
+            this.gunaCircleButton14.Size = new System.Drawing.Size(77, 71);
+            this.gunaCircleButton14.TabIndex = 18;
+            // 
+            // gunaCircleButton4
+            // 
+            this.gunaCircleButton4.AnimationHoverSpeed = 0.07F;
+            this.gunaCircleButton4.AnimationSpeed = 0.03F;
+            this.gunaCircleButton4.BaseColor = System.Drawing.Color.Transparent;
+            this.gunaCircleButton4.BorderColor = System.Drawing.Color.Black;
+            this.gunaCircleButton4.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.gunaCircleButton4.FocusedColor = System.Drawing.Color.Empty;
+            this.gunaCircleButton4.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.gunaCircleButton4.ForeColor = System.Drawing.Color.White;
+            this.gunaCircleButton4.Image = global::TimKiemNhaTro.Properties.Resources.icons8_google_mapsCOLOR_32;
+            this.gunaCircleButton4.ImageSize = new System.Drawing.Size(38, 40);
+            this.gunaCircleButton4.Location = new System.Drawing.Point(48, 290);
+            this.gunaCircleButton4.Margin = new System.Windows.Forms.Padding(4);
+            this.gunaCircleButton4.Name = "gunaCircleButton4";
+            this.gunaCircleButton4.OnHoverBaseColor = System.Drawing.Color.Transparent;
+            this.gunaCircleButton4.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.gunaCircleButton4.OnHoverForeColor = System.Drawing.Color.White;
+            this.gunaCircleButton4.OnHoverImage = null;
+            this.gunaCircleButton4.OnPressedColor = System.Drawing.Color.Black;
+            this.gunaCircleButton4.Size = new System.Drawing.Size(77, 71);
+            this.gunaCircleButton4.TabIndex = 11;
             // 
             // picone
             // 
@@ -812,184 +990,6 @@ namespace TimKiemNhaTro
             this.picone.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picone.TabIndex = 0;
             this.picone.TabStop = false;
-            // 
-            // gunaElipsePanel4
-            // 
-            this.gunaElipsePanel4.BackColor = System.Drawing.Color.Transparent;
-            this.gunaElipsePanel4.BaseColor = System.Drawing.Color.White;
-            this.gunaElipsePanel4.Controls.Add(this.rtxDetail);
-            this.gunaElipsePanel4.Controls.Add(this.gunaCircleButton7);
-            this.gunaElipsePanel4.Controls.Add(this.gunaButton4);
-            this.gunaElipsePanel4.Location = new System.Drawing.Point(73, 1634);
-            this.gunaElipsePanel4.Name = "gunaElipsePanel4";
-            this.gunaElipsePanel4.Size = new System.Drawing.Size(900, 276);
-            this.gunaElipsePanel4.TabIndex = 31;
-            // 
-            // rtxDetail
-            // 
-            this.rtxDetail.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.rtxDetail.Location = new System.Drawing.Point(57, 82);
-            this.rtxDetail.Name = "rtxDetail";
-            this.rtxDetail.Size = new System.Drawing.Size(780, 162);
-            this.rtxDetail.TabIndex = 41;
-            this.rtxDetail.Text = "";
-            // 
-            // gunaCircleButton7
-            // 
-            this.gunaCircleButton7.AnimationHoverSpeed = 0.07F;
-            this.gunaCircleButton7.AnimationSpeed = 0.03F;
-            this.gunaCircleButton7.BackColor = System.Drawing.Color.Transparent;
-            this.gunaCircleButton7.BaseColor = System.Drawing.Color.White;
-            this.gunaCircleButton7.BorderColor = System.Drawing.Color.Gainsboro;
-            this.gunaCircleButton7.BorderSize = 1;
-            this.gunaCircleButton7.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.gunaCircleButton7.FocusedColor = System.Drawing.Color.Empty;
-            this.gunaCircleButton7.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.gunaCircleButton7.ForeColor = System.Drawing.Color.White;
-            this.gunaCircleButton7.Image = global::TimKiemNhaTro.Properties.Resources.icons8_toolbox_32;
-            this.gunaCircleButton7.ImageSize = new System.Drawing.Size(30, 30);
-            this.gunaCircleButton7.Location = new System.Drawing.Point(57, 16);
-            this.gunaCircleButton7.Margin = new System.Windows.Forms.Padding(4);
-            this.gunaCircleButton7.Name = "gunaCircleButton7";
-            this.gunaCircleButton7.OnHoverBaseColor = System.Drawing.Color.Transparent;
-            this.gunaCircleButton7.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.gunaCircleButton7.OnHoverForeColor = System.Drawing.Color.White;
-            this.gunaCircleButton7.OnHoverImage = null;
-            this.gunaCircleButton7.OnPressedColor = System.Drawing.Color.Black;
-            this.gunaCircleButton7.Size = new System.Drawing.Size(69, 59);
-            this.gunaCircleButton7.TabIndex = 40;
-            // 
-            // gunaButton4
-            // 
-            this.gunaButton4.AnimationHoverSpeed = 0.07F;
-            this.gunaButton4.AnimationSpeed = 0.03F;
-            this.gunaButton4.BackColor = System.Drawing.Color.Transparent;
-            this.gunaButton4.BaseColor = System.Drawing.Color.WhiteSmoke;
-            this.gunaButton4.BorderColor = System.Drawing.Color.Black;
-            this.gunaButton4.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.gunaButton4.FocusedColor = System.Drawing.Color.Empty;
-            this.gunaButton4.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaButton4.ForeColor = System.Drawing.Color.Black;
-            this.gunaButton4.Image = null;
-            this.gunaButton4.ImageSize = new System.Drawing.Size(20, 20);
-            this.gunaButton4.Location = new System.Drawing.Point(124, 16);
-            this.gunaButton4.Margin = new System.Windows.Forms.Padding(4);
-            this.gunaButton4.Name = "gunaButton4";
-            this.gunaButton4.OnHoverBaseColor = System.Drawing.Color.Transparent;
-            this.gunaButton4.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.gunaButton4.OnHoverForeColor = System.Drawing.Color.White;
-            this.gunaButton4.OnHoverImage = null;
-            this.gunaButton4.OnPressedColor = System.Drawing.Color.Black;
-            this.gunaButton4.Radius = 30;
-            this.gunaButton4.Size = new System.Drawing.Size(213, 59);
-            this.gunaButton4.TabIndex = 39;
-            this.gunaButton4.Text = "Mô tả";
-            this.gunaButton4.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // gunaElipsePanel5
-            // 
-            this.gunaElipsePanel5.BackColor = System.Drawing.Color.Transparent;
-            this.gunaElipsePanel5.BaseColor = System.Drawing.Color.White;
-            this.gunaElipsePanel5.Controls.Add(this.pnlImage);
-            this.gunaElipsePanel5.Controls.Add(this.gunaCircleButton8);
-            this.gunaElipsePanel5.Controls.Add(this.gunaButton5);
-            this.gunaElipsePanel5.Location = new System.Drawing.Point(73, 1973);
-            this.gunaElipsePanel5.Name = "gunaElipsePanel5";
-            this.gunaElipsePanel5.Size = new System.Drawing.Size(900, 429);
-            this.gunaElipsePanel5.TabIndex = 32;
-            // 
-            // pnlImage
-            // 
-            this.pnlImage.AutoScroll = true;
-            this.pnlImage.Location = new System.Drawing.Point(62, 82);
-            this.pnlImage.Name = "pnlImage";
-            this.pnlImage.Size = new System.Drawing.Size(769, 328);
-            this.pnlImage.TabIndex = 41;
-            // 
-            // gunaCircleButton8
-            // 
-            this.gunaCircleButton8.AnimationHoverSpeed = 0.07F;
-            this.gunaCircleButton8.AnimationSpeed = 0.03F;
-            this.gunaCircleButton8.BackColor = System.Drawing.Color.Transparent;
-            this.gunaCircleButton8.BaseColor = System.Drawing.Color.White;
-            this.gunaCircleButton8.BorderColor = System.Drawing.Color.Gainsboro;
-            this.gunaCircleButton8.BorderSize = 1;
-            this.gunaCircleButton8.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.gunaCircleButton8.FocusedColor = System.Drawing.Color.Empty;
-            this.gunaCircleButton8.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.gunaCircleButton8.ForeColor = System.Drawing.Color.White;
-            this.gunaCircleButton8.Image = global::TimKiemNhaTro.Properties.Resources.icons8_toolbox_32;
-            this.gunaCircleButton8.ImageSize = new System.Drawing.Size(30, 30);
-            this.gunaCircleButton8.Location = new System.Drawing.Point(57, 16);
-            this.gunaCircleButton8.Margin = new System.Windows.Forms.Padding(4);
-            this.gunaCircleButton8.Name = "gunaCircleButton8";
-            this.gunaCircleButton8.OnHoverBaseColor = System.Drawing.Color.Transparent;
-            this.gunaCircleButton8.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.gunaCircleButton8.OnHoverForeColor = System.Drawing.Color.White;
-            this.gunaCircleButton8.OnHoverImage = null;
-            this.gunaCircleButton8.OnPressedColor = System.Drawing.Color.Black;
-            this.gunaCircleButton8.Size = new System.Drawing.Size(69, 59);
-            this.gunaCircleButton8.TabIndex = 40;
-            // 
-            // gunaButton5
-            // 
-            this.gunaButton5.AnimationHoverSpeed = 0.07F;
-            this.gunaButton5.AnimationSpeed = 0.03F;
-            this.gunaButton5.BackColor = System.Drawing.Color.Transparent;
-            this.gunaButton5.BaseColor = System.Drawing.Color.WhiteSmoke;
-            this.gunaButton5.BorderColor = System.Drawing.Color.Black;
-            this.gunaButton5.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.gunaButton5.FocusedColor = System.Drawing.Color.Empty;
-            this.gunaButton5.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaButton5.ForeColor = System.Drawing.Color.Black;
-            this.gunaButton5.Image = null;
-            this.gunaButton5.ImageSize = new System.Drawing.Size(20, 20);
-            this.gunaButton5.Location = new System.Drawing.Point(124, 16);
-            this.gunaButton5.Margin = new System.Windows.Forms.Padding(4);
-            this.gunaButton5.Name = "gunaButton5";
-            this.gunaButton5.OnHoverBaseColor = System.Drawing.Color.Transparent;
-            this.gunaButton5.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.gunaButton5.OnHoverForeColor = System.Drawing.Color.White;
-            this.gunaButton5.OnHoverImage = null;
-            this.gunaButton5.OnPressedColor = System.Drawing.Color.Black;
-            this.gunaButton5.Radius = 30;
-            this.gunaButton5.Size = new System.Drawing.Size(213, 59);
-            this.gunaButton5.TabIndex = 39;
-            this.gunaButton5.Text = "Ảnh chi tiết";
-            this.gunaButton5.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // pictwo
-            // 
-            this.pictwo.BackColor = System.Drawing.Color.Transparent;
-            this.pictwo.BaseColor = System.Drawing.Color.White;
-            this.pictwo.Image = global::TimKiemNhaTro.Properties.Resources.binhthanh;
-            this.pictwo.Location = new System.Drawing.Point(558, 0);
-            this.pictwo.Margin = new System.Windows.Forms.Padding(4);
-            this.pictwo.Name = "pictwo";
-            this.pictwo.Size = new System.Drawing.Size(486, 380);
-            this.pictwo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictwo.TabIndex = 26;
-            this.pictwo.TabStop = false;
-            // 
-            // gunaElipsePanel6
-            // 
-            this.gunaElipsePanel6.BackColor = System.Drawing.Color.Transparent;
-            this.gunaElipsePanel6.BaseColor = System.Drawing.Color.White;
-            this.gunaElipsePanel6.Controls.Add(this.webBrowser1);
-            this.gunaElipsePanel6.Location = new System.Drawing.Point(74, 844);
-            this.gunaElipsePanel6.Name = "gunaElipsePanel6";
-            this.gunaElipsePanel6.Radius = 30;
-            this.gunaElipsePanel6.Size = new System.Drawing.Size(899, 328);
-            this.gunaElipsePanel6.TabIndex = 33;
-            // 
-            // webBrowser1
-            // 
-            this.webBrowser1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.webBrowser1.Location = new System.Drawing.Point(0, 0);
-            this.webBrowser1.MinimumSize = new System.Drawing.Size(20, 20);
-            this.webBrowser1.Name = "webBrowser1";
-            this.webBrowser1.Size = new System.Drawing.Size(899, 328);
-            this.webBrowser1.TabIndex = 35;
             // 
             // ucDetailHome
             // 
@@ -1016,15 +1016,15 @@ namespace TimKiemNhaTro
             this.gunaElipsePanel2.PerformLayout();
             this.gunaElipsePanel3.ResumeLayout(false);
             this.gunaElipsePanel3.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picAvatar)).EndInit();
             this.gunaElipsePanel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.picfour)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picthree)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picone)).EndInit();
             this.gunaElipsePanel4.ResumeLayout(false);
             this.gunaElipsePanel5.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictwo)).EndInit();
             this.gunaElipsePanel6.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictwo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picfour)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picthree)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picAvatar)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picone)).EndInit();
             this.ResumeLayout(false);
 
         }

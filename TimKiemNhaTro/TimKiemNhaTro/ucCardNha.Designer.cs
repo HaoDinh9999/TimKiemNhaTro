@@ -183,7 +183,7 @@ namespace TimKiemNhaTro
             this.lblAddress.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(45)))), ((int)(((byte)(73)))));
             this.lblAddress.Location = new System.Drawing.Point(15, 42);
             this.lblAddress.Name = "lblAddress";
-            this.lblAddress.Size = new System.Drawing.Size(289, 55);
+            this.lblAddress.Size = new System.Drawing.Size(271, 55);
             this.lblAddress.TabIndex = 8;
             this.lblAddress.Text = "1 Nguyễn Bỉnh Khiêm, Phường Bến Nghé, Quận 1";
             // 

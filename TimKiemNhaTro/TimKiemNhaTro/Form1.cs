@@ -29,6 +29,7 @@ namespace TimKiemNhaTro
         ucSetting ucSet;
         ucAddHome _ucAdd;
         ucNhaDaDang _ucNhaDaDang;
+        ucTinTuc _ucTinTuc;
         private void moveImageBox(object sender)
         {
             GunaAdvenceButton b = (GunaAdvenceButton)sender;
@@ -40,6 +41,17 @@ namespace TimKiemNhaTro
         {
             lblTitle.Text = a;
         }
+
+        public void setUCTinTucBringtoFront()
+        {
+            _ucTinTuc.Show();
+            _ucTinTuc.BringToFront();
+        }
+        public ucTinTuc getUCTinTuc()
+        {
+            return _ucTinTuc;
+        }
+
         public void setUCNhaDaDangBringtoFront()
         {
             _ucNhaDaDang.Show();
@@ -49,6 +61,17 @@ namespace TimKiemNhaTro
         {
             return _ucNhaDaDang;
         }
+
+        public void setUCNhaYeuThichBringtoFront()
+        {
+            ucF.Show();
+            ucF.BringToFront();
+        }
+        public ucFavourite getUCYeuThich()
+        {
+            return ucF;
+        }
+
         public void setUCDetailBringtoFront()
         {
             ucD.Show();
@@ -86,6 +109,8 @@ namespace TimKiemNhaTro
             _ucAdd.Dock = DockStyle.Fill;
             pnlUC.Controls.Add(_ucNhaDaDang);
             _ucNhaDaDang.Dock = DockStyle.Fill;
+            pnlUC.Controls.Add(_ucTinTuc);
+            _ucTinTuc.Dock = DockStyle.Fill;
         }
         private void btnHome_Click(object sender, EventArgs e)
         {
@@ -197,6 +222,7 @@ namespace TimKiemNhaTro
             ucD = new ucDetailHome();
             _ucAdd = new ucAddHome();
             _ucNhaDaDang = new ucNhaDaDang();
+            _ucTinTuc = new ucTinTuc();
             addToPanel();
 
         }

@@ -37,5 +37,11 @@ namespace TimKiemNhaTro
             (this.Parent.Parent as frmMain).getUCNhaDaDang();
             (this.Parent.Parent as frmMain).setUCNhaDaDangBringtoFront();
         }
+
+        private void btnNhaDaLuu_Click(object sender, EventArgs e)
+        {
+            (this.Parent.Parent as frmMain).getUCYeuThich();
+            (this.Parent.Parent as frmMain).setUCNhaYeuThichBringtoFront();
+        }
     }
 }

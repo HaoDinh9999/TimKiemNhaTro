@@ -54,8 +54,8 @@
           <Property Name="maNguoiDung" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="tenDangNhap" Type="varchar" MaxLength="128" Nullable="false" />
           <Property Name="matKhau" Type="varchar" MaxLength="128" Nullable="false" />
-          <Property Name="hoTen" Type="varchar" MaxLength="128" Nullable="false" />
-          <Property Name="urlDaiDien" Type="varchar" MaxLength="128" Nullable="false" />
+          <Property Name="hoTen" Type="varchar" MaxLength="128" />
+          <Property Name="urlDaiDien" Type="varchar" MaxLength="128" />
         </EntityType>
         <EntityType Name="Nha">
           <Key>
@@ -70,10 +70,12 @@
           <Property Name="dienTich" Type="decimal" Precision="10" Scale="0" />
           <Property Name="tinhTrang" Type="varchar" MaxLength="45" />
           <Property Name="soNha" Type="varchar" MaxLength="45" />
+          <Property Name="tenDuong" Type="varchar" MaxLength="255" Nullable="false" />
           <Property Name="phuongXa" Type="varchar" MaxLength="45" />
           <Property Name="quanHuyen" Type="varchar" MaxLength="45" />
           <Property Name="moTa" Type="varchar" MaxLength="45" />
           <Property Name="TienNha" Type="decimal" Precision="10" Scale="0" />
+          <Property Name="ngayCapNhat" Type="datetime" Precision="0" StoreGeneratedPattern="Identity" Nullable="false" />
         </EntityType>
         <EntityType Name="YeuThich">
           <Key>
@@ -319,8 +321,8 @@
           <Property Name="maNguoiDung" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="tenDangNhap" Type="String" Nullable="false" MaxLength="128" FixedLength="false" Unicode="false" />
           <Property Name="matKhau" Type="String" Nullable="false" MaxLength="128" FixedLength="false" Unicode="false" />
-          <Property Name="hoTen" Type="String" Nullable="false" MaxLength="128" FixedLength="false" Unicode="false" />
-          <Property Name="urlDaiDien" Type="String" Nullable="false" MaxLength="128" FixedLength="false" Unicode="false" />
+          <Property Name="hoTen" Type="String" MaxLength="128" FixedLength="false" Unicode="false" />
+          <Property Name="urlDaiDien" Type="String" MaxLength="128" FixedLength="false" Unicode="false" />
           <NavigationProperty Name="DanhGias" Relationship="XQ0Qgj8xlHModel.maNguoiDanhGia" FromRole="NguoiDung" ToRole="DanhGia" />
           <NavigationProperty Name="Nhas" Relationship="XQ0Qgj8xlHModel.maNguoiDung" FromRole="NguoiDung" ToRole="Nha" />
           <NavigationProperty Name="YeuThiches" Relationship="XQ0Qgj8xlHModel.maNguoiThich" FromRole="NguoiDung" ToRole="YeuThich" />
@@ -338,10 +340,12 @@
           <Property Name="dienTich" Type="Decimal" />
           <Property Name="tinhTrang" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
           <Property Name="soNha" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
+          <Property Name="tenDuong" Type="String" Nullable="false" MaxLength="255" FixedLength="false" Unicode="false" />
           <Property Name="phuongXa" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
           <Property Name="quanHuyen" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
           <Property Name="moTa" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
           <Property Name="TienNha" Type="Decimal" />
+          <Property Name="ngayCapNhat" Type="DateTime" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <NavigationProperty Name="AnhNhas" Relationship="XQ0Qgj8xlHModel.FK_Anh_maNha" FromRole="Nha" ToRole="AnhNha" />
           <NavigationProperty Name="CoSoVatChat" Relationship="XQ0Qgj8xlHModel.maCoSoVatChat" FromRole="Nha" ToRole="CoSoVatChat" />
           <NavigationProperty Name="DanhGias" Relationship="XQ0Qgj8xlHModel.maNha" FromRole="Nha" ToRole="DanhGia" />
@@ -455,7 +459,7 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-      </Schema>
+        </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
     <edmx:Mappings>
@@ -520,10 +524,12 @@
           <EntitySetMapping Name="Nhas">
             <EntityTypeMapping TypeName="XQ0Qgj8xlHModel.Nha">
               <MappingFragment StoreEntitySet="Nha">
+                <ScalarProperty Name="ngayCapNhat" ColumnName="ngayCapNhat" />
                 <ScalarProperty Name="TienNha" ColumnName="TienNha" />
                 <ScalarProperty Name="moTa" ColumnName="moTa" />
                 <ScalarProperty Name="quanHuyen" ColumnName="quanHuyen" />
                 <ScalarProperty Name="phuongXa" ColumnName="phuongXa" />
+                <ScalarProperty Name="tenDuong" ColumnName="tenDuong" />
                 <ScalarProperty Name="soNha" ColumnName="soNha" />
                 <ScalarProperty Name="tinhTrang" ColumnName="tinhTrang" />
                 <ScalarProperty Name="dienTich" ColumnName="dienTich" />

@@ -573,6 +573,16 @@ namespace TimKiemNhaTro.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_image_321 {
+            get {
+                object obj = ResourceManager.GetObject("icons8_image_321", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_info_popup_32 {
             get {
                 object obj = ResourceManager.GetObject("icons8_info_popup_32", resourceCulture);
@@ -926,6 +936,46 @@ namespace TimKiemNhaTro.Properties {
         internal static System.Drawing.Bitmap icons8_staircaseWhite_32 {
             get {
                 object obj = ResourceManager.GetObject("icons8_staircaseWhite_32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_starDam_32 {
+            get {
+                object obj = ResourceManager.GetObject("icons8_starDam_32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_starGrey_32 {
+            get {
+                object obj = ResourceManager.GetObject("icons8_starGrey_32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_starYellow_32 {
+            get {
+                object obj = ResourceManager.GetObject("icons8_starYellow_32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_starYellow_321 {
+            get {
+                object obj = ResourceManager.GetObject("icons8_starYellow_321", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

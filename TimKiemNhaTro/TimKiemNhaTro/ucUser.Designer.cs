@@ -31,11 +31,10 @@ namespace TimKiemNhaTro
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ucUser));
             this.label1 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
+            this.lblNameKH = new System.Windows.Forms.Label();
+            this.lblkhNho = new System.Windows.Forms.Label();
             this.lblUsername = new System.Windows.Forms.Label();
             this.lblPhone = new System.Windows.Forms.Label();
-            this.btnEditImage = new Guna.UI.WinForms.GunaAdvenceButton();
             this.label8 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -48,12 +47,19 @@ namespace TimKiemNhaTro
             this.btnFAQ = new Guna.UI.WinForms.GunaAdvenceButton();
             this.gunaAdvenceButton8 = new Guna.UI.WinForms.GunaAdvenceButton();
             this.btnEdit = new Guna.UI.WinForms.GunaAdvenceButton();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.gunaPictureBox1 = new Guna.UI.WinForms.GunaPictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gunaPictureBox1)).BeginInit();
+            this.btnEditImage = new Guna.UI.WinForms.GunaAdvenceButton();
+            this.ptrdthNho = new System.Windows.Forms.PictureBox();
+            this.ptrUNho = new System.Windows.Forms.PictureBox();
+            this.picAvatar = new Guna.UI.WinForms.GunaPictureBox();
+            this.txtHoTen = new Guna.UI.WinForms.GunaTextBox();
+            this.lblNhoTen = new System.Windows.Forms.Label();
+            this.lblHoVaTen = new System.Windows.Forms.Label();
+            this.txtPhoneNumber = new Guna.UI.WinForms.GunaTextBox();
+            this.lblDTNho = new System.Windows.Forms.Label();
+            this.lblSoDienThoai = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.ptrdthNho)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptrUNho)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picAvatar)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -67,27 +73,27 @@ namespace TimKiemNhaTro
             this.label1.TabIndex = 1;
             this.label1.Text = "Thông tin người dùng";
             // 
-            // label3
+            // lblNameKH
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Tahoma", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(467, 80);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(276, 45);
-            this.label3.TabIndex = 3;
-            this.label3.Text = "Đinh Việt Hào";
+            this.lblNameKH.AutoSize = true;
+            this.lblNameKH.Font = new System.Drawing.Font("Tahoma", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNameKH.Location = new System.Drawing.Point(467, 80);
+            this.lblNameKH.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblNameKH.Name = "lblNameKH";
+            this.lblNameKH.Size = new System.Drawing.Size(276, 45);
+            this.lblNameKH.TabIndex = 3;
+            this.lblNameKH.Text = "Đinh Việt Hào";
             // 
-            // label5
+            // lblkhNho
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(469, 123);
-            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(137, 29);
-            this.label5.TabIndex = 5;
-            this.label5.Text = "Khách hàng";
+            this.lblkhNho.AutoSize = true;
+            this.lblkhNho.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblkhNho.Location = new System.Drawing.Point(470, 125);
+            this.lblkhNho.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblkhNho.Name = "lblkhNho";
+            this.lblkhNho.Size = new System.Drawing.Size(137, 29);
+            this.lblkhNho.TabIndex = 5;
+            this.lblkhNho.Text = "Khách hàng";
             // 
             // lblUsername
             // 
@@ -96,9 +102,9 @@ namespace TimKiemNhaTro
             this.lblUsername.Location = new System.Drawing.Point(536, 273);
             this.lblUsername.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblUsername.Name = "lblUsername";
-            this.lblUsername.Size = new System.Drawing.Size(132, 33);
+            this.lblUsername.Size = new System.Drawing.Size(162, 33);
             this.lblUsername.TabIndex = 7;
-            this.lblUsername.Text = "username";
+            this.lblUsername.Text = "lblUsername";
             // 
             // lblPhone
             // 
@@ -110,42 +116,6 @@ namespace TimKiemNhaTro
             this.lblPhone.Size = new System.Drawing.Size(208, 33);
             this.lblPhone.TabIndex = 9;
             this.lblPhone.Text = "+84 793111038";
-            // 
-            // btnEditImage
-            // 
-            this.btnEditImage.AnimationHoverSpeed = 0.07F;
-            this.btnEditImage.AnimationSpeed = 0.03F;
-            this.btnEditImage.BackColor = System.Drawing.Color.Transparent;
-            this.btnEditImage.BaseColor = System.Drawing.Color.LightSeaGreen;
-            this.btnEditImage.BorderColor = System.Drawing.Color.Black;
-            this.btnEditImage.CheckedBaseColor = System.Drawing.Color.Gray;
-            this.btnEditImage.CheckedBorderColor = System.Drawing.Color.Black;
-            this.btnEditImage.CheckedForeColor = System.Drawing.Color.White;
-            this.btnEditImage.CheckedImage = null;
-            this.btnEditImage.CheckedLineColor = System.Drawing.Color.DimGray;
-            this.btnEditImage.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnEditImage.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.btnEditImage.FocusedColor = System.Drawing.Color.Empty;
-            this.btnEditImage.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEditImage.ForeColor = System.Drawing.Color.White;
-            this.btnEditImage.Image = null;
-            this.btnEditImage.ImageSize = new System.Drawing.Size(20, 20);
-            this.btnEditImage.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.btnEditImage.Location = new System.Drawing.Point(133, 351);
-            this.btnEditImage.Margin = new System.Windows.Forms.Padding(4);
-            this.btnEditImage.Name = "btnEditImage";
-            this.btnEditImage.OnHoverBaseColor = System.Drawing.Color.DarkGray;
-            this.btnEditImage.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.btnEditImage.OnHoverForeColor = System.Drawing.Color.White;
-            this.btnEditImage.OnHoverImage = null;
-            this.btnEditImage.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.btnEditImage.OnPressedColor = System.Drawing.Color.Black;
-            this.btnEditImage.Radius = 10;
-            this.btnEditImage.Size = new System.Drawing.Size(156, 52);
-            this.btnEditImage.TabIndex = 10;
-            this.btnEditImage.Text = "Sửa ảnh";
-            this.btnEditImage.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.btnEditImage.Visible = false;
             // 
             // label8
             // 
@@ -473,47 +443,186 @@ namespace TimKiemNhaTro
             this.btnEdit.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click);
             // 
-            // pictureBox2
+            // btnEditImage
             // 
-            this.pictureBox2.Image = global::TimKiemNhaTro.Properties.Resources.icons8_phone_32;
-            this.pictureBox2.Location = new System.Drawing.Point(475, 315);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(53, 38);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 8;
-            this.pictureBox2.TabStop = false;
+            this.btnEditImage.AnimationHoverSpeed = 0.07F;
+            this.btnEditImage.AnimationSpeed = 0.03F;
+            this.btnEditImage.BackColor = System.Drawing.Color.Transparent;
+            this.btnEditImage.BaseColor = System.Drawing.Color.LightSeaGreen;
+            this.btnEditImage.BorderColor = System.Drawing.Color.Black;
+            this.btnEditImage.CheckedBaseColor = System.Drawing.Color.Gray;
+            this.btnEditImage.CheckedBorderColor = System.Drawing.Color.Black;
+            this.btnEditImage.CheckedForeColor = System.Drawing.Color.White;
+            this.btnEditImage.CheckedImage = null;
+            this.btnEditImage.CheckedLineColor = System.Drawing.Color.DimGray;
+            this.btnEditImage.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnEditImage.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btnEditImage.FocusedColor = System.Drawing.Color.Empty;
+            this.btnEditImage.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEditImage.ForeColor = System.Drawing.Color.White;
+            this.btnEditImage.Image = global::TimKiemNhaTro.Properties.Resources.icons8_image_321;
+            this.btnEditImage.ImageSize = new System.Drawing.Size(30, 30);
+            this.btnEditImage.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
+            this.btnEditImage.Location = new System.Drawing.Point(200, 354);
+            this.btnEditImage.Margin = new System.Windows.Forms.Padding(4);
+            this.btnEditImage.Name = "btnEditImage";
+            this.btnEditImage.OnHoverBaseColor = System.Drawing.Color.DarkGray;
+            this.btnEditImage.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.btnEditImage.OnHoverForeColor = System.Drawing.Color.White;
+            this.btnEditImage.OnHoverImage = null;
+            this.btnEditImage.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
+            this.btnEditImage.OnPressedColor = System.Drawing.Color.Black;
+            this.btnEditImage.Radius = 20;
+            this.btnEditImage.Size = new System.Drawing.Size(156, 41);
+            this.btnEditImage.TabIndex = 10;
+            this.btnEditImage.Text = "Sửa ảnh";
+            this.btnEditImage.Visible = false;
+            this.btnEditImage.Click += new System.EventHandler(this.btnEditImage_Click);
             // 
-            // pictureBox1
+            // ptrdthNho
             // 
-            this.pictureBox1.Image = global::TimKiemNhaTro.Properties.Resources.icons8_male_userBlack_32;
-            this.pictureBox1.Location = new System.Drawing.Point(475, 270);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(53, 38);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox1.TabIndex = 6;
-            this.pictureBox1.TabStop = false;
+            this.ptrdthNho.Image = global::TimKiemNhaTro.Properties.Resources.icons8_phone_32;
+            this.ptrdthNho.Location = new System.Drawing.Point(475, 315);
+            this.ptrdthNho.Margin = new System.Windows.Forms.Padding(4);
+            this.ptrdthNho.Name = "ptrdthNho";
+            this.ptrdthNho.Size = new System.Drawing.Size(53, 38);
+            this.ptrdthNho.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.ptrdthNho.TabIndex = 8;
+            this.ptrdthNho.TabStop = false;
             // 
-            // gunaPictureBox1
+            // ptrUNho
             // 
-            this.gunaPictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.gunaPictureBox1.BaseColor = System.Drawing.Color.White;
-            this.gunaPictureBox1.Image = global::TimKiemNhaTro.Properties.Resources.TanBinh1;
-            this.gunaPictureBox1.Location = new System.Drawing.Point(133, 81);
-            this.gunaPictureBox1.Margin = new System.Windows.Forms.Padding(4);
-            this.gunaPictureBox1.Name = "gunaPictureBox1";
-            this.gunaPictureBox1.Radius = 10;
-            this.gunaPictureBox1.Size = new System.Drawing.Size(296, 268);
-            this.gunaPictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.gunaPictureBox1.TabIndex = 0;
-            this.gunaPictureBox1.TabStop = false;
+            this.ptrUNho.Image = global::TimKiemNhaTro.Properties.Resources.icons8_male_userBlack_32;
+            this.ptrUNho.Location = new System.Drawing.Point(475, 270);
+            this.ptrUNho.Margin = new System.Windows.Forms.Padding(4);
+            this.ptrUNho.Name = "ptrUNho";
+            this.ptrUNho.Size = new System.Drawing.Size(53, 38);
+            this.ptrUNho.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.ptrUNho.TabIndex = 6;
+            this.ptrUNho.TabStop = false;
+            // 
+            // picAvatar
+            // 
+            this.picAvatar.BackColor = System.Drawing.Color.Transparent;
+            this.picAvatar.BaseColor = System.Drawing.Color.White;
+            this.picAvatar.Image = global::TimKiemNhaTro.Properties.Resources.TanBinh1;
+            this.picAvatar.Location = new System.Drawing.Point(133, 81);
+            this.picAvatar.Margin = new System.Windows.Forms.Padding(4);
+            this.picAvatar.Name = "picAvatar";
+            this.picAvatar.Radius = 10;
+            this.picAvatar.Size = new System.Drawing.Size(296, 268);
+            this.picAvatar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picAvatar.TabIndex = 0;
+            this.picAvatar.TabStop = false;
+            // 
+            // txtHoTen
+            // 
+            this.txtHoTen.BackColor = System.Drawing.Color.Transparent;
+            this.txtHoTen.BaseColor = System.Drawing.Color.White;
+            this.txtHoTen.BorderColor = System.Drawing.Color.Silver;
+            this.txtHoTen.BorderSize = 3;
+            this.txtHoTen.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtHoTen.FocusedBaseColor = System.Drawing.Color.White;
+            this.txtHoTen.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(108)))), ((int)(((byte)(255)))));
+            this.txtHoTen.FocusedForeColor = System.Drawing.SystemColors.ControlText;
+            this.txtHoTen.Font = new System.Drawing.Font("Tahoma", 10.2F);
+            this.txtHoTen.Location = new System.Drawing.Point(475, 174);
+            this.txtHoTen.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtHoTen.Name = "txtHoTen";
+            this.txtHoTen.PasswordChar = '\0';
+            this.txtHoTen.Radius = 10;
+            this.txtHoTen.SelectedText = "";
+            this.txtHoTen.Size = new System.Drawing.Size(356, 61);
+            this.txtHoTen.TabIndex = 37;
+            this.txtHoTen.Text = "HDM";
+            this.txtHoTen.TextOffsetX = 10;
+            this.txtHoTen.Visible = false;
+            // 
+            // lblNhoTen
+            // 
+            this.lblNhoTen.AutoSize = true;
+            this.lblNhoTen.Font = new System.Drawing.Font("Segoe UI", 7.8F);
+            this.lblNhoTen.ForeColor = System.Drawing.Color.DimGray;
+            this.lblNhoTen.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.lblNhoTen.Location = new System.Drawing.Point(633, 153);
+            this.lblNhoTen.Name = "lblNhoTen";
+            this.lblNhoTen.Size = new System.Drawing.Size(198, 19);
+            this.lblNhoTen.TabIndex = 36;
+            this.lblNhoTen.Text = "Tên muốn mọi người nhìn thấy";
+            this.lblNhoTen.Visible = false;
+            // 
+            // lblHoVaTen
+            // 
+            this.lblHoVaTen.AutoSize = true;
+            this.lblHoVaTen.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold);
+            this.lblHoVaTen.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.lblHoVaTen.Location = new System.Drawing.Point(471, 131);
+            this.lblHoVaTen.Name = "lblHoVaTen";
+            this.lblHoVaTen.Size = new System.Drawing.Size(106, 24);
+            this.lblHoVaTen.TabIndex = 35;
+            this.lblHoVaTen.Text = "Họ và tên";
+            this.lblHoVaTen.Visible = false;
+            // 
+            // txtPhoneNumber
+            // 
+            this.txtPhoneNumber.BackColor = System.Drawing.Color.Transparent;
+            this.txtPhoneNumber.BaseColor = System.Drawing.Color.White;
+            this.txtPhoneNumber.BorderColor = System.Drawing.Color.Silver;
+            this.txtPhoneNumber.BorderSize = 3;
+            this.txtPhoneNumber.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtPhoneNumber.Enabled = false;
+            this.txtPhoneNumber.FocusedBaseColor = System.Drawing.Color.White;
+            this.txtPhoneNumber.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(108)))), ((int)(((byte)(255)))));
+            this.txtPhoneNumber.FocusedForeColor = System.Drawing.SystemColors.ControlText;
+            this.txtPhoneNumber.Font = new System.Drawing.Font("Tahoma", 10.2F);
+            this.txtPhoneNumber.Location = new System.Drawing.Point(475, 292);
+            this.txtPhoneNumber.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.txtPhoneNumber.Name = "txtPhoneNumber";
+            this.txtPhoneNumber.PasswordChar = '\0';
+            this.txtPhoneNumber.Radius = 10;
+            this.txtPhoneNumber.SelectedText = "";
+            this.txtPhoneNumber.Size = new System.Drawing.Size(356, 61);
+            this.txtPhoneNumber.TabIndex = 40;
+            this.txtPhoneNumber.Text = "0793111038";
+            this.txtPhoneNumber.TextOffsetX = 10;
+            this.txtPhoneNumber.Visible = false;
+            // 
+            // lblDTNho
+            // 
+            this.lblDTNho.AutoSize = true;
+            this.lblDTNho.Font = new System.Drawing.Font("Segoe UI", 7.8F);
+            this.lblDTNho.ForeColor = System.Drawing.Color.DimGray;
+            this.lblDTNho.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.lblDTNho.Location = new System.Drawing.Point(673, 270);
+            this.lblDTNho.Name = "lblDTNho";
+            this.lblDTNho.Size = new System.Drawing.Size(132, 19);
+            this.lblDTNho.TabIndex = 39;
+            this.lblDTNho.Text = "Tiện cho việc liên lạc";
+            this.lblDTNho.Visible = false;
+            // 
+            // lblSoDienThoai
+            // 
+            this.lblSoDienThoai.AutoSize = true;
+            this.lblSoDienThoai.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold);
+            this.lblSoDienThoai.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.lblSoDienThoai.Location = new System.Drawing.Point(471, 249);
+            this.lblSoDienThoai.Name = "lblSoDienThoai";
+            this.lblSoDienThoai.Size = new System.Drawing.Size(142, 24);
+            this.lblSoDienThoai.TabIndex = 38;
+            this.lblSoDienThoai.Text = "Số điện thoại";
+            this.lblSoDienThoai.Visible = false;
             // 
             // ucUser
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
+            this.Controls.Add(this.txtPhoneNumber);
+            this.Controls.Add(this.lblDTNho);
+            this.Controls.Add(this.lblSoDienThoai);
+            this.Controls.Add(this.txtHoTen);
+            this.Controls.Add(this.lblNhoTen);
+            this.Controls.Add(this.lblHoVaTen);
             this.Controls.Add(this.btnNhaDaDang);
             this.Controls.Add(this.gunaAdvenceButton3);
             this.Controls.Add(this.label4);
@@ -528,19 +637,19 @@ namespace TimKiemNhaTro
             this.Controls.Add(this.btnEdit);
             this.Controls.Add(this.btnEditImage);
             this.Controls.Add(this.lblPhone);
-            this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.ptrdthNho);
             this.Controls.Add(this.lblUsername);
-            this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label3);
+            this.Controls.Add(this.ptrUNho);
+            this.Controls.Add(this.lblkhNho);
+            this.Controls.Add(this.lblNameKH);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.gunaPictureBox1);
+            this.Controls.Add(this.picAvatar);
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "ucUser";
             this.Size = new System.Drawing.Size(1493, 790);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gunaPictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptrdthNho)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ptrUNho)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picAvatar)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -548,14 +657,14 @@ namespace TimKiemNhaTro
 
         #endregion
 
-        private Guna.UI.WinForms.GunaPictureBox gunaPictureBox1;
+        private Guna.UI.WinForms.GunaPictureBox picAvatar;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label lblNameKH;
+        private System.Windows.Forms.Label lblkhNho;
+        private System.Windows.Forms.PictureBox ptrUNho;
         private System.Windows.Forms.Label lblUsername;
         private System.Windows.Forms.Label lblPhone;
-        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox ptrdthNho;
         private Guna.UI.WinForms.GunaAdvenceButton btnEditImage;
         private Guna.UI.WinForms.GunaAdvenceButton btnEdit;
         private Guna.UI.WinForms.GunaAdvenceButton btnLienHe;
@@ -569,5 +678,11 @@ namespace TimKiemNhaTro
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label7;
         private Guna.UI.WinForms.GunaAdvenceButton btnNhaDaLuu;
+        private Guna.UI.WinForms.GunaTextBox txtHoTen;
+        private System.Windows.Forms.Label lblNhoTen;
+        private System.Windows.Forms.Label lblHoVaTen;
+        private Guna.UI.WinForms.GunaTextBox txtPhoneNumber;
+        private System.Windows.Forms.Label lblDTNho;
+        private System.Windows.Forms.Label lblSoDienThoai;
     }
 }

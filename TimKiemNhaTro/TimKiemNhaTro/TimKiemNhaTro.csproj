@@ -361,6 +361,12 @@
     <Compile Include="ucAddHome.Designer.cs">
       <DependentUpon>ucAddHome.cs</DependentUpon>
     </Compile>
+    <Compile Include="ucCardDanhGia.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucCardDanhGia.Designer.cs">
+      <DependentUpon>ucCardDanhGia.cs</DependentUpon>
+    </Compile>
     <Compile Include="ucCardNha.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -470,6 +476,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ucAddHome.resx">
       <DependentUpon>ucAddHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucCardDanhGia.resx">
+      <DependentUpon>ucCardDanhGia.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ucCardNha.resx">
       <DependentUpon>ucCardNha.cs</DependentUpon>
@@ -703,6 +712,11 @@
     <None Include="Resources\icons8_wasteXOA_32.png" />
     <None Include="Resources\icons8_heardt_32.png" />
     <None Include="Resources\kisspng-qualitas-esquina-rush-reliance-apartments-qualitas-apartment-5ac1b5d86c4dc4.9943107215226444404436.jpg" />
+    <None Include="Resources\icons8_image_321.png" />
+    <None Include="Resources\icons8_starYellow_32.png" />
+    <None Include="Resources\icons8_starYellow_321.png" />
+    <None Include="Resources\icons8_starGrey_32.png" />
+    <None Include="Resources\icons8_starDam_32.png" />
     <Content Include="Resources\rec.png" />
     <Content Include="Resources\star.png" />
     <Content Include="Resources\triangular.png" />

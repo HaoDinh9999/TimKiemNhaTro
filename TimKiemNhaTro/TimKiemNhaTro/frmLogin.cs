@@ -50,9 +50,10 @@ namespace TimKiemNhaTro
 
             }
             MessageBox.Show("Đăng nhập thành công");
-            frmMain frm = new frmMain();
-            frm.Show();
+            frmMain frm = new frmMain(nguoiDung);
             Hide();
+            frm.ShowDialog();
+            Close();
         }
         static string ComputeSha256Hash(string rawData)
         {

@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using TimKiemNhaTro.Model;
 
 namespace TimKiemNhaTro
 {
@@ -21,6 +22,16 @@ namespace TimKiemNhaTro
             //ucH.BringToFront();
             //btnAddHouse.BringToFront();
         }
+        public frmMain(NguoiDung user)
+        {
+            _user = user;
+            InitializeComponent();
+            //pnlUC.Controls.Add(ucH);
+            //ucH.Dock = DockStyle.Fill;
+            //ucH.BringToFront();
+            //btnAddHouse.BringToFront();
+        }
+        NguoiDung _user;
         ucDetailHome ucD;
         ucHomeCC ucH;
         ucSearch ucS;
@@ -167,6 +178,7 @@ namespace TimKiemNhaTro
             btnSetting.Checked = false;
 
             ucUss.BringToFront();
+            ucUss.reLoad();
         }
 
         private void btnSetting_Click(object sender, EventArgs e)

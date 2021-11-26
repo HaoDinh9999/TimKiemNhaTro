@@ -133,9 +133,20 @@ namespace TimKiemNhaTro
                         nhas = nhas.Where(x => x.soPhongTam >= 4).ToList();
                         break;
                 }
-           
+            switch (cboLoaiHinh.SelectedIndex)
+            {
+                case 0:
+                    nhas = nhas.Where(x => x.LoaiChoThue.tenLoaiChoThue == "Nhà").ToList();
+                    break;
+                case 1:
+                    nhas = nhas.Where(x => x.LoaiChoThue.tenLoaiChoThue == "Căn hộ").ToList();
+                    break;
+                case 2:
+                    nhas = nhas.Where(x => x.LoaiChoThue.tenLoaiChoThue == "Phòng").ToList();
+                    break;
+            }
 
-                switch (cboDienTich.SelectedIndex)
+            switch (cboDienTich.SelectedIndex)
                 {
                     case 0:
                         nhas = nhas.Where(x => x.dienTich <= 20).ToList();
@@ -614,8 +625,6 @@ namespace TimKiemNhaTro
         "Huyện Hóc Môn",
         "Huyện Nhà Bè"
         };
-
-        
     }
   
 }

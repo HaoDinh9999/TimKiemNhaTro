@@ -16,6 +16,7 @@ namespace TimKiemNhaTro
     public partial class ucDetailHome : UserControl
     {
         int _idMaNha;
+        int _idNguoiDung;
         Nha nhas;
         CoSoVatChat csvs;
         List<AnhNha> listAnh;
@@ -176,12 +177,89 @@ namespace TimKiemNhaTro
 
             loadAnhNha();
 
+            //Danh gia
+
+            loadDanhGia();
+
+        }
+        public void loadDanhGia()
+        {
+            flwDanhGia.Controls.Clear();
+            var listDanhGia = DataProvider.Ins.DB.DanhGias.Where(x => x.maNha == nhas.maNha).ToList();
+            if (listDanhGia.Count >0)
+            {
+                lblCountRate.Text = listDanhGia.Count.ToString();
+                btnCountRate.Text = listDanhGia.Count.ToString();
+
+                lblCount1Sao.Text = listDanhGia.Where(x => x.soSao == 1).Count().ToString();
+                lblCount2Sao.Text = listDanhGia.Where(x => x.soSao == 2).Count().ToString();
+                lblCount3Sao.Text = listDanhGia.Where(x => x.soSao == 3).Count().ToString();
+                lblCount4Sao.Text = listDanhGia.Where(x => x.soSao == 4).Count().ToString();
+                lblCount5Sao.Text = listDanhGia.Where(x => x.soSao == 5).Count().ToString();
+
+                int tbSao = 0;
+                foreach (var item in listDanhGia)
+                {
+                    var cardDanhGia = new ucCardDanhGia(item,this);
+                    cardDanhGia.setInfo();
+                    flwDanhGia.Controls.Add(cardDanhGia);
+                    tbSao += (int)item.soSao;
+                }
+                double soSaoo = (double)tbSao / (double)listDanhGia.Count();
+                lblSaoChung.Text = (tbSao / listDanhGia.Count()).ToString()+"/5";
+                rateChungAll.Value = (float)soSaoo;
+                
+            }
+         
         }
         private void ucDetailHome_Load(object sender, EventArgs e)
         {
            
         }
 
+        private void rateVietSao_ValueChanged(object sender, EventArgs e)
+        {
+            if (rateVietSao.Value <= 1)
+            {
+                lblDanhGiaSao.Text = "Không thích";
+            }
+            else if (rateVietSao.Value <= 2)
+            {
+                lblDanhGiaSao.Text = "Tạm được";
+            }
+            else if (rateVietSao.Value <= 3)
+            {
+                lblDanhGiaSao.Text = "Bình thường";
+            }
 
+            else if (rateVietSao.Value <= 4)
+            {
+                lblDanhGiaSao.Text = "Tốt";
+            }
+            else if (rateVietSao.Value <= 5)
+            {
+                lblDanhGiaSao.Text = "Rất tốt";
+            }
+
+
+        }
+
+        private void btnGuiDanhGia_Click(object sender, EventArgs e)
+        {
+            _idNguoiDung = 1;
+            var danhGiaa= new DanhGia(){ maNguoiDung=_idNguoiDung,maNha=nhas.maNha,soSao=(int)rateVietSao.Value,noiDung=rtxComment.Text};
+            if (DataProvider.Ins.DB.DanhGias.Where(x => x.maNguoiDung == _idNguoiDung && x.maNha == nhas.maNha).Count() > 0)
+            {
+                MessageBox.Show("Bạn không thể viết đánh giá thêm được nữa");
+            }
+            else
+            {
+                DataProvider.Ins.DB.DanhGias.Add(danhGiaa);
+                DataProvider.Ins.DB.SaveChanges();
+
+                MessageBox.Show("Đã gửi đánh giá");
+                loadDanhGia();
+            }
+        }
     }
 }

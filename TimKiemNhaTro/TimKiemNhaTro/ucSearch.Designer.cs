@@ -48,6 +48,8 @@ namespace TimKiemNhaTro
             this.guna2HtmlLabel6 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel7 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.cboGia = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.cboLoaiHinh = new Guna.UI2.WinForms.Guna2ComboBox();
+            this.guna2HtmlLabel8 = new Guna.UI2.WinForms.Guna2HtmlLabel();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -112,6 +114,7 @@ namespace TimKiemNhaTro
             this.lblSoKQ.Name = "lblSoKQ";
             this.lblSoKQ.Size = new System.Drawing.Size(3, 2);
             this.lblSoKQ.TabIndex = 22;
+            this.lblSoKQ.Text = null;
             // 
             // cboPhuong
             // 
@@ -127,7 +130,7 @@ namespace TimKiemNhaTro
             this.cboPhuong.HoverState.Parent = this.cboPhuong;
             this.cboPhuong.ItemHeight = 30;
             this.cboPhuong.ItemsAppearance.Parent = this.cboPhuong;
-            this.cboPhuong.Location = new System.Drawing.Point(418, 88);
+            this.cboPhuong.Location = new System.Drawing.Point(413, 88);
             this.cboPhuong.Name = "cboPhuong";
             this.cboPhuong.ShadowDecoration.Parent = this.cboPhuong;
             this.cboPhuong.Size = new System.Drawing.Size(205, 36);
@@ -149,7 +152,7 @@ namespace TimKiemNhaTro
             this.guna2HtmlLabel2.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel2.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(45)))), ((int)(((byte)(73)))));
-            this.guna2HtmlLabel2.Location = new System.Drawing.Point(418, 60);
+            this.guna2HtmlLabel2.Location = new System.Drawing.Point(413, 60);
             this.guna2HtmlLabel2.Name = "guna2HtmlLabel2";
             this.guna2HtmlLabel2.Size = new System.Drawing.Size(82, 22);
             this.guna2HtmlLabel2.TabIndex = 25;
@@ -190,7 +193,7 @@ namespace TimKiemNhaTro
             this.btnTimKiem.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnTimKiem.ForeColor = System.Drawing.Color.White;
             this.btnTimKiem.HoverState.Parent = this.btnTimKiem;
-            this.btnTimKiem.Location = new System.Drawing.Point(1366, 88);
+            this.btnTimKiem.Location = new System.Drawing.Point(1364, 88);
             this.btnTimKiem.Name = "btnTimKiem";
             this.btnTimKiem.ShadowDecoration.Parent = this.btnTimKiem;
             this.btnTimKiem.Size = new System.Drawing.Size(111, 36);
@@ -228,7 +231,7 @@ namespace TimKiemNhaTro
             "3",
             "4+"});
             this.cboPhongNgu.ItemsAppearance.Parent = this.cboPhongNgu;
-            this.cboPhongNgu.Location = new System.Drawing.Point(649, 88);
+            this.cboPhongNgu.Location = new System.Drawing.Point(635, 88);
             this.cboPhongNgu.Name = "cboPhongNgu";
             this.cboPhongNgu.ShadowDecoration.Parent = this.cboPhongNgu;
             this.cboPhongNgu.Size = new System.Drawing.Size(113, 36);
@@ -239,7 +242,7 @@ namespace TimKiemNhaTro
             this.guna2HtmlLabel4.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel4.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(45)))), ((int)(((byte)(73)))));
-            this.guna2HtmlLabel4.Location = new System.Drawing.Point(649, 60);
+            this.guna2HtmlLabel4.Location = new System.Drawing.Point(635, 60);
             this.guna2HtmlLabel4.Name = "guna2HtmlLabel4";
             this.guna2HtmlLabel4.Size = new System.Drawing.Size(100, 22);
             this.guna2HtmlLabel4.TabIndex = 25;
@@ -264,7 +267,7 @@ namespace TimKiemNhaTro
             "3",
             "4+"});
             this.cboPhongTam.ItemsAppearance.Parent = this.cboPhongTam;
-            this.cboPhongTam.Location = new System.Drawing.Point(781, 88);
+            this.cboPhongTam.Location = new System.Drawing.Point(765, 88);
             this.cboPhongTam.Name = "cboPhongTam";
             this.cboPhongTam.ShadowDecoration.Parent = this.cboPhongTam;
             this.cboPhongTam.Size = new System.Drawing.Size(113, 36);
@@ -275,7 +278,7 @@ namespace TimKiemNhaTro
             this.guna2HtmlLabel5.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel5.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(45)))), ((int)(((byte)(73)))));
-            this.guna2HtmlLabel5.Location = new System.Drawing.Point(781, 60);
+            this.guna2HtmlLabel5.Location = new System.Drawing.Point(765, 60);
             this.guna2HtmlLabel5.Name = "guna2HtmlLabel5";
             this.guna2HtmlLabel5.Size = new System.Drawing.Size(101, 22);
             this.guna2HtmlLabel5.TabIndex = 25;
@@ -295,15 +298,15 @@ namespace TimKiemNhaTro
             this.cboDienTich.HoverState.Parent = this.cboDienTich;
             this.cboDienTich.ItemHeight = 30;
             this.cboDienTich.Items.AddRange(new object[] {
-            "< 20 mét vuông",
-            "20 - 50 mét vuông",
-            "50 - 100 mét vuông",
-            "> 100 mét vuông"});
+            "< 20",
+            "20 - 50 ",
+            "50 - 100",
+            "> 100"});
             this.cboDienTich.ItemsAppearance.Parent = this.cboDienTich;
-            this.cboDienTich.Location = new System.Drawing.Point(915, 88);
+            this.cboDienTich.Location = new System.Drawing.Point(1042, 88);
             this.cboDienTich.Name = "cboDienTich";
             this.cboDienTich.ShadowDecoration.Parent = this.cboDienTich;
-            this.cboDienTich.Size = new System.Drawing.Size(231, 36);
+            this.cboDienTich.Size = new System.Drawing.Size(130, 36);
             this.cboDienTich.TabIndex = 46;
             // 
             // guna2HtmlLabel6
@@ -311,7 +314,7 @@ namespace TimKiemNhaTro
             this.guna2HtmlLabel6.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel6.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(45)))), ((int)(((byte)(73)))));
-            this.guna2HtmlLabel6.Location = new System.Drawing.Point(915, 60);
+            this.guna2HtmlLabel6.Location = new System.Drawing.Point(1042, 60);
             this.guna2HtmlLabel6.Name = "guna2HtmlLabel6";
             this.guna2HtmlLabel6.Size = new System.Drawing.Size(65, 22);
             this.guna2HtmlLabel6.TabIndex = 47;
@@ -322,7 +325,7 @@ namespace TimKiemNhaTro
             this.guna2HtmlLabel7.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel7.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(45)))), ((int)(((byte)(73)))));
-            this.guna2HtmlLabel7.Location = new System.Drawing.Point(1168, 60);
+            this.guna2HtmlLabel7.Location = new System.Drawing.Point(1189, 60);
             this.guna2HtmlLabel7.Name = "guna2HtmlLabel7";
             this.guna2HtmlLabel7.Size = new System.Drawing.Size(26, 22);
             this.guna2HtmlLabel7.TabIndex = 49;
@@ -347,11 +350,46 @@ namespace TimKiemNhaTro
             "5 triệu - 7 triệu",
             "> 7 triệu"});
             this.cboGia.ItemsAppearance.Parent = this.cboGia;
-            this.cboGia.Location = new System.Drawing.Point(1168, 88);
+            this.cboGia.Location = new System.Drawing.Point(1189, 88);
             this.cboGia.Name = "cboGia";
             this.cboGia.ShadowDecoration.Parent = this.cboGia;
-            this.cboGia.Size = new System.Drawing.Size(177, 36);
+            this.cboGia.Size = new System.Drawing.Size(158, 36);
             this.cboGia.TabIndex = 50;
+            // 
+            // cboLoaiHinh
+            // 
+            this.cboLoaiHinh.BackColor = System.Drawing.Color.Transparent;
+            this.cboLoaiHinh.BorderRadius = 10;
+            this.cboLoaiHinh.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cboLoaiHinh.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboLoaiHinh.FocusedColor = System.Drawing.Color.Empty;
+            this.cboLoaiHinh.FocusedState.Parent = this.cboLoaiHinh;
+            this.cboLoaiHinh.Font = new System.Drawing.Font("Segoe UI", 10F);
+            this.cboLoaiHinh.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(68)))), ((int)(((byte)(88)))), ((int)(((byte)(112)))));
+            this.cboLoaiHinh.FormattingEnabled = true;
+            this.cboLoaiHinh.HoverState.Parent = this.cboLoaiHinh;
+            this.cboLoaiHinh.ItemHeight = 30;
+            this.cboLoaiHinh.Items.AddRange(new object[] {
+            "Nhà",
+            "Căn Hộ",
+            "Phòng"});
+            this.cboLoaiHinh.ItemsAppearance.Parent = this.cboLoaiHinh;
+            this.cboLoaiHinh.Location = new System.Drawing.Point(895, 88);
+            this.cboLoaiHinh.Name = "cboLoaiHinh";
+            this.cboLoaiHinh.ShadowDecoration.Parent = this.cboLoaiHinh;
+            this.cboLoaiHinh.Size = new System.Drawing.Size(130, 36);
+            this.cboLoaiHinh.TabIndex = 46;
+            // 
+            // guna2HtmlLabel8
+            // 
+            this.guna2HtmlLabel8.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel8.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(45)))), ((int)(((byte)(73)))));
+            this.guna2HtmlLabel8.Location = new System.Drawing.Point(895, 60);
+            this.guna2HtmlLabel8.Name = "guna2HtmlLabel8";
+            this.guna2HtmlLabel8.Size = new System.Drawing.Size(67, 22);
+            this.guna2HtmlLabel8.TabIndex = 47;
+            this.guna2HtmlLabel8.Text = "Loại hình";
             // 
             // ucSearch
             // 
@@ -360,7 +398,9 @@ namespace TimKiemNhaTro
             this.BackColor = System.Drawing.Color.White;
             this.Controls.Add(this.cboGia);
             this.Controls.Add(this.guna2HtmlLabel7);
+            this.Controls.Add(this.guna2HtmlLabel8);
             this.Controls.Add(this.guna2HtmlLabel6);
+            this.Controls.Add(this.cboLoaiHinh);
             this.Controls.Add(this.cboDienTich);
             this.Controls.Add(this.guna2HtmlLabel3);
             this.Controls.Add(this.btnTimKiem);
@@ -408,5 +448,7 @@ namespace TimKiemNhaTro
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel6;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel7;
         private Guna.UI2.WinForms.Guna2ComboBox cboGia;
+        private Guna.UI2.WinForms.Guna2ComboBox cboLoaiHinh;
+        private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel8;
     }
 }

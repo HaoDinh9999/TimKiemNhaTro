@@ -37,15 +37,14 @@ namespace TimKiemNhaTro
             this.dtpRealTime = new Guna.UI.WinForms.GunaDateTimePicker();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.lblPosition = new System.Windows.Forms.Label();
-            this.pnlUC = new System.Windows.Forms.Panel();
-            this.mySqlCommandBuilder1 = new MySqlConnector.MySqlCommandBuilder();
-            this.btnAddHouse = new Guna.UI.WinForms.GunaAdvenceButton();
             this.ptrPaint = new System.Windows.Forms.PictureBox();
             this.gunaTileButton1 = new Guna.UI.WinForms.GunaTileButton();
+            this.lblPosition = new System.Windows.Forms.Label();
             this.btnMinimize = new Guna.UI.WinForms.GunaTileButton();
             this.btnUsername = new Guna.UI.WinForms.GunaAdvenceButton();
-            this.btnAvatar = new Guna.UI.WinForms.GunaGradientCircleButton();
+            this.pnlUC = new System.Windows.Forms.Panel();
+            this.btnAddHouse = new Guna.UI.WinForms.GunaAdvenceButton();
+            this.mySqlCommandBuilder1 = new MySqlConnector.MySqlCommandBuilder();
             this.pnlMenu = new Guna.UI.WinForms.GunaGradientPanel();
             this.picGif = new Guna.UI.WinForms.GunaPictureBox();
             this.pnlMove = new System.Windows.Forms.Panel();
@@ -56,12 +55,14 @@ namespace TimKiemNhaTro
             this.btnFavourite = new Guna.UI.WinForms.GunaAdvenceButton();
             this.btnFindMap = new Guna.UI.WinForms.GunaAdvenceButton();
             this.btnHome = new Guna.UI.WinForms.GunaAdvenceButton();
+            this.picAvatar = new Guna.UI.WinForms.GunaCirclePictureBox();
             this.panel2.SuspendLayout();
-            this.pnlUC.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ptrPaint)).BeginInit();
+            this.pnlUC.SuspendLayout();
             this.pnlMenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picGif)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picLogo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picAvatar)).BeginInit();
             this.SuspendLayout();
             // 
             // gelipFrmTaskee
@@ -71,6 +72,7 @@ namespace TimKiemNhaTro
             // 
             // panel2
             // 
+            this.panel2.Controls.Add(this.picAvatar);
             this.panel2.Controls.Add(this.lblTitle);
             this.panel2.Controls.Add(this.dtpRealTime);
             this.panel2.Controls.Add(this.panel4);
@@ -80,7 +82,6 @@ namespace TimKiemNhaTro
             this.panel2.Controls.Add(this.lblPosition);
             this.panel2.Controls.Add(this.btnMinimize);
             this.panel2.Controls.Add(this.btnUsername);
-            this.panel2.Controls.Add(this.btnAvatar);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(297, 0);
             this.panel2.Name = "panel2";
@@ -108,7 +109,7 @@ namespace TimKiemNhaTro
             this.dtpRealTime.FocusedColor = System.Drawing.Color.White;
             this.dtpRealTime.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.dtpRealTime.ForeColor = System.Drawing.Color.Black;
-            this.dtpRealTime.Location = new System.Drawing.Point(922, 10);
+            this.dtpRealTime.Location = new System.Drawing.Point(895, 10);
             this.dtpRealTime.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
             this.dtpRealTime.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
             this.dtpRealTime.Name = "dtpRealTime";
@@ -117,7 +118,7 @@ namespace TimKiemNhaTro
             this.dtpRealTime.OnHoverForeColor = System.Drawing.Color.Black;
             this.dtpRealTime.OnPressedColor = System.Drawing.Color.Black;
             this.dtpRealTime.Radius = 10;
-            this.dtpRealTime.Size = new System.Drawing.Size(207, 40);
+            this.dtpRealTime.Size = new System.Drawing.Size(234, 40);
             this.dtpRealTime.TabIndex = 2;
             this.dtpRealTime.Text = "Friday, October 15, 2021";
             this.dtpRealTime.Value = new System.DateTime(2021, 10, 15, 16, 35, 32, 952);
@@ -139,67 +140,6 @@ namespace TimKiemNhaTro
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(2, 30);
             this.panel3.TabIndex = 2;
-            // 
-            // lblPosition
-            // 
-            this.lblPosition.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblPosition.AutoSize = true;
-            this.lblPosition.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.lblPosition.Font = new System.Drawing.Font("Century", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPosition.Location = new System.Drawing.Point(1270, 34);
-            this.lblPosition.Name = "lblPosition";
-            this.lblPosition.Size = new System.Drawing.Size(89, 17);
-            this.lblPosition.TabIndex = 2;
-            this.lblPosition.Text = "Khách hàng";
-            // 
-            // pnlUC
-            // 
-            this.pnlUC.Controls.Add(this.btnAddHouse);
-            this.pnlUC.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnlUC.Location = new System.Drawing.Point(297, 58);
-            this.pnlUC.Name = "pnlUC";
-            this.pnlUC.Size = new System.Drawing.Size(1510, 795);
-            this.pnlUC.TabIndex = 2;
-            // 
-            // mySqlCommandBuilder1
-            // 
-            this.mySqlCommandBuilder1.DataAdapter = null;
-            this.mySqlCommandBuilder1.QuotePrefix = "`";
-            this.mySqlCommandBuilder1.QuoteSuffix = "`";
-            // 
-            // btnAddHouse
-            // 
-            this.btnAddHouse.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnAddHouse.AnimationHoverSpeed = 0.07F;
-            this.btnAddHouse.AnimationSpeed = 0.03F;
-            this.btnAddHouse.BackColor = System.Drawing.Color.White;
-            this.btnAddHouse.BaseColor = System.Drawing.Color.LightSeaGreen;
-            this.btnAddHouse.BorderColor = System.Drawing.Color.Black;
-            this.btnAddHouse.CheckedBaseColor = System.Drawing.Color.Gray;
-            this.btnAddHouse.CheckedBorderColor = System.Drawing.Color.Black;
-            this.btnAddHouse.CheckedForeColor = System.Drawing.Color.White;
-            this.btnAddHouse.CheckedImage = global::TimKiemNhaTro.Properties.Resources.icons8_heart_322;
-            this.btnAddHouse.CheckedLineColor = System.Drawing.Color.DimGray;
-            this.btnAddHouse.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.btnAddHouse.FocusedColor = System.Drawing.Color.Empty;
-            this.btnAddHouse.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnAddHouse.ForeColor = System.Drawing.Color.White;
-            this.btnAddHouse.Image = global::TimKiemNhaTro.Properties.Resources.icons8_plus_math_32;
-            this.btnAddHouse.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.btnAddHouse.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnAddHouse.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.btnAddHouse.Location = new System.Drawing.Point(1416, 720);
-            this.btnAddHouse.Name = "btnAddHouse";
-            this.btnAddHouse.OnHoverBaseColor = System.Drawing.Color.LightGray;
-            this.btnAddHouse.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.btnAddHouse.OnHoverForeColor = System.Drawing.Color.White;
-            this.btnAddHouse.OnHoverImage = null;
-            this.btnAddHouse.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.btnAddHouse.OnPressedColor = System.Drawing.Color.Black;
-            this.btnAddHouse.Radius = 30;
-            this.btnAddHouse.Size = new System.Drawing.Size(63, 63);
-            this.btnAddHouse.TabIndex = 18;
-            this.btnAddHouse.Click += new System.EventHandler(this.btnAddHouse_Click);
             // 
             // ptrPaint
             // 
@@ -238,6 +178,18 @@ namespace TimKiemNhaTro
             this.gunaTileButton1.TabIndex = 9;
             this.gunaTileButton1.UseTransfarantBackground = true;
             this.gunaTileButton1.Click += new System.EventHandler(this.gunaTileButton1_Click);
+            // 
+            // lblPosition
+            // 
+            this.lblPosition.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.lblPosition.AutoSize = true;
+            this.lblPosition.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lblPosition.Font = new System.Drawing.Font("Century", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblPosition.Location = new System.Drawing.Point(1270, 34);
+            this.lblPosition.Name = "lblPosition";
+            this.lblPosition.Size = new System.Drawing.Size(89, 17);
+            this.lblPosition.TabIndex = 2;
+            this.lblPosition.Text = "Khách hàng";
             // 
             // btnMinimize
             // 
@@ -298,31 +250,54 @@ namespace TimKiemNhaTro
             this.btnUsername.TabIndex = 2;
             this.btnUsername.Text = "Hi HaoDinh";
             // 
-            // btnAvatar
+            // pnlUC
             // 
-            this.btnAvatar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnAvatar.AnimationHoverSpeed = 0.07F;
-            this.btnAvatar.AnimationSpeed = 0.03F;
-            this.btnAvatar.BaseColor1 = System.Drawing.Color.LightGray;
-            this.btnAvatar.BaseColor2 = System.Drawing.Color.White;
-            this.btnAvatar.BorderColor = System.Drawing.Color.Black;
-            this.btnAvatar.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnAvatar.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.btnAvatar.FocusedColor = System.Drawing.Color.Empty;
-            this.btnAvatar.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnAvatar.ForeColor = System.Drawing.Color.White;
-            this.btnAvatar.Image = global::TimKiemNhaTro.Properties.Resources.cooking;
-            this.btnAvatar.ImageSize = new System.Drawing.Size(35, 35);
-            this.btnAvatar.Location = new System.Drawing.Point(1207, 8);
-            this.btnAvatar.Name = "btnAvatar";
-            this.btnAvatar.OnHoverBaseColor1 = System.Drawing.Color.White;
-            this.btnAvatar.OnHoverBaseColor2 = System.Drawing.Color.CornflowerBlue;
-            this.btnAvatar.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.btnAvatar.OnHoverForeColor = System.Drawing.Color.White;
-            this.btnAvatar.OnHoverImage = null;
-            this.btnAvatar.OnPressedColor = System.Drawing.Color.Black;
-            this.btnAvatar.Size = new System.Drawing.Size(50, 47);
-            this.btnAvatar.TabIndex = 3;
+            this.pnlUC.Controls.Add(this.btnAddHouse);
+            this.pnlUC.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnlUC.Location = new System.Drawing.Point(297, 58);
+            this.pnlUC.Name = "pnlUC";
+            this.pnlUC.Size = new System.Drawing.Size(1510, 795);
+            this.pnlUC.TabIndex = 2;
+            // 
+            // btnAddHouse
+            // 
+            this.btnAddHouse.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnAddHouse.AnimationHoverSpeed = 0.07F;
+            this.btnAddHouse.AnimationSpeed = 0.03F;
+            this.btnAddHouse.BackColor = System.Drawing.Color.Transparent;
+            this.btnAddHouse.BaseColor = System.Drawing.Color.LightSeaGreen;
+            this.btnAddHouse.BorderColor = System.Drawing.Color.Black;
+            this.btnAddHouse.CheckedBaseColor = System.Drawing.Color.Gray;
+            this.btnAddHouse.CheckedBorderColor = System.Drawing.Color.Black;
+            this.btnAddHouse.CheckedForeColor = System.Drawing.Color.White;
+            this.btnAddHouse.CheckedImage = global::TimKiemNhaTro.Properties.Resources.icons8_heart_322;
+            this.btnAddHouse.CheckedLineColor = System.Drawing.Color.DimGray;
+            this.btnAddHouse.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btnAddHouse.FocusedColor = System.Drawing.Color.Empty;
+            this.btnAddHouse.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.btnAddHouse.ForeColor = System.Drawing.Color.White;
+            this.btnAddHouse.Image = global::TimKiemNhaTro.Properties.Resources.icons8_plus_math_32;
+            this.btnAddHouse.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.btnAddHouse.ImageSize = new System.Drawing.Size(30, 30);
+            this.btnAddHouse.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
+            this.btnAddHouse.Location = new System.Drawing.Point(1416, 720);
+            this.btnAddHouse.Name = "btnAddHouse";
+            this.btnAddHouse.OnHoverBaseColor = System.Drawing.Color.LightGray;
+            this.btnAddHouse.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.btnAddHouse.OnHoverForeColor = System.Drawing.Color.White;
+            this.btnAddHouse.OnHoverImage = null;
+            this.btnAddHouse.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
+            this.btnAddHouse.OnPressedColor = System.Drawing.Color.Black;
+            this.btnAddHouse.Radius = 30;
+            this.btnAddHouse.Size = new System.Drawing.Size(63, 63);
+            this.btnAddHouse.TabIndex = 18;
+            this.btnAddHouse.Click += new System.EventHandler(this.btnAddHouse_Click);
+            // 
+            // mySqlCommandBuilder1
+            // 
+            this.mySqlCommandBuilder1.DataAdapter = null;
+            this.mySqlCommandBuilder1.QuotePrefix = "`";
+            this.mySqlCommandBuilder1.QuoteSuffix = "`";
             // 
             // pnlMenu
             // 
@@ -572,6 +547,18 @@ namespace TimKiemNhaTro
             this.btnHome.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.btnHome.Click += new System.EventHandler(this.btnHome_Click);
             // 
+            // picAvatar
+            // 
+            this.picAvatar.BaseColor = System.Drawing.Color.White;
+            this.picAvatar.Image = global::TimKiemNhaTro.Properties.Resources._3612573_18012114440061220336;
+            this.picAvatar.Location = new System.Drawing.Point(1212, 8);
+            this.picAvatar.Name = "picAvatar";
+            this.picAvatar.Size = new System.Drawing.Size(45, 45);
+            this.picAvatar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picAvatar.TabIndex = 11;
+            this.picAvatar.TabStop = false;
+            this.picAvatar.UseTransfarantBackground = false;
+            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
@@ -589,12 +576,13 @@ namespace TimKiemNhaTro
             this.Load += new System.EventHandler(this.frmMain_Load);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            this.pnlUC.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.ptrPaint)).EndInit();
+            this.pnlUC.ResumeLayout(false);
             this.pnlMenu.ResumeLayout(false);
             this.pnlMenu.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picGif)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picLogo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picAvatar)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -612,7 +600,6 @@ namespace TimKiemNhaTro
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel pnlMove;
         private System.Windows.Forms.Panel panel2;
-        private Guna.UI.WinForms.GunaGradientCircleButton btnAvatar;
         private Guna.UI.WinForms.GunaAdvenceButton btnUsername;
         private System.Windows.Forms.Label lblPosition;
         private Guna.UI.WinForms.GunaTileButton btnMinimize;
@@ -626,6 +613,7 @@ namespace TimKiemNhaTro
         private System.Windows.Forms.Label lblTitle;
         private Guna.UI.WinForms.GunaAdvenceButton btnAddHouse;
         private MySqlConnector.MySqlCommandBuilder mySqlCommandBuilder1;
+        private Guna.UI.WinForms.GunaCirclePictureBox picAvatar;
     }
 }
 

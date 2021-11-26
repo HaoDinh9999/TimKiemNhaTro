@@ -363,6 +363,16 @@ namespace TimKiemNhaTro.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_delete_32 {
+            get {
+                object obj = ResourceManager.GetObject("icons8_delete_32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_edit_32 {
             get {
                 object obj = ResourceManager.GetObject("icons8_edit_32", resourceCulture);
@@ -376,6 +386,16 @@ namespace TimKiemNhaTro.Properties {
         internal static System.Drawing.Bitmap icons8_edit_321 {
             get {
                 object obj = ResourceManager.GetObject("icons8_edit_321", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_editDen_32 {
+            get {
+                object obj = ResourceManager.GetObject("icons8_editDen_32", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

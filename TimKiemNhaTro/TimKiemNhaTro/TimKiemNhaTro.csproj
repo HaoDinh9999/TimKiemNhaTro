@@ -717,6 +717,8 @@
     <None Include="Resources\icons8_starYellow_321.png" />
     <None Include="Resources\icons8_starGrey_32.png" />
     <None Include="Resources\icons8_starDam_32.png" />
+    <None Include="Resources\icons8_editDen_32.png" />
+    <None Include="Resources\icons8_delete_32.png" />
     <Content Include="Resources\rec.png" />
     <Content Include="Resources\star.png" />
     <Content Include="Resources\triangular.png" />

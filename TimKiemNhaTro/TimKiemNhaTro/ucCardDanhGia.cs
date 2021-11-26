@@ -17,23 +17,28 @@ namespace TimKiemNhaTro
         {
             InitializeComponent();
         }
+
         DanhGia _danhgia;
-        int _idNguoiDung=1;
         ucDetailHome _ucD;
-        public ucCardDanhGia(DanhGia dg,ucDetailHome ucD)
+        NguoiDung _userCardDanhGia;
+        public ucCardDanhGia(DanhGia dg,ucDetailHome ucD, NguoiDung ng)
         {
             InitializeComponent();
             _danhgia = dg;
             _ucD = ucD;
-            if (_idNguoiDung == _danhgia.maNguoiDung)
+            _userCardDanhGia = ng;
+
+            if (_userCardDanhGia.maNguoiDung == _danhgia.maNguoiDung)
             {
                 btnEdit.Visible = true;
                 btnDelete.Visible = true;
+                rtxBinhLuan.ReadOnly = false;
             }
             else
             {
                 btnEdit.Visible = false;
                 btnDelete.Visible = false;
+                rtxBinhLuan.ReadOnly = true;
             }
         }
         public void setInfo()
@@ -48,7 +53,7 @@ namespace TimKiemNhaTro
 
         private void btnDelete_Click(object sender, EventArgs e)
         {
-            if (_idNguoiDung == _danhgia.maNguoiDung)
+            if (_userCardDanhGia.maNguoiDung == _danhgia.maNguoiDung)
             {
                 var listDanhGia = DataProvider.Ins.DB.DanhGias;
                 listDanhGia.Remove(_danhgia);
@@ -61,14 +66,20 @@ namespace TimKiemNhaTro
 
         private void btnEdit_Click(object sender, EventArgs e)
         {
-            if (_idNguoiDung == _danhgia.maNguoiDung)
+            if (_userCardDanhGia.maNguoiDung == _danhgia.maNguoiDung)
             {
+         
                 _danhgia.soSao = (int)rateNguoiDung.Value;
                 _danhgia.noiDung = rtxBinhLuan.Text;
                 DataProvider.Ins.DB.SaveChanges();
                 MessageBox.Show("Cập nhật thành công");
                 _ucD.loadDanhGia();
             }
+        }
+
+        private void ucCardDanhGia_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

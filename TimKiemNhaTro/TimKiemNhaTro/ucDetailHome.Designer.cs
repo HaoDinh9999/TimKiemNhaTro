@@ -78,6 +78,8 @@ namespace TimKiemNhaTro
             this.gunaElipsePanel6 = new Guna.UI.WinForms.GunaElipsePanel();
             this.webBrowser1 = new System.Windows.Forms.WebBrowser();
             this.gunaElipsePanel7 = new Guna.UI.WinForms.GunaElipsePanel();
+            this.lbl = new System.Windows.Forms.Label();
+            this.lblCountRate = new System.Windows.Forms.Label();
             this.gunaButton6 = new Guna.UI.WinForms.GunaButton();
             this.label5 = new System.Windows.Forms.Label();
             this.lblCount1Sao = new System.Windows.Forms.Label();
@@ -101,7 +103,6 @@ namespace TimKiemNhaTro
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.gunaHScrollBar1 = new Guna.UI.WinForms.GunaHScrollBar();
             this.rateChungAll = new Guna.UI2.WinForms.Guna2RatingStar();
-            this.lbl = new System.Windows.Forms.Label();
             this.lblSaoChung = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.btnCountRate = new Guna.UI.WinForms.GunaCircleButton();
@@ -117,7 +118,6 @@ namespace TimKiemNhaTro
             this.richTextBox2 = new System.Windows.Forms.RichTextBox();
             this.btnGuiDanhGia = new Guna.UI.WinForms.GunaButton();
             this.flwDanhGia = new System.Windows.Forms.FlowLayoutPanel();
-            this.lblCountRate = new System.Windows.Forms.Label();
             this.gunaElipsePanel2.SuspendLayout();
             this.gunaElipsePanel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picAvatar)).BeginInit();
@@ -444,7 +444,7 @@ namespace TimKiemNhaTro
             this.lblTinhTrang.AutoSize = true;
             this.lblTinhTrang.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTinhTrang.ForeColor = System.Drawing.Color.DarkGreen;
-            this.lblTinhTrang.Location = new System.Drawing.Point(744, 121);
+            this.lblTinhTrang.Location = new System.Drawing.Point(744, 120);
             this.lblTinhTrang.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblTinhTrang.Name = "lblTinhTrang";
             this.lblTinhTrang.Size = new System.Drawing.Size(106, 28);
@@ -1020,6 +1020,28 @@ namespace TimKiemNhaTro
             this.gunaElipsePanel7.Size = new System.Drawing.Size(1315, 307);
             this.gunaElipsePanel7.TabIndex = 34;
             // 
+            // lbl
+            // 
+            this.lbl.AutoSize = true;
+            this.lbl.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl.ForeColor = System.Drawing.Color.DimGray;
+            this.lbl.Location = new System.Drawing.Point(171, 240);
+            this.lbl.Name = "lbl";
+            this.lbl.Size = new System.Drawing.Size(150, 21);
+            this.lbl.TabIndex = 53;
+            this.lbl.Text = "Đánh giá, nhận xét";
+            // 
+            // lblCountRate
+            // 
+            this.lblCountRate.AutoSize = true;
+            this.lblCountRate.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCountRate.ForeColor = System.Drawing.Color.DimGray;
+            this.lblCountRate.Location = new System.Drawing.Point(148, 239);
+            this.lblCountRate.Name = "lblCountRate";
+            this.lblCountRate.Size = new System.Drawing.Size(33, 21);
+            this.lblCountRate.TabIndex = 79;
+            this.lblCountRate.Text = "17 ";
+            // 
             // gunaButton6
             // 
             this.gunaButton6.AnimationHoverSpeed = 0.07F;
@@ -1291,17 +1313,6 @@ namespace TimKiemNhaTro
             this.rateChungAll.TabIndex = 54;
             this.rateChungAll.Value = 4.5F;
             // 
-            // lbl
-            // 
-            this.lbl.AutoSize = true;
-            this.lbl.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl.ForeColor = System.Drawing.Color.DimGray;
-            this.lbl.Location = new System.Drawing.Point(171, 240);
-            this.lbl.Name = "lbl";
-            this.lbl.Size = new System.Drawing.Size(150, 21);
-            this.lbl.TabIndex = 53;
-            this.lbl.Text = "Đánh giá, nhận xét";
-            // 
             // lblSaoChung
             // 
             this.lblSaoChung.AutoSize = true;
@@ -1498,17 +1509,6 @@ namespace TimKiemNhaTro
             this.flwDanhGia.Name = "flwDanhGia";
             this.flwDanhGia.Size = new System.Drawing.Size(1314, 594);
             this.flwDanhGia.TabIndex = 79;
-            // 
-            // lblCountRate
-            // 
-            this.lblCountRate.AutoSize = true;
-            this.lblCountRate.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCountRate.ForeColor = System.Drawing.Color.DimGray;
-            this.lblCountRate.Location = new System.Drawing.Point(148, 239);
-            this.lblCountRate.Name = "lblCountRate";
-            this.lblCountRate.Size = new System.Drawing.Size(33, 21);
-            this.lblCountRate.TabIndex = 79;
-            this.lblCountRate.Text = "17 ";
             // 
             // ucDetailHome
             // 

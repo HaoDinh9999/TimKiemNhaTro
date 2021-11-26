@@ -33,27 +33,34 @@ namespace TimKiemNhaTro
             this.richTextBox1 = new System.Windows.Forms.RichTextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.gunaShadowPanel3 = new Guna.UI.WinForms.GunaShadowPanel();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
+            this.lblCountChuTro = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.gunaShadowPanel2 = new Guna.UI.WinForms.GunaShadowPanel();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.label16 = new System.Windows.Forms.Label();
+            this.lblCountNguoiDung = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
             this.gunaShadowPanel1 = new Guna.UI.WinForms.GunaShadowPanel();
             this.label4 = new System.Windows.Forms.Label();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label13 = new System.Windows.Forms.Label();
             this.panel7 = new System.Windows.Forms.Panel();
-            this.label15 = new System.Windows.Forms.Label();
+            this.pictureBox10 = new System.Windows.Forms.PictureBox();
+            this.lblCountTro = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
             this.gunaShadowPanel4 = new Guna.UI.WinForms.GunaShadowPanel();
+            this.gunaGradientButton1 = new Guna.UI.WinForms.GunaGradientButton();
             this.gunaComboBox3 = new Guna.UI.WinForms.GunaComboBox();
             this.label12 = new System.Windows.Forms.Label();
             this.gunaComboBox2 = new Guna.UI.WinForms.GunaComboBox();
@@ -82,20 +89,19 @@ namespace TimKiemNhaTro
             this.lblTopTitle = new Guna.UI.WinForms.GunaButton();
             this.btnBinhThanh = new Guna.UI.WinForms.GunaPictureBox();
             this.btnQuan1 = new Guna.UI.WinForms.GunaPictureBox();
-            this.gunaGradientButton1 = new Guna.UI.WinForms.GunaGradientButton();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox8 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox10 = new System.Windows.Forms.PictureBox();
             this.gunaShadowPanel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.gunaShadowPanel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             this.gunaShadowPanel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel7.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
             this.gunaShadowPanel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnTanBinh)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnGoVap)).BeginInit();
@@ -106,12 +112,6 @@ namespace TimKiemNhaTro
             ((System.ComponentModel.ISupportInitialize)(this.btnBinhThanh)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnQuan1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
             this.SuspendLayout();
             // 
             // flwCapNhatGanNhat
@@ -157,7 +157,7 @@ namespace TimKiemNhaTro
             this.gunaShadowPanel3.Controls.Add(this.panel3);
             this.gunaShadowPanel3.Controls.Add(this.label5);
             this.gunaShadowPanel3.Controls.Add(this.label6);
-            this.gunaShadowPanel3.Controls.Add(this.label7);
+            this.gunaShadowPanel3.Controls.Add(this.lblCountChuTro);
             this.gunaShadowPanel3.Controls.Add(this.label8);
             this.gunaShadowPanel3.EdgeWidth = 1;
             this.gunaShadowPanel3.Location = new System.Drawing.Point(368, 21);
@@ -169,6 +169,17 @@ namespace TimKiemNhaTro
             this.gunaShadowPanel3.Size = new System.Drawing.Size(351, 180);
             this.gunaShadowPanel3.TabIndex = 61;
             // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Image = global::TimKiemNhaTro.Properties.Resources.icons8_user_16;
+            this.pictureBox4.Location = new System.Drawing.Point(35, 140);
+            this.pictureBox4.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(28, 32);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox4.TabIndex = 16;
+            this.pictureBox4.TabStop = false;
+            // 
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.Coral;
@@ -179,6 +190,17 @@ namespace TimKiemNhaTro
             this.panel3.Size = new System.Drawing.Size(61, 68);
             this.panel3.TabIndex = 16;
             // 
+            // pictureBox5
+            // 
+            this.pictureBox5.Image = global::TimKiemNhaTro.Properties.Resources.icons8_username322_32;
+            this.pictureBox5.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox5.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(61, 53);
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox5.TabIndex = 8;
+            this.pictureBox5.TabStop = false;
+            // 
             // label5
             // 
             this.label5.AutoSize = true;
@@ -187,45 +209,45 @@ namespace TimKiemNhaTro
             this.label5.Location = new System.Drawing.Point(71, 143);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(251, 21);
+            this.label5.Size = new System.Drawing.Size(237, 21);
             this.label5.TabIndex = 9;
-            this.label5.Text = "Bao gồm từng đăng và còn đăng";
+            this.label5.Text = "Các chủ nhà trọ đang cho thuê";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.Color.DimGray;
-            this.label6.Location = new System.Drawing.Point(159, 14);
+            this.label6.Location = new System.Drawing.Point(169, 14);
             this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(153, 36);
+            this.label6.Size = new System.Drawing.Size(151, 36);
             this.label6.TabIndex = 15;
-            this.label6.Text = "Số nhà trọ";
+            this.label6.Text = "Số chủ trọ";
             // 
-            // label7
+            // lblCountChuTro
             // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Tahoma", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.Black;
-            this.label7.Location = new System.Drawing.Point(193, 70);
-            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(64, 48);
-            this.label7.TabIndex = 9;
-            this.label7.Text = "25";
+            this.lblCountChuTro.AutoSize = true;
+            this.lblCountChuTro.Font = new System.Drawing.Font("Tahoma", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCountChuTro.ForeColor = System.Drawing.Color.Black;
+            this.lblCountChuTro.Location = new System.Drawing.Point(189, 67);
+            this.lblCountChuTro.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblCountChuTro.Name = "lblCountChuTro";
+            this.lblCountChuTro.Size = new System.Drawing.Size(64, 48);
+            this.lblCountChuTro.TabIndex = 9;
+            this.lblCountChuTro.Text = "25";
             // 
             // label8
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.ForeColor = System.Drawing.Color.DimGray;
-            this.label8.Location = new System.Drawing.Point(269, 86);
+            this.label8.Location = new System.Drawing.Point(246, 83);
             this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(55, 29);
+            this.label8.Size = new System.Drawing.Size(76, 29);
             this.label8.TabIndex = 8;
-            this.label8.Text = "Nhà";
+            this.label8.Text = "Người";
             // 
             // gunaShadowPanel2
             // 
@@ -235,7 +257,7 @@ namespace TimKiemNhaTro
             this.gunaShadowPanel2.Controls.Add(this.panel2);
             this.gunaShadowPanel2.Controls.Add(this.label1);
             this.gunaShadowPanel2.Controls.Add(this.label3);
-            this.gunaShadowPanel2.Controls.Add(this.label16);
+            this.gunaShadowPanel2.Controls.Add(this.lblCountNguoiDung);
             this.gunaShadowPanel2.Controls.Add(this.label17);
             this.gunaShadowPanel2.EdgeWidth = 1;
             this.gunaShadowPanel2.Location = new System.Drawing.Point(368, 208);
@@ -247,6 +269,17 @@ namespace TimKiemNhaTro
             this.gunaShadowPanel2.Size = new System.Drawing.Size(351, 207);
             this.gunaShadowPanel2.TabIndex = 60;
             // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = global::TimKiemNhaTro.Properties.Resources.icons8_user_16;
+            this.pictureBox3.Location = new System.Drawing.Point(31, 155);
+            this.pictureBox3.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(28, 32);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox3.TabIndex = 16;
+            this.pictureBox3.TabStop = false;
+            // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.LimeGreen;
@@ -257,6 +290,17 @@ namespace TimKiemNhaTro
             this.panel2.Size = new System.Drawing.Size(61, 68);
             this.panel2.TabIndex = 16;
             // 
+            // pictureBox8
+            // 
+            this.pictureBox8.Image = global::TimKiemNhaTro.Properties.Resources.icons8_username322_32;
+            this.pictureBox8.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox8.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox8.Name = "pictureBox8";
+            this.pictureBox8.Size = new System.Drawing.Size(61, 53);
+            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox8.TabIndex = 8;
+            this.pictureBox8.TabStop = false;
+            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -265,45 +309,45 @@ namespace TimKiemNhaTro
             this.label1.Location = new System.Drawing.Point(67, 158);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(251, 21);
+            this.label1.Size = new System.Drawing.Size(235, 21);
             this.label1.TabIndex = 9;
-            this.label1.Text = "Bao gồm từng đăng và còn đăng";
+            this.label1.Text = "Tổng số người  dùng ứng dụng";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.DimGray;
-            this.label3.Location = new System.Drawing.Point(159, 14);
+            this.label3.Location = new System.Drawing.Point(112, 14);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(153, 36);
+            this.label3.Size = new System.Drawing.Size(210, 36);
             this.label3.TabIndex = 15;
-            this.label3.Text = "Số nhà trọ";
+            this.label3.Text = "Số người dùng";
             // 
-            // label16
+            // lblCountNguoiDung
             // 
-            this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Tahoma", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.ForeColor = System.Drawing.Color.Black;
-            this.label16.Location = new System.Drawing.Point(189, 82);
-            this.label16.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(64, 48);
-            this.label16.TabIndex = 9;
-            this.label16.Text = "25";
+            this.lblCountNguoiDung.AutoSize = true;
+            this.lblCountNguoiDung.Font = new System.Drawing.Font("Tahoma", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCountNguoiDung.ForeColor = System.Drawing.Color.Black;
+            this.lblCountNguoiDung.Location = new System.Drawing.Point(189, 82);
+            this.lblCountNguoiDung.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblCountNguoiDung.Name = "lblCountNguoiDung";
+            this.lblCountNguoiDung.Size = new System.Drawing.Size(64, 48);
+            this.lblCountNguoiDung.TabIndex = 9;
+            this.lblCountNguoiDung.Text = "25";
             // 
             // label17
             // 
             this.label17.AutoSize = true;
             this.label17.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label17.ForeColor = System.Drawing.Color.DimGray;
-            this.label17.Location = new System.Drawing.Point(265, 98);
+            this.label17.Location = new System.Drawing.Point(246, 98);
             this.label17.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(55, 29);
+            this.label17.Size = new System.Drawing.Size(76, 29);
             this.label17.TabIndex = 8;
-            this.label17.Text = "Nhà";
+            this.label17.Text = "Người";
             // 
             // gunaShadowPanel1
             // 
@@ -313,7 +357,7 @@ namespace TimKiemNhaTro
             this.gunaShadowPanel1.Controls.Add(this.pictureBox2);
             this.gunaShadowPanel1.Controls.Add(this.label13);
             this.gunaShadowPanel1.Controls.Add(this.panel7);
-            this.gunaShadowPanel1.Controls.Add(this.label15);
+            this.gunaShadowPanel1.Controls.Add(this.lblCountTro);
             this.gunaShadowPanel1.Controls.Add(this.label14);
             this.gunaShadowPanel1.EdgeWidth = 1;
             this.gunaShadowPanel1.Location = new System.Drawing.Point(5, 208);
@@ -337,6 +381,17 @@ namespace TimKiemNhaTro
             this.label4.TabIndex = 9;
             this.label4.Text = "Bao gồm từng đăng và còn đăng";
             // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::TimKiemNhaTro.Properties.Resources.icons8_homenho_16;
+            this.pictureBox2.Location = new System.Drawing.Point(31, 155);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(28, 32);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox2.TabIndex = 10;
+            this.pictureBox2.TabStop = false;
+            // 
             // label13
             // 
             this.label13.AutoSize = true;
@@ -359,17 +414,28 @@ namespace TimKiemNhaTro
             this.panel7.Size = new System.Drawing.Size(61, 68);
             this.panel7.TabIndex = 15;
             // 
-            // label15
+            // pictureBox10
             // 
-            this.label15.AutoSize = true;
-            this.label15.Font = new System.Drawing.Font("Tahoma", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label15.ForeColor = System.Drawing.Color.Black;
-            this.label15.Location = new System.Drawing.Point(189, 82);
-            this.label15.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label15.Name = "label15";
-            this.label15.Size = new System.Drawing.Size(64, 48);
-            this.label15.TabIndex = 9;
-            this.label15.Text = "25";
+            this.pictureBox10.Image = global::TimKiemNhaTro.Properties.Resources.icons8_home_address3222222222222_32;
+            this.pictureBox10.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox10.Margin = new System.Windows.Forms.Padding(4);
+            this.pictureBox10.Name = "pictureBox10";
+            this.pictureBox10.Size = new System.Drawing.Size(61, 53);
+            this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
+            this.pictureBox10.TabIndex = 8;
+            this.pictureBox10.TabStop = false;
+            // 
+            // lblCountTro
+            // 
+            this.lblCountTro.AutoSize = true;
+            this.lblCountTro.Font = new System.Drawing.Font("Tahoma", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCountTro.ForeColor = System.Drawing.Color.Black;
+            this.lblCountTro.Location = new System.Drawing.Point(189, 82);
+            this.lblCountTro.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblCountTro.Name = "lblCountTro";
+            this.lblCountTro.Size = new System.Drawing.Size(64, 48);
+            this.lblCountTro.TabIndex = 9;
+            this.lblCountTro.Text = "25";
             // 
             // label14
             // 
@@ -434,6 +500,35 @@ namespace TimKiemNhaTro
             this.gunaShadowPanel4.ShadowDepth = 50;
             this.gunaShadowPanel4.Size = new System.Drawing.Size(711, 70);
             this.gunaShadowPanel4.TabIndex = 82;
+            // 
+            // gunaGradientButton1
+            // 
+            this.gunaGradientButton1.AnimationHoverSpeed = 0.07F;
+            this.gunaGradientButton1.AnimationSpeed = 0.03F;
+            this.gunaGradientButton1.BackColor = System.Drawing.Color.Transparent;
+            this.gunaGradientButton1.BaseColor1 = System.Drawing.Color.LightSeaGreen;
+            this.gunaGradientButton1.BaseColor2 = System.Drawing.Color.Aquamarine;
+            this.gunaGradientButton1.BorderColor = System.Drawing.Color.Black;
+            this.gunaGradientButton1.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.gunaGradientButton1.FocusedColor = System.Drawing.Color.Empty;
+            this.gunaGradientButton1.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.gunaGradientButton1.ForeColor = System.Drawing.Color.White;
+            this.gunaGradientButton1.Image = global::TimKiemNhaTro.Properties.Resources.icons8_searchWhite_32;
+            this.gunaGradientButton1.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.gunaGradientButton1.ImageSize = new System.Drawing.Size(20, 20);
+            this.gunaGradientButton1.Location = new System.Drawing.Point(581, 11);
+            this.gunaGradientButton1.Margin = new System.Windows.Forms.Padding(4);
+            this.gunaGradientButton1.Name = "gunaGradientButton1";
+            this.gunaGradientButton1.OnHoverBaseColor1 = System.Drawing.Color.DarkGray;
+            this.gunaGradientButton1.OnHoverBaseColor2 = System.Drawing.Color.LightSeaGreen;
+            this.gunaGradientButton1.OnHoverBorderColor = System.Drawing.Color.Black;
+            this.gunaGradientButton1.OnHoverForeColor = System.Drawing.Color.White;
+            this.gunaGradientButton1.OnHoverImage = null;
+            this.gunaGradientButton1.OnPressedColor = System.Drawing.Color.Black;
+            this.gunaGradientButton1.Radius = 15;
+            this.gunaGradientButton1.Size = new System.Drawing.Size(76, 52);
+            this.gunaGradientButton1.TabIndex = 82;
+            this.gunaGradientButton1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // gunaComboBox3
             // 
@@ -957,35 +1052,6 @@ namespace TimKiemNhaTro
             this.btnQuan1.TabIndex = 86;
             this.btnQuan1.TabStop = false;
             // 
-            // gunaGradientButton1
-            // 
-            this.gunaGradientButton1.AnimationHoverSpeed = 0.07F;
-            this.gunaGradientButton1.AnimationSpeed = 0.03F;
-            this.gunaGradientButton1.BackColor = System.Drawing.Color.Transparent;
-            this.gunaGradientButton1.BaseColor1 = System.Drawing.Color.LightSeaGreen;
-            this.gunaGradientButton1.BaseColor2 = System.Drawing.Color.Aquamarine;
-            this.gunaGradientButton1.BorderColor = System.Drawing.Color.Black;
-            this.gunaGradientButton1.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.gunaGradientButton1.FocusedColor = System.Drawing.Color.Empty;
-            this.gunaGradientButton1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.gunaGradientButton1.ForeColor = System.Drawing.Color.White;
-            this.gunaGradientButton1.Image = global::TimKiemNhaTro.Properties.Resources.icons8_searchWhite_32;
-            this.gunaGradientButton1.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.gunaGradientButton1.ImageSize = new System.Drawing.Size(20, 20);
-            this.gunaGradientButton1.Location = new System.Drawing.Point(581, 11);
-            this.gunaGradientButton1.Margin = new System.Windows.Forms.Padding(4);
-            this.gunaGradientButton1.Name = "gunaGradientButton1";
-            this.gunaGradientButton1.OnHoverBaseColor1 = System.Drawing.Color.DarkGray;
-            this.gunaGradientButton1.OnHoverBaseColor2 = System.Drawing.Color.LightSeaGreen;
-            this.gunaGradientButton1.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.gunaGradientButton1.OnHoverForeColor = System.Drawing.Color.White;
-            this.gunaGradientButton1.OnHoverImage = null;
-            this.gunaGradientButton1.OnPressedColor = System.Drawing.Color.Black;
-            this.gunaGradientButton1.Radius = 15;
-            this.gunaGradientButton1.Size = new System.Drawing.Size(76, 52);
-            this.gunaGradientButton1.TabIndex = 82;
-            this.gunaGradientButton1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
             // pictureBox1
             // 
             this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
@@ -998,72 +1064,6 @@ namespace TimKiemNhaTro
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 62;
             this.pictureBox1.TabStop = false;
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.Image = global::TimKiemNhaTro.Properties.Resources.icons8_user_16;
-            this.pictureBox4.Location = new System.Drawing.Point(35, 140);
-            this.pictureBox4.Margin = new System.Windows.Forms.Padding(4);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(28, 32);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox4.TabIndex = 16;
-            this.pictureBox4.TabStop = false;
-            // 
-            // pictureBox5
-            // 
-            this.pictureBox5.Image = global::TimKiemNhaTro.Properties.Resources.icons8_username322_32;
-            this.pictureBox5.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox5.Margin = new System.Windows.Forms.Padding(4);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(61, 53);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox5.TabIndex = 8;
-            this.pictureBox5.TabStop = false;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = global::TimKiemNhaTro.Properties.Resources.icons8_user_16;
-            this.pictureBox3.Location = new System.Drawing.Point(31, 155);
-            this.pictureBox3.Margin = new System.Windows.Forms.Padding(4);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(28, 32);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox3.TabIndex = 16;
-            this.pictureBox3.TabStop = false;
-            // 
-            // pictureBox8
-            // 
-            this.pictureBox8.Image = global::TimKiemNhaTro.Properties.Resources.icons8_username322_32;
-            this.pictureBox8.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox8.Margin = new System.Windows.Forms.Padding(4);
-            this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.Size = new System.Drawing.Size(61, 53);
-            this.pictureBox8.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox8.TabIndex = 8;
-            this.pictureBox8.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = global::TimKiemNhaTro.Properties.Resources.icons8_homenho_16;
-            this.pictureBox2.Location = new System.Drawing.Point(31, 155);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(28, 32);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox2.TabIndex = 10;
-            this.pictureBox2.TabStop = false;
-            // 
-            // pictureBox10
-            // 
-            this.pictureBox10.Image = global::TimKiemNhaTro.Properties.Resources.icons8_home_address3222222222222_32;
-            this.pictureBox10.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox10.Margin = new System.Windows.Forms.Padding(4);
-            this.pictureBox10.Name = "pictureBox10";
-            this.pictureBox10.Size = new System.Drawing.Size(61, 53);
-            this.pictureBox10.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pictureBox10.TabIndex = 8;
-            this.pictureBox10.TabStop = false;
             // 
             // ucHomeCC
             // 
@@ -1109,13 +1109,19 @@ namespace TimKiemNhaTro
             this.Load += new System.EventHandler(this.ucHomeCC_Load);
             this.gunaShadowPanel3.ResumeLayout(false);
             this.gunaShadowPanel3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.panel3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.gunaShadowPanel2.ResumeLayout(false);
             this.gunaShadowPanel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             this.gunaShadowPanel1.ResumeLayout(false);
             this.gunaShadowPanel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.panel7.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
             this.gunaShadowPanel4.ResumeLayout(false);
             this.gunaShadowPanel4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnTanBinh)).EndInit();
@@ -1127,12 +1133,6 @@ namespace TimKiemNhaTro
             ((System.ComponentModel.ISupportInitialize)(this.btnBinhThanh)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnQuan1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1148,7 +1148,7 @@ namespace TimKiemNhaTro
         private System.Windows.Forms.PictureBox pictureBox5;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label lblCountChuTro;
         private System.Windows.Forms.Label label8;
         private Guna.UI.WinForms.GunaShadowPanel gunaShadowPanel2;
         private System.Windows.Forms.PictureBox pictureBox3;
@@ -1156,7 +1156,7 @@ namespace TimKiemNhaTro
         private System.Windows.Forms.PictureBox pictureBox8;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Label lblCountNguoiDung;
         private System.Windows.Forms.Label label17;
         private Guna.UI.WinForms.GunaShadowPanel gunaShadowPanel1;
         private System.Windows.Forms.Label label4;
@@ -1164,7 +1164,7 @@ namespace TimKiemNhaTro
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.PictureBox pictureBox10;
-        private System.Windows.Forms.Label label15;
+        private System.Windows.Forms.Label lblCountTro;
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Panel panel1;

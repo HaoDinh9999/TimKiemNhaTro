@@ -19,20 +19,30 @@ namespace TimKiemNhaTro
         {
             InitializeComponent();
         }
-        public int _maNguoiDung=1;
+        public ucUser(NguoiDung ngh)
+        {
+            InitializeComponent();
+            _nguoi = ngh;
+            
+        }
         string urlAvatar="";
-        NguoiDung _nguoi=new NguoiDung();
+        public NguoiDung _nguoi;
         public async void reLoad()
         {
-            _nguoi = new NguoiDung();
-            _nguoi = DataProvider.Ins.DB.NguoiDungs.Where(x => x.maNguoiDung == _maNguoiDung).SingleOrDefault();
-            picAvatar.Image = null;
-            txtHoTen.Text = _nguoi.hoTen;
+            _nguoi = DataProvider.Ins.DB.NguoiDungs.Where(x => x.maNguoiDung == _nguoi.maNguoiDung).SingleOrDefault();
+            picAvatar.LoadAsync("https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Microsoft_Account.svg/768px-Microsoft_Account.svg.png");
+            if ((string)_nguoi.hoTen != null)
+                txtHoTen.Text = _nguoi.hoTen;
+            else
+                txtHoTen.Text = _nguoi.tenDangNhap;
             lblUsername.Text = _nguoi.tenDangNhap;
-            lblNameKH.Text = _nguoi.hoTen;
-            if (_nguoi.urlDaiDien !=null)
+            if (_nguoi.hoTen == null)
+                lblNameKH.Text = _nguoi.tenDangNhap;
+            else
+                lblNameKH.Text = _nguoi.hoTen;
+            if (_nguoi.urlDaiDien !=null && _nguoi.urlDaiDien != "")
             {
-                await Task.Run(() => picAvatar.LoadAsync(_nguoi.urlDaiDien));
+               picAvatar.LoadAsync(_nguoi.urlDaiDien);
 
             }
         }
@@ -99,9 +109,10 @@ namespace TimKiemNhaTro
                     // Your code...
                     // Could also be before try if you know the exception occurs in SaveChanges
                     _nguoi.hoTen = txtHoTen.Text;
-                    ////if (urlAvatar != "")
-                    ////    _nguoi.urlDaiDien = urlAvatar.ToString();
+                    if (urlAvatar != "")
+                        _nguoi.urlDaiDien = urlAvatar.ToString();
                     DataProvider.Ins.DB.SaveChanges();
+                    MessageBox.Show("Cập nhật thành công");
 
                 }
                 catch(Exception ex)
@@ -138,7 +149,7 @@ namespace TimKiemNhaTro
                 {
                     picAvatar.Image = Image.FromStream(fs);
                 }
-                UploadFiles(op.FileName, _maNguoiDung);
+                UploadFiles(op.FileName, _nguoi.maNguoiDung);
             }
         }
     }

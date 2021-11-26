@@ -73,6 +73,7 @@ namespace TimKiemNhaTro
             this.rtxBinhLuan.Font = new System.Drawing.Font("Tahoma", 10.15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rtxBinhLuan.Location = new System.Drawing.Point(247, 88);
             this.rtxBinhLuan.Name = "rtxBinhLuan";
+            this.rtxBinhLuan.ReadOnly = true;
             this.rtxBinhLuan.Size = new System.Drawing.Size(1021, 47);
             this.rtxBinhLuan.TabIndex = 3;
             this.rtxBinhLuan.Text = "Mua được 7 ngày, đổi trả, tính phí 30%, ăn chặn quá mức. Ăn vô hậu.";

@@ -108,9 +108,10 @@ namespace TimKiemNhaTro
                 {
                     // Your code...
                     // Could also be before try if you know the exception occurs in SaveChanges
-                    _nguoi.hoTen = txtHoTen.Text;
+                    var tklol = DataProvider.Ins.DB.NguoiDungs.Where(x => x.maNguoiDung == _nguoi.maNguoiDung).SingleOrDefault();
+                    tklol.tenDangNhap = txtHoTen.Text;
                     if (urlAvatar != "")
-                        _nguoi.urlDaiDien = urlAvatar.ToString();
+                        tklol.urlDaiDien = urlAvatar;
                     DataProvider.Ins.DB.SaveChanges();
                     MessageBox.Show("Cập nhật thành công");
 

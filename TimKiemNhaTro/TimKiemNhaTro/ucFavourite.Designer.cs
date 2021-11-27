@@ -48,10 +48,10 @@ namespace TimKiemNhaTro
             // flwFavourite
             // 
             this.flwFavourite.AutoScroll = true;
-            this.flwFavourite.Location = new System.Drawing.Point(201, 118);
-            this.flwFavourite.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.flwFavourite.Location = new System.Drawing.Point(99, 118);
+            this.flwFavourite.Margin = new System.Windows.Forms.Padding(4);
             this.flwFavourite.Name = "flwFavourite";
-            this.flwFavourite.Size = new System.Drawing.Size(1288, 640);
+            this.flwFavourite.Size = new System.Drawing.Size(1390, 640);
             this.flwFavourite.TabIndex = 3;
             // 
             // pictureBox1
@@ -59,7 +59,7 @@ namespace TimKiemNhaTro
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox1.Image = global::TimKiemNhaTro.Properties.Resources.mPPEsss;
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(1493, 790);
             this.pictureBox1.TabIndex = 4;

@@ -26,6 +26,7 @@ namespace TimKiemNhaTro
             frmM = frm;
             _nha = nha;
         }
+        int tbSao = 0;
         public void SetInfo()
         {
             ID = _nha.maNha;
@@ -35,6 +36,13 @@ namespace TimKiemNhaTro
             lblDienTich.Text = _nha.dienTich.ToString() +" m2";
             lblAddress.Text = _nha.soNha + ", phường " + _nha.phuongXa + ", " + _nha.quanHuyen + ", thành phố Hồ Chí Minh";
             btnType.Text = _nha.LoaiChoThue.tenLoaiChoThue;
+            foreach (var item in _nha.DanhGias)
+            {
+                tbSao += (int)item.soSao;
+            }
+            double soSaoo = (double)tbSao / (double)_nha.DanhGias.Count();
+            soSaoo = Math.Round(soSaoo, 1);
+            lblDanhGia.Text = soSaoo.ToString();
             string _duongDan = _nha.AnhNhas.ToList()[0].duongDan;
             ptrPicNha.LoadAsync(_duongDan);
             if (_nha.YeuThiches.Where(x=>x.maNguoiDung==frmM._user.maNguoiDung).Count() >0)

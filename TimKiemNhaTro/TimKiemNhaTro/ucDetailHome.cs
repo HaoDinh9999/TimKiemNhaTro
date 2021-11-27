@@ -122,6 +122,7 @@ namespace TimKiemNhaTro
             maxHeight = -1;
             pnlCSVC.Controls.Clear();
             pnlImage.Controls.Clear();
+            rtxDetail.Text = nhas.moTa;
             lblGiaPhong.Text = nhas.TienNha + " VNĐ";
             lblDienTich.Text = nhas.dienTich +" m2";
             lblTinhTrang.Text = nhas.tinhTrang;
@@ -194,6 +195,16 @@ namespace TimKiemNhaTro
         }
         public void loadDanhGia()
         {
+            lblSaoChung.Text = "0/5";
+            rateChungAll.Value = 0;
+            lblCountRate.Text = "0";
+            btnCountRate.Text = "0";
+            lblCount1Sao.Text = "0";
+            lblCount2Sao.Text = "0";
+            lblCount3Sao.Text = "0";
+            lblCount4Sao.Text = "0";
+            lblCount5Sao.Text = "0";
+
             flwDanhGia.Controls.Clear();
             var listDanhGia = DataProvider.Ins.DB.DanhGias.Where(x => x.maNha == nhas.maNha).ToList();
             if (listDanhGia.Count >0)
@@ -206,6 +217,13 @@ namespace TimKiemNhaTro
                 lblCount3Sao.Text = listDanhGia.Where(x => x.soSao == 3).Count().ToString();
                 lblCount4Sao.Text = listDanhGia.Where(x => x.soSao == 4).Count().ToString();
                 lblCount5Sao.Text = listDanhGia.Where(x => x.soSao == 5).Count().ToString();
+
+                scrl5.LargeChange = listDanhGia.Where(x => x.soSao == 5).Count()+2;
+                scrl4.LargeChange = listDanhGia.Where(x => x.soSao == 4).Count()+2;
+                scrl3.LargeChange = listDanhGia.Where(x => x.soSao == 3).Count()+2;
+                scrl2.LargeChange = listDanhGia.Where(x => x.soSao == 2).Count()+2;
+                scrl1.LargeChange = listDanhGia.Where(x => x.soSao == 1).Count()+2;
+
 
                 int tbSao = 0;
                 foreach (var item in listDanhGia)

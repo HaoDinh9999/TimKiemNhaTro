@@ -13,9 +13,15 @@ namespace TimKiemNhaTro
 {
     public partial class ucHomeCC : UserControl
     {
+        public NguoiDung _userHome;
         public ucHomeCC()
         {
             InitializeComponent();
+        }
+        public ucHomeCC(NguoiDung ucN)
+        {
+            InitializeComponent();
+            _userHome = ucN;
         }
         string[] tieuDe = {
             "Giảm tiền thuê trọ tốt cho cả đôi bên",
@@ -42,8 +48,33 @@ namespace TimKiemNhaTro
             "https://vnexpress.net/nguoi-thue-tro-se-khong-con-lo-bi-chat-chem-gia-dien-3825880.html",
             "https://vnexpress.net/chu-nha-tro-can-kien-nhan-cho-co-hoi-4367901.html",
         };
+        public void reLoad()
+        {
+            lblCountTro.Text = DataProvider.Ins.DB.Nhas.Count().ToString();
+            lblCountNguoiDung.Text = DataProvider.Ins.DB.NguoiDungs.Count().ToString();
+            flwCapNhatGanNhat.Controls.Clear();
+            var listNha = DataProvider.Ins.DB.Nhas.ToList();
+            int demNha = 0;
+            for (int i = listNha.Count - 1; i >= 0; i--)
+            {
+                var card = new ucCardNha(this.Parent.Parent as frmMain, listNha[i]);
+                card.SetInfo();
+                flwCapNhatGanNhat.Controls.Add(card);
+                demNha++;
+                if (demNha > 6)
+                    break;
+            }
+            //for (int i = 0; i < tieuDe.Count(); i++)
+            //{
+            //    var card = new ucCardTinTuc(this.Parent.Parent as frmMain, tieuDe[i], noiDung[i], duongDanAnh[i], duongDanBao[i]);
+            //    card.SetInfo();
+            //    flwTinTuc.Controls.Add(card);
+
+            //}
+        }
         private void ucHomeCC_Load(object sender, EventArgs e)
         {
+          
             flwCapNhatGanNhat.AutoScroll = false;
 
             // disable horizontal scrollbar
@@ -51,15 +82,7 @@ namespace TimKiemNhaTro
             // restore AutoScroll
             flwCapNhatGanNhat.AutoScroll = true;
 
-            var listNha = DataProvider.Ins.DB.Nhas.ToList();
-
-            foreach (var item in listNha)
-            {
-                var card = new ucCardNha(this.Parent.Parent as frmMain, item);
-                card.SetInfo();
-                flwCapNhatGanNhat.Controls.Add(card);
-               
-            }
+            reLoad();
             for(int i=0;i<tieuDe.Count();i++)
             {
                 var card = new ucCardTinTuc(this.Parent.Parent as frmMain,tieuDe[i],noiDung[i],duongDanAnh[i],duongDanBao[i]);

@@ -30,9 +30,9 @@ namespace TimKiemNhaTro
         {
             //btnType.Tag = _nha.maNha;
             lblMoney.Text = _yeuThich.Nha.TienNha.ToString() + " VNĐ";
-            lblCountBedRoom.Text = _yeuThich.Nha.soPhongNgu.ToString() + " phòng";
-            lblCountBathRoom.Text = _yeuThich.Nha.soPhongTam.ToString() + " phòng";
-            lblCountMeter.Text = _yeuThich.Nha.dienTich.ToString() + " m2";
+            lblCountBedRoom.Text = _yeuThich.Nha.soPhongNgu.ToString() + " ";
+            lblCountBathRoom.Text = _yeuThich.Nha.soPhongTam.ToString() + " ";
+            lblCountMeter.Text = _yeuThich.Nha.dienTich.ToString() + " ";
             rtxAddress.Text = _yeuThich.Nha.soNha + ", phường " + _yeuThich.Nha.phuongXa + ", " + _yeuThich.Nha.quanHuyen + ", thành phố Hồ Chí Minh";
             btnType.Text = _yeuThich.Nha.LoaiChoThue.tenLoaiChoThue;
             string _duongDan = _yeuThich.Nha.AnhNhas.ToList()[0].duongDan;

@@ -17,6 +17,12 @@ namespace TimKiemNhaTro
         {
             InitializeComponent();
         }
+        public ucAddHome(NguoiDung ng)
+        {
+            InitializeComponent();
+            _userAdd = ng;
+        }
+        public NguoiDung _userAdd;
         public List<Districts> listt = new List<Districts>();
         List<string> fileList = new List<string>();
         public int maLoaiNha = 0, soPhongNgu = 0, soPhongTam = 0;
@@ -52,6 +58,7 @@ namespace TimKiemNhaTro
             {
                 cbxQuanHuyen.Items.Add(AllQuan[i]);
             }
+            
             if (nhaeidt != null)
             {
                 btnDangTin.Text = "Lưu thông tin";
@@ -63,6 +70,7 @@ namespace TimKiemNhaTro
         }
         public void reSet1()
         {
+            cbxTinhTrang.Text = "Còn trống";
             cbxQuanHuyen.Text = "";
             cbxPhuongXa.Text = "";
             txtSoNha.Text = "";
@@ -121,7 +129,7 @@ namespace TimKiemNhaTro
             {
                 btnDangTin.Text = "Đăng tin";
             }
-
+            cbxTinhTrang.Text = nhaeidt.tinhTrang;
             cbxPhuongXa.Text = nhaeidt.phuongXa.ToString();
             cbxQuanHuyen.Text = nhaeidt.quanHuyen;
             txtSoNha.Text = nhaeidt.soNha;
@@ -1122,13 +1130,13 @@ namespace TimKiemNhaTro
                 DataProvider.Ins.DB.SaveChanges();
                 //Nha
                 Nha nhas = new Nha();
-                nhas.maChuNha = 1;
+                nhas.maChuNha = _userAdd.maNguoiDung;
                 nhas.maCoSoVatChat = csVC.maCoSoVatChat;
                 nhas.maLoaiChoThue = maLoaiNha;
                 nhas.soPhongNgu = soPhongNgu;
                 nhas.soPhongTam = soPhongTam;
                 nhas.dienTich = decimal.Parse(txtDienTich.Text);
-                nhas.tinhTrang = "Còn trống";
+                nhas.tinhTrang = cbxTinhTrang.Text;
                 nhas.soNha = txtSoNha.Text;
                 nhas.tenDuong = txtTenDuong.Text;
                 nhas.phuongXa = cbxPhuongXa.Text;
@@ -1168,12 +1176,15 @@ namespace TimKiemNhaTro
                 nhaluu.soPhongNgu = soPhongNgu;
                 nhaluu.soPhongTam = soPhongTam;
                 nhaluu.dienTich = decimal.Parse(txtDienTich.Text);
-                nhaluu.tinhTrang = "Còn trống";
+                nhaluu.tinhTrang = cbxTinhTrang.Text;
                 nhaluu.soNha = txtSoNha.Text + " " + txtTenDuong.Text;
                 nhaluu.phuongXa = cbxPhuongXa.Text;
                 nhaluu.quanHuyen = cbxQuanHuyen.Text;
                 nhaluu.moTa = txtMoTa.Text;
                 nhaluu.TienNha = decimal.Parse(txtTienChoThue.Text);
+                nhaluu.maNha = nhaeidt.maNha;
+
+                nhaluu.ngayCapNhat = DateTime.Now;
                 //Luu
                 //DataProvider.Ins.DB.SaveChanges();
                 var listAnhh = DataProvider.Ins.DB.AnhNhas;
@@ -1181,13 +1192,22 @@ namespace TimKiemNhaTro
                 {
                     listAnhh.Remove( listAnhh.Where(x => x.maAnhNha == anhxoa).SingleOrDefault());
                 }
-                DataProvider.Ins.DB.SaveChanges();
+                try
+                {
+                    DataProvider.Ins.DB.SaveChanges();
+
+                }
+                catch (Exception err)
+                {
+                    MessageBox.Show(err.Message);
+                }
                 foreach (var item in fileList)
                 {
                     UploadFiles(item, nhaluu.maNha.ToString());
                 }
                 MessageBox.Show("Lưu nhà thành công");
             }
+            reSet1();
 
         }
 

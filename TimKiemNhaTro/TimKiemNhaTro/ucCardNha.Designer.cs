@@ -31,20 +31,20 @@ namespace TimKiemNhaTro
         {
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.lblDanhGia = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel6 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.lblDienTich = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.lblPhongTam = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.lblPhongNgu = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.btnChiTiet = new Guna.UI2.WinForms.Guna2Button();
-            this.lblMoney = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.lblAddress = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btnChiTiet = new Guna.UI2.WinForms.Guna2Button();
             this.btnType = new Guna.UI2.WinForms.Guna2Button();
             this.btnYeuThich = new Guna.UI2.WinForms.Guna2ImageButton();
+            this.lblMoney = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.lblAddress = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.ptrPicNha = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2Panel1.SuspendLayout();
             this.guna2Panel2.SuspendLayout();
@@ -92,12 +92,23 @@ namespace TimKiemNhaTro
             this.guna2Panel2.Size = new System.Drawing.Size(310, 280);
             this.guna2Panel2.TabIndex = 9;
             // 
+            // pictureBox4
+            // 
+            this.pictureBox4.BackgroundImage = global::TimKiemNhaTro.Properties.Resources.star;
+            this.pictureBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox4.Image = global::TimKiemNhaTro.Properties.Resources.bath_tub;
+            this.pictureBox4.Location = new System.Drawing.Point(106, 245);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(17, 17);
+            this.pictureBox4.TabIndex = 21;
+            this.pictureBox4.TabStop = false;
+            // 
             // lblDanhGia
             // 
             this.lblDanhGia.BackColor = System.Drawing.Color.Transparent;
             this.lblDanhGia.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblDanhGia.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(167)))), ((int)(((byte)(226)))));
-            this.lblDanhGia.Location = new System.Drawing.Point(105, 241);
+            this.lblDanhGia.Location = new System.Drawing.Point(127, 239);
             this.lblDanhGia.Name = "lblDanhGia";
             this.lblDanhGia.Size = new System.Drawing.Size(28, 27);
             this.lblDanhGia.TabIndex = 20;
@@ -113,6 +124,26 @@ namespace TimKiemNhaTro
             this.guna2HtmlLabel6.Size = new System.Drawing.Size(84, 27);
             this.guna2HtmlLabel6.TabIndex = 19;
             this.guna2HtmlLabel6.Text = "Đánh giá:";
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.BackgroundImage = global::TimKiemNhaTro.Properties.Resources.wide;
+            this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox3.Location = new System.Drawing.Point(228, 156);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(17, 17);
+            this.pictureBox3.TabIndex = 18;
+            this.pictureBox3.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.BackgroundImage = global::TimKiemNhaTro.Properties.Resources.double_bed;
+            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox2.Location = new System.Drawing.Point(119, 156);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(17, 17);
+            this.pictureBox2.TabIndex = 17;
+            this.pictureBox2.TabStop = false;
             // 
             // lblDienTich
             // 
@@ -147,6 +178,17 @@ namespace TimKiemNhaTro
             this.lblPhongNgu.TabIndex = 14;
             this.lblPhongNgu.Text = "2 Phòng ngủ";
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.BackgroundImage = global::TimKiemNhaTro.Properties.Resources.bath_tub;
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.pictureBox1.Image = global::TimKiemNhaTro.Properties.Resources.bath_tub;
+            this.pictureBox1.Location = new System.Drawing.Point(15, 156);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(17, 17);
+            this.pictureBox1.TabIndex = 13;
+            this.pictureBox1.TabStop = false;
+            // 
             // btnChiTiet
             // 
             this.btnChiTiet.BorderRadius = 10;
@@ -163,71 +205,6 @@ namespace TimKiemNhaTro
             this.btnChiTiet.TabIndex = 12;
             this.btnChiTiet.Text = "Chi Tiết";
             this.btnChiTiet.Click += new System.EventHandler(this.btnChiTiet_Click);
-            // 
-            // lblMoney
-            // 
-            this.lblMoney.BackColor = System.Drawing.Color.Transparent;
-            this.lblMoney.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblMoney.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(152)))), ((int)(((byte)(119)))));
-            this.lblMoney.Location = new System.Drawing.Point(15, 103);
-            this.lblMoney.Name = "lblMoney";
-            this.lblMoney.Size = new System.Drawing.Size(111, 22);
-            this.lblMoney.TabIndex = 9;
-            this.lblMoney.Text = "2,000,000 VNĐ";
-            // 
-            // lblAddress
-            // 
-            this.lblAddress.AutoSize = false;
-            this.lblAddress.BackColor = System.Drawing.Color.Transparent;
-            this.lblAddress.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblAddress.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(45)))), ((int)(((byte)(73)))));
-            this.lblAddress.Location = new System.Drawing.Point(15, 42);
-            this.lblAddress.Name = "lblAddress";
-            this.lblAddress.Size = new System.Drawing.Size(271, 55);
-            this.lblAddress.TabIndex = 8;
-            this.lblAddress.Text = "1 Nguyễn Bỉnh Khiêm, Phường Bến Nghé, Quận 1";
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.BackgroundImage = global::TimKiemNhaTro.Properties.Resources.star;
-            this.pictureBox4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox4.Image = global::TimKiemNhaTro.Properties.Resources.bath_tub;
-            this.pictureBox4.Location = new System.Drawing.Point(134, 246);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(17, 17);
-            this.pictureBox4.TabIndex = 21;
-            this.pictureBox4.TabStop = false;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.BackgroundImage = global::TimKiemNhaTro.Properties.Resources.wide;
-            this.pictureBox3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox3.Location = new System.Drawing.Point(228, 156);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(17, 17);
-            this.pictureBox3.TabIndex = 18;
-            this.pictureBox3.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.BackgroundImage = global::TimKiemNhaTro.Properties.Resources.double_bed;
-            this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox2.Location = new System.Drawing.Point(119, 156);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(17, 17);
-            this.pictureBox2.TabIndex = 17;
-            this.pictureBox2.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackgroundImage = global::TimKiemNhaTro.Properties.Resources.bath_tub;
-            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.pictureBox1.Image = global::TimKiemNhaTro.Properties.Resources.bath_tub;
-            this.pictureBox1.Location = new System.Drawing.Point(15, 156);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(17, 17);
-            this.pictureBox1.TabIndex = 13;
-            this.pictureBox1.TabStop = false;
             // 
             // btnType
             // 
@@ -260,6 +237,29 @@ namespace TimKiemNhaTro
             this.btnYeuThich.Size = new System.Drawing.Size(33, 23);
             this.btnYeuThich.TabIndex = 10;
             this.btnYeuThich.Click += new System.EventHandler(this.btnYeuThich_Click);
+            // 
+            // lblMoney
+            // 
+            this.lblMoney.BackColor = System.Drawing.Color.Transparent;
+            this.lblMoney.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblMoney.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(152)))), ((int)(((byte)(119)))));
+            this.lblMoney.Location = new System.Drawing.Point(15, 103);
+            this.lblMoney.Name = "lblMoney";
+            this.lblMoney.Size = new System.Drawing.Size(111, 22);
+            this.lblMoney.TabIndex = 9;
+            this.lblMoney.Text = "2,000,000 VNĐ";
+            // 
+            // lblAddress
+            // 
+            this.lblAddress.AutoSize = false;
+            this.lblAddress.BackColor = System.Drawing.Color.Transparent;
+            this.lblAddress.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblAddress.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(27)))), ((int)(((byte)(45)))), ((int)(((byte)(73)))));
+            this.lblAddress.Location = new System.Drawing.Point(15, 42);
+            this.lblAddress.Name = "lblAddress";
+            this.lblAddress.Size = new System.Drawing.Size(271, 55);
+            this.lblAddress.TabIndex = 8;
+            this.lblAddress.Text = "1 Nguyễn Bỉnh Khiêm, Phường Bến Nghé, Quận 1";
             // 
             // ptrPicNha
             // 

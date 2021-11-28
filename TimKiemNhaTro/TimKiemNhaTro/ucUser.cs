@@ -19,22 +19,33 @@ namespace TimKiemNhaTro
         {
             InitializeComponent();
         }
-        public int _maNguoiDung=1;
+        public ucUser(NguoiDung ngh)
+        {
+            InitializeComponent();
+            _nguoi = ngh;
+            
+        }
         string urlAvatar="";
-        NguoiDung _nguoi=new NguoiDung();
+        public NguoiDung _nguoi;
         public async void reLoad()
         {
-            _nguoi = new NguoiDung();
-            _nguoi = DataProvider.Ins.DB.NguoiDungs.Where(x => x.maNguoiDung == _maNguoiDung).SingleOrDefault();
-            picAvatar.Image = null;
-            txtHoTen.Text = _nguoi.hoTen;
+            _nguoi = DataProvider.Ins.DB.NguoiDungs.Where(x => x.maNguoiDung == _nguoi.maNguoiDung).SingleOrDefault();
+
+            if ((string)_nguoi.hoTen != null)
+                txtHoTen.Text = _nguoi.hoTen;
+            else
+                txtHoTen.Text = _nguoi.tenDangNhap;
             lblUsername.Text = _nguoi.tenDangNhap;
-            lblNameKH.Text = _nguoi.hoTen;
-            if (_nguoi.urlDaiDien !=null && _nguoi.urlDaiDien != "")
+            if (_nguoi.hoTen == null)
+                lblNameKH.Text = _nguoi.tenDangNhap;
+            else
+                lblNameKH.Text = _nguoi.hoTen;
+            if (_nguoi.urlDaiDien != null && _nguoi.urlDaiDien != "")
             {
-                await Task.Run(() => picAvatar.LoadAsync(_nguoi.urlDaiDien));
+                picAvatar.LoadAsync(_nguoi.urlDaiDien);
 
             }
+            else picAvatar.LoadAsync("https://www.clipartmax.com/png/full/110-1104174_computer-icons-user-clip-art-lily-pad-coloring-page.png");
         }
         private async void UploadFiles(string url, int idNguoiDung)
         {
@@ -98,17 +109,31 @@ namespace TimKiemNhaTro
                 {
                     // Your code...
                     // Could also be before try if you know the exception occurs in SaveChanges
-                    _nguoi.hoTen = txtHoTen.Text;
-                    ////if (urlAvatar != "")
-                    ////    _nguoi.urlDaiDien = urlAvatar.ToString();
+                    var tklol = DataProvider.Ins.DB.NguoiDungs.Where(x => x.maNguoiDung == _nguoi.maNguoiDung).SingleOrDefault();
+                    tklol.tenDangNhap = txtHoTen.Text;
+                    if (urlAvatar != "")
+                        tklol.urlDaiDien = urlAvatar;
                     DataProvider.Ins.DB.SaveChanges();
+                    MessageBox.Show("Cập nhật thành công");
 
                 }
-                catch(Exception ex)
+                catch (System.Data.Entity.Validation.DbEntityValidationException dbEx)
                 {
-                    MessageBox.Show(ex.ToString());
-
-                };
+                    Exception raise = dbEx;
+                    foreach (var validationErrors in dbEx.EntityValidationErrors)
+                    {
+                        foreach (var validationError in validationErrors.ValidationErrors)
+                        {
+                            string message = string.Format("{0}:{1}",
+                                validationErrors.Entry.Entity.ToString(),
+                                validationError.ErrorMessage);
+                            // raise a new exception nesting  
+                            // the current instance as InnerException  
+                            raise = new InvalidOperationException(message, raise);
+                        }
+                    }
+                    throw raise;
+                }
 
                 urlAvatar = "";
                 reLoad();
@@ -138,7 +163,7 @@ namespace TimKiemNhaTro
                 {
                     picAvatar.Image = Image.FromStream(fs);
                 }
-                UploadFiles(op.FileName, _maNguoiDung);
+                UploadFiles(op.FileName, _nguoi.maNguoiDung);
             }
         }
     }

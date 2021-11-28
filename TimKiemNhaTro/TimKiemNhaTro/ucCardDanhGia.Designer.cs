@@ -29,25 +29,14 @@ namespace TimKiemNhaTro
         /// </summary>
         private void InitializeComponent()
         {
-            this.picAvatar = new Guna.UI.WinForms.GunaPictureBox();
             this.lblTenNguoiDung = new System.Windows.Forms.Label();
             this.rateNguoiDung = new Guna.UI2.WinForms.Guna2RatingStar();
             this.rtxBinhLuan = new System.Windows.Forms.RichTextBox();
             this.btnDelete = new Guna.UI2.WinForms.Guna2CircleButton();
             this.btnEdit = new Guna.UI2.WinForms.Guna2CircleButton();
+            this.picAvatar = new Guna.UI.WinForms.GunaPictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.picAvatar)).BeginInit();
             this.SuspendLayout();
-            // 
-            // picAvatar
-            // 
-            this.picAvatar.BaseColor = System.Drawing.Color.White;
-            this.picAvatar.Image = global::TimKiemNhaTro.Properties.Resources.triangular;
-            this.picAvatar.Location = new System.Drawing.Point(55, 14);
-            this.picAvatar.Name = "picAvatar";
-            this.picAvatar.Size = new System.Drawing.Size(139, 120);
-            this.picAvatar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.picAvatar.TabIndex = 0;
-            this.picAvatar.TabStop = false;
             // 
             // lblTenNguoiDung
             // 
@@ -69,10 +58,12 @@ namespace TimKiemNhaTro
             // 
             // rtxBinhLuan
             // 
+            this.rtxBinhLuan.BackColor = System.Drawing.Color.White;
             this.rtxBinhLuan.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.rtxBinhLuan.Font = new System.Drawing.Font("Tahoma", 10.15F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rtxBinhLuan.Font = new System.Drawing.Font("Tahoma", 10.1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.rtxBinhLuan.Location = new System.Drawing.Point(247, 88);
             this.rtxBinhLuan.Name = "rtxBinhLuan";
+            this.rtxBinhLuan.ReadOnly = true;
             this.rtxBinhLuan.Size = new System.Drawing.Size(1021, 47);
             this.rtxBinhLuan.TabIndex = 3;
             this.rtxBinhLuan.Text = "Mua được 7 ngày, đổi trả, tính phí 30%, ăn chặn quá mức. Ăn vô hậu.";
@@ -81,12 +72,11 @@ namespace TimKiemNhaTro
             // 
             this.btnDelete.CheckedState.Parent = this.btnDelete;
             this.btnDelete.CustomImages.Parent = this.btnDelete;
-            this.btnDelete.FillColor = System.Drawing.Color.LightSeaGreen;
+            this.btnDelete.FillColor = System.Drawing.Color.Transparent;
             this.btnDelete.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnDelete.ForeColor = System.Drawing.Color.White;
             this.btnDelete.HoverState.Parent = this.btnDelete;
-            this.btnDelete.Image = global::TimKiemNhaTro.Properties.Resources.icons8_wasteXOA_32;
-            this.btnDelete.ImageSize = new System.Drawing.Size(18, 18);
+            this.btnDelete.Image = global::TimKiemNhaTro.Properties.Resources.icons8_delete_32;
             this.btnDelete.Location = new System.Drawing.Point(1250, 18);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
@@ -99,18 +89,29 @@ namespace TimKiemNhaTro
             // 
             this.btnEdit.CheckedState.Parent = this.btnEdit;
             this.btnEdit.CustomImages.Parent = this.btnEdit;
-            this.btnEdit.FillColor = System.Drawing.Color.LightSeaGreen;
+            this.btnEdit.FillColor = System.Drawing.Color.Transparent;
             this.btnEdit.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnEdit.ForeColor = System.Drawing.Color.White;
             this.btnEdit.HoverState.Parent = this.btnEdit;
-            this.btnEdit.Image = global::TimKiemNhaTro.Properties.Resources.icons8_edit_32;
-            this.btnEdit.Location = new System.Drawing.Point(1212, 18);
+            this.btnEdit.Image = global::TimKiemNhaTro.Properties.Resources.icons8_editDen_32;
+            this.btnEdit.Location = new System.Drawing.Point(1221, 18);
             this.btnEdit.Name = "btnEdit";
             this.btnEdit.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
             this.btnEdit.ShadowDecoration.Parent = this.btnEdit;
             this.btnEdit.Size = new System.Drawing.Size(32, 32);
             this.btnEdit.TabIndex = 29;
             this.btnEdit.Click += new System.EventHandler(this.btnEdit_Click);
+            // 
+            // picAvatar
+            // 
+            this.picAvatar.BaseColor = System.Drawing.Color.White;
+            this.picAvatar.Image = global::TimKiemNhaTro.Properties.Resources.triangular;
+            this.picAvatar.Location = new System.Drawing.Point(55, 14);
+            this.picAvatar.Name = "picAvatar";
+            this.picAvatar.Size = new System.Drawing.Size(139, 120);
+            this.picAvatar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picAvatar.TabIndex = 0;
+            this.picAvatar.TabStop = false;
             // 
             // ucCardDanhGia
             // 
@@ -125,6 +126,7 @@ namespace TimKiemNhaTro
             this.Controls.Add(this.picAvatar);
             this.Name = "ucCardDanhGia";
             this.Size = new System.Drawing.Size(1300, 150);
+            this.Load += new System.EventHandler(this.ucCardDanhGia_Load);
             ((System.ComponentModel.ISupportInitialize)(this.picAvatar)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

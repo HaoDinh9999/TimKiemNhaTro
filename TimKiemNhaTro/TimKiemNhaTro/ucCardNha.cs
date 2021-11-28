@@ -15,6 +15,7 @@ namespace TimKiemNhaTro
     {
         frmMain frmM ;
         Nha _nha;
+        NguoiDung _userCardNha;
         public ucCardNha()
         {
             InitializeComponent();
@@ -25,6 +26,7 @@ namespace TimKiemNhaTro
             frmM = frm;
             _nha = nha;
         }
+        int tbSao = 0;
         public void SetInfo()
         {
             ID = _nha.maNha;
@@ -34,9 +36,16 @@ namespace TimKiemNhaTro
             lblDienTich.Text = _nha.dienTich.ToString() +" m2";
             lblAddress.Text = _nha.soNha + ", phường " + _nha.phuongXa + ", " + _nha.quanHuyen + ", thành phố Hồ Chí Minh";
             btnType.Text = _nha.LoaiChoThue.tenLoaiChoThue;
+            foreach (var item in _nha.DanhGias)
+            {
+                tbSao += (int)item.soSao;
+            }
+            double soSaoo = (double)tbSao / (double)_nha.DanhGias.Count();
+            soSaoo = Math.Round(soSaoo, 1);
+            lblDanhGia.Text = soSaoo.ToString();
             string _duongDan = _nha.AnhNhas.ToList()[0].duongDan;
             ptrPicNha.LoadAsync(_duongDan);
-            if (_nha.YeuThiches.Count >0)
+            if (_nha.YeuThiches.Where(x=>x.maNguoiDung==frmM._user.maNguoiDung).Count() >0)
             {
                 btnYeuThich.Checked = true;
             }
@@ -131,14 +140,14 @@ namespace TimKiemNhaTro
             if (btnYeuThich.Checked == true)
             {
                 btnYeuThich.Checked = false;
-                DataProvider.Ins.DB.YeuThiches.Remove(_nha.YeuThiches.SingleOrDefault());
+                DataProvider.Ins.DB.YeuThiches.Remove(_nha.YeuThiches.Where(x=>x.maNguoiDung==frmM._user.maNguoiDung).SingleOrDefault());
                 DataProvider.Ins.DB.SaveChanges();
 
             }
             else
             {
                 btnYeuThich.Checked = true;
-                _yeuthich= new YeuThich(){ maNguoiDung=1,maNha=_nha.maNha};
+                _yeuthich= new YeuThich(){ maNguoiDung=frmM._user.maNguoiDung,maNha=_nha.maNha};
                 DataProvider.Ins.DB.YeuThiches.Add(_yeuthich);
                 DataProvider.Ins.DB.SaveChanges();
 

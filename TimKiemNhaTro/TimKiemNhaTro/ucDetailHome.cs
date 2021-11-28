@@ -16,16 +16,21 @@ namespace TimKiemNhaTro
     public partial class ucDetailHome : UserControl
     {
         int _idMaNha;
-        int _idNguoiDung;
         Nha nhas;
         CoSoVatChat csvs;
         List<AnhNha> listAnh;
+        NguoiDung _userDetailHome;
         int x = 30;
         int y = 30;
         int maxHeight = -1;
         public ucDetailHome()
         {
             InitializeComponent();
+        }
+        public ucDetailHome(NguoiDung ng)
+        {
+            InitializeComponent();
+            _userDetailHome = ng;
         }
         public void setIdMaNha(int ID)
         {
@@ -104,15 +109,20 @@ namespace TimKiemNhaTro
         }
         void  loadNha()
         {
-            for(int i = 0; i < 5;i++)
+            if(nhas.tinhTrang=="Còn trống")
             {
-
+                lblTinhTrang.ForeColor = Color.DarkGreen;
+            }
+            else
+            {
+                lblTinhTrang.ForeColor = Color.Red;
             }
             x = 30;
             y = 30;
             maxHeight = -1;
             pnlCSVC.Controls.Clear();
             pnlImage.Controls.Clear();
+            rtxDetail.Text = nhas.moTa;
             lblGiaPhong.Text = nhas.TienNha + " VNĐ";
             lblDienTich.Text = nhas.dienTich +" m2";
             lblTinhTrang.Text = nhas.tinhTrang;
@@ -175,6 +185,7 @@ namespace TimKiemNhaTro
                 addCSVC("../../Resources/icons8_pet_commands_summon_32.png", "Thú cưng");
             }
 
+
             loadAnhNha();
 
             //Danh gia
@@ -184,6 +195,16 @@ namespace TimKiemNhaTro
         }
         public void loadDanhGia()
         {
+            lblSaoChung.Text = "0/5";
+            rateChungAll.Value = 0;
+            lblCountRate.Text = "0";
+            btnCountRate.Text = "0";
+            lblCount1Sao.Text = "0";
+            lblCount2Sao.Text = "0";
+            lblCount3Sao.Text = "0";
+            lblCount4Sao.Text = "0";
+            lblCount5Sao.Text = "0";
+
             flwDanhGia.Controls.Clear();
             var listDanhGia = DataProvider.Ins.DB.DanhGias.Where(x => x.maNha == nhas.maNha).ToList();
             if (listDanhGia.Count >0)
@@ -197,10 +218,17 @@ namespace TimKiemNhaTro
                 lblCount4Sao.Text = listDanhGia.Where(x => x.soSao == 4).Count().ToString();
                 lblCount5Sao.Text = listDanhGia.Where(x => x.soSao == 5).Count().ToString();
 
+                scrl5.LargeChange = listDanhGia.Where(x => x.soSao == 5).Count()+2;
+                scrl4.LargeChange = listDanhGia.Where(x => x.soSao == 4).Count()+2;
+                scrl3.LargeChange = listDanhGia.Where(x => x.soSao == 3).Count()+2;
+                scrl2.LargeChange = listDanhGia.Where(x => x.soSao == 2).Count()+2;
+                scrl1.LargeChange = listDanhGia.Where(x => x.soSao == 1).Count()+2;
+
+
                 int tbSao = 0;
                 foreach (var item in listDanhGia)
                 {
-                    var cardDanhGia = new ucCardDanhGia(item,this);
+                    var cardDanhGia = new ucCardDanhGia(item,this,_userDetailHome);
                     cardDanhGia.setInfo();
                     flwDanhGia.Controls.Add(cardDanhGia);
                     tbSao += (int)item.soSao;
@@ -246,9 +274,8 @@ namespace TimKiemNhaTro
 
         private void btnGuiDanhGia_Click(object sender, EventArgs e)
         {
-            _idNguoiDung = 1;
-            var danhGiaa= new DanhGia(){ maNguoiDung=_idNguoiDung,maNha=nhas.maNha,soSao=(int)rateVietSao.Value,noiDung=rtxComment.Text};
-            if (DataProvider.Ins.DB.DanhGias.Where(x => x.maNguoiDung == _idNguoiDung && x.maNha == nhas.maNha).Count() > 0)
+            var danhGiaa= new DanhGia(){ maNguoiDung=_userDetailHome.maNguoiDung,maNha=nhas.maNha,soSao=(int)rateVietSao.Value,noiDung=rtxComment.Text};
+            if (DataProvider.Ins.DB.DanhGias.Where(x => x.maNguoiDung == _userDetailHome.maNguoiDung && x.maNha == nhas.maNha).Count() > 0)
             {
                 MessageBox.Show("Bạn không thể viết đánh giá thêm được nữa");
             }

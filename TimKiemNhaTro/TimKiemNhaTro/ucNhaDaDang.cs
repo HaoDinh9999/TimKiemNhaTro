@@ -17,10 +17,29 @@ namespace TimKiemNhaTro
         {
             InitializeComponent();
         }
-        public int maChu = 1;
+        public NguoiDung _userNhaDang;
+        public ucNhaDaDang(NguoiDung ng)
+        {
+            InitializeComponent();
+            _userNhaDang = ng;
+        }
+        public void reLoad()
+        {
+            flwNhaDaDang.Controls.Clear();
+            var listNha = DataProvider.Ins.DB.Nhas.Where(x => x.maChuNha == _userNhaDang.maNguoiDung).ToList();
+
+            foreach (var item in listNha)
+            {
+                var card = new ucCardRoomSaveee(this.Parent.Parent as frmMain, item);
+                card.SetInfo();
+                flwNhaDaDang.Controls.Add(card);
+
+            }
+        }
         private void ucNhaDaDang_Load(object sender, EventArgs e)
         {
-            var listNha = DataProvider.Ins.DB.Nhas.Where(x=>x.maChuNha==maChu).ToList();
+            flwNhaDaDang.Controls.Clear();
+            var listNha = DataProvider.Ins.DB.Nhas.Where(x=>x.maChuNha==_userNhaDang.maNguoiDung).ToList();
 
             foreach (var item in listNha)
             {

@@ -49,10 +49,32 @@ namespace TimKiemNhaTro
 
         private void btnDelete_Click(object sender, EventArgs e)
         {
-            //var listNhaa = DataProvider.Ins.DB.Nhas;
-            //listNhaa.Remove(_nha);
-            //DataProvider.Ins.DB.SaveChanges();
-            MessageBox.Show("Xoa loi");
+            var listNhaa = DataProvider.Ins.DB.Nhas;
+            var listAnh = DataProvider.Ins.DB.AnhNhas;
+            var listYeuThich = DataProvider.Ins.DB.YeuThiches;
+            var listDanhGia = DataProvider.Ins.DB.DanhGias;
+            //Xoa Anh
+            foreach(var itemanh in listAnh.Where(x => x.maNha == _nha.maNha))
+            {
+                listAnh.Remove(itemanh);
+            }
+            //Xoa yeu thich
+            foreach(var itemyeu in listYeuThich.Where(x => x.maNha == _nha.maNha))
+            {
+                listYeuThich.Remove(itemyeu);
+            }
+            //Xoa danh gia
+            foreach(var itemdanh in listDanhGia.Where(x => x.maNha == _nha.maNha))
+            {
+                listDanhGia.Remove(itemdanh);
+            }
+
+            listNhaa.Remove(_nha);
+
+            DataProvider.Ins.DB.SaveChanges();
+            MessageBox.Show("Xoá nhà thành công");
+            frmM.getUCNhaDaDang();
+            frmM.setUCNhaDaDangBringtoFront();
         }
     }
 }

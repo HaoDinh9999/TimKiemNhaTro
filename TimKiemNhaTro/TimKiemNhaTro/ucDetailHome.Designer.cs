@@ -78,6 +78,8 @@ namespace TimKiemNhaTro
             this.gunaElipsePanel6 = new Guna.UI.WinForms.GunaElipsePanel();
             this.webBrowser1 = new System.Windows.Forms.WebBrowser();
             this.gunaElipsePanel7 = new Guna.UI.WinForms.GunaElipsePanel();
+            this.lbl = new System.Windows.Forms.Label();
+            this.lblCountRate = new System.Windows.Forms.Label();
             this.gunaButton6 = new Guna.UI.WinForms.GunaButton();
             this.label5 = new System.Windows.Forms.Label();
             this.lblCount1Sao = new System.Windows.Forms.Label();
@@ -87,21 +89,20 @@ namespace TimKiemNhaTro
             this.lblCount5Sao = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.gunaHScrollBar5 = new Guna.UI.WinForms.GunaHScrollBar();
+            this.scrl1 = new Guna.UI.WinForms.GunaHScrollBar();
             this.label11 = new System.Windows.Forms.Label();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.gunaHScrollBar4 = new Guna.UI.WinForms.GunaHScrollBar();
+            this.scrl2 = new Guna.UI.WinForms.GunaHScrollBar();
             this.label10 = new System.Windows.Forms.Label();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.gunaHScrollBar3 = new Guna.UI.WinForms.GunaHScrollBar();
+            this.scrl3 = new Guna.UI.WinForms.GunaHScrollBar();
             this.label9 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.gunaHScrollBar2 = new Guna.UI.WinForms.GunaHScrollBar();
+            this.scrl4 = new Guna.UI.WinForms.GunaHScrollBar();
             this.label8 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.gunaHScrollBar1 = new Guna.UI.WinForms.GunaHScrollBar();
+            this.scrl5 = new Guna.UI.WinForms.GunaHScrollBar();
             this.rateChungAll = new Guna.UI2.WinForms.Guna2RatingStar();
-            this.lbl = new System.Windows.Forms.Label();
             this.lblSaoChung = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.btnCountRate = new Guna.UI.WinForms.GunaCircleButton();
@@ -117,7 +118,6 @@ namespace TimKiemNhaTro
             this.richTextBox2 = new System.Windows.Forms.RichTextBox();
             this.btnGuiDanhGia = new Guna.UI.WinForms.GunaButton();
             this.flwDanhGia = new System.Windows.Forms.FlowLayoutPanel();
-            this.lblCountRate = new System.Windows.Forms.Label();
             this.gunaElipsePanel2.SuspendLayout();
             this.gunaElipsePanel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picAvatar)).BeginInit();
@@ -444,7 +444,7 @@ namespace TimKiemNhaTro
             this.lblTinhTrang.AutoSize = true;
             this.lblTinhTrang.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblTinhTrang.ForeColor = System.Drawing.Color.DarkGreen;
-            this.lblTinhTrang.Location = new System.Drawing.Point(744, 121);
+            this.lblTinhTrang.Location = new System.Drawing.Point(744, 120);
             this.lblTinhTrang.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblTinhTrang.Name = "lblTinhTrang";
             this.lblTinhTrang.Size = new System.Drawing.Size(106, 28);
@@ -996,19 +996,19 @@ namespace TimKiemNhaTro
             this.gunaElipsePanel7.Controls.Add(this.lblCount5Sao);
             this.gunaElipsePanel7.Controls.Add(this.label12);
             this.gunaElipsePanel7.Controls.Add(this.pictureBox5);
-            this.gunaElipsePanel7.Controls.Add(this.gunaHScrollBar5);
+            this.gunaElipsePanel7.Controls.Add(this.scrl1);
             this.gunaElipsePanel7.Controls.Add(this.label11);
             this.gunaElipsePanel7.Controls.Add(this.pictureBox4);
-            this.gunaElipsePanel7.Controls.Add(this.gunaHScrollBar4);
+            this.gunaElipsePanel7.Controls.Add(this.scrl2);
             this.gunaElipsePanel7.Controls.Add(this.label10);
             this.gunaElipsePanel7.Controls.Add(this.pictureBox3);
-            this.gunaElipsePanel7.Controls.Add(this.gunaHScrollBar3);
+            this.gunaElipsePanel7.Controls.Add(this.scrl3);
             this.gunaElipsePanel7.Controls.Add(this.label9);
             this.gunaElipsePanel7.Controls.Add(this.pictureBox2);
-            this.gunaElipsePanel7.Controls.Add(this.gunaHScrollBar2);
+            this.gunaElipsePanel7.Controls.Add(this.scrl4);
             this.gunaElipsePanel7.Controls.Add(this.label8);
             this.gunaElipsePanel7.Controls.Add(this.pictureBox1);
-            this.gunaElipsePanel7.Controls.Add(this.gunaHScrollBar1);
+            this.gunaElipsePanel7.Controls.Add(this.scrl5);
             this.gunaElipsePanel7.Controls.Add(this.rateChungAll);
             this.gunaElipsePanel7.Controls.Add(this.lblSaoChung);
             this.gunaElipsePanel7.Controls.Add(this.label3);
@@ -1019,6 +1019,28 @@ namespace TimKiemNhaTro
             this.gunaElipsePanel7.Radius = 10;
             this.gunaElipsePanel7.Size = new System.Drawing.Size(1315, 307);
             this.gunaElipsePanel7.TabIndex = 34;
+            // 
+            // lbl
+            // 
+            this.lbl.AutoSize = true;
+            this.lbl.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbl.ForeColor = System.Drawing.Color.DimGray;
+            this.lbl.Location = new System.Drawing.Point(171, 240);
+            this.lbl.Name = "lbl";
+            this.lbl.Size = new System.Drawing.Size(150, 21);
+            this.lbl.TabIndex = 53;
+            this.lbl.Text = "Đánh giá, nhận xét";
+            // 
+            // lblCountRate
+            // 
+            this.lblCountRate.AutoSize = true;
+            this.lblCountRate.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCountRate.ForeColor = System.Drawing.Color.DimGray;
+            this.lblCountRate.Location = new System.Drawing.Point(148, 239);
+            this.lblCountRate.Name = "lblCountRate";
+            this.lblCountRate.Size = new System.Drawing.Size(19, 21);
+            this.lblCountRate.TabIndex = 79;
+            this.lblCountRate.Text = "0";
             // 
             // gunaButton6
             // 
@@ -1066,7 +1088,7 @@ namespace TimKiemNhaTro
             this.lblCount1Sao.Name = "lblCount1Sao";
             this.lblCount1Sao.Size = new System.Drawing.Size(21, 24);
             this.lblCount1Sao.TabIndex = 76;
-            this.lblCount1Sao.Text = "1";
+            this.lblCount1Sao.Text = "0";
             // 
             // lblCount2Sao
             // 
@@ -1077,7 +1099,7 @@ namespace TimKiemNhaTro
             this.lblCount2Sao.Name = "lblCount2Sao";
             this.lblCount2Sao.Size = new System.Drawing.Size(21, 24);
             this.lblCount2Sao.TabIndex = 75;
-            this.lblCount2Sao.Text = "2";
+            this.lblCount2Sao.Text = "0";
             // 
             // lblCount3Sao
             // 
@@ -1088,7 +1110,7 @@ namespace TimKiemNhaTro
             this.lblCount3Sao.Name = "lblCount3Sao";
             this.lblCount3Sao.Size = new System.Drawing.Size(21, 24);
             this.lblCount3Sao.TabIndex = 74;
-            this.lblCount3Sao.Text = "3";
+            this.lblCount3Sao.Text = "0";
             // 
             // lblCount4Sao
             // 
@@ -1099,7 +1121,7 @@ namespace TimKiemNhaTro
             this.lblCount4Sao.Name = "lblCount4Sao";
             this.lblCount4Sao.Size = new System.Drawing.Size(21, 24);
             this.lblCount4Sao.TabIndex = 73;
-            this.lblCount4Sao.Text = "4";
+            this.lblCount4Sao.Text = "0";
             // 
             // lblCount5Sao
             // 
@@ -1110,7 +1132,7 @@ namespace TimKiemNhaTro
             this.lblCount5Sao.Name = "lblCount5Sao";
             this.lblCount5Sao.Size = new System.Drawing.Size(21, 24);
             this.lblCount5Sao.TabIndex = 72;
-            this.lblCount5Sao.Text = "5";
+            this.lblCount5Sao.Text = "0";
             // 
             // label12
             // 
@@ -1132,19 +1154,19 @@ namespace TimKiemNhaTro
             this.pictureBox5.TabIndex = 70;
             this.pictureBox5.TabStop = false;
             // 
-            // gunaHScrollBar5
+            // scrl1
             // 
-            this.gunaHScrollBar5.BackColor = System.Drawing.Color.Transparent;
-            this.gunaHScrollBar5.LargeChange = 10;
-            this.gunaHScrollBar5.Location = new System.Drawing.Point(631, 243);
-            this.gunaHScrollBar5.Maximum = 100;
-            this.gunaHScrollBar5.Name = "gunaHScrollBar5";
-            this.gunaHScrollBar5.ScrollIdleColor = System.Drawing.Color.Gainsboro;
-            this.gunaHScrollBar5.Size = new System.Drawing.Size(253, 14);
-            this.gunaHScrollBar5.TabIndex = 69;
-            this.gunaHScrollBar5.ThumbColor = System.Drawing.Color.LimeGreen;
-            this.gunaHScrollBar5.ThumbHoverColor = System.Drawing.Color.Gray;
-            this.gunaHScrollBar5.ThumbPressedColor = System.Drawing.Color.DarkGray;
+            this.scrl1.BackColor = System.Drawing.Color.Transparent;
+            this.scrl1.LargeChange = 2;
+            this.scrl1.Location = new System.Drawing.Point(631, 243);
+            this.scrl1.Maximum = 20;
+            this.scrl1.Name = "scrl1";
+            this.scrl1.ScrollIdleColor = System.Drawing.Color.Gainsboro;
+            this.scrl1.Size = new System.Drawing.Size(253, 14);
+            this.scrl1.TabIndex = 69;
+            this.scrl1.ThumbColor = System.Drawing.Color.LimeGreen;
+            this.scrl1.ThumbHoverColor = System.Drawing.Color.Gray;
+            this.scrl1.ThumbPressedColor = System.Drawing.Color.DarkGray;
             // 
             // label11
             // 
@@ -1166,19 +1188,19 @@ namespace TimKiemNhaTro
             this.pictureBox4.TabIndex = 67;
             this.pictureBox4.TabStop = false;
             // 
-            // gunaHScrollBar4
+            // scrl2
             // 
-            this.gunaHScrollBar4.BackColor = System.Drawing.Color.Transparent;
-            this.gunaHScrollBar4.LargeChange = 10;
-            this.gunaHScrollBar4.Location = new System.Drawing.Point(631, 212);
-            this.gunaHScrollBar4.Maximum = 100;
-            this.gunaHScrollBar4.Name = "gunaHScrollBar4";
-            this.gunaHScrollBar4.ScrollIdleColor = System.Drawing.Color.Gainsboro;
-            this.gunaHScrollBar4.Size = new System.Drawing.Size(253, 14);
-            this.gunaHScrollBar4.TabIndex = 66;
-            this.gunaHScrollBar4.ThumbColor = System.Drawing.Color.LimeGreen;
-            this.gunaHScrollBar4.ThumbHoverColor = System.Drawing.Color.Gray;
-            this.gunaHScrollBar4.ThumbPressedColor = System.Drawing.Color.DarkGray;
+            this.scrl2.BackColor = System.Drawing.Color.Transparent;
+            this.scrl2.LargeChange = 2;
+            this.scrl2.Location = new System.Drawing.Point(631, 212);
+            this.scrl2.Maximum = 20;
+            this.scrl2.Name = "scrl2";
+            this.scrl2.ScrollIdleColor = System.Drawing.Color.Gainsboro;
+            this.scrl2.Size = new System.Drawing.Size(253, 14);
+            this.scrl2.TabIndex = 66;
+            this.scrl2.ThumbColor = System.Drawing.Color.LimeGreen;
+            this.scrl2.ThumbHoverColor = System.Drawing.Color.Gray;
+            this.scrl2.ThumbPressedColor = System.Drawing.Color.DarkGray;
             // 
             // label10
             // 
@@ -1200,19 +1222,19 @@ namespace TimKiemNhaTro
             this.pictureBox3.TabIndex = 64;
             this.pictureBox3.TabStop = false;
             // 
-            // gunaHScrollBar3
+            // scrl3
             // 
-            this.gunaHScrollBar3.BackColor = System.Drawing.Color.Transparent;
-            this.gunaHScrollBar3.LargeChange = 10;
-            this.gunaHScrollBar3.Location = new System.Drawing.Point(631, 178);
-            this.gunaHScrollBar3.Maximum = 100;
-            this.gunaHScrollBar3.Name = "gunaHScrollBar3";
-            this.gunaHScrollBar3.ScrollIdleColor = System.Drawing.Color.Gainsboro;
-            this.gunaHScrollBar3.Size = new System.Drawing.Size(253, 14);
-            this.gunaHScrollBar3.TabIndex = 63;
-            this.gunaHScrollBar3.ThumbColor = System.Drawing.Color.LimeGreen;
-            this.gunaHScrollBar3.ThumbHoverColor = System.Drawing.Color.Gray;
-            this.gunaHScrollBar3.ThumbPressedColor = System.Drawing.Color.DarkGray;
+            this.scrl3.BackColor = System.Drawing.Color.Transparent;
+            this.scrl3.LargeChange = 2;
+            this.scrl3.Location = new System.Drawing.Point(631, 178);
+            this.scrl3.Maximum = 20;
+            this.scrl3.Name = "scrl3";
+            this.scrl3.ScrollIdleColor = System.Drawing.Color.Gainsboro;
+            this.scrl3.Size = new System.Drawing.Size(253, 14);
+            this.scrl3.TabIndex = 63;
+            this.scrl3.ThumbColor = System.Drawing.Color.LimeGreen;
+            this.scrl3.ThumbHoverColor = System.Drawing.Color.Gray;
+            this.scrl3.ThumbPressedColor = System.Drawing.Color.DarkGray;
             // 
             // label9
             // 
@@ -1234,19 +1256,19 @@ namespace TimKiemNhaTro
             this.pictureBox2.TabIndex = 61;
             this.pictureBox2.TabStop = false;
             // 
-            // gunaHScrollBar2
+            // scrl4
             // 
-            this.gunaHScrollBar2.BackColor = System.Drawing.Color.Transparent;
-            this.gunaHScrollBar2.LargeChange = 10;
-            this.gunaHScrollBar2.Location = new System.Drawing.Point(631, 145);
-            this.gunaHScrollBar2.Maximum = 100;
-            this.gunaHScrollBar2.Name = "gunaHScrollBar2";
-            this.gunaHScrollBar2.ScrollIdleColor = System.Drawing.Color.Gainsboro;
-            this.gunaHScrollBar2.Size = new System.Drawing.Size(253, 14);
-            this.gunaHScrollBar2.TabIndex = 60;
-            this.gunaHScrollBar2.ThumbColor = System.Drawing.Color.LimeGreen;
-            this.gunaHScrollBar2.ThumbHoverColor = System.Drawing.Color.Gray;
-            this.gunaHScrollBar2.ThumbPressedColor = System.Drawing.Color.DarkGray;
+            this.scrl4.BackColor = System.Drawing.Color.Transparent;
+            this.scrl4.LargeChange = 2;
+            this.scrl4.Location = new System.Drawing.Point(631, 145);
+            this.scrl4.Maximum = 20;
+            this.scrl4.Name = "scrl4";
+            this.scrl4.ScrollIdleColor = System.Drawing.Color.Gainsboro;
+            this.scrl4.Size = new System.Drawing.Size(253, 14);
+            this.scrl4.TabIndex = 60;
+            this.scrl4.ThumbColor = System.Drawing.Color.LimeGreen;
+            this.scrl4.ThumbHoverColor = System.Drawing.Color.Gray;
+            this.scrl4.ThumbPressedColor = System.Drawing.Color.DarkGray;
             // 
             // label8
             // 
@@ -1268,19 +1290,19 @@ namespace TimKiemNhaTro
             this.pictureBox1.TabIndex = 58;
             this.pictureBox1.TabStop = false;
             // 
-            // gunaHScrollBar1
+            // scrl5
             // 
-            this.gunaHScrollBar1.BackColor = System.Drawing.Color.Transparent;
-            this.gunaHScrollBar1.LargeChange = 2;
-            this.gunaHScrollBar1.Location = new System.Drawing.Point(631, 112);
-            this.gunaHScrollBar1.Maximum = 100;
-            this.gunaHScrollBar1.Name = "gunaHScrollBar1";
-            this.gunaHScrollBar1.ScrollIdleColor = System.Drawing.Color.Gainsboro;
-            this.gunaHScrollBar1.Size = new System.Drawing.Size(253, 14);
-            this.gunaHScrollBar1.TabIndex = 57;
-            this.gunaHScrollBar1.ThumbColor = System.Drawing.Color.LimeGreen;
-            this.gunaHScrollBar1.ThumbHoverColor = System.Drawing.Color.Gray;
-            this.gunaHScrollBar1.ThumbPressedColor = System.Drawing.Color.DarkGray;
+            this.scrl5.BackColor = System.Drawing.Color.Transparent;
+            this.scrl5.LargeChange = 2;
+            this.scrl5.Location = new System.Drawing.Point(631, 112);
+            this.scrl5.Maximum = 20;
+            this.scrl5.Name = "scrl5";
+            this.scrl5.ScrollIdleColor = System.Drawing.Color.Gainsboro;
+            this.scrl5.Size = new System.Drawing.Size(253, 14);
+            this.scrl5.TabIndex = 57;
+            this.scrl5.ThumbColor = System.Drawing.Color.LimeGreen;
+            this.scrl5.ThumbHoverColor = System.Drawing.Color.Gray;
+            this.scrl5.ThumbPressedColor = System.Drawing.Color.DarkGray;
             // 
             // rateChungAll
             // 
@@ -1289,18 +1311,6 @@ namespace TimKiemNhaTro
             this.rateChungAll.RatingColor = System.Drawing.Color.Gold;
             this.rateChungAll.Size = new System.Drawing.Size(200, 40);
             this.rateChungAll.TabIndex = 54;
-            this.rateChungAll.Value = 4.5F;
-            // 
-            // lbl
-            // 
-            this.lbl.AutoSize = true;
-            this.lbl.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbl.ForeColor = System.Drawing.Color.DimGray;
-            this.lbl.Location = new System.Drawing.Point(171, 240);
-            this.lbl.Name = "lbl";
-            this.lbl.Size = new System.Drawing.Size(150, 21);
-            this.lbl.TabIndex = 53;
-            this.lbl.Text = "Đánh giá, nhận xét";
             // 
             // lblSaoChung
             // 
@@ -1311,7 +1321,7 @@ namespace TimKiemNhaTro
             this.lblSaoChung.Name = "lblSaoChung";
             this.lblSaoChung.Size = new System.Drawing.Size(95, 58);
             this.lblSaoChung.TabIndex = 45;
-            this.lblSaoChung.Text = "3/5";
+            this.lblSaoChung.Text = "0/5";
             // 
             // label3
             // 
@@ -1345,7 +1355,7 @@ namespace TimKiemNhaTro
             this.btnCountRate.OnPressedColor = System.Drawing.Color.Black;
             this.btnCountRate.Size = new System.Drawing.Size(37, 39);
             this.btnCountRate.TabIndex = 43;
-            this.btnCountRate.Text = "17";
+            this.btnCountRate.Text = "0";
             // 
             // label2
             // 
@@ -1499,17 +1509,6 @@ namespace TimKiemNhaTro
             this.flwDanhGia.Size = new System.Drawing.Size(1314, 594);
             this.flwDanhGia.TabIndex = 79;
             // 
-            // lblCountRate
-            // 
-            this.lblCountRate.AutoSize = true;
-            this.lblCountRate.Font = new System.Drawing.Font("Tahoma", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCountRate.ForeColor = System.Drawing.Color.DimGray;
-            this.lblCountRate.Location = new System.Drawing.Point(148, 239);
-            this.lblCountRate.Name = "lblCountRate";
-            this.lblCountRate.Size = new System.Drawing.Size(33, 21);
-            this.lblCountRate.TabIndex = 79;
-            this.lblCountRate.Text = "17 ";
-            // 
             // ucDetailHome
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -1624,7 +1623,7 @@ namespace TimKiemNhaTro
         private Guna.UI.WinForms.GunaCircleButton btnCountRate;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label lbl;
-        private Guna.UI.WinForms.GunaHScrollBar gunaHScrollBar1;
+        private Guna.UI.WinForms.GunaHScrollBar scrl5;
         private Guna.UI2.WinForms.Guna2RatingStar rateChungAll;
         private System.Windows.Forms.Label lblCount1Sao;
         private System.Windows.Forms.Label lblCount2Sao;
@@ -1633,16 +1632,16 @@ namespace TimKiemNhaTro
         private System.Windows.Forms.Label lblCount5Sao;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.PictureBox pictureBox5;
-        private Guna.UI.WinForms.GunaHScrollBar gunaHScrollBar5;
+        private Guna.UI.WinForms.GunaHScrollBar scrl1;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.PictureBox pictureBox4;
-        private Guna.UI.WinForms.GunaHScrollBar gunaHScrollBar4;
+        private Guna.UI.WinForms.GunaHScrollBar scrl2;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.PictureBox pictureBox3;
-        private Guna.UI.WinForms.GunaHScrollBar gunaHScrollBar3;
+        private Guna.UI.WinForms.GunaHScrollBar scrl3;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private Guna.UI.WinForms.GunaHScrollBar gunaHScrollBar2;
+        private Guna.UI.WinForms.GunaHScrollBar scrl4;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.PictureBox pictureBox1;
         private Guna.UI.WinForms.GunaButton gunaButton6;

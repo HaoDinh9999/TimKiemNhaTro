@@ -80,6 +80,8 @@ namespace TimKiemNhaTro
             this.btnDieuHoa = new Guna.UI.WinForms.GunaAdvenceTileButton();
             this.gunaAdvenceButton1 = new Guna.UI.WinForms.GunaAdvenceButton();
             this.gunaAdvenceButton3 = new Guna.UI.WinForms.GunaAdvenceButton();
+            this.cbxTinhTrang = new Guna.UI.WinForms.GunaComboBox();
+            this.label17 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -1364,12 +1366,52 @@ namespace TimKiemNhaTro
             this.gunaAdvenceButton3.Size = new System.Drawing.Size(81, 64);
             this.gunaAdvenceButton3.TabIndex = 24;
             // 
+            // cbxTinhTrang
+            // 
+            this.cbxTinhTrang.BackColor = System.Drawing.Color.Transparent;
+            this.cbxTinhTrang.BaseColor = System.Drawing.Color.White;
+            this.cbxTinhTrang.BorderColor = System.Drawing.Color.LightSeaGreen;
+            this.cbxTinhTrang.Cursor = System.Windows.Forms.Cursors.Default;
+            this.cbxTinhTrang.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.cbxTinhTrang.DropDownHeight = 100;
+            this.cbxTinhTrang.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cbxTinhTrang.FocusedColor = System.Drawing.Color.LightSeaGreen;
+            this.cbxTinhTrang.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cbxTinhTrang.ForeColor = System.Drawing.Color.Black;
+            this.cbxTinhTrang.FormattingEnabled = true;
+            this.cbxTinhTrang.IntegralHeight = false;
+            this.cbxTinhTrang.Items.AddRange(new object[] {
+            "Còn trống",
+            "Tạm hết"});
+            this.cbxTinhTrang.Location = new System.Drawing.Point(715, 409);
+            this.cbxTinhTrang.Margin = new System.Windows.Forms.Padding(4);
+            this.cbxTinhTrang.Name = "cbxTinhTrang";
+            this.cbxTinhTrang.OnHoverItemBaseColor = System.Drawing.Color.LightSeaGreen;
+            this.cbxTinhTrang.OnHoverItemForeColor = System.Drawing.Color.White;
+            this.cbxTinhTrang.Radius = 10;
+            this.cbxTinhTrang.Size = new System.Drawing.Size(301, 40);
+            this.cbxTinhTrang.TabIndex = 76;
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.ForeColor = System.Drawing.Color.Black;
+            this.label17.Location = new System.Drawing.Point(711, 372);
+            this.label17.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(115, 24);
+            this.label17.TabIndex = 75;
+            this.label17.Text = "Tình trạng";
+            // 
             // ucAddHome
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.White;
+            this.Controls.Add(this.cbxTinhTrang);
+            this.Controls.Add(this.label17);
             this.Controls.Add(this.pnlPic);
             this.Controls.Add(this.btnDangTin);
             this.Controls.Add(this.txtMoTa);
@@ -1481,5 +1523,7 @@ namespace TimKiemNhaTro
         private Guna.UI.WinForms.GunaAdvenceButton btnDangTin;
         private System.Windows.Forms.Panel pnlPic;
         private Guna.UI.WinForms.GunaComboBox cbxPhuongXa;
+        private Guna.UI.WinForms.GunaComboBox cbxTinhTrang;
+        private System.Windows.Forms.Label label17;
     }
 }

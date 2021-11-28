@@ -31,7 +31,7 @@ namespace TimKiemNhaTro
             //ucH.BringToFront();
             //btnAddHouse.BringToFront();
         }
-        NguoiDung _user;
+        public NguoiDung _user;
         ucDetailHome ucD;
         ucHomeCC ucH;
         ucSearch ucS;
@@ -67,9 +67,12 @@ namespace TimKiemNhaTro
         {
             _ucNhaDaDang.Show();
             _ucNhaDaDang.BringToFront();
+            _ucNhaDaDang._userNhaDang = _user;
         }
         public ucNhaDaDang getUCNhaDaDang()
         {
+            _ucNhaDaDang._userNhaDang = _user;
+            _ucNhaDaDang.reLoad();
             return _ucNhaDaDang;
         }
 
@@ -137,6 +140,8 @@ namespace TimKiemNhaTro
 
             ucH.BringToFront();
             btnAddHouse.BringToFront();
+            ucH._userHome = _user;
+            ucH.reLoad();
  
         }
 
@@ -164,6 +169,8 @@ namespace TimKiemNhaTro
             btnSetting.Checked = false;
 
             ucF.BringToFront();
+            ucF._userYeuThich = _user;
+            ucF.reLoad();
         }
 
 
@@ -178,6 +185,7 @@ namespace TimKiemNhaTro
             btnSetting.Checked = false;
 
             ucUss.BringToFront();
+            ucUss._nguoi = _user;
             ucUss.reLoad();
         }
 
@@ -226,14 +234,19 @@ namespace TimKiemNhaTro
 
         private void frmMain_Load(object sender, EventArgs e)
         {
+            if (_user.urlDaiDien == null)
+                picAvatar.LoadAsync("https://www.clipartmax.com/png/full/110-1104174_computer-icons-user-clip-art-lily-pad-coloring-page.png");
+            else
+                picAvatar.LoadAsync(_user.urlDaiDien);
+            btnUsername.Text = "Hi " + _user.tenDangNhap;
             ucH = new ucHomeCC();
             ucS = new ucSearch();
-            ucF = new ucFavourite();
-            ucUss = new ucUser();
+            ucF = new ucFavourite(_user);
+            ucUss = new ucUser(_user);
             ucSet = new ucSetting();
-            ucD = new ucDetailHome();
-            _ucAdd = new ucAddHome();
-            _ucNhaDaDang = new ucNhaDaDang();
+            ucD = new ucDetailHome(_user);
+            _ucAdd = new ucAddHome(_user);
+            _ucNhaDaDang = new ucNhaDaDang(_user);
             _ucTinTuc = new ucTinTuc();
             addToPanel();
 

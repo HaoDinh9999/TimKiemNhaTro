@@ -19,7 +19,13 @@ namespace TimKiemNhaTro
         }
         public void SetInfo(List<NguoiDung> nguoiDungs)
         {
-            
+            flowLayoutPanel1.Controls.Clear();
+            for (int i = 0; i < nguoiDungs.Count; i++)
+            {
+                ucUserCard card = new ucUserCard(nguoiDungs[i]);
+                card.SetInfo();
+                flowLayoutPanel1.Controls.Add(card);
+            }
         }
     }
 }

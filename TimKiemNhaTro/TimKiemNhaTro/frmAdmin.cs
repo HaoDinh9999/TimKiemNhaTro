@@ -50,10 +50,13 @@ namespace TimKiemNhaTro
                         break;
                     case "Người dùng":
                         ucAdminUser1.BringToFront();
+                        ucAdminUser1.SetInfo(DataProvider.Ins.DB.NguoiDungs.ToList());
                         lblPage.Text = "Người dùng";
                         break;
                     case "Tin tức":
                         ucAdminNews1.BringToFront();
+                        ucAdminNews1.SetNewsList(DataProvider.Ins.DB.TinTucs.ToList());
+                        
                         lblPage.Text = "Tin tức";
                         break;
                     case "Cá nhân":

@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using TimKiemNhaTro.Model;
 
 namespace TimKiemNhaTro
 {
@@ -16,7 +17,16 @@ namespace TimKiemNhaTro
         {
             InitializeComponent();
         }
-
+        public void SetNewsList(List<TinTuc> tinTucs)
+        {
+            flowLayoutPanel1.Controls.Clear();
+            for (int i = 0; i < tinTucs.Count; i++)
+            {
+                ucAdminNewsCard card = new ucAdminNewsCard(tinTucs[i]);
+                card.SetInfo();
+                flowLayoutPanel1.Controls.Add(card);
+            }
+        }
         private void btnThem_Click(object sender, EventArgs e)
         {
             frmAddNews frm = new frmAddNews();

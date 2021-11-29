@@ -57,6 +57,7 @@
           <Property Name="matKhau" Type="varchar" MaxLength="128" Nullable="false" />
           <Property Name="hoTen" Type="varchar" MaxLength="128" />
           <Property Name="urlDaiDien" Type="varchar" MaxLength="1000" />
+          <Property Name="biVoHieu" Type="tinyint" Nullable="false" />
         </EntityType>
         <EntityType Name="Nha">
           <Key>
@@ -76,7 +77,7 @@
           <Property Name="quanHuyen" Type="varchar" MaxLength="45" />
           <Property Name="moTa" Type="varchar" MaxLength="45" />
           <Property Name="TienNha" Type="decimal" Precision="10" Scale="0" />
-          <Property Name="ngayCapNhat" Type="datetime" Precision="0" StoreGeneratedPattern="None" Nullable="false" />
+          <Property Name="ngayCapNhat" Type="datetime" Precision="0" StoreGeneratedPattern="Identity" Nullable="false" />
         </EntityType>
         <EntityType Name="TinTuc">
           <Key>
@@ -340,6 +341,7 @@
           <NavigationProperty Name="DanhGias" Relationship="XQ0Qgj8xlHModel.maNguoiDanhGia" FromRole="NguoiDung" ToRole="DanhGia" />
           <NavigationProperty Name="Nhas" Relationship="XQ0Qgj8xlHModel.maNguoiDung" FromRole="NguoiDung" ToRole="Nha" />
           <NavigationProperty Name="YeuThiches" Relationship="XQ0Qgj8xlHModel.maNguoiThich" FromRole="NguoiDung" ToRole="YeuThich" />
+          <Property Name="biVoHieu" Type="SByte" Nullable="false" />
         </EntityType>
         <EntityType Name="Nha">
           <Key>
@@ -537,6 +539,7 @@
           <EntitySetMapping Name="NguoiDungs">
             <EntityTypeMapping TypeName="XQ0Qgj8xlHModel.NguoiDung">
               <MappingFragment StoreEntitySet="NguoiDung">
+                <ScalarProperty Name="biVoHieu" ColumnName="biVoHieu" />
                 <ScalarProperty Name="urlDaiDien" ColumnName="urlDaiDien" />
                 <ScalarProperty Name="hoTen" ColumnName="hoTen" />
                 <ScalarProperty Name="matKhau" ColumnName="matKhau" />

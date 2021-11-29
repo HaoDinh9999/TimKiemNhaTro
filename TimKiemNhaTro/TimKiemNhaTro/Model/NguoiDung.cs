@@ -28,6 +28,7 @@ namespace TimKiemNhaTro.Model
         public string matKhau { get; set; }
         public string hoTen { get; set; }
         public string urlDaiDien { get; set; }
+        public sbyte biVoHieu { get; set; }
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<DanhGia> DanhGias { get; set; }

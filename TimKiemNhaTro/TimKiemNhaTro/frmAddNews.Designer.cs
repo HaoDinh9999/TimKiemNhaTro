@@ -191,6 +191,7 @@ namespace TimKiemNhaTro
             this.btnThem.Size = new System.Drawing.Size(291, 41);
             this.btnThem.TabIndex = 15;
             this.btnThem.Text = "Thêm";
+            this.btnThem.Click += new System.EventHandler(this.btnThem_Click);
             // 
             // frmAddNews
             // 

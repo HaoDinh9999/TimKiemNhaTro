@@ -32,17 +32,7 @@ namespace TimKiemNhaTro
             this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
             this.guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.ucAdminNewsCard1 = new TimKiemNhaTro.ucAdminNewsCard();
-            this.ucAdminNewsCard2 = new TimKiemNhaTro.ucAdminNewsCard();
-            this.ucAdminNewsCard3 = new TimKiemNhaTro.ucAdminNewsCard();
-            this.ucAdminNewsCard4 = new TimKiemNhaTro.ucAdminNewsCard();
-            this.ucAdminNewsCard5 = new TimKiemNhaTro.ucAdminNewsCard();
-            this.ucAdminNewsCard6 = new TimKiemNhaTro.ucAdminNewsCard();
-            this.ucAdminNewsCard7 = new TimKiemNhaTro.ucAdminNewsCard();
-            this.ucAdminNewsCard8 = new TimKiemNhaTro.ucAdminNewsCard();
-            this.ucAdminNewsCard9 = new TimKiemNhaTro.ucAdminNewsCard();
             this.btnThem = new Guna.UI2.WinForms.Guna2Button();
-            this.flowLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // guna2Button1
@@ -86,82 +76,10 @@ namespace TimKiemNhaTro
             // 
             // flowLayoutPanel1
             // 
-            this.flowLayoutPanel1.Controls.Add(this.ucAdminNewsCard1);
-            this.flowLayoutPanel1.Controls.Add(this.ucAdminNewsCard2);
-            this.flowLayoutPanel1.Controls.Add(this.ucAdminNewsCard3);
-            this.flowLayoutPanel1.Controls.Add(this.ucAdminNewsCard4);
-            this.flowLayoutPanel1.Controls.Add(this.ucAdminNewsCard5);
-            this.flowLayoutPanel1.Controls.Add(this.ucAdminNewsCard6);
-            this.flowLayoutPanel1.Controls.Add(this.ucAdminNewsCard7);
-            this.flowLayoutPanel1.Controls.Add(this.ucAdminNewsCard8);
-            this.flowLayoutPanel1.Controls.Add(this.ucAdminNewsCard9);
             this.flowLayoutPanel1.Location = new System.Drawing.Point(39, 90);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             this.flowLayoutPanel1.Size = new System.Drawing.Size(1045, 631);
             this.flowLayoutPanel1.TabIndex = 4;
-            // 
-            // ucAdminNewsCard1
-            // 
-            this.ucAdminNewsCard1.Location = new System.Drawing.Point(3, 3);
-            this.ucAdminNewsCard1.Name = "ucAdminNewsCard1";
-            this.ucAdminNewsCard1.Size = new System.Drawing.Size(305, 307);
-            this.ucAdminNewsCard1.TabIndex = 0;
-            // 
-            // ucAdminNewsCard2
-            // 
-            this.ucAdminNewsCard2.Location = new System.Drawing.Point(314, 3);
-            this.ucAdminNewsCard2.Name = "ucAdminNewsCard2";
-            this.ucAdminNewsCard2.Size = new System.Drawing.Size(305, 307);
-            this.ucAdminNewsCard2.TabIndex = 1;
-            // 
-            // ucAdminNewsCard3
-            // 
-            this.ucAdminNewsCard3.Location = new System.Drawing.Point(625, 3);
-            this.ucAdminNewsCard3.Name = "ucAdminNewsCard3";
-            this.ucAdminNewsCard3.Size = new System.Drawing.Size(305, 307);
-            this.ucAdminNewsCard3.TabIndex = 2;
-            // 
-            // ucAdminNewsCard4
-            // 
-            this.ucAdminNewsCard4.Location = new System.Drawing.Point(3, 316);
-            this.ucAdminNewsCard4.Name = "ucAdminNewsCard4";
-            this.ucAdminNewsCard4.Size = new System.Drawing.Size(305, 307);
-            this.ucAdminNewsCard4.TabIndex = 3;
-            // 
-            // ucAdminNewsCard5
-            // 
-            this.ucAdminNewsCard5.Location = new System.Drawing.Point(314, 316);
-            this.ucAdminNewsCard5.Name = "ucAdminNewsCard5";
-            this.ucAdminNewsCard5.Size = new System.Drawing.Size(305, 307);
-            this.ucAdminNewsCard5.TabIndex = 4;
-            // 
-            // ucAdminNewsCard6
-            // 
-            this.ucAdminNewsCard6.Location = new System.Drawing.Point(625, 316);
-            this.ucAdminNewsCard6.Name = "ucAdminNewsCard6";
-            this.ucAdminNewsCard6.Size = new System.Drawing.Size(305, 307);
-            this.ucAdminNewsCard6.TabIndex = 5;
-            // 
-            // ucAdminNewsCard7
-            // 
-            this.ucAdminNewsCard7.Location = new System.Drawing.Point(3, 629);
-            this.ucAdminNewsCard7.Name = "ucAdminNewsCard7";
-            this.ucAdminNewsCard7.Size = new System.Drawing.Size(305, 307);
-            this.ucAdminNewsCard7.TabIndex = 6;
-            // 
-            // ucAdminNewsCard8
-            // 
-            this.ucAdminNewsCard8.Location = new System.Drawing.Point(314, 629);
-            this.ucAdminNewsCard8.Name = "ucAdminNewsCard8";
-            this.ucAdminNewsCard8.Size = new System.Drawing.Size(305, 307);
-            this.ucAdminNewsCard8.TabIndex = 7;
-            // 
-            // ucAdminNewsCard9
-            // 
-            this.ucAdminNewsCard9.Location = new System.Drawing.Point(625, 629);
-            this.ucAdminNewsCard9.Name = "ucAdminNewsCard9";
-            this.ucAdminNewsCard9.Size = new System.Drawing.Size(305, 307);
-            this.ucAdminNewsCard9.TabIndex = 8;
             // 
             // btnThem
             // 
@@ -190,7 +108,6 @@ namespace TimKiemNhaTro
             this.Controls.Add(this.guna2TextBox1);
             this.Name = "ucAdminNews";
             this.Size = new System.Drawing.Size(1084, 721);
-            this.flowLayoutPanel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -200,15 +117,6 @@ namespace TimKiemNhaTro
         private Guna.UI2.WinForms.Guna2Button guna2Button1;
         private Guna.UI2.WinForms.Guna2TextBox guna2TextBox1;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
-        private ucAdminNewsCard ucAdminNewsCard1;
-        private ucAdminNewsCard ucAdminNewsCard2;
-        private ucAdminNewsCard ucAdminNewsCard3;
-        private ucAdminNewsCard ucAdminNewsCard4;
-        private ucAdminNewsCard ucAdminNewsCard5;
-        private ucAdminNewsCard ucAdminNewsCard6;
-        private ucAdminNewsCard ucAdminNewsCard7;
-        private ucAdminNewsCard ucAdminNewsCard8;
-        private ucAdminNewsCard ucAdminNewsCard9;
         private Guna.UI2.WinForms.Guna2Button btnThem;
     }
 }

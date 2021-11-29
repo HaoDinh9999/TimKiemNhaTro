@@ -264,6 +264,7 @@
     </Reference>
     <Reference Include="System.Transactions" />
     <Reference Include="System.Windows" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -292,6 +293,18 @@
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAddNews.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAddNews.Designer.cs">
+      <DependentUpon>frmAddNews.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAdmin.Designer.cs">
+      <DependentUpon>frmAdmin.cs</DependentUpon>
     </Compile>
     <Compile Include="frmLoadAnh.cs">
       <SubType>Form</SubType>
@@ -360,6 +373,42 @@
     </Compile>
     <Compile Include="ucAddHome.Designer.cs">
       <DependentUpon>ucAddHome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucAdminNews.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucAdminNews.Designer.cs">
+      <DependentUpon>ucAdminNews.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucAdminNewsCard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucAdminNewsCard.Designer.cs">
+      <DependentUpon>ucAdminNewsCard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucAdminOverview.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucAdminOverview.Designer.cs">
+      <DependentUpon>ucAdminOverview.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucAdminProfile.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucAdminProfile.Designer.cs">
+      <DependentUpon>ucAdminProfile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucAdminStatistic.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucAdminStatistic.Designer.cs">
+      <DependentUpon>ucAdminStatistic.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucAdminUser.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucAdminUser.Designer.cs">
+      <DependentUpon>ucAdminUser.cs</DependentUpon>
     </Compile>
     <Compile Include="ucCardDanhGia.cs">
       <SubType>UserControl</SubType>
@@ -457,8 +506,20 @@
     <Compile Include="ucUser.Designer.cs">
       <DependentUpon>ucUser.cs</DependentUpon>
     </Compile>
+    <Compile Include="ucUserCard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucUserCard.Designer.cs">
+      <DependentUpon>ucUserCard.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAddNews.resx">
+      <DependentUpon>frmAddNews.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAdmin.resx">
+      <DependentUpon>frmAdmin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmLoadAnh.resx">
       <DependentUpon>frmLoadAnh.cs</DependentUpon>
@@ -476,6 +537,24 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ucAddHome.resx">
       <DependentUpon>ucAddHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucAdminNews.resx">
+      <DependentUpon>ucAdminNews.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucAdminNewsCard.resx">
+      <DependentUpon>ucAdminNewsCard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucAdminOverview.resx">
+      <DependentUpon>ucAdminOverview.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucAdminProfile.resx">
+      <DependentUpon>ucAdminProfile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucAdminStatistic.resx">
+      <DependentUpon>ucAdminStatistic.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucAdminUser.resx">
+      <DependentUpon>ucAdminUser.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ucCardDanhGia.resx">
       <DependentUpon>ucCardDanhGia.cs</DependentUpon>
@@ -524,6 +603,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ucUser.resx">
       <DependentUpon>ucUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucUserCard.resx">
+      <DependentUpon>ucUserCard.cs</DependentUpon>
     </EmbeddedResource>
     <EntityDeploy Include="Model\Model1.edmx">
       <Generator>EntityModelCodeGenerator</Generator>
@@ -702,6 +784,8 @@
     <None Include="Resources\775-7750441_apartment-png.png" />
     <Content Include="Resources\bath-tub.png" />
     <Content Include="Resources\cancel.png" />
+    <None Include="Resources\dashboard.png" />
+    <None Include="Resources\dashboard %281%29.png" />
     <Content Include="Resources\double-bed.png" />
     <Content Include="Resources\heart.png" />
     <Content Include="Resources\home1.png" />
@@ -720,12 +804,22 @@
     <None Include="Resources\icons8_editDen_32.png" />
     <None Include="Resources\icons8_delete_32.png" />
     <None Include="Resources\loading.gif" />
+    <None Include="Resources\newspaper %281%29.png" />
+    <None Include="Resources\newspaper.png" />
+    <None Include="Resources\logout.png" />
     <Content Include="Resources\rec.png" />
+    <None Include="Resources\setting %281%29.png" />
+    <None Include="Resources\setting.png" />
     <Content Include="Resources\star.png" />
+    <None Include="Resources\statistics %281%29.png" />
+    <None Include="Resources\statistics.png" />
+    <None Include="Resources\suzy2.jpg" />
     <Content Include="Resources\triangular.png" />
     <Content Include="Resources\undraw_Login_re_4vu2.png" />
     <Content Include="Resources\undraw_Welcome_re_h3d9.png" />
     <None Include="Resources\unnamed.jpg" />
+    <None Include="Resources\user %281%29.png" />
+    <None Include="Resources\user.png" />
     <Content Include="Resources\wide.png" />
     <None Include="Resources\icons8_toolbox_32.png" />
     <None Include="Resources\icons8_info_popup_32.png" />

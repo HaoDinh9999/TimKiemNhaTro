@@ -23,7 +23,8 @@ namespace TimKiemNhaTro.Model
         }
     
         public int maNguoiDung { get; set; }
-        public string tenDangNhap { get; set; }
+        public int maNhom { get; set; }
+        public string email { get; set; }
         public string matKhau { get; set; }
         public string hoTen { get; set; }
         public string urlDaiDien { get; set; }

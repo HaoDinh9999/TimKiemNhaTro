@@ -52,10 +52,11 @@
             <PropertyRef Name="maNguoiDung" />
           </Key>
           <Property Name="maNguoiDung" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-          <Property Name="tenDangNhap" Type="varchar" MaxLength="128" Nullable="false" />
+          <Property Name="maNhom" Type="int" Nullable="false" />
+          <Property Name="email" Type="varchar" MaxLength="128" Nullable="false" />
           <Property Name="matKhau" Type="varchar" MaxLength="128" Nullable="false" />
           <Property Name="hoTen" Type="varchar" MaxLength="128" />
-          <Property Name="urlDaiDien" Type="varchar" MaxLength="128" />
+          <Property Name="urlDaiDien" Type="varchar" MaxLength="1000" />
         </EntityType>
         <EntityType Name="Nha">
           <Key>
@@ -76,6 +77,16 @@
           <Property Name="moTa" Type="varchar" MaxLength="45" />
           <Property Name="TienNha" Type="decimal" Precision="10" Scale="0" />
           <Property Name="ngayCapNhat" Type="datetime" Precision="0" StoreGeneratedPattern="None" Nullable="false" />
+        </EntityType>
+        <EntityType Name="TinTuc">
+          <Key>
+            <PropertyRef Name="maTinTuc" />
+          </Key>
+          <Property Name="maTinTuc" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="tieuDe" Type="varchar" MaxLength="1000" Nullable="false" />
+          <Property Name="trichDan" Type="varchar" MaxLength="1000" Nullable="false" />
+          <Property Name="urlBao" Type="varchar" MaxLength="1000" Nullable="false" />
+          <Property Name="urlAnh" Type="varchar" MaxLength="1000" Nullable="false" />
         </EntityType>
         <EntityType Name="YeuThich">
           <Key>
@@ -188,6 +199,7 @@
           <EntitySet Name="LoaiChoThue" EntityType="Self.LoaiChoThue" Schema="XQ0Qgj8xlH" store:Type="Tables" />
           <EntitySet Name="NguoiDung" EntityType="Self.NguoiDung" Schema="XQ0Qgj8xlH" store:Type="Tables" />
           <EntitySet Name="Nha" EntityType="Self.Nha" Schema="XQ0Qgj8xlH" store:Type="Tables" />
+          <EntitySet Name="TinTuc" EntityType="Self.TinTuc" Schema="XQ0Qgj8xlH" store:Type="Tables" />
           <EntitySet Name="YeuThich" EntityType="Self.YeuThich" Schema="XQ0Qgj8xlH" store:Type="Tables" />
           <AssociationSet Name="FK_Anh_maNha" Association="Self.FK_Anh_maNha">
             <End Role="Nha" EntitySet="Nha" />
@@ -233,6 +245,7 @@
           <EntitySet Name="LoaiChoThues" EntityType="XQ0Qgj8xlHModel.LoaiChoThue" />
           <EntitySet Name="NguoiDungs" EntityType="XQ0Qgj8xlHModel.NguoiDung" />
           <EntitySet Name="Nhas" EntityType="XQ0Qgj8xlHModel.Nha" />
+          <EntitySet Name="TinTucs" EntityType="XQ0Qgj8xlHModel.TinTuc" />
           <EntitySet Name="YeuThiches" EntityType="XQ0Qgj8xlHModel.YeuThich" />
           <AssociationSet Name="FK_Anh_maNha" Association="XQ0Qgj8xlHModel.FK_Anh_maNha">
             <End Role="Nha" EntitySet="Nhas" />
@@ -319,10 +332,11 @@
             <PropertyRef Name="maNguoiDung" />
           </Key>
           <Property Name="maNguoiDung" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Name="tenDangNhap" Type="String" Nullable="false" MaxLength="128" FixedLength="false" Unicode="false" />
+          <Property Name="maNhom" Type="Int32" Nullable="false" />
+          <Property Name="email" Type="String" Nullable="false" MaxLength="128" FixedLength="false" Unicode="false" />
           <Property Name="matKhau" Type="String" Nullable="false" MaxLength="128" FixedLength="false" Unicode="false" />
           <Property Name="hoTen" Type="String" MaxLength="128" FixedLength="false" Unicode="false" />
-          <Property Name="urlDaiDien" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+          <Property Name="urlDaiDien" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
           <NavigationProperty Name="DanhGias" Relationship="XQ0Qgj8xlHModel.maNguoiDanhGia" FromRole="NguoiDung" ToRole="DanhGia" />
           <NavigationProperty Name="Nhas" Relationship="XQ0Qgj8xlHModel.maNguoiDung" FromRole="NguoiDung" ToRole="Nha" />
           <NavigationProperty Name="YeuThiches" Relationship="XQ0Qgj8xlHModel.maNguoiThich" FromRole="NguoiDung" ToRole="YeuThich" />
@@ -352,6 +366,16 @@
           <NavigationProperty Name="LoaiChoThue" Relationship="XQ0Qgj8xlHModel.maLoaiChoThue" FromRole="Nha" ToRole="LoaiChoThue" />
           <NavigationProperty Name="NguoiDung" Relationship="XQ0Qgj8xlHModel.maNguoiDung" FromRole="Nha" ToRole="NguoiDung" />
           <NavigationProperty Name="YeuThiches" Relationship="XQ0Qgj8xlHModel.maNhaThich" FromRole="Nha" ToRole="YeuThich" />
+        </EntityType>
+        <EntityType Name="TinTuc">
+          <Key>
+            <PropertyRef Name="maTinTuc" />
+          </Key>
+          <Property Name="maTinTuc" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="tieuDe" Type="String" Nullable="false" MaxLength="1000" FixedLength="false" Unicode="false" />
+          <Property Name="trichDan" Type="String" Nullable="false" MaxLength="1000" FixedLength="false" Unicode="false" />
+          <Property Name="urlBao" Type="String" Nullable="false" MaxLength="1000" FixedLength="false" Unicode="false" />
+          <Property Name="urlAnh" Type="String" Nullable="false" MaxLength="1000" FixedLength="false" Unicode="false" />
         </EntityType>
         <EntityType Name="YeuThich">
           <Key>
@@ -516,7 +540,8 @@
                 <ScalarProperty Name="urlDaiDien" ColumnName="urlDaiDien" />
                 <ScalarProperty Name="hoTen" ColumnName="hoTen" />
                 <ScalarProperty Name="matKhau" ColumnName="matKhau" />
-                <ScalarProperty Name="tenDangNhap" ColumnName="tenDangNhap" />
+                <ScalarProperty Name="email" ColumnName="email" />
+                <ScalarProperty Name="maNhom" ColumnName="maNhom" />
                 <ScalarProperty Name="maNguoiDung" ColumnName="maNguoiDung" />
               </MappingFragment>
             </EntityTypeMapping>
@@ -539,6 +564,17 @@
                 <ScalarProperty Name="maCoSoVatChat" ColumnName="maCoSoVatChat" />
                 <ScalarProperty Name="maChuNha" ColumnName="maChuNha" />
                 <ScalarProperty Name="maNha" ColumnName="maNha" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TinTucs">
+            <EntityTypeMapping TypeName="XQ0Qgj8xlHModel.TinTuc">
+              <MappingFragment StoreEntitySet="TinTuc">
+                <ScalarProperty Name="urlAnh" ColumnName="urlAnh" />
+                <ScalarProperty Name="urlBao" ColumnName="urlBao" />
+                <ScalarProperty Name="trichDan" ColumnName="trichDan" />
+                <ScalarProperty Name="tieuDe" ColumnName="tieuDe" />
+                <ScalarProperty Name="maTinTuc" ColumnName="maTinTuc" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>

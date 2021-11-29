@@ -34,10 +34,10 @@ namespace TimKiemNhaTro
             if ((string)_nguoi.hoTen != null)
                 txtHoTen.Text = _nguoi.hoTen;
             else
-                txtHoTen.Text = _nguoi.tenDangNhap;
-            lblUsername.Text = _nguoi.tenDangNhap;
+                txtHoTen.Text = "Chưa đặt tên";
+            lblUsername.Text = _nguoi.email;
             if (_nguoi.hoTen == null)
-                lblNameKH.Text = _nguoi.tenDangNhap;
+                lblNameKH.Text = "Chưa đặt tên";
             else
                 lblNameKH.Text = _nguoi.hoTen;
             if (_nguoi.urlDaiDien != null && _nguoi.urlDaiDien != "")
@@ -110,7 +110,7 @@ namespace TimKiemNhaTro
                     // Your code...
                     // Could also be before try if you know the exception occurs in SaveChanges
                     var tklol = DataProvider.Ins.DB.NguoiDungs.Where(x => x.maNguoiDung == _nguoi.maNguoiDung).SingleOrDefault();
-                    tklol.tenDangNhap = txtHoTen.Text;
+                    tklol.hoTen = txtHoTen.Text;
                     if (urlAvatar != "")
                         tklol.urlDaiDien = urlAvatar;
                     DataProvider.Ins.DB.SaveChanges();

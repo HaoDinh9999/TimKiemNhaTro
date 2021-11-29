@@ -44,14 +44,14 @@ namespace TimKiemNhaTro
                 MessageBox.Show("Vui lòng nhập đầy đủ thông tin");
                 return;
             }
-            NguoiDung nguoiDung = DataProvider.Ins.DB.NguoiDungs.Where(x => x.tenDangNhap == txtUsername.Text).SingleOrDefault();
+            NguoiDung nguoiDung = DataProvider.Ins.DB.NguoiDungs.Where(x => x.email == txtUsername.Text).SingleOrDefault();
             if (nguoiDung != null)
             {
                 MessageBox.Show("Tên đăng nhập đã tồn tại. Vui lòng dùng tên đăng nhập khác");
                 return;
 
             }
-            nguoiDung = new NguoiDung() { tenDangNhap = txtUsername.Text, matKhau = ComputeSha256Hash(txtPassword.Text) };
+            nguoiDung = new NguoiDung() { email = txtUsername.Text, matKhau = ComputeSha256Hash(txtPassword.Text), maNhom = 2 };
             DataProvider.Ins.DB.NguoiDungs.Add(nguoiDung);
             DataProvider.Ins.DB.SaveChanges();
             MessageBox.Show("Bạn đã đăng ký tài khoản thành công");

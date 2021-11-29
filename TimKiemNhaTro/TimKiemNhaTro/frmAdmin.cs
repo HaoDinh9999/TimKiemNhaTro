@@ -13,11 +13,16 @@ namespace TimKiemNhaTro
 {
     public partial class frmAdmin : Form
     {
+        NguoiDung _nguoiDung;
         public frmAdmin()
         {
             InitializeComponent();
         }
-
+        public frmAdmin(NguoiDung n)
+        {
+            InitializeComponent();
+            _nguoiDung = n;
+        }
         private void btnDangXuat_Click(object sender, EventArgs e)
         {
             var res = MessageBox.Show("Bạn có muốn đăng xuất không?",  "Nhắc nhở",  MessageBoxButtons.YesNo, MessageBoxIcon.Warning);

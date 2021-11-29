@@ -210,6 +210,7 @@ namespace TimKiemNhaTro
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "frmAddNews";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.ResumeLayout(false);
             this.PerformLayout();
 

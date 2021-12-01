@@ -33,6 +33,7 @@ namespace TimKiemNhaTro
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmMain));
             this.gelipFrmTaskee = new Guna.UI.WinForms.GunaElipse(this.components);
             this.panel2 = new System.Windows.Forms.Panel();
+            this.picAvatar = new Guna.UI.WinForms.GunaCirclePictureBox();
             this.lblTitle = new System.Windows.Forms.Label();
             this.dtpRealTime = new Guna.UI.WinForms.GunaDateTimePicker();
             this.panel4 = new System.Windows.Forms.Panel();
@@ -55,14 +56,13 @@ namespace TimKiemNhaTro
             this.btnFavourite = new Guna.UI.WinForms.GunaAdvenceButton();
             this.btnFindMap = new Guna.UI.WinForms.GunaAdvenceButton();
             this.btnHome = new Guna.UI.WinForms.GunaAdvenceButton();
-            this.picAvatar = new Guna.UI.WinForms.GunaCirclePictureBox();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picAvatar)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptrPaint)).BeginInit();
             this.pnlUC.SuspendLayout();
             this.pnlMenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picGif)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picLogo)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picAvatar)).BeginInit();
             this.SuspendLayout();
             // 
             // gelipFrmTaskee
@@ -87,6 +87,18 @@ namespace TimKiemNhaTro
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1510, 58);
             this.panel2.TabIndex = 1;
+            // 
+            // picAvatar
+            // 
+            this.picAvatar.BaseColor = System.Drawing.Color.White;
+            this.picAvatar.InitialImage = global::TimKiemNhaTro.Properties.Resources.loading;
+            this.picAvatar.Location = new System.Drawing.Point(1212, 8);
+            this.picAvatar.Name = "picAvatar";
+            this.picAvatar.Size = new System.Drawing.Size(45, 45);
+            this.picAvatar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picAvatar.TabIndex = 11;
+            this.picAvatar.TabStop = false;
+            this.picAvatar.UseTransfarantBackground = false;
             // 
             // lblTitle
             // 
@@ -547,18 +559,6 @@ namespace TimKiemNhaTro
             this.btnHome.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.btnHome.Click += new System.EventHandler(this.btnHome_Click);
             // 
-            // picAvatar
-            // 
-            this.picAvatar.BaseColor = System.Drawing.Color.White;
-            this.picAvatar.Image = global::TimKiemNhaTro.Properties.Resources._3612573_18012114440061220336;
-            this.picAvatar.Location = new System.Drawing.Point(1212, 8);
-            this.picAvatar.Name = "picAvatar";
-            this.picAvatar.Size = new System.Drawing.Size(45, 45);
-            this.picAvatar.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.picAvatar.TabIndex = 11;
-            this.picAvatar.TabStop = false;
-            this.picAvatar.UseTransfarantBackground = false;
-            // 
             // frmMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
@@ -576,13 +576,13 @@ namespace TimKiemNhaTro
             this.Load += new System.EventHandler(this.frmMain_Load);
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.picAvatar)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptrPaint)).EndInit();
             this.pnlUC.ResumeLayout(false);
             this.pnlMenu.ResumeLayout(false);
             this.pnlMenu.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picGif)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picLogo)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picAvatar)).EndInit();
             this.ResumeLayout(false);
 
         }

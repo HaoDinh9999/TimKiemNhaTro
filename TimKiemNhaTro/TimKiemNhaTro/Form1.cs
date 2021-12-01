@@ -231,18 +231,25 @@ namespace TimKiemNhaTro
             _ucAdd.reSet1();
             _ucAdd.BringToFront();
         }
-
+        public void reLoadNguoiDung()
+        {
+            if (_user.urlDaiDien == null)
+                picAvatar.LoadAsync("https://www.clipartmax.com/png/full/110-1104174_computer-icons-user-clip-art-lily-pad-coloring-page.png");
+            else
+                picAvatar.LoadAsync(_user.urlDaiDien);
+            btnUsername.Text = "Hi " + _user.tenDangNhap;
+        }
         private void frmMain_Load(object sender, EventArgs e)
         {
             if (_user.urlDaiDien == null)
-                picAvatar.LoadAsync("https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Microsoft_Account.svg/768px-Microsoft_Account.svg.png");
+                picAvatar.LoadAsync("https://www.clipartmax.com/png/full/110-1104174_computer-icons-user-clip-art-lily-pad-coloring-page.png");
             else
                 picAvatar.LoadAsync(_user.urlDaiDien);
             btnUsername.Text = "Hi " + _user.tenDangNhap;
             ucH = new ucHomeCC();
             ucS = new ucSearch();
             ucF = new ucFavourite(_user);
-            ucUss = new ucUser(_user);
+            ucUss = new ucUser(_user,this);
             ucSet = new ucSetting();
             ucD = new ucDetailHome(_user);
             _ucAdd = new ucAddHome(_user);

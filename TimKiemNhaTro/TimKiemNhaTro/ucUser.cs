@@ -19,10 +19,12 @@ namespace TimKiemNhaTro
         {
             InitializeComponent();
         }
-        public ucUser(NguoiDung ngh)
+        frmMain _frmM;
+        public ucUser(NguoiDung ngh,frmMain frm)
         {
             InitializeComponent();
             _nguoi = ngh;
+            _frmM = frm;
             
         }
         string urlAvatar="";
@@ -30,7 +32,7 @@ namespace TimKiemNhaTro
         public async void reLoad()
         {
             _nguoi = DataProvider.Ins.DB.NguoiDungs.Where(x => x.maNguoiDung == _nguoi.maNguoiDung).SingleOrDefault();
-            picAvatar.LoadAsync("https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Microsoft_Account.svg/768px-Microsoft_Account.svg.png");
+
             if ((string)_nguoi.hoTen != null)
                 txtHoTen.Text = _nguoi.hoTen;
             else
@@ -40,11 +42,12 @@ namespace TimKiemNhaTro
                 lblNameKH.Text = _nguoi.tenDangNhap;
             else
                 lblNameKH.Text = _nguoi.hoTen;
-            if (_nguoi.urlDaiDien !=null && _nguoi.urlDaiDien != "")
+            if (_nguoi.urlDaiDien != null && _nguoi.urlDaiDien != "")
             {
-               picAvatar.LoadAsync(_nguoi.urlDaiDien);
+                picAvatar.LoadAsync(_nguoi.urlDaiDien);
 
             }
+            else picAvatar.LoadAsync("https://www.clipartmax.com/png/full/110-1104174_computer-icons-user-clip-art-lily-pad-coloring-page.png");
         }
         private async void UploadFiles(string url, int idNguoiDung)
         {
@@ -109,18 +112,31 @@ namespace TimKiemNhaTro
                     // Your code...
                     // Could also be before try if you know the exception occurs in SaveChanges
                     var tklol = DataProvider.Ins.DB.NguoiDungs.Where(x => x.maNguoiDung == _nguoi.maNguoiDung).SingleOrDefault();
-                    tklol.tenDangNhap = txtHoTen.Text;
+                    tklol.hoTen = txtHoTen.Text;
                     if (urlAvatar != "")
                         tklol.urlDaiDien = urlAvatar;
                     DataProvider.Ins.DB.SaveChanges();
                     MessageBox.Show("Cập nhật thành công");
+                    _frmM.reLoadNguoiDung();
 
                 }
-                catch(Exception ex)
+                catch (System.Data.Entity.Validation.DbEntityValidationException dbEx)
                 {
-                    MessageBox.Show(ex.ToString());
-
-                };
+                    Exception raise = dbEx;
+                    foreach (var validationErrors in dbEx.EntityValidationErrors)
+                    {
+                        foreach (var validationError in validationErrors.ValidationErrors)
+                        {
+                            string message = string.Format("{0}:{1}",
+                                validationErrors.Entry.Entity.ToString(),
+                                validationError.ErrorMessage);
+                            // raise a new exception nesting  
+                            // the current instance as InnerException  
+                            raise = new InvalidOperationException(message, raise);
+                        }
+                    }
+                    throw raise;
+                }
 
                 urlAvatar = "";
                 reLoad();

@@ -1182,8 +1182,9 @@ namespace TimKiemNhaTro
                 nhaluu.quanHuyen = cbxQuanHuyen.Text;
                 nhaluu.moTa = txtMoTa.Text;
                 nhaluu.TienNha = decimal.Parse(txtTienChoThue.Text);
-                //nhaluu.ngayCapNhat = (DateTime)DateTime.Now;
+                nhaluu.maNha = nhaeidt.maNha;
 
+                nhaluu.ngayCapNhat = DateTime.Now;
                 //Luu
                 //DataProvider.Ins.DB.SaveChanges();
                 var listAnhh = DataProvider.Ins.DB.AnhNhas;
@@ -1191,7 +1192,15 @@ namespace TimKiemNhaTro
                 {
                     listAnhh.Remove( listAnhh.Where(x => x.maAnhNha == anhxoa).SingleOrDefault());
                 }
-                DataProvider.Ins.DB.SaveChanges();
+                try
+                {
+                    DataProvider.Ins.DB.SaveChanges();
+
+                }
+                catch (Exception err)
+                {
+                    MessageBox.Show(err.Message);
+                }
                 foreach (var item in fileList)
                 {
                     UploadFiles(item, nhaluu.maNha.ToString());

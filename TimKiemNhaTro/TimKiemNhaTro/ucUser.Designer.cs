@@ -505,7 +505,7 @@ namespace TimKiemNhaTro
             // 
             this.picAvatar.BackColor = System.Drawing.Color.Transparent;
             this.picAvatar.BaseColor = System.Drawing.Color.White;
-            this.picAvatar.Image = global::TimKiemNhaTro.Properties.Resources.TanBinh1;
+            this.picAvatar.InitialImage = ((System.Drawing.Image)(resources.GetObject("picAvatar.InitialImage")));
             this.picAvatar.Location = new System.Drawing.Point(133, 81);
             this.picAvatar.Margin = new System.Windows.Forms.Padding(4);
             this.picAvatar.Name = "picAvatar";

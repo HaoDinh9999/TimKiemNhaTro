@@ -5,13 +5,14 @@
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
       <Diagram DiagramId="e124420c90c24ae4aabeedacd4f24024" Name="Diagram1">
-        <EntityTypeShape EntityType="XQ0Qgj8xlHModel.AnhNha" Width="1.5" PointX="5.25" PointY="8.5" />
-        <EntityTypeShape EntityType="XQ0Qgj8xlHModel.CoSoVatChat" Width="1.5" PointX="0.75" PointY="0.75" />
-        <EntityTypeShape EntityType="XQ0Qgj8xlHModel.DanhGia" Width="1.5" PointX="5.25" PointY="5.625" />
-        <EntityTypeShape EntityType="XQ0Qgj8xlHModel.LoaiChoThue" Width="1.5" PointX="0.75" PointY="9" />
-        <EntityTypeShape EntityType="XQ0Qgj8xlHModel.NguoiDung" Width="1.5" PointX="0.75" PointY="5.375" />
-        <EntityTypeShape EntityType="XQ0Qgj8xlHModel.Nha" Width="1.5" PointX="3" PointY="4.125" />
-        <EntityTypeShape EntityType="XQ0Qgj8xlHModel.YeuThich" Width="1.5" PointX="5.25" PointY="2.75" />
+        <EntityTypeShape EntityType="XQ0Qgj8xlHModel.AnhNha" Width="1.5" PointX="5.25" PointY="7" />
+        <EntityTypeShape EntityType="XQ0Qgj8xlHModel.CoSoVatChat" Width="1.5" PointX="0.75" PointY="7.625" />
+        <EntityTypeShape EntityType="XQ0Qgj8xlHModel.DanhGia" Width="1.5" PointX="5.25" PointY="4.125" />
+        <EntityTypeShape EntityType="XQ0Qgj8xlHModel.LoaiChoThue" Width="1.5" PointX="0.75" PointY="1.25" />
+        <EntityTypeShape EntityType="XQ0Qgj8xlHModel.NguoiDung" Width="1.5" PointX="0.75" PointY="3.875" />
+        <EntityTypeShape EntityType="XQ0Qgj8xlHModel.Nha" Width="1.5" PointX="3" PointY="2.625" />
+        <EntityTypeShape EntityType="XQ0Qgj8xlHModel.TinTuc" Width="1.5" PointX="7.75" PointY="0.75" />
+        <EntityTypeShape EntityType="XQ0Qgj8xlHModel.YeuThich" Width="1.5" PointX="5.25" PointY="1.25" />
         <AssociationConnector Association="XQ0Qgj8xlHModel.FK_Anh_maNha" />
         <AssociationConnector Association="XQ0Qgj8xlHModel.maCoSoVatChat" />
         <AssociationConnector Association="XQ0Qgj8xlHModel.maNguoiDanhGia" />

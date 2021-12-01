@@ -47,10 +47,12 @@
       <PropertyRef Name="maNguoiDung" />
     </Key>
     <Property Name="maNguoiDung" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
-    <Property Name="tenDangNhap" Type="varchar" MaxLength="128" Nullable="false" />
+    <Property Name="maNhom" Type="int" Nullable="false" />
+    <Property Name="email" Type="varchar" MaxLength="128" Nullable="false" />
     <Property Name="matKhau" Type="varchar" MaxLength="128" Nullable="false" />
     <Property Name="hoTen" Type="varchar" MaxLength="128" />
-    <Property Name="urlDaiDien" Type="varchar" MaxLength="128" />
+    <Property Name="urlDaiDien" Type="varchar" MaxLength="1000" />
+    <Property Name="biVoHieu" Type="tinyint" Nullable="false" />
   </EntityType>
   <EntityType Name="Nha">
     <Key>
@@ -71,6 +73,16 @@
     <Property Name="moTa" Type="varchar" MaxLength="45" />
     <Property Name="TienNha" Type="decimal" Precision="10" Scale="0" />
     <Property Name="ngayCapNhat" Type="datetime" Precision="0" StoreGeneratedPattern="None" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TinTuc">
+    <Key>
+      <PropertyRef Name="maTinTuc" />
+    </Key>
+    <Property Name="maTinTuc" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="tieuDe" Type="varchar" MaxLength="1000" Nullable="false" />
+    <Property Name="trichDan" Type="varchar" MaxLength="1000" Nullable="false" />
+    <Property Name="urlBao" Type="varchar" MaxLength="1000" Nullable="false" />
+    <Property Name="urlAnh" Type="varchar" MaxLength="1000" Nullable="false" />
   </EntityType>
   <EntityType Name="YeuThich">
     <Key>
@@ -183,6 +195,7 @@
     <EntitySet Name="LoaiChoThue" EntityType="Self.LoaiChoThue" Schema="XQ0Qgj8xlH" store:Type="Tables" />
     <EntitySet Name="NguoiDung" EntityType="Self.NguoiDung" Schema="XQ0Qgj8xlH" store:Type="Tables" />
     <EntitySet Name="Nha" EntityType="Self.Nha" Schema="XQ0Qgj8xlH" store:Type="Tables" />
+    <EntitySet Name="TinTuc" EntityType="Self.TinTuc" Schema="XQ0Qgj8xlH" store:Type="Tables" />
     <EntitySet Name="YeuThich" EntityType="Self.YeuThich" Schema="XQ0Qgj8xlH" store:Type="Tables" />
     <AssociationSet Name="FK_Anh_maNha" Association="Self.FK_Anh_maNha">
       <End Role="Nha" EntitySet="Nha" />

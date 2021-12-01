@@ -7,6 +7,7 @@
     <EntitySet Name="LoaiChoThues" EntityType="XQ0Qgj8xlHModel.LoaiChoThue" />
     <EntitySet Name="NguoiDungs" EntityType="XQ0Qgj8xlHModel.NguoiDung" />
     <EntitySet Name="Nhas" EntityType="XQ0Qgj8xlHModel.Nha" />
+    <EntitySet Name="TinTucs" EntityType="XQ0Qgj8xlHModel.TinTuc" />
     <EntitySet Name="YeuThiches" EntityType="XQ0Qgj8xlHModel.YeuThich" />
     <AssociationSet Name="FK_Anh_maNha" Association="XQ0Qgj8xlHModel.FK_Anh_maNha">
       <End Role="Nha" EntitySet="Nhas" />
@@ -93,13 +94,15 @@
       <PropertyRef Name="maNguoiDung" />
     </Key>
     <Property Name="maNguoiDung" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-    <Property Name="tenDangNhap" Type="String" Nullable="false" MaxLength="128" FixedLength="false" Unicode="false" />
+    <Property Name="maNhom" Type="Int32" Nullable="false" />
+    <Property Name="email" Type="String" Nullable="false" MaxLength="128" FixedLength="false" Unicode="false" />
     <Property Name="matKhau" Type="String" Nullable="false" MaxLength="128" FixedLength="false" Unicode="false" />
     <Property Name="hoTen" Type="String" MaxLength="128" FixedLength="false" Unicode="false" />
-    <Property Name="urlDaiDien" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="urlDaiDien" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
     <NavigationProperty Name="DanhGias" Relationship="XQ0Qgj8xlHModel.maNguoiDanhGia" FromRole="NguoiDung" ToRole="DanhGia" />
     <NavigationProperty Name="Nhas" Relationship="XQ0Qgj8xlHModel.maNguoiDung" FromRole="NguoiDung" ToRole="Nha" />
     <NavigationProperty Name="YeuThiches" Relationship="XQ0Qgj8xlHModel.maNguoiThich" FromRole="NguoiDung" ToRole="YeuThich" />
+    <Property Name="biVoHieu" Type="SByte" Nullable="false" />
   </EntityType>
   <EntityType Name="Nha">
     <Key>
@@ -126,6 +129,16 @@
     <NavigationProperty Name="LoaiChoThue" Relationship="XQ0Qgj8xlHModel.maLoaiChoThue" FromRole="Nha" ToRole="LoaiChoThue" />
     <NavigationProperty Name="NguoiDung" Relationship="XQ0Qgj8xlHModel.maNguoiDung" FromRole="Nha" ToRole="NguoiDung" />
     <NavigationProperty Name="YeuThiches" Relationship="XQ0Qgj8xlHModel.maNhaThich" FromRole="Nha" ToRole="YeuThich" />
+  </EntityType>
+  <EntityType Name="TinTuc">
+    <Key>
+      <PropertyRef Name="maTinTuc" />
+    </Key>
+    <Property Name="maTinTuc" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="tieuDe" Type="String" Nullable="false" MaxLength="1000" FixedLength="false" Unicode="false" />
+    <Property Name="trichDan" Type="String" Nullable="false" MaxLength="1000" FixedLength="false" Unicode="false" />
+    <Property Name="urlBao" Type="String" Nullable="false" MaxLength="1000" FixedLength="false" Unicode="false" />
+    <Property Name="urlAnh" Type="String" Nullable="false" MaxLength="1000" FixedLength="false" Unicode="false" />
   </EntityType>
   <EntityType Name="YeuThich">
     <Key>

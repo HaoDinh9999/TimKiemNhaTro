@@ -31,6 +31,7 @@ namespace TimKiemNhaTro.Model
         public virtual DbSet<LoaiChoThue> LoaiChoThues { get; set; }
         public virtual DbSet<NguoiDung> NguoiDungs { get; set; }
         public virtual DbSet<Nha> Nhas { get; set; }
+        public virtual DbSet<TinTuc> TinTucs { get; set; }
         public virtual DbSet<YeuThich> YeuThiches { get; set; }
     }
 }

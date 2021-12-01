@@ -237,7 +237,7 @@ namespace TimKiemNhaTro
                 picAvatar.LoadAsync("https://www.clipartmax.com/png/full/110-1104174_computer-icons-user-clip-art-lily-pad-coloring-page.png");
             else
                 picAvatar.LoadAsync(_user.urlDaiDien);
-            btnUsername.Text = "Hi " + _user.tenDangNhap;
+            btnUsername.Text = "Hi " + _user.email;
         }
         private void frmMain_Load(object sender, EventArgs e)
         {
@@ -245,7 +245,7 @@ namespace TimKiemNhaTro
                 picAvatar.LoadAsync("https://www.clipartmax.com/png/full/110-1104174_computer-icons-user-clip-art-lily-pad-coloring-page.png");
             else
                 picAvatar.LoadAsync(_user.urlDaiDien);
-            btnUsername.Text = "Hi " + _user.tenDangNhap;
+            btnUsername.Text = "Hi " + _user.email;
             ucH = new ucHomeCC();
             ucS = new ucSearch();
             ucF = new ucFavourite(_user);

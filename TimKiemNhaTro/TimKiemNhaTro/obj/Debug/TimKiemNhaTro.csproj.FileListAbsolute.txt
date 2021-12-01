@@ -150,3 +150,12 @@ C:\Users\DELL\Desktop\TroMoiNhat\TimKiemNhaTro\TimKiemNhaTro\TimKiemNhaTro\obj\D
 C:\Users\DELL\Desktop\TroMoiNhat\TimKiemNhaTro\TimKiemNhaTro\TimKiemNhaTro\obj\Debug\TimKiemNhaTro.csproj.CopyComplete
 C:\Users\DELL\Desktop\TroMoiNhat\TimKiemNhaTro\TimKiemNhaTro\TimKiemNhaTro\obj\Debug\TimKiemNhaTro.exe
 C:\Users\DELL\Desktop\TroMoiNhat\TimKiemNhaTro\TimKiemNhaTro\TimKiemNhaTro\obj\Debug\TimKiemNhaTro.pdb
+C:\Users\DELL\Desktop\TroMoiNhat\TimKiemNhaTro\TimKiemNhaTro\TimKiemNhaTro\obj\Debug\TimKiemNhaTro.frmAddNews.resources
+C:\Users\DELL\Desktop\TroMoiNhat\TimKiemNhaTro\TimKiemNhaTro\TimKiemNhaTro\obj\Debug\TimKiemNhaTro.frmAdmin.resources
+C:\Users\DELL\Desktop\TroMoiNhat\TimKiemNhaTro\TimKiemNhaTro\TimKiemNhaTro\obj\Debug\TimKiemNhaTro.ucAdminNews.resources
+C:\Users\DELL\Desktop\TroMoiNhat\TimKiemNhaTro\TimKiemNhaTro\TimKiemNhaTro\obj\Debug\TimKiemNhaTro.ucAdminNewsCard.resources
+C:\Users\DELL\Desktop\TroMoiNhat\TimKiemNhaTro\TimKiemNhaTro\TimKiemNhaTro\obj\Debug\TimKiemNhaTro.ucAdminOverview.resources
+C:\Users\DELL\Desktop\TroMoiNhat\TimKiemNhaTro\TimKiemNhaTro\TimKiemNhaTro\obj\Debug\TimKiemNhaTro.ucAdminProfile.resources
+C:\Users\DELL\Desktop\TroMoiNhat\TimKiemNhaTro\TimKiemNhaTro\TimKiemNhaTro\obj\Debug\TimKiemNhaTro.ucAdminStatistic.resources
+C:\Users\DELL\Desktop\TroMoiNhat\TimKiemNhaTro\TimKiemNhaTro\TimKiemNhaTro\obj\Debug\TimKiemNhaTro.ucAdminUser.resources
+C:\Users\DELL\Desktop\TroMoiNhat\TimKiemNhaTro\TimKiemNhaTro\TimKiemNhaTro\obj\Debug\TimKiemNhaTro.ucUserCard.resources

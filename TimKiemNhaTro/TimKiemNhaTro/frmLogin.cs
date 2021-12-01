@@ -42,7 +42,7 @@ namespace TimKiemNhaTro
                 return;
             }
             var pass = ComputeSha256Hash(txtPassword.Text);
-            NguoiDung nguoiDung = DataProvider.Ins.DB.NguoiDungs.Where(x => x.tenDangNhap == txtUsername.Text && x.matKhau == pass ).SingleOrDefault();
+            NguoiDung nguoiDung = DataProvider.Ins.DB.NguoiDungs.Where(x => x.email == txtUsername.Text && x.matKhau == pass ).SingleOrDefault();
             if (nguoiDung == null)
             {
                 MessageBox.Show("Đăng nhập thất bại. Vui lòng kiểm tra lại thông tin của bạn!");
@@ -50,9 +50,18 @@ namespace TimKiemNhaTro
 
             }
             MessageBox.Show("Đăng nhập thành công");
-            frmMain frm = new frmMain(nguoiDung);
-            Hide();
-            frm.ShowDialog();
+            if (nguoiDung.maNhom == 2)
+            {
+                frmMain frm = new frmMain(nguoiDung);
+                Hide();
+                frm.ShowDialog();
+            }
+            else if(nguoiDung.maNhom == 1)
+            {
+                frmAdmin frm = new frmAdmin(nguoiDung);
+                Hide();
+                frm.ShowDialog();
+            }
             Close();
         }
         static string ComputeSha256Hash(string rawData)

@@ -49,10 +49,12 @@
     <EntitySetMapping Name="NguoiDungs">
       <EntityTypeMapping TypeName="XQ0Qgj8xlHModel.NguoiDung">
         <MappingFragment StoreEntitySet="NguoiDung">
+          <ScalarProperty Name="biVoHieu" ColumnName="biVoHieu" />
           <ScalarProperty Name="urlDaiDien" ColumnName="urlDaiDien" />
           <ScalarProperty Name="hoTen" ColumnName="hoTen" />
           <ScalarProperty Name="matKhau" ColumnName="matKhau" />
-          <ScalarProperty Name="tenDangNhap" ColumnName="tenDangNhap" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="maNhom" ColumnName="maNhom" />
           <ScalarProperty Name="maNguoiDung" ColumnName="maNguoiDung" />
         </MappingFragment>
       </EntityTypeMapping>
@@ -75,6 +77,17 @@
           <ScalarProperty Name="maCoSoVatChat" ColumnName="maCoSoVatChat" />
           <ScalarProperty Name="maChuNha" ColumnName="maChuNha" />
           <ScalarProperty Name="maNha" ColumnName="maNha" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TinTucs">
+      <EntityTypeMapping TypeName="XQ0Qgj8xlHModel.TinTuc">
+        <MappingFragment StoreEntitySet="TinTuc">
+          <ScalarProperty Name="urlAnh" ColumnName="urlAnh" />
+          <ScalarProperty Name="urlBao" ColumnName="urlBao" />
+          <ScalarProperty Name="trichDan" ColumnName="trichDan" />
+          <ScalarProperty Name="tieuDe" ColumnName="tieuDe" />
+          <ScalarProperty Name="maTinTuc" ColumnName="maTinTuc" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>

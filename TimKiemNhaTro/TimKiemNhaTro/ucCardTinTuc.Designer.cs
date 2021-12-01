@@ -30,17 +30,17 @@ namespace TimKiemNhaTro
         private void InitializeComponent()
         {
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
-            this.ptrPicNha = new Guna.UI2.WinForms.Guna2PictureBox();
-            this.btnType = new Guna.UI2.WinForms.Guna2Button();
-            this.btnChiTiet = new Guna.UI2.WinForms.Guna2Button();
             this.guna2Panel2 = new Guna.UI2.WinForms.Guna2Panel();
-            this.lblTitle = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2HtmlLabel6 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.lblContent = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.lblContent = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.guna2HtmlLabel6 = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.btnChiTiet = new Guna.UI2.WinForms.Guna2Button();
+            this.lblTitle = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.btnType = new Guna.UI2.WinForms.Guna2Button();
+            this.ptrPicNha = new Guna.UI2.WinForms.Guna2PictureBox();
             this.guna2Panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.ptrPicNha)).BeginInit();
             this.guna2Panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ptrPicNha)).BeginInit();
             this.SuspendLayout();
             // 
             // guna2Panel1
@@ -58,36 +58,55 @@ namespace TimKiemNhaTro
             this.guna2Panel1.Size = new System.Drawing.Size(616, 300);
             this.guna2Panel1.TabIndex = 1;
             // 
-            // ptrPicNha
+            // guna2Panel2
             // 
-            this.ptrPicNha.BorderRadius = 20;
-            this.ptrPicNha.Dock = System.Windows.Forms.DockStyle.Left;
-            this.ptrPicNha.Image = global::TimKiemNhaTro.Properties.Resources.quan2;
-            this.ptrPicNha.Location = new System.Drawing.Point(10, 10);
-            this.ptrPicNha.Name = "ptrPicNha";
-            this.ptrPicNha.ShadowDecoration.Parent = this.ptrPicNha;
-            this.ptrPicNha.Size = new System.Drawing.Size(280, 280);
-            this.ptrPicNha.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.ptrPicNha.TabIndex = 10;
-            this.ptrPicNha.TabStop = false;
+            this.guna2Panel2.Controls.Add(this.guna2HtmlLabel2);
+            this.guna2Panel2.Controls.Add(this.lblContent);
+            this.guna2Panel2.Controls.Add(this.guna2HtmlLabel6);
+            this.guna2Panel2.Controls.Add(this.btnChiTiet);
+            this.guna2Panel2.Controls.Add(this.btnType);
+            this.guna2Panel2.Controls.Add(this.lblTitle);
+            this.guna2Panel2.Dock = System.Windows.Forms.DockStyle.Right;
+            this.guna2Panel2.Location = new System.Drawing.Point(296, 10);
+            this.guna2Panel2.Name = "guna2Panel2";
+            this.guna2Panel2.ShadowDecoration.Parent = this.guna2Panel2;
+            this.guna2Panel2.Size = new System.Drawing.Size(310, 280);
+            this.guna2Panel2.TabIndex = 11;
             // 
-            // btnType
+            // guna2HtmlLabel2
             // 
-            this.btnType.BorderRadius = 4;
-            this.btnType.CheckedState.Parent = this.btnType;
-            this.btnType.CustomImages.Parent = this.btnType;
-            this.btnType.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
-            this.btnType.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnType.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(167)))), ((int)(((byte)(226)))));
-            this.btnType.HoverState.Parent = this.btnType;
-            this.btnType.Image = global::TimKiemNhaTro.Properties.Resources.home1;
-            this.btnType.ImageSize = new System.Drawing.Size(16, 16);
-            this.btnType.Location = new System.Drawing.Point(10, 3);
-            this.btnType.Name = "btnType";
-            this.btnType.ShadowDecoration.Parent = this.btnType;
-            this.btnType.Size = new System.Drawing.Size(89, 23);
-            this.btnType.TabIndex = 11;
-            this.btnType.Text = "Tin tức";
+            this.guna2HtmlLabel2.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel2.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel2.ForeColor = System.Drawing.Color.Blue;
+            this.guna2HtmlLabel2.Location = new System.Drawing.Point(18, 241);
+            this.guna2HtmlLabel2.Name = "guna2HtmlLabel2";
+            this.guna2HtmlLabel2.Size = new System.Drawing.Size(45, 19);
+            this.guna2HtmlLabel2.TabIndex = 23;
+            this.guna2HtmlLabel2.Text = "Nguồn";
+            // 
+            // lblContent
+            // 
+            this.lblContent.AutoSize = false;
+            this.lblContent.BackColor = System.Drawing.Color.Transparent;
+            this.lblContent.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblContent.ForeColor = System.Drawing.Color.DimGray;
+            this.lblContent.Location = new System.Drawing.Point(15, 113);
+            this.lblContent.Name = "lblContent";
+            this.lblContent.Size = new System.Drawing.Size(274, 113);
+            this.lblContent.TabIndex = 22;
+            this.lblContent.Text = "Nếu tôi trả nhà, chủ trọ cũng mất đi thu nhập hàng tháng, thời điểm này khó cho t" +
+    "huê lại, mà nhà để không cũng mau hư.";
+            // 
+            // guna2HtmlLabel6
+            // 
+            this.guna2HtmlLabel6.BackColor = System.Drawing.Color.Transparent;
+            this.guna2HtmlLabel6.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2HtmlLabel6.ForeColor = System.Drawing.Color.Blue;
+            this.guna2HtmlLabel6.Location = new System.Drawing.Point(69, 241);
+            this.guna2HtmlLabel6.Name = "guna2HtmlLabel6";
+            this.guna2HtmlLabel6.Size = new System.Drawing.Size(94, 19);
+            this.guna2HtmlLabel6.TabIndex = 19;
+            this.guna2HtmlLabel6.Text = "vnexpress.com";
             // 
             // btnChiTiet
             // 
@@ -107,21 +126,6 @@ namespace TimKiemNhaTro
             this.btnChiTiet.Text = "Chi Tiết";
             this.btnChiTiet.Click += new System.EventHandler(this.btnChiTiet_Click);
             // 
-            // guna2Panel2
-            // 
-            this.guna2Panel2.Controls.Add(this.guna2HtmlLabel2);
-            this.guna2Panel2.Controls.Add(this.lblContent);
-            this.guna2Panel2.Controls.Add(this.guna2HtmlLabel6);
-            this.guna2Panel2.Controls.Add(this.btnChiTiet);
-            this.guna2Panel2.Controls.Add(this.btnType);
-            this.guna2Panel2.Controls.Add(this.lblTitle);
-            this.guna2Panel2.Dock = System.Windows.Forms.DockStyle.Right;
-            this.guna2Panel2.Location = new System.Drawing.Point(296, 10);
-            this.guna2Panel2.Name = "guna2Panel2";
-            this.guna2Panel2.ShadowDecoration.Parent = this.guna2Panel2;
-            this.guna2Panel2.Size = new System.Drawing.Size(310, 280);
-            this.guna2Panel2.TabIndex = 11;
-            // 
             // lblTitle
             // 
             this.lblTitle.AutoSize = false;
@@ -134,40 +138,36 @@ namespace TimKiemNhaTro
             this.lblTitle.TabIndex = 8;
             this.lblTitle.Text = "Giảm tiền thuê trọ tốt cho cả đôi bên";
             // 
-            // guna2HtmlLabel6
+            // btnType
             // 
-            this.guna2HtmlLabel6.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel6.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel6.ForeColor = System.Drawing.Color.Blue;
-            this.guna2HtmlLabel6.Location = new System.Drawing.Point(69, 241);
-            this.guna2HtmlLabel6.Name = "guna2HtmlLabel6";
-            this.guna2HtmlLabel6.Size = new System.Drawing.Size(94, 19);
-            this.guna2HtmlLabel6.TabIndex = 19;
-            this.guna2HtmlLabel6.Text = "vnexpress.com";
+            this.btnType.BorderRadius = 4;
+            this.btnType.CheckedState.Parent = this.btnType;
+            this.btnType.CustomImages.Parent = this.btnType;
+            this.btnType.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(238)))), ((int)(((byte)(238)))));
+            this.btnType.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnType.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(167)))), ((int)(((byte)(226)))));
+            this.btnType.HoverState.Parent = this.btnType;
+            this.btnType.Image = global::TimKiemNhaTro.Properties.Resources.home1;
+            this.btnType.ImageSize = new System.Drawing.Size(16, 16);
+            this.btnType.Location = new System.Drawing.Point(10, 3);
+            this.btnType.Name = "btnType";
+            this.btnType.ShadowDecoration.Parent = this.btnType;
+            this.btnType.Size = new System.Drawing.Size(89, 23);
+            this.btnType.TabIndex = 11;
+            this.btnType.Text = "Tin tức";
             // 
-            // lblContent
+            // ptrPicNha
             // 
-            this.lblContent.AutoSize = false;
-            this.lblContent.BackColor = System.Drawing.Color.Transparent;
-            this.lblContent.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblContent.ForeColor = System.Drawing.Color.DimGray;
-            this.lblContent.Location = new System.Drawing.Point(15, 113);
-            this.lblContent.Name = "lblContent";
-            this.lblContent.Size = new System.Drawing.Size(274, 113);
-            this.lblContent.TabIndex = 22;
-            this.lblContent.Text = "Nếu tôi trả nhà, chủ trọ cũng mất đi thu nhập hàng tháng, thời điểm này khó cho t" +
-    "huê lại, mà nhà để không cũng mau hư.";
-            // 
-            // guna2HtmlLabel2
-            // 
-            this.guna2HtmlLabel2.BackColor = System.Drawing.Color.Transparent;
-            this.guna2HtmlLabel2.Font = new System.Drawing.Font("Segoe UI", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2HtmlLabel2.ForeColor = System.Drawing.Color.Blue;
-            this.guna2HtmlLabel2.Location = new System.Drawing.Point(18, 241);
-            this.guna2HtmlLabel2.Name = "guna2HtmlLabel2";
-            this.guna2HtmlLabel2.Size = new System.Drawing.Size(45, 19);
-            this.guna2HtmlLabel2.TabIndex = 23;
-            this.guna2HtmlLabel2.Text = "Nguồn";
+            this.ptrPicNha.BorderRadius = 20;
+            this.ptrPicNha.Dock = System.Windows.Forms.DockStyle.Left;
+            this.ptrPicNha.Image = global::TimKiemNhaTro.Properties.Resources.quan2;
+            this.ptrPicNha.Location = new System.Drawing.Point(10, 10);
+            this.ptrPicNha.Name = "ptrPicNha";
+            this.ptrPicNha.ShadowDecoration.Parent = this.ptrPicNha;
+            this.ptrPicNha.Size = new System.Drawing.Size(280, 280);
+            this.ptrPicNha.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.ptrPicNha.TabIndex = 10;
+            this.ptrPicNha.TabStop = false;
             // 
             // ucCardTinTuc
             // 
@@ -178,9 +178,9 @@ namespace TimKiemNhaTro
             this.Name = "ucCardTinTuc";
             this.Size = new System.Drawing.Size(616, 300);
             this.guna2Panel1.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.ptrPicNha)).EndInit();
             this.guna2Panel2.ResumeLayout(false);
             this.guna2Panel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ptrPicNha)).EndInit();
             this.ResumeLayout(false);
 
         }

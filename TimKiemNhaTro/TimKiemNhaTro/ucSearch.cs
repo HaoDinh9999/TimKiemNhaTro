@@ -142,7 +142,7 @@ namespace TimKiemNhaTro
                     nhas = nhas.Where(x => x.LoaiChoThue.tenLoaiChoThue == "Căn hộ").ToList();
                     break;
                 case 2:
-                    nhas = nhas.Where(x => x.LoaiChoThue.tenLoaiChoThue == "Phòng").ToList();
+                    nhas = nhas.Where(x => x.LoaiChoThue.tenLoaiChoThue == "Phòng trọ").ToList();
                     break;
             }
 

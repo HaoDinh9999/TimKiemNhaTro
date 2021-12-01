@@ -27,6 +27,7 @@ namespace TimKiemNhaTro.Model
         public string email { get; set; }
         public string matKhau { get; set; }
         public string hoTen { get; set; }
+        public string sdt { get; set; }
         public string urlDaiDien { get; set; }
         public sbyte biVoHieu { get; set; }
     

@@ -38,7 +38,6 @@ namespace TimKiemNhaTro
             this.btnNguoiDung = new Guna.UI2.WinForms.Guna2Button();
             this.pnlHeader = new System.Windows.Forms.Panel();
             this.guna2HtmlLabel2 = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.guna2CirclePictureBox1 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
             this.lblPage = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.pnlMain = new System.Windows.Forms.Panel();
             this.ucAdminUser1 = new TimKiemNhaTro.ucAdminUser();
@@ -48,7 +47,6 @@ namespace TimKiemNhaTro
             this.ucAdminOverview1 = new TimKiemNhaTro.ucAdminOverview();
             this.pnlSideBar.SuspendLayout();
             this.pnlHeader.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).BeginInit();
             this.pnlMain.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -234,7 +232,6 @@ namespace TimKiemNhaTro
             // 
             this.pnlHeader.BackColor = System.Drawing.Color.Transparent;
             this.pnlHeader.Controls.Add(this.guna2HtmlLabel2);
-            this.pnlHeader.Controls.Add(this.guna2CirclePictureBox1);
             this.pnlHeader.Controls.Add(this.lblPage);
             this.pnlHeader.Dock = System.Windows.Forms.DockStyle.Top;
             this.pnlHeader.Location = new System.Drawing.Point(256, 0);
@@ -247,24 +244,12 @@ namespace TimKiemNhaTro
             this.guna2HtmlLabel2.BackColor = System.Drawing.Color.Transparent;
             this.guna2HtmlLabel2.Font = new System.Drawing.Font("Segoe UI Semibold", 8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guna2HtmlLabel2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(39)))), ((int)(((byte)(51)))));
-            this.guna2HtmlLabel2.Location = new System.Drawing.Point(890, 24);
+            this.guna2HtmlLabel2.Location = new System.Drawing.Point(970, 17);
             this.guna2HtmlLabel2.Name = "guna2HtmlLabel2";
-            this.guna2HtmlLabel2.Size = new System.Drawing.Size(122, 19);
+            this.guna2HtmlLabel2.Size = new System.Drawing.Size(102, 19);
             this.guna2HtmlLabel2.TabIndex = 2;
-            this.guna2HtmlLabel2.Text = "Nguyễn Cao Cường";
+            this.guna2HtmlLabel2.Text = "Xin chào, Admin";
             this.guna2HtmlLabel2.TextAlignment = System.Drawing.ContentAlignment.TopRight;
-            // 
-            // guna2CirclePictureBox1
-            // 
-            this.guna2CirclePictureBox1.Image = global::TimKiemNhaTro.Properties.Resources.suzy2;
-            this.guna2CirclePictureBox1.Location = new System.Drawing.Point(1018, 12);
-            this.guna2CirclePictureBox1.Name = "guna2CirclePictureBox1";
-            this.guna2CirclePictureBox1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.guna2CirclePictureBox1.ShadowDecoration.Parent = this.guna2CirclePictureBox1;
-            this.guna2CirclePictureBox1.Size = new System.Drawing.Size(40, 36);
-            this.guna2CirclePictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.guna2CirclePictureBox1.TabIndex = 1;
-            this.guna2CirclePictureBox1.TabStop = false;
             // 
             // lblPage
             // 
@@ -340,14 +325,15 @@ namespace TimKiemNhaTro
             this.Controls.Add(this.pnlMain);
             this.Controls.Add(this.pnlHeader);
             this.Controls.Add(this.pnlSideBar);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "frmAdmin";
+            this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "frmAdmin";
+            this.Load += new System.EventHandler(this.frmAdmin_Load);
             this.pnlSideBar.ResumeLayout(false);
             this.pnlHeader.ResumeLayout(false);
             this.pnlHeader.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).EndInit();
             this.pnlMain.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -363,7 +349,6 @@ namespace TimKiemNhaTro
         private Guna.UI2.WinForms.Guna2Button btnCaNhan;
         private Guna.UI2.WinForms.Guna2Button btnDangXuat;
         private System.Windows.Forms.Panel pnlHeader;
-        private Guna.UI2.WinForms.Guna2CirclePictureBox guna2CirclePictureBox1;
         private Guna.UI2.WinForms.Guna2HtmlLabel lblPage;
         private System.Windows.Forms.Panel pnlMain;
         private Guna.UI2.WinForms.Guna2HtmlLabel guna2HtmlLabel2;

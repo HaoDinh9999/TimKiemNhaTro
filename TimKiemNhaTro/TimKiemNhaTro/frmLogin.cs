@@ -49,6 +49,11 @@ namespace TimKiemNhaTro
                 return;
 
             }
+            if (nguoiDung.biVoHieu == 1)
+            {
+                MessageBox.Show("Tài khoản của bạn đã bị vô hiệu hóa!");
+                return;
+            }
             MessageBox.Show("Đăng nhập thành công");
             if (nguoiDung.maNhom == 2)
             {

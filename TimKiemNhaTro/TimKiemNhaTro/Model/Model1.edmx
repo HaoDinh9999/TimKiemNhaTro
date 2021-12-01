@@ -4,7 +4,7 @@
   <edmx:Runtime>
     <!-- SSDL content -->
     <edmx:StorageModels>
-    <Schema Namespace="XQ0Qgj8xlHModel.Store" Provider="MySql.Data.MySqlClient" ProviderManifestToken="8.0" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+      <Schema Namespace="XQ0Qgj8xlHModel.Store" Provider="MySql.Data.MySqlClient" ProviderManifestToken="8.0" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
         <EntityType Name="AnhNha">
           <Key>
             <PropertyRef Name="maAnhNha" />
@@ -56,6 +56,7 @@
           <Property Name="email" Type="varchar" MaxLength="128" Nullable="false" />
           <Property Name="matKhau" Type="varchar" MaxLength="128" Nullable="false" />
           <Property Name="hoTen" Type="varchar" MaxLength="128" />
+          <Property Name="sdt" Type="varchar" MaxLength="15" />
           <Property Name="urlDaiDien" Type="varchar" MaxLength="1000" />
           <Property Name="biVoHieu" Type="tinyint" Nullable="false" />
         </EntityType>
@@ -235,52 +236,11 @@
             <End Role="YeuThich" EntitySet="YeuThich" />
           </AssociationSet>
         </EntityContainer>
-      </Schema></edmx:StorageModels>
+      </Schema>
+    </edmx:StorageModels>
     <!-- CSDL content -->
     <edmx:ConceptualModels>
       <Schema Namespace="XQ0Qgj8xlHModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
-        <EntityContainer Name="XQ0Qgj8xlHEntities" annotation:LazyLoadingEnabled="true">
-          <EntitySet Name="AnhNhas" EntityType="XQ0Qgj8xlHModel.AnhNha" />
-          <EntitySet Name="CoSoVatChats" EntityType="XQ0Qgj8xlHModel.CoSoVatChat" />
-          <EntitySet Name="DanhGias" EntityType="XQ0Qgj8xlHModel.DanhGia" />
-          <EntitySet Name="LoaiChoThues" EntityType="XQ0Qgj8xlHModel.LoaiChoThue" />
-          <EntitySet Name="NguoiDungs" EntityType="XQ0Qgj8xlHModel.NguoiDung" />
-          <EntitySet Name="Nhas" EntityType="XQ0Qgj8xlHModel.Nha" />
-          <EntitySet Name="TinTucs" EntityType="XQ0Qgj8xlHModel.TinTuc" />
-          <EntitySet Name="YeuThiches" EntityType="XQ0Qgj8xlHModel.YeuThich" />
-          <AssociationSet Name="FK_Anh_maNha" Association="XQ0Qgj8xlHModel.FK_Anh_maNha">
-            <End Role="Nha" EntitySet="Nhas" />
-            <End Role="AnhNha" EntitySet="AnhNhas" />
-          </AssociationSet>
-          <AssociationSet Name="maCoSoVatChat" Association="XQ0Qgj8xlHModel.maCoSoVatChat">
-            <End Role="CoSoVatChat" EntitySet="CoSoVatChats" />
-            <End Role="Nha" EntitySet="Nhas" />
-          </AssociationSet>
-          <AssociationSet Name="maNguoiDanhGia" Association="XQ0Qgj8xlHModel.maNguoiDanhGia">
-            <End Role="NguoiDung" EntitySet="NguoiDungs" />
-            <End Role="DanhGia" EntitySet="DanhGias" />
-          </AssociationSet>
-          <AssociationSet Name="maNha" Association="XQ0Qgj8xlHModel.maNha">
-            <End Role="Nha" EntitySet="Nhas" />
-            <End Role="DanhGia" EntitySet="DanhGias" />
-          </AssociationSet>
-          <AssociationSet Name="maLoaiChoThue" Association="XQ0Qgj8xlHModel.maLoaiChoThue">
-            <End Role="LoaiChoThue" EntitySet="LoaiChoThues" />
-            <End Role="Nha" EntitySet="Nhas" />
-          </AssociationSet>
-          <AssociationSet Name="maNguoiDung" Association="XQ0Qgj8xlHModel.maNguoiDung">
-            <End Role="NguoiDung" EntitySet="NguoiDungs" />
-            <End Role="Nha" EntitySet="Nhas" />
-          </AssociationSet>
-          <AssociationSet Name="maNguoiThich" Association="XQ0Qgj8xlHModel.maNguoiThich">
-            <End Role="NguoiDung" EntitySet="NguoiDungs" />
-            <End Role="YeuThich" EntitySet="YeuThiches" />
-          </AssociationSet>
-          <AssociationSet Name="maNhaThich" Association="XQ0Qgj8xlHModel.maNhaThich">
-            <End Role="Nha" EntitySet="Nhas" />
-            <End Role="YeuThich" EntitySet="YeuThiches" />
-          </AssociationSet>
-        </EntityContainer>
         <EntityType Name="AnhNha">
           <Key>
             <PropertyRef Name="maAnhNha" />
@@ -288,7 +248,7 @@
           <Property Name="maAnhNha" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="maNha" Type="Int32" Nullable="false" />
           <Property Name="duongDan" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
-          <NavigationProperty Name="Nha" Relationship="XQ0Qgj8xlHModel.FK_Anh_maNha" FromRole="AnhNha" ToRole="Nha" />
+          <NavigationProperty Name="Nha" Relationship="Self.FK_Anh_maNha" FromRole="AnhNha" ToRole="Nha" />
         </EntityType>
         <EntityType Name="CoSoVatChat">
           <Key>
@@ -306,7 +266,7 @@
           <Property Name="mayGiat" Type="Boolean" />
           <Property Name="noiThat" Type="Boolean" />
           <Property Name="nuoiThuCung" Type="Boolean" />
-          <NavigationProperty Name="Nhas" Relationship="XQ0Qgj8xlHModel.maCoSoVatChat" FromRole="CoSoVatChat" ToRole="Nha" />
+          <NavigationProperty Name="Nhas" Relationship="Self.maCoSoVatChat" FromRole="CoSoVatChat" ToRole="Nha" />
         </EntityType>
         <EntityType Name="DanhGia">
           <Key>
@@ -317,8 +277,8 @@
           <Property Name="maNha" Type="Int32" Nullable="false" />
           <Property Name="soSao" Type="Int32" />
           <Property Name="noiDung" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
-          <NavigationProperty Name="NguoiDung" Relationship="XQ0Qgj8xlHModel.maNguoiDanhGia" FromRole="DanhGia" ToRole="NguoiDung" />
-          <NavigationProperty Name="Nha" Relationship="XQ0Qgj8xlHModel.maNha" FromRole="DanhGia" ToRole="Nha" />
+          <NavigationProperty Name="NguoiDung" Relationship="Self.maNguoiDanhGia" FromRole="DanhGia" ToRole="NguoiDung" />
+          <NavigationProperty Name="Nha" Relationship="Self.maNha" FromRole="DanhGia" ToRole="Nha" />
         </EntityType>
         <EntityType Name="LoaiChoThue">
           <Key>
@@ -326,7 +286,7 @@
           </Key>
           <Property Name="maLoaiChoThue" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="tenLoaiChoThue" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
-          <NavigationProperty Name="Nhas" Relationship="XQ0Qgj8xlHModel.maLoaiChoThue" FromRole="LoaiChoThue" ToRole="Nha" />
+          <NavigationProperty Name="Nhas" Relationship="Self.maLoaiChoThue" FromRole="LoaiChoThue" ToRole="Nha" />
         </EntityType>
         <EntityType Name="NguoiDung">
           <Key>
@@ -334,14 +294,15 @@
           </Key>
           <Property Name="maNguoiDung" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="maNhom" Type="Int32" Nullable="false" />
-          <Property Name="email" Type="String" Nullable="false" MaxLength="128" FixedLength="false" Unicode="false" />
-          <Property Name="matKhau" Type="String" Nullable="false" MaxLength="128" FixedLength="false" Unicode="false" />
+          <Property Name="email" Type="String" MaxLength="128" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="matKhau" Type="String" MaxLength="128" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="hoTen" Type="String" MaxLength="128" FixedLength="false" Unicode="false" />
+          <Property Name="sdt" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
           <Property Name="urlDaiDien" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
-          <NavigationProperty Name="DanhGias" Relationship="XQ0Qgj8xlHModel.maNguoiDanhGia" FromRole="NguoiDung" ToRole="DanhGia" />
-          <NavigationProperty Name="Nhas" Relationship="XQ0Qgj8xlHModel.maNguoiDung" FromRole="NguoiDung" ToRole="Nha" />
-          <NavigationProperty Name="YeuThiches" Relationship="XQ0Qgj8xlHModel.maNguoiThich" FromRole="NguoiDung" ToRole="YeuThich" />
           <Property Name="biVoHieu" Type="SByte" Nullable="false" />
+          <NavigationProperty Name="DanhGias" Relationship="Self.maNguoiDanhGia" FromRole="NguoiDung" ToRole="DanhGia" />
+          <NavigationProperty Name="Nhas" Relationship="Self.maNguoiDung" FromRole="NguoiDung" ToRole="Nha" />
+          <NavigationProperty Name="YeuThiches" Relationship="Self.maNguoiThich" FromRole="NguoiDung" ToRole="YeuThich" />
         </EntityType>
         <EntityType Name="Nha">
           <Key>
@@ -356,28 +317,28 @@
           <Property Name="dienTich" Type="Decimal" />
           <Property Name="tinhTrang" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
           <Property Name="soNha" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
-          <Property Name="tenDuong" Type="String" Nullable="false" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="tenDuong" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="phuongXa" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
           <Property Name="quanHuyen" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
           <Property Name="moTa" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
           <Property Name="TienNha" Type="Decimal" />
-          <Property Name="ngayCapNhat" Type="DateTime" Nullable="false" annotation:StoreGeneratedPattern="None" />
-          <NavigationProperty Name="AnhNhas" Relationship="XQ0Qgj8xlHModel.FK_Anh_maNha" FromRole="Nha" ToRole="AnhNha" />
-          <NavigationProperty Name="CoSoVatChat" Relationship="XQ0Qgj8xlHModel.maCoSoVatChat" FromRole="Nha" ToRole="CoSoVatChat" />
-          <NavigationProperty Name="DanhGias" Relationship="XQ0Qgj8xlHModel.maNha" FromRole="Nha" ToRole="DanhGia" />
-          <NavigationProperty Name="LoaiChoThue" Relationship="XQ0Qgj8xlHModel.maLoaiChoThue" FromRole="Nha" ToRole="LoaiChoThue" />
-          <NavigationProperty Name="NguoiDung" Relationship="XQ0Qgj8xlHModel.maNguoiDung" FromRole="Nha" ToRole="NguoiDung" />
-          <NavigationProperty Name="YeuThiches" Relationship="XQ0Qgj8xlHModel.maNhaThich" FromRole="Nha" ToRole="YeuThich" />
+          <Property Name="ngayCapNhat" Type="DateTime" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <NavigationProperty Name="AnhNhas" Relationship="Self.FK_Anh_maNha" FromRole="Nha" ToRole="AnhNha" />
+          <NavigationProperty Name="CoSoVatChat" Relationship="Self.maCoSoVatChat" FromRole="Nha" ToRole="CoSoVatChat" />
+          <NavigationProperty Name="DanhGias" Relationship="Self.maNha" FromRole="Nha" ToRole="DanhGia" />
+          <NavigationProperty Name="LoaiChoThue" Relationship="Self.maLoaiChoThue" FromRole="Nha" ToRole="LoaiChoThue" />
+          <NavigationProperty Name="NguoiDung" Relationship="Self.maNguoiDung" FromRole="Nha" ToRole="NguoiDung" />
+          <NavigationProperty Name="YeuThiches" Relationship="Self.maNhaThich" FromRole="Nha" ToRole="YeuThich" />
         </EntityType>
         <EntityType Name="TinTuc">
           <Key>
             <PropertyRef Name="maTinTuc" />
           </Key>
           <Property Name="maTinTuc" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
-          <Property Name="tieuDe" Type="String" Nullable="false" MaxLength="1000" FixedLength="false" Unicode="false" />
-          <Property Name="trichDan" Type="String" Nullable="false" MaxLength="1000" FixedLength="false" Unicode="false" />
-          <Property Name="urlBao" Type="String" Nullable="false" MaxLength="1000" FixedLength="false" Unicode="false" />
-          <Property Name="urlAnh" Type="String" Nullable="false" MaxLength="1000" FixedLength="false" Unicode="false" />
+          <Property Name="tieuDe" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="trichDan" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="urlBao" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="urlAnh" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" Nullable="false" />
         </EntityType>
         <EntityType Name="YeuThich">
           <Key>
@@ -386,12 +347,12 @@
           <Property Name="maYeuThich" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="maNguoiDung" Type="Int32" Nullable="false" />
           <Property Name="maNha" Type="Int32" Nullable="false" />
-          <NavigationProperty Name="NguoiDung" Relationship="XQ0Qgj8xlHModel.maNguoiThich" FromRole="YeuThich" ToRole="NguoiDung" />
-          <NavigationProperty Name="Nha" Relationship="XQ0Qgj8xlHModel.maNhaThich" FromRole="YeuThich" ToRole="Nha" />
+          <NavigationProperty Name="NguoiDung" Relationship="Self.maNguoiThich" FromRole="YeuThich" ToRole="NguoiDung" />
+          <NavigationProperty Name="Nha" Relationship="Self.maNhaThich" FromRole="YeuThich" ToRole="Nha" />
         </EntityType>
         <Association Name="FK_Anh_maNha">
-          <End Type="XQ0Qgj8xlHModel.Nha" Role="Nha" Multiplicity="1" />
-          <End Type="XQ0Qgj8xlHModel.AnhNha" Role="AnhNha" Multiplicity="*" />
+          <End Role="Nha" Type="Self.Nha" Multiplicity="1" />
+          <End Role="AnhNha" Type="Self.AnhNha" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="Nha">
               <PropertyRef Name="maNha" />
@@ -402,8 +363,8 @@
           </ReferentialConstraint>
         </Association>
         <Association Name="maCoSoVatChat">
-          <End Type="XQ0Qgj8xlHModel.CoSoVatChat" Role="CoSoVatChat" Multiplicity="1" />
-          <End Type="XQ0Qgj8xlHModel.Nha" Role="Nha" Multiplicity="*" />
+          <End Role="CoSoVatChat" Type="Self.CoSoVatChat" Multiplicity="1" />
+          <End Role="Nha" Type="Self.Nha" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="CoSoVatChat">
               <PropertyRef Name="maCoSoVatChat" />
@@ -414,8 +375,8 @@
           </ReferentialConstraint>
         </Association>
         <Association Name="maNguoiDanhGia">
-          <End Type="XQ0Qgj8xlHModel.NguoiDung" Role="NguoiDung" Multiplicity="1" />
-          <End Type="XQ0Qgj8xlHModel.DanhGia" Role="DanhGia" Multiplicity="*" />
+          <End Role="NguoiDung" Type="Self.NguoiDung" Multiplicity="1" />
+          <End Role="DanhGia" Type="Self.DanhGia" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="NguoiDung">
               <PropertyRef Name="maNguoiDung" />
@@ -426,8 +387,8 @@
           </ReferentialConstraint>
         </Association>
         <Association Name="maNha">
-          <End Type="XQ0Qgj8xlHModel.Nha" Role="Nha" Multiplicity="1" />
-          <End Type="XQ0Qgj8xlHModel.DanhGia" Role="DanhGia" Multiplicity="*" />
+          <End Role="Nha" Type="Self.Nha" Multiplicity="1" />
+          <End Role="DanhGia" Type="Self.DanhGia" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="Nha">
               <PropertyRef Name="maNha" />
@@ -438,8 +399,8 @@
           </ReferentialConstraint>
         </Association>
         <Association Name="maLoaiChoThue">
-          <End Type="XQ0Qgj8xlHModel.LoaiChoThue" Role="LoaiChoThue" Multiplicity="0..1" />
-          <End Type="XQ0Qgj8xlHModel.Nha" Role="Nha" Multiplicity="*" />
+          <End Role="LoaiChoThue" Type="Self.LoaiChoThue" Multiplicity="0..1" />
+          <End Role="Nha" Type="Self.Nha" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="LoaiChoThue">
               <PropertyRef Name="maLoaiChoThue" />
@@ -450,8 +411,8 @@
           </ReferentialConstraint>
         </Association>
         <Association Name="maNguoiDung">
-          <End Type="XQ0Qgj8xlHModel.NguoiDung" Role="NguoiDung" Multiplicity="1" />
-          <End Type="XQ0Qgj8xlHModel.Nha" Role="Nha" Multiplicity="*" />
+          <End Role="NguoiDung" Type="Self.NguoiDung" Multiplicity="1" />
+          <End Role="Nha" Type="Self.Nha" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="NguoiDung">
               <PropertyRef Name="maNguoiDung" />
@@ -462,8 +423,8 @@
           </ReferentialConstraint>
         </Association>
         <Association Name="maNguoiThich">
-          <End Type="XQ0Qgj8xlHModel.NguoiDung" Role="NguoiDung" Multiplicity="1" />
-          <End Type="XQ0Qgj8xlHModel.YeuThich" Role="YeuThich" Multiplicity="*" />
+          <End Role="NguoiDung" Type="Self.NguoiDung" Multiplicity="1" />
+          <End Role="YeuThich" Type="Self.YeuThich" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="NguoiDung">
               <PropertyRef Name="maNguoiDung" />
@@ -474,8 +435,8 @@
           </ReferentialConstraint>
         </Association>
         <Association Name="maNhaThich">
-          <End Type="XQ0Qgj8xlHModel.Nha" Role="Nha" Multiplicity="1" />
-          <End Type="XQ0Qgj8xlHModel.YeuThich" Role="YeuThich" Multiplicity="*" />
+          <End Role="Nha" Type="Self.Nha" Multiplicity="1" />
+          <End Role="YeuThich" Type="Self.YeuThich" Multiplicity="*" />
           <ReferentialConstraint>
             <Principal Role="Nha">
               <PropertyRef Name="maNha" />
@@ -485,7 +446,49 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
-        </Schema>
+        <EntityContainer Name="XQ0Qgj8xlHEntities" annotation:LazyLoadingEnabled="true">
+          <EntitySet Name="AnhNhas" EntityType="Self.AnhNha" />
+          <EntitySet Name="CoSoVatChats" EntityType="Self.CoSoVatChat" />
+          <EntitySet Name="DanhGias" EntityType="Self.DanhGia" />
+          <EntitySet Name="LoaiChoThues" EntityType="Self.LoaiChoThue" />
+          <EntitySet Name="NguoiDungs" EntityType="Self.NguoiDung" />
+          <EntitySet Name="Nhas" EntityType="Self.Nha" />
+          <EntitySet Name="TinTucs" EntityType="Self.TinTuc" />
+          <EntitySet Name="YeuThiches" EntityType="Self.YeuThich" />
+          <AssociationSet Name="FK_Anh_maNha" Association="Self.FK_Anh_maNha">
+            <End Role="Nha" EntitySet="Nhas" />
+            <End Role="AnhNha" EntitySet="AnhNhas" />
+          </AssociationSet>
+          <AssociationSet Name="maCoSoVatChat" Association="Self.maCoSoVatChat">
+            <End Role="CoSoVatChat" EntitySet="CoSoVatChats" />
+            <End Role="Nha" EntitySet="Nhas" />
+          </AssociationSet>
+          <AssociationSet Name="maNguoiDanhGia" Association="Self.maNguoiDanhGia">
+            <End Role="NguoiDung" EntitySet="NguoiDungs" />
+            <End Role="DanhGia" EntitySet="DanhGias" />
+          </AssociationSet>
+          <AssociationSet Name="maNha" Association="Self.maNha">
+            <End Role="Nha" EntitySet="Nhas" />
+            <End Role="DanhGia" EntitySet="DanhGias" />
+          </AssociationSet>
+          <AssociationSet Name="maLoaiChoThue" Association="Self.maLoaiChoThue">
+            <End Role="LoaiChoThue" EntitySet="LoaiChoThues" />
+            <End Role="Nha" EntitySet="Nhas" />
+          </AssociationSet>
+          <AssociationSet Name="maNguoiDung" Association="Self.maNguoiDung">
+            <End Role="NguoiDung" EntitySet="NguoiDungs" />
+            <End Role="Nha" EntitySet="Nhas" />
+          </AssociationSet>
+          <AssociationSet Name="maNguoiThich" Association="Self.maNguoiThich">
+            <End Role="NguoiDung" EntitySet="NguoiDungs" />
+            <End Role="YeuThich" EntitySet="YeuThiches" />
+          </AssociationSet>
+          <AssociationSet Name="maNhaThich" Association="Self.maNhaThich">
+            <End Role="Nha" EntitySet="Nhas" />
+            <End Role="YeuThich" EntitySet="YeuThiches" />
+          </AssociationSet>
+        </EntityContainer>
+      </Schema>
     </edmx:ConceptualModels>
     <!-- C-S mapping content -->
     <edmx:Mappings>
@@ -494,99 +497,100 @@
           <EntitySetMapping Name="AnhNhas">
             <EntityTypeMapping TypeName="XQ0Qgj8xlHModel.AnhNha">
               <MappingFragment StoreEntitySet="AnhNha">
-                <ScalarProperty Name="duongDan" ColumnName="duongDan" />
-                <ScalarProperty Name="maNha" ColumnName="maNha" />
                 <ScalarProperty Name="maAnhNha" ColumnName="maAnhNha" />
+                <ScalarProperty Name="maNha" ColumnName="maNha" />
+                <ScalarProperty Name="duongDan" ColumnName="duongDan" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="CoSoVatChats">
             <EntityTypeMapping TypeName="XQ0Qgj8xlHModel.CoSoVatChat">
               <MappingFragment StoreEntitySet="CoSoVatChat">
-                <ScalarProperty Name="nuoiThuCung" ColumnName="nuoiThuCung" />
-                <ScalarProperty Name="noiThat" ColumnName="noiThat" />
-                <ScalarProperty Name="mayGiat" ColumnName="mayGiat" />
-                <ScalarProperty Name="hoBoi" ColumnName="hoBoi" />
-                <ScalarProperty Name="sanThuong" ColumnName="sanThuong" />
-                <ScalarProperty Name="gacLung" ColumnName="gacLung" />
-                <ScalarProperty Name="dieuHoa" ColumnName="dieuHoa" />
-                <ScalarProperty Name="cctv" ColumnName="cctv" />
-                <ScalarProperty Name="baoVe" ColumnName="baoVe" />
-                <ScalarProperty Name="banCong" ColumnName="banCong" />
-                <ScalarProperty Name="baiDauXe" ColumnName="baiDauXe" />
                 <ScalarProperty Name="maCoSoVatChat" ColumnName="maCoSoVatChat" />
+                <ScalarProperty Name="baiDauXe" ColumnName="baiDauXe" />
+                <ScalarProperty Name="banCong" ColumnName="banCong" />
+                <ScalarProperty Name="baoVe" ColumnName="baoVe" />
+                <ScalarProperty Name="cctv" ColumnName="cctv" />
+                <ScalarProperty Name="dieuHoa" ColumnName="dieuHoa" />
+                <ScalarProperty Name="gacLung" ColumnName="gacLung" />
+                <ScalarProperty Name="sanThuong" ColumnName="sanThuong" />
+                <ScalarProperty Name="hoBoi" ColumnName="hoBoi" />
+                <ScalarProperty Name="mayGiat" ColumnName="mayGiat" />
+                <ScalarProperty Name="noiThat" ColumnName="noiThat" />
+                <ScalarProperty Name="nuoiThuCung" ColumnName="nuoiThuCung" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="DanhGias">
             <EntityTypeMapping TypeName="XQ0Qgj8xlHModel.DanhGia">
               <MappingFragment StoreEntitySet="DanhGia">
-                <ScalarProperty Name="noiDung" ColumnName="noiDung" />
-                <ScalarProperty Name="soSao" ColumnName="soSao" />
-                <ScalarProperty Name="maNha" ColumnName="maNha" />
                 <ScalarProperty Name="maNguoiDung" ColumnName="maNguoiDung" />
+                <ScalarProperty Name="maNha" ColumnName="maNha" />
+                <ScalarProperty Name="soSao" ColumnName="soSao" />
+                <ScalarProperty Name="noiDung" ColumnName="noiDung" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="LoaiChoThues">
             <EntityTypeMapping TypeName="XQ0Qgj8xlHModel.LoaiChoThue">
               <MappingFragment StoreEntitySet="LoaiChoThue">
-                <ScalarProperty Name="tenLoaiChoThue" ColumnName="tenLoaiChoThue" />
                 <ScalarProperty Name="maLoaiChoThue" ColumnName="maLoaiChoThue" />
+                <ScalarProperty Name="tenLoaiChoThue" ColumnName="tenLoaiChoThue" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="NguoiDungs">
             <EntityTypeMapping TypeName="XQ0Qgj8xlHModel.NguoiDung">
               <MappingFragment StoreEntitySet="NguoiDung">
-                <ScalarProperty Name="biVoHieu" ColumnName="biVoHieu" />
-                <ScalarProperty Name="urlDaiDien" ColumnName="urlDaiDien" />
-                <ScalarProperty Name="hoTen" ColumnName="hoTen" />
-                <ScalarProperty Name="matKhau" ColumnName="matKhau" />
-                <ScalarProperty Name="email" ColumnName="email" />
-                <ScalarProperty Name="maNhom" ColumnName="maNhom" />
                 <ScalarProperty Name="maNguoiDung" ColumnName="maNguoiDung" />
+                <ScalarProperty Name="maNhom" ColumnName="maNhom" />
+                <ScalarProperty Name="email" ColumnName="email" />
+                <ScalarProperty Name="matKhau" ColumnName="matKhau" />
+                <ScalarProperty Name="hoTen" ColumnName="hoTen" />
+                <ScalarProperty Name="sdt" ColumnName="sdt" />
+                <ScalarProperty Name="urlDaiDien" ColumnName="urlDaiDien" />
+                <ScalarProperty Name="biVoHieu" ColumnName="biVoHieu" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="Nhas">
             <EntityTypeMapping TypeName="XQ0Qgj8xlHModel.Nha">
               <MappingFragment StoreEntitySet="Nha">
-                <ScalarProperty Name="ngayCapNhat" ColumnName="ngayCapNhat" />
-                <ScalarProperty Name="TienNha" ColumnName="TienNha" />
-                <ScalarProperty Name="moTa" ColumnName="moTa" />
-                <ScalarProperty Name="quanHuyen" ColumnName="quanHuyen" />
-                <ScalarProperty Name="phuongXa" ColumnName="phuongXa" />
-                <ScalarProperty Name="tenDuong" ColumnName="tenDuong" />
-                <ScalarProperty Name="soNha" ColumnName="soNha" />
-                <ScalarProperty Name="tinhTrang" ColumnName="tinhTrang" />
-                <ScalarProperty Name="dienTich" ColumnName="dienTich" />
-                <ScalarProperty Name="soPhongTam" ColumnName="soPhongTam" />
-                <ScalarProperty Name="soPhongNgu" ColumnName="soPhongNgu" />
-                <ScalarProperty Name="maLoaiChoThue" ColumnName="maLoaiChoThue" />
-                <ScalarProperty Name="maCoSoVatChat" ColumnName="maCoSoVatChat" />
-                <ScalarProperty Name="maChuNha" ColumnName="maChuNha" />
                 <ScalarProperty Name="maNha" ColumnName="maNha" />
+                <ScalarProperty Name="maChuNha" ColumnName="maChuNha" />
+                <ScalarProperty Name="maCoSoVatChat" ColumnName="maCoSoVatChat" />
+                <ScalarProperty Name="maLoaiChoThue" ColumnName="maLoaiChoThue" />
+                <ScalarProperty Name="soPhongNgu" ColumnName="soPhongNgu" />
+                <ScalarProperty Name="soPhongTam" ColumnName="soPhongTam" />
+                <ScalarProperty Name="dienTich" ColumnName="dienTich" />
+                <ScalarProperty Name="tinhTrang" ColumnName="tinhTrang" />
+                <ScalarProperty Name="soNha" ColumnName="soNha" />
+                <ScalarProperty Name="tenDuong" ColumnName="tenDuong" />
+                <ScalarProperty Name="phuongXa" ColumnName="phuongXa" />
+                <ScalarProperty Name="quanHuyen" ColumnName="quanHuyen" />
+                <ScalarProperty Name="moTa" ColumnName="moTa" />
+                <ScalarProperty Name="TienNha" ColumnName="TienNha" />
+                <ScalarProperty Name="ngayCapNhat" ColumnName="ngayCapNhat" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="TinTucs">
             <EntityTypeMapping TypeName="XQ0Qgj8xlHModel.TinTuc">
               <MappingFragment StoreEntitySet="TinTuc">
-                <ScalarProperty Name="urlAnh" ColumnName="urlAnh" />
-                <ScalarProperty Name="urlBao" ColumnName="urlBao" />
-                <ScalarProperty Name="trichDan" ColumnName="trichDan" />
-                <ScalarProperty Name="tieuDe" ColumnName="tieuDe" />
                 <ScalarProperty Name="maTinTuc" ColumnName="maTinTuc" />
+                <ScalarProperty Name="tieuDe" ColumnName="tieuDe" />
+                <ScalarProperty Name="trichDan" ColumnName="trichDan" />
+                <ScalarProperty Name="urlBao" ColumnName="urlBao" />
+                <ScalarProperty Name="urlAnh" ColumnName="urlAnh" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
           <EntitySetMapping Name="YeuThiches">
             <EntityTypeMapping TypeName="XQ0Qgj8xlHModel.YeuThich">
               <MappingFragment StoreEntitySet="YeuThich">
-                <ScalarProperty Name="maNha" ColumnName="maNha" />
-                <ScalarProperty Name="maNguoiDung" ColumnName="maNguoiDung" />
                 <ScalarProperty Name="maYeuThich" ColumnName="maYeuThich" />
+                <ScalarProperty Name="maNguoiDung" ColumnName="maNguoiDung" />
+                <ScalarProperty Name="maNha" ColumnName="maNha" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>

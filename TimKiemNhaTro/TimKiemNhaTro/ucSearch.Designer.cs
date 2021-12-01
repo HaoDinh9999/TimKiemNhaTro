@@ -371,7 +371,7 @@ namespace TimKiemNhaTro
             this.cboLoaiHinh.ItemHeight = 30;
             this.cboLoaiHinh.Items.AddRange(new object[] {
             "Nhà",
-            "Căn Hộ",
+            "Căn hộ",
             "Phòng"});
             this.cboLoaiHinh.ItemsAppearance.Parent = this.cboLoaiHinh;
             this.cboLoaiHinh.Location = new System.Drawing.Point(895, 88);

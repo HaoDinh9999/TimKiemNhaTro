@@ -32,6 +32,17 @@ namespace TimKiemNhaTro
             InitializeComponent();
             _userDetailHome = ng;
         }
+        public void reloadColorDetail(Color clr)
+        {
+            if (clr == Color.White)
+            {
+                this.BackColor = Color.WhiteSmoke;
+            }
+            else
+            {
+                this.BackColor = clr;
+            }
+        }
         public void setIdMaNha(int ID)
         {
             _idMaNha = ID;

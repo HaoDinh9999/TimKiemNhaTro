@@ -24,7 +24,10 @@ namespace TimKiemNhaTro
             frmM.getUCTinTuc().setURL(_duongDanBao);
             frmM.setUCTinTucBringtoFront();
         }
-
+        public void reloadTinTucColor()
+        {
+            this.BackColor = frmM.nenColor;
+        }
         public ucCardTinTuc(frmMain frm,string title,string content,string duongDanAnh,string duongDanBao)
         {
             InitializeComponent();

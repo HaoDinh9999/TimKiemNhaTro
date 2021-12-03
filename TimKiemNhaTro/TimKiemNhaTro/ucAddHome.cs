@@ -27,6 +27,10 @@ namespace TimKiemNhaTro
         List<string> fileList = new List<string>();
         public int maLoaiNha = 0, soPhongNgu = 0, soPhongTam = 0;
         public bool baixe = false, bancong = false, baove = false, cctv = false, dieuhoa = false, gaclung = false, santhuong = false, hoboi = false, maygiat = false, noithat = false, nuoithucung = false;
+       public void reloadColor(Color clr)
+        {
+            this.BackColor = clr;
+        }
         private void ucAddHome_Load(object sender, EventArgs e)
         {
             listt.Add(new Districts("Quận 1", Quan1));
@@ -111,6 +115,10 @@ namespace TimKiemNhaTro
             {
                 btnDangTin.Text = "Đăng tin";
             }
+
+            anhBiXoa.Clear();
+            fileList.Clear();
+
 
         }
         Nha nhaeidt;

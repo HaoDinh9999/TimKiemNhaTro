@@ -30,9 +30,9 @@ namespace TimKiemNhaTro
         private void InitializeComponent()
         {
             this.flwCapNhatGanNhat = new System.Windows.Forms.FlowLayoutPanel();
-            this.richTextBox1 = new System.Windows.Forms.RichTextBox();
+            this.rtxTieuDeLon = new System.Windows.Forms.RichTextBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.gunaShadowPanel3 = new Guna.UI.WinForms.GunaShadowPanel();
+            this.pnlChuTro = new Guna.UI.WinForms.GunaShadowPanel();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.panel3 = new System.Windows.Forms.Panel();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
@@ -40,7 +40,7 @@ namespace TimKiemNhaTro
             this.label6 = new System.Windows.Forms.Label();
             this.lblCountChuTro = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.gunaShadowPanel2 = new Guna.UI.WinForms.GunaShadowPanel();
+            this.pnlNguoiDung = new Guna.UI.WinForms.GunaShadowPanel();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
@@ -48,7 +48,7 @@ namespace TimKiemNhaTro
             this.label3 = new System.Windows.Forms.Label();
             this.lblCountNguoiDung = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
-            this.gunaShadowPanel1 = new Guna.UI.WinForms.GunaShadowPanel();
+            this.pnlNhaTro = new Guna.UI.WinForms.GunaShadowPanel();
             this.label4 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label13 = new System.Windows.Forms.Label();
@@ -59,7 +59,7 @@ namespace TimKiemNhaTro
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
-            this.gunaShadowPanel4 = new Guna.UI.WinForms.GunaShadowPanel();
+            this.pnlTimKiem = new Guna.UI.WinForms.GunaShadowPanel();
             this.gunaGradientButton1 = new Guna.UI.WinForms.GunaGradientButton();
             this.gunaComboBox3 = new Guna.UI.WinForms.GunaComboBox();
             this.label12 = new System.Windows.Forms.Label();
@@ -90,19 +90,19 @@ namespace TimKiemNhaTro
             this.btnBinhThanh = new Guna.UI.WinForms.GunaPictureBox();
             this.btnQuan1 = new Guna.UI.WinForms.GunaPictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.gunaShadowPanel3.SuspendLayout();
+            this.pnlChuTro.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            this.gunaShadowPanel2.SuspendLayout();
+            this.pnlNguoiDung.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
-            this.gunaShadowPanel1.SuspendLayout();
+            this.pnlNhaTro.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel7.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
-            this.gunaShadowPanel4.SuspendLayout();
+            this.pnlTimKiem.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnTanBinh)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnGoVap)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnQuan7)).BeginInit();
@@ -117,25 +117,25 @@ namespace TimKiemNhaTro
             // flwCapNhatGanNhat
             // 
             this.flwCapNhatGanNhat.AutoScroll = true;
-            this.flwCapNhatGanNhat.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.flwCapNhatGanNhat.BackColor = System.Drawing.Color.Transparent;
             this.flwCapNhatGanNhat.Location = new System.Drawing.Point(86, 1023);
             this.flwCapNhatGanNhat.Name = "flwCapNhatGanNhat";
             this.flwCapNhatGanNhat.Size = new System.Drawing.Size(1297, 371);
             this.flwCapNhatGanNhat.TabIndex = 3;
             this.flwCapNhatGanNhat.WrapContents = false;
             // 
-            // richTextBox1
+            // rtxTieuDeLon
             // 
-            this.richTextBox1.BackColor = System.Drawing.Color.White;
-            this.richTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.richTextBox1.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.richTextBox1.Location = new System.Drawing.Point(24, 27);
-            this.richTextBox1.Margin = new System.Windows.Forms.Padding(4);
-            this.richTextBox1.Name = "richTextBox1";
-            this.richTextBox1.ReadOnly = true;
-            this.richTextBox1.Size = new System.Drawing.Size(326, 159);
-            this.richTextBox1.TabIndex = 51;
-            this.richTextBox1.Text = "Làm cho\ncuộc sống của bạn\nthoải mái\nvới ";
+            this.rtxTieuDeLon.BackColor = System.Drawing.Color.White;
+            this.rtxTieuDeLon.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.rtxTieuDeLon.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rtxTieuDeLon.Location = new System.Drawing.Point(24, 27);
+            this.rtxTieuDeLon.Margin = new System.Windows.Forms.Padding(4);
+            this.rtxTieuDeLon.Name = "rtxTieuDeLon";
+            this.rtxTieuDeLon.ReadOnly = true;
+            this.rtxTieuDeLon.Size = new System.Drawing.Size(326, 159);
+            this.rtxTieuDeLon.TabIndex = 51;
+            this.rtxTieuDeLon.Text = "Làm cho\ncuộc sống của bạn\nthoải mái\nvới ";
             // 
             // label2
             // 
@@ -149,25 +149,25 @@ namespace TimKiemNhaTro
             this.label2.TabIndex = 52;
             this.label2.Text = "Rent-Finder";
             // 
-            // gunaShadowPanel3
+            // pnlChuTro
             // 
-            this.gunaShadowPanel3.BackColor = System.Drawing.Color.Transparent;
-            this.gunaShadowPanel3.BaseColor = System.Drawing.Color.White;
-            this.gunaShadowPanel3.Controls.Add(this.pictureBox4);
-            this.gunaShadowPanel3.Controls.Add(this.panel3);
-            this.gunaShadowPanel3.Controls.Add(this.label5);
-            this.gunaShadowPanel3.Controls.Add(this.label6);
-            this.gunaShadowPanel3.Controls.Add(this.lblCountChuTro);
-            this.gunaShadowPanel3.Controls.Add(this.label8);
-            this.gunaShadowPanel3.EdgeWidth = 1;
-            this.gunaShadowPanel3.Location = new System.Drawing.Point(368, 21);
-            this.gunaShadowPanel3.Margin = new System.Windows.Forms.Padding(4);
-            this.gunaShadowPanel3.Name = "gunaShadowPanel3";
-            this.gunaShadowPanel3.Radius = 2;
-            this.gunaShadowPanel3.ShadowColor = System.Drawing.Color.Silver;
-            this.gunaShadowPanel3.ShadowShift = 10;
-            this.gunaShadowPanel3.Size = new System.Drawing.Size(351, 180);
-            this.gunaShadowPanel3.TabIndex = 61;
+            this.pnlChuTro.BackColor = System.Drawing.Color.Transparent;
+            this.pnlChuTro.BaseColor = System.Drawing.Color.White;
+            this.pnlChuTro.Controls.Add(this.pictureBox4);
+            this.pnlChuTro.Controls.Add(this.panel3);
+            this.pnlChuTro.Controls.Add(this.label5);
+            this.pnlChuTro.Controls.Add(this.label6);
+            this.pnlChuTro.Controls.Add(this.lblCountChuTro);
+            this.pnlChuTro.Controls.Add(this.label8);
+            this.pnlChuTro.EdgeWidth = 1;
+            this.pnlChuTro.Location = new System.Drawing.Point(368, 21);
+            this.pnlChuTro.Margin = new System.Windows.Forms.Padding(4);
+            this.pnlChuTro.Name = "pnlChuTro";
+            this.pnlChuTro.Radius = 2;
+            this.pnlChuTro.ShadowColor = System.Drawing.Color.Silver;
+            this.pnlChuTro.ShadowShift = 10;
+            this.pnlChuTro.Size = new System.Drawing.Size(351, 180);
+            this.pnlChuTro.TabIndex = 61;
             // 
             // pictureBox4
             // 
@@ -217,7 +217,7 @@ namespace TimKiemNhaTro
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.DimGray;
+            this.label6.ForeColor = System.Drawing.Color.Black;
             this.label6.Location = new System.Drawing.Point(169, 14);
             this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
@@ -249,25 +249,25 @@ namespace TimKiemNhaTro
             this.label8.TabIndex = 8;
             this.label8.Text = "Người";
             // 
-            // gunaShadowPanel2
+            // pnlNguoiDung
             // 
-            this.gunaShadowPanel2.BackColor = System.Drawing.Color.Transparent;
-            this.gunaShadowPanel2.BaseColor = System.Drawing.Color.White;
-            this.gunaShadowPanel2.Controls.Add(this.pictureBox3);
-            this.gunaShadowPanel2.Controls.Add(this.panel2);
-            this.gunaShadowPanel2.Controls.Add(this.label1);
-            this.gunaShadowPanel2.Controls.Add(this.label3);
-            this.gunaShadowPanel2.Controls.Add(this.lblCountNguoiDung);
-            this.gunaShadowPanel2.Controls.Add(this.label17);
-            this.gunaShadowPanel2.EdgeWidth = 1;
-            this.gunaShadowPanel2.Location = new System.Drawing.Point(368, 208);
-            this.gunaShadowPanel2.Margin = new System.Windows.Forms.Padding(4);
-            this.gunaShadowPanel2.Name = "gunaShadowPanel2";
-            this.gunaShadowPanel2.Radius = 2;
-            this.gunaShadowPanel2.ShadowColor = System.Drawing.Color.Silver;
-            this.gunaShadowPanel2.ShadowShift = 10;
-            this.gunaShadowPanel2.Size = new System.Drawing.Size(351, 207);
-            this.gunaShadowPanel2.TabIndex = 60;
+            this.pnlNguoiDung.BackColor = System.Drawing.Color.Transparent;
+            this.pnlNguoiDung.BaseColor = System.Drawing.Color.White;
+            this.pnlNguoiDung.Controls.Add(this.pictureBox3);
+            this.pnlNguoiDung.Controls.Add(this.panel2);
+            this.pnlNguoiDung.Controls.Add(this.label1);
+            this.pnlNguoiDung.Controls.Add(this.label3);
+            this.pnlNguoiDung.Controls.Add(this.lblCountNguoiDung);
+            this.pnlNguoiDung.Controls.Add(this.label17);
+            this.pnlNguoiDung.EdgeWidth = 1;
+            this.pnlNguoiDung.Location = new System.Drawing.Point(368, 208);
+            this.pnlNguoiDung.Margin = new System.Windows.Forms.Padding(4);
+            this.pnlNguoiDung.Name = "pnlNguoiDung";
+            this.pnlNguoiDung.Radius = 2;
+            this.pnlNguoiDung.ShadowColor = System.Drawing.Color.Silver;
+            this.pnlNguoiDung.ShadowShift = 10;
+            this.pnlNguoiDung.Size = new System.Drawing.Size(351, 207);
+            this.pnlNguoiDung.TabIndex = 60;
             // 
             // pictureBox3
             // 
@@ -317,7 +317,7 @@ namespace TimKiemNhaTro
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.DimGray;
+            this.label3.ForeColor = System.Drawing.Color.Black;
             this.label3.Location = new System.Drawing.Point(112, 14);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
@@ -349,25 +349,25 @@ namespace TimKiemNhaTro
             this.label17.TabIndex = 8;
             this.label17.Text = "Người";
             // 
-            // gunaShadowPanel1
+            // pnlNhaTro
             // 
-            this.gunaShadowPanel1.BackColor = System.Drawing.Color.Transparent;
-            this.gunaShadowPanel1.BaseColor = System.Drawing.Color.White;
-            this.gunaShadowPanel1.Controls.Add(this.label4);
-            this.gunaShadowPanel1.Controls.Add(this.pictureBox2);
-            this.gunaShadowPanel1.Controls.Add(this.label13);
-            this.gunaShadowPanel1.Controls.Add(this.panel7);
-            this.gunaShadowPanel1.Controls.Add(this.lblCountTro);
-            this.gunaShadowPanel1.Controls.Add(this.label14);
-            this.gunaShadowPanel1.EdgeWidth = 1;
-            this.gunaShadowPanel1.Location = new System.Drawing.Point(5, 208);
-            this.gunaShadowPanel1.Margin = new System.Windows.Forms.Padding(4);
-            this.gunaShadowPanel1.Name = "gunaShadowPanel1";
-            this.gunaShadowPanel1.Radius = 2;
-            this.gunaShadowPanel1.ShadowColor = System.Drawing.Color.Silver;
-            this.gunaShadowPanel1.ShadowShift = 10;
-            this.gunaShadowPanel1.Size = new System.Drawing.Size(351, 207);
-            this.gunaShadowPanel1.TabIndex = 59;
+            this.pnlNhaTro.BackColor = System.Drawing.Color.Transparent;
+            this.pnlNhaTro.BaseColor = System.Drawing.Color.White;
+            this.pnlNhaTro.Controls.Add(this.label4);
+            this.pnlNhaTro.Controls.Add(this.pictureBox2);
+            this.pnlNhaTro.Controls.Add(this.label13);
+            this.pnlNhaTro.Controls.Add(this.panel7);
+            this.pnlNhaTro.Controls.Add(this.lblCountTro);
+            this.pnlNhaTro.Controls.Add(this.label14);
+            this.pnlNhaTro.EdgeWidth = 1;
+            this.pnlNhaTro.Location = new System.Drawing.Point(5, 208);
+            this.pnlNhaTro.Margin = new System.Windows.Forms.Padding(4);
+            this.pnlNhaTro.Name = "pnlNhaTro";
+            this.pnlNhaTro.Radius = 2;
+            this.pnlNhaTro.ShadowColor = System.Drawing.Color.Silver;
+            this.pnlNhaTro.ShadowShift = 10;
+            this.pnlNhaTro.Size = new System.Drawing.Size(351, 207);
+            this.pnlNhaTro.TabIndex = 59;
             // 
             // label4
             // 
@@ -396,7 +396,7 @@ namespace TimKiemNhaTro
             // 
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Tahoma", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.ForeColor = System.Drawing.Color.DimGray;
+            this.label13.ForeColor = System.Drawing.Color.Black;
             this.label13.Location = new System.Drawing.Point(159, 14);
             this.label13.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label13.Name = "label13";
@@ -479,27 +479,27 @@ namespace TimKiemNhaTro
             this.panel6.Size = new System.Drawing.Size(42, 100);
             this.panel6.TabIndex = 65;
             // 
-            // gunaShadowPanel4
+            // pnlTimKiem
             // 
-            this.gunaShadowPanel4.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.gunaShadowPanel4.BackColor = System.Drawing.Color.Transparent;
-            this.gunaShadowPanel4.BaseColor = System.Drawing.Color.White;
-            this.gunaShadowPanel4.Controls.Add(this.gunaGradientButton1);
-            this.gunaShadowPanel4.Controls.Add(this.gunaComboBox3);
-            this.gunaShadowPanel4.Controls.Add(this.label12);
-            this.gunaShadowPanel4.Controls.Add(this.gunaComboBox2);
-            this.gunaShadowPanel4.Controls.Add(this.label11);
-            this.gunaShadowPanel4.Controls.Add(this.gunaComboBox1);
-            this.gunaShadowPanel4.Controls.Add(this.label10);
-            this.gunaShadowPanel4.EdgeWidth = 1;
-            this.gunaShadowPanel4.Location = new System.Drawing.Point(743, 314);
-            this.gunaShadowPanel4.Margin = new System.Windows.Forms.Padding(4);
-            this.gunaShadowPanel4.Name = "gunaShadowPanel4";
-            this.gunaShadowPanel4.Radius = 2;
-            this.gunaShadowPanel4.ShadowColor = System.Drawing.Color.Silver;
-            this.gunaShadowPanel4.ShadowDepth = 50;
-            this.gunaShadowPanel4.Size = new System.Drawing.Size(711, 70);
-            this.gunaShadowPanel4.TabIndex = 82;
+            this.pnlTimKiem.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.pnlTimKiem.BackColor = System.Drawing.Color.Transparent;
+            this.pnlTimKiem.BaseColor = System.Drawing.Color.White;
+            this.pnlTimKiem.Controls.Add(this.gunaGradientButton1);
+            this.pnlTimKiem.Controls.Add(this.gunaComboBox3);
+            this.pnlTimKiem.Controls.Add(this.label12);
+            this.pnlTimKiem.Controls.Add(this.gunaComboBox2);
+            this.pnlTimKiem.Controls.Add(this.label11);
+            this.pnlTimKiem.Controls.Add(this.gunaComboBox1);
+            this.pnlTimKiem.Controls.Add(this.label10);
+            this.pnlTimKiem.EdgeWidth = 1;
+            this.pnlTimKiem.Location = new System.Drawing.Point(743, 314);
+            this.pnlTimKiem.Margin = new System.Windows.Forms.Padding(4);
+            this.pnlTimKiem.Name = "pnlTimKiem";
+            this.pnlTimKiem.Radius = 2;
+            this.pnlTimKiem.ShadowColor = System.Drawing.Color.Silver;
+            this.pnlTimKiem.ShadowDepth = 50;
+            this.pnlTimKiem.Size = new System.Drawing.Size(711, 70);
+            this.pnlTimKiem.TabIndex = 82;
             // 
             // gunaGradientButton1
             // 
@@ -533,7 +533,7 @@ namespace TimKiemNhaTro
             // gunaComboBox3
             // 
             this.gunaComboBox3.BackColor = System.Drawing.Color.Transparent;
-            this.gunaComboBox3.BaseColor = System.Drawing.Color.White;
+            this.gunaComboBox3.BaseColor = System.Drawing.Color.Transparent;
             this.gunaComboBox3.BorderColor = System.Drawing.Color.LightSeaGreen;
             this.gunaComboBox3.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
             this.gunaComboBox3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
@@ -554,7 +554,7 @@ namespace TimKiemNhaTro
             // 
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.ForeColor = System.Drawing.Color.DimGray;
+            this.label12.ForeColor = System.Drawing.Color.Black;
             this.label12.Location = new System.Drawing.Point(400, 11);
             this.label12.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label12.Name = "label12";
@@ -565,7 +565,7 @@ namespace TimKiemNhaTro
             // gunaComboBox2
             // 
             this.gunaComboBox2.BackColor = System.Drawing.Color.Transparent;
-            this.gunaComboBox2.BaseColor = System.Drawing.Color.White;
+            this.gunaComboBox2.BaseColor = System.Drawing.Color.Transparent;
             this.gunaComboBox2.BorderColor = System.Drawing.Color.LightSeaGreen;
             this.gunaComboBox2.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
             this.gunaComboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
@@ -586,7 +586,7 @@ namespace TimKiemNhaTro
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.ForeColor = System.Drawing.Color.DimGray;
+            this.label11.ForeColor = System.Drawing.Color.Black;
             this.label11.Location = new System.Drawing.Point(193, 11);
             this.label11.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label11.Name = "label11";
@@ -597,7 +597,7 @@ namespace TimKiemNhaTro
             // gunaComboBox1
             // 
             this.gunaComboBox1.BackColor = System.Drawing.Color.Transparent;
-            this.gunaComboBox1.BaseColor = System.Drawing.Color.White;
+            this.gunaComboBox1.BaseColor = System.Drawing.Color.Transparent;
             this.gunaComboBox1.BorderColor = System.Drawing.Color.LightSeaGreen;
             this.gunaComboBox1.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
             this.gunaComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
@@ -618,7 +618,7 @@ namespace TimKiemNhaTro
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Tahoma", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.ForeColor = System.Drawing.Color.DimGray;
+            this.label10.ForeColor = System.Drawing.Color.Black;
             this.label10.Location = new System.Drawing.Point(33, 11);
             this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label10.Name = "label10";
@@ -681,7 +681,7 @@ namespace TimKiemNhaTro
             // flwTinTuc
             // 
             this.flwTinTuc.AutoScroll = true;
-            this.flwTinTuc.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.flwTinTuc.BackColor = System.Drawing.Color.Transparent;
             this.flwTinTuc.Location = new System.Drawing.Point(74, 1495);
             this.flwTinTuc.Name = "flwTinTuc";
             this.flwTinTuc.Size = new System.Drawing.Size(1297, 371);
@@ -1092,14 +1092,14 @@ namespace TimKiemNhaTro
             this.Controls.Add(this.btnQuan1);
             this.Controls.Add(this.label27);
             this.Controls.Add(this.label9);
-            this.Controls.Add(this.gunaShadowPanel4);
+            this.Controls.Add(this.pnlTimKiem);
             this.Controls.Add(this.panel5);
             this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.gunaShadowPanel3);
-            this.Controls.Add(this.gunaShadowPanel2);
-            this.Controls.Add(this.gunaShadowPanel1);
+            this.Controls.Add(this.pnlChuTro);
+            this.Controls.Add(this.pnlNguoiDung);
+            this.Controls.Add(this.pnlNhaTro);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.richTextBox1);
+            this.Controls.Add(this.rtxTieuDeLon);
             this.Controls.Add(this.flwCapNhatGanNhat);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel6);
@@ -1107,23 +1107,23 @@ namespace TimKiemNhaTro
             this.Name = "ucHomeCC";
             this.Size = new System.Drawing.Size(1493, 1967);
             this.Load += new System.EventHandler(this.ucHomeCC_Load);
-            this.gunaShadowPanel3.ResumeLayout(false);
-            this.gunaShadowPanel3.PerformLayout();
+            this.pnlChuTro.ResumeLayout(false);
+            this.pnlChuTro.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.panel3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            this.gunaShadowPanel2.ResumeLayout(false);
-            this.gunaShadowPanel2.PerformLayout();
+            this.pnlNguoiDung.ResumeLayout(false);
+            this.pnlNguoiDung.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
-            this.gunaShadowPanel1.ResumeLayout(false);
-            this.gunaShadowPanel1.PerformLayout();
+            this.pnlNhaTro.ResumeLayout(false);
+            this.pnlNhaTro.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.panel7.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
-            this.gunaShadowPanel4.ResumeLayout(false);
-            this.gunaShadowPanel4.PerformLayout();
+            this.pnlTimKiem.ResumeLayout(false);
+            this.pnlTimKiem.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnTanBinh)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnGoVap)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnQuan7)).EndInit();
@@ -1140,9 +1140,9 @@ namespace TimKiemNhaTro
 
         #endregion
         private System.Windows.Forms.FlowLayoutPanel flwCapNhatGanNhat;
-        private System.Windows.Forms.RichTextBox richTextBox1;
+        private System.Windows.Forms.RichTextBox rtxTieuDeLon;
         private System.Windows.Forms.Label label2;
-        private Guna.UI.WinForms.GunaShadowPanel gunaShadowPanel3;
+        private Guna.UI.WinForms.GunaShadowPanel pnlChuTro;
         private System.Windows.Forms.PictureBox pictureBox4;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.PictureBox pictureBox5;
@@ -1150,7 +1150,7 @@ namespace TimKiemNhaTro
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label lblCountChuTro;
         private System.Windows.Forms.Label label8;
-        private Guna.UI.WinForms.GunaShadowPanel gunaShadowPanel2;
+        private Guna.UI.WinForms.GunaShadowPanel pnlNguoiDung;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.PictureBox pictureBox8;
@@ -1158,7 +1158,7 @@ namespace TimKiemNhaTro
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label lblCountNguoiDung;
         private System.Windows.Forms.Label label17;
-        private Guna.UI.WinForms.GunaShadowPanel gunaShadowPanel1;
+        private Guna.UI.WinForms.GunaShadowPanel pnlNhaTro;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label label13;
@@ -1170,7 +1170,7 @@ namespace TimKiemNhaTro
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Panel panel6;
-        private Guna.UI.WinForms.GunaShadowPanel gunaShadowPanel4;
+        private Guna.UI.WinForms.GunaShadowPanel pnlTimKiem;
         private Guna.UI.WinForms.GunaGradientButton gunaGradientButton1;
         private Guna.UI.WinForms.GunaComboBox gunaComboBox3;
         private System.Windows.Forms.Label label12;

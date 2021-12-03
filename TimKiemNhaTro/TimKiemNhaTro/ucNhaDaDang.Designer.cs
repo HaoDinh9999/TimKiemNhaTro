@@ -48,6 +48,7 @@ namespace TimKiemNhaTro
             // flwNhaDaDang
             // 
             this.flwNhaDaDang.AutoScroll = true;
+            this.flwNhaDaDang.BackColor = System.Drawing.Color.Transparent;
             this.flwNhaDaDang.Location = new System.Drawing.Point(182, 113);
             this.flwNhaDaDang.Margin = new System.Windows.Forms.Padding(4);
             this.flwNhaDaDang.Name = "flwNhaDaDang";
@@ -56,6 +57,7 @@ namespace TimKiemNhaTro
             // 
             // pictureBox1
             // 
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox1.Image = global::TimKiemNhaTro.Properties.Resources.mPPEsss;
             this.pictureBox1.Location = new System.Drawing.Point(0, 0);

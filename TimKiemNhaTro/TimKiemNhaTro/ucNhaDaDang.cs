@@ -23,6 +23,12 @@ namespace TimKiemNhaTro
             InitializeComponent();
             _userNhaDang = ng;
         }
+        Color colorNhaDaDang;
+        public void reloadColorNhaDaDang(Color clr)
+        {
+            colorNhaDaDang = clr;
+            this.BackColor = clr;
+        }
         public void reLoad()
         {
             flwNhaDaDang.Controls.Clear();
@@ -35,19 +41,11 @@ namespace TimKiemNhaTro
                 flwNhaDaDang.Controls.Add(card);
 
             }
+            reloadColorNhaDaDang(colorNhaDaDang);
         }
         private void ucNhaDaDang_Load(object sender, EventArgs e)
         {
-            flwNhaDaDang.Controls.Clear();
-            var listNha = DataProvider.Ins.DB.Nhas.Where(x=>x.maChuNha==_userNhaDang.maNguoiDung).ToList();
-
-            foreach (var item in listNha)
-            {
-                var card = new ucCardRoomSaveee(this.Parent.Parent as frmMain, item);
-                card.SetInfo();
-                flwNhaDaDang.Controls.Add(card);
-
-            }
+            reLoad();
         }
     }
 }

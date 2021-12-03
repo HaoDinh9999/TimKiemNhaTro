@@ -22,6 +22,11 @@ namespace TimKiemNhaTro
             InitializeComponent();
             _userYeuThich = ng;
         }
+        public void reloadColorFavor(Color clr)
+        {
+            this.BackColor = clr;
+            reLoad();
+        }
         public NguoiDung _userYeuThich;
         public void reLoad()
         {

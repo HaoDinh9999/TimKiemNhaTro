@@ -57,6 +57,7 @@ namespace TimKiemNhaTro
             this.picImg.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picImg.TabIndex = 2;
             this.picImg.TabStop = false;
+            this.picImg.Click += new System.EventHandler(this.picImg_Click);
             // 
             // lblGia
             // 
@@ -180,6 +181,8 @@ namespace TimKiemNhaTro
             this.Controls.Add(this.picImg);
             this.Name = "ucCardNhaMedium";
             this.Size = new System.Drawing.Size(306, 332);
+            this.Load += new System.EventHandler(this.ucCardNhaMedium_Load);
+            this.Click += new System.EventHandler(this.ucCardNhaMedium_Click);
             ((System.ComponentModel.ISupportInitialize)(this.picImg)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();

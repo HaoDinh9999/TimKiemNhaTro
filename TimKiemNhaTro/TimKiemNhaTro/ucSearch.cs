@@ -19,7 +19,10 @@ namespace TimKiemNhaTro
         {
             InitializeComponent();
         }
-
+        public void reloadSearchColor(Color clr)
+        {
+            this.BackColor = clr;
+        }
         private void ucSearch_Load(object sender, EventArgs e)
         {
             listt.Add(new Districts("Quận 1", Quan1));
@@ -57,7 +60,7 @@ namespace TimKiemNhaTro
             flwSearch.Controls.Clear();
             for (int i = 0; i < nhas.Count; i++)
             {
-                var card = new ucCardNhaMedium(nhas[i]);
+                var card = new ucCardNhaMedium((this.Parent.Parent as frmMain),nhas[i]);
                 card.SetInfo();
                 flwSearch.Controls.Add(card);
             }

@@ -469,6 +469,12 @@
     <Compile Include="ucDetailHome.Designer.cs">
       <DependentUpon>ucDetailHome.cs</DependentUpon>
     </Compile>
+    <Compile Include="ucFAQs.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucFAQs.Designer.cs">
+      <DependentUpon>ucFAQs.cs</DependentUpon>
+    </Compile>
     <Compile Include="ucFavourite.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -587,6 +593,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ucDetailHome.resx">
       <DependentUpon>ucDetailHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucFAQs.resx">
+      <DependentUpon>ucFAQs.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ucFavourite.resx">
       <DependentUpon>ucFavourite.cs</DependentUpon>
@@ -812,6 +821,9 @@
     <None Include="Resources\newspaper %281%29.png" />
     <None Include="Resources\newspaper.png" />
     <None Include="Resources\logout.png" />
+    <None Include="Resources\icons8_scroll_down_32.png" />
+    <None Include="Resources\icons8_upward_arrow_32.png" />
+    <None Include="Resources\icons8_scroll_down_321.png" />
     <Content Include="Resources\rec.png" />
     <None Include="Resources\setting %281%29.png" />
     <None Include="Resources\setting.png" />

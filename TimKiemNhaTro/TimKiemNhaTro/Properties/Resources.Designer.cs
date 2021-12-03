@@ -873,6 +873,26 @@ namespace TimKiemNhaTro.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_scroll_down_32 {
+            get {
+                object obj = ResourceManager.GetObject("icons8_scroll_down_32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_scroll_down_321 {
+            get {
+                object obj = ResourceManager.GetObject("icons8_scroll_down_321", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_search_32 {
             get {
                 object obj = ResourceManager.GetObject("icons8_search_32", resourceCulture);
@@ -1026,6 +1046,16 @@ namespace TimKiemNhaTro.Properties {
         internal static System.Drawing.Bitmap icons8_toolbox_32 {
             get {
                 object obj = ResourceManager.GetObject("icons8_toolbox_32", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_upward_arrow_32 {
+            get {
+                object obj = ResourceManager.GetObject("icons8_upward_arrow_32", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

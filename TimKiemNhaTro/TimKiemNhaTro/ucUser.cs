@@ -29,10 +29,24 @@ namespace TimKiemNhaTro
         }
         string urlAvatar="";
         public NguoiDung _nguoi;
+        public void reloadColorUser()
+        {
+            this.BackColor = _frmM.nenColor;
+        }
         public async void reLoad()
         {
             _nguoi = DataProvider.Ins.DB.NguoiDungs.Where(x => x.maNguoiDung == _nguoi.maNguoiDung).SingleOrDefault();
 
+            //if ((string)_nguoi.sdt != null)
+            //{
+            //    txtPhoneNumber.Text = _nguoi.sdt;
+            //    lblSoDienThoai.Text = _nguoi.sdt;
+            //}
+            //else
+            //{
+            //    txtPhoneNumber.Text = "Chưa có";
+            //    lblSoDienThoai.Text = "Chưa có";
+            //}
             if ((string)_nguoi.hoTen != null)
                 txtHoTen.Text = _nguoi.hoTen;
             else
@@ -113,6 +127,7 @@ namespace TimKiemNhaTro
                     // Could also be before try if you know the exception occurs in SaveChanges
                     var tklol = DataProvider.Ins.DB.NguoiDungs.Where(x => x.maNguoiDung == _nguoi.maNguoiDung).SingleOrDefault();
                     tklol.hoTen = txtHoTen.Text;
+                    //tklol.sdt = txtPhoneNumber.Text;
                     if (urlAvatar != "")
                         tklol.urlDaiDien = urlAvatar;
                     DataProvider.Ins.DB.SaveChanges();
@@ -168,6 +183,12 @@ namespace TimKiemNhaTro
                 }
                 UploadFiles(op.FileName, _nguoi.maNguoiDung);
             }
+        }
+
+        private void btnFAQ_Click(object sender, EventArgs e)
+        {
+            (this.Parent.Parent as frmMain).getFAQ();
+            (this.Parent.Parent as frmMain).setUCFAQBringtoFront();
         }
     }
 }

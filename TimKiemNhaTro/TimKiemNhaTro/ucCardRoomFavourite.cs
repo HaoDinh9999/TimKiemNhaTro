@@ -26,6 +26,12 @@ namespace TimKiemNhaTro
             frmM = frm;
             _yeuThich = yeuthich;
         }
+        public void reloadColorCardRoomFavor()
+        {
+            this.BackColor = frmM.nenColor;
+            pnlChung.BaseColor = frmM.nenColor;
+            rtxAddress.BackColor = frmM.nenColor;
+        }
         public void SetInfo()
         {
             //btnType.Tag = _nha.maNha;
@@ -37,6 +43,7 @@ namespace TimKiemNhaTro
             btnType.Text = _yeuThich.Nha.LoaiChoThue.tenLoaiChoThue;
             string _duongDan = _yeuThich.Nha.AnhNhas.ToList()[0].duongDan;
             picRoom.LoadAsync(_duongDan);
+            reloadColorCardRoomFavor();
         }
 
         private void btnHeart_Click(object sender, EventArgs e)

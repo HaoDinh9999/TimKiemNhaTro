@@ -42,7 +42,6 @@ namespace TimKiemNhaTro
             this.gunaTileButton1 = new Guna.UI.WinForms.GunaTileButton();
             this.lblPosition = new System.Windows.Forms.Label();
             this.btnMinimize = new Guna.UI.WinForms.GunaTileButton();
-            this.btnUsername = new Guna.UI.WinForms.GunaAdvenceButton();
             this.pnlUC = new System.Windows.Forms.Panel();
             this.btnAddHouse = new Guna.UI.WinForms.GunaAdvenceButton();
             this.mySqlCommandBuilder1 = new MySqlConnector.MySqlCommandBuilder();
@@ -72,6 +71,7 @@ namespace TimKiemNhaTro
             // 
             // panel2
             // 
+            this.panel2.BackColor = System.Drawing.Color.Transparent;
             this.panel2.Controls.Add(this.picAvatar);
             this.panel2.Controls.Add(this.lblTitle);
             this.panel2.Controls.Add(this.dtpRealTime);
@@ -81,7 +81,6 @@ namespace TimKiemNhaTro
             this.panel2.Controls.Add(this.gunaTileButton1);
             this.panel2.Controls.Add(this.lblPosition);
             this.panel2.Controls.Add(this.btnMinimize);
-            this.panel2.Controls.Add(this.btnUsername);
             this.panel2.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel2.Location = new System.Drawing.Point(297, 0);
             this.panel2.Name = "panel2";
@@ -114,7 +113,7 @@ namespace TimKiemNhaTro
             // 
             this.dtpRealTime.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.dtpRealTime.BackColor = System.Drawing.Color.Transparent;
-            this.dtpRealTime.BaseColor = System.Drawing.Color.White;
+            this.dtpRealTime.BaseColor = System.Drawing.Color.Transparent;
             this.dtpRealTime.BorderColor = System.Drawing.Color.Silver;
             this.dtpRealTime.CustomFormat = null;
             this.dtpRealTime.DropDownAlign = System.Windows.Forms.LeftRightAlignment.Right;
@@ -163,6 +162,7 @@ namespace TimKiemNhaTro
             this.ptrPaint.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.ptrPaint.TabIndex = 3;
             this.ptrPaint.TabStop = false;
+            this.ptrPaint.Click += new System.EventHandler(this.ptrPaint_Click);
             // 
             // gunaTileButton1
             // 
@@ -170,7 +170,7 @@ namespace TimKiemNhaTro
             this.gunaTileButton1.AnimationHoverSpeed = 0.07F;
             this.gunaTileButton1.AnimationSpeed = 0.03F;
             this.gunaTileButton1.BackColor = System.Drawing.Color.Transparent;
-            this.gunaTileButton1.BaseColor = System.Drawing.SystemColors.Window;
+            this.gunaTileButton1.BaseColor = System.Drawing.Color.Transparent;
             this.gunaTileButton1.BorderColor = System.Drawing.Color.Black;
             this.gunaTileButton1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.gunaTileButton1.DialogResult = System.Windows.Forms.DialogResult.None;
@@ -197,7 +197,7 @@ namespace TimKiemNhaTro
             this.lblPosition.AutoSize = true;
             this.lblPosition.Cursor = System.Windows.Forms.Cursors.Hand;
             this.lblPosition.Font = new System.Drawing.Font("Century", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblPosition.Location = new System.Drawing.Point(1270, 34);
+            this.lblPosition.Location = new System.Drawing.Point(1287, 24);
             this.lblPosition.Name = "lblPosition";
             this.lblPosition.Size = new System.Drawing.Size(89, 17);
             this.lblPosition.TabIndex = 2;
@@ -209,7 +209,7 @@ namespace TimKiemNhaTro
             this.btnMinimize.AnimationHoverSpeed = 0.07F;
             this.btnMinimize.AnimationSpeed = 0.03F;
             this.btnMinimize.BackColor = System.Drawing.Color.Transparent;
-            this.btnMinimize.BaseColor = System.Drawing.SystemColors.Window;
+            this.btnMinimize.BaseColor = System.Drawing.Color.Transparent;
             this.btnMinimize.BorderColor = System.Drawing.Color.Black;
             this.btnMinimize.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnMinimize.DialogResult = System.Windows.Forms.DialogResult.None;
@@ -229,38 +229,6 @@ namespace TimKiemNhaTro
             this.btnMinimize.TabIndex = 8;
             this.btnMinimize.UseTransfarantBackground = true;
             this.btnMinimize.Click += new System.EventHandler(this.btnMinimize_Click);
-            // 
-            // btnUsername
-            // 
-            this.btnUsername.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.btnUsername.AnimationHoverSpeed = 0.07F;
-            this.btnUsername.AnimationSpeed = 0.03F;
-            this.btnUsername.BaseColor = System.Drawing.Color.White;
-            this.btnUsername.BorderColor = System.Drawing.Color.Black;
-            this.btnUsername.CheckedBaseColor = System.Drawing.Color.Gray;
-            this.btnUsername.CheckedBorderColor = System.Drawing.Color.Black;
-            this.btnUsername.CheckedForeColor = System.Drawing.Color.White;
-            this.btnUsername.CheckedImage = ((System.Drawing.Image)(resources.GetObject("btnUsername.CheckedImage")));
-            this.btnUsername.CheckedLineColor = System.Drawing.Color.DimGray;
-            this.btnUsername.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnUsername.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.btnUsername.FocusedColor = System.Drawing.Color.Empty;
-            this.btnUsername.Font = new System.Drawing.Font("Century", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnUsername.ForeColor = System.Drawing.Color.Black;
-            this.btnUsername.Image = null;
-            this.btnUsername.ImageSize = new System.Drawing.Size(20, 20);
-            this.btnUsername.LineColor = System.Drawing.Color.White;
-            this.btnUsername.Location = new System.Drawing.Point(1263, 3);
-            this.btnUsername.Name = "btnUsername";
-            this.btnUsername.OnHoverBaseColor = System.Drawing.Color.White;
-            this.btnUsername.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.btnUsername.OnHoverForeColor = System.Drawing.Color.Black;
-            this.btnUsername.OnHoverImage = null;
-            this.btnUsername.OnHoverLineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.btnUsername.OnPressedColor = System.Drawing.Color.Black;
-            this.btnUsername.Size = new System.Drawing.Size(147, 39);
-            this.btnUsername.TabIndex = 2;
-            this.btnUsername.Text = "Hi HaoDinh";
             // 
             // pnlUC
             // 
@@ -600,7 +568,6 @@ namespace TimKiemNhaTro
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Panel pnlMove;
         private System.Windows.Forms.Panel panel2;
-        private Guna.UI.WinForms.GunaAdvenceButton btnUsername;
         private System.Windows.Forms.Label lblPosition;
         private Guna.UI.WinForms.GunaTileButton btnMinimize;
         private Guna.UI.WinForms.GunaTileButton gunaTileButton1;

@@ -371,6 +371,7 @@ namespace TimKiemNhaTro
             this.btnFAQ.Size = new System.Drawing.Size(427, 52);
             this.btnFAQ.TabIndex = 20;
             this.btnFAQ.Text = "FAQ";
+            this.btnFAQ.Click += new System.EventHandler(this.btnFAQ_Click);
             // 
             // gunaAdvenceButton8
             // 
@@ -504,7 +505,7 @@ namespace TimKiemNhaTro
             // picAvatar
             // 
             this.picAvatar.BackColor = System.Drawing.Color.Transparent;
-            this.picAvatar.BaseColor = System.Drawing.Color.White;
+            this.picAvatar.BaseColor = System.Drawing.Color.Transparent;
             this.picAvatar.InitialImage = ((System.Drawing.Image)(resources.GetObject("picAvatar.InitialImage")));
             this.picAvatar.Location = new System.Drawing.Point(133, 81);
             this.picAvatar.Margin = new System.Windows.Forms.Padding(4);

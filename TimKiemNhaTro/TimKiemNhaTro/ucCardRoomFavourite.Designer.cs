@@ -30,7 +30,7 @@ namespace TimKiemNhaTro
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            this.gunaShadowPanel1 = new Guna.UI.WinForms.GunaShadowPanel();
+            this.pnlChung = new Guna.UI.WinForms.GunaShadowPanel();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
@@ -46,39 +46,39 @@ namespace TimKiemNhaTro
             this.lblMoney = new Guna.UI.WinForms.GunaLabel();
             this.picRoom = new Guna.UI.WinForms.GunaPictureBox();
             this.gelipFrmTaskee = new Guna.UI.WinForms.GunaElipse(this.components);
-            this.gunaShadowPanel1.SuspendLayout();
+            this.pnlChung.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picRoom)).BeginInit();
             this.SuspendLayout();
             // 
-            // gunaShadowPanel1
+            // pnlChung
             // 
-            this.gunaShadowPanel1.BackColor = System.Drawing.Color.Transparent;
-            this.gunaShadowPanel1.BaseColor = System.Drawing.Color.White;
-            this.gunaShadowPanel1.Controls.Add(this.label3);
-            this.gunaShadowPanel1.Controls.Add(this.label2);
-            this.gunaShadowPanel1.Controls.Add(this.label1);
-            this.gunaShadowPanel1.Controls.Add(this.btnType);
-            this.gunaShadowPanel1.Controls.Add(this.btnHeart);
-            this.gunaShadowPanel1.Controls.Add(this.lblCountMeter);
-            this.gunaShadowPanel1.Controls.Add(this.pictureBox2);
-            this.gunaShadowPanel1.Controls.Add(this.lblCountBathRoom);
-            this.gunaShadowPanel1.Controls.Add(this.pictureBox3);
-            this.gunaShadowPanel1.Controls.Add(this.lblCountBedRoom);
-            this.gunaShadowPanel1.Controls.Add(this.pictureBox1);
-            this.gunaShadowPanel1.Controls.Add(this.rtxAddress);
-            this.gunaShadowPanel1.Controls.Add(this.lblMoney);
-            this.gunaShadowPanel1.Controls.Add(this.picRoom);
-            this.gunaShadowPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gunaShadowPanel1.Location = new System.Drawing.Point(0, 0);
-            this.gunaShadowPanel1.Margin = new System.Windows.Forms.Padding(4);
-            this.gunaShadowPanel1.Name = "gunaShadowPanel1";
-            this.gunaShadowPanel1.Radius = 10;
-            this.gunaShadowPanel1.ShadowColor = System.Drawing.Color.Black;
-            this.gunaShadowPanel1.Size = new System.Drawing.Size(426, 554);
-            this.gunaShadowPanel1.TabIndex = 1;
+            this.pnlChung.BackColor = System.Drawing.Color.Transparent;
+            this.pnlChung.BaseColor = System.Drawing.Color.White;
+            this.pnlChung.Controls.Add(this.label3);
+            this.pnlChung.Controls.Add(this.label2);
+            this.pnlChung.Controls.Add(this.label1);
+            this.pnlChung.Controls.Add(this.btnType);
+            this.pnlChung.Controls.Add(this.btnHeart);
+            this.pnlChung.Controls.Add(this.lblCountMeter);
+            this.pnlChung.Controls.Add(this.pictureBox2);
+            this.pnlChung.Controls.Add(this.lblCountBathRoom);
+            this.pnlChung.Controls.Add(this.pictureBox3);
+            this.pnlChung.Controls.Add(this.lblCountBedRoom);
+            this.pnlChung.Controls.Add(this.pictureBox1);
+            this.pnlChung.Controls.Add(this.rtxAddress);
+            this.pnlChung.Controls.Add(this.lblMoney);
+            this.pnlChung.Controls.Add(this.picRoom);
+            this.pnlChung.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnlChung.Location = new System.Drawing.Point(0, 0);
+            this.pnlChung.Margin = new System.Windows.Forms.Padding(4);
+            this.pnlChung.Name = "pnlChung";
+            this.pnlChung.Radius = 10;
+            this.pnlChung.ShadowColor = System.Drawing.Color.Black;
+            this.pnlChung.Size = new System.Drawing.Size(426, 554);
+            this.pnlChung.TabIndex = 1;
             // 
             // label3
             // 
@@ -174,7 +174,7 @@ namespace TimKiemNhaTro
             // 
             // pictureBox2
             // 
-            this.pictureBox2.BackColor = System.Drawing.Color.White;
+            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox2.Image = global::TimKiemNhaTro.Properties.Resources.area_icon;
             this.pictureBox2.Location = new System.Drawing.Point(39, 480);
             this.pictureBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -196,7 +196,7 @@ namespace TimKiemNhaTro
             // 
             // pictureBox3
             // 
-            this.pictureBox3.BackColor = System.Drawing.Color.White;
+            this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox3.Image = global::TimKiemNhaTro.Properties.Resources.icons8_bathtub_32;
             this.pictureBox3.Location = new System.Drawing.Point(39, 414);
             this.pictureBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -218,7 +218,7 @@ namespace TimKiemNhaTro
             // 
             // pictureBox1
             // 
-            this.pictureBox1.BackColor = System.Drawing.Color.White;
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Image = global::TimKiemNhaTro.Properties.Resources.icons8_sleeping_in_bed1_32;
             this.pictureBox1.Location = new System.Drawing.Point(39, 351);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -234,11 +234,11 @@ namespace TimKiemNhaTro
             this.rtxAddress.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.rtxAddress.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.rtxAddress.Font = new System.Drawing.Font("Tahoma", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.rtxAddress.ForeColor = System.Drawing.Color.DimGray;
+            this.rtxAddress.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(196)))), ((int)(((byte)(201)))), ((int)(((byte)(207)))));
             this.rtxAddress.Location = new System.Drawing.Point(41, 292);
             this.rtxAddress.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.rtxAddress.Name = "rtxAddress";
-            this.rtxAddress.Size = new System.Drawing.Size(312, 55);
+            this.rtxAddress.Size = new System.Drawing.Size(357, 55);
             this.rtxAddress.TabIndex = 2;
             this.rtxAddress.Text = "313 Nguyễn  An Binh Bỉnh Khiêm, phường Bến Nghé, quận 1, thành phố Hồ Chí Minh";
             // 
@@ -277,12 +277,12 @@ namespace TimKiemNhaTro
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
-            this.Controls.Add(this.gunaShadowPanel1);
+            this.Controls.Add(this.pnlChung);
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "ucCardRoomFavourite";
             this.Size = new System.Drawing.Size(426, 554);
-            this.gunaShadowPanel1.ResumeLayout(false);
-            this.gunaShadowPanel1.PerformLayout();
+            this.pnlChung.ResumeLayout(false);
+            this.pnlChung.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -293,7 +293,7 @@ namespace TimKiemNhaTro
 
         #endregion
 
-        private Guna.UI.WinForms.GunaShadowPanel gunaShadowPanel1;
+        private Guna.UI.WinForms.GunaShadowPanel pnlChung;
         private System.Windows.Forms.Label lblCountMeter;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label lblCountBathRoom;

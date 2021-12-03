@@ -1468,7 +1468,7 @@ namespace TimKiemNhaTro
             // richTextBox2
             // 
             this.richTextBox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.richTextBox2.Location = new System.Drawing.Point(1156, 2791);
+            this.richTextBox2.Location = new System.Drawing.Point(1156, 2790);
             this.richTextBox2.Name = "richTextBox2";
             this.richTextBox2.Size = new System.Drawing.Size(232, 75);
             this.richTextBox2.TabIndex = 55;
@@ -1515,8 +1515,8 @@ namespace TimKiemNhaTro
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.Controls.Add(this.flwDanhGia);
             this.Controls.Add(this.rtxComment);
+            this.Controls.Add(this.flwDanhGia);
             this.Controls.Add(this.btnGuiDanhGia);
             this.Controls.Add(this.richTextBox2);
             this.Controls.Add(this.label6);

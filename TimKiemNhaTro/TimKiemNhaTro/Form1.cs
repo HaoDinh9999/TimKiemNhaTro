@@ -41,6 +41,7 @@ namespace TimKiemNhaTro
         ucAddHome _ucAdd;
         ucNhaDaDang _ucNhaDaDang;
         ucTinTuc _ucTinTuc;
+        ucFAQs _ucFAQs;
         private void moveImageBox(object sender)
         {
             GunaAdvenceButton b = (GunaAdvenceButton)sender;
@@ -105,6 +106,17 @@ namespace TimKiemNhaTro
         {
             return _ucAdd;
         }
+
+        public void setUCFAQBringtoFront()
+        {
+            _ucFAQs.Show();
+            _ucFAQs.BringToFront();
+        }
+        public ucFAQs getFAQ()
+        {
+            return _ucFAQs;
+        }
+
         public void addToPanel()
         {
             pnlUC.Controls.Add(ucH);
@@ -125,6 +137,8 @@ namespace TimKiemNhaTro
             _ucNhaDaDang.Dock = DockStyle.Fill;
             pnlUC.Controls.Add(_ucTinTuc);
             _ucTinTuc.Dock = DockStyle.Fill;
+            pnlUC.Controls.Add(_ucFAQs);
+            _ucFAQs.Dock = DockStyle.Fill;
         }
         private void btnHome_Click(object sender, EventArgs e)
         {
@@ -237,7 +251,7 @@ namespace TimKiemNhaTro
                 picAvatar.LoadAsync("https://www.clipartmax.com/png/full/110-1104174_computer-icons-user-clip-art-lily-pad-coloring-page.png");
             else
                 picAvatar.LoadAsync(_user.urlDaiDien);
-            btnUsername.Text = "Hi " + _user.email;
+            //lblUserName.Text =  _user.email;
         }
         private void frmMain_Load(object sender, EventArgs e)
         {
@@ -245,7 +259,7 @@ namespace TimKiemNhaTro
                 picAvatar.LoadAsync("https://www.clipartmax.com/png/full/110-1104174_computer-icons-user-clip-art-lily-pad-coloring-page.png");
             else
                 picAvatar.LoadAsync(_user.urlDaiDien);
-            btnUsername.Text = "Hi " + _user.email;
+            //lblUserName.Text =  _user.email;
             ucH = new ucHomeCC();
             ucS = new ucSearch();
             ucF = new ucFavourite(_user);
@@ -255,8 +269,56 @@ namespace TimKiemNhaTro
             _ucAdd = new ucAddHome(_user);
             _ucNhaDaDang = new ucNhaDaDang(_user);
             _ucTinTuc = new ucTinTuc();
+            _ucFAQs = new ucFAQs(_user);
             addToPanel();
 
+        }
+        bool doimau = false;
+        public Color nenColor = Color.White;
+        private void ptrPaint_Click(object sender, EventArgs e)
+        {
+            doimau = !doimau;
+            if (doimau==false)//white
+            {
+                nenColor = Color.White;
+                pnlMenu.GradientColor1 = Color.PowderBlue;
+                pnlMenu.GradientColor2 = Color.White;
+                pnlMenu.GradientColor3 = Color.Snow;
+                pnlMenu.GradientColor4 = Color.White;
+
+
+                reLoadColorfrM();
+                ucH.reLoadColorHome(nenColor);
+                ucS.reloadSearchColor(nenColor);
+                ucF.reloadColorFavor(nenColor);
+                ucUss.reloadColorUser();
+                _ucNhaDaDang.reloadColorNhaDaDang(nenColor);
+                _ucFAQs.reloadColorFAQ(nenColor);
+                ucD.reloadColorDetail(nenColor);
+                _ucAdd.reloadColor(nenColor);
+            }
+            else //black
+            {
+                nenColor = Color.Gray;
+                pnlMenu.GradientColor1 = Color.White;
+                pnlMenu.GradientColor2= Color.Black;
+                pnlMenu.GradientColor3 = Color.Black;
+                pnlMenu.GradientColor4 = Color.DarkGray;
+
+                reLoadColorfrM();
+                ucH.reLoadColorHome(nenColor);
+                ucS.reloadSearchColor(nenColor);
+                ucF.reloadColorFavor(nenColor);
+                ucUss.reloadColorUser();
+                _ucNhaDaDang.reloadColorNhaDaDang(nenColor);
+                _ucFAQs.reloadColorFAQ(nenColor);
+                ucD.reloadColorDetail(nenColor);
+                _ucAdd.reloadColor(nenColor);
+            }
+        }
+        void reLoadColorfrM()
+        {
+            this.BackColor = nenColor;
         }
     }
 }

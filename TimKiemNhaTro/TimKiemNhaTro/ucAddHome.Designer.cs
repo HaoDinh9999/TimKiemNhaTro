@@ -87,6 +87,7 @@ namespace TimKiemNhaTro
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.BackColor = System.Drawing.Color.White;
             this.label1.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.LightSeaGreen;
             this.label1.Location = new System.Drawing.Point(80, 36);
@@ -243,6 +244,7 @@ namespace TimKiemNhaTro
             // label12
             // 
             this.label12.AutoSize = true;
+            this.label12.BackColor = System.Drawing.Color.White;
             this.label12.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label12.ForeColor = System.Drawing.Color.LightSeaGreen;
             this.label12.Location = new System.Drawing.Point(80, 309);
@@ -790,7 +792,7 @@ namespace TimKiemNhaTro
             this.txtMoTa.BaseColor = System.Drawing.Color.White;
             this.txtMoTa.BorderColor = System.Drawing.Color.LightSeaGreen;
             this.txtMoTa.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtMoTa.FocusedBaseColor = System.Drawing.Color.White;
+            this.txtMoTa.FocusedBaseColor = System.Drawing.Color.Transparent;
             this.txtMoTa.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
             this.txtMoTa.FocusedForeColor = System.Drawing.SystemColors.ControlText;
             this.txtMoTa.Font = new System.Drawing.Font("Tahoma", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -1409,7 +1411,7 @@ namespace TimKiemNhaTro
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoScroll = true;
-            this.BackColor = System.Drawing.Color.White;
+            this.BackColor = System.Drawing.Color.Transparent;
             this.Controls.Add(this.cbxTinhTrang);
             this.Controls.Add(this.label17);
             this.Controls.Add(this.pnlPic);

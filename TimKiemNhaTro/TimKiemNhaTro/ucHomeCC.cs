@@ -48,21 +48,44 @@ namespace TimKiemNhaTro
             "https://vnexpress.net/nguoi-thue-tro-se-khong-con-lo-bi-chat-chem-gia-dien-3825880.html",
             "https://vnexpress.net/chu-nha-tro-can-kien-nhan-cho-co-hoi-4367901.html",
         };
+        Color nenHomeColor;
+        public void reLoadColorHome(Color clr)
+        {
+            nenHomeColor = clr;
+            this.BackColor = nenHomeColor;
+            pnlTimKiem.BaseColor = nenHomeColor;
+            rtxTieuDeLon.BackColor = nenHomeColor;
+            pnlNhaTro.BaseColor = nenHomeColor;
+            pnlChuTro.BaseColor = nenHomeColor;
+            pnlNguoiDung.BaseColor = nenHomeColor;
+            reLoad();
+        }
         public void reLoad()
         {
             lblCountTro.Text = DataProvider.Ins.DB.Nhas.Count().ToString();
             lblCountNguoiDung.Text = DataProvider.Ins.DB.NguoiDungs.Count().ToString();
             flwCapNhatGanNhat.Controls.Clear();
+            flwTinTuc.Controls.Clear();
             var listNha = DataProvider.Ins.DB.Nhas.ToList();
             int demNha = 0;
             for (int i = listNha.Count - 1; i >= 0; i--)
             {
                 var card = new ucCardNha(this.Parent.Parent as frmMain, listNha[i]);
                 card.SetInfo();
+                card.reloadColorCardNha();
                 flwCapNhatGanNhat.Controls.Add(card);
                 demNha++;
                 if (demNha > 6)
                     break;
+            }
+
+            var listTinTuc = DataProvider.Ins.DB.TinTucs.ToArray();
+            foreach(var item in listTinTuc)
+            {
+                var card = new ucCardTinTuc(this.Parent.Parent as frmMain, item.tieuDe, item.trichDan, item.urlAnh, item.urlBao);
+                card.SetInfo();
+                card.reloadTinTucColor();
+                flwTinTuc.Controls.Add(card);
             }
             //for (int i = 0; i < tieuDe.Count(); i++)
             //{
@@ -83,13 +106,13 @@ namespace TimKiemNhaTro
             flwCapNhatGanNhat.AutoScroll = true;
 
             reLoad();
-            for(int i=0;i<tieuDe.Count();i++)
-            {
-                var card = new ucCardTinTuc(this.Parent.Parent as frmMain,tieuDe[i],noiDung[i],duongDanAnh[i],duongDanBao[i]);
-                card.SetInfo();
-                flwTinTuc.Controls.Add(card);
+            //for(int i=0;i<tieuDe.Count();i++)
+            //{
+            //    var card = new ucCardTinTuc(this.Parent.Parent as frmMain,tieuDe[i],noiDung[i],duongDanAnh[i],duongDanBao[i]);
+            //    card.SetInfo();
+            //    flwTinTuc.Controls.Add(card);
 
-            }
+            //}
         }
     }
 }

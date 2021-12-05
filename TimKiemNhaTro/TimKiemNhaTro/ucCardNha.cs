@@ -27,6 +27,10 @@ namespace TimKiemNhaTro
             _nha = nha;
         }
         int tbSao = 0;
+        public void reloadColorCardNha()
+        {
+            this.BackColor = frmM.nenColor;
+        }
         public void SetInfo()
         {
             ID = _nha.maNha;

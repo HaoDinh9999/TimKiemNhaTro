@@ -1,4 +1,9 @@
-﻿using Firebase.Storage;
+﻿using Emgu.CV;
+using Emgu.Util;
+using Emgu.CV.Structure;
+using Emgu.CV.CvEnum;
+
+using Firebase.Storage;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -19,24 +24,40 @@ namespace TimKiemNhaTro
         {
             InitializeComponent();
         }
-        public ucUser(NguoiDung ngh)
+        frmMain _frmM;
+        public ucUser(NguoiDung ngh,frmMain frm)
         {
             InitializeComponent();
             _nguoi = ngh;
+            _frmM = frm;
             
         }
         string urlAvatar="";
         public NguoiDung _nguoi;
+        public void reloadColorUser()
+        {
+            this.BackColor = _frmM.nenColor;
+        }
         public async void reLoad()
         {
             _nguoi = DataProvider.Ins.DB.NguoiDungs.Where(x => x.maNguoiDung == _nguoi.maNguoiDung).SingleOrDefault();
 
-            if ((string)_nguoi.hoTen != null)
+            if ((string)_nguoi.sdt != null && _nguoi.sdt != "")
+            {
+                txtPhoneNumber.Text = _nguoi.sdt;
+                lblPhone.Text = _nguoi.sdt;
+            }
+            else
+            {
+                txtPhoneNumber.Text = "";
+                lblPhone.Text = "Chưa có";
+            }
+            if ((string)_nguoi.hoTen != null && _nguoi.hoTen != "")
                 txtHoTen.Text = _nguoi.hoTen;
             else
-                txtHoTen.Text = "Chưa đặt tên";
+                txtHoTen.Text = "";
             lblUsername.Text = _nguoi.email;
-            if (_nguoi.hoTen == null)
+            if (_nguoi.hoTen == null || _nguoi.hoTen == "")
                 lblNameKH.Text = "Chưa đặt tên";
             else
                 lblNameKH.Text = _nguoi.hoTen;
@@ -50,6 +71,7 @@ namespace TimKiemNhaTro
         private async void UploadFiles(string url, int idNguoiDung)
         {
             var stream = File.Open(@url, FileMode.Open);
+
             urlAvatar = "";
             // Construct FirebaseStorage with path to where you want to upload the file and put it there
             var task = new FirebaseStorage("timkiemnhatro-6dd5a.appspot.com")
@@ -67,12 +89,13 @@ namespace TimKiemNhaTro
 
         }
 
-        private void btnEdit_Click(object sender, EventArgs e)
+        private async void btnEdit_Click(object sender, EventArgs e)
         {
             if (btnEdit.Checked == true)//Vo edit
             {
                 btnEdit.Checked = false;
                 btnEditImage.Visible = true;
+                btnCamera.Visible = true;
                 lblHoVaTen.Visible = true;
                 txtHoTen.Visible = true;
                 lblNhoTen.Visible = true;
@@ -90,6 +113,7 @@ namespace TimKiemNhaTro
             {
                 btnEdit.Checked = true;
                 btnEditImage.Visible = false;
+                btnCamera.Visible = false;
 
                 lblHoVaTen.Visible = false;
                 txtHoTen.Visible = false;
@@ -111,10 +135,13 @@ namespace TimKiemNhaTro
                     // Could also be before try if you know the exception occurs in SaveChanges
                     var tklol = DataProvider.Ins.DB.NguoiDungs.Where(x => x.maNguoiDung == _nguoi.maNguoiDung).SingleOrDefault();
                     tklol.hoTen = txtHoTen.Text;
+                    tklol.sdt = txtPhoneNumber.Text;
+                   
                     if (urlAvatar != "")
                         tklol.urlDaiDien = urlAvatar;
                     DataProvider.Ins.DB.SaveChanges();
                     MessageBox.Show("Cập nhật thành công");
+                    _frmM.reLoadNguoiDung();
 
                 }
                 catch (System.Data.Entity.Validation.DbEntityValidationException dbEx)
@@ -134,7 +161,8 @@ namespace TimKiemNhaTro
                     }
                     throw raise;
                 }
-
+                timer1.Enabled = false;
+                if (cap != null) cap.Dispose();
                 urlAvatar = "";
                 reLoad();
             }
@@ -165,6 +193,85 @@ namespace TimKiemNhaTro
                 }
                 UploadFiles(op.FileName, _nguoi.maNguoiDung);
             }
+        }
+
+        private void btnFAQ_Click(object sender, EventArgs e)
+        {
+            (this.Parent.Parent as frmMain).getFAQ();
+            (this.Parent.Parent as frmMain).setUCFAQBringtoFront();
+        }
+
+        private void btnLoiUngDung_Click(object sender, EventArgs e)
+        {
+            frmBaoCaoLoiUngDung frmLoi = new frmBaoCaoLoiUngDung(_nguoi);
+            frmLoi.Show();
+        }
+        private Capture cap;
+       
+
+        private void ucUser_Load(object sender, EventArgs e)
+        {
+          
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            try
+            {
+                Image<Bgr, byte> nextFrame = cap.QueryFrame();
+                Image gray = ToolStripRenderer.CreateDisabledImage(nextFrame.ToBitmap());
+                picAvatar.Image = nextFrame.ToBitmap();
+            }
+            catch
+            {
+                MessageBox.Show("Loi camera");
+            }
+           
+
+        }
+        bool savechupAnh = false;
+        private void btnCamera_Click(object sender, EventArgs e)
+        {
+            if (savechupAnh == true)
+            {
+                saveFileDialog1.InitialDirectory = "";
+                if (saveFileDialog1.ShowDialog() == DialogResult.OK)
+                {
+                    picAvatar.Image.Save(saveFileDialog1.FileName);
+                    UploadFiles(saveFileDialog1.FileName, _nguoi.maNguoiDung);
+
+                    cap.Dispose();
+                    savechupAnh = false;
+                    timer1.Enabled = false;
+                    btnCamera.Text = "Camera";
+                }
+            }
+            else
+            {
+                cap = new Capture(0);
+                timer1.Enabled = true;
+                savechupAnh = true;
+                btnCamera.Text = "Chụp ảnh";
+            }
+            
+        }
+
+        private void ptrFacebook_Click(object sender, EventArgs e)
+        {
+            _frmM.getUCTinTuc().setURL("https://www.fb.com/");
+            _frmM.setUCTinTucBringtoFront();
+        }
+
+        private void ptrInsta_Click(object sender, EventArgs e)
+        {
+            _frmM.getUCTinTuc().setURL("https://www.instagram.com/");
+            _frmM.setUCTinTucBringtoFront();
+        }
+
+        private void ptrTwitter_Click(object sender, EventArgs e)
+        {
+            _frmM.getUCTinTuc().setURL("https://twitter.com/home");
+            _frmM.setUCTinTucBringtoFront();
         }
     }
 }

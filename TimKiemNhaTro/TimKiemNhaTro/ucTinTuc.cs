@@ -18,9 +18,9 @@ namespace TimKiemNhaTro
         }
         public void  setURL(string _url)
         {
+            webBrowser1.Controls.Clear();
             webBrowser1.ScriptErrorsSuppressed = true;
             webBrowser1.Navigate(_url);
-
         }
     }
 }

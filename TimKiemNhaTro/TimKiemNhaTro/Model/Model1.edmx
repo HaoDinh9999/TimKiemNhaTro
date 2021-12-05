@@ -78,7 +78,7 @@
           <Property Name="quanHuyen" Type="varchar" MaxLength="45" />
           <Property Name="moTa" Type="varchar" MaxLength="45" />
           <Property Name="TienNha" Type="decimal" Precision="10" Scale="0" />
-          <Property Name="ngayCapNhat" Type="datetime" Precision="0" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="ngayCapNhat" Type="datetime" Precision="0" StoreGeneratedPattern="None" Nullable="false" />
         </EntityType>
         <EntityType Name="TinTuc">
           <Key>
@@ -320,9 +320,9 @@
           <Property Name="tenDuong" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="phuongXa" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
           <Property Name="quanHuyen" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
-          <Property Name="moTa" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
+          <Property Name="moTa" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
           <Property Name="TienNha" Type="Decimal" />
-          <Property Name="ngayCapNhat" Type="DateTime" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ngayCapNhat" Type="DateTime" Nullable="false" annotation:StoreGeneratedPattern="None" />
           <NavigationProperty Name="AnhNhas" Relationship="Self.FK_Anh_maNha" FromRole="Nha" ToRole="AnhNha" />
           <NavigationProperty Name="CoSoVatChat" Relationship="Self.maCoSoVatChat" FromRole="Nha" ToRole="CoSoVatChat" />
           <NavigationProperty Name="DanhGias" Relationship="Self.maNha" FromRole="Nha" ToRole="DanhGia" />

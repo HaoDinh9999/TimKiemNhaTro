@@ -45,7 +45,7 @@ namespace TimKiemNhaTro
             chart1.Series["Series1"].Points.AddXY("Quận Bình Thạnh", nhas.Where(x => x.quanHuyen == "Quận Bình Thạnh").ToList().Count);
             chart1.Series["Series1"].Points.AddXY("Huyện Bình Chánh", nhas.Where(x => x.quanHuyen == "Huyện Bình Chánh").ToList().Count);
             chart1.Series["Series1"].Points.AddXY("Huyện Cần Giờ", nhas.Where(x => x.quanHuyen == "Huyện Cần Giờ").ToList().Count);
-            chart1.Series["Series1"].Points.AddXY("Huyện Củ Chi", nhas.Where(x => x.quanHuyen == "Củ Chi").ToList().Count);
+            chart1.Series["Series1"].Points.AddXY("Huyện Củ Chi", nhas.Where(x => x.quanHuyen == "Huyện Củ Chi").ToList().Count);
             chart1.Series["Series1"].Points.AddXY("Huyện Hóc Môn", nhas.Where(x => x.quanHuyen == "Huyện Hóc Môn").ToList().Count);
             chart1.Series["Series1"].Points.AddXY("Huyện Nhà Bè", nhas.Where(x => x.quanHuyen == "Huyện Nhà Bè").ToList().Count);
 

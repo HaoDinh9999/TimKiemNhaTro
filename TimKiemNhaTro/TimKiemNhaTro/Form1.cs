@@ -2,10 +2,13 @@
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Configuration;
 using System.Data;
 using System.Drawing;
+using System.Globalization;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using TimKiemNhaTro.Model;
@@ -30,6 +33,10 @@ namespace TimKiemNhaTro
             //ucH.Dock = DockStyle.Fill;
             //ucH.BringToFront();
             //btnAddHouse.BringToFront();
+            dtpRealTime.CustomFormat = "dd/MM/yyyy HH:mm";
+            timer1.Enabled = true;
+
+
         }
         public NguoiDung _user;
         ucDetailHome ucD;
@@ -41,6 +48,7 @@ namespace TimKiemNhaTro
         ucAddHome _ucAdd;
         ucNhaDaDang _ucNhaDaDang;
         ucTinTuc _ucTinTuc;
+        ucFAQs _ucFAQs;
         private void moveImageBox(object sender)
         {
             GunaAdvenceButton b = (GunaAdvenceButton)sender;
@@ -85,7 +93,10 @@ namespace TimKiemNhaTro
         {
             return ucF;
         }
-
+        public ucSearch getUCTịmKiem()
+        {
+            return ucS;
+        }
         public void setUCDetailBringtoFront()
         {
             ucD.Show();
@@ -105,6 +116,17 @@ namespace TimKiemNhaTro
         {
             return _ucAdd;
         }
+
+        public void setUCFAQBringtoFront()
+        {
+            _ucFAQs.Show();
+            _ucFAQs.BringToFront();
+        }
+        public ucFAQs getFAQ()
+        {
+            return _ucFAQs;
+        }
+
         public void addToPanel()
         {
             pnlUC.Controls.Add(ucH);
@@ -125,6 +147,8 @@ namespace TimKiemNhaTro
             _ucNhaDaDang.Dock = DockStyle.Fill;
             pnlUC.Controls.Add(_ucTinTuc);
             _ucTinTuc.Dock = DockStyle.Fill;
+            pnlUC.Controls.Add(_ucFAQs);
+            _ucFAQs.Dock = DockStyle.Fill;
         }
         private void btnHome_Click(object sender, EventArgs e)
         {
@@ -147,8 +171,12 @@ namespace TimKiemNhaTro
 
         private void btnFindMap_Click(object sender, EventArgs e)
         {
+         MoveToSearch();   
+        }
+        public void MoveToSearch()
+        {
             setTitle(btnFindMap.Text);
-            moveImageBox(sender);
+            moveImageBox(btnFindMap);
             btnHome.Checked = false;
             btnFindMap.Checked = true;
             btnFavourite.Checked = false;
@@ -231,25 +259,111 @@ namespace TimKiemNhaTro
             _ucAdd.reSet1();
             _ucAdd.BringToFront();
         }
-
+        public void reLoadNguoiDung()
+        {
+            if (_user.urlDaiDien == null)
+                picAvatar.LoadAsync("https://www.clipartmax.com/png/full/110-1104174_computer-icons-user-clip-art-lily-pad-coloring-page.png");
+            else
+                picAvatar.LoadAsync(_user.urlDaiDien);
+            //lblUserName.Text =  _user.email;
+        }
         private void frmMain_Load(object sender, EventArgs e)
         {
             if (_user.urlDaiDien == null)
                 picAvatar.LoadAsync("https://www.clipartmax.com/png/full/110-1104174_computer-icons-user-clip-art-lily-pad-coloring-page.png");
             else
                 picAvatar.LoadAsync(_user.urlDaiDien);
-            btnUsername.Text = "Hi " + _user.email;
+            //lblUserName.Text =  _user.email;
             ucH = new ucHomeCC();
             ucS = new ucSearch();
             ucF = new ucFavourite(_user);
-            ucUss = new ucUser(_user);
+            ucUss = new ucUser(_user,this);
             ucSet = new ucSetting();
             ucD = new ucDetailHome(_user);
             _ucAdd = new ucAddHome(_user);
             _ucNhaDaDang = new ucNhaDaDang(_user);
             _ucTinTuc = new ucTinTuc();
+            _ucFAQs = new ucFAQs(_user);
             addToPanel();
 
+        }
+        bool doimau = false;
+        public Color nenColor = Color.White;
+        private void ptrPaint_Click(object sender, EventArgs e)
+        {
+            doimau = !doimau;
+            if (doimau==false)//white
+            {
+                nenColor = Color.White;
+                pnlMenu.GradientColor1 = Color.PowderBlue;
+                pnlMenu.GradientColor2 = Color.White;
+                pnlMenu.GradientColor3 = Color.Snow;
+                pnlMenu.GradientColor4 = Color.White;
+
+
+                reLoadColorfrM();
+                ucH.reLoadColorHome(nenColor);
+                ucS.reloadSearchColor(nenColor);
+                ucF.reloadColorFavor(nenColor);
+                ucUss.reloadColorUser();
+                _ucNhaDaDang.reloadColorNhaDaDang(nenColor);
+                _ucFAQs.reloadColorFAQ(nenColor);
+                ucD.reloadColorDetail(nenColor);
+                _ucAdd.reloadColor(nenColor);
+                ucSet.reloadColor(nenColor);
+            }
+            else //black
+            {
+                nenColor = Color.Gray;
+                pnlMenu.GradientColor1 = Color.White;
+                pnlMenu.GradientColor2= Color.Black;
+                pnlMenu.GradientColor3 = Color.Black;
+                pnlMenu.GradientColor4 = Color.DarkGray;
+
+                reLoadColorfrM();
+                ucH.reLoadColorHome(nenColor);
+                ucS.reloadSearchColor(nenColor);
+                ucF.reloadColorFavor(nenColor);
+                ucUss.reloadColorUser();
+                _ucNhaDaDang.reloadColorNhaDaDang(nenColor);
+                _ucFAQs.reloadColorFAQ(nenColor);
+                ucD.reloadColorDetail(nenColor);
+                _ucAdd.reloadColor(nenColor);
+                ucSet.reloadColor(nenColor);
+            }
+        }
+        void reLoadColorfrM()
+        {
+            this.BackColor = nenColor;
+        }
+        public void resetIni()
+        {
+            InitializeComponent();
+
+        }
+
+        private void btnTiengViet_Click(object sender, EventArgs e)
+        {
+            var language = ConfigurationManager.AppSettings["language"];
+            Thread.CurrentThread.CurrentCulture = new System.Globalization.CultureInfo("vi-VN");
+            Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("vi-VN");
+            this.Controls.Clear();
+            InitializeComponent();
+
+        }
+
+        private void btnTiengAnh_Click(object sender, EventArgs e)
+        {
+            var language = ConfigurationManager.AppSettings["language"];
+            Thread.CurrentThread.CurrentCulture = new System.Globalization.CultureInfo("en");
+            Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("en");
+            this.Controls.Clear();
+            InitializeComponent();
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            dtpRealTime.Value = DateTime.Now;
         }
     }
 }

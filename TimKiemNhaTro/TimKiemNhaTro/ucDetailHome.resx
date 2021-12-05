@@ -117,4 +117,2500 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="&gt;&gt;lblashiba.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="lblTenChu.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="rtxDetail.Size" type="System.Drawing.Size, System.Drawing">
+    <value>780, 162</value>
+  </data>
+  <data name="&gt;&gt;gunaCircleButton4.ZOrder" xml:space="preserve">
+    <value>22</value>
+  </data>
+  <data name="&gt;&gt;lblCount5Sao.Name" xml:space="preserve">
+    <value>lblCount5Sao</value>
+  </data>
+  <data name="label2.Text" xml:space="preserve">
+    <value>Đánh giá - Nhận xét nhà trọ</value>
+  </data>
+  <data name="&gt;&gt;label9.ZOrder" xml:space="preserve">
+    <value>18</value>
+  </data>
+  <data name="label12.Size" type="System.Drawing.Size, System.Drawing">
+    <value>21, 24</value>
+  </data>
+  <data name="gunaCircleButton20.Location" type="System.Drawing.Point, System.Drawing">
+    <value>40, 14</value>
+  </data>
+  <data name="lblGiuongNgu.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 12pt</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="pictwo.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="lblTinhTrang.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;gunaButton4.Name" xml:space="preserve">
+    <value>gunaButton4</value>
+  </data>
+  <data name="lblGiaPhong.Size" type="System.Drawing.Size, System.Drawing">
+    <value>144, 24</value>
+  </data>
+  <data name="lblashiba.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;gunaElipsePanel5.Type" xml:space="preserve">
+    <value>Guna.UI.WinForms.GunaElipsePanel, Guna.UI, Version=1.9.0.1, Culture=neutral, PublicKeyToken=ad275b4be6718d4b</value>
+  </data>
+  <data name="flwDanhGia.TabIndex" type="System.Int32, mscorlib">
+    <value>79</value>
+  </data>
+  <data name="lblSaoChung.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="gunaButton2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>108, 14</value>
+  </data>
+  <data name="gunaCircleButton2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>44, 290</value>
+  </data>
+  <data name="label20.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
+  <data name="lblCountRate.Location" type="System.Drawing.Point, System.Drawing">
+    <value>148, 239</value>
+  </data>
+  <data name="&gt;&gt;scrl3.Name" xml:space="preserve">
+    <value>scrl3</value>
+  </data>
+  <data name="label11.Text" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;gunaElipsePanel1.Type" xml:space="preserve">
+    <value>Guna.UI.WinForms.GunaElipsePanel, Guna.UI, Version=1.9.0.1, Culture=neutral, PublicKeyToken=ad275b4be6718d4b</value>
+  </data>
+  <data name="&gt;&gt;gunaCircleButton15.Type" xml:space="preserve">
+    <value>Guna.UI.WinForms.GunaCircleButton, Guna.UI, Version=1.9.0.1, Culture=neutral, PublicKeyToken=ad275b4be6718d4b</value>
+  </data>
+  <data name="&gt;&gt;lblLoaiNha.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;label27.Name" xml:space="preserve">
+    <value>label27</value>
+  </data>
+  <data name="btnGuiDanhGia.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 12pt</value>
+  </data>
+  <data name="&gt;&gt;gunaCircleButton18.Parent" xml:space="preserve">
+    <value>gunaElipsePanel2</value>
+  </data>
+  <data name="&gt;&gt;lblCount1Sao.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;label23.Name" xml:space="preserve">
+    <value>label23</value>
+  </data>
+  <data name="&gt;&gt;gunaCircleButton8.Name" xml:space="preserve">
+    <value>gunaCircleButton8</value>
+  </data>
+  <data name="&gt;&gt;gunaCircleButton3.Parent" xml:space="preserve">
+    <value>gunaElipsePanel2</value>
+  </data>
+  <data name="lblPhone.Size" type="System.Drawing.Size, System.Drawing">
+    <value>152, 24</value>
+  </data>
+  <data name="gunaButton5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>213, 59</value>
+  </data>
+  <data name="lblCountRate.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 10.2pt</value>
+  </data>
+  <data name="gunaButton1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="gunaElipsePanel3.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="&gt;&gt;label12.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblTinhTrang.Parent" xml:space="preserve">
+    <value>gunaElipsePanel2</value>
+  </data>
+  <data name="label20.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 9.75pt</value>
+  </data>
+  <data name="&gt;&gt;pictureBox5.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;scrl5.ZOrder" xml:space="preserve">
+    <value>23</value>
+  </data>
+  <data name="label5.Text" xml:space="preserve">
+    <value>Bạn đã thuê nhà trọ này ?</value>
+  </data>
+  <data name="&gt;&gt;lblDanhGiaSao.ZOrder" xml:space="preserve">
+    <value>17</value>
+  </data>
+  <data name="&gt;&gt;gunaElipsePanel2.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;gunaButton6.Name" xml:space="preserve">
+    <value>gunaButton6</value>
+  </data>
+  <data name="&gt;&gt;pnlCSVC.Name" xml:space="preserve">
+    <value>pnlCSVC</value>
+  </data>
+  <data name="lblCount3Sao.Size" type="System.Drawing.Size, System.Drawing">
+    <value>21, 24</value>
+  </data>
+  <data name="&gt;&gt;label25.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="picAvatar.Location" type="System.Drawing.Point, System.Drawing">
+    <value>44, 103</value>
+  </data>
+  <data name="&gt;&gt;gunaCircleButton7.Name" xml:space="preserve">
+    <value>gunaCircleButton7</value>
+  </data>
+  <data name="&gt;&gt;gunaCircleButton7.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="picAvatar.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
+  </data>
+  <data name="lblCountRate.TabIndex" type="System.Int32, mscorlib">
+    <value>79</value>
+  </data>
+  <data name="&gt;&gt;gunaButton4.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;pictureBox4.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;label1.Name" xml:space="preserve">
+    <value>label1</value>
+  </data>
+  <data name="&gt;&gt;lblGiaPhong.Name" xml:space="preserve">
+    <value>lblGiaPhong</value>
+  </data>
+  <data name="lblCount2Sao.Text" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;pictureBox4.Name" xml:space="preserve">
+    <value>pictureBox4</value>
+  </data>
+  <data name="gunaButton1.Text" xml:space="preserve">
+    <value>Thông tin nhà thuê</value>
+  </data>
+  <data name="&gt;&gt;btnGuiDanhGia.Type" xml:space="preserve">
+    <value>Guna.UI.WinForms.GunaButton, Guna.UI, Version=1.9.0.1, Culture=neutral, PublicKeyToken=ad275b4be6718d4b</value>
+  </data>
+  <data name="label27.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;gunaElipsePanel4.Name" xml:space="preserve">
+    <value>gunaElipsePanel4</value>
+  </data>
+  <data name="gunaCircleButton7.TabIndex" type="System.Int32, mscorlib">
+    <value>40</value>
+  </data>
+  <data name="label6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>385, 24</value>
+  </data>
+  <data name="&gt;&gt;pictureBox2.Name" xml:space="preserve">
+    <value>pictureBox2</value>
+  </data>
+  <data name="&gt;&gt;label23.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="pnlCSVC.AutoScroll" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="gunaButton2.TabIndex" type="System.Int32, mscorlib">
+    <value>39</value>
+  </data>
+  <data name="&gt;&gt;pictureBox2.ZOrder" xml:space="preserve">
+    <value>19</value>
+  </data>
+  <data name="&gt;&gt;rateChungAll.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2RatingStar, Guna.UI2, Version=2.0.0.1, Culture=neutral, PublicKeyToken=ad275b4be6718d4b</value>
+  </data>
+  <data name="&gt;&gt;gunaElipsePanel6.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;picthree.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="label8.Text" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;richTextBox2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RichTextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;gunaButton6.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="gunaCircleButton6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>69, 59</value>
+  </data>
+  <data name="&gt;&gt;gunaCircleButton5.Type" xml:space="preserve">
+    <value>Guna.UI.WinForms.GunaCircleButton, Guna.UI, Version=1.9.0.1, Culture=neutral, PublicKeyToken=ad275b4be6718d4b</value>
+  </data>
+  <data name="&gt;&gt;scrl4.Parent" xml:space="preserve">
+    <value>gunaElipsePanel7</value>
+  </data>
+  <data name="&gt;&gt;gunaElipsePanel3.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;lblPhongTam.Parent" xml:space="preserve">
+    <value>gunaElipsePanel2</value>
+  </data>
+  <data name="&gt;&gt;gunaButton3.Name" xml:space="preserve">
+    <value>gunaButton3</value>
+  </data>
+  <data name="&gt;&gt;pictureBox1.ZOrder" xml:space="preserve">
+    <value>22</value>
+  </data>
+  <data name="lblPhone.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
+  <data name="&gt;&gt;gunaCircleButton8.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="lblCount3Sao.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 12pt</value>
+  </data>
+  <data name="scrl2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>631, 212</value>
+  </data>
+  <data name="lblPhone.TabIndex" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="&gt;&gt;label20.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label21.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
+  <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>51, 26</value>
+  </data>
+  <data name="lblGiuongNgu.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>129, 91</value>
+  </data>
+  <data name="label9.TabIndex" type="System.Int32, mscorlib">
+    <value>62</value>
+  </data>
+  <data name="&gt;&gt;gunaButton2.Name" xml:space="preserve">
+    <value>gunaButton2</value>
+  </data>
+  <data name="&gt;&gt;gunaCircleButton16.Parent" xml:space="preserve">
+    <value>gunaElipsePanel2</value>
+  </data>
+  <data name="gunaButton2.Text" xml:space="preserve">
+    <value>Thông tin chủ nhà</value>
+  </data>
+  <data name="label8.Location" type="System.Drawing.Point, System.Drawing">
+    <value>580, 106</value>
+  </data>
+  <data name="lblGiaPhong.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="pictureBox4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>26, 21</value>
+  </data>
+  <data name="&gt;&gt;label21.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;gunaElipsePanel6.Name" xml:space="preserve">
+    <value>gunaElipsePanel6</value>
+  </data>
+  <data name="gunaCircleButton7.Location" type="System.Drawing.Point, System.Drawing">
+    <value>57, 16</value>
+  </data>
+  <data name="lblEmail.TabIndex" type="System.Int32, mscorlib">
+    <value>22</value>
+  </data>
+  <data name="&gt;&gt;gunaButton5.Name" xml:space="preserve">
+    <value>gunaButton5</value>
+  </data>
+  <data name="&gt;&gt;lblCount3Sao.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="gunaCircleButton14.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="lblCount1Sao.Location" type="System.Drawing.Point, System.Drawing">
+    <value>890, 238</value>
+  </data>
+  <data name="lblPhongTam.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;rtxDetail.Parent" xml:space="preserve">
+    <value>gunaElipsePanel4</value>
+  </data>
+  <data name="&gt;&gt;gunaCircleButton14.Type" xml:space="preserve">
+    <value>Guna.UI.WinForms.GunaCircleButton, Guna.UI, Version=1.9.0.1, Culture=neutral, PublicKeyToken=ad275b4be6718d4b</value>
+  </data>
+  <data name="label1.Text" xml:space="preserve">
+    <value>Chủ sở hữu</value>
+  </data>
+  <data name="pictureBox5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>26, 21</value>
+  </data>
+  <data name="&gt;&gt;gunaButton3.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="&gt;&gt;lblEmail.Parent" xml:space="preserve">
+    <value>gunaElipsePanel3</value>
+  </data>
+  <data name="&gt;&gt;lblashiba.ZOrder" xml:space="preserve">
+    <value>17</value>
+  </data>
+  <data name="&gt;&gt;gunaElipsePanel2.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="&gt;&gt;lblCount5Sao.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="gunaButton3.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="lblDienTich.Location" type="System.Drawing.Point, System.Drawing">
+    <value>420, 123</value>
+  </data>
+  <data name="picthree.TabIndex" type="System.Int32, mscorlib">
+    <value>28</value>
+  </data>
+  <data name="&gt;&gt;label21.Name" xml:space="preserve">
+    <value>label21</value>
+  </data>
+  <data name="&gt;&gt;label27.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;gunaButton2.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="gunaCircleButton2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>65, 58</value>
+  </data>
+  <data name="&gt;&gt;pnlImage.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="gunaCircleButton14.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9pt</value>
+  </data>
+  <data name="webBrowser1.MinimumSize" type="System.Drawing.Size, System.Drawing">
+    <value>20, 20</value>
+  </data>
+  <data name="pictureBox5.TabIndex" type="System.Int32, mscorlib">
+    <value>70</value>
+  </data>
+  <data name="label10.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;gunaElipsePanel3.Type" xml:space="preserve">
+    <value>Guna.UI.WinForms.GunaElipsePanel, Guna.UI, Version=1.9.0.1, Culture=neutral, PublicKeyToken=ad275b4be6718d4b</value>
+  </data>
+  <data name="gunaCircleButton20.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="lblTinhTrang.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 12pt, style=Bold</value>
+  </data>
+  <data name="lblCount4Sao.TabIndex" type="System.Int32, mscorlib">
+    <value>73</value>
+  </data>
+  <data name="label6.Location" type="System.Drawing.Point, System.Drawing">
+    <value>126, 2786</value>
+  </data>
+  <data name="&gt;&gt;rateVietSao.Name" xml:space="preserve">
+    <value>rateVietSao</value>
+  </data>
+  <data name="gunaCircleButton5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>77, 71</value>
+  </data>
+  <data name="lblashiba.Text" xml:space="preserve">
+    <value>Diện tích</value>
+  </data>
+  <data name="&gt;&gt;gunaButton5.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="lblCount4Sao.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="pictureBox4.TabIndex" type="System.Int32, mscorlib">
+    <value>67</value>
+  </data>
+  <data name="&gt;&gt;gunaElipsePanel4.Type" xml:space="preserve">
+    <value>Guna.UI.WinForms.GunaElipsePanel, Guna.UI, Version=1.9.0.1, Culture=neutral, PublicKeyToken=ad275b4be6718d4b</value>
+  </data>
+  <data name="&gt;&gt;btnGuiDanhGia.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="label1.TabIndex" type="System.Int32, mscorlib">
+    <value>23</value>
+  </data>
+  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="&gt;&gt;gunaElipsePanel4.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="gunaCircleButton4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>77, 71</value>
+  </data>
+  <data name="webBrowser1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 0</value>
+  </data>
+  <data name="gunaCircleButton1.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;label10.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="&gt;&gt;pictureBox3.Name" xml:space="preserve">
+    <value>pictureBox3</value>
+  </data>
+  <data name="gunaCircleButton15.Location" type="System.Drawing.Point, System.Drawing">
+    <value>49, 91</value>
+  </data>
+  <data name="gunaCircleButton8.TabIndex" type="System.Int32, mscorlib">
+    <value>40</value>
+  </data>
+  <data name="gunaCircleButton15.TabIndex" type="System.Int32, mscorlib">
+    <value>24</value>
+  </data>
+  <data name="label2.TabIndex" type="System.Int32, mscorlib">
+    <value>42</value>
+  </data>
+  <data name="&gt;&gt;label27.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="gunaButton4.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="scrl1.TabIndex" type="System.Int32, mscorlib">
+    <value>69</value>
+  </data>
+  <data name="gunaCircleButton7.Size" type="System.Drawing.Size, System.Drawing">
+    <value>69, 59</value>
+  </data>
+  <data name="&gt;&gt;label10.Name" xml:space="preserve">
+    <value>label10</value>
+  </data>
+  <data name="&gt;&gt;lblSaoChung.Name" xml:space="preserve">
+    <value>lblSaoChung</value>
+  </data>
+  <data name="&gt;&gt;label11.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="&gt;&gt;lblCount2Sao.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="gunaCircleButton3.TabIndex" type="System.Int32, mscorlib">
+    <value>38</value>
+  </data>
+  <data name="&gt;&gt;pictureBox5.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="lblCount3Sao.TabIndex" type="System.Int32, mscorlib">
+    <value>74</value>
+  </data>
+  <data name="&gt;&gt;lblDienTich.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="picAvatar.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="label10.Location" type="System.Drawing.Point, System.Drawing">
+    <value>580, 172</value>
+  </data>
+  <data name="label3.TabIndex" type="System.Int32, mscorlib">
+    <value>44</value>
+  </data>
+  <data name="&gt;&gt;scrl1.Type" xml:space="preserve">
+    <value>Guna.UI.WinForms.GunaHScrollBar, Guna.UI, Version=1.9.0.1, Culture=neutral, PublicKeyToken=ad275b4be6718d4b</value>
+  </data>
+  <data name="&gt;&gt;picAvatar.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="lblCount5Sao.Size" type="System.Drawing.Size, System.Drawing">
+    <value>21, 24</value>
+  </data>
+  <data name="&gt;&gt;label11.Name" xml:space="preserve">
+    <value>label11</value>
+  </data>
+  <data name="btnCountRate.Location" type="System.Drawing.Point, System.Drawing">
+    <value>402, 16</value>
+  </data>
+  <data name="label11.TabIndex" type="System.Int32, mscorlib">
+    <value>68</value>
+  </data>
+  <data name="&gt;&gt;picfour.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;lbl.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;label16.ZOrder" xml:space="preserve">
+    <value>20</value>
+  </data>
+  <data name="&gt;&gt;pictureBox4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;gunaElipsePanel7.Type" xml:space="preserve">
+    <value>Guna.UI.WinForms.GunaElipsePanel, Guna.UI, Version=1.9.0.1, Culture=neutral, PublicKeyToken=ad275b4be6718d4b</value>
+  </data>
+  <data name="gunaButton1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>124, 14</value>
+  </data>
+  <data name="label23.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label8.TabIndex" type="System.Int32, mscorlib">
+    <value>59</value>
+  </data>
+  <data name="&gt;&gt;webBrowser1.Parent" xml:space="preserve">
+    <value>gunaElipsePanel6</value>
+  </data>
+  <data name="pictureBox2.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>StretchImage</value>
+  </data>
+  <data name="gunaCircleButton1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>65, 54</value>
+  </data>
+  <data name="gunaButton6.TabIndex" type="System.Int32, mscorlib">
+    <value>78</value>
+  </data>
+  <data name="&gt;&gt;label5.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;gunaCircleButton19.Type" xml:space="preserve">
+    <value>Guna.UI.WinForms.GunaCircleButton, Guna.UI, Version=1.9.0.1, Culture=neutral, PublicKeyToken=ad275b4be6718d4b</value>
+  </data>
+  <data name="rtxDetail.Location" type="System.Drawing.Point, System.Drawing">
+    <value>57, 82</value>
+  </data>
+  <data name="&gt;&gt;lblPhongTam.Name" xml:space="preserve">
+    <value>lblPhongTam</value>
+  </data>
+  <data name="label5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1049, 141</value>
+  </data>
+  <data name="&gt;&gt;label16.Name" xml:space="preserve">
+    <value>label16</value>
+  </data>
+  <data name="&gt;&gt;gunaCircleButton3.Type" xml:space="preserve">
+    <value>Guna.UI.WinForms.GunaCircleButton, Guna.UI, Version=1.9.0.1, Culture=neutral, PublicKeyToken=ad275b4be6718d4b</value>
+  </data>
+  <data name="lblPhongTam.Location" type="System.Drawing.Point, System.Drawing">
+    <value>778, 226</value>
+  </data>
+  <data name="lblPhongTam.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
+  <data name="&gt;&gt;gunaButton1.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;picone.Type" xml:space="preserve">
+    <value>Guna.UI.WinForms.GunaPictureBox, Guna.UI, Version=1.9.0.1, Culture=neutral, PublicKeyToken=ad275b4be6718d4b</value>
+  </data>
+  <data name="label27.Location" type="System.Drawing.Point, System.Drawing">
+    <value>745, 204</value>
+  </data>
+  <data name="label9.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
+    <value>26</value>
+  </data>
+  <data name="&gt;&gt;gunaCircleButton16.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;gunaCircleButton2.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="label20.TabIndex" type="System.Int32, mscorlib">
+    <value>23</value>
+  </data>
+  <data name="gunaCircleButton6.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="pictureBox5.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>StretchImage</value>
+  </data>
+  <data name="&gt;&gt;lblCount5Sao.Parent" xml:space="preserve">
+    <value>gunaElipsePanel7</value>
+  </data>
+  <data name="label5.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label10.TabIndex" type="System.Int32, mscorlib">
+    <value>65</value>
+  </data>
+  <data name="lblCount3Sao.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;lblPhone.Parent" xml:space="preserve">
+    <value>gunaElipsePanel3</value>
+  </data>
+  <data name="lblashiba.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 9.75pt</value>
+  </data>
+  <data name="gunaButton6.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1043, 174</value>
+  </data>
+  <data name="lblTinhTrang.Text" xml:space="preserve">
+    <value>Còn trống</value>
+  </data>
+  <data name="label9.Location" type="System.Drawing.Point, System.Drawing">
+    <value>580, 139</value>
+  </data>
+  <data name="&gt;&gt;picthree.Type" xml:space="preserve">
+    <value>Guna.UI.WinForms.GunaPictureBox, Guna.UI, Version=1.9.0.1, Culture=neutral, PublicKeyToken=ad275b4be6718d4b</value>
+  </data>
+  <data name="gunaButton1.TabIndex" type="System.Int32, mscorlib">
+    <value>37</value>
+  </data>
+  <data name="&gt;&gt;gunaCircleButton2.Parent" xml:space="preserve">
+    <value>gunaElipsePanel3</value>
+  </data>
+  <data name="picfour.Size" type="System.Drawing.Size, System.Drawing">
+    <value>387, 195</value>
+  </data>
+  <data name="label11.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 12pt</value>
+  </data>
+  <data name="gunaButton3.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 14.25pt, style=Bold</value>
+  </data>
+  <data name="rateVietSao.Location" type="System.Drawing.Point, System.Drawing">
+    <value>193, 2825</value>
+  </data>
+  <data name="&gt;&gt;rtxComment.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="label21.Size" type="System.Drawing.Size, System.Drawing">
+    <value>61, 21</value>
+  </data>
+  <data name="&gt;&gt;gunaCircleButton1.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="gunaCircleButton3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>69, 59</value>
+  </data>
+  <data name="picfour.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1023, 186</value>
+  </data>
+  <data name="rateChungAll.Size" type="System.Drawing.Size, System.Drawing">
+    <value>200, 40</value>
+  </data>
+  <data name="lblCount5Sao.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 12pt</value>
+  </data>
+  <data name="lblPhongTam.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 12pt</value>
+  </data>
+  <data name="&gt;&gt;pictureBox1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblGiuongNgu.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;flwDanhGia.Name" xml:space="preserve">
+    <value>flwDanhGia</value>
+  </data>
+  <data name="&gt;&gt;richTextBox2.Name" xml:space="preserve">
+    <value>richTextBox2</value>
+  </data>
+  <data name="&gt;&gt;pictureBox5.Name" xml:space="preserve">
+    <value>pictureBox5</value>
+  </data>
+  <data name="gunaCircleButton16.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="&gt;&gt;gunaButton1.Name" xml:space="preserve">
+    <value>gunaButton1</value>
+  </data>
+  <data name="&gt;&gt;lblTinhTrang.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="lblDanhGiaSao.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 12pt</value>
+  </data>
+  <data name="lblTinhTrang.Size" type="System.Drawing.Size, System.Drawing">
+    <value>106, 28</value>
+  </data>
+  <data name="&gt;&gt;label20.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="label9.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 12pt</value>
+  </data>
+  <data name="gunaButton4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>124, 16</value>
+  </data>
+  <data name="&gt;&gt;gunaCircleButton5.Name" xml:space="preserve">
+    <value>gunaCircleButton5</value>
+  </data>
+  <data name="gunaElipsePanel5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>900, 429</value>
+  </data>
+  <data name="lblLoaiNha.Size" type="System.Drawing.Size, System.Drawing">
+    <value>93, 24</value>
+  </data>
+  <data name="label11.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="gunaCircleButton18.Location" type="System.Drawing.Point, System.Drawing">
+    <value>344, 187</value>
+  </data>
+  <data name="lblDienTich.TabIndex" type="System.Int32, mscorlib">
+    <value>19</value>
+  </data>
+  <data name="gunaElipsePanel6.TabIndex" type="System.Int32, mscorlib">
+    <value>33</value>
+  </data>
+  <data name="&gt;&gt;label12.ZOrder" xml:space="preserve">
+    <value>9</value>
+  </data>
+  <data name="lblCount1Sao.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblCount4Sao.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 12pt</value>
+  </data>
+  <data name="&gt;&gt;label25.Parent" xml:space="preserve">
+    <value>gunaElipsePanel2</value>
+  </data>
+  <data name="&gt;&gt;label10.Parent" xml:space="preserve">
+    <value>gunaElipsePanel7</value>
+  </data>
+  <data name="&gt;&gt;picAvatar.Name" xml:space="preserve">
+    <value>picAvatar</value>
+  </data>
+  <data name="pnlCSVC.Location" type="System.Drawing.Point, System.Drawing">
+    <value>23, 80</value>
+  </data>
+  <data name="lblSaoChung.TabIndex" type="System.Int32, mscorlib">
+    <value>45</value>
+  </data>
+  <data name="label12.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label9.Size" type="System.Drawing.Size, System.Drawing">
+    <value>21, 24</value>
+  </data>
+  <data name="&gt;&gt;label12.Name" xml:space="preserve">
+    <value>label12</value>
+  </data>
+  <data name="&gt;&gt;rateChungAll.Name" xml:space="preserve">
+    <value>rateChungAll</value>
+  </data>
+  <data name="&gt;&gt;scrl1.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="gunaElipsePanel2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>73, 427</value>
+  </data>
+  <data name="lblCount1Sao.TabIndex" type="System.Int32, mscorlib">
+    <value>76</value>
+  </data>
+  <data name="flwDanhGia.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1314, 594</value>
+  </data>
+  <data name="gunaCircleButton20.Size" type="System.Drawing.Size, System.Drawing">
+    <value>69, 59</value>
+  </data>
+  <data name="&gt;&gt;label2.Name" xml:space="preserve">
+    <value>label2</value>
+  </data>
+  <data name="lblashiba.Size" type="System.Drawing.Size, System.Drawing">
+    <value>76, 21</value>
+  </data>
+  <data name="lblCount2Sao.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;gunaCircleButton5.Parent" xml:space="preserve">
+    <value>gunaElipsePanel2</value>
+  </data>
+  <data name="gunaCircleButton14.TabIndex" type="System.Int32, mscorlib">
+    <value>18</value>
+  </data>
+  <data name="&gt;&gt;label11.Parent" xml:space="preserve">
+    <value>gunaElipsePanel7</value>
+  </data>
+  <data name="&gt;&gt;lblLoaiNha.Name" xml:space="preserve">
+    <value>lblLoaiNha</value>
+  </data>
+  <data name="rtxComment.Location" type="System.Drawing.Point, System.Drawing">
+    <value>579, 2790</value>
+  </data>
+  <data name="&gt;&gt;label8.Parent" xml:space="preserve">
+    <value>gunaElipsePanel7</value>
+  </data>
+  <data name="label21.Location" type="System.Drawing.Point, System.Drawing">
+    <value>129, 290</value>
+  </data>
+  <data name="gunaCircleButton2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="lblSaoChung.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 28.2pt</value>
+  </data>
+  <data name="richTextBox2.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gunaCircleButton20.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9pt</value>
+  </data>
+  <data name="lblCount3Sao.Location" type="System.Drawing.Point, System.Drawing">
+    <value>890, 173</value>
+  </data>
+  <data name="&gt;&gt;gunaElipsePanel4.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="gunaButton2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 14.25pt, style=Bold</value>
+  </data>
+  <data name="&gt;&gt;label16.Parent" xml:space="preserve">
+    <value>gunaElipsePanel2</value>
+  </data>
+  <data name="gunaElipsePanel4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>73, 1634</value>
+  </data>
+  <data name="gunaCircleButton5.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="&gt;&gt;label1.Parent" xml:space="preserve">
+    <value>gunaElipsePanel3</value>
+  </data>
+  <data name="&gt;&gt;lblPhongTam.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="gunaCircleButton16.Location" type="System.Drawing.Point, System.Drawing">
+    <value>49, 187</value>
+  </data>
+  <data name="gunaButton6.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 12pt</value>
+  </data>
+  <data name="&gt;&gt;lblCountRate.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="label21.TabIndex" type="System.Int32, mscorlib">
+    <value>25</value>
+  </data>
+  <data name="label3.Text" xml:space="preserve">
+    <value>Đánh giá trung bình</value>
+  </data>
+  <data name="&gt;&gt;scrl4.Name" xml:space="preserve">
+    <value>scrl4</value>
+  </data>
+  <data name="lblLoaiNha.TabIndex" type="System.Int32, mscorlib">
+    <value>27</value>
+  </data>
+  <data name="gunaCircleButton4.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="lbl.Text" xml:space="preserve">
+    <value>Đánh giá, nhận xét</value>
+  </data>
+  <data name="rateVietSao.Size" type="System.Drawing.Size, System.Drawing">
+    <value>200, 40</value>
+  </data>
+  <data name="&gt;&gt;lblLoaiNha.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="gunaCircleButton6.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9pt</value>
+  </data>
+  <data name="&gt;&gt;gunaCircleButton1.Name" xml:space="preserve">
+    <value>gunaCircleButton1</value>
+  </data>
+  <data name="lblCount4Sao.Text" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="gunaButton4.Text" xml:space="preserve">
+    <value>Mô tả</value>
+  </data>
+  <data name="&gt;&gt;lblGiaPhong.Parent" xml:space="preserve">
+    <value>gunaElipsePanel2</value>
+  </data>
+  <data name="&gt;&gt;label21.Parent" xml:space="preserve">
+    <value>gunaElipsePanel2</value>
+  </data>
+  <data name="&gt;&gt;lblDienTich.ZOrder" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="&gt;&gt;scrl2.ZOrder" xml:space="preserve">
+    <value>14</value>
+  </data>
+  <data name="&gt;&gt;lblCount1Sao.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblEmail.Name" xml:space="preserve">
+    <value>lblEmail</value>
+  </data>
+  <data name="picthree.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>202, 21</value>
+  </data>
+  <data name="gunaElipsePanel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>73, 1197</value>
+  </data>
+  <data name="label21.Text" xml:space="preserve">
+    <value>Địa chỉ</value>
+  </data>
+  <data name="pictureBox3.TabIndex" type="System.Int32, mscorlib">
+    <value>64</value>
+  </data>
+  <data name="lblCount5Sao.TabIndex" type="System.Int32, mscorlib">
+    <value>72</value>
+  </data>
+  <data name="lblCount2Sao.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 12pt</value>
+  </data>
+  <data name="&gt;&gt;gunaElipsePanel5.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="lblLoaiNha.Location" type="System.Drawing.Point, System.Drawing">
+    <value>129, 226</value>
+  </data>
+  <data name="&gt;&gt;label2.Parent" xml:space="preserve">
+    <value>gunaElipsePanel7</value>
+  </data>
+  <data name="&gt;&gt;gunaCircleButton15.Parent" xml:space="preserve">
+    <value>gunaElipsePanel2</value>
+  </data>
+  <data name="gunaCircleButton8.Size" type="System.Drawing.Size, System.Drawing">
+    <value>69, 59</value>
+  </data>
+  <data name="&gt;&gt;label8.ZOrder" xml:space="preserve">
+    <value>21</value>
+  </data>
+  <data name="&gt;&gt;pictureBox1.Name" xml:space="preserve">
+    <value>pictureBox1</value>
+  </data>
+  <data name="gunaCircleButton1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="pictwo.Size" type="System.Drawing.Size, System.Drawing">
+    <value>486, 380</value>
+  </data>
+  <data name="&gt;&gt;gunaCircleButton6.Type" xml:space="preserve">
+    <value>Guna.UI.WinForms.GunaCircleButton, Guna.UI, Version=1.9.0.1, Culture=neutral, PublicKeyToken=ad275b4be6718d4b</value>
+  </data>
+  <data name="lblDanhGiaSao.Size" type="System.Drawing.Size, System.Drawing">
+    <value>93, 24</value>
+  </data>
+  <data name="&gt;&gt;gunaCircleButton19.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;webBrowser1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.WebBrowser, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>345, 29</value>
+  </data>
+  <data name="lblPhone.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 12pt</value>
+  </data>
+  <data name="gunaElipsePanel1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="label6.TabIndex" type="System.Int32, mscorlib">
+    <value>43</value>
+  </data>
+  <data name="btnCountRate.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 10.2pt</value>
+  </data>
+  <data name="picfour.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>StretchImage</value>
+  </data>
+  <data name="pnlImage.Location" type="System.Drawing.Point, System.Drawing">
+    <value>62, 82</value>
+  </data>
+  <data name="&gt;&gt;rtxComment.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;label11.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label12.Parent" xml:space="preserve">
+    <value>gunaElipsePanel7</value>
+  </data>
+  <data name="&gt;&gt;gunaButton4.Parent" xml:space="preserve">
+    <value>gunaElipsePanel4</value>
+  </data>
+  <data name="label2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 13.8pt, style=Bold</value>
+  </data>
+  <data name="&gt;&gt;scrl5.Parent" xml:space="preserve">
+    <value>gunaElipsePanel7</value>
+  </data>
+  <data name="lblLoaiNha.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 12pt</value>
+  </data>
+  <data name="&gt;&gt;rtxDiaChi.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RichTextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="pictureBox3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>602, 174</value>
+  </data>
+  <data name="gunaElipsePanel4.TabIndex" type="System.Int32, mscorlib">
+    <value>31</value>
+  </data>
+  <data name="label27.Text" xml:space="preserve">
+    <value>Phòng tắm</value>
+  </data>
+  <data name="label23.Location" type="System.Drawing.Point, System.Drawing">
+    <value>129, 204</value>
+  </data>
+  <data name="gunaButton3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>297, 59</value>
+  </data>
+  <data name="label3.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 12pt</value>
+  </data>
+  <data name="rtxDiaChi.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 12pt</value>
+  </data>
+  <data name="label8.Size" type="System.Drawing.Size, System.Drawing">
+    <value>21, 24</value>
+  </data>
+  <data name="gunaButton5.Text" xml:space="preserve">
+    <value>Ảnh chi tiết</value>
+  </data>
+  <data name="gunaElipsePanel6.Location" type="System.Drawing.Point, System.Drawing">
+    <value>74, 844</value>
+  </data>
+  <data name="lblDienTich.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
+  <data name="gunaElipsePanel1.TabIndex" type="System.Int32, mscorlib">
+    <value>30</value>
+  </data>
+  <data name="label5.TabIndex" type="System.Int32, mscorlib">
+    <value>77</value>
+  </data>
+  <data name="lblDanhGiaSao.Text" xml:space="preserve">
+    <value>Tuyệt vời</value>
+  </data>
+  <data name="lblGiuongNgu.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
+  <data name="lblPhongTam.Text" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="flwDanhGia.Location" type="System.Drawing.Point, System.Drawing">
+    <value>74, 2916</value>
+  </data>
+  <data name="lblPhongTam.Size" type="System.Drawing.Size, System.Drawing">
+    <value>21, 24</value>
+  </data>
+  <data name="gunaButton3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>124, 14</value>
+  </data>
+  <data name="&gt;&gt;lblGiaPhong.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;picfour.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="btnCountRate.TabIndex" type="System.Int32, mscorlib">
+    <value>43</value>
+  </data>
+  <data name="&gt;&gt;gunaButton6.Parent" xml:space="preserve">
+    <value>gunaElipsePanel7</value>
+  </data>
+  <data name="&gt;&gt;flwDanhGia.Type" xml:space="preserve">
+    <value>System.Windows.Forms.FlowLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="gunaCircleButton2.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="gunaCircleButton1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>44, 215</value>
+  </data>
+  <data name="&gt;&gt;pictwo.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="gunaElipsePanel7.Location" type="System.Drawing.Point, System.Drawing">
+    <value>73, 2463</value>
+  </data>
+  <data name="webBrowser1.TabIndex" type="System.Int32, mscorlib">
+    <value>35</value>
+  </data>
+  <data name="gunaCircleButton5.TabIndex" type="System.Int32, mscorlib">
+    <value>21</value>
+  </data>
+  <data name="&gt;&gt;gunaCircleButton3.Name" xml:space="preserve">
+    <value>gunaCircleButton3</value>
+  </data>
+  <data name="&gt;&gt;gunaCircleButton20.Type" xml:space="preserve">
+    <value>Guna.UI.WinForms.GunaCircleButton, Guna.UI, Version=1.9.0.1, Culture=neutral, PublicKeyToken=ad275b4be6718d4b</value>
+  </data>
+  <data name="label1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 12pt</value>
+  </data>
+  <data name="&gt;&gt;gunaElipsePanel1.ZOrder" xml:space="preserve">
+    <value>10</value>
+  </data>
+  <data name="lblTinhTrang.Location" type="System.Drawing.Point, System.Drawing">
+    <value>744, 120</value>
+  </data>
+  <data name="label16.Location" type="System.Drawing.Point, System.Drawing">
+    <value>129, 99</value>
+  </data>
+  <data name="label10.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 12pt</value>
+  </data>
+  <data name="label25.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
+  <data name="lblGiuongNgu.TabIndex" type="System.Int32, mscorlib">
+    <value>31</value>
+  </data>
+  <data name="&gt;&gt;gunaCircleButton16.Type" xml:space="preserve">
+    <value>Guna.UI.WinForms.GunaCircleButton, Guna.UI, Version=1.9.0.1, Culture=neutral, PublicKeyToken=ad275b4be6718d4b</value>
+  </data>
+  <data name="&gt;&gt;rateChungAll.ZOrder" xml:space="preserve">
+    <value>24</value>
+  </data>
+  <data name="label3.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="gunaCircleButton19.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="lblDanhGiaSao.Location" type="System.Drawing.Point, System.Drawing">
+    <value>407, 2832</value>
+  </data>
+  <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>110, 24</value>
+  </data>
+  <data name="lblCount2Sao.Size" type="System.Drawing.Size, System.Drawing">
+    <value>21, 24</value>
+  </data>
+  <data name="scrl5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>631, 112</value>
+  </data>
+  <data name="&gt;&gt;label23.Parent" xml:space="preserve">
+    <value>gunaElipsePanel2</value>
+  </data>
+  <data name="label8.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="label27.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
+  <data name="&gt;&gt;lblCount3Sao.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="lblCountRate.Size" type="System.Drawing.Size, System.Drawing">
+    <value>19, 21</value>
+  </data>
+  <data name="picone.Location" type="System.Drawing.Point, System.Drawing">
+    <value>73, 0</value>
+  </data>
+  <data name="gunaElipsePanel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>900, 396</value>
+  </data>
+  <data name="&gt;&gt;lblCount1Sao.Parent" xml:space="preserve">
+    <value>gunaElipsePanel7</value>
+  </data>
+  <data name="lblEmail.Size" type="System.Drawing.Size, System.Drawing">
+    <value>207, 24</value>
+  </data>
+  <data name="label25.Location" type="System.Drawing.Point, System.Drawing">
+    <value>420, 203</value>
+  </data>
+  <data name="label25.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 9.75pt</value>
+  </data>
+  <data name="&gt;&gt;lblTenChu.Name" xml:space="preserve">
+    <value>lblTenChu</value>
+  </data>
+  <data name="gunaCircleButton19.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9pt</value>
+  </data>
+  <data name="&gt;&gt;scrl3.Parent" xml:space="preserve">
+    <value>gunaElipsePanel7</value>
+  </data>
+  <data name="gunaCircleButton6.TabIndex" type="System.Int32, mscorlib">
+    <value>38</value>
+  </data>
+  <data name="$this.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1451, 3543</value>
+  </data>
+  <data name="label23.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 9.75pt</value>
+  </data>
+  <data name="btnGuiDanhGia.Text" xml:space="preserve">
+    <value>Gửi đánh giá</value>
+  </data>
+  <data name="lblSaoChung.Size" type="System.Drawing.Size, System.Drawing">
+    <value>95, 58</value>
+  </data>
+  <data name="lblSaoChung.Text" xml:space="preserve">
+    <value>0/5</value>
+  </data>
+  <data name="gunaButton6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>208, 59</value>
+  </data>
+  <data name="scrl4.TabIndex" type="System.Int32, mscorlib">
+    <value>60</value>
+  </data>
+  <data name="&gt;&gt;gunaButton3.Parent" xml:space="preserve">
+    <value>gunaElipsePanel1</value>
+  </data>
+  <data name="gunaButton2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="lblDanhGiaSao.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;label27.Parent" xml:space="preserve">
+    <value>gunaElipsePanel2</value>
+  </data>
+  <data name="label27.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 9.75pt</value>
+  </data>
+  <data name="label16.Size" type="System.Drawing.Size, System.Drawing">
+    <value>84, 21</value>
+  </data>
+  <data name="gunaCircleButton3.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="gunaCircleButton19.Location" type="System.Drawing.Point, System.Drawing">
+    <value>669, 187</value>
+  </data>
+  <data name="&gt;&gt;lblEmail.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;rtxComment.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RichTextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="scrl3.TabIndex" type="System.Int32, mscorlib">
+    <value>63</value>
+  </data>
+  <data name="&gt;&gt;pictureBox3.ZOrder" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="rateChungAll.TabIndex" type="System.Int32, mscorlib">
+    <value>54</value>
+  </data>
+  <data name="&gt;&gt;gunaButton2.Parent" xml:space="preserve">
+    <value>gunaElipsePanel3</value>
+  </data>
+  <data name="gunaCircleButton19.Size" type="System.Drawing.Size, System.Drawing">
+    <value>77, 71</value>
+  </data>
+  <data name="&gt;&gt;rtxDiaChi.Name" xml:space="preserve">
+    <value>rtxDiaChi</value>
+  </data>
+  <data name="pictwo.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>StretchImage</value>
+  </data>
+  <data name="lblTenChu.Location" type="System.Drawing.Point, System.Drawing">
+    <value>128, 103</value>
+  </data>
+  <data name="&gt;&gt;lblEmail.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="lblEmail.Text" xml:space="preserve">
+    <value>vhao1509@gmail.com</value>
+  </data>
+  <data name="label23.Size" type="System.Drawing.Size, System.Drawing">
+    <value>72, 21</value>
+  </data>
+  <data name="&gt;&gt;label6.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;gunaCircleButton18.Type" xml:space="preserve">
+    <value>Guna.UI.WinForms.GunaCircleButton, Guna.UI, Version=1.9.0.1, Culture=neutral, PublicKeyToken=ad275b4be6718d4b</value>
+  </data>
+  <data name="&gt;&gt;rateChungAll.Parent" xml:space="preserve">
+    <value>gunaElipsePanel7</value>
+  </data>
+  <data name="picone.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="&gt;&gt;gunaButton5.Parent" xml:space="preserve">
+    <value>gunaElipsePanel5</value>
+  </data>
+  <data name="&gt;&gt;gunaCircleButton15.ZOrder" xml:space="preserve">
+    <value>12</value>
+  </data>
+  <data name="gunaCircleButton19.TabIndex" type="System.Int32, mscorlib">
+    <value>33</value>
+  </data>
+  <data name="picAvatar.Size" type="System.Drawing.Size, System.Drawing">
+    <value>65, 59</value>
+  </data>
+  <data name="lblPhone.Location" type="System.Drawing.Point, System.Drawing">
+    <value>129, 235</value>
+  </data>
+  <data name="&gt;&gt;lblCount1Sao.Name" xml:space="preserve">
+    <value>lblCount1Sao</value>
+  </data>
+  <data name="gunaElipsePanel5.TabIndex" type="System.Int32, mscorlib">
+    <value>32</value>
+  </data>
+  <data name="label23.Text" xml:space="preserve">
+    <value>Loại nhà</value>
+  </data>
+  <data name="lblGiaPhong.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
+  </data>
+  <data name="&gt;&gt;lblDanhGiaSao.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lblCount2Sao.Parent" xml:space="preserve">
+    <value>gunaElipsePanel7</value>
+  </data>
+  <data name="lbl.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 10.2pt</value>
+  </data>
+  <data name="&gt;&gt;label2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;gunaElipsePanel5.Name" xml:space="preserve">
+    <value>gunaElipsePanel5</value>
+  </data>
+  <data name="lblEmail.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblGiaPhong.Location" type="System.Drawing.Point, System.Drawing">
+    <value>128, 123</value>
+  </data>
+  <data name="lbl.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="rateChungAll.Location" type="System.Drawing.Point, System.Drawing">
+    <value>132, 186</value>
+  </data>
+  <data name="&gt;&gt;pnlImage.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;richTextBox2.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;rateVietSao.ZOrder" xml:space="preserve">
+    <value>16</value>
+  </data>
+  <data name="pictureBox3.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>StretchImage</value>
+  </data>
+  <data name="&gt;&gt;gunaCircleButton4.Type" xml:space="preserve">
+    <value>Guna.UI.WinForms.GunaCircleButton, Guna.UI, Version=1.9.0.1, Culture=neutral, PublicKeyToken=ad275b4be6718d4b</value>
+  </data>
+  <data name="gunaCircleButton8.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="lblTinhTrang.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
+  <data name="gunaElipsePanel2.TabIndex" type="System.Int32, mscorlib">
+    <value>24</value>
+  </data>
+  <data name="lblGiaPhong.Text" xml:space="preserve">
+    <value>4.000.000 VNĐ</value>
+  </data>
+  <data name="&gt;&gt;lblTinhTrang.Name" xml:space="preserve">
+    <value>lblTinhTrang</value>
+  </data>
+  <data name="&gt;&gt;gunaCircleButton20.Name" xml:space="preserve">
+    <value>gunaCircleButton20</value>
+  </data>
+  <data name="&gt;&gt;webBrowser1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="lblDienTich.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 12pt</value>
+  </data>
+  <data name="&gt;&gt;gunaElipsePanel2.Name" xml:space="preserve">
+    <value>gunaElipsePanel2</value>
+  </data>
+  <data name="&gt;&gt;rtxDiaChi.ZOrder" xml:space="preserve">
+    <value>21</value>
+  </data>
+  <data name="&gt;&gt;rtxComment.Name" xml:space="preserve">
+    <value>rtxComment</value>
+  </data>
+  <data name="&gt;&gt;lblGiuongNgu.Name" xml:space="preserve">
+    <value>lblGiuongNgu</value>
+  </data>
+  <data name="scrl4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>631, 145</value>
+  </data>
+  <data name="&gt;&gt;label3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="picthree.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1023, 0</value>
+  </data>
+  <data name="gunaElipsePanel7.TabIndex" type="System.Int32, mscorlib">
+    <value>34</value>
+  </data>
+  <data name="lblLoaiNha.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
+  <data name="&gt;&gt;label8.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="gunaCircleButton15.Size" type="System.Drawing.Size, System.Drawing">
+    <value>77, 71</value>
+  </data>
+  <data name="lblGiuongNgu.Location" type="System.Drawing.Point, System.Drawing">
+    <value>456, 226</value>
+  </data>
+  <data name="&gt;&gt;lblDienTich.Name" xml:space="preserve">
+    <value>lblDienTich</value>
+  </data>
+  <data name="&gt;&gt;btnCountRate.Type" xml:space="preserve">
+    <value>Guna.UI.WinForms.GunaCircleButton, Guna.UI, Version=1.9.0.1, Culture=neutral, PublicKeyToken=ad275b4be6718d4b</value>
+  </data>
+  <data name="&gt;&gt;lbl.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label20.Parent" xml:space="preserve">
+    <value>gunaElipsePanel2</value>
+  </data>
+  <data name="&gt;&gt;lblCount3Sao.Parent" xml:space="preserve">
+    <value>gunaElipsePanel7</value>
+  </data>
+  <data name="label21.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="picAvatar.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>StretchImage</value>
+  </data>
+  <data name="lblashiba.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
+  <data name="lblEmail.Location" type="System.Drawing.Point, System.Drawing">
+    <value>129, 313</value>
+  </data>
+  <data name="lblLoaiNha.Text" xml:space="preserve">
+    <value>Chung cư</value>
+  </data>
+  <data name="&gt;&gt;lblGiaPhong.ZOrder" xml:space="preserve">
+    <value>19</value>
+  </data>
+  <data name="label6.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 12pt, style=Bold</value>
+  </data>
+  <data name="rtxComment.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="gunaCircleButton18.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9pt</value>
+  </data>
+  <data name="&gt;&gt;picAvatar.Parent" xml:space="preserve">
+    <value>gunaElipsePanel3</value>
+  </data>
+  <data name="&gt;&gt;gunaButton1.Parent" xml:space="preserve">
+    <value>gunaElipsePanel2</value>
+  </data>
+  <data name="&gt;&gt;gunaCircleButton7.Type" xml:space="preserve">
+    <value>Guna.UI.WinForms.GunaCircleButton, Guna.UI, Version=1.9.0.1, Culture=neutral, PublicKeyToken=ad275b4be6718d4b</value>
+  </data>
+  <data name="&gt;&gt;gunaElipsePanel1.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lblPhone.Name" xml:space="preserve">
+    <value>lblPhone</value>
+  </data>
+  <data name="&gt;&gt;lblCount4Sao.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="rtxDetail.TabIndex" type="System.Int32, mscorlib">
+    <value>41</value>
+  </data>
+  <data name="&gt;&gt;btnCountRate.ZOrder" xml:space="preserve">
+    <value>27</value>
+  </data>
+  <data name="label8.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 12pt</value>
+  </data>
+  <data name="&gt;&gt;flwDanhGia.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;gunaButton1.Type" xml:space="preserve">
+    <value>Guna.UI.WinForms.GunaButton, Guna.UI, Version=1.9.0.1, Culture=neutral, PublicKeyToken=ad275b4be6718d4b</value>
+  </data>
+  <data name="&gt;&gt;btnCountRate.Parent" xml:space="preserve">
+    <value>gunaElipsePanel7</value>
+  </data>
+  <data name="$this.AutoScroll" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="gunaButton4.TabIndex" type="System.Int32, mscorlib">
+    <value>39</value>
+  </data>
+  <data name="gunaCircleButton18.Size" type="System.Drawing.Size, System.Drawing">
+    <value>77, 71</value>
+  </data>
+  <data name="&gt;&gt;lblCountRate.Name" xml:space="preserve">
+    <value>lblCountRate</value>
+  </data>
+  <data name="&gt;&gt;pnlCSVC.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;gunaCircleButton6.Parent" xml:space="preserve">
+    <value>gunaElipsePanel1</value>
+  </data>
+  <data name="&gt;&gt;label9.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label10.Text" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;lblPhone.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="scrl2.TabIndex" type="System.Int32, mscorlib">
+    <value>66</value>
+  </data>
+  <data name="gunaCircleButton18.TabIndex" type="System.Int32, mscorlib">
+    <value>30</value>
+  </data>
+  <data name="&gt;&gt;btnGuiDanhGia.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="pnlCSVC.TabIndex" type="System.Int32, mscorlib">
+    <value>39</value>
+  </data>
+  <data name="&gt;&gt;label20.Name" xml:space="preserve">
+    <value>label20</value>
+  </data>
+  <data name="&gt;&gt;lblSaoChung.Parent" xml:space="preserve">
+    <value>gunaElipsePanel7</value>
+  </data>
+  <data name="pnlImage.TabIndex" type="System.Int32, mscorlib">
+    <value>41</value>
+  </data>
+  <data name="&gt;&gt;gunaCircleButton4.Parent" xml:space="preserve">
+    <value>gunaElipsePanel2</value>
+  </data>
+  <data name="lblCount1Sao.Text" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;label8.Name" xml:space="preserve">
+    <value>label8</value>
+  </data>
+  <data name="&gt;&gt;gunaElipsePanel3.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lblCount4Sao.Parent" xml:space="preserve">
+    <value>gunaElipsePanel7</value>
+  </data>
+  <data name="lblDienTich.Text" xml:space="preserve">
+    <value>10,000,000 VNĐ</value>
+  </data>
+  <data name="&gt;&gt;pictureBox5.Parent" xml:space="preserve">
+    <value>gunaElipsePanel7</value>
+  </data>
+  <data name="&gt;&gt;gunaCircleButton8.Type" xml:space="preserve">
+    <value>Guna.UI.WinForms.GunaCircleButton, Guna.UI, Version=1.9.0.1, Culture=neutral, PublicKeyToken=ad275b4be6718d4b</value>
+  </data>
+  <data name="&gt;&gt;lblCountRate.Parent" xml:space="preserve">
+    <value>gunaElipsePanel7</value>
+  </data>
+  <data name="&gt;&gt;pictureBox2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="picthree.Size" type="System.Drawing.Size, System.Drawing">
+    <value>387, 209</value>
+  </data>
+  <data name="gunaCircleButton15.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9pt</value>
+  </data>
+  <data name="gunaElipsePanel2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="gunaElipsePanel4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>900, 276</value>
+  </data>
+  <data name="pnlCSVC.Size" type="System.Drawing.Size, System.Drawing">
+    <value>814, 272</value>
+  </data>
+  <data name="gunaCircleButton15.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="pnlImage.AutoScroll" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;pictureBox4.Parent" xml:space="preserve">
+    <value>gunaElipsePanel7</value>
+  </data>
+  <data name="&gt;&gt;pnlCSVC.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;gunaCircleButton2.Type" xml:space="preserve">
+    <value>Guna.UI.WinForms.GunaCircleButton, Guna.UI, Version=1.9.0.1, Culture=neutral, PublicKeyToken=ad275b4be6718d4b</value>
+  </data>
+  <data name="picfour.TabIndex" type="System.Int32, mscorlib">
+    <value>29</value>
+  </data>
+  <data name="&gt;&gt;label6.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="gunaCircleButton5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>665, 91</value>
+  </data>
+  <data name="&gt;&gt;gunaCircleButton19.Parent" xml:space="preserve">
+    <value>gunaElipsePanel2</value>
+  </data>
+  <data name="label25.Text" xml:space="preserve">
+    <value>Giường ngủ</value>
+  </data>
+  <data name="lblDienTich.Size" type="System.Drawing.Size, System.Drawing">
+    <value>155, 24</value>
+  </data>
+  <data name="&gt;&gt;lblashiba.Parent" xml:space="preserve">
+    <value>gunaElipsePanel2</value>
+  </data>
+  <data name="label12.Location" type="System.Drawing.Point, System.Drawing">
+    <value>580, 237</value>
+  </data>
+  <data name="&gt;&gt;lblTinhTrang.ZOrder" xml:space="preserve">
+    <value>13</value>
+  </data>
+  <data name="lblCount3Sao.Text" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;picthree.Name" xml:space="preserve">
+    <value>picthree</value>
+  </data>
+  <data name="gunaCircleButton2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9pt</value>
+  </data>
+  <data name="&gt;&gt;scrl1.Parent" xml:space="preserve">
+    <value>gunaElipsePanel7</value>
+  </data>
+  <data name="pictureBox2.TabIndex" type="System.Int32, mscorlib">
+    <value>61</value>
+  </data>
+  <data name="label23.TabIndex" type="System.Int32, mscorlib">
+    <value>28</value>
+  </data>
+  <data name="lblEmail.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 12pt</value>
+  </data>
+  <data name="&gt;&gt;pictureBox2.Parent" xml:space="preserve">
+    <value>gunaElipsePanel7</value>
+  </data>
+  <data name="lblTenChu.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 12pt, style=Bold</value>
+  </data>
+  <data name="&gt;&gt;lblCount2Sao.Name" xml:space="preserve">
+    <value>lblCount2Sao</value>
+  </data>
+  <data name="label27.TabIndex" type="System.Int32, mscorlib">
+    <value>35</value>
+  </data>
+  <data name="gunaCircleButton7.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="richTextBox2.TabIndex" type="System.Int32, mscorlib">
+    <value>55</value>
+  </data>
+  <data name="&gt;&gt;gunaElipsePanel7.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;label5.Parent" xml:space="preserve">
+    <value>gunaElipsePanel7</value>
+  </data>
+  <data name="gunaCircleButton14.Size" type="System.Drawing.Size, System.Drawing">
+    <value>77, 71</value>
+  </data>
+  <data name="&gt;&gt;gunaElipsePanel3.Name" xml:space="preserve">
+    <value>gunaElipsePanel3</value>
+  </data>
+  <data name="&gt;&gt;gunaCircleButton7.Parent" xml:space="preserve">
+    <value>gunaElipsePanel4</value>
+  </data>
+  <data name="&gt;&gt;lblCount5Sao.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="&gt;&gt;scrl2.Type" xml:space="preserve">
+    <value>Guna.UI.WinForms.GunaHScrollBar, Guna.UI, Version=1.9.0.1, Culture=neutral, PublicKeyToken=ad275b4be6718d4b</value>
+  </data>
+  <data name="gunaCircleButton5.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9pt</value>
+  </data>
+  <data name="&gt;&gt;scrl4.Type" xml:space="preserve">
+    <value>Guna.UI.WinForms.GunaHScrollBar, Guna.UI, Version=1.9.0.1, Culture=neutral, PublicKeyToken=ad275b4be6718d4b</value>
+  </data>
+  <data name="&gt;&gt;lblGiuongNgu.Parent" xml:space="preserve">
+    <value>gunaElipsePanel2</value>
+  </data>
+  <data name="&gt;&gt;lblDienTich.Parent" xml:space="preserve">
+    <value>gunaElipsePanel2</value>
+  </data>
+  <data name="&gt;&gt;pictureBox1.Parent" xml:space="preserve">
+    <value>gunaElipsePanel7</value>
+  </data>
+  <data name="&gt;&gt;rtxDiaChi.Parent" xml:space="preserve">
+    <value>gunaElipsePanel2</value>
+  </data>
+  <data name="&gt;&gt;rateVietSao.Type" xml:space="preserve">
+    <value>Guna.UI2.WinForms.Guna2RatingStar, Guna.UI2, Version=2.0.0.1, Culture=neutral, PublicKeyToken=ad275b4be6718d4b</value>
+  </data>
+  <data name="label6.Text" xml:space="preserve">
+    <value>Bạn đánh giá nhà trọ bao nhiêu sao ?</value>
+  </data>
+  <data name="lblGiuongNgu.Size" type="System.Drawing.Size, System.Drawing">
+    <value>21, 24</value>
+  </data>
+  <data name="&gt;&gt;pictureBox3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;flwDanhGia.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="gunaButton1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>337, 59</value>
+  </data>
+  <data name="&gt;&gt;gunaCircleButton5.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="gunaCircleButton4.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9pt</value>
+  </data>
+  <data name="pictureBox1.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>StretchImage</value>
+  </data>
+  <data name="gunaCircleButton4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>48, 290</value>
+  </data>
+  <data name="picfour.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="btnGuiDanhGia.TabIndex" type="System.Int32, mscorlib">
+    <value>78</value>
+  </data>
+  <data name="&gt;&gt;lblLoaiNha.Parent" xml:space="preserve">
+    <value>gunaElipsePanel2</value>
+  </data>
+  <data name="&gt;&gt;pictwo.Type" xml:space="preserve">
+    <value>Guna.UI.WinForms.GunaPictureBox, Guna.UI, Version=1.9.0.1, Culture=neutral, PublicKeyToken=ad275b4be6718d4b</value>
+  </data>
+  <data name="label11.Size" type="System.Drawing.Size, System.Drawing">
+    <value>21, 24</value>
+  </data>
+  <data name="&gt;&gt;gunaCircleButton3.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="gunaButton4.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 14.25pt, style=Bold</value>
+  </data>
+  <data name="gunaCircleButton7.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9pt</value>
+  </data>
+  <data name="pnlImage.Size" type="System.Drawing.Size, System.Drawing">
+    <value>769, 328</value>
+  </data>
+  <data name="&gt;&gt;rtxDetail.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="lblCount2Sao.Location" type="System.Drawing.Point, System.Drawing">
+    <value>890, 207</value>
+  </data>
+  <data name="scrl1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>631, 243</value>
+  </data>
+  <data name="rateVietSao.TabIndex" type="System.Int32, mscorlib">
+    <value>54</value>
+  </data>
+  <data name="&gt;&gt;lblCount3Sao.Name" xml:space="preserve">
+    <value>lblCount3Sao</value>
+  </data>
+  <data name="pictwo.Location" type="System.Drawing.Point, System.Drawing">
+    <value>558, 0</value>
+  </data>
+  <data name="&gt;&gt;gunaCircleButton8.Parent" xml:space="preserve">
+    <value>gunaElipsePanel5</value>
+  </data>
+  <data name="rtxDiaChi.Location" type="System.Drawing.Point, System.Drawing">
+    <value>133, 313</value>
+  </data>
+  <data name="&gt;&gt;gunaCircleButton16.Name" xml:space="preserve">
+    <value>gunaCircleButton16</value>
+  </data>
+  <data name="&gt;&gt;scrl2.Parent" xml:space="preserve">
+    <value>gunaElipsePanel7</value>
+  </data>
+  <data name="&gt;&gt;pictwo.Name" xml:space="preserve">
+    <value>pictwo</value>
+  </data>
+  <data name="label23.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
+  <data name="&gt;&gt;scrl3.Type" xml:space="preserve">
+    <value>Guna.UI.WinForms.GunaHScrollBar, Guna.UI, Version=1.9.0.1, Culture=neutral, PublicKeyToken=ad275b4be6718d4b</value>
+  </data>
+  <data name="richTextBox2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>232, 75</value>
+  </data>
+  <data name="label11.Location" type="System.Drawing.Point, System.Drawing">
+    <value>580, 206</value>
+  </data>
+  <data name="webBrowser1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>899, 328</value>
+  </data>
+  <data name="label20.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="btnCountRate.Size" type="System.Drawing.Size, System.Drawing">
+    <value>37, 39</value>
+  </data>
+  <data name="scrl3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>631, 178</value>
+  </data>
+  <data name="&gt;&gt;rateVietSao.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;scrl4.ZOrder" xml:space="preserve">
+    <value>20</value>
+  </data>
+  <data name="&gt;&gt;lblSaoChung.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="lblCount4Sao.Size" type="System.Drawing.Size, System.Drawing">
+    <value>21, 24</value>
+  </data>
+  <data name="label6.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;gunaCircleButton4.Name" xml:space="preserve">
+    <value>gunaCircleButton4</value>
+  </data>
+  <data name="&gt;&gt;label5.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="gunaButton2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>257, 59</value>
+  </data>
+  <data name="lblCount4Sao.Location" type="System.Drawing.Point, System.Drawing">
+    <value>890, 140</value>
+  </data>
+  <data name="scrl1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>253, 14</value>
+  </data>
+  <data name="webBrowser1.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
+    <value>Fill</value>
+  </data>
+  <data name="&gt;&gt;rtxDetail.Type" xml:space="preserve">
+    <value>System.Windows.Forms.RichTextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="pnlCSVC.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="rtxDiaChi.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="&gt;&gt;picAvatar.Type" xml:space="preserve">
+    <value>Guna.UI.WinForms.GunaCirclePictureBox, Guna.UI, Version=1.9.0.1, Culture=neutral, PublicKeyToken=ad275b4be6718d4b</value>
+  </data>
+  <data name="pictureBox4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>602, 208</value>
+  </data>
+  <data name="gunaCircleButton1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9pt</value>
+  </data>
+  <data name="lblDienTich.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="pictureBox2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>26, 21</value>
+  </data>
+  <data name="&gt;&gt;pictwo.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="&gt;&gt;gunaCircleButton14.Parent" xml:space="preserve">
+    <value>gunaElipsePanel2</value>
+  </data>
+  <data name="&gt;&gt;gunaCircleButton18.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="gunaCircleButton6.Location" type="System.Drawing.Point, System.Drawing">
+    <value>57, 14</value>
+  </data>
+  <data name="&gt;&gt;lblTenChu.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="label2.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;lblDanhGiaSao.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;lblashiba.Name" xml:space="preserve">
+    <value>lblashiba</value>
+  </data>
+  <data name="label25.Size" type="System.Drawing.Size, System.Drawing">
+    <value>94, 21</value>
+  </data>
+  <data name="&gt;&gt;lblCount4Sao.Name" xml:space="preserve">
+    <value>lblCount4Sao</value>
+  </data>
+  <data name="label1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
+  <data name="gunaCircleButton3.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9pt</value>
+  </data>
+  <data name="lblPhone.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="pictureBox1.TabIndex" type="System.Int32, mscorlib">
+    <value>58</value>
+  </data>
+  <data name="&gt;&gt;label5.Name" xml:space="preserve">
+    <value>label5</value>
+  </data>
+  <data name="gunaButton5.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="&gt;&gt;pictureBox3.Parent" xml:space="preserve">
+    <value>gunaElipsePanel7</value>
+  </data>
+  <data name="&gt;&gt;label9.Name" xml:space="preserve">
+    <value>label9</value>
+  </data>
+  <data name="pictureBox1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>602, 108</value>
+  </data>
+  <data name="&gt;&gt;label3.Parent" xml:space="preserve">
+    <value>gunaElipsePanel7</value>
+  </data>
+  <data name="&gt;&gt;scrl1.Name" xml:space="preserve">
+    <value>scrl1</value>
+  </data>
+  <data name="lblTenChu.Text" xml:space="preserve">
+    <value>Đinh Việt Hào</value>
+  </data>
+  <data name="&gt;&gt;scrl5.Name" xml:space="preserve">
+    <value>scrl5</value>
+  </data>
+  <data name="&gt;&gt;gunaCircleButton14.Name" xml:space="preserve">
+    <value>gunaCircleButton14</value>
+  </data>
+  <data name="&gt;&gt;webBrowser1.Name" xml:space="preserve">
+    <value>webBrowser1</value>
+  </data>
+  <data name="&gt;&gt;gunaCircleButton18.Name" xml:space="preserve">
+    <value>gunaCircleButton18</value>
+  </data>
+  <data name="picone.Size" type="System.Drawing.Size, System.Drawing">
+    <value>497, 380</value>
+  </data>
+  <data name="label12.TabIndex" type="System.Int32, mscorlib">
+    <value>71</value>
+  </data>
+  <data name="&gt;&gt;gunaButton6.Type" xml:space="preserve">
+    <value>Guna.UI.WinForms.GunaButton, Guna.UI, Version=1.9.0.1, Culture=neutral, PublicKeyToken=ad275b4be6718d4b</value>
+  </data>
+  <data name="lblTinhTrang.TabIndex" type="System.Int32, mscorlib">
+    <value>22</value>
+  </data>
+  <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>129, 139</value>
+  </data>
+  <data name="&gt;&gt;label9.Parent" xml:space="preserve">
+    <value>gunaElipsePanel7</value>
+  </data>
+  <data name="gunaButton5.TabIndex" type="System.Int32, mscorlib">
+    <value>39</value>
+  </data>
+  <data name="rtxComment.Size" type="System.Drawing.Size, System.Drawing">
+    <value>576, 75</value>
+  </data>
+  <data name="label20.Location" type="System.Drawing.Point, System.Drawing">
+    <value>745, 99</value>
+  </data>
+  <data name="&gt;&gt;gunaElipsePanel5.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="label16.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;gunaElipsePanel7.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="label12.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 12pt</value>
+  </data>
+  <data name="richTextBox2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1156, 2790</value>
+  </data>
+  <data name="&gt;&gt;lblPhongTam.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="lblCountRate.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblCount5Sao.Text" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="lblGiaPhong.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
+  <data name="label16.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 9.75pt</value>
+  </data>
+  <data name="gunaElipsePanel3.TabIndex" type="System.Int32, mscorlib">
+    <value>25</value>
+  </data>
+  <data name="lbl.TabIndex" type="System.Int32, mscorlib">
+    <value>53</value>
+  </data>
+  <data name="lblTenChu.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
+  <data name="pictureBox2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>602, 141</value>
+  </data>
+  <data name="lbl.Size" type="System.Drawing.Size, System.Drawing">
+    <value>150, 21</value>
+  </data>
+  <data name="&gt;&gt;scrl2.Name" xml:space="preserve">
+    <value>scrl2</value>
+  </data>
+  <data name="gunaCircleButton4.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
+    <value>28</value>
+  </data>
+  <data name="&gt;&gt;lblSaoChung.ZOrder" xml:space="preserve">
+    <value>25</value>
+  </data>
+  <data name="&gt;&gt;label23.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label3.Name" xml:space="preserve">
+    <value>label3</value>
+  </data>
+  <data name="&gt;&gt;richTextBox2.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;rtxDetail.Name" xml:space="preserve">
+    <value>rtxDetail</value>
+  </data>
+  <data name="lblPhone.Text" xml:space="preserve">
+    <value>+84 793111038</value>
+  </data>
+  <data name="gunaButton4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>213, 59</value>
+  </data>
+  <data name="picone.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>StretchImage</value>
+  </data>
+  <data name="gunaCircleButton16.Size" type="System.Drawing.Size, System.Drawing">
+    <value>77, 71</value>
+  </data>
+  <data name="gunaButton6.Text" xml:space="preserve">
+    <value>Gửi đánh giá của bạn</value>
+  </data>
+  <data name="&gt;&gt;pnlImage.Parent" xml:space="preserve">
+    <value>gunaElipsePanel5</value>
+  </data>
+  <data name="&gt;&gt;gunaButton3.Type" xml:space="preserve">
+    <value>Guna.UI.WinForms.GunaButton, Guna.UI, Version=1.9.0.1, Culture=neutral, PublicKeyToken=ad275b4be6718d4b</value>
+  </data>
+  <data name="label16.Text" xml:space="preserve">
+    <value>Giá phòng</value>
+  </data>
+  <data name="&gt;&gt;label1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="rtxDetail.Text" xml:space="preserve">
+    <value />
+  </data>
+  <data name="btnGuiDanhGia.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1199, 2806</value>
+  </data>
+  <data name="&gt;&gt;btnCountRate.Name" xml:space="preserve">
+    <value>btnCountRate</value>
+  </data>
+  <data name="label5.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 10.2pt</value>
+  </data>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>8, 16</value>
+  </data>
+  <data name="pictureBox3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>26, 21</value>
+  </data>
+  <data name="&gt;&gt;label6.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="lblCount1Sao.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 12pt</value>
+  </data>
+  <data name="label25.TabIndex" type="System.Int32, mscorlib">
+    <value>32</value>
+  </data>
+  <data name="&gt;&gt;picfour.Name" xml:space="preserve">
+    <value>picfour</value>
+  </data>
+  <data name="label27.Size" type="System.Drawing.Size, System.Drawing">
+    <value>89, 21</value>
+  </data>
+  <data name="lblSaoChung.Location" type="System.Drawing.Point, System.Drawing">
+    <value>177, 125</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.UserControl, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;gunaButton2.Type" xml:space="preserve">
+    <value>Guna.UI.WinForms.GunaButton, Guna.UI, Version=1.9.0.1, Culture=neutral, PublicKeyToken=ad275b4be6718d4b</value>
+  </data>
+  <data name="lblEmail.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
+  <data name="picthree.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>StretchImage</value>
+  </data>
+  <data name="rtxComment.TabIndex" type="System.Int32, mscorlib">
+    <value>55</value>
+  </data>
+  <data name="lblCountRate.Text" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="scrl4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>253, 14</value>
+  </data>
+  <data name="gunaButton1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 14.25pt, style=Bold</value>
+  </data>
+  <data name="&gt;&gt;gunaCircleButton20.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;gunaButton5.Type" xml:space="preserve">
+    <value>Guna.UI.WinForms.GunaButton, Guna.UI, Version=1.9.0.1, Culture=neutral, PublicKeyToken=ad275b4be6718d4b</value>
+  </data>
+  <data name="gunaCircleButton8.Location" type="System.Drawing.Point, System.Drawing">
+    <value>57, 16</value>
+  </data>
+  <data name="&gt;&gt;lblDanhGiaSao.Name" xml:space="preserve">
+    <value>lblDanhGiaSao</value>
+  </data>
+  <data name="&gt;&gt;gunaCircleButton1.Parent" xml:space="preserve">
+    <value>gunaElipsePanel3</value>
+  </data>
+  <data name="lblCount2Sao.TabIndex" type="System.Int32, mscorlib">
+    <value>75</value>
+  </data>
+  <data name="gunaButton3.TabIndex" type="System.Int32, mscorlib">
+    <value>37</value>
+  </data>
+  <data name="lblCount5Sao.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="gunaButton5.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 14.25pt, style=Bold</value>
+  </data>
+  <data name="&gt;&gt;gunaCircleButton14.ZOrder" xml:space="preserve">
+    <value>18</value>
+  </data>
+  <data name="scrl5.Size" type="System.Drawing.Size, System.Drawing">
+    <value>253, 14</value>
+  </data>
+  <data name="label10.Size" type="System.Drawing.Size, System.Drawing">
+    <value>21, 24</value>
+  </data>
+  <data name="gunaElipsePanel3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>999, 427</value>
+  </data>
+  <data name="gunaCircleButton8.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9pt</value>
+  </data>
+  <data name="&gt;&gt;lblTenChu.Parent" xml:space="preserve">
+    <value>gunaElipsePanel3</value>
+  </data>
+  <data name="&gt;&gt;label25.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="&gt;&gt;gunaButton4.Type" xml:space="preserve">
+    <value>Guna.UI.WinForms.GunaButton, Guna.UI, Version=1.9.0.1, Culture=neutral, PublicKeyToken=ad275b4be6718d4b</value>
+  </data>
+  <data name="scrl2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>253, 14</value>
+  </data>
+  <data name="label16.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
+  </data>
+  <data name="&gt;&gt;gunaElipsePanel2.Type" xml:space="preserve">
+    <value>Guna.UI.WinForms.GunaElipsePanel, Guna.UI, Version=1.9.0.1, Culture=neutral, PublicKeyToken=ad275b4be6718d4b</value>
+  </data>
+  <data name="gunaButton5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>124, 16</value>
+  </data>
+  <data name="gunaCircleButton3.Location" type="System.Drawing.Point, System.Drawing">
+    <value>57, 14</value>
+  </data>
+  <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>187, 24</value>
+  </data>
+  <data name="lblPhongTam.TabIndex" type="System.Int32, mscorlib">
+    <value>34</value>
+  </data>
+  <data name="gunaButton3.Text" xml:space="preserve">
+    <value>Cơ sở vật chất</value>
+  </data>
+  <data name="rtxDiaChi.TabIndex" type="System.Int32, mscorlib">
+    <value>13</value>
+  </data>
+  <data name="&gt;&gt;lblTenChu.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label21.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 9.75pt</value>
+  </data>
+  <data name="&gt;&gt;lblCount4Sao.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="gunaElipsePanel5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>73, 1973</value>
+  </data>
+  <data name="&gt;&gt;picfour.Type" xml:space="preserve">
+    <value>Guna.UI.WinForms.GunaPictureBox, Guna.UI, Version=1.9.0.1, Culture=neutral, PublicKeyToken=ad275b4be6718d4b</value>
+  </data>
+  <data name="gunaElipsePanel6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>899, 328</value>
+  </data>
+  <data name="rtxDiaChi.Text" xml:space="preserve">
+    <value>1 Nguyễn Bỉnh Khiêm, Phường Bến Nghé, Quận 1, thành phố Hồ Chí Minh</value>
+  </data>
+  <data name="pictureBox4.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>StretchImage</value>
+  </data>
+  <data name="&gt;&gt;label25.Name" xml:space="preserve">
+    <value>label25</value>
+  </data>
+  <data name="&gt;&gt;btnGuiDanhGia.Name" xml:space="preserve">
+    <value>btnGuiDanhGia</value>
+  </data>
+  <data name="scrl3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>253, 14</value>
+  </data>
+  <data name="pictwo.TabIndex" type="System.Int32, mscorlib">
+    <value>26</value>
+  </data>
+  <data name="&gt;&gt;picone.ZOrder" xml:space="preserve">
+    <value>15</value>
+  </data>
+  <data name="&gt;&gt;gunaCircleButton20.Parent" xml:space="preserve">
+    <value>gunaElipsePanel3</value>
+  </data>
+  <data name="rtxDiaChi.Size" type="System.Drawing.Size, System.Drawing">
+    <value>580, 57</value>
+  </data>
+  <data name="label25.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="gunaElipsePanel2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>900, 396</value>
+  </data>
+  <data name="lblashiba.TabIndex" type="System.Int32, mscorlib">
+    <value>20</value>
+  </data>
+  <data name="lblDanhGiaSao.TabIndex" type="System.Int32, mscorlib">
+    <value>44</value>
+  </data>
+  <data name="&gt;&gt;gunaElipsePanel6.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="gunaCircleButton20.TabIndex" type="System.Int32, mscorlib">
+    <value>40</value>
+  </data>
+  <data name="&gt;&gt;label10.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="gunaCircleButton18.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
+  <data name="&gt;&gt;label6.Name" xml:space="preserve">
+    <value>label6</value>
+  </data>
+  <data name="picone.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="lbl.Location" type="System.Drawing.Point, System.Drawing">
+    <value>171, 240</value>
+  </data>
+  <data name="&gt;&gt;scrl3.ZOrder" xml:space="preserve">
+    <value>17</value>
+  </data>
+  <data name="gunaCircleButton14.Location" type="System.Drawing.Point, System.Drawing">
+    <value>344, 91</value>
+  </data>
+  <data name="label20.Size" type="System.Drawing.Size, System.Drawing">
+    <value>86, 21</value>
+  </data>
+  <data name="&gt;&gt;lblCountRate.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="scrl5.TabIndex" type="System.Int32, mscorlib">
+    <value>57</value>
+  </data>
+  <data name="&gt;&gt;lbl.Parent" xml:space="preserve">
+    <value>gunaElipsePanel7</value>
+  </data>
+  <data name="&gt;&gt;gunaElipsePanel1.Name" xml:space="preserve">
+    <value>gunaElipsePanel1</value>
+  </data>
+  <data name="gunaCircleButton16.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9pt</value>
+  </data>
+  <data name="gunaCircleButton16.TabIndex" type="System.Int32, mscorlib">
+    <value>26</value>
+  </data>
+  <data name="&gt;&gt;gunaCircleButton15.Name" xml:space="preserve">
+    <value>gunaCircleButton15</value>
+  </data>
+  <data name="pictureBox1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>26, 21</value>
+  </data>
+  <data name="lblTenChu.Size" type="System.Drawing.Size, System.Drawing">
+    <value>148, 24</value>
+  </data>
+  <data name="&gt;&gt;gunaCircleButton19.Name" xml:space="preserve">
+    <value>gunaCircleButton19</value>
+  </data>
+  <data name="label1.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="lblGiuongNgu.Text" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="&gt;&gt;pnlCSVC.Parent" xml:space="preserve">
+    <value>gunaElipsePanel1</value>
+  </data>
+  <data name="label16.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="label20.Text" xml:space="preserve">
+    <value>Tình trạng</value>
+  </data>
+  <data name="&gt;&gt;scrl5.Type" xml:space="preserve">
+    <value>Guna.UI.WinForms.GunaHScrollBar, Guna.UI, Version=1.9.0.1, Culture=neutral, PublicKeyToken=ad275b4be6718d4b</value>
+  </data>
+  <data name="lblGiaPhong.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 12pt</value>
+  </data>
+  <data name="gunaElipsePanel3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>411, 396</value>
+  </data>
+  <data name="pictureBox5.Location" type="System.Drawing.Point, System.Drawing">
+    <value>602, 239</value>
+  </data>
+  <data name="lblCount5Sao.Location" type="System.Drawing.Point, System.Drawing">
+    <value>890, 107</value>
+  </data>
+  <data name="&gt;&gt;picthree.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="btnGuiDanhGia.Size" type="System.Drawing.Size, System.Drawing">
+    <value>163, 44</value>
+  </data>
+  <data name="&gt;&gt;picone.Name" xml:space="preserve">
+    <value>picone</value>
+  </data>
+  <data name="&gt;&gt;lblPhone.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label12.Text" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;label16.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;gunaCircleButton2.Name" xml:space="preserve">
+    <value>gunaCircleButton2</value>
+  </data>
+  <data name="lblLoaiNha.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;label21.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
+  <data name="&gt;&gt;gunaCircleButton1.Type" xml:space="preserve">
+    <value>Guna.UI.WinForms.GunaCircleButton, Guna.UI, Version=1.9.0.1, Culture=neutral, PublicKeyToken=ad275b4be6718d4b</value>
+  </data>
+  <data name="&gt;&gt;pnlImage.Name" xml:space="preserve">
+    <value>pnlImage</value>
+  </data>
+  <data name="&gt;&gt;gunaElipsePanel6.Type" xml:space="preserve">
+    <value>Guna.UI.WinForms.GunaElipsePanel, Guna.UI, Version=1.9.0.1, Culture=neutral, PublicKeyToken=ad275b4be6718d4b</value>
+  </data>
+  <data name="label9.Text" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="lblashiba.Location" type="System.Drawing.Point, System.Drawing">
+    <value>420, 99</value>
+  </data>
+  <data name="gunaElipsePanel7.Size" type="System.Drawing.Size, System.Drawing">
+    <value>1315, 307</value>
+  </data>
+  <data name="&gt;&gt;gunaCircleButton6.Name" xml:space="preserve">
+    <value>gunaCircleButton6</value>
+  </data>
+  <data name="lblTenChu.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;lblCount2Sao.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;gunaCircleButton6.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="&gt;&gt;gunaElipsePanel7.Name" xml:space="preserve">
+    <value>gunaElipsePanel7</value>
+  </data>
+  <data name="&gt;&gt;lblGiuongNgu.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;lbl.Name" xml:space="preserve">
+    <value>lbl</value>
+  </data>
+  <data name="lblCount1Sao.Size" type="System.Drawing.Size, System.Drawing">
+    <value>21, 24</value>
+  </data>
+  <data name="&gt;&gt;picone.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="rtxComment.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 10.2pt</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>ucDetailHome</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <metadata name="$this.Language" type="System.Globalization.CultureInfo, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>vi-VN</value>
+  </metadata>
 </root>

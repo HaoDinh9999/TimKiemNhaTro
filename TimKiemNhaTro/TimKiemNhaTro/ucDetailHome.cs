@@ -32,6 +32,17 @@ namespace TimKiemNhaTro
             InitializeComponent();
             _userDetailHome = ng;
         }
+        public void reloadColorDetail(Color clr)
+        {
+            if (clr == Color.White)
+            {
+                this.BackColor = Color.WhiteSmoke;
+            }
+            else
+            {
+                this.BackColor = clr;
+            }
+        }
         public void setIdMaNha(int ID)
         {
             _idMaNha = ID;
@@ -79,7 +90,15 @@ namespace TimKiemNhaTro
                 await Task.Run(() => picthree.LoadAsync(listAnh[2].duongDan));
                 await Task.Run(() => picfour.LoadAsync(listAnh[3].duongDan));
             }
-           
+            else
+            {
+                picone.Image = Properties.Resources.quan1;
+                pictwo.Image = Properties.Resources.quan2;
+                picthree.Image = Properties.Resources.quan7;
+                picfour.Image = Properties.Resources.quan10;
+
+
+            }
 
             for (int i = 0; i < listAnh.Count; i++)
             {
@@ -120,9 +139,14 @@ namespace TimKiemNhaTro
             x = 30;
             y = 30;
             maxHeight = -1;
+            
             pnlCSVC.Controls.Clear();
             pnlImage.Controls.Clear();
             rtxDetail.Text = nhas.moTa;
+            if (nhas.NguoiDung.sdt != null && nhas.NguoiDung.sdt != "")
+                lblPhone.Text = nhas.NguoiDung.sdt;
+            else lblPhone.Text = "Chưa có";
+            lblEmail.Text = nhas.NguoiDung.email;
             lblGiaPhong.Text = nhas.TienNha + " VNĐ";
             lblDienTich.Text = nhas.dienTich +" m2";
             lblTinhTrang.Text = nhas.tinhTrang;
@@ -130,7 +154,9 @@ namespace TimKiemNhaTro
             lblGiuongNgu.Text = nhas.soPhongNgu.ToString();
             lblPhongTam.Text = nhas.soPhongTam.ToString();
             rtxDiaChi.Text = nhas.soNha + ", " + nhas.phuongXa + ", " + nhas.quanHuyen + ", thành phố Hồ Chí Minh";
-            lblTenChu.Text = nhas.NguoiDung.hoTen;
+            if (nhas.NguoiDung.hoTen != null && nhas.NguoiDung.hoTen != "")
+                lblTenChu.Text = nhas.NguoiDung.hoTen;
+            else lblTenChu.Text = "Chưa đặt tên";
             csvs = DataProvider.Ins.DB.CoSoVatChats.Where(x => x.maCoSoVatChat == nhas.maCoSoVatChat).SingleOrDefault();
             //Map
             webBrowser1.ScriptErrorsSuppressed = true;

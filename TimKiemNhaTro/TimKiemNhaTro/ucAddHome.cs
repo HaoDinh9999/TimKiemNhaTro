@@ -27,6 +27,10 @@ namespace TimKiemNhaTro
         List<string> fileList = new List<string>();
         public int maLoaiNha = 0, soPhongNgu = 0, soPhongTam = 0;
         public bool baixe = false, bancong = false, baove = false, cctv = false, dieuhoa = false, gaclung = false, santhuong = false, hoboi = false, maygiat = false, noithat = false, nuoithucung = false;
+       public void reloadColor(Color clr)
+        {
+            this.BackColor = clr;
+        }
         private void ucAddHome_Load(object sender, EventArgs e)
         {
             listt.Add(new Districts("Quận 1", Quan1));
@@ -42,7 +46,7 @@ namespace TimKiemNhaTro
             listt.Add(new Districts("Quận 11", Quan11));
             listt.Add(new Districts("Quận 12", Quan12));
             listt.Add(new Districts("Quận Bình Tân", QuanBinhTan));
-            listt.Add(new Districts("Thành phố Thủ Đức", ThuDuc));
+            listt.Add(new Districts("Quận Thủ Đức", ThuDuc));
             listt.Add(new Districts("Quận Tân Phú", QuanTanPhu));
             listt.Add(new Districts("Quận Tân Bình", QuanTanBinh));
             listt.Add(new Districts("Quận Phú Nhuận", QuanPhuNhuan));
@@ -70,37 +74,37 @@ namespace TimKiemNhaTro
         }
         public void reSet1()
         {
-            cbxTinhTrang.Text = "Còn trống";
-            cbxQuanHuyen.Text = "";
-            cbxPhuongXa.Text = "";
-            txtSoNha.Text = "";
-            txtTenDuong.Text = "";
-            btnNha.Checked = false;
-            btnPhong.Checked = false;
-            btnCanHo.Checked = false;
-            btn1Ngu.Checked = false;
-            btn2Ngu.Checked = false;
-            btn3Ngu.Checked = false;
-            btnHon4Ngu.Checked = false;
-            btn1Tam.Checked = false;
-            btn2Tam.Checked = false;
-            btn3Tam.Checked = false;
-            btnHon4Tam.Checked = false;
-            btn1Ngu.Checked = false;
-            btnDieuHoa.Checked = false;
-            btnBanCong.Checked = false;
-            btnMayGiat.Checked = false;
-            btnGacLung.Checked = false;
-            btnNoiThat.Checked = false;
-            btnBaoVe.Checked = false;
-            btnHoBoi.Checked = false;
-            btnBaiXe.Checked = false;
-            btnSanThuong.Checked = false;
-            btnCCTV.Checked = false;
-            btnThuCung.Checked = false;
-            txtDienTich.Text = "";
-            txtTienChoThue.Text = "";
-            txtMoTa.Text = "";
+            //cbxTinhTrang.Text = "Còn trống";
+            //cbxQuanHuyen.Text = "";
+            //cbxPhuongXa.Text = "";
+            //txtSoNha.Text = "";
+            //txtTenDuong.Text = "";
+            //btnNha.Checked = false;
+            //btnPhong.Checked = false;
+            //btnCanHo.Checked = false;
+            //btn1Ngu.Checked = false;
+            //btn2Ngu.Checked = false;
+            //btn3Ngu.Checked = false;
+            //btnHon4Ngu.Checked = false;
+            //btn1Tam.Checked = false;
+            //btn2Tam.Checked = false;
+            //btn3Tam.Checked = false;
+            //btnHon4Tam.Checked = false;
+            //btn1Ngu.Checked = false;
+            //btnDieuHoa.Checked = false;
+            //btnBanCong.Checked = false;
+            //btnMayGiat.Checked = false;
+            //btnGacLung.Checked = false;
+            //btnNoiThat.Checked = false;
+            //btnBaoVe.Checked = false;
+            //btnHoBoi.Checked = false;
+            //btnBaiXe.Checked = false;
+            //btnSanThuong.Checked = false;
+            //btnCCTV.Checked = false;
+            //btnThuCung.Checked = false;
+            //txtDienTich.Text = "";
+            //txtTienChoThue.Text = "";
+            //txtMoTa.Text = "";
             pnlPic.Controls.Clear();
             nhaeidt = null;
             if (nhaeidt != null)
@@ -111,6 +115,10 @@ namespace TimKiemNhaTro
             {
                 btnDangTin.Text = "Đăng tin";
             }
+
+            anhBiXoa.Clear();
+            fileList.Clear();
+
 
         }
         Nha nhaeidt;
@@ -1092,7 +1100,7 @@ namespace TimKiemNhaTro
         "Quận Phú Nhuận",
         "Quận Tân Bình",
         "Quận Tân Phú",
-        "Thành phố Thủ Đức",
+        "Quận Thủ Đức",
         "Huyện Bình Chánh",
         "Huyện Cần Giờ",
         "Huyện Củ Chi",

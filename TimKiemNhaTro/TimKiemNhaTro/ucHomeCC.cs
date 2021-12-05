@@ -48,21 +48,41 @@ namespace TimKiemNhaTro
             "https://vnexpress.net/nguoi-thue-tro-se-khong-con-lo-bi-chat-chem-gia-dien-3825880.html",
             "https://vnexpress.net/chu-nha-tro-can-kien-nhan-cho-co-hoi-4367901.html",
         };
+        Color nenHomeColor;
+        public void reLoadColorHome(Color clr)
+        {
+            nenHomeColor = clr;
+            this.BackColor = nenHomeColor;
+            pnlTimKiem.BaseColor = nenHomeColor;
+            rtxTieuDeLon.BackColor = nenHomeColor;
+            pnlNhaTro.BaseColor = nenHomeColor;
+            pnlChuTro.BaseColor = nenHomeColor;
+            pnlNguoiDung.BaseColor = nenHomeColor;
+            reLoad();
+        }
         public void reLoad()
         {
             lblCountTro.Text = DataProvider.Ins.DB.Nhas.Count().ToString();
             lblCountNguoiDung.Text = DataProvider.Ins.DB.NguoiDungs.Count().ToString();
             flwCapNhatGanNhat.Controls.Clear();
-            var listNha = DataProvider.Ins.DB.Nhas.ToList();
+            flwTinTuc.Controls.Clear();
+            var listNha = DataProvider.Ins.DB.Nhas.Where(x=>x.NguoiDung.biVoHieu==0).ToList();
+            listNha = listNha.OrderByDescending(x => x.ngayCapNhat).Take(5).ToList();
             int demNha = 0;
-            for (int i = listNha.Count - 1; i >= 0; i--)
+            for (int i = 0; i < listNha.Count; i++)
             {
                 var card = new ucCardNha(this.Parent.Parent as frmMain, listNha[i]);
                 card.SetInfo();
+                card.reloadColorCardNha();
                 flwCapNhatGanNhat.Controls.Add(card);
-                demNha++;
-                if (demNha > 6)
-                    break;
+            }
+            var listTinTuc = DataProvider.Ins.DB.TinTucs.OrderByDescending(x => x.maTinTuc).ToArray();
+            foreach(var item in listTinTuc)
+            {
+                var card = new ucCardTinTuc(this.Parent.Parent as frmMain, item.tieuDe, item.trichDan, item.urlAnh, item.urlBao);
+                card.SetInfo();
+                card.reloadTinTucColor();
+                flwTinTuc.Controls.Add(card);
             }
             //for (int i = 0; i < tieuDe.Count(); i++)
             //{
@@ -83,13 +103,71 @@ namespace TimKiemNhaTro
             flwCapNhatGanNhat.AutoScroll = true;
 
             reLoad();
-            for(int i=0;i<tieuDe.Count();i++)
-            {
-                var card = new ucCardTinTuc(this.Parent.Parent as frmMain,tieuDe[i],noiDung[i],duongDanAnh[i],duongDanBao[i]);
-                card.SetInfo();
-                flwTinTuc.Controls.Add(card);
+            //for(int i=0;i<tieuDe.Count();i++)
+            //{
+            //    var card = new ucCardTinTuc(this.Parent.Parent as frmMain,tieuDe[i],noiDung[i],duongDanAnh[i],duongDanBao[i]);
+            //    card.SetInfo();
+            //    flwTinTuc.Controls.Add(card);
 
-            }
+            //}
+        }
+
+        private void btnQuan1_Click(object sender, EventArgs e)
+        {
+            (this.Parent.Parent as frmMain).MoveToSearch();
+            (this.Parent.Parent as frmMain).getUCTịmKiem().SetQuan("Quận 1");
+        }
+
+        private void btnQuan7_Click(object sender, EventArgs e)
+        {
+            (this.Parent.Parent as frmMain).MoveToSearch();
+
+            (this.Parent.Parent as frmMain).getUCTịmKiem().SetQuan("Quận 7");
+        }
+
+        private void btnQuan10_Click(object sender, EventArgs e)
+        {
+            (this.Parent.Parent as frmMain).MoveToSearch();
+            (this.Parent.Parent as frmMain).getUCTịmKiem().SetQuan("Quận 10");
+        }
+
+        private void btnPhuNhuan_Click(object sender, EventArgs e)
+        {
+            (this.Parent.Parent as frmMain).MoveToSearch();
+            (this.Parent.Parent as frmMain).getUCTịmKiem().SetQuan("Quận Phú Nhuận");
+        }
+
+        private void btnGoVap_Click(object sender, EventArgs e)
+        {
+            (this.Parent.Parent as frmMain).MoveToSearch();
+            (this.Parent.Parent as frmMain).getUCTịmKiem().SetQuan("Quận Gò Vấp");
+        }
+
+        private void btnThuDuc_Click(object sender, EventArgs e)
+        {
+            (this.Parent.Parent as frmMain).MoveToSearch();
+            (this.Parent.Parent as frmMain).getUCTịmKiem().SetQuan("Quận Thủ Đức");
+        }
+
+        private void btnBinhThanh_Click(object sender, EventArgs e)
+        {
+            (this.Parent.Parent as frmMain).MoveToSearch();
+            (this.Parent.Parent as frmMain).getUCTịmKiem().SetQuan("Quận Bình Thạnh");
+        }
+
+        private void btnTanBinh_Click(object sender, EventArgs e)
+        {
+            (this.Parent.Parent as frmMain).MoveToSearch();
+            (this.Parent.Parent as frmMain).getUCTịmKiem().SetQuan("Quận Tân Bình");
+        }
+
+        private void btnXemThem_Click(object sender, EventArgs e)
+        {
+            (this.Parent.Parent as frmMain).MoveToSearch();
+
+            (this.Parent.Parent as frmMain).getUCTịmKiem().SetQuan("");
+            (this.Parent.Parent as frmMain).getUCTịmKiem().SetSapXep(2);
+
         }
     }
 }

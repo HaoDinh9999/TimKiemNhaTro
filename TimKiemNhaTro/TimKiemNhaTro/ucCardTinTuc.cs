@@ -27,6 +27,7 @@ namespace TimKiemNhaTro
         public void reloadTinTucColor()
         {
             this.BackColor = frmM.nenColor;
+            rtxContent.BackColor = frmM.nenColor;
         }
         public ucCardTinTuc(frmMain frm,string title,string content,string duongDanAnh,string duongDanBao)
         {
@@ -40,7 +41,7 @@ namespace TimKiemNhaTro
         public void SetInfo()
         {
             lblTitle.Text = _title;
-            lblContent.Text = _content;
+            rtxContent.Text = _content;
             ptrPicNha.LoadAsync(_duongDanAnh);
 
         }

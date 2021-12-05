@@ -101,7 +101,7 @@ namespace TimKiemNhaTro
         }
         private void btnTimKiem_Click(object sender, EventArgs e)
         {
-           nhas = DataProvider.Ins.DB.Nhas.ToList();
+           nhas = DataProvider.Ins.DB.Nhas.Where(x=>x.NguoiDung.biVoHieu==0).ToList();
           
                 switch (cboPhongNgu.SelectedIndex)
                 {

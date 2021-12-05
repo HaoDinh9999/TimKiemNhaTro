@@ -2,10 +2,13 @@
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Configuration;
 using System.Data;
 using System.Drawing;
+using System.Globalization;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using TimKiemNhaTro.Model;
@@ -30,6 +33,10 @@ namespace TimKiemNhaTro
             //ucH.Dock = DockStyle.Fill;
             //ucH.BringToFront();
             //btnAddHouse.BringToFront();
+            dtpRealTime.CustomFormat = "dd/MM/yyyy HH:mm";
+            timer1.Enabled = true;
+
+
         }
         public NguoiDung _user;
         ucDetailHome ucD;
@@ -296,6 +303,7 @@ namespace TimKiemNhaTro
                 _ucFAQs.reloadColorFAQ(nenColor);
                 ucD.reloadColorDetail(nenColor);
                 _ucAdd.reloadColor(nenColor);
+                ucSet.reloadColor(nenColor);
             }
             else //black
             {
@@ -314,11 +322,41 @@ namespace TimKiemNhaTro
                 _ucFAQs.reloadColorFAQ(nenColor);
                 ucD.reloadColorDetail(nenColor);
                 _ucAdd.reloadColor(nenColor);
+                ucSet.reloadColor(nenColor);
             }
         }
         void reLoadColorfrM()
         {
             this.BackColor = nenColor;
+        }
+        public void resetIni()
+        {
+            InitializeComponent();
+
+        }
+
+        private void btnTiengViet_Click(object sender, EventArgs e)
+        {
+            var language = ConfigurationManager.AppSettings["language"];
+            Thread.CurrentThread.CurrentCulture = new System.Globalization.CultureInfo("vi-VN");
+            Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("vi-VN");
+            this.Controls.Clear();
+            InitializeComponent();
+
+        }
+
+        private void btnTiengAnh_Click(object sender, EventArgs e)
+        {
+            var language = ConfigurationManager.AppSettings["language"];
+            Thread.CurrentThread.CurrentCulture = new System.Globalization.CultureInfo("en");
+            Thread.CurrentThread.CurrentUICulture = new System.Globalization.CultureInfo("en");
+            this.Controls.Clear();
+            InitializeComponent();
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            dtpRealTime.Value = DateTime.Now;
         }
     }
 }

@@ -66,7 +66,7 @@ namespace TimKiemNhaTro
             lblCountNguoiDung.Text = DataProvider.Ins.DB.NguoiDungs.Count().ToString();
             flwCapNhatGanNhat.Controls.Clear();
             flwTinTuc.Controls.Clear();
-            var listNha = DataProvider.Ins.DB.Nhas.ToList();
+            var listNha = DataProvider.Ins.DB.Nhas.Where(x=>x.NguoiDung.biVoHieu==0).ToList();
             int demNha = 0;
             for (int i = listNha.Count - 1; i >= 0; i--)
             {

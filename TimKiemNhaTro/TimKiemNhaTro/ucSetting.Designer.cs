@@ -29,25 +29,58 @@ namespace TimKiemNhaTro
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ucSetting));
             this.label1 = new System.Windows.Forms.Label();
+            this.rdbEnglish = new Guna.UI.WinForms.GunaRadioButton();
+            this.rdbVietNam = new Guna.UI.WinForms.GunaRadioButton();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(304, 89);
+            resources.ApplyResources(this.label1, "label1");
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(52, 17);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Cai dat";
+            // 
+            // rdbEnglish
+            // 
+            resources.ApplyResources(this.rdbEnglish, "rdbEnglish");
+            this.rdbEnglish.BaseColor = System.Drawing.SystemColors.Control;
+            this.rdbEnglish.CheckedOffColor = System.Drawing.Color.Gray;
+            this.rdbEnglish.CheckedOnColor = System.Drawing.Color.Lime;
+            this.rdbEnglish.FillColor = System.Drawing.Color.White;
+            this.rdbEnglish.Name = "rdbEnglish";
+            this.rdbEnglish.CheckedChanged += new System.EventHandler(this.rdbEnglish_CheckedChanged);
+            // 
+            // rdbVietNam
+            // 
+            resources.ApplyResources(this.rdbVietNam, "rdbVietNam");
+            this.rdbVietNam.BaseColor = System.Drawing.SystemColors.Control;
+            this.rdbVietNam.CheckedOffColor = System.Drawing.Color.Gray;
+            this.rdbVietNam.CheckedOnColor = System.Drawing.Color.Lime;
+            this.rdbVietNam.FillColor = System.Drawing.Color.White;
+            this.rdbVietNam.Name = "rdbVietNam";
+            this.rdbVietNam.CheckedChanged += new System.EventHandler(this.rdbVietNam_CheckedChanged);
+            // 
+            // pictureBox1
+            // 
+            resources.ApplyResources(this.pictureBox1, "pictureBox1");
+            this.pictureBox1.Image = global::TimKiemNhaTro.Properties.Resources._775_7750441_apartment_png;
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.TabStop = false;
             // 
             // ucSetting
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Transparent;
             this.Controls.Add(this.label1);
+            this.Controls.Add(this.rdbEnglish);
+            this.Controls.Add(this.rdbVietNam);
+            this.Controls.Add(this.pictureBox1);
             this.Name = "ucSetting";
-            this.Size = new System.Drawing.Size(1128, 642);
+            this.Load += new System.EventHandler(this.ucSetting_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -56,5 +89,8 @@ namespace TimKiemNhaTro
         #endregion
 
         private System.Windows.Forms.Label label1;
+        private Guna.UI.WinForms.GunaRadioButton rdbEnglish;
+        private Guna.UI.WinForms.GunaRadioButton rdbVietNam;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

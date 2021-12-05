@@ -29,6 +29,7 @@ namespace TimKiemNhaTro
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ucNhaDaDang));
             this.label1 = new System.Windows.Forms.Label();
             this.flwNhaDaDang = new System.Windows.Forms.FlowLayoutPanel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -37,45 +38,32 @@ namespace TimKiemNhaTro
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Tahoma", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(39, 42);
+            resources.ApplyResources(this.label1, "label1");
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(328, 33);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "Danh sách nhà đã đăng";
             // 
             // flwNhaDaDang
             // 
-            this.flwNhaDaDang.AutoScroll = true;
+            resources.ApplyResources(this.flwNhaDaDang, "flwNhaDaDang");
             this.flwNhaDaDang.BackColor = System.Drawing.Color.Transparent;
-            this.flwNhaDaDang.Location = new System.Drawing.Point(182, 113);
-            this.flwNhaDaDang.Margin = new System.Windows.Forms.Padding(4);
             this.flwNhaDaDang.Name = "flwNhaDaDang";
-            this.flwNhaDaDang.Size = new System.Drawing.Size(1252, 654);
-            this.flwNhaDaDang.TabIndex = 5;
             // 
             // pictureBox1
             // 
+            resources.ApplyResources(this.pictureBox1, "pictureBox1");
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pictureBox1.Image = global::TimKiemNhaTro.Properties.Resources.mPPEsss;
-            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(1451, 2470);
-            this.pictureBox1.TabIndex = 6;
             this.pictureBox1.TabStop = false;
             // 
             // ucNhaDaDang
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.WhiteSmoke;
             this.Controls.Add(this.flwNhaDaDang);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.pictureBox1);
             this.Name = "ucNhaDaDang";
-            this.Size = new System.Drawing.Size(1451, 2470);
             this.Load += new System.EventHandler(this.ucNhaDaDang_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);

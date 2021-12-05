@@ -31,7 +31,7 @@ namespace TimKiemNhaTro
         public void reLoad()
         {
             flwFavourite.Controls.Clear();
-            var listYeuThich = DataProvider.Ins.DB.YeuThiches.Where(x => x.maNguoiDung == _userYeuThich.maNguoiDung).ToList();
+            var listYeuThich = DataProvider.Ins.DB.YeuThiches.Where(x => x.maNguoiDung == _userYeuThich.maNguoiDung&&x.Nha.NguoiDung.biVoHieu==0).ToList();
 
             foreach (var item in listYeuThich)
             {
@@ -44,15 +44,7 @@ namespace TimKiemNhaTro
         private void ucFavourite_Load(object sender, EventArgs e)
         {
 
-            var listYeuThich = DataProvider.Ins.DB.YeuThiches.Where(x => x.maNguoiDung == _userYeuThich.maNguoiDung).ToList();
-
-            foreach (var item in listYeuThich)
-            {
-                var card = new ucCardRoomFavourite(this.Parent.Parent as frmMain, item);
-                card.SetInfo();
-                flwFavourite.Controls.Add(card);
-
-            }
+            reLoad();
         }
     }
 }

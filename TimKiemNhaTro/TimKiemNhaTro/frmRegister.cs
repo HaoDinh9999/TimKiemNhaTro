@@ -69,7 +69,7 @@ namespace TimKiemNhaTro
                 MessageBox.Show("Bạn đã nhập sai mã xác nhận, vui lòng thử lại");
                 return;
             }
-            nguoiDung = new NguoiDung() { email = txtUsername.Text, matKhau = ComputeSha256Hash(txtPassword.Text), maNhom = 2 };
+            nguoiDung = new NguoiDung() { email = txtEmail.Text, matKhau = ComputeSha256Hash(txtPassword.Text), maNhom = 2 };
             DataProvider.Ins.DB.NguoiDungs.Add(nguoiDung);
             DataProvider.Ins.DB.SaveChanges();
             MessageBox.Show("Bạn đã đăng ký tài khoản thành công");
@@ -143,7 +143,7 @@ namespace TimKiemNhaTro
             luuMaXacNhan = RandomMa();
             MailMessage message = new MailMessage();
             message.From = new MailAddress("vhao1509@gmail.com");
-            message.To.Add(new MailAddress(txtUsername.Text));
+            message.To.Add(new MailAddress(txtEmail.Text));
             message.Subject = "Mã xác nhận đăng ký";
             message.IsBodyHtml = true; //to make message body as html  
             message.Body = "From Rent-Finder"    + " - Mã xác nhận của bạn là: "+"\n" +"<b>"+luuMaXacNhan.ToString()+"</b>";

@@ -51,6 +51,7 @@
     <Property Name="email" Type="varchar" MaxLength="128" Nullable="false" />
     <Property Name="matKhau" Type="varchar" MaxLength="128" Nullable="false" />
     <Property Name="hoTen" Type="varchar" MaxLength="128" />
+    <Property Name="sdt" Type="varchar" MaxLength="15" />
     <Property Name="urlDaiDien" Type="varchar" MaxLength="1000" />
     <Property Name="biVoHieu" Type="tinyint" Nullable="false" />
   </EntityType>

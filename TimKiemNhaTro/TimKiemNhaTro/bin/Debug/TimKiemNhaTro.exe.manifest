@@ -378,14 +378,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="TimKiemNhaTro.exe" size="15113216">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="TimKiemNhaTro.exe" size="15145472">
       <assemblyIdentity name="TimKiemNhaTro" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>0CDurOIREsm8LMG/ylHDaMEP/PTUgw1UUOw9udPjl/w=</dsig:DigestValue>
+        <dsig:DigestValue>xSm/UczKpH8FVifepVjwuAJXPJXbeyyBwBSk2AfWoNk=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -397,7 +397,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>cww+tYXyqybx8dr9XFHEHN44hffqyrBEeQTfGYO14l0=</dsig:DigestValue>
+        <dsig:DigestValue>Htf3Pw6bsu0MCghi3/kmwMnQHXl1rauzbJg/7++6hZY=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -409,7 +409,7 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>wvIP20ZE3wNhfbBoYzXs0Fyln/rYStKcZ8Za2MAdY5A=</dsig:DigestValue>
+        <dsig:DigestValue>E4ucPEX65ietA0uXiYtXUPd9JCDqx/zDR4vMBnQ8DVY=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

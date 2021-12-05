@@ -90,7 +90,15 @@ namespace TimKiemNhaTro
                 await Task.Run(() => picthree.LoadAsync(listAnh[2].duongDan));
                 await Task.Run(() => picfour.LoadAsync(listAnh[3].duongDan));
             }
-           
+            else
+            {
+                picone.Image = Properties.Resources.quan1;
+                pictwo.Image = Properties.Resources.quan2;
+                picthree.Image = Properties.Resources.quan7;
+                picfour.Image = Properties.Resources.quan10;
+
+
+            }
 
             for (int i = 0; i < listAnh.Count; i++)
             {
@@ -131,9 +139,12 @@ namespace TimKiemNhaTro
             x = 30;
             y = 30;
             maxHeight = -1;
+            
             pnlCSVC.Controls.Clear();
             pnlImage.Controls.Clear();
             rtxDetail.Text = nhas.moTa;
+            lblPhone.Text = nhas.NguoiDung.sdt;
+            lblEmail.Text = nhas.NguoiDung.email;
             lblGiaPhong.Text = nhas.TienNha + " VNĐ";
             lblDienTich.Text = nhas.dienTich +" m2";
             lblTinhTrang.Text = nhas.tinhTrang;

@@ -191,3 +191,5 @@ C:\Users\DELL\Desktop\TroMoiNhat\TimKiemNhaTro\TimKiemNhaTro\TimKiemNhaTro\bin\D
 C:\Users\DELL\Desktop\TroMoiNhat\TimKiemNhaTro\TimKiemNhaTro\TimKiemNhaTro\obj\Debug\TimKiemNhaTro.csproj.AssemblyReference.cache
 C:\Users\DELL\Desktop\TroMoiNhat\TimKiemNhaTro\TimKiemNhaTro\TimKiemNhaTro\obj\Debug\TimKiemNhaTro.ucCardTinTuc.vi-VN.resources
 C:\Users\DELL\Desktop\TroMoiNhat\TimKiemNhaTro\TimKiemNhaTro\TimKiemNhaTro\obj\Debug\TimKiemNhaTro.frmRegister.vi-VN.resources
+C:\Users\DELL\Desktop\TroMoiNhat\TimKiemNhaTro\TimKiemNhaTro\TimKiemNhaTro\obj\Debug\TimKiemNhaTro.frmAdminChangePassword.resources
+C:\Users\DELL\Desktop\TroMoiNhat\TimKiemNhaTro\TimKiemNhaTro\TimKiemNhaTro\obj\Debug\TimKiemNhaTro.frmAdminEditProfile.resources

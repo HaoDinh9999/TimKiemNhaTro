@@ -32,5 +32,19 @@ namespace TimKiemNhaTro
             frmAddNews frm = new frmAddNews();
             frm.ShowDialog();
         }
+
+        private void btnTimKiem_Click(object sender, EventArgs e)
+        {
+            if (txtSearch.Text.Trim() == "")
+            {
+                SetNewsList(DataProvider.Ins.DB.TinTucs.ToList());
+                return;
+            }
+            SetNewsList(DataProvider.Ins.DB.TinTucs.Where(x => x.tieuDe.Contains(txtSearch.Text.Trim())).ToList());
+        }
+        public void ResetSearch()
+        {
+            txtSearch.Text = "";
+        }
     }
 }

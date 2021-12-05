@@ -334,6 +334,18 @@
     <Compile Include="frmAdmin.Designer.cs">
       <DependentUpon>frmAdmin.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmAdminChangePassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAdminChangePassword.Designer.cs">
+      <DependentUpon>frmAdminChangePassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAdminEditProfile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAdminEditProfile.Designer.cs">
+      <DependentUpon>frmAdminEditProfile.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmBaoCaoLoiUngDung.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -578,6 +590,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmBaoCaoLoiUngDung.vi-VN.resx">
       <DependentUpon>frmBaoCaoLoiUngDung.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAdminChangePassword.resx">
+      <DependentUpon>frmAdminChangePassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAdminEditProfile.resx">
+      <DependentUpon>frmAdminEditProfile.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmLoadAnh.resx">
       <DependentUpon>frmLoadAnh.cs</DependentUpon>
@@ -877,6 +895,7 @@
     <None Include="Resources\3612573_18012114440061220336.jpg" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\775-7750441_apartment-png.png" />
     <Content Include="Model\Model1.Context.tt">
       <Generator>TextTemplatingFileGenerator</Generator>
       <DependentUpon>Model1.edmx</DependentUpon>
@@ -887,7 +906,6 @@
       <DependentUpon>Model1.edmx</DependentUpon>
       <LastGenOutput>Model1.cs</LastGenOutput>
     </Content>
-    <None Include="Resources\775-7750441_apartment-png.png" />
     <Content Include="Resources\bath-tub.png" />
     <Content Include="Resources\cancel.png" />
     <None Include="Resources\dashboard.png" />

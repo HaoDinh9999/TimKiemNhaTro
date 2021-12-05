@@ -27,5 +27,20 @@ namespace TimKiemNhaTro
                 flowLayoutPanel1.Controls.Add(card);
             }
         }
+
+        private void btnTimKiem_Click(object sender, EventArgs e)
+        {
+            if (txtSearch.Text.Trim() == "")
+            {
+                SetInfo(DataProvider.Ins.DB.NguoiDungs.ToList());
+                return;
+            }
+            SetInfo(DataProvider.Ins.DB.NguoiDungs.Where(x => x.email.Contains(txtSearch.Text.Trim()) || x.hoTen.Contains(txtSearch.Text.Trim()) ).ToList());
+
+        }
+        public void ResetSearch()
+        {
+            txtSearch.Text = "";
+        }
     }
 }

@@ -8,6 +8,7 @@ using System.Net;
 using System.Net.Mail;
 using System.Security.Cryptography;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using TimKiemNhaTro.Model;
@@ -41,15 +42,25 @@ namespace TimKiemNhaTro
 
         private void btnRegister_Click(object sender, EventArgs e)
         {
-            if (txtUsername.Text == "" || txtPassword.Text == "")
+            if (txtEmail.Text.Trim() == "" || txtPassword.Text.Trim() == "")
             {
                 MessageBox.Show("Vui lòng nhập đầy đủ thông tin");
                 return;
             }
-            NguoiDung nguoiDung = DataProvider.Ins.DB.NguoiDungs.Where(x => x.email == txtUsername.Text).SingleOrDefault();
+            Regex mRegxExpression;
+            mRegxExpression = new Regex(@"^([a-zA-Z0-9_\-])([a-zA-Z0-9_\-\.]*)@(\[((25[0-5]|2[0-4][0-9]|1[0-9][0-9]|[1-9][0-9]|[0-9])\.){3}|((([a-zA-Z0-9\-]+)\.)+))([a-zA-Z]{2,}|(25[0-5]|2[0-4][0-9]|1[0-9][0-9]|[1-9][0-9]|[0-9])\])$");
+
+            if (!mRegxExpression.IsMatch(txtEmail.Text.Trim()))
+            {
+                MessageBox.Show("Email không hợp lệ", "MojoCRM", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+
+            NguoiDung nguoiDung = DataProvider.Ins.DB.NguoiDungs.Where(x => x.email == txtEmail.Text).SingleOrDefault();
             if (nguoiDung != null)
             {
-                MessageBox.Show("Tên đăng nhập đã tồn tại. Vui lòng dùng tên đăng nhập khác");
+                MessageBox.Show("Email đã tồn tại. Vui lòng dùng email khác");
                 return;
 
             }

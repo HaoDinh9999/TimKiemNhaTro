@@ -130,7 +130,7 @@
     <value>NoControl</value>
   </data>
   <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>109, 143</value>
+    <value>47, 147</value>
   </data>
   <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
     <value>72, 21</value>
@@ -157,7 +157,7 @@
     <value>Tahoma, 10.2pt</value>
   </data>
   <data name="txtTieuDe.Location" type="System.Drawing.Point, System.Drawing">
-    <value>113, 167</value>
+    <value>51, 171</value>
   </data>
   <data name="txtTieuDe.Size" type="System.Drawing.Size, System.Drawing">
     <value>367, 43</value>
@@ -184,7 +184,7 @@
     <value>Tahoma, 10.2pt</value>
   </data>
   <data name="txtNoiDung.Location" type="System.Drawing.Point, System.Drawing">
-    <value>113, 252</value>
+    <value>51, 256</value>
   </data>
   <data name="txtNoiDung.Size" type="System.Drawing.Size, System.Drawing">
     <value>367, 162</value>
@@ -214,7 +214,7 @@
     <value>NoControl</value>
   </data>
   <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>109, 228</value>
+    <value>47, 232</value>
   </data>
   <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
     <value>81, 21</value>
@@ -241,7 +241,7 @@
     <value>Tahoma, 10.2pt</value>
   </data>
   <data name="rtxDinhKem.Location" type="System.Drawing.Point, System.Drawing">
-    <value>125, 433</value>
+    <value>63, 437</value>
   </data>
   <data name="rtxDinhKem.Size" type="System.Drawing.Size, System.Drawing">
     <value>305, 97</value>
@@ -268,7 +268,7 @@
     <value>NoControl</value>
   </data>
   <data name="pictureBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>216, -1</value>
+    <value>154, 3</value>
   </data>
   <data name="pictureBox1.Size" type="System.Drawing.Size, System.Drawing">
     <value>180, 133</value>
@@ -308,7 +308,7 @@
     <value>Tahoma, 10.2pt</value>
   </data>
   <data name="btnGui.Location" type="System.Drawing.Point, System.Drawing">
-    <value>216, 551</value>
+    <value>154, 555</value>
   </data>
   <data name="btnGui.Size" type="System.Drawing.Size, System.Drawing">
     <value>180, 42</value>
@@ -335,7 +335,7 @@
     <value>NoControl</value>
   </data>
   <data name="ptrDinhKem.Location" type="System.Drawing.Point, System.Drawing">
-    <value>436, 433</value>
+    <value>374, 437</value>
   </data>
   <data name="ptrDinhKem.Size" type="System.Drawing.Size, System.Drawing">
     <value>44, 43</value>
@@ -365,16 +365,10 @@
     <value>8, 16</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>586, 628</value>
-  </data>
-  <data name="$this.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
-    <value>NoControl</value>
+    <value>477, 628</value>
   </data>
   <data name="$this.StartPosition" type="System.Windows.Forms.FormStartPosition, System.Windows.Forms">
     <value>CenterScreen</value>
-  </data>
-  <data name="$this.Text" xml:space="preserve">
-    <value>frmBaoCaoLoiUngDung</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>frmBaoCaoLoiUngDung</value>

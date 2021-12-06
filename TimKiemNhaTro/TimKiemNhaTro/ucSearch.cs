@@ -38,7 +38,7 @@ namespace TimKiemNhaTro
             listt.Add(new Districts("Quận 11", Quan11));
             listt.Add(new Districts("Quận 12", Quan12));
             listt.Add(new Districts("Quận Bình Tân", QuanBinhTan));
-            listt.Add(new Districts("Thành phố Thủ Đức", ThuDuc));
+            listt.Add(new Districts("Quận Thủ Đức", ThuDuc));
             listt.Add(new Districts("Quận Tân Phú", QuanTanPhu));
             listt.Add(new Districts("Quận Tân Bình", QuanTanBinh));
             listt.Add(new Districts("Quận Phú Nhuận", QuanPhuNhuan));
@@ -65,6 +65,26 @@ namespace TimKiemNhaTro
                 flwSearch.Controls.Add(card);
             }
         }
+        public void Reset()
+        {
+            flwSearch.Controls.Clear();
+            cboQuan.SelectedIndex = -1;
+            cboPhuong.SelectedIndex = -1;
+            cboPhongTam.SelectedIndex = -1;
+            cboPhongNgu.SelectedIndex = -1;
+            cboLoaiHinh.SelectedIndex = -1;
+            cboGia.SelectedIndex = -1;
+            cboDienTich.SelectedIndex = -1;
+            cboSapXep.SelectedIndex = -1;
+
+        }
+        public void SetQuan(string q)
+        {
+            Reset();
+            cboQuan.Text = q;
+            this.BringToFront();
+            TimKiem();
+        }
         private void cboQuan_SelectedIndexChanged(object sender, EventArgs e)
         {
             cboPhuong.Items.Clear();
@@ -78,6 +98,10 @@ namespace TimKiemNhaTro
                     }
                 }
             }
+        }
+        public void SetSapXep(int i)
+        {
+            cboSapXep.SelectedIndex = i;
         }
         private void cboSapXep_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -99,43 +123,43 @@ namespace TimKiemNhaTro
             }
             LoadNha();
         }
-        private void btnTimKiem_Click(object sender, EventArgs e)
+        private void TimKiem()
         {
-           nhas = DataProvider.Ins.DB.Nhas.Where(x=>x.NguoiDung.biVoHieu==0).ToList();
-          
-                switch (cboPhongNgu.SelectedIndex)
-                {
-                    case 0:
-                        nhas = nhas.Where(x => x.soPhongNgu == 1).ToList();
-                        break;
-                    case 1:
-                        nhas = nhas.Where(x => x.soPhongNgu == 2).ToList();
-                        break;
-                    case 2:
-                        nhas = nhas.Where(x => x.soPhongNgu == 3).ToList();
-                        break;
-                    case 3:
-                        nhas = nhas.Where(x => x.soPhongNgu >= 4).ToList();
-                        break;
-                }
-            
-           
-            
-                switch (cboPhongTam.SelectedIndex)
-                {
-                    case 0:
-                        nhas = nhas.Where(x => x.soPhongTam == 1).ToList();
-                        break;
-                    case 1:
-                        nhas = nhas.Where(x => x.soPhongTam == 2).ToList();
-                        break;
-                    case 2:
-                        nhas = nhas.Where(x => x.soPhongTam == 3).ToList();
-                        break;
-                    case 3:
-                        nhas = nhas.Where(x => x.soPhongTam >= 4).ToList();
-                        break;
-                }
+            nhas = DataProvider.Ins.DB.Nhas.Where(x => x.NguoiDung.biVoHieu == 0).ToList();
+
+            switch (cboPhongNgu.SelectedIndex)
+            {
+                case 0:
+                    nhas = nhas.Where(x => x.soPhongNgu == 1).ToList();
+                    break;
+                case 1:
+                    nhas = nhas.Where(x => x.soPhongNgu == 2).ToList();
+                    break;
+                case 2:
+                    nhas = nhas.Where(x => x.soPhongNgu == 3).ToList();
+                    break;
+                case 3:
+                    nhas = nhas.Where(x => x.soPhongNgu >= 4).ToList();
+                    break;
+            }
+
+
+
+            switch (cboPhongTam.SelectedIndex)
+            {
+                case 0:
+                    nhas = nhas.Where(x => x.soPhongTam == 1).ToList();
+                    break;
+                case 1:
+                    nhas = nhas.Where(x => x.soPhongTam == 2).ToList();
+                    break;
+                case 2:
+                    nhas = nhas.Where(x => x.soPhongTam == 3).ToList();
+                    break;
+                case 3:
+                    nhas = nhas.Where(x => x.soPhongTam >= 4).ToList();
+                    break;
+            }
             switch (cboLoaiHinh.SelectedIndex)
             {
                 case 0:
@@ -150,20 +174,20 @@ namespace TimKiemNhaTro
             }
 
             switch (cboDienTich.SelectedIndex)
-                {
-                    case 0:
-                        nhas = nhas.Where(x => x.dienTich <= 20).ToList();
-                        break;
-                    case 1:
-                        nhas = nhas.Where(x => x.dienTich >= 20 && x.dienTich <= 50).ToList();
-                        break;
-                    case 2:
-                        nhas = nhas.Where(x => x.dienTich >= 50 && x.dienTich <= 100).ToList();
-                        break;
-                    case 3:
-                        nhas = nhas.Where(x => x.dienTich > 100).ToList();
-                        break;
-                }
+            {
+                case 0:
+                    nhas = nhas.Where(x => x.dienTich <= 20).ToList();
+                    break;
+                case 1:
+                    nhas = nhas.Where(x => x.dienTich >= 20 && x.dienTich <= 50).ToList();
+                    break;
+                case 2:
+                    nhas = nhas.Where(x => x.dienTich >= 50 && x.dienTich <= 100).ToList();
+                    break;
+                case 3:
+                    nhas = nhas.Where(x => x.dienTich > 100).ToList();
+                    break;
+            }
             switch (cboGia.SelectedIndex)
             {
                 case 0:
@@ -206,9 +230,13 @@ namespace TimKiemNhaTro
                         break;
                 }
             }
-            
+
             lblSoKQ.Text = nhas.Count + " kết quả";
             LoadNha();
+        }
+        private void btnTimKiem_Click(object sender, EventArgs e)
+        {
+            TimKiem();
         }
         string[] Quan1 =
 {
@@ -621,7 +649,7 @@ namespace TimKiemNhaTro
         "Quận Phú Nhuận",
         "Quận Tân Bình",
         "Quận Tân Phú",
-        "Thành phố Thủ Đức",
+        "Quận Thủ Đức",
         "Huyện Bình Chánh",
         "Huyện Cần Giờ",
         "Huyện Củ Chi",

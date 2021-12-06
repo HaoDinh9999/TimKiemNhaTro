@@ -151,6 +151,8 @@ namespace TimKiemNhaTro
             this.Controls.Add(this.label3);
             this.Controls.Add(this.txtTieuDe);
             this.Controls.Add(this.label2);
+            this.MaximizeBox = false;
+            this.MinimizeBox = false;
             this.Name = "frmBaoCaoLoiUngDung";
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptrDinhKem)).EndInit();

@@ -37,7 +37,7 @@ namespace TimKiemNhaTro
         "Quận Phú Nhuận",
         "Quận Tân Bình",
         "Quận Tân Phú",
-        "Thành phố Thủ Đức",
+        "Quận Thủ Đức",
         "Huyện Bình Chánh",
         "Huyện Cần Giờ",
         "Huyện Củ Chi",

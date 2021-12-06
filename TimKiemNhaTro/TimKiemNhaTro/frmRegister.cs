@@ -152,14 +152,16 @@ namespace TimKiemNhaTro
             {
                 try
                 {
+                    smtp.UseDefaultCredentials = false;
                     smtp.Credentials = new NetworkCredential("vhao1509@gmail.com", "H01213111038");
                     smtp.EnableSsl = true;
                     smtp.Send(message);
                     MessageBox.Show("Mã xác nhận gửi thành công, vui lòng kiểm tra Email");
                 }
-                catch
+                catch (Exception err)
                 {
-                    MessageBox.Show("Email không tồn tại, vui lòng nhập lại");
+                    //MessageBox.Show("Email không tồn tại, vui lòng nhập lại");
+                    MessageBox.Show(err.Message);
                 }
                
             }

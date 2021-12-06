@@ -549,9 +549,6 @@
   <data name="&gt;&gt;lblHoVaTen.ZOrder" xml:space="preserve">
     <value>10</value>
   </data>
-  <data name="txtPhoneNumber.Enabled" type="System.Boolean, mscorlib">
-    <value>False</value>
-  </data>
   <data name="txtPhoneNumber.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 10.2pt</value>
   </data>

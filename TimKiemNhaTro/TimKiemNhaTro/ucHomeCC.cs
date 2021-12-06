@@ -53,7 +53,7 @@ namespace TimKiemNhaTro
         {
             nenHomeColor = clr;
             this.BackColor = nenHomeColor;
-            pnlTimKiem.BaseColor = nenHomeColor;
+            //pnlTimKiem.BaseColor = nenHomeColor;
             rtxTieuDeLon.BackColor = nenHomeColor;
             pnlNhaTro.BaseColor = nenHomeColor;
             pnlChuTro.BaseColor = nenHomeColor;
@@ -66,20 +66,15 @@ namespace TimKiemNhaTro
             lblCountNguoiDung.Text = DataProvider.Ins.DB.NguoiDungs.Count().ToString();
             flwCapNhatGanNhat.Controls.Clear();
             flwTinTuc.Controls.Clear();
-            var listNha = DataProvider.Ins.DB.Nhas.Where(x=>x.NguoiDung.biVoHieu==0).ToList();
-            int demNha = 0;
-            for (int i = listNha.Count - 1; i >= 0; i--)
+            var listNha = DataProvider.Ins.DB.Nhas.Where(x=>x.NguoiDung.biVoHieu==0).OrderByDescending(x => x.ngayCapNhat).Take(5).ToList();
+            for (int i = 0; i < listNha.Count; i++)
             {
                 var card = new ucCardNha(this.Parent.Parent as frmMain, listNha[i]);
                 card.SetInfo();
                 card.reloadColorCardNha();
                 flwCapNhatGanNhat.Controls.Add(card);
-                demNha++;
-                if (demNha > 6)
-                    break;
             }
-
-            var listTinTuc = DataProvider.Ins.DB.TinTucs.ToArray();
+            var listTinTuc = DataProvider.Ins.DB.TinTucs.OrderByDescending(x => x.maTinTuc).ToArray();
             foreach(var item in listTinTuc)
             {
                 var card = new ucCardTinTuc(this.Parent.Parent as frmMain, item.tieuDe, item.trichDan, item.urlAnh, item.urlBao);
@@ -113,6 +108,64 @@ namespace TimKiemNhaTro
             //    flwTinTuc.Controls.Add(card);
 
             //}
+        }
+
+        private void btnQuan1_Click(object sender, EventArgs e)
+        {
+            (this.Parent.Parent as frmMain).MoveToSearch();
+            (this.Parent.Parent as frmMain).getUCTịmKiem().SetQuan("Quận 1");
+        }
+
+        private void btnQuan7_Click(object sender, EventArgs e)
+        {
+            (this.Parent.Parent as frmMain).MoveToSearch();
+
+            (this.Parent.Parent as frmMain).getUCTịmKiem().SetQuan("Quận 7");
+        }
+
+        private void btnQuan10_Click(object sender, EventArgs e)
+        {
+            (this.Parent.Parent as frmMain).MoveToSearch();
+            (this.Parent.Parent as frmMain).getUCTịmKiem().SetQuan("Quận 10");
+        }
+
+        private void btnPhuNhuan_Click(object sender, EventArgs e)
+        {
+            (this.Parent.Parent as frmMain).MoveToSearch();
+            (this.Parent.Parent as frmMain).getUCTịmKiem().SetQuan("Quận Phú Nhuận");
+        }
+
+        private void btnGoVap_Click(object sender, EventArgs e)
+        {
+            (this.Parent.Parent as frmMain).MoveToSearch();
+            (this.Parent.Parent as frmMain).getUCTịmKiem().SetQuan("Quận Gò Vấp");
+        }
+
+        private void btnThuDuc_Click(object sender, EventArgs e)
+        {
+            (this.Parent.Parent as frmMain).MoveToSearch();
+            (this.Parent.Parent as frmMain).getUCTịmKiem().SetQuan("Quận Thủ Đức");
+        }
+
+        private void btnBinhThanh_Click(object sender, EventArgs e)
+        {
+            (this.Parent.Parent as frmMain).MoveToSearch();
+            (this.Parent.Parent as frmMain).getUCTịmKiem().SetQuan("Quận Bình Thạnh");
+        }
+
+        private void btnTanBinh_Click(object sender, EventArgs e)
+        {
+            (this.Parent.Parent as frmMain).MoveToSearch();
+            (this.Parent.Parent as frmMain).getUCTịmKiem().SetQuan("Quận Tân Bình");
+        }
+
+        private void btnXemThem_Click(object sender, EventArgs e)
+        {
+            (this.Parent.Parent as frmMain).MoveToSearch();
+
+            (this.Parent.Parent as frmMain).getUCTịmKiem().SetQuan("");
+            (this.Parent.Parent as frmMain).getUCTịmKiem().SetSapXep(2);
+
         }
     }
 }

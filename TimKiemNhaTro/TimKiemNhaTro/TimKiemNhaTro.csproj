@@ -683,6 +683,9 @@
     <EmbeddedResource Include="ucDetailHome.resx">
       <DependentUpon>ucDetailHome.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ucDetailHome.vi-VN.resx">
+      <DependentUpon>ucDetailHome.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ucFAQs.resx">
       <DependentUpon>ucFAQs.cs</DependentUpon>
     </EmbeddedResource>
@@ -696,6 +699,9 @@
       <DependentUpon>ucHomeCC.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ucHomeCC.resx">
+      <DependentUpon>ucHomeCC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucHomeCC.vi-VN.resx">
       <DependentUpon>ucHomeCC.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ucNhaDaDang.en.resx">
@@ -950,6 +956,7 @@
     <None Include="Resources\suzy2.jpg" />
     <Content Include="Resources\triangular.png" />
     <Content Include="Resources\undraw_Login_re_4vu2.png" />
+    <None Include="Resources\undraw_Travel_booking_re_6umu %281%29.png" />
     <Content Include="Resources\undraw_Welcome_re_h3d9.png" />
     <None Include="Resources\unnamed.jpg" />
     <None Include="Resources\user %281%29.png" />

@@ -42,22 +42,22 @@ namespace TimKiemNhaTro
         {
             _nguoi = DataProvider.Ins.DB.NguoiDungs.Where(x => x.maNguoiDung == _nguoi.maNguoiDung).SingleOrDefault();
 
-            if ((string)_nguoi.sdt != null)
+            if ((string)_nguoi.sdt != null && _nguoi.sdt != "")
             {
                 txtPhoneNumber.Text = _nguoi.sdt;
-                lblSoDienThoai.Text = _nguoi.sdt;
+                lblPhone.Text = _nguoi.sdt;
             }
             else
             {
-                txtPhoneNumber.Text = "Chưa có";
-                lblSoDienThoai.Text = "Chưa có";
+                txtPhoneNumber.Text = "";
+                lblPhone.Text = "Chưa có";
             }
-            if ((string)_nguoi.hoTen != null)
+            if ((string)_nguoi.hoTen != null && _nguoi.hoTen != "")
                 txtHoTen.Text = _nguoi.hoTen;
             else
-                txtHoTen.Text = "Chưa đặt tên";
+                txtHoTen.Text = "";
             lblUsername.Text = _nguoi.email;
-            if (_nguoi.hoTen == null)
+            if (_nguoi.hoTen == null || _nguoi.hoTen == "")
                 lblNameKH.Text = "Chưa đặt tên";
             else
                 lblNameKH.Text = _nguoi.hoTen;
@@ -68,13 +68,13 @@ namespace TimKiemNhaTro
             }
             else picAvatar.LoadAsync("https://www.clipartmax.com/png/full/110-1104174_computer-icons-user-clip-art-lily-pad-coloring-page.png");
         }
-        private async void UploadFiles(string url, int idNguoiDung)
+        private async Task UploadFiles(string url, int idNguoiDung)
         {
             var stream = File.Open(@url, FileMode.Open);
 
             urlAvatar = "";
             // Construct FirebaseStorage with path to where you want to upload the file and put it there
-            var task = new FirebaseStorage("timkiemnhatro-6dd5a.appspot.com")
+            var task = new FirebaseStorage("nhatro-a2ad8.appspot.com")
              .Child("images")
              .Child(idNguoiDung.ToString() + url[2] + url[url.Length - 5])
              .PutAsync(stream);
@@ -85,7 +85,7 @@ namespace TimKiemNhaTro
             // Await the task to wait until upload is completed and get the download url
             var downloadUrl = await task;
             urlAvatar = downloadUrl.ToString();
-
+            MessageBox.Show("Upload file ảnh thành công");
 
         }
 
@@ -136,11 +136,21 @@ namespace TimKiemNhaTro
                     var tklol = DataProvider.Ins.DB.NguoiDungs.Where(x => x.maNguoiDung == _nguoi.maNguoiDung).SingleOrDefault();
                     tklol.hoTen = txtHoTen.Text;
                     tklol.sdt = txtPhoneNumber.Text;
-                   
+                    if (saveFileDialog1.FileName != "")
+                    {
+                       await UploadFiles(saveFileDialog1.FileName, _nguoi.maNguoiDung);
+
+                    }
+                    else if (op!=null &&op.FileName!="")
+                    {
+                       await UploadFiles(op.FileName, _nguoi.maNguoiDung);
+
+                    }
                     if (urlAvatar != "")
                         tklol.urlDaiDien = urlAvatar;
                     DataProvider.Ins.DB.SaveChanges();
                     MessageBox.Show("Cập nhật thành công");
+
                     _frmM.reLoadNguoiDung();
 
                 }
@@ -162,7 +172,8 @@ namespace TimKiemNhaTro
                     throw raise;
                 }
                 timer1.Enabled = false;
-                cap.Dispose();
+                if (cap != null) cap.Dispose();
+                savechupAnh = false;
                 urlAvatar = "";
                 reLoad();
             }
@@ -179,19 +190,23 @@ namespace TimKiemNhaTro
             (this.Parent.Parent as frmMain).getUCYeuThich();
             (this.Parent.Parent as frmMain).setUCNhaYeuThichBringtoFront();
         }
-
+        OpenFileDialog op;
         private void btnEditImage_Click(object sender, EventArgs e)
         {
-            OpenFileDialog op = new OpenFileDialog();
+            op = new OpenFileDialog();
             op.Filter = "Image Files(*.jpg; *.jpeg; *.png; *.gif; *.bmp)|*.jpg; *.jpeg; *.png; *.gif; *.bmp";
             if (op.ShowDialog() == DialogResult.OK)
             {
+                timer1.Enabled = false;
+                if (cap != null) cap.Dispose();
+                savechupAnh = false;
                 this.picAvatar.SizeMode = PictureBoxSizeMode.StretchImage;
                 using (var fs = File.OpenRead(op.FileName))
                 {
                     picAvatar.Image = Image.FromStream(fs);
                 }
-                UploadFiles(op.FileName, _nguoi.maNguoiDung);
+                saveFileDialog1.FileName = "";
+                //UploadFiles(op.FileName, _nguoi.maNguoiDung);
             }
         }
 
@@ -232,14 +247,14 @@ namespace TimKiemNhaTro
         bool savechupAnh = false;
         private void btnCamera_Click(object sender, EventArgs e)
         {
+            op.FileName = "";
             if (savechupAnh == true)
             {
                 saveFileDialog1.InitialDirectory = "";
                 if (saveFileDialog1.ShowDialog() == DialogResult.OK)
                 {
                     picAvatar.Image.Save(saveFileDialog1.FileName);
-                    UploadFiles(saveFileDialog1.FileName, _nguoi.maNguoiDung);
-
+                    //UploadFiles(saveFileDialog1.FileName, _nguoi.maNguoiDung);
                     cap.Dispose();
                     savechupAnh = false;
                     timer1.Enabled = false;

@@ -152,10 +152,10 @@ namespace TimKiemNhaTro
             this.txtPhoneNumber.BorderColor = System.Drawing.Color.Silver;
             this.txtPhoneNumber.BorderSize = 3;
             this.txtPhoneNumber.Cursor = System.Windows.Forms.Cursors.IBeam;
-            resources.ApplyResources(this.txtPhoneNumber, "txtPhoneNumber");
             this.txtPhoneNumber.FocusedBaseColor = System.Drawing.Color.White;
             this.txtPhoneNumber.FocusedBorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(10)))), ((int)(((byte)(108)))), ((int)(((byte)(255)))));
             this.txtPhoneNumber.FocusedForeColor = System.Drawing.SystemColors.ControlText;
+            resources.ApplyResources(this.txtPhoneNumber, "txtPhoneNumber");
             this.txtPhoneNumber.Name = "txtPhoneNumber";
             this.txtPhoneNumber.PasswordChar = '\0';
             this.txtPhoneNumber.Radius = 10;

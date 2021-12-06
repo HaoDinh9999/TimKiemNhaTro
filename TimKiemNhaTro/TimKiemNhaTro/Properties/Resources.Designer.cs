@@ -1504,6 +1504,16 @@ namespace TimKiemNhaTro.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap undraw_Travel_booking_re_6umu__1_ {
+            get {
+                object obj = ResourceManager.GetObject("undraw_Travel_booking_re_6umu (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap undraw_Welcome_re_h3d9 {
             get {
                 object obj = ResourceManager.GetObject("undraw_Welcome_re_h3d9", resourceCulture);

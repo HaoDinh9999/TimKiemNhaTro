@@ -143,7 +143,9 @@ namespace TimKiemNhaTro
             pnlCSVC.Controls.Clear();
             pnlImage.Controls.Clear();
             rtxDetail.Text = nhas.moTa;
-            lblPhone.Text = nhas.NguoiDung.sdt;
+            if (nhas.NguoiDung.sdt != null && nhas.NguoiDung.sdt != "")
+                lblPhone.Text = nhas.NguoiDung.sdt;
+            else lblPhone.Text = "Chưa có";
             lblEmail.Text = nhas.NguoiDung.email;
             lblGiaPhong.Text = nhas.TienNha + " VNĐ";
             lblDienTich.Text = nhas.dienTich +" m2";
@@ -151,8 +153,10 @@ namespace TimKiemNhaTro
             lblLoaiNha.Text = nhas.LoaiChoThue.tenLoaiChoThue;
             lblGiuongNgu.Text = nhas.soPhongNgu.ToString();
             lblPhongTam.Text = nhas.soPhongTam.ToString();
-            rtxDiaChi.Text = nhas.soNha + ", " + nhas.phuongXa + ", " + nhas.quanHuyen + ", thành phố Hồ Chí Minh";
-            lblTenChu.Text = nhas.NguoiDung.hoTen;
+            rtxDiaChi.Text = nhas.soNha +" " + nhas.tenDuong +", " + nhas.phuongXa + ", " + nhas.quanHuyen + ", thành phố Hồ Chí Minh";
+            if (nhas.NguoiDung.hoTen != null && nhas.NguoiDung.hoTen != "")
+                lblTenChu.Text = nhas.NguoiDung.hoTen;
+            else lblTenChu.Text = "Chưa đặt tên";
             csvs = DataProvider.Ins.DB.CoSoVatChats.Where(x => x.maCoSoVatChat == nhas.maCoSoVatChat).SingleOrDefault();
             //Map
             webBrowser1.ScriptErrorsSuppressed = true;

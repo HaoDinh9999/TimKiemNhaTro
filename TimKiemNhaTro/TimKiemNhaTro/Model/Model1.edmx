@@ -320,9 +320,9 @@
           <Property Name="tenDuong" Type="String" MaxLength="255" FixedLength="false" Unicode="false" Nullable="false" />
           <Property Name="phuongXa" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
           <Property Name="quanHuyen" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
-          <Property Name="moTa" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
+          <Property Name="moTa" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
           <Property Name="TienNha" Type="Decimal" />
-          <Property Name="ngayCapNhat" Type="DateTime" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="ngayCapNhat" Type="DateTime" Nullable="false" annotation:StoreGeneratedPattern="None" />
           <NavigationProperty Name="AnhNhas" Relationship="Self.FK_Anh_maNha" FromRole="Nha" ToRole="AnhNha" />
           <NavigationProperty Name="CoSoVatChat" Relationship="Self.maCoSoVatChat" FromRole="Nha" ToRole="CoSoVatChat" />
           <NavigationProperty Name="DanhGias" Relationship="Self.maNha" FromRole="Nha" ToRole="DanhGia" />

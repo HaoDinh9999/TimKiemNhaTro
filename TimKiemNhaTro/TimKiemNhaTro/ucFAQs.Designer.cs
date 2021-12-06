@@ -47,7 +47,6 @@ namespace TimKiemNhaTro
             this.btnCau1 = new Guna.UI.WinForms.GunaAdvenceButton();
             this.btnCau4 = new Guna.UI.WinForms.GunaAdvenceButton();
             this.pnl4 = new Guna.UI.WinForms.GunaElipsePanel();
-            this.richTextBox5 = new System.Windows.Forms.RichTextBox();
             this.richTextBox6 = new System.Windows.Forms.RichTextBox();
             this.btnCau5 = new Guna.UI.WinForms.GunaAdvenceButton();
             this.pnl5 = new Guna.UI.WinForms.GunaElipsePanel();
@@ -66,6 +65,11 @@ namespace TimKiemNhaTro
             this.txtCauHoi = new Guna.UI2.WinForms.Guna2TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
+            this.richTextBox15 = new System.Windows.Forms.RichTextBox();
+            this.richTextBox16 = new System.Windows.Forms.RichTextBox();
+            this.richTextBox5 = new System.Windows.Forms.RichTextBox();
+            this.richTextBox17 = new System.Windows.Forms.RichTextBox();
+            this.richTextBox18 = new System.Windows.Forms.RichTextBox();
             this.pnl1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.pnl2.SuspendLayout();
@@ -97,10 +101,9 @@ namespace TimKiemNhaTro
             this.richTextBox2.ForeColor = System.Drawing.Color.DimGray;
             this.richTextBox2.Location = new System.Drawing.Point(32, 92);
             this.richTextBox2.Name = "richTextBox2";
-            this.richTextBox2.Size = new System.Drawing.Size(781, 57);
+            this.richTextBox2.Size = new System.Drawing.Size(781, 44);
             this.richTextBox2.TabIndex = 1;
-            this.richTextBox2.Text = "Ứng dụng về nhà trọ, giúp người dùng có thể dễ dàng tìm trọ, hoặc có thể đăng nhà" +
-    " trọ của mình lên để chia sẽ mới nhiều người dùng biết hơn";
+            this.richTextBox2.Text = "Kết nối giữa bạn và mọi người có cùng nhu cầu giống bạn lại với nhau.";
             // 
             // richTextBox1
             // 
@@ -151,12 +154,13 @@ namespace TimKiemNhaTro
             // 
             this.pnl2.BackColor = System.Drawing.Color.Transparent;
             this.pnl2.BaseColor = System.Drawing.Color.Transparent;
+            this.pnl2.Controls.Add(this.richTextBox15);
             this.pnl2.Controls.Add(this.richTextBox7);
             this.pnl2.Controls.Add(this.richTextBox8);
             this.pnl2.Location = new System.Drawing.Point(56, 597);
             this.pnl2.Name = "pnl2";
             this.pnl2.Radius = 10;
-            this.pnl2.Size = new System.Drawing.Size(916, 170);
+            this.pnl2.Size = new System.Drawing.Size(916, 310);
             this.pnl2.TabIndex = 5;
             // 
             // richTextBox7
@@ -165,12 +169,11 @@ namespace TimKiemNhaTro
             this.richTextBox7.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.richTextBox7.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.richTextBox7.ForeColor = System.Drawing.Color.DimGray;
-            this.richTextBox7.Location = new System.Drawing.Point(32, 92);
+            this.richTextBox7.Location = new System.Drawing.Point(32, 110);
             this.richTextBox7.Name = "richTextBox7";
-            this.richTextBox7.Size = new System.Drawing.Size(781, 57);
+            this.richTextBox7.Size = new System.Drawing.Size(781, 82);
             this.richTextBox7.TabIndex = 1;
-            this.richTextBox7.Text = "Ứng dụng về nhà trọ, giúp người dùng có thể dễ dàng tìm trọ, hoặc có thể đăng nhà" +
-    " trọ của mình lên để chia sẽ mới nhiều người dùng biết hơn";
+            this.richTextBox7.Text = resources.GetString("richTextBox7.Text");
             // 
             // richTextBox8
             // 
@@ -180,21 +183,23 @@ namespace TimKiemNhaTro
             this.richTextBox8.ForeColor = System.Drawing.Color.DimGray;
             this.richTextBox8.Location = new System.Drawing.Point(32, 19);
             this.richTextBox8.Name = "richTextBox8";
-            this.richTextBox8.Size = new System.Drawing.Size(781, 57);
+            this.richTextBox8.Size = new System.Drawing.Size(781, 85);
             this.richTextBox8.TabIndex = 0;
-            this.richTextBox8.Text = "Ứng dụng về nhà trọ, giúp người dùng có thể dễ dàng tìm trọ, hoặc có thể đăng nhà" +
-    " trọ của mình lên để chia sẽ mới nhiều người dùng biết hơn";
+            this.richTextBox8.Text = "Nhà trọ là hình thức lưu trú phổ biến với khách từ xa đến và bình dân vì nó thườn" +
+    "g rẻ hơn nhiều so với khách sạn hoặc nhà nghỉ chỉ phục vụ bữa sáng - đặc biệt nế" +
+    "u bạn là người với ngân sách eo hẹp.";
             // 
             // pnl3
             // 
             this.pnl3.BackColor = System.Drawing.Color.Transparent;
             this.pnl3.BaseColor = System.Drawing.Color.Transparent;
+            this.pnl3.Controls.Add(this.richTextBox16);
             this.pnl3.Controls.Add(this.richTextBox3);
             this.pnl3.Controls.Add(this.richTextBox4);
-            this.pnl3.Location = new System.Drawing.Point(56, 873);
+            this.pnl3.Location = new System.Drawing.Point(56, 1024);
             this.pnl3.Name = "pnl3";
             this.pnl3.Radius = 10;
-            this.pnl3.Size = new System.Drawing.Size(916, 170);
+            this.pnl3.Size = new System.Drawing.Size(916, 399);
             this.pnl3.TabIndex = 5;
             // 
             // richTextBox3
@@ -203,12 +208,11 @@ namespace TimKiemNhaTro
             this.richTextBox3.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.richTextBox3.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.richTextBox3.ForeColor = System.Drawing.Color.DimGray;
-            this.richTextBox3.Location = new System.Drawing.Point(32, 92);
+            this.richTextBox3.Location = new System.Drawing.Point(32, 116);
             this.richTextBox3.Name = "richTextBox3";
-            this.richTextBox3.Size = new System.Drawing.Size(781, 57);
+            this.richTextBox3.Size = new System.Drawing.Size(781, 133);
             this.richTextBox3.TabIndex = 1;
-            this.richTextBox3.Text = "Ứng dụng về nhà trọ, giúp người dùng có thể dễ dàng tìm trọ, hoặc có thể đăng nhà" +
-    " trọ của mình lên để chia sẽ mới nhiều người dùng biết hơn";
+            this.richTextBox3.Text = resources.GetString("richTextBox3.Text");
             // 
             // richTextBox4
             // 
@@ -218,10 +222,9 @@ namespace TimKiemNhaTro
             this.richTextBox4.ForeColor = System.Drawing.Color.DimGray;
             this.richTextBox4.Location = new System.Drawing.Point(32, 19);
             this.richTextBox4.Name = "richTextBox4";
-            this.richTextBox4.Size = new System.Drawing.Size(781, 57);
+            this.richTextBox4.Size = new System.Drawing.Size(781, 77);
             this.richTextBox4.TabIndex = 0;
-            this.richTextBox4.Text = "Ứng dụng về nhà trọ, giúp người dùng có thể dễ dàng tìm trọ, hoặc có thể đăng nhà" +
-    " trọ của mình lên để chia sẽ mới nhiều người dùng biết hơn";
+            this.richTextBox4.Text = resources.GetString("richTextBox4.Text");
             // 
             // btnCau3
             // 
@@ -243,7 +246,7 @@ namespace TimKiemNhaTro
             this.btnCau3.ImageAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.btnCau3.ImageSize = new System.Drawing.Size(32, 32);
             this.btnCau3.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.btnCau3.Location = new System.Drawing.Point(56, 815);
+            this.btnCau3.Location = new System.Drawing.Point(56, 952);
             this.btnCau3.Name = "btnCau3";
             this.btnCau3.OnHoverBaseColor = System.Drawing.Color.Gainsboro;
             this.btnCau3.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -254,7 +257,7 @@ namespace TimKiemNhaTro
             this.btnCau3.Radius = 20;
             this.btnCau3.Size = new System.Drawing.Size(916, 52);
             this.btnCau3.TabIndex = 4;
-            this.btnCau3.Text = "Câu 3: Ứng dụng này là gì ?";
+            this.btnCau3.Text = "Câu 3: Có ai có thể ở nhà trọ ?";
             this.btnCau3.TextOffsetX = 20;
             this.btnCau3.Click += new System.EventHandler(this.btnCau3_Click);
             // 
@@ -289,7 +292,7 @@ namespace TimKiemNhaTro
             this.btnCau2.Radius = 20;
             this.btnCau2.Size = new System.Drawing.Size(916, 52);
             this.btnCau2.TabIndex = 4;
-            this.btnCau2.Text = "Câu 2: Ứng dụng này là gì ?";
+            this.btnCau2.Text = "Câu 2: Vậy nhà trọ là gì ?";
             this.btnCau2.TextOffsetX = 20;
             this.btnCau2.Click += new System.EventHandler(this.btnCau2_Click);
             // 
@@ -348,7 +351,7 @@ namespace TimKiemNhaTro
             this.btnCau4.ImageAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.btnCau4.ImageSize = new System.Drawing.Size(32, 32);
             this.btnCau4.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.btnCau4.Location = new System.Drawing.Point(56, 1097);
+            this.btnCau4.Location = new System.Drawing.Point(56, 1440);
             this.btnCau4.Name = "btnCau4";
             this.btnCau4.OnHoverBaseColor = System.Drawing.Color.Gainsboro;
             this.btnCau4.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -359,7 +362,7 @@ namespace TimKiemNhaTro
             this.btnCau4.Radius = 20;
             this.btnCau4.Size = new System.Drawing.Size(916, 52);
             this.btnCau4.TabIndex = 4;
-            this.btnCau4.Text = "Câu 4: Ứng dụng này là gì ?";
+            this.btnCau4.Text = "Câu 4: Làm thế nào để bạn chọn nhà trọ phù hợp ?";
             this.btnCau4.TextOffsetX = 20;
             this.btnCau4.Click += new System.EventHandler(this.btnCau4_Click);
             // 
@@ -367,26 +370,12 @@ namespace TimKiemNhaTro
             // 
             this.pnl4.BackColor = System.Drawing.Color.Transparent;
             this.pnl4.BaseColor = System.Drawing.Color.Transparent;
-            this.pnl4.Controls.Add(this.richTextBox5);
             this.pnl4.Controls.Add(this.richTextBox6);
-            this.pnl4.Location = new System.Drawing.Point(56, 1155);
+            this.pnl4.Location = new System.Drawing.Point(56, 1498);
             this.pnl4.Name = "pnl4";
             this.pnl4.Radius = 10;
             this.pnl4.Size = new System.Drawing.Size(916, 170);
             this.pnl4.TabIndex = 5;
-            // 
-            // richTextBox5
-            // 
-            this.richTextBox5.BackColor = System.Drawing.Color.White;
-            this.richTextBox5.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.richTextBox5.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.richTextBox5.ForeColor = System.Drawing.Color.DimGray;
-            this.richTextBox5.Location = new System.Drawing.Point(32, 92);
-            this.richTextBox5.Name = "richTextBox5";
-            this.richTextBox5.Size = new System.Drawing.Size(781, 57);
-            this.richTextBox5.TabIndex = 1;
-            this.richTextBox5.Text = "Ứng dụng về nhà trọ, giúp người dùng có thể dễ dàng tìm trọ, hoặc có thể đăng nhà" +
-    " trọ của mình lên để chia sẽ mới nhiều người dùng biết hơn";
             // 
             // richTextBox6
             // 
@@ -396,10 +385,9 @@ namespace TimKiemNhaTro
             this.richTextBox6.ForeColor = System.Drawing.Color.DimGray;
             this.richTextBox6.Location = new System.Drawing.Point(32, 19);
             this.richTextBox6.Name = "richTextBox6";
-            this.richTextBox6.Size = new System.Drawing.Size(781, 57);
+            this.richTextBox6.Size = new System.Drawing.Size(781, 90);
             this.richTextBox6.TabIndex = 0;
-            this.richTextBox6.Text = "Ứng dụng về nhà trọ, giúp người dùng có thể dễ dàng tìm trọ, hoặc có thể đăng nhà" +
-    " trọ của mình lên để chia sẽ mới nhiều người dùng biết hơn";
+            this.richTextBox6.Text = resources.GetString("richTextBox6.Text");
             // 
             // btnCau5
             // 
@@ -421,7 +409,7 @@ namespace TimKiemNhaTro
             this.btnCau5.ImageAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.btnCau5.ImageSize = new System.Drawing.Size(32, 32);
             this.btnCau5.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.btnCau5.Location = new System.Drawing.Point(56, 1389);
+            this.btnCau5.Location = new System.Drawing.Point(56, 1694);
             this.btnCau5.Name = "btnCau5";
             this.btnCau5.OnHoverBaseColor = System.Drawing.Color.Gainsboro;
             this.btnCau5.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -432,7 +420,7 @@ namespace TimKiemNhaTro
             this.btnCau5.Radius = 20;
             this.btnCau5.Size = new System.Drawing.Size(916, 52);
             this.btnCau5.TabIndex = 4;
-            this.btnCau5.Text = "Câu 5: Ứng dụng này là gì ?";
+            this.btnCau5.Text = "Câu 5: Có bao nhiêu người ở trong một phòng nhà tro ?";
             this.btnCau5.TextOffsetX = 20;
             this.btnCau5.Click += new System.EventHandler(this.btnCau5_Click);
             // 
@@ -440,12 +428,13 @@ namespace TimKiemNhaTro
             // 
             this.pnl5.BackColor = System.Drawing.Color.Transparent;
             this.pnl5.BaseColor = System.Drawing.Color.Transparent;
+            this.pnl5.Controls.Add(this.richTextBox5);
             this.pnl5.Controls.Add(this.richTextBox9);
             this.pnl5.Controls.Add(this.richTextBox10);
-            this.pnl5.Location = new System.Drawing.Point(56, 1447);
+            this.pnl5.Location = new System.Drawing.Point(56, 1752);
             this.pnl5.Name = "pnl5";
             this.pnl5.Radius = 10;
-            this.pnl5.Size = new System.Drawing.Size(916, 170);
+            this.pnl5.Size = new System.Drawing.Size(916, 242);
             this.pnl5.TabIndex = 5;
             // 
             // richTextBox9
@@ -456,10 +445,9 @@ namespace TimKiemNhaTro
             this.richTextBox9.ForeColor = System.Drawing.Color.DimGray;
             this.richTextBox9.Location = new System.Drawing.Point(32, 92);
             this.richTextBox9.Name = "richTextBox9";
-            this.richTextBox9.Size = new System.Drawing.Size(781, 57);
+            this.richTextBox9.Size = new System.Drawing.Size(781, 35);
             this.richTextBox9.TabIndex = 1;
-            this.richTextBox9.Text = "Ứng dụng về nhà trọ, giúp người dùng có thể dễ dàng tìm trọ, hoặc có thể đăng nhà" +
-    " trọ của mình lên để chia sẽ mới nhiều người dùng biết hơn";
+            this.richTextBox9.Text = "Nói chung, càng nhiều người trong phòng, giá giường của bạn càng rẻ.";
             // 
             // richTextBox10
             // 
@@ -471,8 +459,8 @@ namespace TimKiemNhaTro
             this.richTextBox10.Name = "richTextBox10";
             this.richTextBox10.Size = new System.Drawing.Size(781, 57);
             this.richTextBox10.TabIndex = 0;
-            this.richTextBox10.Text = "Ứng dụng về nhà trọ, giúp người dùng có thể dễ dàng tìm trọ, hoặc có thể đăng nhà" +
-    " trọ của mình lên để chia sẽ mới nhiều người dùng biết hơn";
+            this.richTextBox10.Text = "Thông thường, một phòng nhà trọ sẽ không có quá nhiều giường. Nhưng tất cả phụ th" +
+    "uộc vào cách bố trí của căn phòng và nhà trọ.";
             // 
             // btnCau6
             // 
@@ -494,7 +482,7 @@ namespace TimKiemNhaTro
             this.btnCau6.ImageAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.btnCau6.ImageSize = new System.Drawing.Size(32, 32);
             this.btnCau6.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.btnCau6.Location = new System.Drawing.Point(56, 1674);
+            this.btnCau6.Location = new System.Drawing.Point(56, 2026);
             this.btnCau6.Name = "btnCau6";
             this.btnCau6.OnHoverBaseColor = System.Drawing.Color.Gainsboro;
             this.btnCau6.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -505,7 +493,7 @@ namespace TimKiemNhaTro
             this.btnCau6.Radius = 20;
             this.btnCau6.Size = new System.Drawing.Size(916, 52);
             this.btnCau6.TabIndex = 4;
-            this.btnCau6.Text = "Câu 6: Ứng dụng này là gì ?";
+            this.btnCau6.Text = "Câu 6: Nhà trọ có nguy hiểm không ?";
             this.btnCau6.TextOffsetX = 20;
             this.btnCau6.Click += new System.EventHandler(this.btnCau6_Click);
             // 
@@ -515,10 +503,10 @@ namespace TimKiemNhaTro
             this.pnl6.BaseColor = System.Drawing.Color.Transparent;
             this.pnl6.Controls.Add(this.richTextBox11);
             this.pnl6.Controls.Add(this.richTextBox12);
-            this.pnl6.Location = new System.Drawing.Point(56, 1732);
+            this.pnl6.Location = new System.Drawing.Point(56, 2084);
             this.pnl6.Name = "pnl6";
             this.pnl6.Radius = 10;
-            this.pnl6.Size = new System.Drawing.Size(916, 170);
+            this.pnl6.Size = new System.Drawing.Size(916, 239);
             this.pnl6.TabIndex = 5;
             // 
             // richTextBox11
@@ -527,12 +515,13 @@ namespace TimKiemNhaTro
             this.richTextBox11.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.richTextBox11.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.richTextBox11.ForeColor = System.Drawing.Color.DimGray;
-            this.richTextBox11.Location = new System.Drawing.Point(32, 92);
+            this.richTextBox11.Location = new System.Drawing.Point(32, 121);
             this.richTextBox11.Name = "richTextBox11";
-            this.richTextBox11.Size = new System.Drawing.Size(781, 57);
+            this.richTextBox11.Size = new System.Drawing.Size(781, 82);
             this.richTextBox11.TabIndex = 1;
-            this.richTextBox11.Text = "Ứng dụng về nhà trọ, giúp người dùng có thể dễ dàng tìm trọ, hoặc có thể đăng nhà" +
-    " trọ của mình lên để chia sẽ mới nhiều người dùng biết hơn";
+            this.richTextBox11.Text = "Mặc dù nhà trọ không nguy hiểm, nhưng điều đó không có nghĩa là mọi thứ của bạn s" +
+    "ẽ nhất thiết phải an toàn. Đọc thêm bên dưới về cách giữ an toàn cho đồ đạc của " +
+    "bạn trong nhà trọ.";
             // 
             // richTextBox12
             // 
@@ -542,10 +531,9 @@ namespace TimKiemNhaTro
             this.richTextBox12.ForeColor = System.Drawing.Color.DimGray;
             this.richTextBox12.Location = new System.Drawing.Point(32, 19);
             this.richTextBox12.Name = "richTextBox12";
-            this.richTextBox12.Size = new System.Drawing.Size(781, 57);
+            this.richTextBox12.Size = new System.Drawing.Size(781, 82);
             this.richTextBox12.TabIndex = 0;
-            this.richTextBox12.Text = "Ứng dụng về nhà trọ, giúp người dùng có thể dễ dàng tìm trọ, hoặc có thể đăng nhà" +
-    " trọ của mình lên để chia sẽ mới nhiều người dùng biết hơn";
+            this.richTextBox12.Text = resources.GetString("richTextBox12.Text");
             // 
             // btnCau7
             // 
@@ -567,7 +555,7 @@ namespace TimKiemNhaTro
             this.btnCau7.ImageAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.btnCau7.ImageSize = new System.Drawing.Size(32, 32);
             this.btnCau7.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(66)))), ((int)(((byte)(58)))), ((int)(((byte)(170)))));
-            this.btnCau7.Location = new System.Drawing.Point(56, 1952);
+            this.btnCau7.Location = new System.Drawing.Point(56, 2344);
             this.btnCau7.Name = "btnCau7";
             this.btnCau7.OnHoverBaseColor = System.Drawing.Color.Gainsboro;
             this.btnCau7.OnHoverBorderColor = System.Drawing.Color.Black;
@@ -578,7 +566,7 @@ namespace TimKiemNhaTro
             this.btnCau7.Radius = 20;
             this.btnCau7.Size = new System.Drawing.Size(916, 52);
             this.btnCau7.TabIndex = 4;
-            this.btnCau7.Text = "Câu 7: Ứng dụng này là gì ?";
+            this.btnCau7.Text = "Câu 7: Làm cách nào để giữ đồ đạc của tôi an toàn trong nhà trọ ?";
             this.btnCau7.TextOffsetX = 20;
             this.btnCau7.Click += new System.EventHandler(this.btnCau7_Click);
             // 
@@ -586,12 +574,14 @@ namespace TimKiemNhaTro
             // 
             this.pnl7.BackColor = System.Drawing.Color.Transparent;
             this.pnl7.BaseColor = System.Drawing.Color.Transparent;
+            this.pnl7.Controls.Add(this.richTextBox18);
+            this.pnl7.Controls.Add(this.richTextBox17);
             this.pnl7.Controls.Add(this.richTextBox13);
             this.pnl7.Controls.Add(this.richTextBox14);
-            this.pnl7.Location = new System.Drawing.Point(56, 2010);
+            this.pnl7.Location = new System.Drawing.Point(56, 2402);
             this.pnl7.Name = "pnl7";
             this.pnl7.Radius = 10;
-            this.pnl7.Size = new System.Drawing.Size(916, 170);
+            this.pnl7.Size = new System.Drawing.Size(916, 460);
             this.pnl7.TabIndex = 5;
             // 
             // richTextBox13
@@ -600,12 +590,13 @@ namespace TimKiemNhaTro
             this.richTextBox13.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.richTextBox13.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.richTextBox13.ForeColor = System.Drawing.Color.DimGray;
-            this.richTextBox13.Location = new System.Drawing.Point(32, 92);
+            this.richTextBox13.Location = new System.Drawing.Point(32, 114);
             this.richTextBox13.Name = "richTextBox13";
-            this.richTextBox13.Size = new System.Drawing.Size(781, 57);
+            this.richTextBox13.Size = new System.Drawing.Size(781, 78);
             this.richTextBox13.TabIndex = 1;
-            this.richTextBox13.Text = "Ứng dụng về nhà trọ, giúp người dùng có thể dễ dàng tìm trọ, hoặc có thể đăng nhà" +
-    " trọ của mình lên để chia sẽ mới nhiều người dùng biết hơn";
+            this.richTextBox13.Text = "Hầu hết hành vi trộm cắp là cơ hội. Có nghĩa là nếu bạn để ví tiền hoặc máy ảnh đ" +
+    "ắt tiền ở nơi dễ thấy, không phải ai cũng trung thực như bạn và có thể lấy nó tr" +
+    "ước khi bạn quay lại.";
             // 
             // richTextBox14
             // 
@@ -615,10 +606,11 @@ namespace TimKiemNhaTro
             this.richTextBox14.ForeColor = System.Drawing.Color.DimGray;
             this.richTextBox14.Location = new System.Drawing.Point(32, 19);
             this.richTextBox14.Name = "richTextBox14";
-            this.richTextBox14.Size = new System.Drawing.Size(781, 57);
+            this.richTextBox14.Size = new System.Drawing.Size(781, 80);
             this.richTextBox14.TabIndex = 0;
-            this.richTextBox14.Text = "Ứng dụng về nhà trọ, giúp người dùng có thể dễ dàng tìm trọ, hoặc có thể đăng nhà" +
-    " trọ của mình lên để chia sẽ mới nhiều người dùng biết hơn";
+            this.richTextBox14.Text = "Giữ các vật dụng cá nhân của bạn an toàn khi ở trong ký túc xá là một điều quan t" +
+    "rọng. Điều đó không có nghĩa là nội dung của bạn sẽ bị giật ngay giây đầu tiên b" +
+    "ạn quay lưng lại.";
             // 
             // gunaElipsePanel1
             // 
@@ -712,6 +704,69 @@ namespace TimKiemNhaTro
             this.label3.TabIndex = 1;
             this.label3.Text = "Không có giải đáp ?";
             // 
+            // richTextBox15
+            // 
+            this.richTextBox15.BackColor = System.Drawing.Color.White;
+            this.richTextBox15.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.richTextBox15.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.richTextBox15.ForeColor = System.Drawing.Color.DimGray;
+            this.richTextBox15.Location = new System.Drawing.Point(32, 198);
+            this.richTextBox15.Name = "richTextBox15";
+            this.richTextBox15.Size = new System.Drawing.Size(781, 69);
+            this.richTextBox15.TabIndex = 2;
+            this.richTextBox15.Text = "Lưu trú trong nhà trọ là một cách tuyệt vời để không chỉ tiết kiệm tiền khi đi du" +
+    " lịch mà còn gặp gỡ những người mới từ khắp nơi trên thế giới trong một không gi" +
+    "an chung.";
+            // 
+            // richTextBox16
+            // 
+            this.richTextBox16.BackColor = System.Drawing.Color.White;
+            this.richTextBox16.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.richTextBox16.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.richTextBox16.ForeColor = System.Drawing.Color.DimGray;
+            this.richTextBox16.Location = new System.Drawing.Point(32, 255);
+            this.richTextBox16.Name = "richTextBox16";
+            this.richTextBox16.Size = new System.Drawing.Size(781, 104);
+            this.richTextBox16.TabIndex = 2;
+            this.richTextBox16.Text = resources.GetString("richTextBox16.Text");
+            // 
+            // richTextBox5
+            // 
+            this.richTextBox5.BackColor = System.Drawing.Color.White;
+            this.richTextBox5.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.richTextBox5.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.richTextBox5.ForeColor = System.Drawing.Color.DimGray;
+            this.richTextBox5.Location = new System.Drawing.Point(32, 143);
+            this.richTextBox5.Name = "richTextBox5";
+            this.richTextBox5.Size = new System.Drawing.Size(781, 60);
+            this.richTextBox5.TabIndex = 2;
+            this.richTextBox5.Text = "Bằng cách ở trong phòng riêng trong nhà tọ, bạn sẽ không bị gián đoạn bởi những n" +
+    "gười ra vào đêm khuya hoặc những người ngủ ngáy ngủ cùng phòng với bạn.";
+            // 
+            // richTextBox17
+            // 
+            this.richTextBox17.BackColor = System.Drawing.Color.White;
+            this.richTextBox17.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.richTextBox17.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.richTextBox17.ForeColor = System.Drawing.Color.DimGray;
+            this.richTextBox17.Location = new System.Drawing.Point(32, 209);
+            this.richTextBox17.Name = "richTextBox17";
+            this.richTextBox17.Size = new System.Drawing.Size(781, 106);
+            this.richTextBox17.TabIndex = 2;
+            this.richTextBox17.Text = resources.GetString("richTextBox17.Text");
+            // 
+            // richTextBox18
+            // 
+            this.richTextBox18.BackColor = System.Drawing.Color.White;
+            this.richTextBox18.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.richTextBox18.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.richTextBox18.ForeColor = System.Drawing.Color.DimGray;
+            this.richTextBox18.Location = new System.Drawing.Point(32, 330);
+            this.richTextBox18.Name = "richTextBox18";
+            this.richTextBox18.Size = new System.Drawing.Size(781, 78);
+            this.richTextBox18.TabIndex = 3;
+            this.richTextBox18.Text = resources.GetString("richTextBox18.Text");
+            // 
             // ucFAQs
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -735,7 +790,7 @@ namespace TimKiemNhaTro
             this.Controls.Add(this.pnl1);
             this.Controls.Add(this.btnCau1);
             this.Name = "ucFAQs";
-            this.Size = new System.Drawing.Size(1493, 2310);
+            this.Size = new System.Drawing.Size(1493, 2912);
             this.Load += new System.EventHandler(this.ucFAQs_Load);
             this.pnl1.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
@@ -770,7 +825,6 @@ namespace TimKiemNhaTro
         private System.Windows.Forms.RichTextBox richTextBox4;
         private Guna.UI.WinForms.GunaAdvenceButton btnCau4;
         private Guna.UI.WinForms.GunaElipsePanel pnl4;
-        private System.Windows.Forms.RichTextBox richTextBox5;
         private System.Windows.Forms.RichTextBox richTextBox6;
         private Guna.UI.WinForms.GunaAdvenceButton btnCau5;
         private Guna.UI.WinForms.GunaElipsePanel pnl5;
@@ -789,5 +843,10 @@ namespace TimKiemNhaTro
         private Guna.UI2.WinForms.Guna2TextBox txtCauHoi;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.RichTextBox richTextBox15;
+        private System.Windows.Forms.RichTextBox richTextBox16;
+        private System.Windows.Forms.RichTextBox richTextBox5;
+        private System.Windows.Forms.RichTextBox richTextBox18;
+        private System.Windows.Forms.RichTextBox richTextBox17;
     }
 }

@@ -93,7 +93,10 @@ namespace TimKiemNhaTro
         {
             return ucF;
         }
-
+        public ucSearch getUCTịmKiem()
+        {
+            return ucS;
+        }
         public void setUCDetailBringtoFront()
         {
             ucD.Show();
@@ -168,8 +171,12 @@ namespace TimKiemNhaTro
 
         private void btnFindMap_Click(object sender, EventArgs e)
         {
+         MoveToSearch();   
+        }
+        public void MoveToSearch()
+        {
             setTitle(btnFindMap.Text);
-            moveImageBox(sender);
+            moveImageBox(btnFindMap);
             btnHome.Checked = false;
             btnFindMap.Checked = true;
             btnFavourite.Checked = false;

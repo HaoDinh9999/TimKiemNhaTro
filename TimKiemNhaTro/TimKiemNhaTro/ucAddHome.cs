@@ -6,6 +6,7 @@ using System.Drawing;
 using System.Drawing.Imaging;
 using System.IO;
 using System.Linq;
+using System.Threading.Tasks;
 using System.Windows.Forms;
 using TimKiemNhaTro.Model;
 
@@ -46,7 +47,7 @@ namespace TimKiemNhaTro
             listt.Add(new Districts("Quận 11", Quan11));
             listt.Add(new Districts("Quận 12", Quan12));
             listt.Add(new Districts("Quận Bình Tân", QuanBinhTan));
-            listt.Add(new Districts("Thành phố Thủ Đức", ThuDuc));
+            listt.Add(new Districts("Quận Thủ Đức", ThuDuc));
             listt.Add(new Districts("Quận Tân Phú", QuanTanPhu));
             listt.Add(new Districts("Quận Tân Bình", QuanTanBinh));
             listt.Add(new Districts("Quận Phú Nhuận", QuanPhuNhuan));
@@ -74,37 +75,37 @@ namespace TimKiemNhaTro
         }
         public void reSet1()
         {
-            cbxTinhTrang.Text = "Còn trống";
-            cbxQuanHuyen.Text = "";
-            cbxPhuongXa.Text = "";
-            txtSoNha.Text = "";
-            txtTenDuong.Text = "";
-            btnNha.Checked = false;
-            btnPhong.Checked = false;
-            btnCanHo.Checked = false;
-            btn1Ngu.Checked = false;
-            btn2Ngu.Checked = false;
-            btn3Ngu.Checked = false;
-            btnHon4Ngu.Checked = false;
-            btn1Tam.Checked = false;
-            btn2Tam.Checked = false;
-            btn3Tam.Checked = false;
-            btnHon4Tam.Checked = false;
-            btn1Ngu.Checked = false;
-            btnDieuHoa.Checked = false;
-            btnBanCong.Checked = false;
-            btnMayGiat.Checked = false;
-            btnGacLung.Checked = false;
-            btnNoiThat.Checked = false;
-            btnBaoVe.Checked = false;
-            btnHoBoi.Checked = false;
-            btnBaiXe.Checked = false;
-            btnSanThuong.Checked = false;
-            btnCCTV.Checked = false;
-            btnThuCung.Checked = false;
-            txtDienTich.Text = "";
-            txtTienChoThue.Text = "";
-            txtMoTa.Text = "";
+            //cbxTinhTrang.Text = "Còn trống";
+            //cbxQuanHuyen.Text = "";
+            //cbxPhuongXa.Text = "";
+            //txtSoNha.Text = "";
+            //txtTenDuong.Text = "";
+            //btnNha.Checked = false;
+            //btnPhong.Checked = false;
+            //btnCanHo.Checked = false;
+            //btn1Ngu.Checked = false;
+            //btn2Ngu.Checked = false;
+            //btn3Ngu.Checked = false;
+            //btnHon4Ngu.Checked = false;
+            //btn1Tam.Checked = false;
+            //btn2Tam.Checked = false;
+            //btn3Tam.Checked = false;
+            //btnHon4Tam.Checked = false;
+            //btn1Ngu.Checked = false;
+            //btnDieuHoa.Checked = false;
+            //btnBanCong.Checked = false;
+            //btnMayGiat.Checked = false;
+            //btnGacLung.Checked = false;
+            //btnNoiThat.Checked = false;
+            //btnBaoVe.Checked = false;
+            //btnHoBoi.Checked = false;
+            //btnBaiXe.Checked = false;
+            //btnSanThuong.Checked = false;
+            //btnCCTV.Checked = false;
+            //btnThuCung.Checked = false;
+            //txtDienTich.Text = "";
+            //txtTienChoThue.Text = "";
+            //txtMoTa.Text = "";
             pnlPic.Controls.Clear();
             nhaeidt = null;
             if (nhaeidt != null)
@@ -532,12 +533,12 @@ namespace TimKiemNhaTro
         {
             pnlPic.Controls.Clear();
         }
-        private async void UploadFiles(string url,string _idNha)
+        private async Task UploadFiles(string url, string _idNha)
         {
             var stream = File.Open(@url, FileMode.Open);
             
                 // Construct FirebaseStorage with path to where you want to upload the file and put it there
-                var task = new FirebaseStorage("timkiemnhatro-6dd5a.appspot.com")
+                var task = new FirebaseStorage("nhatro-a2ad8.appspot.com")
                  .Child("images")
                  .Child(_idNha + url[2] + url[url.Length - 5] )
                  .PutAsync(stream);
@@ -547,8 +548,8 @@ namespace TimKiemNhaTro
 
                 // Await the task to wait until upload is completed and get the download url
                 var downloadUrl = await task;
-                  DataProvider.Ins.DB.AnhNhas.Add(new AnhNha() { maNha=Int32.Parse(_idNha),duongDan=downloadUrl});
-                 DataProvider.Ins.DB.SaveChanges();
+                 DataProvider.Ins.DB.AnhNhas.Add(new AnhNha() { maNha=Int32.Parse(_idNha),duongDan=downloadUrl});
+                 //DataProvider.Ins.DB.SaveChanges();
             
 
 
@@ -1100,7 +1101,7 @@ namespace TimKiemNhaTro
         "Quận Phú Nhuận",
         "Quận Tân Bình",
         "Quận Tân Phú",
-        "Thành phố Thủ Đức",
+        "Quận Thủ Đức",
         "Huyện Bình Chánh",
         "Huyện Cần Giờ",
         "Huyện Củ Chi",
@@ -1128,7 +1129,7 @@ namespace TimKiemNhaTro
 
         }
  
-        private void btnDangTin_Click(object sender, EventArgs e)
+        private async void btnDangTin_Click(object sender, EventArgs e)
         {
             if (nhaeidt == null)
             {
@@ -1160,8 +1161,10 @@ namespace TimKiemNhaTro
 
                 foreach (var item in fileList)
                 {
-                    UploadFiles(item, nhas.maNha.ToString());
+                    await UploadFiles(item, nhas.maNha.ToString());
                 }
+                DataProvider.Ins.DB.SaveChanges();
+
                 MessageBox.Show("Đăng trọ thành công");
             }
             else

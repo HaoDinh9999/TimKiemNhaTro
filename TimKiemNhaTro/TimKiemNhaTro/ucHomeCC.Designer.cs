@@ -34,33 +34,32 @@ namespace TimKiemNhaTro
             this.rtxTieuDeLon = new System.Windows.Forms.RichTextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.pnlChuTro = new Guna.UI.WinForms.GunaShadowPanel();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.lblCountChuTro = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.pnlNguoiDung = new Guna.UI.WinForms.GunaShadowPanel();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.pictureBox8 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.lblCountNguoiDung = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
             this.pnlNhaTro = new Guna.UI.WinForms.GunaShadowPanel();
             this.label4 = new System.Windows.Forms.Label();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label13 = new System.Windows.Forms.Label();
             this.panel7 = new System.Windows.Forms.Panel();
+            this.pictureBox10 = new System.Windows.Forms.PictureBox();
             this.lblCountTro = new System.Windows.Forms.Label();
             this.label14 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
-            this.pnlTimKiem = new Guna.UI.WinForms.GunaShadowPanel();
-            this.gunaComboBox3 = new Guna.UI.WinForms.GunaComboBox();
-            this.label12 = new System.Windows.Forms.Label();
-            this.gunaComboBox2 = new Guna.UI.WinForms.GunaComboBox();
-            this.label11 = new System.Windows.Forms.Label();
-            this.gunaComboBox1 = new Guna.UI.WinForms.GunaComboBox();
-            this.label10 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.label9 = new System.Windows.Forms.Label();
             this.label27 = new System.Windows.Forms.Label();
@@ -83,21 +82,19 @@ namespace TimKiemNhaTro
             this.lblTopTitle = new Guna.UI.WinForms.GunaButton();
             this.btnBinhThanh = new Guna.UI.WinForms.GunaPictureBox();
             this.btnQuan1 = new Guna.UI.WinForms.GunaPictureBox();
-            this.gunaGradientButton1 = new Guna.UI.WinForms.GunaGradientButton();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox8 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox10 = new System.Windows.Forms.PictureBox();
             this.pnlChuTro.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             this.panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.pnlNguoiDung.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.panel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
             this.pnlNhaTro.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel7.SuspendLayout();
-            this.pnlTimKiem.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnTanBinh)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnGoVap)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnQuan7)).BeginInit();
@@ -107,12 +104,6 @@ namespace TimKiemNhaTro
             ((System.ComponentModel.ISupportInitialize)(this.btnBinhThanh)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnQuan1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
             this.SuspendLayout();
             // 
             // flwCapNhatGanNhat
@@ -152,12 +143,26 @@ namespace TimKiemNhaTro
             this.pnlChuTro.ShadowColor = System.Drawing.Color.Silver;
             this.pnlChuTro.ShadowShift = 10;
             // 
+            // pictureBox4
+            // 
+            resources.ApplyResources(this.pictureBox4, "pictureBox4");
+            this.pictureBox4.Image = global::TimKiemNhaTro.Properties.Resources.icons8_user_16;
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.TabStop = false;
+            // 
             // panel3
             // 
             resources.ApplyResources(this.panel3, "panel3");
             this.panel3.BackColor = System.Drawing.Color.Coral;
             this.panel3.Controls.Add(this.pictureBox5);
             this.panel3.Name = "panel3";
+            // 
+            // pictureBox5
+            // 
+            resources.ApplyResources(this.pictureBox5, "pictureBox5");
+            this.pictureBox5.Image = global::TimKiemNhaTro.Properties.Resources.icons8_username322_32;
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.TabStop = false;
             // 
             // label5
             // 
@@ -200,12 +205,26 @@ namespace TimKiemNhaTro
             this.pnlNguoiDung.ShadowColor = System.Drawing.Color.Silver;
             this.pnlNguoiDung.ShadowShift = 10;
             // 
+            // pictureBox3
+            // 
+            resources.ApplyResources(this.pictureBox3, "pictureBox3");
+            this.pictureBox3.Image = global::TimKiemNhaTro.Properties.Resources.icons8_user_16;
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.TabStop = false;
+            // 
             // panel2
             // 
             resources.ApplyResources(this.panel2, "panel2");
             this.panel2.BackColor = System.Drawing.Color.LimeGreen;
             this.panel2.Controls.Add(this.pictureBox8);
             this.panel2.Name = "panel2";
+            // 
+            // pictureBox8
+            // 
+            resources.ApplyResources(this.pictureBox8, "pictureBox8");
+            this.pictureBox8.Image = global::TimKiemNhaTro.Properties.Resources.icons8_username322_32;
+            this.pictureBox8.Name = "pictureBox8";
+            this.pictureBox8.TabStop = false;
             // 
             // label1
             // 
@@ -254,6 +273,13 @@ namespace TimKiemNhaTro
             this.label4.ForeColor = System.Drawing.Color.Indigo;
             this.label4.Name = "label4";
             // 
+            // pictureBox2
+            // 
+            resources.ApplyResources(this.pictureBox2, "pictureBox2");
+            this.pictureBox2.Image = global::TimKiemNhaTro.Properties.Resources.icons8_homenho_16;
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.TabStop = false;
+            // 
             // label13
             // 
             resources.ApplyResources(this.label13, "label13");
@@ -266,6 +292,13 @@ namespace TimKiemNhaTro
             this.panel7.BackColor = System.Drawing.Color.Gold;
             this.panel7.Controls.Add(this.pictureBox10);
             this.panel7.Name = "panel7";
+            // 
+            // pictureBox10
+            // 
+            resources.ApplyResources(this.pictureBox10, "pictureBox10");
+            this.pictureBox10.Image = global::TimKiemNhaTro.Properties.Resources.icons8_home_address3222222222222_32;
+            this.pictureBox10.Name = "pictureBox10";
+            this.pictureBox10.TabStop = false;
             // 
             // lblCountTro
             // 
@@ -297,90 +330,6 @@ namespace TimKiemNhaTro
             this.panel6.BackColor = System.Drawing.Color.LightSeaGreen;
             this.panel6.Name = "panel6";
             // 
-            // pnlTimKiem
-            // 
-            resources.ApplyResources(this.pnlTimKiem, "pnlTimKiem");
-            this.pnlTimKiem.BackColor = System.Drawing.Color.Transparent;
-            this.pnlTimKiem.BaseColor = System.Drawing.Color.White;
-            this.pnlTimKiem.Controls.Add(this.gunaGradientButton1);
-            this.pnlTimKiem.Controls.Add(this.gunaComboBox3);
-            this.pnlTimKiem.Controls.Add(this.label12);
-            this.pnlTimKiem.Controls.Add(this.gunaComboBox2);
-            this.pnlTimKiem.Controls.Add(this.label11);
-            this.pnlTimKiem.Controls.Add(this.gunaComboBox1);
-            this.pnlTimKiem.Controls.Add(this.label10);
-            this.pnlTimKiem.EdgeWidth = 1;
-            this.pnlTimKiem.Name = "pnlTimKiem";
-            this.pnlTimKiem.Radius = 2;
-            this.pnlTimKiem.ShadowColor = System.Drawing.Color.Silver;
-            this.pnlTimKiem.ShadowDepth = 50;
-            // 
-            // gunaComboBox3
-            // 
-            resources.ApplyResources(this.gunaComboBox3, "gunaComboBox3");
-            this.gunaComboBox3.BackColor = System.Drawing.Color.Transparent;
-            this.gunaComboBox3.BaseColor = System.Drawing.Color.Transparent;
-            this.gunaComboBox3.BorderColor = System.Drawing.Color.LightSeaGreen;
-            this.gunaComboBox3.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.gunaComboBox3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.gunaComboBox3.FocusedColor = System.Drawing.Color.LightSeaGreen;
-            this.gunaComboBox3.ForeColor = System.Drawing.Color.Black;
-            this.gunaComboBox3.FormattingEnabled = true;
-            this.gunaComboBox3.Name = "gunaComboBox3";
-            this.gunaComboBox3.OnHoverItemBaseColor = System.Drawing.Color.LightSeaGreen;
-            this.gunaComboBox3.OnHoverItemForeColor = System.Drawing.Color.White;
-            this.gunaComboBox3.Radius = 10;
-            // 
-            // label12
-            // 
-            resources.ApplyResources(this.label12, "label12");
-            this.label12.ForeColor = System.Drawing.Color.Black;
-            this.label12.Name = "label12";
-            // 
-            // gunaComboBox2
-            // 
-            resources.ApplyResources(this.gunaComboBox2, "gunaComboBox2");
-            this.gunaComboBox2.BackColor = System.Drawing.Color.Transparent;
-            this.gunaComboBox2.BaseColor = System.Drawing.Color.Transparent;
-            this.gunaComboBox2.BorderColor = System.Drawing.Color.LightSeaGreen;
-            this.gunaComboBox2.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.gunaComboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.gunaComboBox2.FocusedColor = System.Drawing.Color.LightSeaGreen;
-            this.gunaComboBox2.ForeColor = System.Drawing.Color.Black;
-            this.gunaComboBox2.FormattingEnabled = true;
-            this.gunaComboBox2.Name = "gunaComboBox2";
-            this.gunaComboBox2.OnHoverItemBaseColor = System.Drawing.Color.LightSeaGreen;
-            this.gunaComboBox2.OnHoverItemForeColor = System.Drawing.Color.White;
-            this.gunaComboBox2.Radius = 10;
-            // 
-            // label11
-            // 
-            resources.ApplyResources(this.label11, "label11");
-            this.label11.ForeColor = System.Drawing.Color.Black;
-            this.label11.Name = "label11";
-            // 
-            // gunaComboBox1
-            // 
-            resources.ApplyResources(this.gunaComboBox1, "gunaComboBox1");
-            this.gunaComboBox1.BackColor = System.Drawing.Color.Transparent;
-            this.gunaComboBox1.BaseColor = System.Drawing.Color.Transparent;
-            this.gunaComboBox1.BorderColor = System.Drawing.Color.LightSeaGreen;
-            this.gunaComboBox1.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.gunaComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.gunaComboBox1.FocusedColor = System.Drawing.Color.LightSeaGreen;
-            this.gunaComboBox1.ForeColor = System.Drawing.Color.Black;
-            this.gunaComboBox1.FormattingEnabled = true;
-            this.gunaComboBox1.Name = "gunaComboBox1";
-            this.gunaComboBox1.OnHoverItemBaseColor = System.Drawing.Color.LightSeaGreen;
-            this.gunaComboBox1.OnHoverItemForeColor = System.Drawing.Color.White;
-            this.gunaComboBox1.Radius = 10;
-            // 
-            // label10
-            // 
-            resources.ApplyResources(this.label10, "label10");
-            this.label10.ForeColor = System.Drawing.Color.Black;
-            this.label10.Name = "label10";
-            // 
             // panel4
             // 
             resources.ApplyResources(this.panel4, "panel4");
@@ -403,6 +352,7 @@ namespace TimKiemNhaTro
             this.btnXemThem.Cursor = System.Windows.Forms.Cursors.Hand;
             this.btnXemThem.ForeColor = System.Drawing.Color.DimGray;
             this.btnXemThem.Name = "btnXemThem";
+            this.btnXemThem.Click += new System.EventHandler(this.btnXemThem_Click);
             // 
             // label18
             // 
@@ -448,6 +398,7 @@ namespace TimKiemNhaTro
             this.btnTanBinh.Name = "btnTanBinh";
             this.btnTanBinh.Radius = 10;
             this.btnTanBinh.TabStop = false;
+            this.btnTanBinh.Click += new System.EventHandler(this.btnTanBinh_Click);
             // 
             // gunaButton10
             // 
@@ -482,6 +433,7 @@ namespace TimKiemNhaTro
             this.btnGoVap.Name = "btnGoVap";
             this.btnGoVap.Radius = 10;
             this.btnGoVap.TabStop = false;
+            this.btnGoVap.Click += new System.EventHandler(this.btnGoVap_Click);
             // 
             // gunaButton9
             // 
@@ -517,6 +469,7 @@ namespace TimKiemNhaTro
             this.btnQuan7.Name = "btnQuan7";
             this.btnQuan7.Radius = 10;
             this.btnQuan7.TabStop = false;
+            this.btnQuan7.Click += new System.EventHandler(this.btnQuan7_Click);
             // 
             // gunaButton8
             // 
@@ -551,6 +504,7 @@ namespace TimKiemNhaTro
             this.btnThuDuc.Name = "btnThuDuc";
             this.btnThuDuc.Radius = 10;
             this.btnThuDuc.TabStop = false;
+            this.btnThuDuc.Click += new System.EventHandler(this.btnThuDuc_Click);
             // 
             // gunaButton3
             // 
@@ -586,6 +540,7 @@ namespace TimKiemNhaTro
             this.btnPhuNhuan.Name = "btnPhuNhuan";
             this.btnPhuNhuan.Radius = 10;
             this.btnPhuNhuan.TabStop = false;
+            this.btnPhuNhuan.Click += new System.EventHandler(this.btnPhuNhuan_Click);
             // 
             // gunaButton2
             // 
@@ -621,6 +576,7 @@ namespace TimKiemNhaTro
             this.btnQuan10.Name = "btnQuan10";
             this.btnQuan10.Radius = 10;
             this.btnQuan10.TabStop = false;
+            this.btnQuan10.Click += new System.EventHandler(this.btnQuan10_Click);
             // 
             // gunaButton1
             // 
@@ -679,6 +635,7 @@ namespace TimKiemNhaTro
             this.btnBinhThanh.Name = "btnBinhThanh";
             this.btnBinhThanh.Radius = 10;
             this.btnBinhThanh.TabStop = false;
+            this.btnBinhThanh.Click += new System.EventHandler(this.btnBinhThanh_Click);
             // 
             // btnQuan1
             // 
@@ -690,31 +647,7 @@ namespace TimKiemNhaTro
             this.btnQuan1.Name = "btnQuan1";
             this.btnQuan1.Radius = 10;
             this.btnQuan1.TabStop = false;
-            // 
-            // gunaGradientButton1
-            // 
-            resources.ApplyResources(this.gunaGradientButton1, "gunaGradientButton1");
-            this.gunaGradientButton1.AnimationHoverSpeed = 0.07F;
-            this.gunaGradientButton1.AnimationSpeed = 0.03F;
-            this.gunaGradientButton1.BackColor = System.Drawing.Color.Transparent;
-            this.gunaGradientButton1.BaseColor1 = System.Drawing.Color.LightSeaGreen;
-            this.gunaGradientButton1.BaseColor2 = System.Drawing.Color.Aquamarine;
-            this.gunaGradientButton1.BorderColor = System.Drawing.Color.Black;
-            this.gunaGradientButton1.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.gunaGradientButton1.FocusedColor = System.Drawing.Color.Empty;
-            this.gunaGradientButton1.ForeColor = System.Drawing.Color.White;
-            this.gunaGradientButton1.Image = global::TimKiemNhaTro.Properties.Resources.icons8_searchWhite_32;
-            this.gunaGradientButton1.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.gunaGradientButton1.ImageSize = new System.Drawing.Size(20, 20);
-            this.gunaGradientButton1.Name = "gunaGradientButton1";
-            this.gunaGradientButton1.OnHoverBaseColor1 = System.Drawing.Color.DarkGray;
-            this.gunaGradientButton1.OnHoverBaseColor2 = System.Drawing.Color.LightSeaGreen;
-            this.gunaGradientButton1.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.gunaGradientButton1.OnHoverForeColor = System.Drawing.Color.White;
-            this.gunaGradientButton1.OnHoverImage = null;
-            this.gunaGradientButton1.OnPressedColor = System.Drawing.Color.Black;
-            this.gunaGradientButton1.Radius = 15;
-            this.gunaGradientButton1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            this.btnQuan1.Click += new System.EventHandler(this.btnQuan1_Click);
             // 
             // pictureBox1
             // 
@@ -722,48 +655,6 @@ namespace TimKiemNhaTro
             this.pictureBox1.Image = global::TimKiemNhaTro.Properties.Resources.home;
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.TabStop = false;
-            // 
-            // pictureBox4
-            // 
-            resources.ApplyResources(this.pictureBox4, "pictureBox4");
-            this.pictureBox4.Image = global::TimKiemNhaTro.Properties.Resources.icons8_user_16;
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.TabStop = false;
-            // 
-            // pictureBox5
-            // 
-            resources.ApplyResources(this.pictureBox5, "pictureBox5");
-            this.pictureBox5.Image = global::TimKiemNhaTro.Properties.Resources.icons8_username322_32;
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.TabStop = false;
-            // 
-            // pictureBox3
-            // 
-            resources.ApplyResources(this.pictureBox3, "pictureBox3");
-            this.pictureBox3.Image = global::TimKiemNhaTro.Properties.Resources.icons8_user_16;
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.TabStop = false;
-            // 
-            // pictureBox8
-            // 
-            resources.ApplyResources(this.pictureBox8, "pictureBox8");
-            this.pictureBox8.Image = global::TimKiemNhaTro.Properties.Resources.icons8_username322_32;
-            this.pictureBox8.Name = "pictureBox8";
-            this.pictureBox8.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            resources.ApplyResources(this.pictureBox2, "pictureBox2");
-            this.pictureBox2.Image = global::TimKiemNhaTro.Properties.Resources.icons8_homenho_16;
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.TabStop = false;
-            // 
-            // pictureBox10
-            // 
-            resources.ApplyResources(this.pictureBox10, "pictureBox10");
-            this.pictureBox10.Image = global::TimKiemNhaTro.Properties.Resources.icons8_home_address3222222222222_32;
-            this.pictureBox10.Name = "pictureBox10";
-            this.pictureBox10.TabStop = false;
             // 
             // ucHomeCC
             // 
@@ -791,7 +682,6 @@ namespace TimKiemNhaTro
             this.Controls.Add(this.btnQuan1);
             this.Controls.Add(this.label27);
             this.Controls.Add(this.label9);
-            this.Controls.Add(this.pnlTimKiem);
             this.Controls.Add(this.panel5);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.pnlChuTro);
@@ -807,15 +697,19 @@ namespace TimKiemNhaTro
             this.Load += new System.EventHandler(this.ucHomeCC_Load);
             this.pnlChuTro.ResumeLayout(false);
             this.pnlChuTro.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             this.panel3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.pnlNguoiDung.ResumeLayout(false);
             this.pnlNguoiDung.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
             this.pnlNhaTro.ResumeLayout(false);
             this.pnlNhaTro.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.panel7.ResumeLayout(false);
-            this.pnlTimKiem.ResumeLayout(false);
-            this.pnlTimKiem.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnTanBinh)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnGoVap)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnQuan7)).EndInit();
@@ -825,12 +719,6 @@ namespace TimKiemNhaTro
             ((System.ComponentModel.ISupportInitialize)(this.btnBinhThanh)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnQuan1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox8)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -868,14 +756,6 @@ namespace TimKiemNhaTro
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Panel panel6;
-        private Guna.UI.WinForms.GunaShadowPanel pnlTimKiem;
-        private Guna.UI.WinForms.GunaGradientButton gunaGradientButton1;
-        private Guna.UI.WinForms.GunaComboBox gunaComboBox3;
-        private System.Windows.Forms.Label label12;
-        private Guna.UI.WinForms.GunaComboBox gunaComboBox2;
-        private System.Windows.Forms.Label label11;
-        private Guna.UI.WinForms.GunaComboBox gunaComboBox1;
-        private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label27;

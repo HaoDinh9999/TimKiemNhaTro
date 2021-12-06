@@ -38,7 +38,7 @@ namespace TimKiemNhaTro
             lblPhongNgu.Text = _nha.soPhongNgu.ToString()+" phòng";
             lblPhongTam.Text = _nha.soPhongTam.ToString()+" phòng";
             lblDienTich.Text = _nha.dienTich.ToString() +" m2";
-            lblAddress.Text = _nha.soNha + ", phường " + _nha.phuongXa + ", " + _nha.quanHuyen + ", thành phố Hồ Chí Minh";
+            lblAddress.Text = _nha.soNha + " " + _nha.tenDuong + ", " + _nha.phuongXa + ", " + _nha.quanHuyen;
             btnType.Text = _nha.LoaiChoThue.tenLoaiChoThue;
             foreach (var item in _nha.DanhGias)
             {

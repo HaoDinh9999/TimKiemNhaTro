@@ -120,4 +120,7 @@
   <metadata name="timer1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>17, 17</value>
   </metadata>
+  <data name="lblCauTraLoi.Text" xml:space="preserve">
+    <value>Ứng dụng về nhà trọ, giúp người dùng có thể dễ dàng tìm trọ, hoặc có thể đăng nhà trọ của mình lên để chia sẽ mới nhiều người dùng biết hơn. Kết nối giữa bạn và mọi người có cùng nhu cầu giống bạn lại với nhau.</value>
+  </data>
 </root>

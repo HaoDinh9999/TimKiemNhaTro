@@ -121,6 +121,7 @@ namespace TimKiemNhaTro
         {
             _ucFAQs.Show();
             _ucFAQs.BringToFront();
+            _ucFAQs.SetInfo();            
         }
         public ucFAQs getFAQ()
         {

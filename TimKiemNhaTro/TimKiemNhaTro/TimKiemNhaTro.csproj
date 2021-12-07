@@ -567,6 +567,12 @@
     <Compile Include="ucFAQs.Designer.cs">
       <DependentUpon>ucFAQs.cs</DependentUpon>
     </Compile>
+    <Compile Include="ucFAQsCard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucFAQsCard.Designer.cs">
+      <DependentUpon>ucFAQsCard.cs</DependentUpon>
+    </Compile>
     <Compile Include="ucFavourite.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -763,6 +769,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ucFAQs.resx">
       <DependentUpon>ucFAQs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucFAQsCard.resx">
+      <DependentUpon>ucFAQsCard.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ucFavourite.en.resx">
       <DependentUpon>ucFavourite.cs</DependentUpon>

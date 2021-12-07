@@ -121,6 +121,7 @@ namespace TimKiemNhaTro
         {
             _ucFAQs.Show();
             _ucFAQs.BringToFront();
+            _ucFAQs.SetInfo();            
         }
         public ucFAQs getFAQ()
         {
@@ -364,6 +365,12 @@ namespace TimKiemNhaTro
         private void timer1_Tick(object sender, EventArgs e)
         {
             dtpRealTime.Value = DateTime.Now;
+        }
+
+        private void picChat_Click(object sender, EventArgs e)
+        {
+            frmNguoiDungChat frm = new frmNguoiDungChat(_user, DataProvider.Ins.DB.NguoiDungs.Where(x => x.maNguoiDung == 3).SingleOrDefault());
+            frm.Show();
         }
     }
 }

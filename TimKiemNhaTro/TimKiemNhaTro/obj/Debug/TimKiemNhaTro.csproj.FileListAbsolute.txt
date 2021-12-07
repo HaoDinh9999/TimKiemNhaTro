@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 C:\Users\DELL\Desktop\TroMoiNhat\TimKiemNhaTro\TimKiemNhaTro\TimKiemNhaTro\bin\Debug\TimKiemNhaTro.exe.config
 C:\Users\DELL\Desktop\TroMoiNhat\TimKiemNhaTro\TimKiemNhaTro\TimKiemNhaTro\bin\Debug\TimKiemNhaTro.exe.manifest
 C:\Users\DELL\Desktop\TroMoiNhat\TimKiemNhaTro\TimKiemNhaTro\TimKiemNhaTro\bin\Debug\TimKiemNhaTro.application
@@ -124,3 +125,6 @@ C:\Users\DELL\Desktop\TroMoiNhat\TimKiemNhaTro\TimKiemNhaTro\TimKiemNhaTro\obj\D
 C:\Users\DELL\Desktop\TroMoiNhat\TimKiemNhaTro\TimKiemNhaTro\TimKiemNhaTro\obj\Debug\TimKiemNhaTro.csproj.CopyComplete
 C:\Users\DELL\Desktop\TroMoiNhat\TimKiemNhaTro\TimKiemNhaTro\TimKiemNhaTro\obj\Debug\TimKiemNhaTro.exe
 C:\Users\DELL\Desktop\TroMoiNhat\TimKiemNhaTro\TimKiemNhaTro\TimKiemNhaTro\obj\Debug\TimKiemNhaTro.pdb
+=======
+G:\TimKiemNhaTro\TimKiemNhaTro\TimKiemNhaTro\obj\Debug\TimKiemNhaTro.Properties.Resources.resources
+>>>>>>> 98af39416da484e1c58abbe9f7159e5f1a20f9ab

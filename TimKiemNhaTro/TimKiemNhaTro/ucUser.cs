@@ -1,7 +1,7 @@
-﻿using Emgu.CV;
-using Emgu.Util;
-using Emgu.CV.Structure;
-using Emgu.CV.CvEnum;
+﻿//using Emgu.CV;
+//using Emgu.Util;
+//using Emgu.CV.Structure;
+//using Emgu.CV.CvEnum;
 
 using Firebase.Storage;
 using System;
@@ -172,7 +172,7 @@ namespace TimKiemNhaTro
                     throw raise;
                 }
                 timer1.Enabled = false;
-                if (cap != null) cap.Dispose();
+                //if (cap != null) cap.Dispose();
                 savechupAnh = false;
                 urlAvatar = "";
                 reLoad();
@@ -198,7 +198,7 @@ namespace TimKiemNhaTro
             if (op.ShowDialog() == DialogResult.OK)
             {
                 timer1.Enabled = false;
-                if (cap != null) cap.Dispose();
+                //if (cap != null) cap.Dispose();
                 savechupAnh = false;
                 this.picAvatar.SizeMode = PictureBoxSizeMode.StretchImage;
                 using (var fs = File.OpenRead(op.FileName))
@@ -221,7 +221,7 @@ namespace TimKiemNhaTro
             frmBaoCaoLoiUngDung frmLoi = new frmBaoCaoLoiUngDung(_nguoi);
             frmLoi.Show();
         }
-        private Capture cap;
+        //private Capture cap;
        
 
         private void ucUser_Load(object sender, EventArgs e)
@@ -233,9 +233,9 @@ namespace TimKiemNhaTro
         {
             try
             {
-                Image<Bgr, byte> nextFrame = cap.QueryFrame();
-                Image gray = ToolStripRenderer.CreateDisabledImage(nextFrame.ToBitmap());
-                picAvatar.Image = nextFrame.ToBitmap();
+                //Image<Bgr, byte> nextFrame = cap.QueryFrame();
+                //Image gray = ToolStripRenderer.CreateDisabledImage(nextFrame.ToBitmap());
+                //picAvatar.Image = nextFrame.ToBitmap();
             }
             catch
             {
@@ -255,7 +255,7 @@ namespace TimKiemNhaTro
                 {
                     picAvatar.Image.Save(saveFileDialog1.FileName);
                     //UploadFiles(saveFileDialog1.FileName, _nguoi.maNguoiDung);
-                    cap.Dispose();
+                    //cap.Dispose();
                     savechupAnh = false;
                     timer1.Enabled = false;
                     btnCamera.Text = "Camera";
@@ -263,7 +263,7 @@ namespace TimKiemNhaTro
             }
             else
             {
-                cap = new Capture(0);
+                //cap = new Capture(0);
                 timer1.Enabled = true;
                 savechupAnh = true;
                 btnCamera.Text = "Chụp ảnh";

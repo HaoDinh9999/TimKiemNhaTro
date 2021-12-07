@@ -40,6 +40,14 @@
           <Property Name="soSao" Type="int" />
           <Property Name="noiDung" Type="tinytext" />
         </EntityType>
+        <EntityType Name="FAQ">
+          <Key>
+            <PropertyRef Name="maFAQ" />
+          </Key>
+          <Property Name="maFAQ" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="cauHoi" Type="varchar" MaxLength="1000" Nullable="false" />
+          <Property Name="cauTraLoi" Type="varchar" MaxLength="1000" Nullable="false" />
+        </EntityType>
         <EntityType Name="LoaiChoThue">
           <Key>
             <PropertyRef Name="maLoaiChoThue" />
@@ -76,9 +84,20 @@
           <Property Name="tenDuong" Type="varchar" MaxLength="255" Nullable="false" />
           <Property Name="phuongXa" Type="varchar" MaxLength="45" />
           <Property Name="quanHuyen" Type="varchar" MaxLength="45" />
-          <Property Name="moTa" Type="varchar" MaxLength="45" />
+          <Property Name="moTa" Type="varchar" MaxLength="1000" />
           <Property Name="TienNha" Type="decimal" Precision="10" Scale="0" />
           <Property Name="ngayCapNhat" Type="datetime" Precision="0" StoreGeneratedPattern="None" Nullable="false" />
+        </EntityType>
+        <EntityType Name="TinNhan">
+          <Key>
+            <PropertyRef Name="maTinNhan" />
+          </Key>
+          <Property Name="maTinNhan" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+          <Property Name="maNguoiGui" Type="int" Nullable="false" />
+          <Property Name="maNguoiNhan" Type="int" Nullable="false" />
+          <Property Name="loai" Type="int" Nullable="false" />
+          <Property Name="noiDung" Type="varchar" MaxLength="1000" Nullable="false" />
+          <Property Name="ngayGui" Type="datetime" Precision="0" Nullable="false" />
         </EntityType>
         <EntityType Name="TinTuc">
           <Key>
@@ -107,6 +126,34 @@
             </Principal>
             <Dependent Role="AnhNha">
               <PropertyRef Name="maNha" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="fk_nguoi_gui">
+          <End Role="NguoiDung" Type="Self.NguoiDung" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="TinNhan" Type="Self.TinNhan" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="NguoiDung">
+              <PropertyRef Name="maNguoiDung" />
+            </Principal>
+            <Dependent Role="TinNhan">
+              <PropertyRef Name="maNguoiGui" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="fk_nguoi_nhan">
+          <End Role="NguoiDung" Type="Self.NguoiDung" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="TinNhan" Type="Self.TinNhan" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="NguoiDung">
+              <PropertyRef Name="maNguoiDung" />
+            </Principal>
+            <Dependent Role="TinNhan">
+              <PropertyRef Name="maNguoiNhan" />
             </Dependent>
           </ReferentialConstraint>
         </Association>
@@ -198,14 +245,24 @@
           <EntitySet Name="AnhNha" EntityType="Self.AnhNha" Schema="XQ0Qgj8xlH" store:Type="Tables" />
           <EntitySet Name="CoSoVatChat" EntityType="Self.CoSoVatChat" Schema="XQ0Qgj8xlH" store:Type="Tables" />
           <EntitySet Name="DanhGia" EntityType="Self.DanhGia" Schema="XQ0Qgj8xlH" store:Type="Tables" />
+          <EntitySet Name="FAQ" EntityType="Self.FAQ" Schema="XQ0Qgj8xlH" store:Type="Tables" />
           <EntitySet Name="LoaiChoThue" EntityType="Self.LoaiChoThue" Schema="XQ0Qgj8xlH" store:Type="Tables" />
           <EntitySet Name="NguoiDung" EntityType="Self.NguoiDung" Schema="XQ0Qgj8xlH" store:Type="Tables" />
           <EntitySet Name="Nha" EntityType="Self.Nha" Schema="XQ0Qgj8xlH" store:Type="Tables" />
+          <EntitySet Name="TinNhan" EntityType="Self.TinNhan" Schema="XQ0Qgj8xlH" store:Type="Tables" />
           <EntitySet Name="TinTuc" EntityType="Self.TinTuc" Schema="XQ0Qgj8xlH" store:Type="Tables" />
           <EntitySet Name="YeuThich" EntityType="Self.YeuThich" Schema="XQ0Qgj8xlH" store:Type="Tables" />
           <AssociationSet Name="FK_Anh_maNha" Association="Self.FK_Anh_maNha">
             <End Role="Nha" EntitySet="Nha" />
             <End Role="AnhNha" EntitySet="AnhNha" />
+          </AssociationSet>
+          <AssociationSet Name="fk_nguoi_gui" Association="Self.fk_nguoi_gui">
+            <End Role="NguoiDung" EntitySet="NguoiDung" />
+            <End Role="TinNhan" EntitySet="TinNhan" />
+          </AssociationSet>
+          <AssociationSet Name="fk_nguoi_nhan" Association="Self.fk_nguoi_nhan">
+            <End Role="NguoiDung" EntitySet="NguoiDung" />
+            <End Role="TinNhan" EntitySet="TinNhan" />
           </AssociationSet>
           <AssociationSet Name="maCoSoVatChat" Association="Self.maCoSoVatChat">
             <End Role="CoSoVatChat" EntitySet="CoSoVatChat" />
@@ -247,7 +304,7 @@
           </Key>
           <Property Name="maAnhNha" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="maNha" Type="Int32" Nullable="false" />
-          <Property Name="duongDan" Type="String" MaxLength="255" FixedLength="false" Unicode="false" />
+          <Property Name="duongDan" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
           <NavigationProperty Name="Nha" Relationship="Self.FK_Anh_maNha" FromRole="AnhNha" ToRole="Nha" />
         </EntityType>
         <EntityType Name="CoSoVatChat">
@@ -280,6 +337,14 @@
           <NavigationProperty Name="NguoiDung" Relationship="Self.maNguoiDanhGia" FromRole="DanhGia" ToRole="NguoiDung" />
           <NavigationProperty Name="Nha" Relationship="Self.maNha" FromRole="DanhGia" ToRole="Nha" />
         </EntityType>
+        <EntityType Name="FAQ">
+          <Key>
+            <PropertyRef Name="maFAQ" />
+          </Key>
+          <Property Name="maFAQ" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="cauHoi" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="cauTraLoi" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" Nullable="false" />
+        </EntityType>
         <EntityType Name="LoaiChoThue">
           <Key>
             <PropertyRef Name="maLoaiChoThue" />
@@ -301,6 +366,8 @@
           <Property Name="urlDaiDien" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" />
           <Property Name="biVoHieu" Type="SByte" Nullable="false" />
           <NavigationProperty Name="DanhGias" Relationship="Self.maNguoiDanhGia" FromRole="NguoiDung" ToRole="DanhGia" />
+          <NavigationProperty Name="TinNhans" Relationship="Self.fk_nguoi_gui" FromRole="NguoiDung" ToRole="TinNhan" />
+          <NavigationProperty Name="TinNhans1" Relationship="Self.fk_nguoi_nhan" FromRole="NguoiDung" ToRole="TinNhan" />
           <NavigationProperty Name="Nhas" Relationship="Self.maNguoiDung" FromRole="NguoiDung" ToRole="Nha" />
           <NavigationProperty Name="YeuThiches" Relationship="Self.maNguoiThich" FromRole="NguoiDung" ToRole="YeuThich" />
         </EntityType>
@@ -329,6 +396,19 @@
           <NavigationProperty Name="LoaiChoThue" Relationship="Self.maLoaiChoThue" FromRole="Nha" ToRole="LoaiChoThue" />
           <NavigationProperty Name="NguoiDung" Relationship="Self.maNguoiDung" FromRole="Nha" ToRole="NguoiDung" />
           <NavigationProperty Name="YeuThiches" Relationship="Self.maNhaThich" FromRole="Nha" ToRole="YeuThich" />
+        </EntityType>
+        <EntityType Name="TinNhan">
+          <Key>
+            <PropertyRef Name="maTinNhan" />
+          </Key>
+          <Property Name="maTinNhan" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+          <Property Name="maNguoiGui" Type="Int32" Nullable="false" />
+          <Property Name="maNguoiNhan" Type="Int32" Nullable="false" />
+          <Property Name="loai" Type="Int32" Nullable="false" />
+          <Property Name="noiDung" Type="String" MaxLength="1000" FixedLength="false" Unicode="false" Nullable="false" />
+          <Property Name="ngayGui" Type="DateTime" Nullable="false" />
+          <NavigationProperty Name="NguoiDung" Relationship="Self.fk_nguoi_gui" FromRole="TinNhan" ToRole="NguoiDung" />
+          <NavigationProperty Name="NguoiDung1" Relationship="Self.fk_nguoi_nhan" FromRole="TinNhan" ToRole="NguoiDung" />
         </EntityType>
         <EntityType Name="TinTuc">
           <Key>
@@ -410,6 +490,34 @@
             </Dependent>
           </ReferentialConstraint>
         </Association>
+        <Association Name="fk_nguoi_gui">
+          <End Role="NguoiDung" Type="Self.NguoiDung" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="TinNhan" Type="Self.TinNhan" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="NguoiDung">
+              <PropertyRef Name="maNguoiDung" />
+            </Principal>
+            <Dependent Role="TinNhan">
+              <PropertyRef Name="maNguoiGui" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
+        <Association Name="fk_nguoi_nhan">
+          <End Role="NguoiDung" Type="Self.NguoiDung" Multiplicity="1">
+            <OnDelete Action="Cascade" />
+          </End>
+          <End Role="TinNhan" Type="Self.TinNhan" Multiplicity="*" />
+          <ReferentialConstraint>
+            <Principal Role="NguoiDung">
+              <PropertyRef Name="maNguoiDung" />
+            </Principal>
+            <Dependent Role="TinNhan">
+              <PropertyRef Name="maNguoiNhan" />
+            </Dependent>
+          </ReferentialConstraint>
+        </Association>
         <Association Name="maNguoiDung">
           <End Role="NguoiDung" Type="Self.NguoiDung" Multiplicity="1" />
           <End Role="Nha" Type="Self.Nha" Multiplicity="*" />
@@ -450,9 +558,11 @@
           <EntitySet Name="AnhNhas" EntityType="Self.AnhNha" />
           <EntitySet Name="CoSoVatChats" EntityType="Self.CoSoVatChat" />
           <EntitySet Name="DanhGias" EntityType="Self.DanhGia" />
+          <EntitySet Name="FAQs" EntityType="Self.FAQ" />
           <EntitySet Name="LoaiChoThues" EntityType="Self.LoaiChoThue" />
           <EntitySet Name="NguoiDungs" EntityType="Self.NguoiDung" />
           <EntitySet Name="Nhas" EntityType="Self.Nha" />
+          <EntitySet Name="TinNhans" EntityType="Self.TinNhan" />
           <EntitySet Name="TinTucs" EntityType="Self.TinTuc" />
           <EntitySet Name="YeuThiches" EntityType="Self.YeuThich" />
           <AssociationSet Name="FK_Anh_maNha" Association="Self.FK_Anh_maNha">
@@ -474,6 +584,14 @@
           <AssociationSet Name="maLoaiChoThue" Association="Self.maLoaiChoThue">
             <End Role="LoaiChoThue" EntitySet="LoaiChoThues" />
             <End Role="Nha" EntitySet="Nhas" />
+          </AssociationSet>
+          <AssociationSet Name="fk_nguoi_gui" Association="Self.fk_nguoi_gui">
+            <End Role="NguoiDung" EntitySet="NguoiDungs" />
+            <End Role="TinNhan" EntitySet="TinNhans" />
+          </AssociationSet>
+          <AssociationSet Name="fk_nguoi_nhan" Association="Self.fk_nguoi_nhan">
+            <End Role="NguoiDung" EntitySet="NguoiDungs" />
+            <End Role="TinNhan" EntitySet="TinNhans" />
           </AssociationSet>
           <AssociationSet Name="maNguoiDung" Association="Self.maNguoiDung">
             <End Role="NguoiDung" EntitySet="NguoiDungs" />
@@ -531,6 +649,15 @@
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>
+          <EntitySetMapping Name="FAQs">
+            <EntityTypeMapping TypeName="XQ0Qgj8xlHModel.FAQ">
+              <MappingFragment StoreEntitySet="FAQ">
+                <ScalarProperty Name="maFAQ" ColumnName="maFAQ" />
+                <ScalarProperty Name="cauHoi" ColumnName="cauHoi" />
+                <ScalarProperty Name="cauTraLoi" ColumnName="cauTraLoi" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
           <EntitySetMapping Name="LoaiChoThues">
             <EntityTypeMapping TypeName="XQ0Qgj8xlHModel.LoaiChoThue">
               <MappingFragment StoreEntitySet="LoaiChoThue">
@@ -571,6 +698,18 @@
                 <ScalarProperty Name="moTa" ColumnName="moTa" />
                 <ScalarProperty Name="TienNha" ColumnName="TienNha" />
                 <ScalarProperty Name="ngayCapNhat" ColumnName="ngayCapNhat" />
+              </MappingFragment>
+            </EntityTypeMapping>
+          </EntitySetMapping>
+          <EntitySetMapping Name="TinNhans">
+            <EntityTypeMapping TypeName="XQ0Qgj8xlHModel.TinNhan">
+              <MappingFragment StoreEntitySet="TinNhan">
+                <ScalarProperty Name="maTinNhan" ColumnName="maTinNhan" />
+                <ScalarProperty Name="maNguoiGui" ColumnName="maNguoiGui" />
+                <ScalarProperty Name="maNguoiNhan" ColumnName="maNguoiNhan" />
+                <ScalarProperty Name="loai" ColumnName="loai" />
+                <ScalarProperty Name="noiDung" ColumnName="noiDung" />
+                <ScalarProperty Name="ngayGui" ColumnName="ngayGui" />
               </MappingFragment>
             </EntityTypeMapping>
           </EntitySetMapping>

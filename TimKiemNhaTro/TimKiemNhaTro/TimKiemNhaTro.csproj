@@ -322,6 +322,18 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAddFAQ.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAddFAQ.Designer.cs">
+      <DependentUpon>frmAddFAQ.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmAddNews.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -364,6 +376,12 @@
     <Compile Include="frmLogin.Designer.cs">
       <DependentUpon>frmLogin.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmNguoiDungChat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNguoiDungChat.Designer.cs">
+      <DependentUpon>frmNguoiDungChat.cs</DependentUpon>
+    </Compile>
     <Compile Include="frmRegister.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -380,6 +398,9 @@
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
     <Compile Include="Model\DataProvider.cs" />
+    <Compile Include="Model\FAQ.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
     <Compile Include="Model\LoaiChoThue.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
@@ -404,6 +425,9 @@
     <Compile Include="Model\Nha.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
+    <Compile Include="Model\TinNhan.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
     <Compile Include="Model\TinTuc.cs">
       <DependentUpon>Model1.tt</DependentUpon>
     </Compile>
@@ -422,6 +446,24 @@
     </Compile>
     <Compile Include="ucAddHome.Designer.cs">
       <DependentUpon>ucAddHome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucAdminChat.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucAdminChat.Designer.cs">
+      <DependentUpon>ucAdminChat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucAdminFAQ.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucAdminFAQ.Designer.cs">
+      <DependentUpon>ucAdminFAQ.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucAdminFAQCard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucAdminFAQCard.Designer.cs">
+      <DependentUpon>ucAdminFAQCard.cs</DependentUpon>
     </Compile>
     <Compile Include="ucAdminNews.cs">
       <SubType>UserControl</SubType>
@@ -464,6 +506,12 @@
     </Compile>
     <Compile Include="ucCardDanhGia.Designer.cs">
       <DependentUpon>ucCardDanhGia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucCardNguoiDungChat.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucCardNguoiDungChat.Designer.cs">
+      <DependentUpon>ucCardNguoiDungChat.cs</DependentUpon>
     </Compile>
     <Compile Include="ucCardNha.cs">
       <SubType>UserControl</SubType>
@@ -519,6 +567,12 @@
     <Compile Include="ucFAQs.Designer.cs">
       <DependentUpon>ucFAQs.cs</DependentUpon>
     </Compile>
+    <Compile Include="ucFAQsCard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucFAQsCard.Designer.cs">
+      <DependentUpon>ucFAQsCard.cs</DependentUpon>
+    </Compile>
     <Compile Include="ucFavourite.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -549,6 +603,12 @@
     <Compile Include="ucSetting.Designer.cs">
       <DependentUpon>ucSetting.cs</DependentUpon>
     </Compile>
+    <Compile Include="ucTinNhanCard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucTinNhanCard.Designer.cs">
+      <DependentUpon>ucTinNhanCard.cs</DependentUpon>
+    </Compile>
     <Compile Include="ucTinTuc.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -575,6 +635,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.vi-VN.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAddFAQ.resx">
+      <DependentUpon>frmAddFAQ.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="frmAddNews.resx">
       <DependentUpon>frmAddNews.cs</DependentUpon>
@@ -606,6 +672,9 @@
     <EmbeddedResource Include="frmLogin.resx">
       <DependentUpon>frmLogin.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="frmNguoiDungChat.resx">
+      <DependentUpon>frmNguoiDungChat.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="frmRegister.en.resx">
       <DependentUpon>frmRegister.cs</DependentUpon>
     </EmbeddedResource>
@@ -625,6 +694,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ucAddHome.resx">
       <DependentUpon>ucAddHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucAdminChat.resx">
+      <DependentUpon>ucAdminChat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucAdminFAQ.resx">
+      <DependentUpon>ucAdminFAQ.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucAdminFAQCard.resx">
+      <DependentUpon>ucAdminFAQCard.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ucAdminNews.resx">
       <DependentUpon>ucAdminNews.cs</DependentUpon>
@@ -646,6 +724,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ucCardDanhGia.resx">
       <DependentUpon>ucCardDanhGia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucCardNguoiDungChat.resx">
+      <DependentUpon>ucCardNguoiDungChat.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ucCardNha.en.resx">
       <DependentUpon>ucCardNha.cs</DependentUpon>
@@ -689,6 +770,9 @@
     <EmbeddedResource Include="ucFAQs.resx">
       <DependentUpon>ucFAQs.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ucFAQsCard.resx">
+      <DependentUpon>ucFAQsCard.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ucFavourite.en.resx">
       <DependentUpon>ucFavourite.cs</DependentUpon>
     </EmbeddedResource>
@@ -721,6 +805,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ucSetting.resx">
       <DependentUpon>ucSetting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucTinNhanCard.resx">
+      <DependentUpon>ucTinNhanCard.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ucTinTuc.resx">
       <DependentUpon>ucTinTuc.cs</DependentUpon>
@@ -916,6 +1003,8 @@
     <Content Include="Resources\cancel.png" />
     <None Include="Resources\dashboard.png" />
     <None Include="Resources\dashboard %281%29.png" />
+    <None Include="Resources\chat-bubbles-with-ellipsis %281%29.png" />
+    <None Include="Resources\chat-bubbles-with-ellipsis.png" />
     <Content Include="Resources\double-bed.png" />
     <None Include="Resources\giphy.gif" />
     <Content Include="Resources\heart.png" />
@@ -947,6 +1036,9 @@
     <None Include="Resources\icons8_twitter_32.png" />
     <None Include="Resources\loading1.gif" />
     <None Include="Resources\icons8_google_32.png" />
+    <None Include="Resources\question-mark-on-a-circular-black-background.png" />
+    <None Include="Resources\question-mark-on-a-circular-black-background %281%29.png" />
+    <None Include="Resources\image.png" />
     <Content Include="Resources\rec.png" />
     <None Include="Resources\setting %281%29.png" />
     <None Include="Resources\setting.png" />

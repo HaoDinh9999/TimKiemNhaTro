@@ -365,5 +365,11 @@ namespace TimKiemNhaTro
         {
             dtpRealTime.Value = DateTime.Now;
         }
+
+        private void picChat_Click(object sender, EventArgs e)
+        {
+            frmNguoiDungChat frm = new frmNguoiDungChat(_user, DataProvider.Ins.DB.NguoiDungs.Where(x => x.maNguoiDung == 3).SingleOrDefault());
+            frm.Show();
+        }
     }
 }

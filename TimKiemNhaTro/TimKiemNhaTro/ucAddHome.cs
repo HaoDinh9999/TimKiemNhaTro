@@ -6,6 +6,7 @@ using System.Drawing;
 using System.Drawing.Imaging;
 using System.IO;
 using System.Linq;
+using System.Threading.Tasks;
 using System.Windows.Forms;
 using TimKiemNhaTro.Model;
 
@@ -532,12 +533,12 @@ namespace TimKiemNhaTro
         {
             pnlPic.Controls.Clear();
         }
-        private async void UploadFiles(string url,string _idNha)
+        private async Task UploadFiles(string url, string _idNha)
         {
             var stream = File.Open(@url, FileMode.Open);
             
                 // Construct FirebaseStorage with path to where you want to upload the file and put it there
-                var task = new FirebaseStorage("timkiemnhatro-6dd5a.appspot.com")
+                var task = new FirebaseStorage("nhatro-a2ad8.appspot.com")
                  .Child("images")
                  .Child(_idNha + url[2] + url[url.Length - 5] )
                  .PutAsync(stream);
@@ -547,8 +548,8 @@ namespace TimKiemNhaTro
 
                 // Await the task to wait until upload is completed and get the download url
                 var downloadUrl = await task;
-                  DataProvider.Ins.DB.AnhNhas.Add(new AnhNha() { maNha=Int32.Parse(_idNha),duongDan=downloadUrl});
-                 DataProvider.Ins.DB.SaveChanges();
+                 DataProvider.Ins.DB.AnhNhas.Add(new AnhNha() { maNha=Int32.Parse(_idNha),duongDan=downloadUrl});
+                 //DataProvider.Ins.DB.SaveChanges();
             
 
 
@@ -1128,7 +1129,7 @@ namespace TimKiemNhaTro
 
         }
  
-        private void btnDangTin_Click(object sender, EventArgs e)
+        private async void btnDangTin_Click(object sender, EventArgs e)
         {
             if (nhaeidt == null)
             {
@@ -1160,8 +1161,10 @@ namespace TimKiemNhaTro
 
                 foreach (var item in fileList)
                 {
-                    UploadFiles(item, nhas.maNha.ToString());
+                    await UploadFiles(item, nhas.maNha.ToString());
                 }
+                DataProvider.Ins.DB.SaveChanges();
+
                 MessageBox.Show("Đăng trọ thành công");
             }
             else

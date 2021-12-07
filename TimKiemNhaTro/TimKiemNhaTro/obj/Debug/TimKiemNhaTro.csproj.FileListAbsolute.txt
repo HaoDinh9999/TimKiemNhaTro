@@ -1,4 +1,3 @@
-G:\TimKiemNhaTro\TimKiemNhaTro\TimKiemNhaTro\bin\Debug\EntityFramework.dll
 G:\TimKiemNhaTro\TimKiemNhaTro\TimKiemNhaTro\bin\Debug\TimKiemNhaTro.exe.config
 G:\TimKiemNhaTro\TimKiemNhaTro\TimKiemNhaTro\bin\Debug\TimKiemNhaTro.exe.manifest
 G:\TimKiemNhaTro\TimKiemNhaTro\TimKiemNhaTro\bin\Debug\TimKiemNhaTro.application
@@ -7,6 +6,7 @@ G:\TimKiemNhaTro\TimKiemNhaTro\TimKiemNhaTro\bin\Debug\TimKiemNhaTro.pdb
 G:\TimKiemNhaTro\TimKiemNhaTro\TimKiemNhaTro\bin\Debug\en\TimKiemNhaTro.resources.dll
 G:\TimKiemNhaTro\TimKiemNhaTro\TimKiemNhaTro\bin\Debug\vi-VN\TimKiemNhaTro.resources.dll
 G:\TimKiemNhaTro\TimKiemNhaTro\TimKiemNhaTro\bin\Debug\BouncyCastle.Crypto.dll
+G:\TimKiemNhaTro\TimKiemNhaTro\TimKiemNhaTro\bin\Debug\EntityFramework.dll
 G:\TimKiemNhaTro\TimKiemNhaTro\TimKiemNhaTro\bin\Debug\EntityFramework.SqlServer.dll
 G:\TimKiemNhaTro\TimKiemNhaTro\TimKiemNhaTro\bin\Debug\Firebase.dll
 G:\TimKiemNhaTro\TimKiemNhaTro\TimKiemNhaTro\bin\Debug\Firebase.Storage.dll
@@ -50,8 +50,9 @@ G:\TimKiemNhaTro\TimKiemNhaTro\TimKiemNhaTro\bin\Debug\System.Numerics.Vectors.x
 G:\TimKiemNhaTro\TimKiemNhaTro\TimKiemNhaTro\bin\Debug\System.Reactive.xml
 G:\TimKiemNhaTro\TimKiemNhaTro\TimKiemNhaTro\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
 G:\TimKiemNhaTro\TimKiemNhaTro\TimKiemNhaTro\bin\Debug\System.Threading.Tasks.Extensions.xml
-G:\TimKiemNhaTro\TimKiemNhaTro\TimKiemNhaTro\obj\Debug\TimKiemNhaTro.csproj.AssemblyReference.cache
 G:\TimKiemNhaTro\TimKiemNhaTro\TimKiemNhaTro\obj\Debug\TimKiemNhaTro.frmMain.resources
+G:\TimKiemNhaTro\TimKiemNhaTro\TimKiemNhaTro\obj\Debug\TimKiemNhaTro.Form2.resources
+G:\TimKiemNhaTro\TimKiemNhaTro\TimKiemNhaTro\obj\Debug\TimKiemNhaTro.frmAddFAQ.resources
 G:\TimKiemNhaTro\TimKiemNhaTro\TimKiemNhaTro\obj\Debug\TimKiemNhaTro.frmAddNews.resources
 G:\TimKiemNhaTro\TimKiemNhaTro\TimKiemNhaTro\obj\Debug\TimKiemNhaTro.frmAdmin.resources
 G:\TimKiemNhaTro\TimKiemNhaTro\TimKiemNhaTro\obj\Debug\TimKiemNhaTro.frmBaoCaoLoiUngDung.resources
@@ -59,9 +60,13 @@ G:\TimKiemNhaTro\TimKiemNhaTro\TimKiemNhaTro\obj\Debug\TimKiemNhaTro.frmAdminCha
 G:\TimKiemNhaTro\TimKiemNhaTro\TimKiemNhaTro\obj\Debug\TimKiemNhaTro.frmAdminEditProfile.resources
 G:\TimKiemNhaTro\TimKiemNhaTro\TimKiemNhaTro\obj\Debug\TimKiemNhaTro.frmLoadAnh.resources
 G:\TimKiemNhaTro\TimKiemNhaTro\TimKiemNhaTro\obj\Debug\TimKiemNhaTro.frmLogin.resources
+G:\TimKiemNhaTro\TimKiemNhaTro\TimKiemNhaTro\obj\Debug\TimKiemNhaTro.frmNguoiDungChat.resources
 G:\TimKiemNhaTro\TimKiemNhaTro\TimKiemNhaTro\obj\Debug\TimKiemNhaTro.frmRegister.resources
 G:\TimKiemNhaTro\TimKiemNhaTro\TimKiemNhaTro\obj\Debug\TimKiemNhaTro.Properties.Resources.resources
 G:\TimKiemNhaTro\TimKiemNhaTro\TimKiemNhaTro\obj\Debug\TimKiemNhaTro.ucAddHome.resources
+G:\TimKiemNhaTro\TimKiemNhaTro\TimKiemNhaTro\obj\Debug\TimKiemNhaTro.ucAdminChat.resources
+G:\TimKiemNhaTro\TimKiemNhaTro\TimKiemNhaTro\obj\Debug\TimKiemNhaTro.ucAdminFAQ.resources
+G:\TimKiemNhaTro\TimKiemNhaTro\TimKiemNhaTro\obj\Debug\TimKiemNhaTro.ucAdminFAQCard.resources
 G:\TimKiemNhaTro\TimKiemNhaTro\TimKiemNhaTro\obj\Debug\TimKiemNhaTro.ucAdminNews.resources
 G:\TimKiemNhaTro\TimKiemNhaTro\TimKiemNhaTro\obj\Debug\TimKiemNhaTro.ucAdminNewsCard.resources
 G:\TimKiemNhaTro\TimKiemNhaTro\TimKiemNhaTro\obj\Debug\TimKiemNhaTro.ucAdminOverview.resources
@@ -69,6 +74,7 @@ G:\TimKiemNhaTro\TimKiemNhaTro\TimKiemNhaTro\obj\Debug\TimKiemNhaTro.ucAdminProf
 G:\TimKiemNhaTro\TimKiemNhaTro\TimKiemNhaTro\obj\Debug\TimKiemNhaTro.ucAdminStatistic.resources
 G:\TimKiemNhaTro\TimKiemNhaTro\TimKiemNhaTro\obj\Debug\TimKiemNhaTro.ucAdminUser.resources
 G:\TimKiemNhaTro\TimKiemNhaTro\TimKiemNhaTro\obj\Debug\TimKiemNhaTro.ucCardDanhGia.resources
+G:\TimKiemNhaTro\TimKiemNhaTro\TimKiemNhaTro\obj\Debug\TimKiemNhaTro.ucCardNguoiDungChat.resources
 G:\TimKiemNhaTro\TimKiemNhaTro\TimKiemNhaTro\obj\Debug\TimKiemNhaTro.ucCardNha.resources
 G:\TimKiemNhaTro\TimKiemNhaTro\TimKiemNhaTro\obj\Debug\TimKiemNhaTro.ucCardNhaMedium.resources
 G:\TimKiemNhaTro\TimKiemNhaTro\TimKiemNhaTro\obj\Debug\TimKiemNhaTro.ucCardRoom.resources
@@ -83,6 +89,7 @@ G:\TimKiemNhaTro\TimKiemNhaTro\TimKiemNhaTro\obj\Debug\TimKiemNhaTro.ucHomeCC.re
 G:\TimKiemNhaTro\TimKiemNhaTro\TimKiemNhaTro\obj\Debug\TimKiemNhaTro.ucNhaDaDang.resources
 G:\TimKiemNhaTro\TimKiemNhaTro\TimKiemNhaTro\obj\Debug\TimKiemNhaTro.ucSearch.resources
 G:\TimKiemNhaTro\TimKiemNhaTro\TimKiemNhaTro\obj\Debug\TimKiemNhaTro.ucSetting.resources
+G:\TimKiemNhaTro\TimKiemNhaTro\TimKiemNhaTro\obj\Debug\TimKiemNhaTro.ucTinNhanCard.resources
 G:\TimKiemNhaTro\TimKiemNhaTro\TimKiemNhaTro\obj\Debug\TimKiemNhaTro.ucTinTuc.resources
 G:\TimKiemNhaTro\TimKiemNhaTro\TimKiemNhaTro\obj\Debug\TimKiemNhaTro.ucUser.resources
 G:\TimKiemNhaTro\TimKiemNhaTro\TimKiemNhaTro\obj\Debug\TimKiemNhaTro.ucUserCard.resources
@@ -98,6 +105,7 @@ G:\TimKiemNhaTro\TimKiemNhaTro\TimKiemNhaTro\obj\Debug\TimKiemNhaTro.ucCardNha.e
 G:\TimKiemNhaTro\TimKiemNhaTro\TimKiemNhaTro\obj\Debug\TimKiemNhaTro.ucCardTinTuc.en.resources
 G:\TimKiemNhaTro\TimKiemNhaTro\TimKiemNhaTro\obj\Debug\TimKiemNhaTro.ucCardTinTuc.vi-VN.resources
 G:\TimKiemNhaTro\TimKiemNhaTro\TimKiemNhaTro\obj\Debug\TimKiemNhaTro.ucDetailHome.en.resources
+G:\TimKiemNhaTro\TimKiemNhaTro\TimKiemNhaTro\obj\Debug\TimKiemNhaTro.ucDetailHome.vi-VN.resources
 G:\TimKiemNhaTro\TimKiemNhaTro\TimKiemNhaTro\obj\Debug\TimKiemNhaTro.ucFavourite.en.resources
 G:\TimKiemNhaTro\TimKiemNhaTro\TimKiemNhaTro\obj\Debug\TimKiemNhaTro.ucHomeCC.en.resources
 G:\TimKiemNhaTro\TimKiemNhaTro\TimKiemNhaTro\obj\Debug\TimKiemNhaTro.ucHomeCC.vi-VN.resources
@@ -113,5 +121,6 @@ G:\TimKiemNhaTro\TimKiemNhaTro\TimKiemNhaTro\obj\Debug\vi-VN\TimKiemNhaTro.resou
 G:\TimKiemNhaTro\TimKiemNhaTro\TimKiemNhaTro\obj\Debug\TimKiemNhaTro.TrustInfo.xml
 G:\TimKiemNhaTro\TimKiemNhaTro\TimKiemNhaTro\obj\Debug\TimKiemNhaTro.exe.manifest
 G:\TimKiemNhaTro\TimKiemNhaTro\TimKiemNhaTro\obj\Debug\TimKiemNhaTro.application
+G:\TimKiemNhaTro\TimKiemNhaTro\TimKiemNhaTro\obj\Debug\TimKiemNhaTro.csproj.CopyComplete
 G:\TimKiemNhaTro\TimKiemNhaTro\TimKiemNhaTro\obj\Debug\TimKiemNhaTro.exe
 G:\TimKiemNhaTro\TimKiemNhaTro\TimKiemNhaTro\obj\Debug\TimKiemNhaTro.pdb

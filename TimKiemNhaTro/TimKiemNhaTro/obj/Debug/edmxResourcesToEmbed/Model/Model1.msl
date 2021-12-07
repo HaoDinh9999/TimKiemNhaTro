@@ -38,6 +38,15 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
+    <EntitySetMapping Name="FAQs">
+      <EntityTypeMapping TypeName="XQ0Qgj8xlHModel.FAQ">
+        <MappingFragment StoreEntitySet="FAQ">
+          <ScalarProperty Name="maFAQ" ColumnName="maFAQ" />
+          <ScalarProperty Name="cauHoi" ColumnName="cauHoi" />
+          <ScalarProperty Name="cauTraLoi" ColumnName="cauTraLoi" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
     <EntitySetMapping Name="LoaiChoThues">
       <EntityTypeMapping TypeName="XQ0Qgj8xlHModel.LoaiChoThue">
         <MappingFragment StoreEntitySet="LoaiChoThue">
@@ -78,6 +87,18 @@
           <ScalarProperty Name="moTa" ColumnName="moTa" />
           <ScalarProperty Name="TienNha" ColumnName="TienNha" />
           <ScalarProperty Name="ngayCapNhat" ColumnName="ngayCapNhat" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TinNhans">
+      <EntityTypeMapping TypeName="XQ0Qgj8xlHModel.TinNhan">
+        <MappingFragment StoreEntitySet="TinNhan">
+          <ScalarProperty Name="maTinNhan" ColumnName="maTinNhan" />
+          <ScalarProperty Name="maNguoiGui" ColumnName="maNguoiGui" />
+          <ScalarProperty Name="maNguoiNhan" ColumnName="maNguoiNhan" />
+          <ScalarProperty Name="loai" ColumnName="loai" />
+          <ScalarProperty Name="noiDung" ColumnName="noiDung" />
+          <ScalarProperty Name="ngayGui" ColumnName="ngayGui" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>

@@ -40,6 +40,7 @@ namespace TimKiemNhaTro
             this.lblPosition = new System.Windows.Forms.Label();
             this.pnlUC = new System.Windows.Forms.Panel();
             this.mySqlCommandBuilder1 = new MySqlConnector.MySqlCommandBuilder();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.btnAddHouse = new Guna.UI.WinForms.GunaAdvenceButton();
             this.picAvatar = new Guna.UI.WinForms.GunaCirclePictureBox();
             this.ptrPaint = new System.Windows.Forms.PictureBox();
@@ -57,7 +58,7 @@ namespace TimKiemNhaTro
             this.btnFavourite = new Guna.UI.WinForms.GunaAdvenceButton();
             this.btnFindMap = new Guna.UI.WinForms.GunaAdvenceButton();
             this.btnHome = new Guna.UI.WinForms.GunaAdvenceButton();
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.picChat = new System.Windows.Forms.PictureBox();
             this.panel2.SuspendLayout();
             this.pnlUC.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picAvatar)).BeginInit();
@@ -65,6 +66,7 @@ namespace TimKiemNhaTro
             this.pnlMenu.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picGif)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picLogo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picChat)).BeginInit();
             this.SuspendLayout();
             // 
             // gelipFrmTaskee
@@ -75,6 +77,7 @@ namespace TimKiemNhaTro
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.Transparent;
+            this.panel2.Controls.Add(this.picChat);
             this.panel2.Controls.Add(this.picAvatar);
             this.panel2.Controls.Add(this.lblTitle);
             this.panel2.Controls.Add(this.dtpRealTime);
@@ -140,6 +143,10 @@ namespace TimKiemNhaTro
             this.mySqlCommandBuilder1.DataAdapter = null;
             this.mySqlCommandBuilder1.QuotePrefix = "`";
             this.mySqlCommandBuilder1.QuoteSuffix = "`";
+            // 
+            // timer1
+            // 
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // btnAddHouse
             // 
@@ -499,9 +506,13 @@ namespace TimKiemNhaTro
             this.btnHome.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.btnHome.Click += new System.EventHandler(this.btnHome_Click);
             // 
-            // timer1
+            // picChat
             // 
-            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            resources.ApplyResources(this.picChat, "picChat");
+            this.picChat.Image = global::TimKiemNhaTro.Properties.Resources.chat_bubbles_with_ellipsis__1_;
+            this.picChat.Name = "picChat";
+            this.picChat.TabStop = false;
+            this.picChat.Click += new System.EventHandler(this.picChat_Click);
             // 
             // frmMain
             // 
@@ -523,6 +534,7 @@ namespace TimKiemNhaTro
             this.pnlMenu.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picGif)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picLogo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picChat)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -556,6 +568,7 @@ namespace TimKiemNhaTro
         private Guna.UI.WinForms.GunaAdvenceButton btnTiengAnh;
         private Guna.UI.WinForms.GunaAdvenceButton btnTiengViet;
         private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.PictureBox picChat;
     }
 }
 

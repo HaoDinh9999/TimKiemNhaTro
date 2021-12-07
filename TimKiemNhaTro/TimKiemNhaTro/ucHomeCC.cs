@@ -53,7 +53,7 @@ namespace TimKiemNhaTro
         {
             nenHomeColor = clr;
             this.BackColor = nenHomeColor;
-            pnlTimKiem.BaseColor = nenHomeColor;
+            //pnlTimKiem.BaseColor = nenHomeColor;
             rtxTieuDeLon.BackColor = nenHomeColor;
             pnlNhaTro.BaseColor = nenHomeColor;
             pnlChuTro.BaseColor = nenHomeColor;
@@ -66,9 +66,7 @@ namespace TimKiemNhaTro
             lblCountNguoiDung.Text = DataProvider.Ins.DB.NguoiDungs.Count().ToString();
             flwCapNhatGanNhat.Controls.Clear();
             flwTinTuc.Controls.Clear();
-            var listNha = DataProvider.Ins.DB.Nhas.Where(x=>x.NguoiDung.biVoHieu==0).ToList();
-            listNha = listNha.OrderByDescending(x => x.ngayCapNhat).Take(5).ToList();
-            int demNha = 0;
+            var listNha = DataProvider.Ins.DB.Nhas.Where(x=>x.NguoiDung.biVoHieu==0).OrderByDescending(x => x.ngayCapNhat).Take(5).ToList();
             for (int i = 0; i < listNha.Count; i++)
             {
                 var card = new ucCardNha(this.Parent.Parent as frmMain, listNha[i]);

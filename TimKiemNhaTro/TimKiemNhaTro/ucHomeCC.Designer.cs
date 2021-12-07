@@ -60,14 +60,6 @@ namespace TimKiemNhaTro
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
-            this.pnlTimKiem = new Guna.UI.WinForms.GunaShadowPanel();
-            this.gunaGradientButton1 = new Guna.UI.WinForms.GunaGradientButton();
-            this.gunaComboBox3 = new Guna.UI.WinForms.GunaComboBox();
-            this.label12 = new System.Windows.Forms.Label();
-            this.gunaComboBox2 = new Guna.UI.WinForms.GunaComboBox();
-            this.label11 = new System.Windows.Forms.Label();
-            this.gunaComboBox1 = new Guna.UI.WinForms.GunaComboBox();
-            this.label10 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.label9 = new System.Windows.Forms.Label();
             this.label27 = new System.Windows.Forms.Label();
@@ -103,7 +95,6 @@ namespace TimKiemNhaTro
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.panel7.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).BeginInit();
-            this.pnlTimKiem.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnTanBinh)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnGoVap)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnQuan7)).BeginInit();
@@ -338,115 +329,6 @@ namespace TimKiemNhaTro
             resources.ApplyResources(this.panel6, "panel6");
             this.panel6.BackColor = System.Drawing.Color.LightSeaGreen;
             this.panel6.Name = "panel6";
-            // 
-            // pnlTimKiem
-            // 
-            resources.ApplyResources(this.pnlTimKiem, "pnlTimKiem");
-            this.pnlTimKiem.BackColor = System.Drawing.Color.Transparent;
-            this.pnlTimKiem.BaseColor = System.Drawing.Color.White;
-            this.pnlTimKiem.Controls.Add(this.gunaGradientButton1);
-            this.pnlTimKiem.Controls.Add(this.gunaComboBox3);
-            this.pnlTimKiem.Controls.Add(this.label12);
-            this.pnlTimKiem.Controls.Add(this.gunaComboBox2);
-            this.pnlTimKiem.Controls.Add(this.label11);
-            this.pnlTimKiem.Controls.Add(this.gunaComboBox1);
-            this.pnlTimKiem.Controls.Add(this.label10);
-            this.pnlTimKiem.EdgeWidth = 1;
-            this.pnlTimKiem.Name = "pnlTimKiem";
-            this.pnlTimKiem.Radius = 2;
-            this.pnlTimKiem.ShadowColor = System.Drawing.Color.Silver;
-            this.pnlTimKiem.ShadowDepth = 50;
-            // 
-            // gunaGradientButton1
-            // 
-            resources.ApplyResources(this.gunaGradientButton1, "gunaGradientButton1");
-            this.gunaGradientButton1.AnimationHoverSpeed = 0.07F;
-            this.gunaGradientButton1.AnimationSpeed = 0.03F;
-            this.gunaGradientButton1.BackColor = System.Drawing.Color.Transparent;
-            this.gunaGradientButton1.BaseColor1 = System.Drawing.Color.LightSeaGreen;
-            this.gunaGradientButton1.BaseColor2 = System.Drawing.Color.Aquamarine;
-            this.gunaGradientButton1.BorderColor = System.Drawing.Color.Black;
-            this.gunaGradientButton1.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.gunaGradientButton1.FocusedColor = System.Drawing.Color.Empty;
-            this.gunaGradientButton1.ForeColor = System.Drawing.Color.White;
-            this.gunaGradientButton1.Image = global::TimKiemNhaTro.Properties.Resources.icons8_searchWhite_32;
-            this.gunaGradientButton1.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.gunaGradientButton1.ImageSize = new System.Drawing.Size(20, 20);
-            this.gunaGradientButton1.Name = "gunaGradientButton1";
-            this.gunaGradientButton1.OnHoverBaseColor1 = System.Drawing.Color.DarkGray;
-            this.gunaGradientButton1.OnHoverBaseColor2 = System.Drawing.Color.LightSeaGreen;
-            this.gunaGradientButton1.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.gunaGradientButton1.OnHoverForeColor = System.Drawing.Color.White;
-            this.gunaGradientButton1.OnHoverImage = null;
-            this.gunaGradientButton1.OnPressedColor = System.Drawing.Color.Black;
-            this.gunaGradientButton1.Radius = 15;
-            this.gunaGradientButton1.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
-            // 
-            // gunaComboBox3
-            // 
-            resources.ApplyResources(this.gunaComboBox3, "gunaComboBox3");
-            this.gunaComboBox3.BackColor = System.Drawing.Color.Transparent;
-            this.gunaComboBox3.BaseColor = System.Drawing.Color.Transparent;
-            this.gunaComboBox3.BorderColor = System.Drawing.Color.LightSeaGreen;
-            this.gunaComboBox3.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.gunaComboBox3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.gunaComboBox3.FocusedColor = System.Drawing.Color.LightSeaGreen;
-            this.gunaComboBox3.ForeColor = System.Drawing.Color.Black;
-            this.gunaComboBox3.FormattingEnabled = true;
-            this.gunaComboBox3.Name = "gunaComboBox3";
-            this.gunaComboBox3.OnHoverItemBaseColor = System.Drawing.Color.LightSeaGreen;
-            this.gunaComboBox3.OnHoverItemForeColor = System.Drawing.Color.White;
-            this.gunaComboBox3.Radius = 10;
-            // 
-            // label12
-            // 
-            resources.ApplyResources(this.label12, "label12");
-            this.label12.ForeColor = System.Drawing.Color.Black;
-            this.label12.Name = "label12";
-            // 
-            // gunaComboBox2
-            // 
-            resources.ApplyResources(this.gunaComboBox2, "gunaComboBox2");
-            this.gunaComboBox2.BackColor = System.Drawing.Color.Transparent;
-            this.gunaComboBox2.BaseColor = System.Drawing.Color.Transparent;
-            this.gunaComboBox2.BorderColor = System.Drawing.Color.LightSeaGreen;
-            this.gunaComboBox2.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.gunaComboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.gunaComboBox2.FocusedColor = System.Drawing.Color.LightSeaGreen;
-            this.gunaComboBox2.ForeColor = System.Drawing.Color.Black;
-            this.gunaComboBox2.FormattingEnabled = true;
-            this.gunaComboBox2.Name = "gunaComboBox2";
-            this.gunaComboBox2.OnHoverItemBaseColor = System.Drawing.Color.LightSeaGreen;
-            this.gunaComboBox2.OnHoverItemForeColor = System.Drawing.Color.White;
-            this.gunaComboBox2.Radius = 10;
-            // 
-            // label11
-            // 
-            resources.ApplyResources(this.label11, "label11");
-            this.label11.ForeColor = System.Drawing.Color.Black;
-            this.label11.Name = "label11";
-            // 
-            // gunaComboBox1
-            // 
-            resources.ApplyResources(this.gunaComboBox1, "gunaComboBox1");
-            this.gunaComboBox1.BackColor = System.Drawing.Color.Transparent;
-            this.gunaComboBox1.BaseColor = System.Drawing.Color.Transparent;
-            this.gunaComboBox1.BorderColor = System.Drawing.Color.LightSeaGreen;
-            this.gunaComboBox1.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.gunaComboBox1.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.gunaComboBox1.FocusedColor = System.Drawing.Color.LightSeaGreen;
-            this.gunaComboBox1.ForeColor = System.Drawing.Color.Black;
-            this.gunaComboBox1.FormattingEnabled = true;
-            this.gunaComboBox1.Name = "gunaComboBox1";
-            this.gunaComboBox1.OnHoverItemBaseColor = System.Drawing.Color.LightSeaGreen;
-            this.gunaComboBox1.OnHoverItemForeColor = System.Drawing.Color.White;
-            this.gunaComboBox1.Radius = 10;
-            // 
-            // label10
-            // 
-            resources.ApplyResources(this.label10, "label10");
-            this.label10.ForeColor = System.Drawing.Color.Black;
-            this.label10.Name = "label10";
             // 
             // panel4
             // 
@@ -800,7 +682,6 @@ namespace TimKiemNhaTro
             this.Controls.Add(this.btnQuan1);
             this.Controls.Add(this.label27);
             this.Controls.Add(this.label9);
-            this.Controls.Add(this.pnlTimKiem);
             this.Controls.Add(this.panel5);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.pnlChuTro);
@@ -829,8 +710,6 @@ namespace TimKiemNhaTro
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.panel7.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox10)).EndInit();
-            this.pnlTimKiem.ResumeLayout(false);
-            this.pnlTimKiem.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnTanBinh)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnGoVap)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnQuan7)).EndInit();
@@ -877,14 +756,6 @@ namespace TimKiemNhaTro
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Panel panel6;
-        private Guna.UI.WinForms.GunaShadowPanel pnlTimKiem;
-        private Guna.UI.WinForms.GunaGradientButton gunaGradientButton1;
-        private Guna.UI.WinForms.GunaComboBox gunaComboBox3;
-        private System.Windows.Forms.Label label12;
-        private Guna.UI.WinForms.GunaComboBox gunaComboBox2;
-        private System.Windows.Forms.Label label11;
-        private Guna.UI.WinForms.GunaComboBox gunaComboBox1;
-        private System.Windows.Forms.Label label10;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label27;

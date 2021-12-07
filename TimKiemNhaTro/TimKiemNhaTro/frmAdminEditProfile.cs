@@ -65,7 +65,7 @@ namespace TimKiemNhaTro
             var stream = File.Open(@url, FileMode.Open);
             //urlAvatar = "";
             // Construct FirebaseStorage with path to where you want to upload the file and put it there
-            var task = new FirebaseStorage("timkiemnhatro-6dd5a.appspot.com")
+            var task = new FirebaseStorage("nhatro-a2ad8.appspot.com")
              .Child("images")
              .Child(idNguoiDung.ToString() + url[2] + url[url.Length - 5])
              .PutAsync(stream);

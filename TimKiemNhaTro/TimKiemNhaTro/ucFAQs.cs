@@ -224,7 +224,7 @@ namespace TimKiemNhaTro
 
             if (pnl2.Height == 0)
             {
-                pnl2.Height = 170;
+                pnl2.Height = 310;
                 pnl2.Top = pnl1.Top + 60;
 
                 pnl1.Height = 0;
@@ -277,7 +277,7 @@ namespace TimKiemNhaTro
         {
             if (pnl3.Height == 0)
             {
-                pnl3.Height = 170;
+                pnl3.Height = 399;
                 pnl3.Top = pnl1.Top + 120;
 
                 pnl1.Height = 0;
@@ -377,7 +377,7 @@ namespace TimKiemNhaTro
         {
             if (pnl5.Height == 0)
             {
-                pnl5.Height = 170;
+                pnl5.Height = 242;
                 pnl5.Top = pnl1.Top + 240;
 
                 pnl1.Height = 0;
@@ -423,7 +423,7 @@ namespace TimKiemNhaTro
         {
             if (pnl6.Height == 0)
             {
-                pnl6.Height = 170;
+                pnl6.Height = 240;
                 pnl6.Top = pnl1.Top + 300;
 
                 pnl1.Height = 0;
@@ -468,7 +468,7 @@ namespace TimKiemNhaTro
         {
             if (pnl7.Height == 0)
             {
-                pnl7.Height = 170;
+                pnl7.Height = 460;
                 pnl7.Top = pnl1.Top + 360;
 
                 pnl1.Height = 0;
@@ -508,25 +508,25 @@ namespace TimKiemNhaTro
 
         private void btnGuiEmail_Click(object sender, EventArgs e)
         {
-            //try
-            //{
+            try
+            {
                 MailMessage message = new MailMessage();
                 message.From = new MailAddress("vhao1509@gmail.com");
                 message.To.Add(new MailAddress("vhao1509@gmail.com"));
                 message.Subject = "Câu hỏi thắc mắc ?";
                 message.IsBodyHtml = true; //to make message body as html  
-                message.Body ="ID: "+_nguoi.maNguoiDung +" - "+ (txtCauHoi.Text).ToString();
-            using (SmtpClient smtp = new SmtpClient("smtp.gmail.com", 587))
-            {
-                smtp.Credentials = new NetworkCredential("vhao1509@gmail.com", "H01213111038");
-                smtp.EnableSsl = true;
-                smtp.Send(message);
-                MessageBox.Show("Thanh cong");
+                message.Body = "ID: " + _nguoi.maNguoiDung + " - " + (txtCauHoi.Text).ToString();
+                using (SmtpClient smtp = new SmtpClient("smtp.gmail.com", 587))
+                {
+                    smtp.Credentials = new NetworkCredential("vhao1509@gmail.com", "H01213111038");
+                    smtp.EnableSsl = true;
+                    smtp.Send(message);
+                    MessageBox.Show("Thanh cong");
+                }
             }
-            //}
-            //catch (Exception) {
-            //    MessageBox.Show("Fail");
-            //}
+            catch (Exception er) {
+                MessageBox.Show(er.Message);
+            }
         }
     }
 }

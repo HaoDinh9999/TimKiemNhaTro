@@ -153,7 +153,7 @@ namespace TimKiemNhaTro
             lblLoaiNha.Text = nhas.LoaiChoThue.tenLoaiChoThue;
             lblGiuongNgu.Text = nhas.soPhongNgu.ToString();
             lblPhongTam.Text = nhas.soPhongTam.ToString();
-            rtxDiaChi.Text = nhas.soNha + ", " + nhas.phuongXa + ", " + nhas.quanHuyen + ", thành phố Hồ Chí Minh";
+            rtxDiaChi.Text = nhas.soNha +" " + nhas.tenDuong +", " + nhas.phuongXa + ", " + nhas.quanHuyen + ", thành phố Hồ Chí Minh";
             if (nhas.NguoiDung.hoTen != null && nhas.NguoiDung.hoTen != "")
                 lblTenChu.Text = nhas.NguoiDung.hoTen;
             else lblTenChu.Text = "Chưa đặt tên";

@@ -133,6 +133,9 @@
   <data name="icons8_delete_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icons8_delete_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="icons8_save_as_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons8_save_as_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="bathtub1_240px" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\bathtub1_240px.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -144,9 +147,6 @@
   </data>
   <data name="icons8_lap_poolWhite_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icons8_lap_poolWhite_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
-  <data name="affebf4a4975ac81c0f9780bd2ad09d9" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\affebf4a4975ac81c0f9780bd2ad09d9.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="icons8_male_userWHITE_321" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icons8_male_userWHITE_321.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -190,11 +190,11 @@
   <data name="icons8_condo_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icons8_condo_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="icons8_save_as_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icons8_save_as_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="icons8_google_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons8_google_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="quan10" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\quan10.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="chat-bubbles-with-ellipsis (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\chat-bubbles-with-ellipsis (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="quan2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\quan2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -226,8 +226,8 @@
   <data name="icons8_lap_pool_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icons8_lap_pool_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="icons8_settings123_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icons8_settings123_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="affebf4a4975ac81c0f9780bd2ad09d9" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\affebf4a4975ac81c0f9780bd2ad09d9.gif;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="icons8_parking_assistWhite_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icons8_parking_assistWhite_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -301,6 +301,9 @@
   <data name="icons8_attach_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icons8_attach_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="chat-bubbles-with-ellipsis" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\chat-bubbles-with-ellipsis.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="icons8_waste_321" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icons8_waste_321.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -330,6 +333,9 @@
   </data>
   <data name="icons8_registration_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icons8_registration_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="question-mark-on-a-circular-black-background (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\question-mark-on-a-circular-black-background (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="icons8_upward_arrow_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icons8_upward_arrow_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -364,6 +370,9 @@
   <data name="icons8_info_popup_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icons8_info_popup_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="icons8_settings123_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\icons8_settings123_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="icons8_male_userWHITE_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icons8_male_userWHITE_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -396,6 +405,9 @@
   </data>
   <data name="icons8_staircase_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icons8_staircase_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="question-mark-on-a-circular-black-background" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\question-mark-on-a-circular-black-background.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
   <data name="setting (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\setting (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
@@ -550,6 +562,9 @@
   <data name="thu-duc_jfbk" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\thu-duc_jfbk.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="quan10" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\quan10.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="icons8_facebook_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\icons8_facebook_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -559,10 +574,13 @@
   <data name="star" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\star.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="undraw_Travel_booking_re_6umu (1)" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\undraw_Travel_booking_re_6umu (1).png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="suzy2" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\suzy2.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="icons8_google_32" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\icons8_google_32.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="image" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\image.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

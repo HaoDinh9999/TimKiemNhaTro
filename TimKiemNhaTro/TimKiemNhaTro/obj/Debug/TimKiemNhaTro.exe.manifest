@@ -54,66 +54,6 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Emgu.CV.dll" size="233472">
-      <assemblyIdentity name="Emgu.CV" version="2.1.0.793" publicKeyToken="7281126722AB4438" language="neutral" processorArchitecture="msil" />
-      <hash>
-        <dsig:Transforms>
-          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
-        </dsig:Transforms>
-        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>J4JpTxeFMm1ut4RzFSITy2qdPFmQXeHu2ZPz+UxqDNw=</dsig:DigestValue>
-      </hash>
-    </dependentAssembly>
-  </dependency>
-  <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Emgu.CV.DebuggerVisualizers.dll" size="7680">
-      <assemblyIdentity name="Emgu.CV.DebuggerVisualizers" version="2.1.0.793" publicKeyToken="7281126722AB4438" language="neutral" processorArchitecture="msil" />
-      <hash>
-        <dsig:Transforms>
-          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
-        </dsig:Transforms>
-        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>hyxDZmtDxPdntfyjtEc26iveQuNYeVOaXKejyQvaRss=</dsig:DigestValue>
-      </hash>
-    </dependentAssembly>
-  </dependency>
-  <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Emgu.CV.ML.dll" size="32768">
-      <assemblyIdentity name="Emgu.CV.ML" version="2.1.0.793" publicKeyToken="7281126722AB4438" language="neutral" processorArchitecture="msil" />
-      <hash>
-        <dsig:Transforms>
-          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
-        </dsig:Transforms>
-        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>U6Draf+KRGV5I0AdMRdMtC/JwnPwyc34OD2l/2ZQuVQ=</dsig:DigestValue>
-      </hash>
-    </dependentAssembly>
-  </dependency>
-  <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Emgu.CV.UI.dll" size="126976">
-      <assemblyIdentity name="Emgu.CV.UI" version="2.1.0.793" publicKeyToken="7281126722AB4438" language="neutral" processorArchitecture="msil" />
-      <hash>
-        <dsig:Transforms>
-          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
-        </dsig:Transforms>
-        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>mUHW4sWWVGTijgps43Y7y+oWfg+UqzgqpYT1M9EyaB0=</dsig:DigestValue>
-      </hash>
-    </dependentAssembly>
-  </dependency>
-  <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Emgu.Util.dll" size="32768">
-      <assemblyIdentity name="Emgu.Util" version="2.1.0.793" publicKeyToken="7281126722AB4438" language="neutral" processorArchitecture="msil" />
-      <hash>
-        <dsig:Transforms>
-          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
-        </dsig:Transforms>
-        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>oGUNQtjUQQXsVZLzSqcd2FGxDNJBJ7PVhNN+ChT4bA4=</dsig:DigestValue>
-      </hash>
-    </dependentAssembly>
-  </dependency>
-  <dependency>
     <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="EntityFramework.dll" size="4991352">
       <assemblyIdentity name="EntityFramework" version="6.0.0.0" publicKeyToken="B77A5C561934E089" language="neutral" processorArchitecture="msil" />
       <hash>
@@ -378,14 +318,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="TimKiemNhaTro.exe" size="15145984">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="TimKiemNhaTro.exe" size="15294464">
       <assemblyIdentity name="TimKiemNhaTro" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>tQG+K+iLf+w/SywsYAkASC0V0opyOc75Mf0+bYUORQU=</dsig:DigestValue>
+        <dsig:DigestValue>zyqGidEap1H/EjYe7232t19ODYbJSpczBTghbUjlEXk=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -397,19 +337,19 @@
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>xHVxJgiwj3CrWe4WTV7WTMMhzUNfZ8YwFgMcjLLh5ko=</dsig:DigestValue>
+        <dsig:DigestValue>n1MgIXXwV3M0lrRMNuuPddLLIWhrTMuT+e70uW1sTos=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="vi-VN\TimKiemNhaTro.resources.dll" size="104448">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="vi-VN\TimKiemNhaTro.resources.dll" size="104960">
       <assemblyIdentity name="TimKiemNhaTro.resources" version="1.0.0.0" language="vi-VN" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>XcxNtliGOdW6AUyFwy0FMMD8f7Hvy4uVfUujgPpP/9M=</dsig:DigestValue>
+        <dsig:DigestValue>k7rdZmLCU+lgnJW6vAlgIdefSJRqVPURt6fCzbuAbkQ=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -422,18 +362,6 @@
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
         <dsig:DigestValue>AZnuMl92VNQ74m4O+fXzc+nN9LZP1xsfoplS4lGNs4k=</dsig:DigestValue>
-      </hash>
-    </dependentAssembly>
-  </dependency>
-  <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="zlib.net.dll" size="69632">
-      <assemblyIdentity name="zlib.net" version="1.0.3.0" publicKeyToken="47D7877CB3620160" language="neutral" />
-      <hash>
-        <dsig:Transforms>
-          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
-        </dsig:Transforms>
-        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>QWe1mfNq8HgbgVY70heabTXaoxRfC2+ZrG2e4YlLUWo=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

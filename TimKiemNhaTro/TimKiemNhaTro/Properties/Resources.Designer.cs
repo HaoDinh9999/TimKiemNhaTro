@@ -163,6 +163,26 @@ namespace TimKiemNhaTro.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap chat_bubbles_with_ellipsis {
+            get {
+                object obj = ResourceManager.GetObject("chat-bubbles-with-ellipsis", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap chat_bubbles_with_ellipsis__1_ {
+            get {
+                object obj = ResourceManager.GetObject("chat-bubbles-with-ellipsis (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap cooking {
             get {
                 object obj = ResourceManager.GetObject("cooking", resourceCulture);
@@ -1243,6 +1263,16 @@ namespace TimKiemNhaTro.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap image {
+            get {
+                object obj = ResourceManager.GetObject("image", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap kisspng_qualitas_esquina_rush_reliance_apartments_qualitas_apartment_5ac1b5d86c4dc4_9943107215226444404436 {
             get {
                 object obj = ResourceManager.GetObject("kisspng-qualitas-esquina-rush-reliance-apartments-qualitas-apartment-5ac1b5d86c4d" +
@@ -1374,6 +1404,26 @@ namespace TimKiemNhaTro.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap question_mark_on_a_circular_black_background {
+            get {
+                object obj = ResourceManager.GetObject("question-mark-on-a-circular-black-background", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap question_mark_on_a_circular_black_background__1_ {
+            get {
+                object obj = ResourceManager.GetObject("question-mark-on-a-circular-black-background (1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap rec {
             get {
                 object obj = ResourceManager.GetObject("rec", resourceCulture);
@@ -1497,6 +1547,16 @@ namespace TimKiemNhaTro.Properties {
         internal static System.Drawing.Bitmap undraw_Login_re_4vu2 {
             get {
                 object obj = ResourceManager.GetObject("undraw_Login_re_4vu2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap undraw_Travel_booking_re_6umu__1_ {
+            get {
+                object obj = ResourceManager.GetObject("undraw_Travel_booking_re_6umu (1)", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

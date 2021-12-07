@@ -117,6 +117,30 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="richTextBox7.Text" xml:space="preserve">
+    <value>Ký túc xá chủ yếu bao gồm ký túc xá. Trong ký túc xá của nhà trọ, có những người khác ngủ cùng phòng với bạn. Chỗ ở chung này mở rộng đến các phòng vệ sinh và bất kỳ tiện nghi nào khác có sẵn trong nhà trọ.</value>
+  </data>
+  <data name="richTextBox16.Text" xml:space="preserve">
+    <value>Mặc dù một số ký túc xá hạn chế đối với một số khách nhất định, nhưng đại đa số đều mở cửa cho bất kỳ ai, bất kể độ tuổi, quốc tịch hoặc giới tính mà bạn xác định là gì. Điều đó không thành vấn đề đối với hầu hết các ký túc xá vì họ muốn cung cấp cho khách du lịch ba lô chỗ ở giá rẻ.</value>
+  </data>
+  <data name="richTextBox3.Text" xml:space="preserve">
+    <value>Ví dụ, một số ký túc xá chỉ mở cửa cho một số giới tính nhất định, mặc dù nói chung, hầu hết các ký túc xá sẽ có các phòng dành riêng cho giới tính cũng như các phòng dành cho cả nam và nữ. Như ký túc xá chỉ dành cho nữ chẳng hạn. Các ký túc xá khác được định nghĩa là "ký túc xá thanh niên" và chỉ cho phép khách dưới một độ tuổi nhất định.</value>
+  </data>
+  <data name="richTextBox4.Text" xml:space="preserve">
+    <value>Hầu hết thời gian, vâng, bất kỳ ai cũng có thể ở trong ký túc xá. Tuy nhiên, đôi khi có những hướng dẫn khá cụ thể cho những ai có thể ở trong một ký túc xá nhất định. Tất cả đều phụ thuộc vào tài sản nhà trọ dành cho khách du lịch ba lô cụ thể.</value>
+  </data>
+  <data name="richTextBox6.Text" xml:space="preserve">
+    <value>Chọn nhà trọ phù hợp là một câu hỏi khó và tôi sẽ không đề cập đến câu hỏi trong bài đăng này. Có quá nhiều thứ phải cân nhắc. Nó cần bài viết riêng của nó. Dưới đây là bài đăng chi tiết về cách chọn nhà trọ hoàn hảo cho chuyến đi của bạn.</value>
+  </data>
+  <data name="richTextBox12.Text" xml:space="preserve">
+    <value>Không. Nhà trọ không nguy hiểm. Hầu hết các nhà trọ đều có hệ thống nhận phòng để ngăn những người không phải là khách lưu trú vào nhà trọ. Một số có lệnh giới nghiêm và quẹt thẻ để ra vào tòa nhà và các phòng riêng lẻ.</value>
+  </data>
+  <data name="richTextBox18.Text" xml:space="preserve">
+    <value>Giữ an toàn cho các món đồ của bạn khi ở trong nhà trọ là điều thường xuyên trong tâm trí của nhiều du khách, nhưng việc làm theo các bước cơ bản khá dễ dàng và đơn giản. Giữ sạch sẽ, ngăn nắp và để những vật có giá trị tránh xa tầm nhìn.</value>
+  </data>
+  <data name="richTextBox17.Text" xml:space="preserve">
+    <value>Giữ những vật có giá trị của bạn như hộ chiếu, điện thoại, ví tiền, v.v. ở nơi khuất tầm nhìn là một cách quan trọng để giữ an toàn cho mọi thứ của bạn trong ký túc xá. Bằng cách giữ cho túi của bạn gọn gàng, tốt nhất là nên kéo khóa và không để ở bên ngoài, sẽ khiến cho việc này trở thành một thách thức đối với một số kẻ trộm cắp.</value>
+  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="btnGuiEmail.CheckedImage" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>

@@ -18,6 +18,8 @@ namespace TimKiemNhaTro.Model
         public NguoiDung()
         {
             this.DanhGias = new HashSet<DanhGia>();
+            this.TinNhans = new HashSet<TinNhan>();
+            this.TinNhans1 = new HashSet<TinNhan>();
             this.Nhas = new HashSet<Nha>();
             this.YeuThiches = new HashSet<YeuThich>();
         }
@@ -33,6 +35,10 @@ namespace TimKiemNhaTro.Model
     
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<DanhGia> DanhGias { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<TinNhan> TinNhans { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<TinNhan> TinNhans1 { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<Nha> Nhas { get; set; }
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]

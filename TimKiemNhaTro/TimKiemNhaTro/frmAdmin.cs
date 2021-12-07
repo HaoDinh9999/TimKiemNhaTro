@@ -67,6 +67,16 @@ namespace TimKiemNhaTro
                         ucAdminProfile1.SetInfo();
                         lblPage.Text = "Cá nhân";
                         break;
+                    case "FAQ":
+                        ucAdminFAQ1.BringToFront();
+                        ucAdminFAQ1.SetInfo(DataProvider.Ins.DB.FAQs.ToList());
+                        lblPage.Text = "FAQ";
+                        break;
+                    case "Tin nhắn":
+                        ucAdminChat1.BringToFront();
+                        ucAdminChat1.LoadLichSu();
+                        lblPage.Text = "Tin nhắn";
+                        break;
                 }
             }
         }

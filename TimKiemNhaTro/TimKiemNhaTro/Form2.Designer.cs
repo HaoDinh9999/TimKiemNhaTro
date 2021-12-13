@@ -33,13 +33,13 @@ namespace TimKiemNhaTro
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form2));
             this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.guna2Panel1 = new Guna.UI2.WinForms.Guna2Panel();
-            this.lblCauHoi = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.lblCauTraLoi = new Guna.UI2.WinForms.Guna2HtmlLabel();
-            this.picCollapse = new System.Windows.Forms.PictureBox();
             this.picExpand = new System.Windows.Forms.PictureBox();
+            this.picCollapse = new System.Windows.Forms.PictureBox();
+            this.lblCauTraLoi = new Guna.UI2.WinForms.Guna2HtmlLabel();
+            this.lblCauHoi = new Guna.UI2.WinForms.Guna2HtmlLabel();
             this.guna2Panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picCollapse)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picExpand)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picCollapse)).BeginInit();
             this.SuspendLayout();
             // 
             // guna2Panel1
@@ -56,44 +56,8 @@ namespace TimKiemNhaTro
             this.guna2Panel1.Name = "guna2Panel1";
             this.guna2Panel1.Padding = new System.Windows.Forms.Padding(16);
             this.guna2Panel1.ShadowDecoration.Parent = this.guna2Panel1;
-            this.guna2Panel1.Size = new System.Drawing.Size(980, 110);
+            this.guna2Panel1.Size = new System.Drawing.Size(980, 105);
             this.guna2Panel1.TabIndex = 2;
-            // 
-            // lblCauHoi
-            // 
-            this.lblCauHoi.BackColor = System.Drawing.Color.Transparent;
-            this.lblCauHoi.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCauHoi.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(159)))), ((int)(((byte)(162)))), ((int)(((byte)(180)))));
-            this.lblCauHoi.Location = new System.Drawing.Point(37, 19);
-            this.lblCauHoi.Name = "lblCauHoi";
-            this.lblCauHoi.Size = new System.Drawing.Size(169, 25);
-            this.lblCauHoi.TabIndex = 1;
-            this.lblCauHoi.Text = "Ứng dụng này là gì ?";
-            // 
-            // lblCauTraLoi
-            // 
-            this.lblCauTraLoi.AutoSize = false;
-            this.lblCauTraLoi.BackColor = System.Drawing.Color.Transparent;
-            this.lblCauTraLoi.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCauTraLoi.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.lblCauTraLoi.Location = new System.Drawing.Point(37, 50);
-            this.lblCauTraLoi.MaximumSize = new System.Drawing.Size(924, 0);
-            this.lblCauTraLoi.MinimumSize = new System.Drawing.Size(0, 36);
-            this.lblCauTraLoi.Name = "lblCauTraLoi";
-            this.lblCauTraLoi.Size = new System.Drawing.Size(924, 41);
-            this.lblCauTraLoi.TabIndex = 2;
-            this.lblCauTraLoi.Text = resources.GetString("lblCauTraLoi.Text");
-            // 
-            // picCollapse
-            // 
-            this.picCollapse.BackColor = System.Drawing.Color.Transparent;
-            this.picCollapse.Image = global::TimKiemNhaTro.Properties.Resources.icons8_upward_arrow_32;
-            this.picCollapse.Location = new System.Drawing.Point(929, 12);
-            this.picCollapse.Name = "picCollapse";
-            this.picCollapse.Size = new System.Drawing.Size(32, 32);
-            this.picCollapse.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.picCollapse.TabIndex = 3;
-            this.picCollapse.TabStop = false;
             // 
             // picExpand
             // 
@@ -106,6 +70,42 @@ namespace TimKiemNhaTro
             this.picExpand.TabIndex = 4;
             this.picExpand.TabStop = false;
             // 
+            // picCollapse
+            // 
+            this.picCollapse.BackColor = System.Drawing.Color.Transparent;
+            this.picCollapse.Image = global::TimKiemNhaTro.Properties.Resources.icons8_upward_arrow_32;
+            this.picCollapse.Location = new System.Drawing.Point(929, 12);
+            this.picCollapse.Name = "picCollapse";
+            this.picCollapse.Size = new System.Drawing.Size(32, 32);
+            this.picCollapse.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picCollapse.TabIndex = 3;
+            this.picCollapse.TabStop = false;
+            // 
+            // lblCauTraLoi
+            // 
+            this.lblCauTraLoi.AutoSize = false;
+            this.lblCauTraLoi.BackColor = System.Drawing.Color.Transparent;
+            this.lblCauTraLoi.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCauTraLoi.ForeColor = System.Drawing.Color.DarkGray;
+            this.lblCauTraLoi.Location = new System.Drawing.Point(37, 50);
+            this.lblCauTraLoi.MaximumSize = new System.Drawing.Size(924, 0);
+            this.lblCauTraLoi.MinimumSize = new System.Drawing.Size(0, 36);
+            this.lblCauTraLoi.Name = "lblCauTraLoi";
+            this.lblCauTraLoi.Size = new System.Drawing.Size(924, 36);
+            this.lblCauTraLoi.TabIndex = 2;
+            this.lblCauTraLoi.Text = resources.GetString("lblCauTraLoi.Text");
+            // 
+            // lblCauHoi
+            // 
+            this.lblCauHoi.BackColor = System.Drawing.Color.Transparent;
+            this.lblCauHoi.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblCauHoi.ForeColor = System.Drawing.Color.Black;
+            this.lblCauHoi.Location = new System.Drawing.Point(37, 19);
+            this.lblCauHoi.Name = "lblCauHoi";
+            this.lblCauHoi.Size = new System.Drawing.Size(169, 25);
+            this.lblCauHoi.TabIndex = 1;
+            this.lblCauHoi.Text = "Ứng dụng này là gì ?";
+            // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -117,8 +117,8 @@ namespace TimKiemNhaTro
             this.Load += new System.EventHandler(this.Form2_Load);
             this.guna2Panel1.ResumeLayout(false);
             this.guna2Panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picCollapse)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picExpand)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picCollapse)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

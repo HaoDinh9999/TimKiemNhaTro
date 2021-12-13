@@ -142,7 +142,7 @@ namespace TimKiemNhaTro
             cbxPhuongXa.Text = nhaeidt.phuongXa.ToString();
             cbxQuanHuyen.Text = nhaeidt.quanHuyen;
             txtSoNha.Text = nhaeidt.soNha;
-            //txtTenDuong.Text = nhaeidt.soNha;
+            txtTenDuong.Text = nhaeidt.tenDuong;
             if (nhaeidt.maLoaiChoThue == 1)
             {
                 btnNha.Checked = true;
@@ -1188,7 +1188,8 @@ namespace TimKiemNhaTro
                 nhaluu.soPhongTam = soPhongTam;
                 nhaluu.dienTich = decimal.Parse(txtDienTich.Text);
                 nhaluu.tinhTrang = cbxTinhTrang.Text;
-                nhaluu.soNha = txtSoNha.Text + " " + txtTenDuong.Text;
+                nhaluu.soNha = txtSoNha.Text;
+                nhaluu.tenDuong = txtTenDuong.Text;
                 nhaluu.phuongXa = cbxPhuongXa.Text;
                 nhaluu.quanHuyen = cbxQuanHuyen.Text;
                 nhaluu.moTa = txtMoTa.Text;

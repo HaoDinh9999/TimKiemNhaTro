@@ -34,7 +34,7 @@ namespace TimKiemNhaTro
             lblCountBedRoom.Text = _nha.soPhongNgu.ToString()+" phòng";
             lblCountBathRoom.Text = _nha.soPhongTam.ToString()+" phòng";
             lblCountMeter.Text = _nha.dienTich.ToString()+" m2";
-            rtxAddress.Text = _nha.soNha + ", phường " + _nha.phuongXa + ", " + _nha.quanHuyen + ", thành phố Hồ Chí Minh";
+            rtxAddress.Text = _nha.soNha + " "+_nha.tenDuong+ ", phường " + _nha.phuongXa + ", " + _nha.quanHuyen + ", thành phố Hồ Chí Minh";
             btnType.Text = _nha.LoaiChoThue.tenLoaiChoThue;
             string _duongDan = _nha.AnhNhas.ToList()[0].duongDan;
             picRoom.LoadAsync(_duongDan);

@@ -35,6 +35,14 @@
     <Property Name="soSao" Type="int" />
     <Property Name="noiDung" Type="tinytext" />
   </EntityType>
+  <EntityType Name="FAQ">
+    <Key>
+      <PropertyRef Name="maFAQ" />
+    </Key>
+    <Property Name="maFAQ" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="cauHoi" Type="varchar" MaxLength="1000" Nullable="false" />
+    <Property Name="cauTraLoi" Type="varchar" MaxLength="1000" Nullable="false" />
+  </EntityType>
   <EntityType Name="LoaiChoThue">
     <Key>
       <PropertyRef Name="maLoaiChoThue" />
@@ -71,9 +79,20 @@
     <Property Name="tenDuong" Type="varchar" MaxLength="255" Nullable="false" />
     <Property Name="phuongXa" Type="varchar" MaxLength="45" />
     <Property Name="quanHuyen" Type="varchar" MaxLength="45" />
-    <Property Name="moTa" Type="varchar" MaxLength="45" />
+    <Property Name="moTa" Type="varchar" MaxLength="1000" />
     <Property Name="TienNha" Type="decimal" Precision="10" Scale="0" />
     <Property Name="ngayCapNhat" Type="datetime" Precision="0" StoreGeneratedPattern="None" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TinNhan">
+    <Key>
+      <PropertyRef Name="maTinNhan" />
+    </Key>
+    <Property Name="maTinNhan" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="maNguoiGui" Type="int" Nullable="false" />
+    <Property Name="maNguoiNhan" Type="int" Nullable="false" />
+    <Property Name="loai" Type="int" Nullable="false" />
+    <Property Name="noiDung" Type="varchar" MaxLength="1000" Nullable="false" />
+    <Property Name="ngayGui" Type="datetime" Precision="0" Nullable="false" />
   </EntityType>
   <EntityType Name="TinTuc">
     <Key>
@@ -102,6 +121,34 @@
       </Principal>
       <Dependent Role="AnhNha">
         <PropertyRef Name="maNha" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_nguoi_gui">
+    <End Role="NguoiDung" Type="Self.NguoiDung" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="TinNhan" Type="Self.TinNhan" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="NguoiDung">
+        <PropertyRef Name="maNguoiDung" />
+      </Principal>
+      <Dependent Role="TinNhan">
+        <PropertyRef Name="maNguoiGui" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="fk_nguoi_nhan">
+    <End Role="NguoiDung" Type="Self.NguoiDung" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="TinNhan" Type="Self.TinNhan" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="NguoiDung">
+        <PropertyRef Name="maNguoiDung" />
+      </Principal>
+      <Dependent Role="TinNhan">
+        <PropertyRef Name="maNguoiNhan" />
       </Dependent>
     </ReferentialConstraint>
   </Association>
@@ -193,14 +240,24 @@
     <EntitySet Name="AnhNha" EntityType="Self.AnhNha" Schema="XQ0Qgj8xlH" store:Type="Tables" />
     <EntitySet Name="CoSoVatChat" EntityType="Self.CoSoVatChat" Schema="XQ0Qgj8xlH" store:Type="Tables" />
     <EntitySet Name="DanhGia" EntityType="Self.DanhGia" Schema="XQ0Qgj8xlH" store:Type="Tables" />
+    <EntitySet Name="FAQ" EntityType="Self.FAQ" Schema="XQ0Qgj8xlH" store:Type="Tables" />
     <EntitySet Name="LoaiChoThue" EntityType="Self.LoaiChoThue" Schema="XQ0Qgj8xlH" store:Type="Tables" />
     <EntitySet Name="NguoiDung" EntityType="Self.NguoiDung" Schema="XQ0Qgj8xlH" store:Type="Tables" />
     <EntitySet Name="Nha" EntityType="Self.Nha" Schema="XQ0Qgj8xlH" store:Type="Tables" />
+    <EntitySet Name="TinNhan" EntityType="Self.TinNhan" Schema="XQ0Qgj8xlH" store:Type="Tables" />
     <EntitySet Name="TinTuc" EntityType="Self.TinTuc" Schema="XQ0Qgj8xlH" store:Type="Tables" />
     <EntitySet Name="YeuThich" EntityType="Self.YeuThich" Schema="XQ0Qgj8xlH" store:Type="Tables" />
     <AssociationSet Name="FK_Anh_maNha" Association="Self.FK_Anh_maNha">
       <End Role="Nha" EntitySet="Nha" />
       <End Role="AnhNha" EntitySet="AnhNha" />
+    </AssociationSet>
+    <AssociationSet Name="fk_nguoi_gui" Association="Self.fk_nguoi_gui">
+      <End Role="NguoiDung" EntitySet="NguoiDung" />
+      <End Role="TinNhan" EntitySet="TinNhan" />
+    </AssociationSet>
+    <AssociationSet Name="fk_nguoi_nhan" Association="Self.fk_nguoi_nhan">
+      <End Role="NguoiDung" EntitySet="NguoiDung" />
+      <End Role="TinNhan" EntitySet="TinNhan" />
     </AssociationSet>
     <AssociationSet Name="maCoSoVatChat" Association="Self.maCoSoVatChat">
       <End Role="CoSoVatChat" EntitySet="CoSoVatChat" />

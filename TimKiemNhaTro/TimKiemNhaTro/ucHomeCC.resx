@@ -147,11 +147,11 @@
   <data name="&gt;&gt;label6.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
-  <data name="&gt;&gt;lblCountChuTro.Parent" xml:space="preserve">
-    <value>pnlChuTro</value>
-  </data>
   <data name="label13.Size" type="System.Drawing.Size, System.Drawing">
     <value>153, 36</value>
+  </data>
+  <data name="label12.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
   <data name="&gt;&gt;label5.ZOrder" xml:space="preserve">
     <value>2</value>
@@ -165,20 +165,17 @@
   <data name="label12.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 9pt, style=Bold</value>
   </data>
-  <data name="&gt;&gt;btnXemThem.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="label10.Text" xml:space="preserve">
+    <value>Quận, Huyện</value>
   </data>
-  <data name="&gt;&gt;gunaGradientButton1.ZOrder" xml:space="preserve">
-    <value>0</value>
+  <data name="btnXemThem.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 9.75pt, style=Bold</value>
   </data>
   <data name="rtxTieuDeLon.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 18pt, style=Bold</value>
   </data>
-  <data name="gunaButton2.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Stretch</value>
-  </data>
-  <data name="pictureBox5.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
-    <value>CenterImage</value>
+  <data name="label4.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
   </data>
   <data name="gunaComboBox1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 4, 4, 4</value>
@@ -186,14 +183,14 @@
   <data name="gunaButton1.Size" type="System.Drawing.Size, System.Drawing">
     <value>145, 42</value>
   </data>
-  <data name="&gt;&gt;panel2.ZOrder" xml:space="preserve">
-    <value>1</value>
-  </data>
   <data name="&gt;&gt;pictureBox5.Type" xml:space="preserve">
     <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;btnXemThem.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;label12.Name" xml:space="preserve">
+    <value>label12</value>
   </data>
   <data name="&gt;&gt;btnQuan10.Name" xml:space="preserve">
     <value>btnQuan10</value>
@@ -203,9 +200,6 @@
   </data>
   <data name="btnQuan10.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 4, 4, 4</value>
-  </data>
-  <data name="pnlNhaTro.Location" type="System.Drawing.Point, System.Drawing">
-    <value>5, 208</value>
   </data>
   <data name="&gt;&gt;pictureBox2.Type" xml:space="preserve">
     <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -225,6 +219,12 @@
   <data name="&gt;&gt;pnlTimKiem.ZOrder" xml:space="preserve">
     <value>21</value>
   </data>
+  <data name="label13.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 18pt</value>
+  </data>
+  <data name="label5.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
   <data name="label14.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
@@ -234,11 +234,17 @@
   <data name="btnQuan7.Location" type="System.Drawing.Point, System.Drawing">
     <value>439, 498</value>
   </data>
+  <data name="btnQuan1.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>StretchImage</value>
+  </data>
   <data name="pnlNguoiDung.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 4, 4, 4</value>
   </data>
   <data name="pictureBox2.TabIndex" type="System.Int32, mscorlib">
     <value>10</value>
+  </data>
+  <data name="btnBinhThanh.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="label14.Size" type="System.Drawing.Size, System.Drawing">
     <value>55, 29</value>
@@ -255,14 +261,8 @@
   <data name="&gt;&gt;btnThuDuc.Type" xml:space="preserve">
     <value>Guna.UI.WinForms.GunaPictureBox, Guna.UI, Version=1.9.0.1, Culture=neutral, PublicKeyToken=ad275b4be6718d4b</value>
   </data>
-  <data name="btnQuan7.Size" type="System.Drawing.Size, System.Drawing">
-    <value>272, 192</value>
-  </data>
   <data name="gunaButton9.Text" xml:space="preserve">
     <value>Quận 7</value>
-  </data>
-  <data name="gunaGradientButton1.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 9pt</value>
   </data>
   <data name="&gt;&gt;gunaComboBox3.Parent" xml:space="preserve">
     <value>pnlTimKiem</value>
@@ -279,14 +279,11 @@
   <data name="&gt;&gt;gunaButton2.Name" xml:space="preserve">
     <value>gunaButton2</value>
   </data>
-  <data name="pictureBox10.Size" type="System.Drawing.Size, System.Drawing">
-    <value>61, 53</value>
+  <data name="&gt;&gt;gunaButton2.ZOrder" xml:space="preserve">
+    <value>13</value>
   </data>
   <data name="panel4.TabIndex" type="System.Int32, mscorlib">
     <value>83</value>
-  </data>
-  <data name="btnGoVap.Size" type="System.Drawing.Size, System.Drawing">
-    <value>272, 192</value>
   </data>
   <data name="btnBinhThanh.TabIndex" type="System.Int32, mscorlib">
     <value>87</value>
@@ -294,11 +291,17 @@
   <data name="pictureBox4.Size" type="System.Drawing.Size, System.Drawing">
     <value>28, 32</value>
   </data>
-  <data name="&gt;&gt;label5.Name" xml:space="preserve">
-    <value>label5</value>
+  <data name="&gt;&gt;gunaButton8.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
-  <data name="&gt;&gt;btnTanBinh.Name" xml:space="preserve">
-    <value>btnTanBinh</value>
+  <data name="pictureBox5.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>CenterImage</value>
+  </data>
+  <data name="label17.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="&gt;&gt;gunaButton1.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
   <data name="&gt;&gt;pictureBox4.Parent" xml:space="preserve">
     <value>pnlChuTro</value>
@@ -336,20 +339,20 @@
   <data name="&gt;&gt;gunaComboBox2.Name" xml:space="preserve">
     <value>gunaComboBox2</value>
   </data>
+  <data name="label10.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 9pt, style=Bold</value>
+  </data>
   <data name="lblTopTitle.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 2, 3, 2</value>
-  </data>
-  <data name="gunaGradientButton1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
   </data>
   <data name="&gt;&gt;gunaGradientButton1.Name" xml:space="preserve">
     <value>gunaGradientButton1</value>
   </data>
-  <data name="lblCountTro.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 24pt</value>
-  </data>
   <data name="&gt;&gt;label4.Parent" xml:space="preserve">
     <value>pnlNhaTro</value>
+  </data>
+  <data name="btnQuan7.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
   </data>
   <data name="label6.Location" type="System.Drawing.Point, System.Drawing">
     <value>169, 14</value>
@@ -360,17 +363,17 @@
   <data name="&gt;&gt;label10.Name" xml:space="preserve">
     <value>label10</value>
   </data>
+  <data name="&gt;&gt;pnlTimKiem.Type" xml:space="preserve">
+    <value>Guna.UI.WinForms.GunaShadowPanel, Guna.UI, Version=1.9.0.1, Culture=neutral, PublicKeyToken=ad275b4be6718d4b</value>
+  </data>
   <data name="&gt;&gt;label5.Parent" xml:space="preserve">
     <value>pnlChuTro</value>
-  </data>
-  <data name="label12.Text" xml:space="preserve">
-    <value>Loại hình</value>
   </data>
   <data name="&gt;&gt;btnQuan10.ZOrder" xml:space="preserve">
     <value>14</value>
   </data>
-  <data name="label9.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="panel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>713, 118</value>
   </data>
   <data name="lblCountNguoiDung.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 24pt</value>
@@ -384,12 +387,6 @@
   <data name="&gt;&gt;pictureBox2.Parent" xml:space="preserve">
     <value>pnlNhaTro</value>
   </data>
-  <data name="rtxTieuDeLon.Text" xml:space="preserve">
-    <value>Làm cho
-cuộc sống của bạn
-thoải mái
-với </value>
-  </data>
   <data name="btnTanBinh.Location" type="System.Drawing.Point, System.Drawing">
     <value>1119, 727</value>
   </data>
@@ -399,8 +396,8 @@ với </value>
   <data name="flwTinTuc.Size" type="System.Drawing.Size, System.Drawing">
     <value>1297, 371</value>
   </data>
-  <data name="label8.Location" type="System.Drawing.Point, System.Drawing">
-    <value>246, 83</value>
+  <data name="label11.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
   <data name="&gt;&gt;gunaComboBox3.Type" xml:space="preserve">
     <value>Guna.UI.WinForms.GunaComboBox, Guna.UI, Version=1.9.0.1, Culture=neutral, PublicKeyToken=ad275b4be6718d4b</value>
@@ -414,26 +411,17 @@ với </value>
   <data name="pnlTimKiem.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
   </data>
-  <data name="&gt;&gt;label8.Parent" xml:space="preserve">
-    <value>pnlChuTro</value>
-  </data>
-  <data name="btnGoVap.TabIndex" type="System.Int32, mscorlib">
-    <value>98</value>
+  <data name="gunaButton3.TabIndex" type="System.Int32, mscorlib">
+    <value>93</value>
   </data>
   <data name="&gt;&gt;gunaButton1.Type" xml:space="preserve">
     <value>Guna.UI.WinForms.GunaButton, Guna.UI, Version=1.9.0.1, Culture=neutral, PublicKeyToken=ad275b4be6718d4b</value>
-  </data>
-  <data name="label6.TabIndex" type="System.Int32, mscorlib">
-    <value>15</value>
   </data>
   <data name="panel4.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 4, 4, 4</value>
   </data>
   <data name="&gt;&gt;pictureBox1.Parent" xml:space="preserve">
     <value>$this</value>
-  </data>
-  <data name="gunaComboBox1.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 10pt</value>
   </data>
   <data name="&gt;&gt;pictureBox8.Parent" xml:space="preserve">
     <value>panel2</value>
@@ -444,11 +432,11 @@ với </value>
   <data name="gunaButton11.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
   </data>
-  <data name="pictureBox1.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
-    <value>StretchImage</value>
+  <data name="pictureBox3.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
-  <data name="label12.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 0, 4, 0</value>
+  <data name="btnBinhThanh.Size" type="System.Drawing.Size, System.Drawing">
+    <value>272, 192</value>
   </data>
   <data name="label1.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -467,9 +455,6 @@ với </value>
   </data>
   <data name="&gt;&gt;btnPhuNhuan.Parent" xml:space="preserve">
     <value>$this</value>
-  </data>
-  <data name="&gt;&gt;panel7.Name" xml:space="preserve">
-    <value>panel7</value>
   </data>
   <data name="btnTanBinh.TabIndex" type="System.Int32, mscorlib">
     <value>100</value>
@@ -492,9 +477,6 @@ với </value>
   <data name="gunaButton2.TabIndex" type="System.Int32, mscorlib">
     <value>91</value>
   </data>
-  <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>177, 33</value>
-  </data>
   <data name="label2.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 15.75pt, style=Bold</value>
   </data>
@@ -504,8 +486,8 @@ với </value>
   <data name="pictureBox5.Size" type="System.Drawing.Size, System.Drawing">
     <value>61, 53</value>
   </data>
-  <data name="rtxTieuDeLon.TabIndex" type="System.Int32, mscorlib">
-    <value>51</value>
+  <data name="&gt;&gt;label9.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
   <data name="lblTopTitle.Size" type="System.Drawing.Size, System.Drawing">
     <value>108, 42</value>
@@ -513,8 +495,8 @@ với </value>
   <data name="gunaButton9.Size" type="System.Drawing.Size, System.Drawing">
     <value>119, 42</value>
   </data>
-  <data name="gunaComboBox1.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
+  <data name="label13.Text" xml:space="preserve">
+    <value>Số nhà trọ</value>
   </data>
   <data name="gunaButton1.TabIndex" type="System.Int32, mscorlib">
     <value>89</value>
@@ -546,14 +528,8 @@ với </value>
   <data name="&gt;&gt;gunaButton10.ZOrder" xml:space="preserve">
     <value>5</value>
   </data>
-  <data name="label17.Size" type="System.Drawing.Size, System.Drawing">
-    <value>76, 29</value>
-  </data>
   <data name="&gt;&gt;panel6.ZOrder" xml:space="preserve">
     <value>30</value>
-  </data>
-  <data name="&gt;&gt;panel1.ZOrder" xml:space="preserve">
-    <value>29</value>
   </data>
   <data name="label12.Size" type="System.Drawing.Size, System.Drawing">
     <value>76, 18</value>
@@ -573,8 +549,8 @@ với </value>
   <data name="lblCountChuTro.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="gunaButton3.TabIndex" type="System.Int32, mscorlib">
-    <value>93</value>
+  <data name="&gt;&gt;pictureBox10.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="btnQuan1.Size" type="System.Drawing.Size, System.Drawing">
     <value>272, 192</value>
@@ -582,14 +558,14 @@ với </value>
   <data name="&gt;&gt;gunaComboBox1.Type" xml:space="preserve">
     <value>Guna.UI.WinForms.GunaComboBox, Guna.UI, Version=1.9.0.1, Culture=neutral, PublicKeyToken=ad275b4be6718d4b</value>
   </data>
-  <data name="label1.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 9.75pt</value>
-  </data>
   <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
     <value>88, 138</value>
   </data>
-  <data name="&gt;&gt;rtxTieuDeLon.ZOrder" xml:space="preserve">
-    <value>27</value>
+  <data name="&gt;&gt;pictureBox8.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>210, 36</value>
   </data>
   <data name="gunaComboBox2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 4, 4, 4</value>
@@ -602,6 +578,9 @@ với </value>
   </data>
   <data name="&gt;&gt;$this.Type" xml:space="preserve">
     <value>System.Windows.Forms.UserControl, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="label1.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
   </data>
   <data name="&gt;&gt;label14.Parent" xml:space="preserve">
     <value>pnlNhaTro</value>
@@ -624,9 +603,6 @@ với </value>
   <data name="&gt;&gt;btnPhuNhuan.Name" xml:space="preserve">
     <value>btnPhuNhuan</value>
   </data>
-  <data name="label11.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 9pt, style=Bold</value>
-  </data>
   <data name="&gt;&gt;gunaButton8.ZOrder" xml:space="preserve">
     <value>9</value>
   </data>
@@ -635,9 +611,6 @@ với </value>
   </data>
   <data name="label11.Size" type="System.Drawing.Size, System.Drawing">
     <value>92, 18</value>
-  </data>
-  <data name="label17.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 0, 4, 0</value>
   </data>
   <data name="pnlTimKiem.Size" type="System.Drawing.Size, System.Drawing">
     <value>711, 70</value>
@@ -651,8 +624,8 @@ với </value>
   <data name="label9.Location" type="System.Drawing.Point, System.Drawing">
     <value>32, 983</value>
   </data>
-  <data name="label2.TabIndex" type="System.Int32, mscorlib">
-    <value>52</value>
+  <data name="pictureBox1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>677, 345</value>
   </data>
   <data name="&gt;&gt;label17.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -663,11 +636,11 @@ với </value>
   <data name="flwCapNhatGanNhat.Size" type="System.Drawing.Size, System.Drawing">
     <value>1297, 371</value>
   </data>
+  <data name="&gt;&gt;btnTanBinh.Name" xml:space="preserve">
+    <value>btnTanBinh</value>
+  </data>
   <data name="gunaButton2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 2, 3, 2</value>
-  </data>
-  <data name="gunaButton2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>859, 648</value>
   </data>
   <data name="&gt;&gt;flwTinTuc.Type" xml:space="preserve">
     <value>System.Windows.Forms.FlowLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -681,11 +654,11 @@ với </value>
   <data name="gunaButton10.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 12pt, style=Bold</value>
   </data>
+  <data name="&gt;&gt;btnTanBinh.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
   <data name="&gt;&gt;gunaButton3.Name" xml:space="preserve">
     <value>gunaButton3</value>
-  </data>
-  <data name="&gt;&gt;pictureBox4.ZOrder" xml:space="preserve">
-    <value>0</value>
   </data>
   <data name="label9.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 12pt, style=Bold</value>
@@ -693,8 +666,14 @@ với </value>
   <data name="gunaButton2.Text" xml:space="preserve">
     <value>Quận 10</value>
   </data>
+  <data name="&gt;&gt;flwCapNhatGanNhat.Name" xml:space="preserve">
+    <value>flwCapNhatGanNhat</value>
+  </data>
   <data name="pictureBox1.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>None</value>
+  </data>
+  <data name="lblCountNguoiDung.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
   </data>
   <data name="btnQuan1.TabIndex" type="System.Int32, mscorlib">
     <value>86</value>
@@ -741,9 +720,6 @@ với </value>
   <data name="pictureBox8.TabIndex" type="System.Int32, mscorlib">
     <value>8</value>
   </data>
-  <data name="gunaButton11.Text" xml:space="preserve">
-    <value>Tân Bình</value>
-  </data>
   <data name="&gt;&gt;pictureBox3.Type" xml:space="preserve">
     <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
@@ -753,7 +729,7 @@ với </value>
   <data name="&gt;&gt;lblCountNguoiDung.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;label12.Parent" xml:space="preserve">
+  <data name="&gt;&gt;label10.Parent" xml:space="preserve">
     <value>pnlTimKiem</value>
   </data>
   <data name="&gt;&gt;panel1.Name" xml:space="preserve">
@@ -768,11 +744,8 @@ với </value>
   <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
     <value>235, 21</value>
   </data>
-  <data name="&gt;&gt;label9.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;pnlNhaTro.Name" xml:space="preserve">
-    <value>pnlNhaTro</value>
+  <data name="flwCapNhatGanNhat.Location" type="System.Drawing.Point, System.Drawing">
+    <value>86, 1023</value>
   </data>
   <data name="&gt;&gt;label8.Name" xml:space="preserve">
     <value>label8</value>
@@ -783,20 +756,23 @@ với </value>
   <data name="&gt;&gt;btnQuan7.ZOrder" xml:space="preserve">
     <value>8</value>
   </data>
-  <data name="label17.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="panel4.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Top, Right</value>
   </data>
   <data name="gunaComboBox3.Size" type="System.Drawing.Size, System.Drawing">
     <value>160, 31</value>
   </data>
-  <data name="&gt;&gt;gunaButton2.Type" xml:space="preserve">
-    <value>Guna.UI.WinForms.GunaButton, Guna.UI, Version=1.9.0.1, Culture=neutral, PublicKeyToken=ad275b4be6718d4b</value>
+  <data name="gunaButton11.Size" type="System.Drawing.Size, System.Drawing">
+    <value>123, 42</value>
   </data>
   <data name="pictureBox4.TabIndex" type="System.Int32, mscorlib">
     <value>16</value>
   </data>
   <data name="&gt;&gt;pictureBox3.Parent" xml:space="preserve">
     <value>pnlNguoiDung</value>
+  </data>
+  <data name="&gt;&gt;panel5.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
   <data name="&gt;&gt;flwCapNhatGanNhat.Type" xml:space="preserve">
     <value>System.Windows.Forms.FlowLayoutPanel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -831,20 +807,23 @@ với </value>
   <data name="gunaButton11.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 12pt, style=Bold</value>
   </data>
+  <data name="lblCountNguoiDung.Size" type="System.Drawing.Size, System.Drawing">
+    <value>64, 48</value>
+  </data>
   <data name="btnTanBinh.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 4, 4, 4</value>
   </data>
   <data name="&gt;&gt;label1.Name" xml:space="preserve">
     <value>label1</value>
   </data>
-  <data name="panel4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1430, 27</value>
-  </data>
   <data name="gunaComboBox2.Size" type="System.Drawing.Size, System.Drawing">
     <value>185, 31</value>
   </data>
   <data name="&gt;&gt;label12.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="gunaButton3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>143, 42</value>
   </data>
   <data name="panel3.Location" type="System.Drawing.Point, System.Drawing">
     <value>31, 14</value>
@@ -855,8 +834,8 @@ với </value>
   <data name="&gt;&gt;gunaButton9.Type" xml:space="preserve">
     <value>Guna.UI.WinForms.GunaButton, Guna.UI, Version=1.9.0.1, Culture=neutral, PublicKeyToken=ad275b4be6718d4b</value>
   </data>
-  <data name="&gt;&gt;label10.Parent" xml:space="preserve">
-    <value>pnlTimKiem</value>
+  <data name="&gt;&gt;lblCountChuTro.Parent" xml:space="preserve">
+    <value>pnlChuTro</value>
   </data>
   <data name="label4.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -864,11 +843,20 @@ với </value>
   <data name="&gt;&gt;panel3.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
+  <data name="pnlChuTro.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
   <data name="label1.Text" xml:space="preserve">
     <value>Tổng số người  dùng ứng dụng</value>
   </data>
   <data name="&gt;&gt;gunaButton3.Parent" xml:space="preserve">
     <value>$this</value>
+  </data>
+  <data name="btnQuan10.Location" type="System.Drawing.Point, System.Drawing">
+    <value>779, 498</value>
+  </data>
+  <data name="btnThuDuc.Location" type="System.Drawing.Point, System.Drawing">
+    <value>439, 727</value>
   </data>
   <data name="&gt;&gt;btnGoVap.Parent" xml:space="preserve">
     <value>$this</value>
@@ -894,29 +882,17 @@ với </value>
   <data name="&gt;&gt;label13.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="label27.Location" type="System.Drawing.Point, System.Drawing">
-    <value>32, 449</value>
-  </data>
-  <data name="label17.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 14.25pt</value>
-  </data>
   <data name="gunaButton8.TabIndex" type="System.Int32, mscorlib">
     <value>95</value>
   </data>
-  <data name="btnTanBinh.Size" type="System.Drawing.Size, System.Drawing">
-    <value>272, 192</value>
+  <data name="&gt;&gt;btnPhuNhuan.ZOrder" xml:space="preserve">
+    <value>12</value>
   </data>
-  <data name="&gt;&gt;label14.Name" xml:space="preserve">
-    <value>label14</value>
+  <data name="&gt;&gt;lblTopTitle.Name" xml:space="preserve">
+    <value>lblTopTitle</value>
   </data>
   <data name="btnPhuNhuan.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 4, 4, 4</value>
-  </data>
-  <data name="pictureBox5.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
-  </data>
-  <data name="&gt;&gt;btnGoVap.Name" xml:space="preserve">
-    <value>btnGoVap</value>
   </data>
   <data name="&gt;&gt;label11.Parent" xml:space="preserve">
     <value>pnlTimKiem</value>
@@ -930,8 +906,8 @@ với </value>
   <data name="lblCountNguoiDung.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 0, 4, 0</value>
   </data>
-  <data name="pnlTimKiem.TabIndex" type="System.Int32, mscorlib">
-    <value>82</value>
+  <data name="label27.Location" type="System.Drawing.Point, System.Drawing">
+    <value>32, 449</value>
   </data>
   <data name="panel7.TabIndex" type="System.Int32, mscorlib">
     <value>15</value>
@@ -939,20 +915,14 @@ với </value>
   <data name="pnlNhaTro.TabIndex" type="System.Int32, mscorlib">
     <value>59</value>
   </data>
-  <data name="label4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>67, 158</value>
-  </data>
-  <data name="&gt;&gt;btnThuDuc.Name" xml:space="preserve">
-    <value>btnThuDuc</value>
-  </data>
   <data name="&gt;&gt;pictureBox2.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
   <data name="btnThuDuc.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
   </data>
-  <data name="label18.Size" type="System.Drawing.Size, System.Drawing">
-    <value>175, 24</value>
+  <data name="&gt;&gt;label6.Name" xml:space="preserve">
+    <value>label6</value>
   </data>
   <data name="panel5.Location" type="System.Drawing.Point, System.Drawing">
     <value>743, 382</value>
@@ -963,8 +933,8 @@ với </value>
   <data name="&gt;&gt;label10.ZOrder" xml:space="preserve">
     <value>6</value>
   </data>
-  <data name="label4.TabIndex" type="System.Int32, mscorlib">
-    <value>9</value>
+  <data name="&gt;&gt;label12.ZOrder" xml:space="preserve">
+    <value>2</value>
   </data>
   <data name="&gt;&gt;gunaButton9.Name" xml:space="preserve">
     <value>gunaButton9</value>
@@ -978,6 +948,9 @@ với </value>
   <data name="&gt;&gt;pictureBox5.Name" xml:space="preserve">
     <value>pictureBox5</value>
   </data>
+  <data name="&gt;&gt;gunaButton3.ZOrder" xml:space="preserve">
+    <value>11</value>
+  </data>
   <data name="pnlNguoiDung.Size" type="System.Drawing.Size, System.Drawing">
     <value>351, 207</value>
   </data>
@@ -986,6 +959,9 @@ với </value>
   </data>
   <data name="panel1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 4, 4, 4</value>
+  </data>
+  <data name="pictureBox4.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>CenterImage</value>
   </data>
   <data name="flwCapNhatGanNhat.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -999,23 +975,29 @@ với </value>
   <data name="gunaButton8.Size" type="System.Drawing.Size, System.Drawing">
     <value>127, 42</value>
   </data>
+  <data name="pnlTimKiem.TabIndex" type="System.Int32, mscorlib">
+    <value>82</value>
+  </data>
   <data name="panel4.Size" type="System.Drawing.Size, System.Drawing">
     <value>63, 28</value>
+  </data>
+  <data name="gunaButton3.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 12pt, style=Bold</value>
   </data>
   <data name="pnlChuTro.Size" type="System.Drawing.Size, System.Drawing">
     <value>351, 180</value>
   </data>
-  <data name="&gt;&gt;btnQuan1.ZOrder" xml:space="preserve">
-    <value>18</value>
-  </data>
   <data name="&gt;&gt;btnQuan1.Name" xml:space="preserve">
     <value>btnQuan1</value>
   </data>
-  <data name="label13.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 0, 4, 0</value>
+  <data name="&gt;&gt;label6.Parent" xml:space="preserve">
+    <value>pnlChuTro</value>
   </data>
   <data name="&gt;&gt;rtxTieuDeLon.Type" xml:space="preserve">
     <value>System.Windows.Forms.RichTextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;panel6.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
   <data name="&gt;&gt;label11.ZOrder" xml:space="preserve">
     <value>4</value>
@@ -1032,20 +1014,20 @@ với </value>
   <data name="gunaGradientButton1.Size" type="System.Drawing.Size, System.Drawing">
     <value>76, 52</value>
   </data>
+  <data name="&gt;&gt;label13.Parent" xml:space="preserve">
+    <value>pnlNhaTro</value>
+  </data>
   <data name="&gt;&gt;pictureBox4.Name" xml:space="preserve">
     <value>pictureBox4</value>
+  </data>
+  <data name="btnQuan7.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="gunaButton10.Size" type="System.Drawing.Size, System.Drawing">
     <value>108, 42</value>
   </data>
-  <data name="&gt;&gt;label4.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
   <data name="pnlTimKiem.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 4, 4, 4</value>
-  </data>
-  <data name="&gt;&gt;label2.Parent" xml:space="preserve">
-    <value>$this</value>
   </data>
   <data name="gunaButton10.Text" xml:space="preserve">
     <value>Gò vấp</value>
@@ -1071,14 +1053,14 @@ với </value>
   <data name="label3.TabIndex" type="System.Int32, mscorlib">
     <value>15</value>
   </data>
+  <data name="gunaButton1.Text" xml:space="preserve">
+    <value>Bình Thạnh</value>
+  </data>
   <data name="flwTinTuc.AutoScroll" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
   <data name="pictureBox5.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 4, 4, 4</value>
-  </data>
-  <data name="&gt;&gt;panel7.Parent" xml:space="preserve">
-    <value>pnlNhaTro</value>
   </data>
   <data name="lblCountChuTro.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 24pt</value>
@@ -1086,32 +1068,23 @@ với </value>
   <data name="label8.Text" xml:space="preserve">
     <value>Người</value>
   </data>
-  <data name="label6.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 0, 4, 0</value>
+  <data name="gunaButton3.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
   </data>
   <data name="&gt;&gt;gunaGradientButton1.Type" xml:space="preserve">
     <value>Guna.UI.WinForms.GunaGradientButton, Guna.UI, Version=1.9.0.1, Culture=neutral, PublicKeyToken=ad275b4be6718d4b</value>
   </data>
-  <data name="gunaButton8.Location" type="System.Drawing.Point, System.Drawing">
-    <value>519, 874</value>
+  <data name="&gt;&gt;btnThuDuc.Name" xml:space="preserve">
+    <value>btnThuDuc</value>
   </data>
-  <data name="label10.Location" type="System.Drawing.Point, System.Drawing">
-    <value>33, 11</value>
+  <data name="gunaComboBox1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 10pt</value>
   </data>
-  <data name="gunaButton9.Location" type="System.Drawing.Point, System.Drawing">
-    <value>525, 648</value>
-  </data>
-  <data name="gunaButton3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>143, 42</value>
-  </data>
-  <data name="btnQuan7.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Stretch</value>
+  <data name="&gt;&gt;panel2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;panel4.Parent" xml:space="preserve">
     <value>$this</value>
-  </data>
-  <data name="&gt;&gt;gunaButton11.Name" xml:space="preserve">
-    <value>gunaButton11</value>
   </data>
   <data name="panel2.Location" type="System.Drawing.Point, System.Drawing">
     <value>31, 14</value>
@@ -1122,14 +1095,17 @@ với </value>
   <data name="btnGoVap.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
     <value>StretchImage</value>
   </data>
+  <data name="gunaComboBox2.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 10pt</value>
+  </data>
   <data name="panel1.TabIndex" type="System.Int32, mscorlib">
     <value>63</value>
   </data>
   <data name="btnQuan10.Size" type="System.Drawing.Size, System.Drawing">
     <value>272, 192</value>
   </data>
-  <data name="&gt;&gt;panel5.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="&gt;&gt;rtxTieuDeLon.ZOrder" xml:space="preserve">
+    <value>27</value>
   </data>
   <data name="label8.TabIndex" type="System.Int32, mscorlib">
     <value>8</value>
@@ -1161,23 +1137,32 @@ với </value>
   <data name="label5.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 9.75pt</value>
   </data>
-  <data name="panel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>713, 118</value>
+  <data name="&gt;&gt;pictureBox4.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
-  <data name="&gt;&gt;btnPhuNhuan.ZOrder" xml:space="preserve">
-    <value>12</value>
+  <data name="gunaButton1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 12pt, style=Bold</value>
+  </data>
+  <data name="rtxTieuDeLon.TabIndex" type="System.Int32, mscorlib">
+    <value>51</value>
+  </data>
+  <data name="&gt;&gt;label27.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
   <data name="lblTopTitle.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 12pt, style=Bold</value>
   </data>
-  <data name="&gt;&gt;pnlTimKiem.Type" xml:space="preserve">
-    <value>Guna.UI.WinForms.GunaShadowPanel, Guna.UI, Version=1.9.0.1, Culture=neutral, PublicKeyToken=ad275b4be6718d4b</value>
+  <data name="label9.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
   </data>
   <data name="&gt;&gt;label2.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="label13.TabIndex" type="System.Int32, mscorlib">
     <value>15</value>
+  </data>
+  <data name="&gt;&gt;flwCapNhatGanNhat.ZOrder" xml:space="preserve">
+    <value>28</value>
   </data>
   <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
     <value>67, 158</value>
@@ -1188,13 +1173,19 @@ với </value>
   <data name="&gt;&gt;gunaButton2.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
+  <data name="&gt;&gt;flwTinTuc.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
   <data name="btnQuan7.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
     <value>StretchImage</value>
   </data>
   <data name="rtxTieuDeLon.Size" type="System.Drawing.Size, System.Drawing">
     <value>326, 159</value>
   </data>
-  <data name="panel4.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+  <data name="lblCountChuTro.Size" type="System.Drawing.Size, System.Drawing">
+    <value>64, 48</value>
+  </data>
+  <data name="panel6.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
   </data>
   <data name="lblCountChuTro.Text" xml:space="preserve">
@@ -1209,20 +1200,20 @@ với </value>
   <data name="&gt;&gt;label4.Name" xml:space="preserve">
     <value>label4</value>
   </data>
+  <data name="&gt;&gt;gunaButton9.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
   <data name="pictureBox3.TabIndex" type="System.Int32, mscorlib">
     <value>16</value>
   </data>
-  <data name="&gt;&gt;label8.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;label12.Parent" xml:space="preserve">
+    <value>pnlTimKiem</value>
   </data>
   <data name="&gt;&gt;gunaButton1.ZOrder" xml:space="preserve">
     <value>15</value>
   </data>
-  <data name="gunaButton8.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Stretch</value>
-  </data>
-  <data name="&gt;&gt;gunaButton1.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="&gt;&gt;panel7.Parent" xml:space="preserve">
+    <value>pnlNhaTro</value>
   </data>
   <data name="&gt;&gt;pnlNguoiDung.ZOrder" xml:space="preserve">
     <value>24</value>
@@ -1236,32 +1227,23 @@ với </value>
   <data name="&gt;&gt;gunaButton8.Name" xml:space="preserve">
     <value>gunaButton8</value>
   </data>
-  <data name="label5.Text" xml:space="preserve">
-    <value>Các chủ nhà trọ đang cho thuê</value>
+  <data name="&gt;&gt;label2.Parent" xml:space="preserve">
+    <value>$this</value>
   </data>
-  <data name="gunaButton3.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
-    <value>Stretch</value>
+  <data name="gunaButton9.Location" type="System.Drawing.Point, System.Drawing">
+    <value>525, 648</value>
   </data>
-  <data name="label14.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 0, 4, 0</value>
+  <data name="label3.Text" xml:space="preserve">
+    <value>Số người dùng</value>
   </data>
   <data name="gunaButton9.TabIndex" type="System.Int32, mscorlib">
     <value>97</value>
-  </data>
-  <data name="gunaButton11.Location" type="System.Drawing.Point, System.Drawing">
-    <value>1200, 876</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>ucHomeCC</value>
   </data>
   <data name="&gt;&gt;panel6.Type" xml:space="preserve">
     <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;pictureBox10.Parent" xml:space="preserve">
-    <value>panel7</value>
-  </data>
-  <data name="&gt;&gt;gunaComboBox3.ZOrder" xml:space="preserve">
-    <value>1</value>
   </data>
   <data name="gunaButton3.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 2, 3, 2</value>
@@ -1272,17 +1254,17 @@ với </value>
   <data name="gunaComboBox1.Size" type="System.Drawing.Size, System.Drawing">
     <value>137, 31</value>
   </data>
-  <data name="pictureBox4.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
-    <value>CenterImage</value>
+  <data name="label13.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="panel6.Size" type="System.Drawing.Size, System.Drawing">
     <value>42, 100</value>
   </data>
-  <data name="flwCapNhatGanNhat.Location" type="System.Drawing.Point, System.Drawing">
-    <value>86, 1023</value>
+  <data name="gunaGradientButton1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Segoe UI, 9pt</value>
   </data>
-  <data name="lblCountNguoiDung.TabIndex" type="System.Int32, mscorlib">
-    <value>9</value>
+  <data name="&gt;&gt;panel2.ZOrder" xml:space="preserve">
+    <value>1</value>
   </data>
   <data name="btnBinhThanh.Location" type="System.Drawing.Point, System.Drawing">
     <value>779, 727</value>
@@ -1293,11 +1275,14 @@ với </value>
   <data name="&gt;&gt;btnQuan10.Type" xml:space="preserve">
     <value>Guna.UI.WinForms.GunaPictureBox, Guna.UI, Version=1.9.0.1, Culture=neutral, PublicKeyToken=ad275b4be6718d4b</value>
   </data>
-  <data name="&gt;&gt;label12.Name" xml:space="preserve">
-    <value>label12</value>
+  <data name="&gt;&gt;panel7.Name" xml:space="preserve">
+    <value>panel7</value>
   </data>
-  <data name="label11.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="rtxTieuDeLon.Text" xml:space="preserve">
+    <value>Làm cho
+cuộc sống của bạn
+thoải mái
+với </value>
   </data>
   <data name="label13.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -1320,14 +1305,14 @@ với </value>
   <data name="&gt;&gt;label18.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="label5.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="label5.Text" xml:space="preserve">
+    <value>Các chủ nhà trọ đang cho thuê</value>
   </data>
   <data name="&gt;&gt;lblCountTro.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
-  <data name="&gt;&gt;label12.ZOrder" xml:space="preserve">
-    <value>2</value>
+  <data name="&gt;&gt;label9.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="gunaComboBox3.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
@@ -1335,20 +1320,26 @@ với </value>
   <data name="&gt;&gt;btnXemThem.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
+  <data name="label12.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
   <data name="pictureBox1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 4, 4, 4</value>
   </data>
   <data name="label8.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 0, 4, 0</value>
   </data>
-  <data name="&gt;&gt;flwCapNhatGanNhat.ZOrder" xml:space="preserve">
-    <value>28</value>
+  <data name="label27.Text" xml:space="preserve">
+    <value>Khám phá</value>
   </data>
-  <data name="btnBinhThanh.Size" type="System.Drawing.Size, System.Drawing">
+  <data name="&gt;&gt;btnGoVap.Name" xml:space="preserve">
+    <value>btnGoVap</value>
+  </data>
+  <data name="btnQuan7.Size" type="System.Drawing.Size, System.Drawing">
     <value>272, 192</value>
   </data>
-  <data name="label13.Text" xml:space="preserve">
-    <value>Số nhà trọ</value>
+  <data name="pictureBox10.Size" type="System.Drawing.Size, System.Drawing">
+    <value>61, 53</value>
   </data>
   <data name="&gt;&gt;pictureBox1.ZOrder" xml:space="preserve">
     <value>22</value>
@@ -1359,11 +1350,14 @@ với </value>
   <data name="panel3.Size" type="System.Drawing.Size, System.Drawing">
     <value>61, 68</value>
   </data>
-  <data name="lblCountChuTro.Size" type="System.Drawing.Size, System.Drawing">
-    <value>64, 48</value>
+  <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>177, 33</value>
   </data>
   <data name="$this.AutoScroll" type="System.Boolean, mscorlib">
     <value>True</value>
+  </data>
+  <data name="pnlNhaTro.Size" type="System.Drawing.Size, System.Drawing">
+    <value>351, 207</value>
   </data>
   <data name="&gt;&gt;pnlTimKiem.Name" xml:space="preserve">
     <value>pnlTimKiem</value>
@@ -1373,9 +1367,6 @@ với </value>
   </data>
   <data name="&gt;&gt;lblTopTitle.ZOrder" xml:space="preserve">
     <value>16</value>
-  </data>
-  <data name="btnQuan7.TabIndex" type="System.Int32, mscorlib">
-    <value>96</value>
   </data>
   <data name="&gt;&gt;label13.ZOrder" xml:space="preserve">
     <value>2</value>
@@ -1398,9 +1389,6 @@ với </value>
   <data name="&gt;&gt;btnTanBinh.Type" xml:space="preserve">
     <value>Guna.UI.WinForms.GunaPictureBox, Guna.UI, Version=1.9.0.1, Culture=neutral, PublicKeyToken=ad275b4be6718d4b</value>
   </data>
-  <data name="&gt;&gt;panel3.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
   <data name="panel3.TabIndex" type="System.Int32, mscorlib">
     <value>16</value>
   </data>
@@ -1422,14 +1410,11 @@ với </value>
   <data name="&gt;&gt;gunaComboBox1.Name" xml:space="preserve">
     <value>gunaComboBox1</value>
   </data>
-  <data name="&gt;&gt;label13.Parent" xml:space="preserve">
-    <value>pnlNhaTro</value>
+  <data name="btnTanBinh.Size" type="System.Drawing.Size, System.Drawing">
+    <value>272, 192</value>
   </data>
   <data name="btnXemThem.Size" type="System.Drawing.Size, System.Drawing">
     <value>97, 21</value>
-  </data>
-  <data name="rtxTieuDeLon.Location" type="System.Drawing.Point, System.Drawing">
-    <value>24, 27</value>
   </data>
   <data name="&gt;&gt;lblCountNguoiDung.Parent" xml:space="preserve">
     <value>pnlNguoiDung</value>
@@ -1443,9 +1428,6 @@ với </value>
   <data name="lblCountNguoiDung.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="lblCountChuTro.TabIndex" type="System.Int32, mscorlib">
-    <value>9</value>
-  </data>
   <data name="btnThuDuc.TabIndex" type="System.Int32, mscorlib">
     <value>94</value>
   </data>
@@ -1458,8 +1440,8 @@ với </value>
   <data name="label8.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 14.25pt</value>
   </data>
-  <data name="btnGoVap.Location" type="System.Drawing.Point, System.Drawing">
-    <value>94, 730</value>
+  <data name="panel2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>61, 68</value>
   </data>
   <data name="pictureBox10.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
@@ -1485,14 +1467,14 @@ với </value>
   <data name="btnGoVap.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
   </data>
-  <data name="btnQuan1.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
-    <value>StretchImage</value>
+  <data name="&gt;&gt;gunaComboBox3.ZOrder" xml:space="preserve">
+    <value>1</value>
   </data>
   <data name="gunaComboBox3.Font" type="System.Drawing.Font, System.Drawing">
     <value>Segoe UI, 10pt</value>
   </data>
-  <data name="label12.TabIndex" type="System.Int32, mscorlib">
-    <value>6</value>
+  <data name="label12.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="&gt;&gt;label5.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -1506,14 +1488,14 @@ với </value>
   <data name="label5.TabIndex" type="System.Int32, mscorlib">
     <value>9</value>
   </data>
-  <data name="&gt;&gt;gunaButton3.ZOrder" xml:space="preserve">
-    <value>11</value>
+  <data name="&gt;&gt;gunaButton11.Name" xml:space="preserve">
+    <value>gunaButton11</value>
   </data>
   <data name="&gt;&gt;label8.ZOrder" xml:space="preserve">
     <value>5</value>
   </data>
-  <data name="label3.Text" xml:space="preserve">
-    <value>Số người dùng</value>
+  <data name="label8.Location" type="System.Drawing.Point, System.Drawing">
+    <value>246, 83</value>
   </data>
   <data name="pictureBox10.TabIndex" type="System.Int32, mscorlib">
     <value>8</value>
@@ -1527,11 +1509,14 @@ với </value>
   <data name="btnPhuNhuan.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
   </data>
-  <data name="&gt;&gt;pictureBox10.Type" xml:space="preserve">
-    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="pnlNhaTro.Location" type="System.Drawing.Point, System.Drawing">
+    <value>5, 208</value>
   </data>
   <data name="btnGoVap.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 4, 4, 4</value>
+  </data>
+  <data name="gunaComboBox2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>193, 31</value>
   </data>
   <data name="&gt;&gt;panel1.Parent" xml:space="preserve">
     <value>$this</value>
@@ -1542,8 +1527,8 @@ với </value>
   <data name="gunaComboBox1.Location" type="System.Drawing.Point, System.Drawing">
     <value>33, 31</value>
   </data>
-  <data name="btnThuDuc.Location" type="System.Drawing.Point, System.Drawing">
-    <value>439, 727</value>
+  <data name="label6.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
     <value>2</value>
@@ -1557,14 +1542,20 @@ với </value>
   <data name="&gt;&gt;gunaButton10.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
+  <data name="btnQuan1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
+  </data>
   <data name="btnThuDuc.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 4, 4, 4</value>
+  </data>
+  <data name="label17.Location" type="System.Drawing.Point, System.Drawing">
+    <value>246, 98</value>
   </data>
   <data name="&gt;&gt;pnlNguoiDung.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="gunaComboBox2.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Segoe UI, 10pt</value>
+  <data name="label17.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 14.25pt</value>
   </data>
   <data name="btnPhuNhuan.TabIndex" type="System.Int32, mscorlib">
     <value>92</value>
@@ -1584,8 +1575,8 @@ với </value>
   <data name="gunaComboBox2.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
   </data>
-  <data name="&gt;&gt;gunaButton2.ZOrder" xml:space="preserve">
-    <value>13</value>
+  <data name="label17.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="&gt;&gt;panel7.Type" xml:space="preserve">
     <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -1599,8 +1590,8 @@ với </value>
   <data name="&gt;&gt;btnQuan7.Name" xml:space="preserve">
     <value>btnQuan7</value>
   </data>
-  <data name="&gt;&gt;pictureBox8.ZOrder" xml:space="preserve">
-    <value>0</value>
+  <data name="&gt;&gt;label4.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="label18.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 12pt, style=Bold</value>
@@ -1614,8 +1605,8 @@ với </value>
   <data name="rtxTieuDeLon.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 4, 4, 4</value>
   </data>
-  <data name="panel6.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
-    <value>Top, Right</value>
+  <data name="pictureBox1.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
+    <value>StretchImage</value>
   </data>
   <data name="&gt;&gt;panel4.Name" xml:space="preserve">
     <value>panel4</value>
@@ -1623,14 +1614,14 @@ với </value>
   <data name="btnBinhThanh.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
     <value>StretchImage</value>
   </data>
-  <data name="btnQuan7.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
+  <data name="&gt;&gt;gunaGradientButton1.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="gunaButton9.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 12pt, style=Bold</value>
   </data>
-  <data name="pnlNhaTro.Size" type="System.Drawing.Size, System.Drawing">
-    <value>351, 207</value>
+  <data name="btnGoVap.TabIndex" type="System.Int32, mscorlib">
+    <value>98</value>
   </data>
   <data name="gunaButton11.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 2, 3, 2</value>
@@ -1647,20 +1638,17 @@ với </value>
   <data name="label14.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 14.25pt</value>
   </data>
-  <data name="label17.Location" type="System.Drawing.Point, System.Drawing">
-    <value>246, 98</value>
+  <data name="gunaButton10.TabIndex" type="System.Int32, mscorlib">
+    <value>99</value>
   </data>
-  <data name="label27.Text" xml:space="preserve">
-    <value>Khám phá</value>
+  <data name="btnQuan7.TabIndex" type="System.Int32, mscorlib">
+    <value>96</value>
   </data>
-  <data name="&gt;&gt;label27.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="label2.TabIndex" type="System.Int32, mscorlib">
+    <value>52</value>
   </data>
-  <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
-    <value>3</value>
-  </data>
-  <data name="panel1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>743, 27</value>
+  <data name="label10.Location" type="System.Drawing.Point, System.Drawing">
+    <value>33, 11</value>
   </data>
   <data name="&gt;&gt;panel5.Name" xml:space="preserve">
     <value>panel5</value>
@@ -1671,8 +1659,8 @@ với </value>
   <data name="pnlChuTro.Location" type="System.Drawing.Point, System.Drawing">
     <value>368, 21</value>
   </data>
-  <data name="lblCountTro.Location" type="System.Drawing.Point, System.Drawing">
-    <value>189, 82</value>
+  <data name="&gt;&gt;panel3.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;label1.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -1680,8 +1668,8 @@ với </value>
   <data name="gunaButton8.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 2, 3, 2</value>
   </data>
-  <data name="label5.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 0, 4, 0</value>
+  <data name="btnGoVap.Size" type="System.Drawing.Size, System.Drawing">
+    <value>272, 192</value>
   </data>
   <data name="lblCountChuTro.Location" type="System.Drawing.Point, System.Drawing">
     <value>189, 67</value>
@@ -1689,17 +1677,23 @@ với </value>
   <data name="lblCountNguoiDung.Text" xml:space="preserve">
     <value>25</value>
   </data>
-  <data name="gunaButton8.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 12pt, style=Bold</value>
+  <data name="lblCountTro.Location" type="System.Drawing.Point, System.Drawing">
+    <value>189, 82</value>
   </data>
   <data name="label9.Text" xml:space="preserve">
     <value>Cập nhật gần đây</value>
   </data>
+  <data name="gunaButton8.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 12pt, style=Bold</value>
+  </data>
+  <data name="label1.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 9.75pt</value>
+  </data>
   <data name="panel6.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 4, 4, 4</value>
   </data>
-  <data name="pictureBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>677, 345</value>
+  <data name="gunaComboBox1.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
   </data>
   <data name="label27.Size" type="System.Drawing.Size, System.Drawing">
     <value>112, 24</value>
@@ -1707,8 +1701,8 @@ với </value>
   <data name="&gt;&gt;btnTanBinh.Parent" xml:space="preserve">
     <value>$this</value>
   </data>
-  <data name="gunaButton1.Text" xml:space="preserve">
-    <value>Bình Thạnh</value>
+  <data name="label14.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="&gt;&gt;pnlChuTro.Parent" xml:space="preserve">
     <value>$this</value>
@@ -1716,17 +1710,17 @@ với </value>
   <data name="pictureBox1.Location" type="System.Drawing.Point, System.Drawing">
     <value>779, 53</value>
   </data>
-  <data name="&gt;&gt;panel2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;pnlNhaTro.Name" xml:space="preserve">
+    <value>pnlNhaTro</value>
   </data>
   <data name="btnTanBinh.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
   </data>
-  <data name="panel5.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
+  <data name="label11.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 9pt, style=Bold</value>
   </data>
-  <data name="gunaButton10.TabIndex" type="System.Int32, mscorlib">
-    <value>99</value>
+  <data name="lblCountTro.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Tahoma, 24pt</value>
   </data>
   <data name="&gt;&gt;pnlNguoiDung.Name" xml:space="preserve">
     <value>pnlNguoiDung</value>
@@ -1734,17 +1728,17 @@ với </value>
   <data name="&gt;&gt;panel4.Type" xml:space="preserve">
     <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;panel6.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="gunaGradientButton1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="&gt;&gt;gunaButton10.Type" xml:space="preserve">
     <value>Guna.UI.WinForms.GunaButton, Guna.UI, Version=1.9.0.1, Culture=neutral, PublicKeyToken=ad275b4be6718d4b</value>
   </data>
-  <data name="&gt;&gt;gunaButton9.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="&gt;&gt;label5.Name" xml:space="preserve">
+    <value>label5</value>
   </data>
-  <data name="gunaButton11.Size" type="System.Drawing.Size, System.Drawing">
-    <value>123, 42</value>
+  <data name="gunaButton2.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
   </data>
   <data name="gunaButton9.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Stretch</value>
@@ -1755,26 +1749,29 @@ với </value>
   <data name="&gt;&gt;lblCountChuTro.Name" xml:space="preserve">
     <value>lblCountChuTro</value>
   </data>
-  <data name="btnQuan10.Location" type="System.Drawing.Point, System.Drawing">
-    <value>779, 498</value>
+  <data name="gunaButton11.Text" xml:space="preserve">
+    <value>Tân Bình</value>
   </data>
   <data name="lblTopTitle.Location" type="System.Drawing.Point, System.Drawing">
     <value>175, 647</value>
   </data>
-  <data name="btnXemThem.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 9.75pt, style=Bold</value>
+  <data name="&gt;&gt;label8.Parent" xml:space="preserve">
+    <value>pnlChuTro</value>
   </data>
   <data name="&gt;&gt;lblCountNguoiDung.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
-  <data name="label13.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 18pt</value>
+  <data name="&gt;&gt;btnXemThem.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="panel5.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 4, 4, 4</value>
   </data>
   <data name="label27.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="pnlChuTro.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
+  <data name="&gt;&gt;btnQuan1.ZOrder" xml:space="preserve">
+    <value>18</value>
   </data>
   <data name="pictureBox2.Size" type="System.Drawing.Size, System.Drawing">
     <value>28, 32</value>
@@ -1782,8 +1779,8 @@ với </value>
   <data name="&gt;&gt;label3.Name" xml:space="preserve">
     <value>label3</value>
   </data>
-  <data name="&gt;&gt;label9.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="panel4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1430, 27</value>
   </data>
   <data name="label18.TabIndex" type="System.Int32, mscorlib">
     <value>104</value>
@@ -1797,32 +1794,35 @@ với </value>
   <data name="panel1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
   </data>
-  <data name="&gt;&gt;pictureBox8.Name" xml:space="preserve">
-    <value>pictureBox8</value>
+  <data name="gunaButton8.Location" type="System.Drawing.Point, System.Drawing">
+    <value>519, 874</value>
   </data>
-  <data name="gunaButton3.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 12pt, style=Bold</value>
+  <data name="label4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>67, 158</value>
   </data>
   <data name="pictureBox8.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 4, 4, 4</value>
   </data>
-  <data name="&gt;&gt;flwTinTuc.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="&gt;&gt;label8.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="flwTinTuc.Location" type="System.Drawing.Point, System.Drawing">
     <value>74, 1495</value>
   </data>
-  <data name="&gt;&gt;gunaButton8.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="panel1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>743, 27</value>
   </data>
-  <data name="&gt;&gt;btnTanBinh.ZOrder" xml:space="preserve">
-    <value>4</value>
+  <data name="label5.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>4, 0, 4, 0</value>
   </data>
   <data name="gunaComboBox3.Location" type="System.Drawing.Point, System.Drawing">
     <value>400, 31</value>
   </data>
-  <data name="&gt;&gt;flwCapNhatGanNhat.Name" xml:space="preserve">
-    <value>flwCapNhatGanNhat</value>
+  <data name="&gt;&gt;gunaButton3.Type" xml:space="preserve">
+    <value>Guna.UI.WinForms.GunaButton, Guna.UI, Version=1.9.0.1, Culture=neutral, PublicKeyToken=ad275b4be6718d4b</value>
+  </data>
+  <data name="lblCountChuTro.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
   </data>
   <data name="panel7.Size" type="System.Drawing.Size, System.Drawing">
     <value>61, 68</value>
@@ -1842,8 +1842,8 @@ với </value>
   <data name="label6.Font" type="System.Drawing.Font, System.Drawing">
     <value>Tahoma, 18pt</value>
   </data>
-  <data name="label10.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 9pt, style=Bold</value>
+  <data name="label12.Text" xml:space="preserve">
+    <value>Loại hình</value>
   </data>
   <data name="panel5.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
@@ -1851,14 +1851,14 @@ với </value>
   <data name="lblTopTitle.Text" xml:space="preserve">
     <value>Quận 1</value>
   </data>
-  <data name="btnBinhThanh.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
+  <data name="gunaButton2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>859, 648</value>
   </data>
-  <data name="gunaButton1.Font" type="System.Drawing.Font, System.Drawing">
-    <value>Tahoma, 12pt, style=Bold</value>
+  <data name="gunaButton8.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
+    <value>Stretch</value>
   </data>
-  <data name="gunaComboBox2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>193, 31</value>
+  <data name="&gt;&gt;pictureBox8.Name" xml:space="preserve">
+    <value>pictureBox8</value>
   </data>
   <data name="gunaButton8.Text" xml:space="preserve">
     <value>Thủ đức</value>
@@ -1878,14 +1878,14 @@ với </value>
   <data name="label10.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 0, 4, 0</value>
   </data>
-  <data name="&gt;&gt;gunaButton3.Type" xml:space="preserve">
-    <value>Guna.UI.WinForms.GunaButton, Guna.UI, Version=1.9.0.1, Culture=neutral, PublicKeyToken=ad275b4be6718d4b</value>
+  <data name="pictureBox5.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
   </data>
   <data name="&gt;&gt;label27.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="&gt;&gt;lblTopTitle.Name" xml:space="preserve">
-    <value>lblTopTitle</value>
+  <data name="btnGoVap.Location" type="System.Drawing.Point, System.Drawing">
+    <value>94, 730</value>
   </data>
   <data name="panel7.Location" type="System.Drawing.Point, System.Drawing">
     <value>31, 14</value>
@@ -1905,17 +1905,17 @@ với </value>
   <data name="pictureBox8.SizeMode" type="System.Windows.Forms.PictureBoxSizeMode, System.Windows.Forms">
     <value>CenterImage</value>
   </data>
-  <data name="label1.TabIndex" type="System.Int32, mscorlib">
-    <value>9</value>
+  <data name="label17.Size" type="System.Drawing.Size, System.Drawing">
+    <value>76, 29</value>
   </data>
-  <data name="label10.Text" xml:space="preserve">
-    <value>Quận, Huyện</value>
+  <data name="&gt;&gt;pictureBox10.Parent" xml:space="preserve">
+    <value>panel7</value>
   </data>
   <data name="&gt;&gt;panel2.Name" xml:space="preserve">
     <value>panel2</value>
   </data>
-  <data name="lblCountNguoiDung.Size" type="System.Drawing.Size, System.Drawing">
-    <value>64, 48</value>
+  <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
+    <value>3</value>
   </data>
   <data name="&gt;&gt;label6.Type" xml:space="preserve">
     <value>System.Windows.Forms.Label, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -1926,14 +1926,14 @@ với </value>
   <data name="pictureBox1.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
     <value>Top, Right</value>
   </data>
-  <data name="&gt;&gt;label6.Parent" xml:space="preserve">
-    <value>pnlChuTro</value>
+  <data name="gunaButton11.Location" type="System.Drawing.Point, System.Drawing">
+    <value>1200, 876</value>
   </data>
-  <data name="&gt;&gt;label6.Name" xml:space="preserve">
-    <value>label6</value>
+  <data name="rtxTieuDeLon.Location" type="System.Drawing.Point, System.Drawing">
+    <value>24, 27</value>
   </data>
-  <data name="pictureBox3.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
+  <data name="label18.Size" type="System.Drawing.Size, System.Drawing">
+    <value>175, 24</value>
   </data>
   <data name="btnThuDuc.Size" type="System.Drawing.Size, System.Drawing">
     <value>272, 192</value>
@@ -1941,20 +1941,20 @@ với </value>
   <data name="&gt;&gt;gunaButton1.Name" xml:space="preserve">
     <value>gunaButton1</value>
   </data>
-  <data name="label12.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
+  <data name="label6.TabIndex" type="System.Int32, mscorlib">
+    <value>15</value>
   </data>
   <data name="flwTinTuc.TabIndex" type="System.Int32, mscorlib">
     <value>103</value>
   </data>
-  <data name="btnQuan1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>4, 4, 4, 4</value>
+  <data name="&gt;&gt;gunaButton2.Type" xml:space="preserve">
+    <value>Guna.UI.WinForms.GunaButton, Guna.UI, Version=1.9.0.1, Culture=neutral, PublicKeyToken=ad275b4be6718d4b</value>
   </data>
-  <data name="panel2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>61, 68</value>
+  <data name="&gt;&gt;panel1.ZOrder" xml:space="preserve">
+    <value>29</value>
   </data>
-  <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>210, 36</value>
+  <data name="&gt;&gt;label14.Name" xml:space="preserve">
+    <value>label14</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>

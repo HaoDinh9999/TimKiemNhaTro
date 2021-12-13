@@ -29,25 +29,43 @@ namespace TimKiemNhaTro
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ucFavourite));
             this.label1 = new System.Windows.Forms.Label();
+            this.flwFavourite = new System.Windows.Forms.FlowLayoutPanel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(27, 23);
+            resources.ApplyResources(this.label1, "label1");
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(67, 17);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Yêu thích";
+            // 
+            // flwFavourite
+            // 
+            resources.ApplyResources(this.flwFavourite, "flwFavourite");
+            this.flwFavourite.BackColor = System.Drawing.Color.Transparent;
+            this.flwFavourite.Name = "flwFavourite";
+            // 
+            // pictureBox1
+            // 
+            resources.ApplyResources(this.pictureBox1, "pictureBox1");
+            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBox1.Image = global::TimKiemNhaTro.Properties.Resources.mPPEsss;
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.TabStop = false;
             // 
             // ucFavourite
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.White;
+            this.Controls.Add(this.flwFavourite);
             this.Controls.Add(this.label1);
+            this.Controls.Add(this.pictureBox1);
             this.Name = "ucFavourite";
-            this.Size = new System.Drawing.Size(1128, 642);
+            this.Load += new System.EventHandler(this.ucFavourite_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -56,5 +74,7 @@ namespace TimKiemNhaTro
         #endregion
 
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.FlowLayoutPanel flwFavourite;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }

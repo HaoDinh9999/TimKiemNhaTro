@@ -1,5 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\EntityFramework.6.4.4\build\EntityFramework.props" Condition="Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.props')" />
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -12,6 +13,23 @@
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -32,44 +50,546 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
+  </PropertyGroup>
   <ItemGroup>
+    <Reference Include="BouncyCastle.Crypto, Version=1.8.5.0, Culture=neutral, PublicKeyToken=0e99375e54769942">
+      <HintPath>..\packages\BouncyCastle.1.8.5\lib\BouncyCastle.Crypto.dll</HintPath>
+    </Reference>
+    <Reference Include="Emgu.CV, Version=2.1.0.793, Culture=neutral, PublicKeyToken=7281126722ab4438, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Downloads\dll\Emgu.CV.dll</HintPath>
+    </Reference>
+    <Reference Include="Emgu.CV.DebuggerVisualizers, Version=2.1.0.793, Culture=neutral, PublicKeyToken=7281126722ab4438, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Downloads\dll\Emgu.CV.DebuggerVisualizers.dll</HintPath>
+    </Reference>
+    <Reference Include="Emgu.CV.ML, Version=2.1.0.793, Culture=neutral, PublicKeyToken=7281126722ab4438, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Downloads\dll\Emgu.CV.ML.dll</HintPath>
+    </Reference>
+    <Reference Include="Emgu.CV.UI, Version=2.1.0.793, Culture=neutral, PublicKeyToken=7281126722ab4438, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Downloads\dll\Emgu.CV.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Emgu.Util, Version=2.1.0.793, Culture=neutral, PublicKeyToken=7281126722ab4438, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\Downloads\dll\Emgu.Util.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+    </Reference>
+    <Reference Include="Firebase, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\FirebaseDatabase.net.4.0.7\lib\netstandard2.0\Firebase.dll</HintPath>
+    </Reference>
+    <Reference Include="Firebase.Storage, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\FirebaseStorage.net.1.0.3\lib\netstandard1.1\Firebase.Storage.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.Protobuf, Version=3.19.0.0, Culture=neutral, PublicKeyToken=a7d26565bac4d604, processorArchitecture=MSIL">
+      <HintPath>..\packages\Google.Protobuf.3.19.0\lib\net45\Google.Protobuf.dll</HintPath>
+    </Reference>
     <Reference Include="Guna.UI">
       <HintPath>..\GunaUI\GunaUI\GunaUI\GunaMaster\Guna.UI WinForms\.net 4.0\Guna.UI.dll</HintPath>
     </Reference>
+    <Reference Include="Guna.UI2, Version=2.0.0.1, Culture=neutral, PublicKeyToken=ad275b4be6718d4b, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\GunaUI\GunaUI\GunaUI\GunaMaster\Guna.UI2 WinForms\.net 4.0\Guna.UI2.dll</HintPath>
+    </Reference>
+    <Reference Include="K4os.Compression.LZ4, Version=1.2.6.0, Culture=neutral, PublicKeyToken=2186fa9121ef231d, processorArchitecture=MSIL">
+      <HintPath>..\packages\K4os.Compression.LZ4.1.2.6\lib\net46\K4os.Compression.LZ4.dll</HintPath>
+    </Reference>
+    <Reference Include="K4os.Compression.LZ4.Streams, Version=1.2.6.0, Culture=neutral, PublicKeyToken=2186fa9121ef231d, processorArchitecture=MSIL">
+      <HintPath>..\packages\K4os.Compression.LZ4.Streams.1.2.6\lib\net46\K4os.Compression.LZ4.Streams.dll</HintPath>
+    </Reference>
+    <Reference Include="K4os.Hash.xxHash, Version=1.0.6.0, Culture=neutral, PublicKeyToken=32cd54395057cec3, processorArchitecture=MSIL">
+      <HintPath>..\packages\K4os.Hash.xxHash.1.0.6\lib\net46\K4os.Hash.xxHash.dll</HintPath>
+    </Reference>
+    <Reference Include="LiteDB, Version=4.1.4.0, Culture=neutral, PublicKeyToken=4ee40123013c9f27, processorArchitecture=MSIL">
+      <HintPath>..\packages\LiteDB.4.1.4\lib\net40\LiteDB.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Microsoft.Win32.Primitives, Version=4.0.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Win32.Primitives.4.3.0\lib\net46\Microsoft.Win32.Primitives.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="MySql.Data, Version=8.0.27.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\MySQL\Connector NET 8.0\Assemblies\v4.5.2\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data.EntityFramework, Version=8.0.27.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\MySQL\Connector NET 8.0\Assemblies\v4.5.2\MySql.Data.EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="MySqlConnector, Version=2.0.0.0, Culture=neutral, PublicKeyToken=d33d3e53aa5f8c92, processorArchitecture=MSIL">
+      <HintPath>..\packages\MySqlConnector.2.1.0\lib\net471\MySqlConnector.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=11.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.11.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
+    <Reference Include="System.AppContext, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.AppContext.4.3.0\lib\net463\System.AppContext.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Buffers, Version=4.0.3.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Buffers.4.5.1\lib\net461\System.Buffers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel" />
+    <Reference Include="System.ComponentModel.Composition" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Configuration.Install" />
+    <Reference Include="System.Console, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Console.4.3.0\lib\net46\System.Console.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System.Core" />
+    <Reference Include="System.Diagnostics.DiagnosticSource, Version=5.0.0.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Diagnostics.DiagnosticSource.5.0.1\lib\net46\System.Diagnostics.DiagnosticSource.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Diagnostics.Tracing, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Diagnostics.Tracing.4.3.0\lib\net462\System.Diagnostics.Tracing.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Globalization.Calendars, Version=4.0.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Globalization.Calendars.4.3.0\lib\net46\System.Globalization.Calendars.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.IO, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.IO.4.3.0\lib\net462\System.IO.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.IO.Compression, Version=4.1.2.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.IO.Compression.4.3.0\lib\net46\System.IO.Compression.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.IO.Compression.FileSystem" />
+    <Reference Include="System.IO.Compression.ZipFile, Version=4.0.2.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.IO.Compression.ZipFile.4.3.0\lib\net46\System.IO.Compression.ZipFile.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.IO.FileSystem, Version=4.0.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.IO.FileSystem.4.3.0\lib\net46\System.IO.FileSystem.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.IO.FileSystem.Primitives, Version=4.0.2.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.IO.FileSystem.Primitives.4.3.0\lib\net46\System.IO.FileSystem.Primitives.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Linq, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Linq.4.3.0\lib\net463\System.Linq.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Linq.Expressions, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Linq.Expressions.4.3.0\lib\net463\System.Linq.Expressions.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System.Management" />
+    <Reference Include="System.Memory, Version=4.0.1.1, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Memory.4.5.4\lib\net461\System.Memory.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Net.Http.4.3.0\lib\net46\System.Net.Http.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Net.Sockets, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Net.Sockets.4.3.0\lib\net46\System.Net.Sockets.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Numerics" />
+    <Reference Include="System.Numerics.Vectors, Version=4.1.4.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Numerics.Vectors.4.5.0\lib\net46\System.Numerics.Vectors.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reactive, Version=4.0.0.0, Culture=neutral, PublicKeyToken=94bc3704cddfc263, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Reactive.4.0.0\lib\net46\System.Reactive.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Reflection, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Reflection.4.3.0\lib\net462\System.Reflection.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Runtime, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.4.3.0\lib\net462\System.Runtime.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Runtime.CompilerServices.Unsafe, Version=5.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.CompilerServices.Unsafe.5.0.0\lib\net45\System.Runtime.CompilerServices.Unsafe.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Runtime.Extensions, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.Extensions.4.3.0\lib\net462\System.Runtime.Extensions.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Runtime.InteropServices, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.InteropServices.4.3.0\lib\net463\System.Runtime.InteropServices.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Runtime.InteropServices.RuntimeInformation, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Runtime.InteropServices.RuntimeInformation.4.3.0\lib\net45\System.Runtime.InteropServices.RuntimeInformation.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Security.Cryptography.Algorithms, Version=4.2.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.Cryptography.Algorithms.4.3.0\lib\net463\System.Security.Cryptography.Algorithms.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Encoding, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.Cryptography.Encoding.4.3.0\lib\net46\System.Security.Cryptography.Encoding.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.Primitives, Version=4.0.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.Cryptography.Primitives.4.3.0\lib\net46\System.Security.Cryptography.Primitives.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Security.Cryptography.X509Certificates, Version=4.1.1.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Security.Cryptography.X509Certificates.4.3.0\lib\net461\System.Security.Cryptography.X509Certificates.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Text.RegularExpressions, Version=4.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Text.RegularExpressions.4.3.0\lib\net463\System.Text.RegularExpressions.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System.Threading.Tasks.Extensions, Version=4.1.0.0, Culture=neutral, PublicKeyToken=cc7b13ffcd2ddd51, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Threading.Tasks.Extensions.4.3.0\lib\portable-net45+win8+wp8+wpa81\System.Threading.Tasks.Extensions.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Windows" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
     <Reference Include="System.Deployment" />
     <Reference Include="System.Drawing" />
-    <Reference Include="System.Net.Http" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.ReaderWriter, Version=4.1.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
+      <HintPath>..\packages\System.Xml.ReaderWriter.4.3.0\lib\net46\System.Xml.ReaderWriter.dll</HintPath>
+      <Private>True</Private>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Ubiety.Dns.Core, Version=2.2.1.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <HintPath>..\packages\MySql.Data.8.0.27\lib\net452\Ubiety.Dns.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="WindowsBase" />
+    <Reference Include="zlib.net, Version=1.0.3.0, Culture=neutral, PublicKeyToken=47d7877cb3620160">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>H:\HK1(2021-2022)\CS-C#\dll\zlib.net.dll</HintPath>
+    </Reference>
+    <Reference Include="ZstdNet, Version=1.4.5.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <HintPath>..\packages\MySql.Data.8.0.27\lib\net452\ZstdNet.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ChangeLanguage.cs" />
+    <Compile Include="Districts.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAddFAQ.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAddFAQ.Designer.cs">
+      <DependentUpon>frmAddFAQ.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAddNews.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAddNews.Designer.cs">
+      <DependentUpon>frmAddNews.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAdmin.Designer.cs">
+      <DependentUpon>frmAdmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAdminChangePassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAdminChangePassword.Designer.cs">
+      <DependentUpon>frmAdminChangePassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAdminEditProfile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAdminEditProfile.Designer.cs">
+      <DependentUpon>frmAdminEditProfile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmBaoCaoLoiUngDung.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmBaoCaoLoiUngDung.Designer.cs">
+      <DependentUpon>frmBaoCaoLoiUngDung.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLoadAnh.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLoadAnh.Designer.cs">
+      <DependentUpon>frmLoadAnh.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmNguoiDungChat.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmNguoiDungChat.Designer.cs">
+      <DependentUpon>frmNguoiDungChat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmRegister.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmRegister.Designer.cs">
+      <DependentUpon>frmRegister.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Model\AnhNha.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\CoSoVatChat.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\DanhGia.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\DataProvider.cs" />
+    <Compile Include="Model\FAQ.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\LoaiChoThue.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Model1.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model1.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Model1.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Model1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Model1.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Model\NguoiDung.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Nha.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\TinNhan.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\TinTuc.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Model\YeuThich.cs">
+      <DependentUpon>Model1.tt</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="ucAddHome.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucAddHome.Designer.cs">
+      <DependentUpon>ucAddHome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucAdminChat.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucAdminChat.Designer.cs">
+      <DependentUpon>ucAdminChat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucAdminFAQ.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucAdminFAQ.Designer.cs">
+      <DependentUpon>ucAdminFAQ.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucAdminFAQCard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucAdminFAQCard.Designer.cs">
+      <DependentUpon>ucAdminFAQCard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucAdminNews.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucAdminNews.Designer.cs">
+      <DependentUpon>ucAdminNews.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucAdminNewsCard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucAdminNewsCard.Designer.cs">
+      <DependentUpon>ucAdminNewsCard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucAdminOverview.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucAdminOverview.Designer.cs">
+      <DependentUpon>ucAdminOverview.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucAdminProfile.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucAdminProfile.Designer.cs">
+      <DependentUpon>ucAdminProfile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucAdminStatistic.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucAdminStatistic.Designer.cs">
+      <DependentUpon>ucAdminStatistic.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucAdminUser.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucAdminUser.Designer.cs">
+      <DependentUpon>ucAdminUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucCardDanhGia.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucCardDanhGia.Designer.cs">
+      <DependentUpon>ucCardDanhGia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucCardNguoiDungChat.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucCardNguoiDungChat.Designer.cs">
+      <DependentUpon>ucCardNguoiDungChat.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucCardNha.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucCardNha.Designer.cs">
+      <DependentUpon>ucCardNha.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucCardNhaMedium.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucCardNhaMedium.Designer.cs">
+      <DependentUpon>ucCardNhaMedium.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucCardRoom.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucCardRoom.Designer.cs">
+      <DependentUpon>ucCardRoom.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucCardRoomFavourite.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucCardRoomFavourite.Designer.cs">
+      <DependentUpon>ucCardRoomFavourite.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucCardRoomLong.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucCardRoomLong.Designer.cs">
+      <DependentUpon>ucCardRoomLong.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucCardRoomSaveee.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucCardRoomSaveee.Designer.cs">
+      <DependentUpon>ucCardRoomSaveee.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucCardTinTuc.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucCardTinTuc.Designer.cs">
+      <DependentUpon>ucCardTinTuc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucDetailHome.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucDetailHome.Designer.cs">
+      <DependentUpon>ucDetailHome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucFAQs.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucFAQs.Designer.cs">
+      <DependentUpon>ucFAQs.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucFAQsCard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucFAQsCard.Designer.cs">
+      <DependentUpon>ucFAQsCard.cs</DependentUpon>
+    </Compile>
     <Compile Include="ucFavourite.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="ucFavourite.Designer.cs">
       <DependentUpon>ucFavourite.cs</DependentUpon>
     </Compile>
-    <Compile Include="ucHome.cs">
+    <Compile Include="ucHomeCC.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="ucHome.Designer.cs">
-      <DependentUpon>ucHome.cs</DependentUpon>
+    <Compile Include="ucHomeCC.Designer.cs">
+      <DependentUpon>ucHomeCC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucNhaDaDang.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucNhaDaDang.Designer.cs">
+      <DependentUpon>ucNhaDaDang.cs</DependentUpon>
     </Compile>
     <Compile Include="ucSearch.cs">
       <SubType>UserControl</SubType>
@@ -83,40 +603,236 @@
     <Compile Include="ucSetting.Designer.cs">
       <DependentUpon>ucSetting.cs</DependentUpon>
     </Compile>
+    <Compile Include="ucTinNhanCard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucTinNhanCard.Designer.cs">
+      <DependentUpon>ucTinNhanCard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ucTinTuc.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucTinTuc.Designer.cs">
+      <DependentUpon>ucTinTuc.cs</DependentUpon>
+    </Compile>
     <Compile Include="ucUser.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="ucUser.Designer.cs">
       <DependentUpon>ucUser.cs</DependentUpon>
     </Compile>
+    <Compile Include="ucUserCard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ucUserCard.Designer.cs">
+      <DependentUpon>ucUserCard.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Form1.en.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Form1.vi-VN.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAddFAQ.resx">
+      <DependentUpon>frmAddFAQ.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAddNews.resx">
+      <DependentUpon>frmAddNews.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAdmin.resx">
+      <DependentUpon>frmAdmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBaoCaoLoiUngDung.en.resx">
+      <DependentUpon>frmBaoCaoLoiUngDung.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBaoCaoLoiUngDung.resx">
+      <DependentUpon>frmBaoCaoLoiUngDung.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmBaoCaoLoiUngDung.vi-VN.resx">
+      <DependentUpon>frmBaoCaoLoiUngDung.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAdminChangePassword.resx">
+      <DependentUpon>frmAdminChangePassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAdminEditProfile.resx">
+      <DependentUpon>frmAdminEditProfile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLoadAnh.resx">
+      <DependentUpon>frmLoadAnh.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLogin.en.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmNguoiDungChat.resx">
+      <DependentUpon>frmNguoiDungChat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRegister.en.resx">
+      <DependentUpon>frmRegister.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRegister.resx">
+      <DependentUpon>frmRegister.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmRegister.vi-VN.resx">
+      <DependentUpon>frmRegister.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
-    </Compile>
+    <EmbeddedResource Include="ucAddHome.en.resx">
+      <DependentUpon>ucAddHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucAddHome.resx">
+      <DependentUpon>ucAddHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucAdminChat.resx">
+      <DependentUpon>ucAdminChat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucAdminFAQ.resx">
+      <DependentUpon>ucAdminFAQ.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucAdminFAQCard.resx">
+      <DependentUpon>ucAdminFAQCard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucAdminNews.resx">
+      <DependentUpon>ucAdminNews.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucAdminNewsCard.resx">
+      <DependentUpon>ucAdminNewsCard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucAdminOverview.resx">
+      <DependentUpon>ucAdminOverview.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucAdminProfile.resx">
+      <DependentUpon>ucAdminProfile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucAdminStatistic.resx">
+      <DependentUpon>ucAdminStatistic.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucAdminUser.resx">
+      <DependentUpon>ucAdminUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucCardDanhGia.resx">
+      <DependentUpon>ucCardDanhGia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucCardNguoiDungChat.resx">
+      <DependentUpon>ucCardNguoiDungChat.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucCardNha.en.resx">
+      <DependentUpon>ucCardNha.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucCardNha.resx">
+      <DependentUpon>ucCardNha.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucCardNhaMedium.resx">
+      <DependentUpon>ucCardNhaMedium.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucCardRoom.resx">
+      <DependentUpon>ucCardRoom.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucCardRoomFavourite.resx">
+      <DependentUpon>ucCardRoomFavourite.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucCardRoomLong.resx">
+      <DependentUpon>ucCardRoomLong.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucCardRoomSaveee.resx">
+      <DependentUpon>ucCardRoomSaveee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucCardTinTuc.en.resx">
+      <DependentUpon>ucCardTinTuc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucCardTinTuc.resx">
+      <DependentUpon>ucCardTinTuc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucCardTinTuc.vi-VN.resx">
+      <DependentUpon>ucCardTinTuc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucDetailHome.en.resx">
+      <DependentUpon>ucDetailHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucDetailHome.resx">
+      <DependentUpon>ucDetailHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucDetailHome.vi-VN.resx">
+      <DependentUpon>ucDetailHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucFAQs.resx">
+      <DependentUpon>ucFAQs.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucFAQsCard.resx">
+      <DependentUpon>ucFAQsCard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucFavourite.en.resx">
+      <DependentUpon>ucFavourite.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ucFavourite.resx">
       <DependentUpon>ucFavourite.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ucHome.resx">
-      <DependentUpon>ucHome.cs</DependentUpon>
+    <EmbeddedResource Include="ucHomeCC.en.resx">
+      <DependentUpon>ucHomeCC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucHomeCC.resx">
+      <DependentUpon>ucHomeCC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucHomeCC.vi-VN.resx">
+      <DependentUpon>ucHomeCC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucNhaDaDang.en.resx">
+      <DependentUpon>ucNhaDaDang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucNhaDaDang.resx">
+      <DependentUpon>ucNhaDaDang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucSearch.en.resx">
+      <DependentUpon>ucSearch.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ucSearch.resx">
       <DependentUpon>ucSearch.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ucSetting.en.resx">
+      <DependentUpon>ucSetting.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ucSetting.resx">
       <DependentUpon>ucSetting.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucTinNhanCard.resx">
+      <DependentUpon>ucTinNhanCard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucTinTuc.resx">
+      <DependentUpon>ucTinTuc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucUser.en.resx">
+      <DependentUpon>ucUser.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ucUser.resx">
       <DependentUpon>ucUser.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ucUser.vi-VN.resx">
+      <DependentUpon>ucUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ucUserCard.resx">
+      <DependentUpon>ucUserCard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EntityDeploy Include="Model\Model1.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>Model1.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <None Include="Model\Model1.edmx.diagram">
+      <DependentUpon>Model1.edmx</DependentUpon>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\app.manifest" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -190,5 +906,178 @@
   <ItemGroup>
     <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icons8_bathtubColor_32.png" />
+    <None Include="Resources\icons8_bedColor_32.png" />
+    <None Include="Resources\icons8_homeColor_32.png" />
+    <None Include="Resources\icons8_signpost_32.png" />
+    <None Include="Resources\icons8_us_dollar_32.png" />
+    <None Include="Resources\icons8_google_mapsCOLOR_32.png" />
+    <None Include="Resources\icons8_instagram_check_mark_32.png" />
+    <None Include="Resources\icons8_mailCOLOR_32.png" />
+    <None Include="Resources\icons8_phoneCOLOR_32.png" />
+    <None Include="Resources\icons8_male_userCOLOR_32.png" />
+    <None Include="Resources\icons8_save_as_32.png" />
+    <None Include="Resources\icons8_image_32.png" />
+    <None Include="Resources\icons8_washing_machineAAA_32.png" />
+    <None Include="Resources\icons8_pet_commands_summonWhite_32.png" />
+    <None Include="Resources\icons8_pet_commands_summon_32.png" />
+    <None Include="Resources\icons8_wall_mount_camera_errorWhite_32.png" />
+    <None Include="Resources\icons8_wall_mount_camera_error_32.png" />
+    <None Include="Resources\icons8_bungalowWhite_32.png" />
+    <None Include="Resources\icons8_bungalow_32.png" />
+    <None Include="Resources\icons8_parking_assistWhite_32.png" />
+    <None Include="Resources\icons8_parking_assist_32.png" />
+    <None Include="Resources\icons8_lap_poolWhite_32.png" />
+    <None Include="Resources\icons8_lap_pool_32.png" />
+    <None Include="Resources\icons8_Greek_GuardWhite_32.png" />
+    <None Include="Resources\icons8_Greek_Guard_32.png" />
+    <None Include="Resources\icons8_staircaseWhite_32.png" />
+    <None Include="Resources\icons8_staircase_32.png" />
+    <None Include="Resources\icons8_furnitureWhite_32.png" />
+    <None Include="Resources\icons8_furniture_32.png" />
+    <None Include="Resources\icons8_washing_machineWhite_32.png" />
+    <None Include="Resources\icons8_washing_machine_32.png" />
+    <None Include="Resources\icons8_balconyWhite_32.png" />
+    <None Include="Resources\icons8_balcony_32.png" />
+    <None Include="Resources\icons8_air_conditionerBlack_321.png" />
+    <None Include="Resources\icons8_air_conditionerWhite_32.png" />
+    <None Include="Resources\icons8_air_conditionerBlack_32.png" />
+    <None Include="Resources\icons8_shield_32.png" />
+    <None Include="Resources\icons8_plus_math_32.png" />
+    <None Include="Resources\icons8_mail_32.png" />
+    <None Include="Resources\icons8_more_than_32.png" />
+    <None Include="Resources\icons8_male_userWHITE_321.png" />
+    <None Include="Resources\icons8_registration_32.png" />
+    <None Include="Resources\icons8_phone_32.png" />
+    <None Include="Resources\icons8_male_userBlack_32.png" />
+    <None Include="Resources\male_user_48px.png" />
+    <None Include="Resources\icons8_male_user_16.png" />
+    <None Include="Resources\TanBinh1.jpg" />
+    <None Include="Resources\cooking1.png" />
+    <None Include="Resources\mPPEsss.gif" />
+    <None Include="Resources\affebf4a4975ac81c0f9780bd2ad09d9.gif" />
+    <None Include="Resources\icons8_heart_322.png" />
+    <None Include="Resources\icons8_heartWhite111_32.png" />
+    <None Include="Resources\icons8_heartWHITE_321.png" />
+    <None Include="Resources\icons8_heart_321.png" />
+    <None Include="Resources\icons8_searchWhite_32.png" />
+    <None Include="Resources\TanBinh.jpg" />
+    <None Include="Resources\quan2.jpg" />
+    <None Include="Resources\quan7.jpg" />
+    <None Include="Resources\thu-duc_jfbk.jpg" />
+    <None Include="Resources\phunhuan.jpg" />
+    <None Include="Resources\quan10.jpg" />
+    <None Include="Resources\binhthanh.jpg" />
+    <None Include="Resources\quan1.jpg" />
+    <None Include="Resources\icons8_user_16.png" />
+    <None Include="Resources\icons8_username322_32.png" />
+    <None Include="Resources\icons8_home_address3222222222222_32.png" />
+    <None Include="Resources\icons8_homenho_16.png" />
+    <None Include="Resources\icons8_home_address_32.png" />
+    <None Include="Resources\home.png" />
+    <None Include="Resources\3612573_180121144400612203361.jpg" />
+    <None Include="Resources\bathtub1_240px.png" />
+    <None Include="Resources\area-icon.png" />
+    <None Include="Resources\icons8_bathtub_32.png" />
+    <None Include="Resources\icons8_sleeping_in_bed1_32.png" />
+    <None Include="Resources\icons8_sleeping_in_bed_16.png" />
+    <None Include="Resources\3612573_18012114440061220336.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\775-7750441_apartment-png.png" />
+    <Content Include="Model\Model1.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Model1.edmx</DependentUpon>
+      <LastGenOutput>Model1.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Model\Model1.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Model1.edmx</DependentUpon>
+      <LastGenOutput>Model1.cs</LastGenOutput>
+    </Content>
+    <Content Include="Resources\bath-tub.png" />
+    <Content Include="Resources\cancel.png" />
+    <None Include="Resources\dashboard.png" />
+    <None Include="Resources\dashboard %281%29.png" />
+    <None Include="Resources\chat-bubbles-with-ellipsis %281%29.png" />
+    <None Include="Resources\chat-bubbles-with-ellipsis.png" />
+    <Content Include="Resources\double-bed.png" />
+    <None Include="Resources\giphy.gif" />
+    <Content Include="Resources\heart.png" />
+    <Content Include="Resources\home1.png" />
+    <None Include="Resources\icons8_waste_32.png" />
+    <None Include="Resources\icons8_waste_321.png" />
+    <None Include="Resources\icons8_edit_32.png" />
+    <None Include="Resources\icons8_edit_321.png" />
+    <None Include="Resources\icons8_wasteXOA_32.png" />
+    <None Include="Resources\icons8_heardt_32.png" />
+    <None Include="Resources\kisspng-qualitas-esquina-rush-reliance-apartments-qualitas-apartment-5ac1b5d86c4dc4.9943107215226444404436.jpg" />
+    <None Include="Resources\icons8_image_321.png" />
+    <None Include="Resources\icons8_starYellow_32.png" />
+    <None Include="Resources\icons8_starYellow_321.png" />
+    <None Include="Resources\icons8_starGrey_32.png" />
+    <None Include="Resources\icons8_starDam_32.png" />
+    <None Include="Resources\icons8_editDen_32.png" />
+    <None Include="Resources\icons8_delete_32.png" />
+    <None Include="Resources\loading.gif" />
+    <None Include="Resources\newspaper %281%29.png" />
+    <None Include="Resources\newspaper.png" />
+    <None Include="Resources\logout.png" />
+    <None Include="Resources\icons8_scroll_down_32.png" />
+    <None Include="Resources\icons8_upward_arrow_32.png" />
+    <None Include="Resources\icons8_scroll_down_321.png" />
+    <None Include="Resources\icons8_attach_32.png" />
+    <None Include="Resources\icons8_facebook_32.png" />
+    <None Include="Resources\icons8_Instagram_32.png" />
+    <None Include="Resources\icons8_twitter_32.png" />
+    <None Include="Resources\loading1.gif" />
+    <None Include="Resources\icons8_google_32.png" />
+    <None Include="Resources\question-mark-on-a-circular-black-background.png" />
+    <None Include="Resources\question-mark-on-a-circular-black-background %281%29.png" />
+    <None Include="Resources\image.png" />
+    <Content Include="Resources\rec.png" />
+    <None Include="Resources\setting %281%29.png" />
+    <None Include="Resources\setting.png" />
+    <Content Include="Resources\star.png" />
+    <None Include="Resources\statistics %281%29.png" />
+    <None Include="Resources\statistics.png" />
+    <None Include="Resources\suzy2.jpg" />
+    <Content Include="Resources\triangular.png" />
+    <Content Include="Resources\undraw_Login_re_4vu2.png" />
+    <None Include="Resources\undraw_Travel_booking_re_6umu %281%29.png" />
+    <Content Include="Resources\undraw_Welcome_re_h3d9.png" />
+    <None Include="Resources\unnamed.jpg" />
+    <None Include="Resources\user %281%29.png" />
+    <None Include="Resources\user.png" />
+    <Content Include="Resources\wide.png" />
+    <None Include="Resources\icons8_toolbox_32.png" />
+    <None Include="Resources\icons8_info_popup_32.png" />
+    <None Include="Resources\icons8_warehouse_32.png" />
+    <None Include="Resources\icons8_condo_32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.4.4\build\EntityFramework.props'))" />
+    <Error Condition="!Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.4.4\build\EntityFramework.targets'))" />
+  </Target>
+  <Import Project="..\packages\EntityFramework.6.4.4\build\EntityFramework.targets" Condition="Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.targets')" />
 </Project>
